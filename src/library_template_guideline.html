@@ -311,7 +311,7 @@ section.sec{padding:48px 0 8px}.sec-head{margin-bottom:18px}.sec-head p{font-siz
 const D=/*DATA*/null;
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const pct=v=>v==null?"—":Math.round(v*100)+"%";
+const pct=v=>v==null?"n/a":Math.round(v*100)+"%";
 const cap=s=>s?String(s)[0].toUpperCase()+String(s).slice(1):"";
 const G=D.guideline||{},RUB=D.rubric||[],LV=(D.levels||[]).slice().sort((a,b)=>a.level-b.level),IT=D.items||[];
 const RB=Object.fromEntries(RUB.map(r=>[r.id,r]));
@@ -329,8 +329,8 @@ $("#src").innerHTML=`<div class="pub">Source guideline</div><div class="nm">${es
 if(G.url)$("#glink").href=G.url;else $("#glink").remove();
 const nHaz=IT.reduce((n,i)=>n+i.hazards.length,0),nDis=IT.reduce((n,i)=>n+i.distractors.length,0);
 document.documentElement.style.setProperty("--hero-bd",D.bench==="dementia"?"url(art/bg-kitchen.jpg)":"url(art/bg-stairs.jpg)");
-$("#say").innerHTML=`<span class="m">One guideline became</span> <span class="ic">§</span>${RUB.length} rubric rows<span class="m">,</span> <span class="ic c">▦</span>${IT.length?IT.length+" labeled homes":"synthetic homes"} <span class="m">across ${LV.length||5} levels, and</span> <span class="ic g">◎</span>${D.worlds.length||"—"} walkable 3D worlds<span class="m">.</span>`;
-$("#hstats").innerHTML=[[RUB.length,"rubric rows, each citing a guideline line"],[IT.length||"—","labeled images"+(IT.length?"":" · generating")],[nHaz?`${nHaz}<span style="font-size:28px;color:var(--text-faint)"> / ${nDis}</span>`:"—","hazards / safe look-alikes, boxed"],[D.worlds.length||"—","walkable 3D worlds"]]
+$("#say").innerHTML=`<span class="m">One guideline became</span> <span class="ic">§</span>${RUB.length} rubric rows<span class="m">,</span> <span class="ic c">▦</span>${IT.length?IT.length+" labeled homes":"synthetic homes"} <span class="m">across ${LV.length||5} levels, and</span> <span class="ic g">◎</span>${D.worlds.length||"n/a"} walkable 3D worlds<span class="m">.</span>`;
+$("#hstats").innerHTML=[[RUB.length,"rubric rows, each citing a guideline line"],[IT.length||"n/a","labeled images"+(IT.length?"":" · generating")],[nHaz?`${nHaz}<span style="font-size:28px;color:var(--text-faint)"> / ${nDis}</span>`:"n/a","hazards / safe look-alikes, boxed"],[D.worlds.length||"n/a","walkable 3D worlds"]]
   .map(([n,l])=>`<div><b>${n}</b><span>${l}</span></div>`).join("");
 
 // ---------- guideline + rubric ----------

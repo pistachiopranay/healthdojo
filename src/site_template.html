@@ -330,8 +330,8 @@ footer{padding:40px 0 32px;font-size:13px}
   <h2 style="max-width:22ch">Patients go home on a walker. The house decides whether they fall.</h2>
   <div class="facts">
     <div class="fact"><b>1 <small>in</small> 3</b><p>joint-replacement patients fall within a year of surgery.</p></div>
-    <div class="fact"><b>~31<small>%</small></b><p>of falls are caused by the environment — rugs, missing grab bars, low toilets.</p></div>
-    <div class="fact"><b>26<small>%</small> <small>/</small> 38<small>%</small></b><p>fewer falls with home modification — 38% in high-risk patients (Cochrane 2023).</p></div>
+    <div class="fact"><b>~31<small>%</small></b><p>of falls are caused by the environment: rugs, missing grab bars, low toilets.</p></div>
+    <div class="fact"><b>26<small>%</small> <small>/</small> 38<small>%</small></b><p>fewer falls with home modification, 38% in high-risk patients (Cochrane 2023).</p></div>
   </div>
   <div class="cite">Home-health AI is shipping vision models into homes. Nobody can test them: real homes have no ground truth. HealthDojo compiles one from the guideline.</div>
   <div class="steps">
@@ -362,7 +362,7 @@ footer{padding:40px 0 32px;font-size:13px}
       <div class="hm"><h3>Recall by hazard type</h3><table class="heat" id="heatType"></table></div>
       <div class="hm"><h3>Recall by room</h3><table class="heat" id="heatRoom"></table></div>
     </div>
-    <div class="legend"><span>0% found</span><div class="ramp" id="ramp"></div><span>100% found</span><span style="margin-left:18px">— not tested yet</span></div>
+    <div class="legend"><span>0% found</span><div class="ramp" id="ramp"></div><span>100% found</span><span style="margin-left:18px">n/a: not tested yet</span></div>
   </div></div>
   <div class="note"><b>Object</b> = something in the way (rug, cord, clutter). <b>Absence</b> = something missing (grab bar, stair rail). <b>Measurement</b> = geometry (toilet height, doorway too narrow for a walker). <b>Lighting</b> = too dark to see the path.</div>
 </div></section>
@@ -389,7 +389,7 @@ footer{padding:40px 0 32px;font-size:13px}
 const D=/*DATA*/null;
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const pct=v=>v==null?"—":Math.round(v*100)+"%";
+const pct=v=>v==null?"n/a":Math.round(v*100)+"%";
 const TAX=D.taxonomy||{};
 const TYPES=["object","absence","measurement","lighting","access","perception"];
 const TLABEL={object:"Visible object",absence:"Missing feature",measurement:"Measurement",lighting:"Lighting",access:"Access / wandering",perception:"Misperception"};
@@ -445,9 +445,9 @@ const COLS=[
   {k:"model",l:"Model",cls:"l",f:r=>{const aws=/bedrock/i.test(r.provider);return `<span class="mname">${esc(pn(r.model))}</span><span class="badge ${aws?"b-aws":"b-direct"}">${esc(r.provider||"")}</span>`}},
   {k:"score",l:"Score",f:r=>`<div class="scorecell"><div class="sbar"><i style="width:${(r.score||0)*100}%"></i></div><b>${(r.score??0).toFixed(2)}</b></div>`},
   {k:"recall",l:"Recall",f:r=>pct(r.recall)},
-  {k:"precision",l:"Precision",f:r=>r.precision==null?'<span class="dim">—</span>':pct(r.precision)},
+  {k:"precision",l:"Precision",f:r=>r.precision==null?'<span class="dim">·</span>':pct(r.precision)},
   {k:"false_alarm",l:"False alarms",f:r=>`<span class="${r.false_alarm>=.25?"fa-hi":""}">${pct(r.false_alarm)}</span> <span class="dim" style="font-size:14px">${r.fp??""}${r.fp!=null?"/"+((r.fp||0)+(r.tn||0)):""}</span>`,asc:1},
-  {k:"loc_iou",l:"Loc IoU",f:r=>r.loc_iou==null?'<span class="dim">—</span>':r.loc_iou.toFixed(2)},
+  {k:"loc_iou",l:"Loc IoU",f:r=>r.loc_iou==null?'<span class="dim">·</span>':r.loc_iou.toFixed(2)},
   {k:"scenes_run",l:"Scenes",f:r=>`${r.scenes_run??"?"}<span class="dim">/${D.n_scenes_total||SCENES.length}</span>`},
 ];
 let sortK="score",sortAsc=false;
@@ -535,8 +535,8 @@ function openViewer(id){
   const gtList=s.hazards.length?s.hazards.map(h=>{
     const found=predIds.has(h.id);
     const who=MODELS.filter(m=>p[m]).map(m=>`<span class="${(p[m].pred||[]).includes(h.id)?"y":"n"}">${esc(pn(m))}</span>`).join("");
-    return `<div class="item"><span class="mark ${curModel?(found?"m-hit":"m-miss"):"m-gt"}">${curModel?(found?"HIT":"MISS"):"TRUTH"}</span><div><div class="nm">${esc(h.id)} · ${esc(hname(h.id))}</div><div class="ev">${TLABEL[htype(h)]} hazard${h.box?"":" · whole-room (no box)"}${s.verify?.note?" — "+esc(s.verify.note):""}</div><div class="dots">${who}</div></div></div>`}).join("")
-    :`<div class="item"><span class="mark m-gt">CLEAN</span><div><div class="nm">No seeded hazard.</div><div class="ev">Verified absent here: ${[...neg].map(h=>esc(h)+" "+esc(hname(h))).join("; ")||"—"}</div></div></div>`;
+    return `<div class="item"><span class="mark ${curModel?(found?"m-hit":"m-miss"):"m-gt"}">${curModel?(found?"HIT":"MISS"):"TRUTH"}</span><div><div class="nm">${esc(h.id)} · ${esc(hname(h.id))}</div><div class="ev">${TLABEL[htype(h)]} hazard${h.box?"":" · whole-room (no box)"}${s.verify?.note?". "+esc(s.verify.note):""}</div><div class="dots">${who}</div></div></div>`}).join("")
+    :`<div class="item"><span class="mark m-gt">CLEAN</span><div><div class="nm">No seeded hazard.</div><div class="ev">Verified absent here: ${[...neg].map(h=>esc(h)+" "+esc(hname(h))).join("; ")||"n/a"}</div></div></div>`;
   const prList=raw.length?raw.map(h=>{const c=cls(h);return `<div class="item"><span class="mark ${c==="hit"?"m-hit":c==="fa"?"m-fa":"m-unk"}">${c==="hit"?"HIT":c==="fa"?"FALSE ALARM":"UNSCORED"}</span><div><div class="nm">${esc(h.id||"?")} · ${esc(hname(h.id))}${h.severity?` <span class="dim" style="font-weight:500">(${esc(h.severity)})</span>`:""}</div><div class="ev">${esc(h.evidence||"")}</div></div></div>`}).join(""):`<div class="note">${curModel?"This model reported no hazards.":"No model output for this scene yet."}</div>`;
   $("#vbox").innerHTML=`<button class="vclose" onclick="closeViewer()">×</button>
     <div class="vtop"><div><div class="eyebrow">${esc(s.room)} · ${esc(s.id)}</div><h3>${esc(title)}</h3></div>

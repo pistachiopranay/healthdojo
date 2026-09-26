@@ -311,7 +311,7 @@ const H={
   scene_verified(ev){const sc=ev.scene,s=$(`#sc-${sc.row_id}`);if(!s)return;
     if(sc.box)setTimeout(()=>putBox(s.querySelector(".fig.e"),sc.box,"ground truth · "+sc.row_id),500);
     const v=sc.verified===true?'<span class="ok">✓ judge: hazard visible</span>':sc.verified===false?'<span class="bad">✗ judge: not clearly visible</span>':'judge: n/a';
-    s.querySelector(".log").innerHTML+=`<div>✓ pixel diff box · ${v}${sc.judge_note?` <span class="meta">— ${esc(sc.judge_note).slice(0,140)}</span>`:""}</div>`;},
+    s.querySelector(".log").innerHTML+=`<div>✓ pixel diff box · ${v}${sc.judge_note?` <span class="meta">· ${esc(sc.judge_note).slice(0,140)}</span>`:""}</div>`;},
   scene_rejected(ev){const s=$(`#sc-${ev.row_id}`);if(!s)return;
     s.querySelector(".log").innerHTML+=`<div class="bad">✗ judge rejected the live edit (${esc(ev.note).slice(0,110)}) → swapping in verified scene</div>`;},
   scene_failed(ev){const s=$(`#sc-${ev.row_id}`);if(s)s.querySelector(".log").innerHTML+=`<div class="bad">✗ ${esc(ev.msg)}</div>`;},
@@ -381,7 +381,7 @@ function verdict(b){
   let s=`Your model ranked <em>#${rank} of ${b.length}</em> on the scenes compiled from your guideline.`;
   if(missed.length)s+=` It missed <em>${missed.map(id=>{const r=rows.find(x=>x.id==id);return r?`${r.name.toLowerCase()} (${r.type})`:id;}).join(", ")}</em>.`;
   if(fa.length)s+=` False alarm on the clean room for ${fa.join(", ")}.`;
-  if(!missed.length&&!fa.length)s+=` Clean sweep on these scenes — the full suite is where it breaks.`;
+  if(!missed.length&&!fa.length)s+=` Clean sweep on these scenes. The full suite is where it breaks.`;
   $("#verdict").innerHTML=`<div class="verdict">${s}</div><div class="meta">2 scenes is a smoke test. The full report card runs your model on all 35 rubric rows × 6 rooms.</div>`;
   $("#cta").href="/report/#leaderboard"; $("#ctaMeta").textContent="HomeBench full suite · per-hazard, per-room, per-type recall and false-alarm rate";
 }

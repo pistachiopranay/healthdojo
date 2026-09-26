@@ -6,6 +6,8 @@ rm -rf .scratch/deploy && cp -R site .scratch/deploy && mkdir -p .scratch/deploy
 rsync -a --include='*/' --include='*.jpg' --include='*.json' --exclude='*' data/walks/ .scratch/deploy/walks/
 sed -i '' 's#\.\./data/walks/#walks/#g' .scratch/deploy/walk.html
 cp docs/pitch/HealthDojo_Pitch.html .scratch/deploy/pitch.html
+# no-em-dash: house style (Pranay) - strip em dashes from all published pages, including data-derived text
+find .scratch/deploy -name "*.html" -exec sed -i "" -e "s/ — /, /g" -e "s/—/-/g" {} +
 env -u AWS_ACCESS_KEY_ID -u AWS_SECRET_ACCESS_KEY -u AWS_SESSION_TOKEN AWS_PROFILE=pistachio \
   aws s3 sync .scratch/deploy s3://healthdojo-demo-pear --quiet --delete --exclude "curriculum-tmp/*"
 echo http://healthdojo-demo-pear.s3-website-us-east-1.amazonaws.com
