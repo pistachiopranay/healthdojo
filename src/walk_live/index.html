@@ -155,8 +155,8 @@ async function handle(ev,id){if(id!==runId)return;
     cam.yaw=ev.start.yaw;cam.pitch=ev.start.pitch;cam.fov=ev.start.fov;gtMarkers(ev.gt);window._gt=ev.gt;return;}
   if(ev.type==="thinking"){$("thinking").classList.add("on");$("stepn").innerHTML=`${ev.step}<small> / ${META.budget}</small>`;$("seen").src=ev.view_jpg_url;
     if(Math.abs(((ev.view.yaw-cam.yaw)%360+540)%360-180)>1||Math.abs(ev.view.pitch-cam.pitch)>1||Math.abs(ev.view.fov-cam.fov)>1)await tweenTo(ev.view);return;}
-  if(ev.type==="step"){$("thinking").classList.remove("on");$("stepn").innerHTML=`${ev.step}<small> / ${META.budget}</small>`;$("seen").src=ev.view_jpg_url;
-    await tweenTo(ev.view,600);path.push({...ev.view,n:ev.step});
+  if(ev.type==="step"){$("thinking").classList.remove("on");
+    await tweenTo(ev.view,600);$("stepn").innerHTML=`${ev.step}<small> / ${META.budget}</small>`;$("seen").src=ev.view_jpg_url;path.push({...ev.view,n:ev.step});
     setAct(actText(ev.action));$("sLat").textContent=ev.latency_s!=null?ev.latency_s+"s":"–";
     const g=ev.grading;$("sFound").innerHTML=g.found?`<span class="yes">✓ ${g.steps_to_find}</span>`:"–";$("sFlags").textContent=g.false_flags;$("sCov").textContent=Math.round(g.coverage*100)+"%";
     $("caption").classList.add("on");$("say").textContent=ev.say||"";$("th").textContent=ev.thought&&!ev.thought.startsWith((ev.say||"").replace(/(\.\.\.|\. Flagging it\.)$/,""))?ev.thought:"";

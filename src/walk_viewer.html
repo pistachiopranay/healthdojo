@@ -2,71 +2,72 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>HealthDojo · Walkthrough mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#F5F1E8;--card:#FFFDF8;--ink:#15201B;--ink2:#3A4540;--mute:#6E7670;--line:#E2DBCB;--line2:#EDE7DA;
-  --teal:#0E6B58;--teal2:#D6EAE2;--coral:#D5482A;--coral2:#FBE3DB;--amber:#C98A1B;--pred:#3D5AFE;--gt:#12A170;
-  --serif:"Fraunces",Georgia,serif;--sans:"Instrument Sans",-apple-system,system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --paper:#fcfcfa;--card:#ffffff;--ink:#1f2123;--ink2:#3a3d3f;--mute:#646668;--line:#e6e6e1;--line2:#f0f0ec;
+  --teal:#2e7a18;--teal2:#f3fedc;--coral:#eb5d2a;--amber:#8a6420;--pred:#d5fd51;--gt:#46a82c;
+  --lime:#d5fd51;--lime-active:#c7ef3d;--lime-soft:#f3fedc;--green-active:#46a82c;--gold:#f6c86a;--gold-soft:#fbeed3;--ember-soft:#fce7dd;--ember-ink:#b23e14;--cream:#f7f2e5;--cream-ink:#6b6350;
+  --serif:"Instrument Serif",Georgia,serif;--sans:"Inter",-apple-system,system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);font:19px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
 .wrap{max-width:1500px;margin:0 auto;padding:0 48px}
 .num{font-family:var(--mono);font-variant-numeric:tabular-nums}
-nav{position:sticky;top:0;z-index:40;background:rgba(245,241,232,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{position:sticky;top:0;z-index:40;background:rgba(252,252,250,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;gap:30px;height:68px}
-.logo{font-family:var(--serif);font-weight:700;font-size:28px;letter-spacing:-.02em;text-decoration:none;color:inherit}
-.logo i{font-style:normal;color:var(--teal)}
+.logo{font-family:var(--serif);font-weight:400;font-size:34px;letter-spacing:-.01em;text-decoration:none;color:inherit}
+.logo i{font-style:italic;color:var(--teal)}
 nav .links{margin-left:auto;display:flex;gap:24px;font-size:15px;font-weight:500}
 nav .links a{text-decoration:none;color:var(--ink2)}
 .eyebrow{font-family:var(--mono);font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:600}
-h1{font-family:var(--serif);font-weight:600;font-size:76px;line-height:1;letter-spacing:-.035em;margin:14px 0 0}
+h1{font-family:var(--serif);font-weight:400;font-size:88px;line-height:1;letter-spacing:-.01em;margin:14px 0 0}
 h1 em{font-style:italic;font-weight:400;color:var(--teal)}
 .lede{font-size:22px;color:var(--ink2);max-width:62ch;margin:18px 0 0}
-h2{font-family:var(--serif);font-weight:600;font-size:40px;letter-spacing:-.02em;margin:0 0 16px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px}
+h2{font-family:var(--serif);font-weight:400;font-size:48px;letter-spacing:-.01em;margin:0 0 16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px}
 .pick{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:12px}
 .pick b{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);width:80px}
-.chip{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:8px 16px;font:600 16px var(--sans);cursor:pointer;color:var(--ink2)}
-.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:8px 16px;font:500 16px var(--sans);cursor:pointer;color:var(--ink2)}
+.chip.on{background:var(--lime);color:var(--teal);border-color:var(--green-active)}
 .chip .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:7px;vertical-align:1px}
 .stage{margin-top:26px;display:grid;grid-template-columns:1fr 330px;gap:22px}
-.pano{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(21,32,27,.45);background:#222}
+.pano{position:relative;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#222}
 .pano img{display:block;width:100%}
 .pano svg{position:absolute;inset:0;width:100%;height:100%}
 .side{padding:22px 24px}
 .metric{border-bottom:1px solid var(--line2);padding:12px 0}
 .metric:last-child{border:0}
 .metric span{display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:600}
-.metric b{font-family:var(--serif);font-size:40px;font-weight:600;letter-spacing:-.02em;line-height:1.1}
-.yes{color:var(--gt)}.no{color:var(--coral)}
+.metric b{font-family:var(--mono);font-size:34px;font-weight:500;letter-spacing:-.02em;line-height:1.1}
+.yes{color:var(--teal)}.no{color:var(--ember-ink)}
 .legend{display:flex;gap:22px;font-size:15px;color:var(--ink2);margin-top:12px;flex-wrap:wrap}
 .legend i{display:inline-block;width:14px;height:14px;border-radius:50%;margin-right:6px;vertical-align:-2px}
 .film{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:18px}
-.frame{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;position:relative}
+.frame{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;position:relative}
 .frame img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover}
-.frame .n{position:absolute;top:10px;left:10px;background:var(--ink);color:#fff;font:600 16px var(--mono);border-radius:99px;padding:3px 11px}
-.frame.hit{border:3px solid var(--gt)}.frame.hit .n{background:var(--gt)}
-.frame.miss{border:3px solid var(--coral)}.frame.miss .n{background:var(--coral)}
+.frame .n{position:absolute;top:10px;left:10px;background:var(--ink);color:#fff;font:500 16px var(--mono);border-radius:99px;padding:3px 11px}
+.frame.hit{border:2px solid var(--gt)}.frame.hit .n{background:var(--gt)}
+.frame.miss{border:2px solid var(--coral)}.frame.miss .n{background:var(--coral)}
 .frame .cap{padding:12px 14px 14px}
 .act{font:600 14px var(--mono);color:var(--teal)}
 .frame.miss .act{color:var(--coral)}.frame.hit .act{color:var(--gt)}
 .th{font-size:16px;line-height:1.4;color:var(--ink2);margin-top:6px}
-.sawit{position:absolute;top:10px;right:10px;background:var(--amber);color:#fff;font:600 12px var(--mono);border-radius:99px;padding:3px 9px}
+.sawit{position:absolute;top:10px;right:10px;background:var(--gold);color:#5a4010;font:500 12px var(--mono);border-radius:99px;padding:3px 9px}
 table.lb{width:100%;border-collapse:collapse;font-size:18px}
 .lb th{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:600;text-align:right;padding:16px 18px;border-bottom:1px solid var(--line)}
 .lb th.l,.lb td.l{text-align:left}
 .lb td{padding:14px 18px;border-bottom:1px solid var(--line2);text-align:right;font-family:var(--mono);font-size:18px}
 .lb td.l{font-family:var(--sans);font-weight:600}
 .lb tr:last-child td{border:0}
-.lb .rk{font-family:var(--serif);font-size:24px;color:var(--mute);width:50px}
-.bar{display:inline-block;height:10px;border-radius:5px;background:var(--teal);vertical-align:1px;margin-right:10px}
+.lb .rk{font-family:var(--mono);font-size:20px;color:var(--mute);width:50px}
+.bar{display:inline-block;height:10px;border-radius:5px;background:var(--lime);border:1px solid var(--green-active);vertical-align:1px;margin-right:10px}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:6px}
 .matrix td{font-size:16px}
 .note{font-size:15px;color:var(--mute);margin-top:14px;max-width:110ch}
 section{padding:40px 0}
 </style></head><body>
-<nav><div class="wrap"><a class="logo" href="index.html">Health<i>Dojo</i></a><div class="links"><a href="index.html">Benchmark</a><a href="worlds_3d.html">3D worlds</a><a href="walk.html" style="color:var(--ink);border-bottom:2px solid var(--teal)">Walkthrough</a></div></div></nav>
+<nav><div class="wrap"><a class="logo" href="index.html">Health<i>Dojo</i></a><div class="links"><a href="index.html">Benchmark</a><a href="worlds_3d.html">3D worlds</a><a href="walk.html" style="color:var(--ink);border-bottom:2px solid var(--green-active)">Walkthrough</a><a href="http://localhost:8792/">Live ▶</a></div></div></nav>
 <div class="wrap">
 <section style="padding-top:56px">
   <div class="eyebrow">Walkthrough mode · embodied eval</div>
@@ -77,7 +78,7 @@ section{padding:40px 0}
   <div class="stage">
     <div>
       <div class="pano"><img id="panoImg" alt=""><svg id="ov" viewBox="0 0 1600 800" preserveAspectRatio="none"></svg></div>
-      <div class="legend"><span><i style="background:var(--gt)"></i>Seeded hazard (ground truth)</span><span><i style="background:#fff;border:3px solid var(--pred)"></i>Where the model looked (numbered)</span><span><i style="background:var(--coral)"></i>Flag (miss)</span><span><i style="background:var(--gt);border:3px solid #fff"></i>Flag (hit)</span><span><i style="background:var(--amber)"></i>Hazard in view</span></div>
+      <div class="legend"><span><i style="background:var(--gold)"></i>Seeded hazard (ground truth)</span><span><i style="background:var(--lime);border:2px solid var(--teal)"></i>Where the model looked (numbered)</span><span><i style="background:#eb5d2a"></i>Flag (miss)</span><span><i style="background:#5ac53a"></i>Flag (hit)</span></div>
     </div>
     <div class="card side" id="side"></div>
   </div>
@@ -94,7 +95,6 @@ section{padding:40px 0}
 </div>
 <script>
 const D = /*__DATA__*/null;
-const COLORS = ["#0E6B58","#3D5AFE","#D5482A","#C98A1B","#7B3FA0","#15201B"];
 const worlds = Object.keys(D.worlds), models = D.leaderboard.map(r=>r.model);
 let W = worlds[0], M = models[0];
 document.getElementById("budget").textContent = D.budget;
@@ -115,7 +115,7 @@ function chips(){
   const wp=document.getElementById("worldPick"), mp=document.getElementById("modelPick");
   wp.innerHTML="<b>World</b>"+worlds.map(w=>`<button class="chip ${w===W?"on":""}" data-w="${w}">${D.worlds[w].title}</button>`).join("");
   mp.innerHTML="<b>Model</b>"+models.map((m,i)=>{const r=D.runs.find(r=>r.scene===W&&r.model===m);const ok=r&&r.metrics.found;
-    return `<button class="chip ${m===M?"on":""}" data-m="${m}"><span class="dot" style="background:${ok?"var(--gt)":"var(--coral)"}"></span>${m}</button>`}).join("");
+    return `<button class="chip ${m===M?"on":""}" data-m="${m}"><span class="dot" style="background:${ok?"#5ac53a":"#eb5d2a"}"></span>${m}</button>`}).join("");
   wp.querySelectorAll("button").forEach(b=>b.onclick=()=>{W=b.dataset.w;draw();});
   mp.querySelectorAll("button").forEach(b=>b.onclick=()=>{M=b.dataset.m;draw();});
 }
@@ -125,29 +125,29 @@ function draw(){
   document.getElementById("panoImg").src=w.pano;
   let s="";
   for(const g of w.regions){const [x,y]=toXY(g.yaw,g.pitch);const rr=Math.max(g.r,10)/360*1600;
-    s+=`<ellipse cx="${x}" cy="${y}" rx="${rr}" ry="${rr*Math.max(1,1/Math.cos(g.pitch*Math.PI/180))*0.9}" fill="rgba(18,161,112,.18)" stroke="#12A170" stroke-width="5" stroke-dasharray="14 8"/>`;
-    s+=`<text x="${x}" y="${y-rr-14}" text-anchor="middle" font-family="Instrument Sans" font-weight="700" font-size="26" fill="#fff" stroke="#12A170" stroke-width="7" paint-order="stroke">${g.label}</text>`;}
+    s+=`<ellipse cx="${x}" cy="${y}" rx="${rr}" ry="${rr*Math.max(1,1/Math.cos(g.pitch*Math.PI/180))*0.9}" fill="rgba(246,200,106,.18)" stroke="#f6c86a" stroke-width="5" stroke-dasharray="14 8"/>`;
+    s+=`<text x="${x}" y="${y-rr-14}" text-anchor="middle" font-family="Inter" font-weight="600" font-size="26" fill="#5a4010" stroke="#f6c86a" stroke-width="8" paint-order="stroke">${g.label}</text>`;}
   if(r){
     const steps=r.steps, pts=steps.map(st=>toXY(st.view.yaw,st.view.pitch));
     steps.forEach((st,i)=>{ if(i>0&&pts[i][0]===pts[i-1][0]&&pts[i][1]===pts[i-1][1]) return;
-      s+=`<path d="${polyPath(footprint(st.view))}" fill="none" stroke="rgba(61,90,254,.55)" stroke-width="3"/>`;});
+      s+=`<path d="${polyPath(footprint(st.view))}" fill="none" stroke="rgba(213,253,81,.8)" stroke-width="3"/>`;});
     for(let i=1;i<pts.length;i++){const a=pts[i-1],b=pts[i];let dx=b[0]-a[0];if(dx>800)dx-=1600;if(dx<-800)dx+=1600;
       if(Math.abs(dx)<1&&Math.abs(b[1]-a[1])<1)continue;
       const segs=[[a,[a[0]+dx,b[1]]]]; if(a[0]+dx<0||a[0]+dx>1600) segs.push([[b[0]-dx,a[1]],b]);
-      for(const [p,q] of segs) s+=`<line x1="${p[0]}" y1="${p[1]}" x2="${q[0]}" y2="${q[1]}" stroke="#3D5AFE" stroke-width="6" marker-end="url(#ar)" opacity=".95"/>`;}
+      for(const [p,q] of segs) s+=`<line x1="${p[0]}" y1="${p[1]}" x2="${q[0]}" y2="${q[1]}" stroke="#d5fd51" stroke-width="6" marker-end="url(#ar)" opacity=".95"/>`;}
     const seen={};
     steps.forEach((st,i)=>{const [x,y]=pts[i];const k=x.toFixed(0)+","+y.toFixed(0);const off=(seen[k]=(seen[k]||0)+1)-1;
-      s+=`<circle cx="${x+off*34}" cy="${y}" r="21" fill="#fff" stroke="#3D5AFE" stroke-width="5"/><text x="${x+off*34}" y="${y+9}" text-anchor="middle" font-family="JetBrains Mono" font-weight="700" font-size="24" fill="#15201B">${st.step}</text>`;
+      s+=`<circle cx="${x+off*34}" cy="${y}" r="21" fill="#d5fd51" stroke="#2e7a18" stroke-width="3"/><text x="${x+off*34}" y="${y+9}" text-anchor="middle" font-family="IBM Plex Mono" font-weight="500" font-size="24" fill="#2e7a18">${st.step}</text>`;
       if(st.flag_dir){const [fx,fy]=toXY(st.flag_dir[0],st.flag_dir[1]);
-        s+=`<circle cx="${fx}" cy="${fy}" r="16" fill="${st.correct?"#12A170":"#D5482A"}" stroke="#fff" stroke-width="5"/><text x="${fx}" y="${fy+44}" text-anchor="middle" font-family="JetBrains Mono" font-weight="700" font-size="22" fill="#fff" stroke="${st.correct?"#12A170":"#D5482A"}" stroke-width="6" paint-order="stroke">${st.step}·${st.action.hazard_id||"?"}</text>`;}
+        s+=`<circle cx="${fx}" cy="${fy}" r="16" fill="${st.correct?"#5ac53a":"#eb5d2a"}" stroke="#fff" stroke-width="5"/><text x="${fx}" y="${fy+44}" text-anchor="middle" font-family="IBM Plex Mono" font-weight="500" font-size="22" fill="#fff" stroke="${st.correct?"#46a82c":"#eb5d2a"}" stroke-width="6" paint-order="stroke">${st.step}·${st.action.hazard_id||"?"}</text>`;}
     });
   }
-  document.getElementById("ov").innerHTML=`<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0L10 5L0 10z" fill="#3D5AFE"/></marker></defs>`+s;
+  document.getElementById("ov").innerHTML=`<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="4" markerHeight="4" orient="auto"><path d="M0 0L10 5L0 10z" fill="#d5fd51"/></marker></defs>`+s;
   const m=r?r.metrics:null;
   document.getElementById("side").innerHTML=`<div class="eyebrow" style="font-size:12px">${w.hazard_id} · ${w.hazard_name}</div>
    <div style="font-size:16px;color:var(--ink2);margin:8px 0 6px">${w.hazard}</div>`+(m?`
    <div class="metric"><span>Found seeded hazard</span><b class="${m.found?"yes":"no"}">${m.found?"Yes · step "+m.steps_to_find:"No"}</b></div>
-   <div class="metric"><span>Had it in view</span><b>${m.saw_hazard?"Yes":"No"}</b></div>
+   <div class="metric"><span>Had it in view</span><b style="color:${m.saw_hazard?"var(--amber)":"inherit"}">${m.saw_hazard?"Yes":"No"}</b></div>
    <div class="metric"><span>Off-target flags</span><b class="num">${m.false_flags}</b></div>
    <div class="metric"><span>Sphere coverage</span><b class="num">${Math.round(m.coverage*100)}%</b></div>
    <div class="metric"><span>Steps used</span><b class="num">${r.steps.length} / ${D.budget}</b></div>`:"<p>No run.</p>");
@@ -168,7 +168,7 @@ function board(){
   document.getElementById("lbnote").textContent=`Found = flagged the seeded hazard id with the flag box within ${D.tol_deg}° of the hand-annotated hazard location in the panorama. Off-target flags include real but un-seeded hazards (these generated homes contain more than one), so read them as "attention spent elsewhere", not strictly as errors. Coverage = share of the full sphere the model ever had in view.`;
   document.getElementById("mx").innerHTML=`<thead><tr><th class="l">Model</th>${worlds.map(w=>`<th>${D.worlds[w].title}</th>`).join("")}</tr></thead><tbody>`+
    models.map(m=>`<tr><td class="l">${m}</td>${worlds.map(w=>{const r=D.runs.find(r=>r.scene===w&&r.model===m);if(!r)return"<td>–</td>";const x=r.metrics;
-     return `<td style="cursor:pointer" onclick="W='${w}';M='${m}';draw();scrollTo({top:0,behavior:'smooth'})" class="${x.found?"yes":"no"}">${x.found?"✓ step "+x.steps_to_find:(x.saw_hazard?"saw, missed":"✗ never saw")}</td>`}).join("")}</tr>`).join("")+"</tbody>";
+     return `<td style="cursor:pointer" onclick="W='${w}';M='${m}';draw();scrollTo({top:0,behavior:'smooth'})" class="${x.found?"yes":"no"}">${x.found?"✓ step "+x.steps_to_find:(x.saw_hazard?"<span style='color:var(--amber)'>saw, missed</span>":"✗ never saw")}</td>`}).join("")}</tr>`).join("")+"</tbody>";
 }
 const q=new URLSearchParams(location.search); if(q.get("w"))W=q.get("w"); if(q.get("m"))M=q.get("m");
 board(); draw();
