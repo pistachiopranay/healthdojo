@@ -1,0 +1,17 @@
+{
+ "id": "fal-L3-004",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"high\", \"evidence\": \"A rug is on the floor and appears to be loose or not secured properly.\", \"box\": [170, 760, 630, 950]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "A rug is on the floor and appears to be loose or not secured properly.",
+   "box": [
+    170,
+    760,
+    630,
+    950
+   ]
+  }
+ ]
+}

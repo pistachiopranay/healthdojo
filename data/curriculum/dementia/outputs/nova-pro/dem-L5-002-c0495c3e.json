@@ -1,0 +1,28 @@
+{
+ "id": "dem-L5-002",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B01\", \"severity\": \"medium\", \"evidence\": \"Razor and medications out on the sink\", \"box\": [785, 499, 823, 741]}, {\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"White toilet seat on white toilet and floor (low contrast)\", \"box\": [515, 671, 715, 802]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B01",
+   "severity": "medium",
+   "evidence": "Razor and medications out on the sink",
+   "box": [
+    785,
+    499,
+    823,
+    741
+   ]
+  },
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White toilet seat on white toilet and floor (low contrast)",
+   "box": [
+    515,
+    671,
+    715,
+    802
+   ]
+  }
+ ]
+}

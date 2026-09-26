@@ -1,0 +1,17 @@
+{
+ "id": "dem-L5-010",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B01\", \"severity\": \"medium\", \"evidence\": \"Soap dispenser on the sink\", \"box\": [77, 0, 144, 142]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B01",
+   "severity": "medium",
+   "evidence": "Soap dispenser on the sink",
+   "box": [
+    77,
+    0,
+    144,
+    142
+   ]
+  }
+ ]
+}

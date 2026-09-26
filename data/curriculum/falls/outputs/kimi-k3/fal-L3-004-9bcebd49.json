@@ -1,0 +1,33 @@
+{
+ "id": "fal-L3-004",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"high\", \"evidence\": \"Worn, unsecured throw rug with fringed edges lying loose in the main walking path across the wood floor.\", \"box\": [153, 776, 704, 956]}, {\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"Shoes/boots and piles of clothes/blankets left on the floor in the walkway, narrowing and obstructing the path for a walker.\", \"box\": [478, 813, 783, 980]}, {\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"Strong direct sunlight through the large window creates bright glare patches and deep shadows on the floor that can visually obscure the rug edge and floor items.\"}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Worn, unsecured throw rug with fringed edges lying loose in the main walking path across the wood floor.",
+   "box": [
+    153,
+    776,
+    704,
+    956
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Shoes/boots and piles of clothes/blankets left on the floor in the walkway, narrowing and obstructing the path for a walker.",
+   "box": [
+    478,
+    813,
+    783,
+    980
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Strong direct sunlight through the large window creates bright glare patches and deep shadows on the floor that can visually obscure the rug edge and floor items."
+  }
+ ]
+}

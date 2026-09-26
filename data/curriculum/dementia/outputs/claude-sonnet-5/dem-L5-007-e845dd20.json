@@ -1,0 +1,17 @@
+{
+ "id": "dem-L5-007",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"White toilet seat and white toilet bowl against light-colored tile flooring, creating low visual contrast that could make the toilet hard to distinguish for someone with dementia-related visual perception issues\", \"box\": [660, 570, 930, 850]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White toilet seat and white toilet bowl against light-colored tile flooring, creating low visual contrast that could make the toilet hard to distinguish for someone with dementia-related visual perception issues",
+   "box": [
+    660,
+    570,
+    930,
+    850
+   ]
+  }
+ ]
+}

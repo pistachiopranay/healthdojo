@@ -1,0 +1,28 @@
+{
+ "id": "dem-L5-010",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-B01\", \"severity\": \"high\", \"evidence\": \"Toothbrush holder and electric toothbrush on the sink counter\", \"box\": [0, 0, 430, 320]},\n    {\"id\": \"DEM-B04\", \"severity\": \"high\", \"evidence\": \"Plugged-in electric toothbrush on the floor\", \"box\": [430, 0, 1000, 1000]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-B01",
+   "severity": "high",
+   "evidence": "Toothbrush holder and electric toothbrush on the sink counter",
+   "box": [
+    0,
+    0,
+    430,
+    320
+   ]
+  },
+  {
+   "id": "DEM-B04",
+   "severity": "high",
+   "evidence": "Plugged-in electric toothbrush on the floor",
+   "box": [
+    430,
+    0,
+    1000,
+    1000
+   ]
+  }
+ ]
+}

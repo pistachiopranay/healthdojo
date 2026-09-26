@@ -1,0 +1,28 @@
+{
+ "id": "fal-L2-001",
+ "raw": "{\"hazards\":[{\"id\":\"ENT-02\",\"severity\":\"medium\",\"evidence\":\"A raised sill is visible at the bottom of the entry door, where walker wheels could catch.\",\"box\":[378,355,439,382]},{\"id\":\"LIV-05\",\"severity\":\"low\",\"evidence\":\"Strong daylight glare and high contrast are visible around the large windows and reflected on the floor.\",\"box\":[651,0,866,483]}]}",
+ "hazards": [
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "A raised sill is visible at the bottom of the entry door, where walker wheels could catch.",
+   "box": [
+    378,
+    355,
+    439,
+    382
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Strong daylight glare and high contrast are visible around the large windows and reflected on the floor.",
+   "box": [
+    651,
+    0,
+    866,
+    483
+   ]
+  }
+ ]
+}

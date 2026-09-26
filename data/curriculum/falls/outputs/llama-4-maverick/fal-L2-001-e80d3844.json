@@ -1,0 +1,17 @@
+{
+ "id": "fal-L2-001",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-04\", \"severity\": \"medium\", \"evidence\": \"The recliner on the left has no armrest on one side, and the chair on the right has low seating.\", \"box\": [100, 240, 400, 650]}]}",
+ "hazards": [
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "The recliner on the left has no armrest on one side, and the chair on the right has low seating.",
+   "box": [
+    100,
+    240,
+    400,
+    650
+   ]
+  }
+ ]
+}

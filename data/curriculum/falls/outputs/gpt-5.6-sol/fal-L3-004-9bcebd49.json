@@ -1,0 +1,39 @@
+{
+ "id": "fal-L3-004",
+ "raw": "{\"hazards\":[{\"id\":\"LIV-01\",\"severity\":\"high\",\"evidence\":\"A loose, rumpled throw rug lies across the walking area and can catch walker legs or feet.\",\"box\":[157,769,690,956]},{\"id\":\"LIV-03\",\"severity\":\"high\",\"evidence\":\"Shoes and piles of clothing obstruct and narrow the central walking path.\",\"box\":[475,811,790,980]},{\"id\":\"LIV-07\",\"severity\":\"high\",\"evidence\":\"A pet is lying on the floor in the walking area and could move underfoot or beneath the walker.\",\"box\":[540,814,625,878]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "A loose, rumpled throw rug lies across the walking area and can catch walker legs or feet.",
+   "box": [
+    157,
+    769,
+    690,
+    956
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Shoes and piles of clothing obstruct and narrow the central walking path.",
+   "box": [
+    475,
+    811,
+    790,
+    980
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "A pet is lying on the floor in the walking area and could move underfoot or beneath the walker.",
+   "box": [
+    540,
+    814,
+    625,
+    878
+   ]
+  }
+ ]
+}

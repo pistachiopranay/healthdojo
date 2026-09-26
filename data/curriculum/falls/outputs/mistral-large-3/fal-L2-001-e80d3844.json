@@ -1,0 +1,61 @@
+{
+ "id": "fal-L2-001",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"No visible throw rugs, but the room has a large expanse of unsecured wooden flooring that could be slippery for someone using a walker.\",\n      \"box\": [0, 400, 1000, 800]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The blue recliner and beige sofa lack armrests at the point of sitting or standing, which may make it difficult for someone recovering from surgery to rise safely.\",\n      \"box\": [100, 450, 400, 700]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The right-side sofa lacks armrests at the edge, which may hinder safe transfers.\",\n      \"box\": [650, 450, 1000, 700]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The lighting appears adequate, but glare from the large windows could pose a minor issue.\",\n      \"box\": [500, 0, 1000, 300]\n    },\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Although not a bedroom, the living area has tight spaces between furniture that may restrict walker clearance.\",\n      \"box\": [0, 400, 1000, 800]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "No visible throw rugs, but the room has a large expanse of unsecured wooden flooring that could be slippery for someone using a walker.",
+   "box": [
+    0,
+    400,
+    1000,
+    800
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "The blue recliner and beige sofa lack armrests at the point of sitting or standing, which may make it difficult for someone recovering from surgery to rise safely.",
+   "box": [
+    100,
+    450,
+    400,
+    700
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "The right-side sofa lacks armrests at the edge, which may hinder safe transfers.",
+   "box": [
+    650,
+    450,
+    1000,
+    700
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The lighting appears adequate, but glare from the large windows could pose a minor issue.",
+   "box": [
+    500,
+    0,
+    1000,
+    300
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "Although not a bedroom, the living area has tight spaces between furniture that may restrict walker clearance.",
+   "box": [
+    0,
+    400,
+    1000,
+    800
+   ]
+  }
+ ]
+}

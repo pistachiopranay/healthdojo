@@ -1,0 +1,28 @@
+{
+ "id": "dem-L5-010",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-B04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"An electric toothbrush is plugged in and standing upright on the floor next to the vanity, posing a tripping and electrical hazard.\",\n      \"box\": [521, 223, 606, 437]\n    },\n    {\n      \"id\": \"DEM-B03\",\n      \"severity\": \"low\",\n      \"evidence\": \"A beige bath mat is placed on a similarly colored carpet, creating low contrast that may be difficult for someone with dementia to perceive, increasing fall risk.\",\n      \"box\": [269, 445, 670, 925]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-B04",
+   "severity": "medium",
+   "evidence": "An electric toothbrush is plugged in and standing upright on the floor next to the vanity, posing a tripping and electrical hazard.",
+   "box": [
+    521,
+    223,
+    606,
+    437
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "low",
+   "evidence": "A beige bath mat is placed on a similarly colored carpet, creating low contrast that may be difficult for someone with dementia to perceive, increasing fall risk.",
+   "box": [
+    269,
+    445,
+    670,
+    925
+   ]
+  }
+ ]
+}

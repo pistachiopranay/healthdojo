@@ -1,0 +1,39 @@
+{
+ "id": "fal-L3-004",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A worn, loose rug is lying on the wooden floor in the center of the room, creating a tripping hazard for someone using a walker.\",\n      \"box\": [154, 775, 700, 950]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Clothing and shoes are piled on the floor near the rug, narrowing the walking path and creating obstacles for a walker user.\",\n      \"box\": [480, 810, 782, 980]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"Bright sunlight creates strong glare and high-contrast shadows on the floor and walls, which may impair depth perception for someone with limited mobility.\",\n      \"box\": [0, 0, 1000, 1000]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A worn, loose rug is lying on the wooden floor in the center of the room, creating a tripping hazard for someone using a walker.",
+   "box": [
+    154,
+    775,
+    700,
+    950
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Clothing and shoes are piled on the floor near the rug, narrowing the walking path and creating obstacles for a walker user.",
+   "box": [
+    480,
+    810,
+    782,
+    980
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Bright sunlight creates strong glare and high-contrast shadows on the floor and walls, which may impair depth perception for someone with limited mobility.",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  }
+ ]
+}

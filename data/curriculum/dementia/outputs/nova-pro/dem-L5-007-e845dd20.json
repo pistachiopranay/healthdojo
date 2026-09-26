@@ -1,0 +1,17 @@
+{
+ "id": "dem-L5-007",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B01\", \"severity\": \"medium\", \"evidence\": \"Razor and medications out on the sink\", \"box\": [778, 451, 833, 531]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B01",
+   "severity": "medium",
+   "evidence": "Razor and medications out on the sink",
+   "box": [
+    778,
+    451,
+    833,
+    531
+   ]
+  }
+ ]
+}

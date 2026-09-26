@@ -1,0 +1,39 @@
+{
+ "id": "dem-L5-010",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove and oven knobs are visible and freely accessible, posing a risk of the stove being turned on accidentally.\",\n      \"box\": [50, 100, 200, 250]\n    },\n    {\n      \"id\": \"DEM-B04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Plugged-in electric toothbrush near the sink, which could pose an electrical hazard if exposed to water.\",\n      \"box\": [500, 200, 550, 400]\n    },\n    {\n      \"id\": \"DEM-B03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Light-colored bath mat on a light-colored floor, which may be difficult for someone with dementia to distinguish.\",\n      \"box\": [300, 450, 700, 700]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove and oven knobs are visible and freely accessible, posing a risk of the stove being turned on accidentally.",
+   "box": [
+    50,
+    100,
+    200,
+    250
+   ]
+  },
+  {
+   "id": "DEM-B04",
+   "severity": "high",
+   "evidence": "Plugged-in electric toothbrush near the sink, which could pose an electrical hazard if exposed to water.",
+   "box": [
+    500,
+    200,
+    550,
+    400
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "medium",
+   "evidence": "Light-colored bath mat on a light-colored floor, which may be difficult for someone with dementia to distinguish.",
+   "box": [
+    300,
+    450,
+    700,
+    700
+   ]
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "fal-L2-001",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"Small footstool/ottoman positioned next to the recliner, protruding into the walking path where someone using a walker would need to pass\", \"box\": [478, 388, 555, 480]}]}",
+ "hazards": [
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Small footstool/ottoman positioned next to the recliner, protruding into the walking path where someone using a walker would need to pass",
+   "box": [
+    478,
+    388,
+    555,
+    480
+   ]
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "id": "fal-L2-001",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Low or soft seating without armrests - the grey armchair lacks armrests, which could make it difficult for an older adult to rise from a seated position, especially after hip or knee replacement surgery.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "Low or soft seating without armrests - the grey armchair lacks armrests, which could make it difficult for an older adult to rise from a seated position, especially after hip or knee replacement surgery.",
+   "box": null
+  }
+ ]
+}

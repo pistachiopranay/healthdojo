@@ -1,0 +1,17 @@
+{
+ "id": "dem-L5-002",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"White closed toilet seat/lid on a white toilet against a light beige floor and wall, creating very low contrast that can be hard for someone with dementia to distinguish.\", \"box\": [513, 549, 717, 998]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White closed toilet seat/lid on a white toilet against a light beige floor and wall, creating very low contrast that can be hard for someone with dementia to distinguish.",
+   "box": [
+    513,
+    549,
+    717,
+    998
+   ]
+  }
+ ]
+}

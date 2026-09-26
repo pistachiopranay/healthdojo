@@ -1,0 +1,39 @@
+{
+ "id": "dem-L5-007",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-B02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"White toilet seat on a similarly colored floor and wall, creating low contrast which may be difficult to distinguish for someone with dementia.\",\n      \"box\": [600, 400, 850, 700]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Cleaning chemicals or toiletries potentially stored in the under-sink cabinet or near the toilet, which may be accessible and unlocked.\",\n      \"box\": [700, 500, 800, 650]\n    },\n    {\n      \"id\": \"DEM-B04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Electric toothbrush and other small appliances near the sink which could be hazardous if misused.\",\n      \"box\": [850, 300, 950, 450]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White toilet seat on a similarly colored floor and wall, creating low contrast which may be difficult to distinguish for someone with dementia.",
+   "box": [
+    600,
+    400,
+    850,
+    700
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "Cleaning chemicals or toiletries potentially stored in the under-sink cabinet or near the toilet, which may be accessible and unlocked.",
+   "box": [
+    700,
+    500,
+    800,
+    650
+   ]
+  },
+  {
+   "id": "DEM-B04",
+   "severity": "high",
+   "evidence": "Electric toothbrush and other small appliances near the sink which could be hazardous if misused.",
+   "box": [
+    850,
+    300,
+    950,
+    450
+   ]
+  }
+ ]
+}

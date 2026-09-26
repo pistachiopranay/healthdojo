@@ -1,0 +1,50 @@
+{
+ "id": "fal-L3-004",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose rug on the floor without a non-slip pad or secure edges\",\n      \"box\": [150, 700, 700, 850]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Clothing and shoes on the floor creating a cluttered walking path\",\n      \"box\": [400, 750, 800, 850]\n    },\n    {\n      \"id\": \"BED-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Floor clutter around what appears to be a sleeping or resting area\",\n      \"box\": [400, 750, 800, 850]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Shadows and uneven lighting in the room, which could contribute to poor visibility\",\n      \"box\": [0, 0, 1000, 800]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose rug on the floor without a non-slip pad or secure edges",
+   "box": [
+    150,
+    700,
+    700,
+    850
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Clothing and shoes on the floor creating a cluttered walking path",
+   "box": [
+    400,
+    750,
+    800,
+    850
+   ]
+  },
+  {
+   "id": "BED-04",
+   "severity": "high",
+   "evidence": "Floor clutter around what appears to be a sleeping or resting area",
+   "box": [
+    400,
+    750,
+    800,
+    850
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Shadows and uneven lighting in the room, which could contribute to poor visibility",
+   "box": [
+    0,
+    0,
+    1000,
+    800
+   ]
+  }
+ ]
+}

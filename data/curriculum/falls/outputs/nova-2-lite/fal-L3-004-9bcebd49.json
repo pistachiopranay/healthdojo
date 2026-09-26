@@ -1,0 +1,28 @@
+{
+ "id": "fal-L3-004",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Loose rug on floor\",\n      \"box\": [155, 751, 720, 965]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cluttered walking path with shoes and clothing on floor\",\n      \"box\": [155, 751, 720, 965]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Loose rug on floor",
+   "box": [
+    155,
+    751,
+    720,
+    965
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Cluttered walking path with shoes and clothing on floor",
+   "box": [
+    155,
+    751,
+    720,
+    965
+   ]
+  }
+ ]
+}

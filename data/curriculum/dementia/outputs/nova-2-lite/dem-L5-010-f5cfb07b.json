@@ -1,0 +1,12 @@
+{
+ "id": "dem-L5-010",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-B03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The beige bath mat on a light-colored carpet creates low contrast, making it difficult for someone with dementia to see and potentially leading to falls.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-B03",
+   "severity": "medium",
+   "evidence": "The beige bath mat on a light-colored carpet creates low contrast, making it difficult for someone with dementia to see and potentially leading to falls.",
+   "box": null
+  }
+ ]
+}

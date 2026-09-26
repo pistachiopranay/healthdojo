@@ -1,0 +1,17 @@
+{
+ "id": "dem-L5-002",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"White toilet seat and white toilet body blend together, both closely matching the pale wall color, making the toilet outline hard to distinguish\", \"box\": [660, 470, 900, 800]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White toilet seat and white toilet body blend together, both closely matching the pale wall color, making the toilet outline hard to distinguish",
+   "box": [
+    660,
+    470,
+    900,
+    800
+   ]
+  }
+ ]
+}

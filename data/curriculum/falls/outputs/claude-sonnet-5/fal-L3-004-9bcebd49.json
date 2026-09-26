@@ -1,0 +1,28 @@
+{
+ "id": "fal-L3-004",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"high\", \"evidence\": \"Loose area rug lying on the wood floor in the main walking path between the window and doorway\", \"box\": [280, 650, 850, 800]}, {\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"Shoes and clothing (blanket/clothes) piled on the floor on top of the rug, narrowing and cluttering the walking path\", \"box\": [560, 680, 950, 790]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose area rug lying on the wood floor in the main walking path between the window and doorway",
+   "box": [
+    280,
+    650,
+    850,
+    800
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Shoes and clothing (blanket/clothes) piled on the floor on top of the rug, narrowing and cluttering the walking path",
+   "box": [
+    560,
+    680,
+    950,
+    790
+   ]
+  }
+ ]
+}

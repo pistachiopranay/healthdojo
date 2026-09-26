@@ -1,0 +1,28 @@
+{
+ "id": "dem-L5-002",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-B02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"White toilet seat on white floor and walls, creating low contrast that may be difficult to distinguish for someone with dementia.\",\n      \"box\": [600, 350, 800, 700]\n    },\n    {\n      \"id\": \"DEM-R02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Patterned rug on the floor may cause confusion or misperception for someone with dementia.\",\n      \"box\": [300, 650, 700, 850]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White toilet seat on white floor and walls, creating low contrast that may be difficult to distinguish for someone with dementia.",
+   "box": [
+    600,
+    350,
+    800,
+    700
+   ]
+  },
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "Patterned rug on the floor may cause confusion or misperception for someone with dementia.",
+   "box": [
+    300,
+    650,
+    700,
+    850
+   ]
+  }
+ ]
+}

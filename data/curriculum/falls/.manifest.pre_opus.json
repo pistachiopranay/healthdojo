@@ -1270,32 +1270,32 @@
     "n_distractors": 0
    },
    "2": {
-    "n_items": 13,
-    "recall": 0.615,
+    "n_items": 14,
+    "recall": 0.571,
     "distractor_false_flag": null,
-    "n_hazards": 13,
+    "n_hazards": 14,
     "n_distractors": 0
    },
    "3": {
-    "n_items": 10,
-    "recall": 0.7,
-    "distractor_false_flag": 0.5,
-    "n_hazards": 20,
-    "n_distractors": 10
+    "n_items": 11,
+    "recall": 0.773,
+    "distractor_false_flag": 0.545,
+    "n_hazards": 22,
+    "n_distractors": 11
    },
    "4": {
-    "n_items": 5,
-    "recall": 0.611,
-    "distractor_false_flag": 0.571,
-    "n_hazards": 18,
-    "n_distractors": 7
+    "n_items": 9,
+    "recall": 0.676,
+    "distractor_false_flag": 0.429,
+    "n_hazards": 34,
+    "n_distractors": 14
    },
    "5": {
-    "n_items": 4,
-    "recall": 0.625,
-    "distractor_false_flag": 0.125,
-    "n_hazards": 8,
-    "n_distractors": 8
+    "n_items": 5,
+    "recall": 0.538,
+    "distractor_false_flag": 0.2,
+    "n_hazards": 13,
+    "n_distractors": 10
    }
   },
   "nova-2-lite": {
@@ -1307,32 +1307,32 @@
     "n_distractors": 0
    },
    "2": {
-    "n_items": 13,
-    "recall": 0.462,
+    "n_items": 14,
+    "recall": 0.429,
     "distractor_false_flag": null,
-    "n_hazards": 13,
+    "n_hazards": 14,
     "n_distractors": 0
    },
    "3": {
-    "n_items": 10,
-    "recall": 0.55,
-    "distractor_false_flag": 0.2,
-    "n_hazards": 20,
-    "n_distractors": 10
+    "n_items": 11,
+    "recall": 0.591,
+    "distractor_false_flag": 0.364,
+    "n_hazards": 22,
+    "n_distractors": 11
    },
    "4": {
-    "n_items": 5,
-    "recall": 0.444,
-    "distractor_false_flag": 0.143,
-    "n_hazards": 18,
-    "n_distractors": 7
+    "n_items": 9,
+    "recall": 0.441,
+    "distractor_false_flag": 0.357,
+    "n_hazards": 34,
+    "n_distractors": 14
    },
    "5": {
-    "n_items": 4,
-    "recall": 0.375,
-    "distractor_false_flag": 0.25,
-    "n_hazards": 8,
-    "n_distractors": 8
+    "n_items": 5,
+    "recall": 0.385,
+    "distractor_false_flag": 0.2,
+    "n_hazards": 13,
+    "n_distractors": 10
    }
   },
   "nova-pro": {
@@ -1344,32 +1344,32 @@
     "n_distractors": 0
    },
    "2": {
-    "n_items": 13,
-    "recall": 0.538,
+    "n_items": 14,
+    "recall": 0.643,
     "distractor_false_flag": null,
-    "n_hazards": 13,
+    "n_hazards": 14,
     "n_distractors": 0
    },
    "3": {
-    "n_items": 10,
-    "recall": 0.75,
-    "distractor_false_flag": 0.3,
-    "n_hazards": 20,
-    "n_distractors": 10
+    "n_items": 11,
+    "recall": 0.727,
+    "distractor_false_flag": 0.364,
+    "n_hazards": 22,
+    "n_distractors": 11
    },
    "4": {
-    "n_items": 5,
-    "recall": 0.444,
-    "distractor_false_flag": 0.286,
-    "n_hazards": 18,
-    "n_distractors": 7
+    "n_items": 9,
+    "recall": 0.529,
+    "distractor_false_flag": 0.5,
+    "n_hazards": 34,
+    "n_distractors": 14
    },
    "5": {
-    "n_items": 4,
-    "recall": 0.25,
-    "distractor_false_flag": 0.5,
-    "n_hazards": 8,
-    "n_distractors": 8
+    "n_items": 5,
+    "recall": 0.231,
+    "distractor_false_flag": 0.4,
+    "n_hazards": 13,
+    "n_distractors": 10
    }
   },
   "mistral-large-3": {
@@ -1381,32 +1381,32 @@
     "n_distractors": 0
    },
    "2": {
-    "n_items": 13,
-    "recall": 0.385,
+    "n_items": 14,
+    "recall": 0.357,
     "distractor_false_flag": null,
-    "n_hazards": 13,
+    "n_hazards": 14,
     "n_distractors": 0
    },
    "3": {
-    "n_items": 10,
-    "recall": 0.65,
-    "distractor_false_flag": 0.9,
-    "n_hazards": 20,
-    "n_distractors": 10
+    "n_items": 11,
+    "recall": 0.591,
+    "distractor_false_flag": 1.0,
+    "n_hazards": 22,
+    "n_distractors": 11
    },
    "4": {
-    "n_items": 5,
-    "recall": 0.389,
-    "distractor_false_flag": 0.857,
-    "n_hazards": 18,
-    "n_distractors": 7
+    "n_items": 9,
+    "recall": 0.441,
+    "distractor_false_flag": 0.571,
+    "n_hazards": 34,
+    "n_distractors": 14
    },
    "5": {
-    "n_items": 4,
-    "recall": 0.5,
-    "distractor_false_flag": 0.75,
-    "n_hazards": 8,
-    "n_distractors": 8
+    "n_items": 5,
+    "recall": 0.538,
+    "distractor_false_flag": 0.7,
+    "n_hazards": 13,
+    "n_distractors": 10
    }
   },
   "qwen3-vl": {
@@ -1418,32 +1418,32 @@
     "n_distractors": 0
    },
    "2": {
-    "n_items": 13,
-    "recall": 0.692,
+    "n_items": 14,
+    "recall": 0.571,
     "distractor_false_flag": null,
-    "n_hazards": 13,
+    "n_hazards": 14,
     "n_distractors": 0
    },
    "3": {
-    "n_items": 10,
-    "recall": 0.7,
-    "distractor_false_flag": 0.4,
-    "n_hazards": 20,
-    "n_distractors": 10
+    "n_items": 11,
+    "recall": 0.727,
+    "distractor_false_flag": 0.364,
+    "n_hazards": 22,
+    "n_distractors": 11
    },
    "4": {
-    "n_items": 5,
-    "recall": 0.722,
-    "distractor_false_flag": 0.857,
-    "n_hazards": 18,
-    "n_distractors": 7
+    "n_items": 9,
+    "recall": 0.794,
+    "distractor_false_flag": 0.786,
+    "n_hazards": 34,
+    "n_distractors": 14
    },
    "5": {
-    "n_items": 4,
-    "recall": 0.75,
+    "n_items": 5,
+    "recall": 0.615,
     "distractor_false_flag": 0.5,
-    "n_hazards": 8,
-    "n_distractors": 8
+    "n_hazards": 13,
+    "n_distractors": 10
    }
   },
   "claude-sonnet-5": {
@@ -1455,32 +1455,32 @@
     "n_distractors": 0
    },
    "2": {
-    "n_items": 13,
-    "recall": 0.538,
+    "n_items": 14,
+    "recall": 0.429,
     "distractor_false_flag": null,
-    "n_hazards": 13,
+    "n_hazards": 14,
     "n_distractors": 0
    },
    "3": {
-    "n_items": 10,
-    "recall": 0.65,
-    "distractor_false_flag": 0.4,
-    "n_hazards": 20,
-    "n_distractors": 10
+    "n_items": 11,
+    "recall": 0.682,
+    "distractor_false_flag": 0.455,
+    "n_hazards": 22,
+    "n_distractors": 11
    },
    "4": {
-    "n_items": 5,
-    "recall": 0.667,
-    "distractor_false_flag": 0.857,
-    "n_hazards": 18,
-    "n_distractors": 7
+    "n_items": 9,
+    "recall": 0.735,
+    "distractor_false_flag": 0.929,
+    "n_hazards": 34,
+    "n_distractors": 14
    },
    "5": {
-    "n_items": 4,
-    "recall": 0.625,
-    "distractor_false_flag": 0.375,
-    "n_hazards": 8,
-    "n_distractors": 8
+    "n_items": 5,
+    "recall": 0.538,
+    "distractor_false_flag": 0.4,
+    "n_hazards": 13,
+    "n_distractors": 10
    }
   },
   "gpt-5.6-sol": {
@@ -1492,32 +1492,32 @@
     "n_distractors": 0
    },
    "2": {
-    "n_items": 13,
-    "recall": 0.692,
+    "n_items": 14,
+    "recall": 0.714,
     "distractor_false_flag": null,
-    "n_hazards": 13,
+    "n_hazards": 14,
     "n_distractors": 0
    },
    "3": {
-    "n_items": 10,
-    "recall": 0.75,
-    "distractor_false_flag": 0.2,
-    "n_hazards": 20,
-    "n_distractors": 10
+    "n_items": 11,
+    "recall": 0.773,
+    "distractor_false_flag": 0.273,
+    "n_hazards": 22,
+    "n_distractors": 11
    },
    "4": {
-    "n_items": 5,
-    "recall": 0.833,
-    "distractor_false_flag": 0.714,
-    "n_hazards": 18,
-    "n_distractors": 7
+    "n_items": 9,
+    "recall": 0.853,
+    "distractor_false_flag": 0.786,
+    "n_hazards": 34,
+    "n_distractors": 14
    },
    "5": {
-    "n_items": 4,
-    "recall": 0.75,
-    "distractor_false_flag": 0.25,
-    "n_hazards": 8,
-    "n_distractors": 8
+    "n_items": 5,
+    "recall": 0.615,
+    "distractor_false_flag": 0.3,
+    "n_hazards": 13,
+    "n_distractors": 10
    }
   },
   "kimi-k3": {
@@ -1529,32 +1529,32 @@
     "n_distractors": 0
    },
    "2": {
-    "n_items": 13,
-    "recall": 0.692,
+    "n_items": 14,
+    "recall": 0.714,
     "distractor_false_flag": null,
-    "n_hazards": 13,
+    "n_hazards": 14,
     "n_distractors": 0
    },
    "3": {
-    "n_items": 10,
-    "recall": 0.75,
-    "distractor_false_flag": 0.3,
-    "n_hazards": 20,
-    "n_distractors": 10
+    "n_items": 11,
+    "recall": 0.773,
+    "distractor_false_flag": 0.455,
+    "n_hazards": 22,
+    "n_distractors": 11
    },
    "4": {
-    "n_items": 5,
-    "recall": 0.778,
-    "distractor_false_flag": 0.571,
-    "n_hazards": 18,
-    "n_distractors": 7
+    "n_items": 9,
+    "recall": 0.824,
+    "distractor_false_flag": 0.714,
+    "n_hazards": 34,
+    "n_distractors": 14
    },
    "5": {
-    "n_items": 4,
-    "recall": 0.75,
-    "distractor_false_flag": 0.375,
-    "n_hazards": 8,
-    "n_distractors": 8
+    "n_items": 5,
+    "recall": 0.615,
+    "distractor_false_flag": 0.4,
+    "n_hazards": 13,
+    "n_distractors": 10
    }
   }
  },
@@ -1635,35 +1635,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Dog lying in bathtub area, a pet underfoot hazard near bathing/transfer zone used with walker; could cause trip or fall during bathroom mobility."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-07",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Puppy lying in the tub under the transfer bench; a pet underfoot during tub transfers poses a trip/fall risk for a walker user."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true
   },
   {
    "id": "fal-L1-001",
@@ -1732,35 +1704,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Coiled cable/cord lies on floor extending into this region, posing a trip hazard for a walker user."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A coiled cord with a plug end lies loose in the middle of the open floor walkway. It is a clear trip and snag hazard for walker use."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true
   },
   {
    "id": "fal-L1-002",
@@ -1846,35 +1790,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Decorative throw rug lies loose on carpet at foot of bed, rumpled with visible ridges - a trip hazard for someone using a walker navigating around the bed."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Loose patterned throw rug with rumpled folds and raised edges lies on the carpet beside the bed in the walking path. It is a clear trip and walker-catch hazard."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L1-003",
@@ -1943,35 +1859,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Stacked boxes and shoes on steps/path narrow the walkway and pose a trip hazard for someone using a walker"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Stacked cardboard boxes and a pair of shoes sit on the bottom step and walkway at the entry stairs, narrowing the path near the left handrail. This is a trip hazard and an obstacle for walker use."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true
   },
   {
    "id": "fal-L1-004",
@@ -2040,35 +1928,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Coiled extension cords lying on stair treads, creating a tripping hazard on the staircase"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Coiled yellow extension cords and a GFCI adapter lie loose across the lower stair treads, with cord trailing between steps. This is a clear trip hazard on the stairs for a walker user."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true
   },
   {
    "id": "fal-L1-005",
@@ -2137,35 +1997,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Shoes, clothing, and newspapers cluttering the shower/floor area create a trip hazard for someone using a walker"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Shoes, clothing, magazines and small debris piled on the walk-in shower floor/entry, obstructing the path and creating trip hazards for a walker user"
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true
   },
   {
    "id": "fal-L1-006",
@@ -2251,35 +2083,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "KIT-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Pots, pans, cast iron skillets, and canned goods placed on floor requiring bending/stooping to retrieve - fall/strain hazard for someone using a walker after hip/knee surgery"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "KIT-02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Pots, pans, cast-iron skillets and canned goods sit directly on the floor. Reaching them requires deep bending, which conflicts with hip precautions. They also narrow the walker path and pose a trip risk."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L1-007",
@@ -2348,35 +2152,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "BED-04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Shoes and duffel bag clustered on floor beside bed, tripping hazard for walker user"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "BED-04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Shoes, a leather duffel bag and a small bag sit on the floor at the bedside, a clear trip hazard in the walker path to and from bed."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true
   },
   {
    "id": "fal-L1-008",
@@ -2445,35 +2221,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Electrical cord/plug lying loose on floor in walking path near recliner, tripping hazard"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Power recliner cord with plug lies loose on the floor beside the dark recliner, extending into the open walking path. It is a trip and walker-snag hazard."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true
   },
   {
    "id": "fal-L1-009",
@@ -2542,35 +2290,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "STAIR-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Shoes left on stair tread create trip hazard near/within this region"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "STAIR-03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Three pairs of shoes sit on a mid-flight stair tread, a clear trip hazard on the stairs for someone recovering from hip or knee replacement."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true
   },
   {
    "id": "fal-L2-000",
@@ -2639,35 +2359,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "White cable loops across carpet from outlet box near floor lamp, crossing likely walking path between bed and door"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "White cord loops from a floor-level power block by the doorway across the carpet toward the bed, lying in the walker path between door and bed. A clear trip/snag hazard."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true
   },
   {
    "id": "fal-L2-001",
@@ -2739,7 +2431,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
+   "verified": false,
    "box_refined": true,
    "verify_after_refine": {
     "checks": [
@@ -2750,44 +2442,7 @@
       "note": "Region shows clear open wood flooring; no clutter or narrowing obstacles present"
      }
     ]
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-03",
-       "visible": false,
-       "looks_safe": true,
-       "note": "Region shows open, clear hardwood floor with no clutter or obstructions narrowing the walking path"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "LIV-03",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Region shows clear open wood flooring; no clutter or narrowing obstacles present"
-      }
-     ]
-    }
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A low wooden footstool sticks out beside the dark recliner into the open floor. It is a trip and obstruction risk for a walker user, though the rest of the path is fairly open."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "fal-L2-002",
@@ -2856,35 +2511,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "STAIR-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "A pair of shoes left on the stairs midway up, creating a tripping hazard, especially for someone using a walker"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "STAIR-03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A pair of brown flat shoes sits on a mid-flight stair tread, a clear trip hazard on the stairs."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true
   },
   {
    "id": "fal-L2-003",
@@ -2953,35 +2580,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "ENT-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Doormat and door sill visible at threshold; slight step-up transition between porch floor and door likely presents a trip hazard for walker user"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "ENT-02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Just below the box, the doorway has a dark sill strip over a raised white trim board above the porch floor. This lip is a trip and walker-catch hazard. The box itself sits slightly high, over the lower door panels."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true
   },
   {
    "id": "fal-L2-004",
@@ -3067,35 +2666,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "KIT-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Wooden chair placed at counter, likely used for reaching into cabinets/sink area - unstable for someone using a walker post-surgery; not designed as a step stool and poses tip/fall risk"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "KIT-03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A lightweight wooden spindle-back chair sits against the counter under the upper cabinets. It could be used for climbing to reach high shelves, and it narrows the walker path."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L2-005",
@@ -3164,35 +2735,7 @@
     ],
     "photoreal": true
    },
-   "verified": false,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "BATH-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Shower riser pipe/handle in this area could be mistaken for a support bar, but it's not load-rated and could break loose if used for balance."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "BATH-03: Region shows only plain wall and the hanging green towel. The wooden towel bar sits well above the box, mounted high rather than positioned as a support, and the toilet already has a safety frame. No non-load-rated fixture is clearly placed as support here.",
-    "checks": [
-     {
-      "key": "BATH-03",
-      "visible": false,
-      "looks_safe": null,
-      "note": "Region shows only plain wall and the hanging green towel. The wooden towel bar sits well above the box, mounted high rather than positioned as a support, and the toilet already has a safety frame. No non-load-rated fixture is clearly placed as support here."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true
   },
   {
    "id": "fal-L2-006",
@@ -3261,35 +2804,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Loose throw rug on hardwood floor in walkway, rippled edges create trip/slip hazard for walker user"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Small loose jute rug with no backing sits mid-floor in the main walking path. Its front edge is wrinkled and lifted, a clear trip and walker-catch hazard."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true
   },
   {
    "id": "fal-L2-007",
@@ -3387,45 +2902,7 @@
     ],
     "photoreal": true
    },
-   "verified_via": "re-judge after box localization",
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "KIT-03",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No step stool or chair for reaching is visible in that region; only edge of wooden chest/trunk seen"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "KIT-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Wooden chair positioned near corner cabinet, could be used for unstable reaching and poses a trip/fall risk for walker user"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "KIT-03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A wooden spindle-back chair sits just left of the box, beside the tall corner curio shelf that has a plant on top. It is plausibly a temptation to climb for reaching, but it is not shown being used as a stool, so the hazard is only moderately clear."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified_via": "re-judge after box localization"
   },
   {
    "id": "fal-L2-008",
@@ -3494,35 +2971,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "A flat mat/rug lies on the walkway near the base of the steps; edges could catch a walker or foot, posing a trip hazard for someone using a walker."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Tan loose mat lies flat on the concrete walkway at the foot of the entry steps. The box covers its left portion; the mat extends further right. Walker legs could catch on it, making it a trip/slip hazard right at the stairs."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true
   },
   {
    "id": "fal-L2-009",
@@ -3608,36 +3057,8 @@
     ],
     "photoreal": true
    },
-   "verified": false,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "STAIR-06",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Visible chip/notch damage on stair tread edge within box, indicating a broken/uneven step surface"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "STAIR-06: Box covers the right wall and handrail area. A damaged, splintered tread is visible elsewhere, on the second step from the bottom (around x~560-630, y~760-790), well outside the box.",
-    "checks": [
-     {
-      "key": "STAIR-06",
-      "visible": false,
-      "looks_safe": null,
-      "note": "Box covers the right wall and handrail area. A damaged, splintered tread is visible elsewhere, on the second step from the bottom (around x~560-630, y~760-790), well outside the box."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true,
+   "box_refined": true
   },
   {
    "id": "fal-L2-010",
@@ -3723,35 +3144,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "BATH-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Tub faucet/spout fixture near shower chair - not load-rated for grabbing support, unlike the properly installed grab bars nearby; a hazard if used to steady oneself."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "BATH-03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A wall-mounted towel ring with a hand towel sits beside the toilet, within reach when standing up. It is not rated to bear weight, so a walker user might grab it for support and pull it off the wall. An assessor would flag it."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L2-011",
@@ -3837,35 +3230,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "White cord/wire visible on floor extending across the walkway path from near the doorway into the kitchen area, a trip hazard especially for someone using a walker"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A loose white cord snakes across the kitchen walkway floor from the doorway. It is a clear trip and walker-snag hazard and extends slightly right of the box."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L2-012",
@@ -3951,35 +3316,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Stuffed toy dog and pet bowl on floor near bed, tripping hazard for walker user"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-07",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A plush dog toy and a pet food/water bowl sit on the carpet near the doorway, beside the bed and in the walking path. For a walker user after hip or knee surgery, these are trip and snag hazards."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L2-013",
@@ -4065,35 +3402,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "KIT-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "The region shows a wooden chair near the entryway/TV area, not a step stool, but it could be misused for reaching\u2014still, sitting furniture used for climbing is unstable and a fall hazard for someone using a walker."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "KIT-03",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A plain wooden slat-back chair sits upright on the floor beside the TV stand. It looks stable, and nothing suggests it is used for reaching: no high shelf or cabinet is nearby, it is not being stood on, and it is not tipped or wobbly. An assessor would likely not flag the reaching hazard as depicted."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L2-014",
@@ -4179,35 +3488,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Cord visible near sofa base, could be a trip hazard along walkway"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "White cord runs from the wall outlet beside the stair opening down to the floor near the sofa, creating a trip/walker-snag risk in the passage."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L3-000",
@@ -4419,81 +3700,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Pet bed and food/water bowl on floor near bed path, potential trip hazard for walker user"
-      },
-      {
-       "key": "BED-04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Clothing (jeans, sweater) and shoes strewn on floor near bed, clear trip hazard"
-      },
-      {
-       "key": "D0",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No cord cover channel visible near nightstand; area shows baseboard and floor only"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Pet bed and food/water bowl on floor near walking path, tripping hazard for walker user"
-      },
-      {
-       "key": "BED-04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Clothing (jeans, sweater) and shoes scattered on floor near bed, tripping hazard"
-      },
-      {
-       "key": "D0",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No cord cover channel visible along baseboard; area shows nightstand and basket, not a cord channel"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "D0: Region shows the nightstand, lamp and basket; no white cord cover channel along the baseboard is visible.",
-    "checks": [
-     {
-      "key": "LIV-07",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Round pet bed with rumpled blanket on the floor plus a metal pet bowl by the nightstand; both are trip hazards in the walker path."
-     },
-     {
-      "key": "BED-04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Pile of jeans and clothing plus loafers on the carpet beside the bed; clear trip hazard for a walker user."
-     },
-     {
-      "key": "D0",
-      "visible": false,
-      "looks_safe": null,
-      "note": "Region shows the nightstand, lamp and basket; no white cord cover channel along the baseboard is visible."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "fal-L3-001",
@@ -4696,59 +3903,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "STAIR-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Right handrail appears to terminate partway down, leaving lower steps without a graspable rail\u2014hazard for walker user."
-      },
-      {
-       "key": "STAIR-05",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Patterned carpet runner obscures step edges, making tread boundaries hard to distinguish, increasing trip/fall risk."
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Wall sconce is lit and positioned to illuminate the upper stairwell, aiding visibility."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "STAIR-02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Right handrail ends well above the bottom steps, so it doesn't run the full flight. The last several steps have no right-side support."
-     },
-     {
-      "key": "STAIR-05",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Busy patterned carpet treads make step edges harder to see. The thin runners over the wood treads could shift or cause a trip."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Lit wall sconce sits slightly left of the box, at the top of the stairwell. It lights the stairs and is not a hazard."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L3-002",
@@ -4950,59 +4105,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "STAIR-05",
-       "visible": true,
-       "looks_safe": null,
-       "note": "Carpet is torn/frayed with loose threads and undefined edges on several treads, a trip hazard."
-      },
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": null,
-       "note": "A black cable runs diagonally across multiple stair treads, a clear trip hazard."
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Sturdy wooden handrail mounted on brackets runs along the wall for a good stretch of the stairs."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "STAIR-05",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Carpet on three middle treads is torn and frayed with loose fibers hanging over the nosings, obscuring step edges and creating a trip hazard."
-     },
-     {
-      "key": "LIV-02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A black cord runs diagonally down the stair treads, a clear trip hazard on stairs."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A wall-mounted wooden handrail on metal brackets runs along the left side of the stairs and appears secure and continuous."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L3-003",
@@ -5204,60 +4307,8 @@
     ],
     "photoreal": true
    },
-   "verified": false,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "KIT-04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Large wet spill/puddle on wood floor near cabinets, clear slip hazard"
-      },
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "White cord snaking across the walking path on the floor"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Neatly stacked plates and bowls on sturdy open shelving, no tipping risk"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "D0: Plates and bowls are visible, but they sit on upper open shelves above the counter at shoulder or overhead height, not waist height. Reaching up is a strain and balance risk after hip or knee surgery.",
-    "checks": [
-     {
-      "key": "KIT-04",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Large wet puddle with scattered debris on the wood floor in front of the stove-side cabinets. A clear slip hazard for a walker user."
-     },
-     {
-      "key": "LIV-02",
-      "visible": true,
-      "looks_safe": null,
-      "note": "White cord runs from the wall outlet and snakes across the main walkway floor, extending below the box. An obvious trip hazard."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Plates and bowls are visible, but they sit on upper open shelves above the counter at shoulder or overhead height, not waist height. Reaching up is a strain and balance risk after hip or knee surgery."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true,
+   "box_refined": true
   },
   {
    "id": "fal-L3-004",
@@ -5445,7 +4496,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
+   "verified": false,
    "box_refined": true,
    "verify_after_refine": {
     "checks": [
@@ -5469,81 +4520,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Loose rug on wood floor, tripping hazard for walker user"
-      },
-      {
-       "key": "BED-04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Shoes, towel, and clothing scattered on floor create clutter/tripping hazard"
-      },
-      {
-       "key": "D0",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No cord cover channel visible along baseboard; only plain wall paneling seen"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "LIV-01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Loose rug on wood floor is a trip hazard, especially for walker users"
-      },
-      {
-       "key": "BED-04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Shoes and clothing bunched on floor create tripping hazard near walking path"
-      },
-      {
-       "key": "D0",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No cord cover channel visible; region shows plain wall with light/shadow patterns"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Worn loose throw rug with curled, frayed edges lies in the open walkway, a clear trip and walker-snag hazard. It sits slightly below the box."
-     },
-     {
-      "key": "BED-04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Shoes, a towel and a blue shirt are piled on the floor, a clear trip hazard. No bed is visible, and the clutter sits below and left of the box."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A bright white low-profile channel runs along the back-wall baseboard near the bottom edge of the box. It is flush and unobtrusive, though it reads somewhat like plain baseboard trim."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "fal-L3-005",
@@ -5745,59 +4722,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Pet bed, chew toy, and metal food bowl on floor - tripping hazard for walker user"
-      },
-      {
-       "key": "LIV-01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Loose patterned area rug with visible edges/folds on main walking path - trip hazard"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Wooden-framed armchair with solid armrests, appears stable and sturdy for sitting/standing support"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-07",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Pet bed with rope toy and a metal food bowl sit on the floor near the armchair, a clear trip hazard for walker use."
-     },
-     {
-      "key": "LIV-01",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Loose patterned throw rug on the carpet in the open walkway with a curled or flipped corner, a clear trip hazard."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Wooden-frame armchair with firm cushions, upright back and sturdy full-length armrests, suitable for sit-to-stand."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L3-006",
@@ -5998,60 +4923,8 @@
     ],
     "photoreal": true
    },
-   "verified": false,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-03",
-       "visible": true,
-       "looks_safe": null,
-       "note": "Pile of towels, shoes, and stool cluttering floor space near entry, narrowing walkway"
-      },
-      {
-       "key": "BATH-03",
-       "visible": true,
-       "looks_safe": null,
-       "note": "Looks like a standard wall-mounted grab bar; cannot visually confirm it's non-load-rated, so hazard not clearly evident"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Adjustable shower chair with visible rubber feet caps, appears stable"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "BATH-03: A horizontal metal bar is visible, but its round flanges make it look like a proper grab bar, not a towel bar or other non-load-rated fixture. The hazard is not clearly recognisable.",
-    "checks": [
-     {
-      "key": "LIV-03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Pile of towels/clothes, loose shoes and slippers, and a small wooden stool spill onto the floor near the doorway. This is a trip hazard and narrows the path for a walker."
-     },
-     {
-      "key": "BATH-03",
-      "visible": false,
-      "looks_safe": null,
-      "note": "A horizontal metal bar is visible, but its round flanges make it look like a proper grab bar, not a towel bar or other non-load-rated fixture. The hazard is not clearly recognisable."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "White shower chair with backrest, adjustable legs and rubber tips. It looks stable and appropriate."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true,
+   "box_refined": true
   },
   {
    "id": "fal-L3-007",
@@ -6253,59 +5126,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "KIT-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Pots/pans and cookware stored in low cabinet under counter, requiring bending/kneeling to access - hazardous for hip/knee replacement patient"
-      },
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Pet food bowl and rope toy on floor in walking path create trip hazard for walker user"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Dark mat lies flat on floor, but thick mat edges could still pose a minor trip/catch risk for walker wheels"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "KIT-02",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Open lower cabinet under the sink is packed with pots and pans, requiring bending or crouching to reach, which is risky after hip or knee replacement."
-     },
-     {
-      "key": "LIV-07",
-      "visible": true,
-      "looks_safe": null,
-      "note": "A dog food bowl with kibble and a rope toy sit on the floor in the main walking path, a trip hazard for walker use."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A black anti-fatigue mat lies flat with beveled edges and no curling or wrinkles are visible."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L3-008",
@@ -6507,59 +5328,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": null,
-       "note": "Long yellow cords snaking across carpet and under rug, crossing main walkway - clear trip hazard"
-      },
-      {
-       "key": "LIV-01",
-       "visible": true,
-       "looks_safe": null,
-       "note": "Loose patterned area rug sitting on top of carpet in walking path, edges curling up, with cords tangled on it - trip hazard for walker user"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Solid teal upholstered armchair with wooden legs and armrests, appears stable and firm"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-02",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Yellow and black cords run across the open carpeted walkway and over the rug. This is a clear trip hazard for a walker user."
-     },
-     {
-      "key": "LIV-01",
-      "visible": true,
-      "looks_safe": null,
-      "note": "A loose patterned throw rug sits mid-floor with its front corner curled up. It is an obvious trip and walker-snag hazard."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A teal upright armchair with wooden armrests sits just left of the box, which mostly covers the TV and lamp. It looks firm with sturdy arms, suitable for sit-to-stand."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L3-009",
@@ -6772,81 +5541,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Long cord snaking across the floor in the walking path, tripping hazard"
-      },
-      {
-       "key": "KIT-04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Loose bunched throw rug on shiny tile floor near cabinets, could slip or catch walker/feet"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Step stool is unfolded/open and standing upright, not stored flat; presents tripping/instability risk rather than being safely stored"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "A long cord/cable snakes across the floor in the walkway between the dishwasher area and the shelving unit, creating a significant trip hazard for someone using a walker."
-      },
-      {
-       "key": "KIT-04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "A rumpled, bunched-up rug/mat lies on the tile floor near the stove; its wrinkled, unanchored state makes it a slip/trip hazard."
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": false,
-       "note": "The step stool is actually standing open/upright in the middle of the walkway rather than folded and stored flat against the wall, making it an obstacle rather than a safely stored item."
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "D0: The only step stool sits unfolded and upright by the doorway, mostly outside the box, not folded flat against the wall. The box mainly covers the cord and shelving. An open step stool is also a fall risk after hip or knee surgery.",
-    "checks": [
-     {
-      "key": "LIV-02",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Long loose cord snakes across the open kitchen floor in the walker path; a clear trip hazard."
-     },
-     {
-      "key": "KIT-04",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Unsecured fringed throw rug with a crumpled towel on it in front of the stove; a trip and slip hazard for a walker."
-     },
-     {
-      "key": "D0",
-      "visible": false,
-      "looks_safe": false,
-      "note": "The only step stool sits unfolded and upright by the doorway, mostly outside the box, not folded flat against the wall. The box mainly covers the cord and shelving. An open step stool is also a fall risk after hip or knee surgery."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "fal-L3-010",
@@ -7045,81 +5740,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Round pet bed and food bowl on floor in walking area create tripping hazard for walker user."
-      },
-      {
-       "key": "LIV-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Stacked boxes and folded blanket narrow the path between the recliner and pet bed, obstructing walker passage."
-      },
-      {
-       "key": "D0",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No visible cord in this region; area shows only wall and door frame near entryway."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Pet bed and food bowl on floor in walking path - trip hazard for walker user"
-      },
-      {
-       "key": "LIV-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Stacked boxes and folded blanket narrow the walkway near recliner"
-      },
-      {
-       "key": "D0",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No cord visible in this region; only doorway and wall shown"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "D0: No cord is visible; the region shows the doorway and wall above floor level, and no clipped cord appears along the baseboard.",
-    "checks": [
-     {
-      "key": "LIV-07",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Round pet bed and food bowl sit on the floor in the open walking area, a trip hazard for a walker user. Box overlaps them only partially (objects lie slightly left and below)."
-     },
-     {
-      "key": "LIV-03",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Stacked cardboard boxes topped with folded blankets sit in the middle of the floor, narrowing the path near the recliner."
-     },
-     {
-      "key": "D0",
-      "visible": false,
-      "looks_safe": null,
-      "note": "No cord is visible; the region shows the doorway and wall above floor level, and no clipped cord appears along the baseboard."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "fal-L3-011",
@@ -7322,59 +5943,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Coiled cord/wire draped across stair treads, clear trip hazard"
-      },
-      {
-       "key": "STAIR-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Short disconnected handrail segment mounted low on wall, doesn't span the stairs and isn't graspable for support"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Wall sconce is lit, providing good illumination over the stairway"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Loose cords drape from the sofa and run across the floor toward the stairs, creating a clear trip hazard for walker use."
-     },
-     {
-      "key": "STAIR-02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "The upper right handrail is a short segment that ends mid-flight, leaving a gap before the separate lower rail. The rail is discontinuous rather than continuous."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A lit wall sconce illuminates the stairwell and looks safe."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L3-012",
@@ -7576,59 +6145,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Dog bed and metal food bowl placed directly on the walkway, creating a trip hazard for someone using a walker"
-      },
-      {
-       "key": "ENT-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Multiple concrete steps with raised sills leading to the door, a fall risk without a ramp for walker users"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Sturdy black metal handrail mounted along the steps beside the door, providing good support"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-07",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Plush dog bed with a large chew bone and a stainless steel water bowl sit in the middle of the front walkway. These are clear trip and walker-obstruction hazards on the approach path."
-     },
-     {
-      "key": "ENT-02",
-      "visible": true,
-      "looks_safe": null,
-      "note": "A wooden door sill sits raised above the top concrete step at the base of the door. It creates a lip that a walker must be lifted over."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A black metal handrail on the right side runs along the steps up to the door. It appears firmly mounted and continuous."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L3-013",
@@ -7830,59 +6347,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Coiled cord/hose running across the walkway on the floor, tripping hazard."
-      },
-      {
-       "key": "BED-04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Shoes and stacked folded linens/clothes piled on floor near doorway create clutter and trip risk."
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Low-pile rug lies flat on floor with no curled edges, though a cord crosses over it."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-02",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Long brown cord/hose coiled on the rug and trailing across the wood floor into the walking path; a clear trip hazard for a walker user."
-     },
-     {
-      "key": "BED-04",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Shoes, a rolled towel and stacked folded clothes sit on the floor along the wall, a recognisable clutter/trip hazard. There is no bed in the room, though."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Large low-pile rug lies flat with no curled edges. No bed is present, so 'under the bed' does not match, and the cord hazard lies on top of it."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L3-014",
@@ -8071,59 +6536,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "KIT-03",
-       "visible": true,
-       "looks_safe": null,
-       "note": "Wooden chair in open floor area could be mistaken for a step stool; unstable for reaching and is also a trip obstacle for a walker user."
-      },
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": null,
-       "note": "Dog bone and food bowl lying loose on the carpet near the pet bed create underfoot tripping hazards."
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Rug edge visible near bed base appears flat and low-pile, not curling or bunched."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "KIT-03",
-      "visible": true,
-      "looks_safe": null,
-      "note": "A lightweight wooden spindle-back chair stands in the walkway beside the bed. It could be used as a makeshift step, and it is an obstacle for a walker, though nothing shows it being used for reaching."
-     },
-     {
-      "key": "LIV-07",
-      "visible": true,
-      "looks_safe": null,
-      "note": "A pet bed, food bowl and chew bone sit on the floor in the path near the bed and doorway. This is a clear trip hazard for walker use; the bowl and bone sit slightly below the box."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A large, low-pile, light green area rug lies flat under and beside the bed, with no visible curling or raised edges."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L4-000",
@@ -8181,20 +6594,7 @@
     "checks": [],
     "photoreal": true
    },
-   "verified": false,
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "edit plan incomplete (skipped steps); not judged"
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": false
   },
   {
    "id": "fal-L4-001",
@@ -8526,84 +6926,8 @@
     ],
     "photoreal": true
    },
-   "verified": false,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "KIT-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Low open shelves/baskets with items stored at floor level require bending, a hazard post-surgery"
-      },
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Dog bed, bowls, toys and leash scattered on floor create tripping hazards in walkway"
-      },
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Cord/hose runs across the floor in the walking path, a trip hazard for walker use"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Plates stored on open shelf at waist height, easily reachable without bending or stretching"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Step stool with tall handle folded flat and stored safely against wall, not obstructing path"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "D0: Plates are stacked on the upper wall shelf at or above shoulder height, not waist height, so reaching them means stretching overhead.",
-    "checks": [
-     {
-      "key": "KIT-02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Baskets and bowls sit in open cubbies near floor level on the left, so reaching them requires bending low."
-     },
-     {
-      "key": "LIV-07",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Dog bed, food/water bowls, rope toys, a plush toy and a bone are scattered in the middle of the walkway."
-     },
-     {
-      "key": "LIV-02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A long white cord snakes across the floor from the back of the room toward the right foreground, a clear trip risk."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Plates are stacked on the upper wall shelf at or above shoulder height, not waist height, so reaching them means stretching overhead."
-     },
-     {
-      "key": "D1",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A folding step ladder with a tall handle stands against the back wall, out of the walkway; a bag sits nearby."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true,
+   "box_refined": true
   },
   {
    "id": "fal-L4-002",
@@ -8669,20 +6993,7 @@
     "checks": [],
     "photoreal": true
    },
-   "verified": false,
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "edit plan incomplete (skipped steps); not judged"
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": false
   },
   {
    "id": "fal-L4-003",
@@ -9060,94 +7371,7 @@
     ]
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "STAIR-06",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Zoomed inset shows worn/uneven tread edge and step geometry"
-      },
-      {
-       "key": "STAIR-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Slipper sitting on stair tread is a trip hazard"
-      },
-      {
-       "key": "STAIR-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Handrails appear thin, poorly mounted, and don't run full length of stairs"
-      },
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Cord/cable runs across floor near seating area, trip risk"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Yellow non-slip nosing strips visible on tread edges"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Wall sconce is lit, providing illumination at top of stairs"
-      }
-     ]
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "STAIR-06",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Inset close-up shows a tread whose edge and nosing overhang the step below with an exposed bracket. The step looks uneven or misaligned, though the break is not obvious."
-     },
-     {
-      "key": "STAIR-03",
-      "visible": true,
-      "looks_safe": null,
-      "note": "A slipper sits on an upper tread just left of the box. It is a clear trip hazard on the stairs."
-     },
-     {
-      "key": "STAIR-02",
-      "visible": true,
-      "looks_safe": null,
-      "note": "The right handrail ends short, well above the lower steps, with its bracket end exposed. The rail does not extend the full run."
-     },
-     {
-      "key": "LIV-02",
-      "visible": true,
-      "looks_safe": null,
-      "note": "A cord hangs from the outlet by the stairs and loops across the floor in front of the sofa. It is a trip hazard in the path."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Bright yellow contrasting nosing strips are on the tread edges. They improve edge visibility."
-     },
-     {
-      "key": "D1",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A lit wall sconce at the top of the stairs sits slightly left of the box. It is working and provides light."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L4-004",
@@ -9479,84 +7703,8 @@
     ],
     "photoreal": true
    },
-   "verified": false,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Narrow gap between ottoman and armchair could restrict walker passage"
-      },
-      {
-       "key": "LIV-01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Large area rug lying loose on floor, an obvious trip hazard for a walker user"
-      },
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Pet bed and scattered toys (balls, rope toy) on the rug create underfoot hazards"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Cord runs along baseboard from dresser area, tidily routed rather than crossing the floor"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Sturdy tufted armchair with visible armrests, stable and upright"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "D0: No neatly clipped cord along the baseboard. A loose cord trails from the dresser diagonally across the carpet toward the door, which is itself a trip hazard.",
-    "checks": [
-     {
-      "key": "LIV-03",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Ottoman and wooden chair sit in the floor space beside the sofa, narrowing the route. The clutter is mild, but an assessor would likely flag the ottoman as a walker obstruction."
-     },
-     {
-      "key": "LIV-01",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Loose area rug on the carpet with a clearly curled, flipped-up corner. This is an obvious trip hazard for a walker."
-     },
-     {
-      "key": "LIV-07",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Pet bed on the walkway with scattered toys (ball, rope toy) on the rug. Clearly underfoot."
-     },
-     {
-      "key": "D0",
-      "visible": false,
-      "looks_safe": false,
-      "note": "No neatly clipped cord along the baseboard. A loose cord trails from the dresser diagonally across the carpet toward the door, which is itself a trip hazard."
-     },
-     {
-      "key": "D1",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Upright teal wingback armchair with solid, full armrests on sturdy legs. The seat looks somewhat cushioned but is reasonably appropriate."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true,
+   "box_refined": true
   },
   {
    "id": "fal-L4-005",
@@ -9893,85 +8041,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "error": "Expecting ',' delimiter: line 4 column 146 (char 483)"
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "KIT-04",
-       "visible": false,
-       "looks_safe": null,
-       "note": "region shows sink/counter area, no visible mat or spill"
-      },
-      {
-       "key": "KIT-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "stacks of plates/bowls on low open shelving, requires bending to reach"
-      },
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "pet bed with food bowl and toy on floor in walkway, trip hazard"
-      },
-      {
-       "key": "KIT-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "wooden step stool near window nook, unstable for reaching"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "plates neatly stacked on waist-height open shelf, easy access"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "KIT-04: No mat or wet or slippery patch is recognisable at the sink or stove area. There is only a faint glossy sheen on the floor near the dog bed.; D0: Plates are stacked on an open shelf, but it is mounted high above the counter, not at waist height. Reaching up there is a hazard for this user.",
-    "checks": [
-     {
-      "key": "KIT-04",
-      "visible": false,
-      "looks_safe": null,
-      "note": "No mat or wet or slippery patch is recognisable at the sink or stove area. There is only a faint glossy sheen on the floor near the dog bed."
-     },
-     {
-      "key": "KIT-02",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Stacks of plates and bowls sit on low open shelves near the floor, so a walker user would have to bend down to reach them."
-     },
-     {
-      "key": "LIV-07",
-      "visible": true,
-      "looks_safe": null,
-      "note": "A dog bed with a food bowl, a bone and a rope toy sits in the middle of the walkway, creating a clear trip hazard."
-     },
-     {
-      "key": "KIT-03",
-      "visible": true,
-      "looks_safe": null,
-      "note": "A wooden step stool is under the window. It sits slightly left of the box but is clearly recognisable as a reaching and fall risk."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Plates are stacked on an open shelf, but it is mounted high above the counter, not at waist height. Reaching up there is a hazard for this user."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "fal-L4-006",
@@ -10247,71 +8317,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "STAIR-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Right-side handrail is short, doesn't run full staircase length, hard to grasp continuously"
-      },
-      {
-       "key": "STAIR-05",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Carpet runner edge appears worn/loose on step, undefined edge visible"
-      },
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Dark cord/wire visible running across floor near sofa area"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Wall sconce is lit, providing illumination above stairs"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "STAIR-02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Short stub handrail on the right wall covers only a few steps; it is not a continuous graspable rail."
-     },
-     {
-      "key": "STAIR-05",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Worn patterned runner with frayed, loose threads on the treads; step edges are poorly defined, especially in the dim light."
-     },
-     {
-      "key": "LIV-02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A cord runs diagonally from the living room across the walkway to the bottom of the stairs, creating a trip hazard."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Lit wall sconce at the top of the stairs; it is not itself a hazard, though overall lighting is dim."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L4-007",
@@ -10587,71 +8593,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "STAIR-05",
-       "visible": true,
-       "looks_safe": false,
-       "note": "carpet appears worn/discolored with unclear step edges, low light obscures tread boundaries"
-      },
-      {
-       "key": "STAIR-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "shoes and folded towels/clothes stacked on stair treads, tripping hazard for walker user"
-      },
-      {
-       "key": "STAIR-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "handrail is short, only covers top portion of stairs, brackets appear widely spaced and rail ends abruptly"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "wall sconce is lit, mounted safely on wall away from walking path"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "STAIR-05",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Uniform beige carpet in dim, shadowed light makes the tread edges low-contrast and hard to distinguish. No clearly loose covering is seen, but undefined edges are a plausible hazard."
-     },
-     {
-      "key": "STAIR-03",
-      "visible": true,
-      "looks_safe": null,
-      "note": "A pair of sneakers sits on a stair tread, a clear trip hazard. Folded laundry is also on the steps nearby."
-     },
-     {
-      "key": "STAIR-02",
-      "visible": true,
-      "looks_safe": null,
-      "note": "A wooden wall-mounted handrail is on one side only and appears to end well above the lower steps, so it is short and does not cover the full flight."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A lit wall sconce is on the right wall above the stairs and provides some lighting. It is not itself a hazard."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L4-008",
@@ -10997,83 +8939,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "White cord snakes across floor near walkway, trip hazard"
-      },
-      {
-       "key": "BED-04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Slippers and cord clutter on floor, but no bed present in this room"
-      },
-      {
-       "key": "KIT-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Wooden step stool near table looks tippy, unstable for reaching"
-      },
-      {
-       "key": "LIV-01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Loose patterned rug lies unanchored on wood floor in walking path"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Lamp lit on stable side table, provides good lighting"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "White cord snakes across the floor from the left edge to the rug, a clear trip hazard for walker use."
-     },
-     {
-      "key": "BED-04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Slippers lie on the floor near the left wall and are a trip hazard, though no bed is visible in the room."
-     },
-     {
-      "key": "KIT-03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Weathered, worn wooden step stool/ladder that looks rickety and unsafe for reaching."
-     },
-     {
-      "key": "LIV-01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Loose, rumpled throw rug in the middle of the walkway, a trip hazard."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Lamp is lit on a small side table by the window. It looks safe, but no bed is present to confirm it is within reach."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L4-009",
@@ -11131,20 +8997,7 @@
     "checks": [],
     "photoreal": true
    },
-   "verified": false,
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "edit plan incomplete (skipped steps); not judged"
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": false
   },
   {
    "id": "fal-L4-010",
@@ -11205,20 +9058,7 @@
     "checks": [],
     "photoreal": true
    },
-   "verified": false,
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "edit plan incomplete (skipped steps); not judged"
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": false
   },
   {
    "id": "fal-L4-011",
@@ -11546,83 +9386,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "STAIR-02",
-       "visible": true,
-       "looks_safe": null,
-       "note": "Wooden handrail is present and appears securely mounted with brackets, not obviously loose or short"
-      },
-      {
-       "key": "STAIR-06",
-       "visible": true,
-       "looks_safe": null,
-       "note": "Section of stairs shows torn carpet exposing bare wood, indicating uneven/damaged step surface"
-      },
-      {
-       "key": "STAIR-03",
-       "visible": true,
-       "looks_safe": null,
-       "note": "Shoes and a stack of folded towels are sitting directly on the stair treads, a clear tripping hazard"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Brass nosing strips on tread edges are intact and provide visible contrast"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Wall sconce is lit and mounted safely above the stairs, providing good illumination"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "STAIR-02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Wall handrail covers only the upper section and ends high, leaving the lower steps with no rail to grasp."
-     },
-     {
-      "key": "STAIR-06",
-      "visible": true,
-      "looks_safe": false,
-      "note": "One tread is broken, with cracked, exposed, uneven wood where the carpet is torn."
-     },
-     {
-      "key": "STAIR-03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Sneakers and a stack of folded laundry sit on the steps, creating a trip hazard."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Brass/gold nosing strips on the upper tread edges are visible but only moderately contrasting; the lower steps lack them."
-     },
-     {
-      "key": "D1",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Lit wall sconce beside the stairs, though the stairway overall remains dim."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L4-012",
@@ -11680,20 +9444,7 @@
     "checks": [],
     "photoreal": true
    },
-   "verified": false,
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "edit plan incomplete (skipped steps); not judged"
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": false
   },
   {
    "id": "fal-L4-013",
@@ -11975,72 +9726,8 @@
     ],
     "photoreal": true
    },
-   "verified": false,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "KIT-04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Reflective wet patch/spill visible on floor near chair, potential slip hazard"
-      },
-      {
-       "key": "KIT-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Wooden dining chair placed in kitchen work area, likely used for reaching, unstable for that purpose"
-      },
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Pet bed and pet bowl on floor create tripping hazard for walker user"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Plates neatly stacked behind glass cabinet doors at reasonable height, no hazard"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "D0: Plates are stacked in an upper glass-door wall cabinet above the counter, not on a waist-height open shelf. Reaching up there is a stretch risk after hip or knee surgery.",
-    "checks": [
-     {
-      "key": "KIT-04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Wet puddle/spill clearly visible on the kitchen floor around the chair legs, a slip hazard for a walker user."
-     },
-     {
-      "key": "KIT-03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Lone wooden chair set in front of the counter and cabinets, suggesting it is used for climbing or reaching. It also sits in the wet area."
-     },
-     {
-      "key": "LIV-07",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Pet bed and pet bowl on the floor by the doorway, directly in the walking path."
-     },
-     {
-      "key": "D0",
-      "visible": false,
-      "looks_safe": false,
-      "note": "Plates are stacked in an upper glass-door wall cabinet above the counter, not on a waist-height open shelf. Reaching up there is a stretch risk after hip or knee surgery."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true,
+   "box_refined": true
   },
   {
    "id": "fal-L4-014",
@@ -12373,84 +10060,8 @@
     ],
     "photoreal": true
    },
-   "verified": false,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Pet bowl and chew toy sitting on the floor in walkway, a trip hazard."
-      },
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "A cord/hose snakes across the wood floor, crossing the main walking path."
-      },
-      {
-       "key": "KIT-04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Floor appears wet/shiny near sink and stove with a loose throw rug, slip risk."
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Plates neatly stacked on open shelf, stable and not overhanging."
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Step stool with grab handle stored flat against wall, out of walkway."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "D0: Plates are stacked on an open shelf, but it is mounted high above the counter, not at waist height. It would require an overhead reach.",
-    "checks": [
-     {
-      "key": "LIV-07",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Pet food bowl and a bone-shaped toy sit on the floor in the walking path near the back of the kitchen."
-     },
-     {
-      "key": "LIV-02",
-      "visible": true,
-      "looks_safe": null,
-      "note": "A long white cord/hose snakes across the open floor through the main walkway, a clear trip hazard."
-     },
-     {
-      "key": "KIT-04",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Wet, shiny floor with a puddle near the sink, plus a loose runner mat, a slip hazard."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Plates are stacked on an open shelf, but it is mounted high above the counter, not at waist height. It would require an overhead reach."
-     },
-     {
-      "key": "D1",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A step stool/ladder with tall side rails stands against the back wall, out of the walkway. It may be open rather than fully folded flat."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true,
+   "box_refined": true
   },
   {
    "id": "fal-L5-000",
@@ -12634,59 +10245,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Stainless grab bar mounted near shower area, appears securely anchored"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Gray non-slip mat lies flat on tile floor"
-      },
-      {
-       "key": "D2",
-       "visible": true,
-       "looks_safe": true,
-       "note": "White shower chair with rubber-tipped legs visible at edge of tub"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Vertical stainless grab bar by the shower valve, mounted with flanges at top and bottom; appears securely anchored."
-     },
-     {
-      "key": "D1",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Light grey textured bath mat on the tile floor in front of the tub, lying flat with no curled edges."
-     },
-     {
-      "key": "D2",
-      "visible": true,
-      "looks_safe": true,
-      "note": "White shower chair with backrest and handles inside the tub; adjustable aluminum legs with rubber tips, looks stable."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L5-001",
@@ -13069,7 +10628,7 @@
     ],
     "photoreal": true
    },
-   "verified": false,
+   "verified": true,
    "box_refined": true,
    "verify_after_refine": {
     "checks": [
@@ -13112,135 +10671,7 @@
     ],
     "photoreal": true
    },
-   "verified_via": "re-judge after box localization",
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-02",
-       "visible": false,
-       "looks_safe": null,
-       "note": "no clear cord or wire visible near dog bed corner, just bedding/toy"
-      },
-      {
-       "key": "KIT-03",
-       "visible": false,
-       "looks_safe": null,
-       "note": "only a plain wooden chair standing on floor, not being used as unstable step stool"
-      },
-      {
-       "key": "BED-04",
-       "visible": true,
-       "looks_safe": null,
-       "note": "pile of clothes, bag and shoes on floor is a clear trip hazard"
-      },
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": null,
-       "note": "dog bed, bowl and toy on floor near walking path"
-      },
-      {
-       "key": "D0",
-       "visible": false,
-       "looks_safe": null,
-       "note": "floor here is patterned tile, not a distinct flat area rug"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "lamp lit on small nightstand next to chair, appears stable and within reach"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "shoelaces/cords tangled in clothing pile on walkway"
-      },
-      {
-       "key": "KIT-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "wooden chair near table, could be used unsafely for reaching"
-      },
-      {
-       "key": "BED-04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "large pile of clothes and bags on floor, tripping hazard"
-      },
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "pet bed and bowl on floor near walking path"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "flat area rug, no curled edges visible"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "lamp lit on nightstand, accessible height"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "LIV-02: Region shows sneakers and the edge of a bag; no cords or wires are visible across the walkway.; KIT-03: A wooden ladder-back chair sits against the wall by the nightstand, but nothing suggests it is unstable or used for reaching.",
-    "checks": [
-     {
-      "key": "LIV-02",
-      "visible": false,
-      "looks_safe": null,
-      "note": "Region shows sneakers and the edge of a bag; no cords or wires are visible across the walkway."
-     },
-     {
-      "key": "KIT-03",
-      "visible": false,
-      "looks_safe": null,
-      "note": "A wooden ladder-back chair sits against the wall by the nightstand, but nothing suggests it is unstable or used for reaching."
-     },
-     {
-      "key": "BED-04",
-      "visible": true,
-      "looks_safe": null,
-      "note": "A pile of clothes, a bag and shoes sits on the rug in the walking path, a clear trip hazard for a walker user. No bed is visible."
-     },
-     {
-      "key": "LIV-07",
-      "visible": true,
-      "looks_safe": null,
-      "note": "A pet bed, a chew bone and a food bowl are on the floor, a clear underfoot hazard."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A large low-pile rug lies flat with no curled edges. There is no bed, and clutter sits on top of it."
-     },
-     {
-      "key": "D1",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A lit table lamp stands on a small nightstand beside the chair."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified_via": "re-judge after box localization"
   },
   {
    "id": "fal-L5-002",
@@ -13434,81 +10865,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "D0",
-       "visible": false,
-       "looks_safe": null,
-       "note": "no distinct cord visible along baseboard in that shadowed area"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "teal rug appears flat and low-pile with no visible curled edges"
-      },
-      {
-       "key": "D2",
-       "visible": true,
-       "looks_safe": true,
-       "note": "wooden-framed armchair with solid armrests, looks stable and upright"
-      }
-     ],
-     "photoreal": false
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "D0",
-       "visible": false,
-       "looks_safe": null,
-       "note": "no cord visible along baseboard in this region; only floor and rug edge visible"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "large teal rug appears low-pile with flat, even edges, no curling or tripping risk"
-      },
-      {
-       "key": "D2",
-       "visible": true,
-       "looks_safe": true,
-       "note": "wooden-framed armchair with sturdy arms and legs, appears stable and firm"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "D0: No cord or clip visible along the baseboard at the far left; only the curtain and wall edge show.",
-    "checks": [
-     {
-      "key": "D0",
-      "visible": false,
-      "looks_safe": null,
-      "note": "No cord or clip visible along the baseboard at the far left; only the curtain and wall edge show."
-     },
-     {
-      "key": "D1",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Large teal rug lies over the carpet with edges that look flat. It is somewhat plush and there is no coffee table."
-     },
-     {
-      "key": "D2",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Mustard wooden-frame armchair with sturdy armrests and an upright back."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "fal-L5-003",
@@ -13569,20 +10926,7 @@
     "checks": [],
     "photoreal": true
    },
-   "verified": false,
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "edit plan incomplete (skipped steps); not judged"
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": false
   },
   {
    "id": "fal-L5-004",
@@ -13924,83 +11268,7 @@
     ],
     "photoreal": true
    },
-   "verified_via": "re-judge after box localization",
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {},
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "BATH-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Pedestal sink could be mistaken for support; not load-rated for weight-bearing"
-      },
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Pet bowls and toy/bone on floor create trip hazard near walking path"
-      },
-      {
-       "key": "LIV-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Walker and shoes cluster narrows the path near doorway"
-      },
-      {
-       "key": "BATH-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Unsecured bath mat/rug on tile floor poses slip/trip risk"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Shower chair with rubber feet appears stable and appropriate for bathing support"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "BATH-03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Pedestal sink basin (with a towel bar beside it) sits in the walker path. It is easy to grab or lean on for support but is not load-rated."
-     },
-     {
-      "key": "LIV-07",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Double pet bowl and a red dog toy lie on the floor near the doorway, creating a trip hazard for a walker user."
-     },
-     {
-      "key": "LIV-03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Pair of shoes on the floor beside the shower chair legs narrows the entry path."
-     },
-     {
-      "key": "BATH-07",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Loose, rumpled white fluffy rug on the tile floor in front of the sink. A slip and trip risk for walker feet."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "White shower chair with adjustable legs and rubber-tipped feet looks sturdy. Its placement near the doorway slightly narrows the path, but the chair itself is not a hazard."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified_via": "re-judge after box localization"
   },
   {
    "id": "fal-L5-005",
@@ -14207,81 +11475,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": false,
-       "note": "A step ladder is leaning at an angle against the wall/fridge rather than being folded flat and secured, creating a trip/tip hazard near the walker path."
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Plates are neatly stacked behind glass cabinet doors; though mounted higher than waist height, they are stable and enclosed, not a hazard."
-      },
-      {
-       "key": "D2",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Dark mat in front of sink lies flat on the floor with no visible curling or bunching, posing minimal trip risk."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": false,
-       "note": "A folded step stool leaning against the wall near the fridge could be a tripping hazard, especially for someone using a walker; also it's not being used with a grab handle for stability, it's stored precariously."
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Plates on an open shelf at waist height are stable and not a hazard."
-      },
-      {
-       "key": "D2",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Rugs/mats, even flat ones, pose a tripping hazard for walker users; edges could catch a walker leg."
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "D1: Plates are inside an upper glass-front wall cabinet above the counter, not on a waist-height open shelf, so reaching them requires an overhead reach.",
-    "checks": [
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Folding step ladder with a tall handle is folded and leaning flat against the wall beside the fridge, out of the walkway. Using it would still be unsafe for a walker user."
-     },
-     {
-      "key": "D1",
-      "visible": false,
-      "looks_safe": false,
-      "note": "Plates are inside an upper glass-front wall cabinet above the counter, not on a waist-height open shelf, so reaching them requires an overhead reach."
-     },
-     {
-      "key": "D2",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Dark mat in front of the sink lies flat with no visible curling. Beveled edges are hard to confirm."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "fal-L5-006",
@@ -14693,135 +11887,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-03",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Empty floor area near stool; no clutter or narrowing visible"
-      },
-      {
-       "key": "LIV-02",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No cords or wires visible on the mat/threshold area"
-      },
-      {
-       "key": "LIV-07",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Box mostly falls below the pet bed/bowl into empty carpet, out of frame relevance"
-      },
-      {
-       "key": "ENT-02",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Area covered by doormat; no distinct raised sill visible"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "White staircase railing appears sturdy and well-mounted"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Flat gray doormat lying evenly on floor, no tripping edge apparent"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "LIV-03",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Only carpet and wall base visible, no clutter or narrowed path"
-      },
-      {
-       "key": "LIV-02",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No cords or wires visible across the floor in this area"
-      },
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Pet bed and food/water bowl sit directly in the walking path, tripping hazard"
-      },
-      {
-       "key": "ENT-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Slight raised wooden threshold visible at base of the front door"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "White staircase handrail is sturdy and properly mounted"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Flat doormat lying evenly on floor, no curled edges"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "LIV-02: No cords or wires are visible on the floor near the door or mat.",
-    "checks": [
-     {
-      "key": "LIV-03",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Small wooden bench sits beside the entry path. It slightly narrows the route but is not heavy clutter."
-     },
-     {
-      "key": "LIV-02",
-      "visible": false,
-      "looks_safe": null,
-      "note": "No cords or wires are visible on the floor near the door or mat."
-     },
-     {
-      "key": "LIV-07",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Pet bed with a toy and a metal food bowl sit mid-hallway in the walking path. They are slightly below the box."
-     },
-     {
-      "key": "ENT-02",
-      "visible": true,
-      "looks_safe": null,
-      "note": "A wooden sill strip is at the door base, just below the box. It is subtle and appears low."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A wall-mounted rail is on the right wall and stair railings are nearby. There are no doorway steps, but the rail looks sturdy."
-     },
-     {
-      "key": "D1",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Low-profile doormat lies flat in front of the door, slightly below the box."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "fal-L5-007",
@@ -15028,81 +12094,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "White step stool stored upright near window nook, not blocking main walkway; appears stable with handle."
-      },
-      {
-       "key": "D1",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No mat found in the specified region; the actual gray anti-fatigue mat is located further right/center of the floor, not matching this box."
-      },
-      {
-       "key": "D2",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Stacks of plates and bowls sit on an open shelf at waist height, appearing secure and not overcrowded."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": false,
-       "note": "step stool present but a folded/stored step stool is a trip and fall risk for someone using a walker post-surgery; also using it could be dangerous during recovery"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": false,
-       "note": "mat has raised edges/lip that could catch a walker or foot, posing a trip hazard despite lying flat"
-      },
-      {
-       "key": "D2",
-       "visible": true,
-       "looks_safe": true,
-       "note": "plates on open shelf at reasonable height, stable and not overhanging dangerously"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "D0: White step stool with tall handle is visible against the wall, but it appears unfolded and free-standing rather than folded flat. A step stool is also a fall risk for a walker user.; D2: Plates are stacked on an open shelf, but it is mounted high above the counter, not at waist height, so reaching them means reaching overhead.",
-    "checks": [
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": false,
-      "note": "White step stool with tall handle is visible against the wall, but it appears unfolded and free-standing rather than folded flat. A step stool is also a fall risk for a walker user."
-     },
-     {
-      "key": "D1",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Grey anti-fatigue mat lies flat with beveled edges in front of the cabinets. No curled edges are visible."
-     },
-     {
-      "key": "D2",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Plates are stacked on an open shelf, but it is mounted high above the counter, not at waist height, so reaching them means reaching overhead."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "fal-L5-008",
@@ -15160,20 +12152,7 @@
     "checks": [],
     "photoreal": true
    },
-   "verified": false,
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "edit plan incomplete (skipped steps); not judged"
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": false
   },
   {
    "id": "fal-L5-009",
@@ -15598,135 +12577,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Cloth/rug bundle spread on floor in walking path - trip hazard for walker user"
-      },
-      {
-       "key": "KIT-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Wooden chair sitting alone in open floor area could be misused for climbing/reaching, unstable if leaned on"
-      },
-      {
-       "key": "BED-04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Pile of clothing and items scattered on floor creating clutter/trip risk"
-      },
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Pet bed and food/water bowl placed directly in open floor walkway"
-      },
-      {
-       "key": "D0",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Only plain baseboard visible; no distinct cord cover channel identifiable"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Lit lamp on nightstand provides accessible lighting near seating area"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "LIV-01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Loose mat/rug bunched on floor, tripping hazard for walker user"
-      },
-      {
-       "key": "KIT-03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Wooden chair placed mid-room, could be used unsafely for reaching/climbing"
-      },
-      {
-       "key": "BED-04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Pile of clothing/blankets on floor creates clutter and trip risk"
-      },
-      {
-       "key": "LIV-07",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Pet bed and bowl on floor in walking path, underfoot hazard"
-      },
-      {
-       "key": "D0",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No visible cord cover channel along baseboard in that region"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Lamp lit on nightstand, appears stable and within reach"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "D0: No cord cover channel is recognisable in this region, which falls over the lower window and wall. The white strip along the back wall looks like a baseboard ledge.",
-    "checks": [
-     {
-      "key": "LIV-01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A loose mat or runner lies on the floor at lower left under clothes and shoes. It is a clear trip hazard for a walker user."
-     },
-     {
-      "key": "KIT-03",
-      "visible": true,
-      "looks_safe": null,
-      "note": "A wooden spindle chair stands against the back wall. It looks stable and is not shown being used for reaching, so the hazard is only implied."
-     },
-     {
-      "key": "BED-04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A pile of clothes, shoes and a bag clutters the floor, which is a clear hazard. However, no bed is visible in the scene."
-     },
-     {
-      "key": "LIV-07",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A pet bed, food bowl and toy sit on the open floor in the walking path. An assessor would flag these."
-     },
-     {
-      "key": "D0",
-      "visible": false,
-      "looks_safe": null,
-      "note": "No cord cover channel is recognisable in this region, which falls over the lower window and wall. The white strip along the back wall looks like a baseboard ledge."
-     },
-     {
-      "key": "D1",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A lit table lamp sits on a small side table. It looks safe, though there is no bed nearby to make it a bedside lamp."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "fal-L5-010",
@@ -15910,59 +12761,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "wall sconce is lit, providing good illumination at top of stairs"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "light-colored non-slip strips visible on tread edges, contrasting with dark wood treads"
-      },
-      {
-       "key": "D2",
-       "visible": true,
-       "looks_safe": true,
-       "note": "wooden handrail extends full length of staircase, securely mounted"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Lit wall sconce at the top of the stairwell, illuminating the stairs."
-     },
-     {
-      "key": "D1",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Pale contrasting strips on every tread edge, clearly visible against the dark wood."
-     },
-     {
-      "key": "D2",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Continuous wooden handrail on the right wall with a returned end, running the full flight. A left rail is also present."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L5-011",
@@ -16303,83 +13102,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Cord/wire visible on floor at bottom left near stairs, tripping hazard for walker user"
-      },
-      {
-       "key": "STAIR-06",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Stair covering appears bunched/loose creating uneven step surface"
-      },
-      {
-       "key": "STAIR-05",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Carpet edge overlapping stair nosing obscures step edge definition"
-      },
-      {
-       "key": "STAIR-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Handrail is short, only partially visible, doesn't extend full stair length"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Wall sconce provides illumination over the staircase area"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "LIV-02",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Thin white wire runs across the floor at the base of the stairs, at or near the box. It is a trip hazard for a walker user."
-     },
-     {
-      "key": "STAIR-06",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Pasted close-up shows a damaged step with frayed, torn carpet at the nosing. The step is clearly broken or uneven."
-     },
-     {
-      "key": "STAIR-05",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Upper treads are washed out by light and their edges are poorly defined. The carpet covering looks worn or loose."
-     },
-     {
-      "key": "STAIR-02",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Wooden handrail with brackets is visible only at the top. It looks short and does not extend down the flight."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Lit brass wall sconce next to the handrail. It provides stair lighting and is not itself a hazard."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "fal-L5-012",
@@ -16573,81 +13296,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "D0",
-       "visible": false,
-       "looks_safe": null,
-       "note": "only plain white baseboard trim visible near door; no distinct cord cover channel present"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "area rug under bed appears low-pile and lying flat with visible edges"
-      },
-      {
-       "key": "D2",
-       "visible": true,
-       "looks_safe": true,
-       "note": "lit bedside lamp on nightstand within reach of bed"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "D0",
-       "visible": false,
-       "looks_safe": null,
-       "note": "no cord cover visible along baseboard in this region, just baseboard and floor"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "large flat area rug under bed, edges appear flat with no visible curling or tripping edges"
-      },
-      {
-       "key": "D2",
-       "visible": true,
-       "looks_safe": true,
-       "note": "lamp on nightstand appears switched on, within reach of bed"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "D0: No cord cover channel visible; the region shows plain carpet near the nightstand and the baseboard is bare.",
-    "checks": [
-     {
-      "key": "D0",
-      "visible": false,
-      "looks_safe": null,
-      "note": "No cord cover channel visible; the region shows plain carpet near the nightstand and the baseboard is bare."
-     },
-     {
-      "key": "D1",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Large low-pile rug under the bed appears to lie flat with no curled edges, though its edges are still a minor walker consideration."
-     },
-     {
-      "key": "D2",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Lamp is lit on the nightstand beside the bed and within reach."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "fal-L5-014",
@@ -17002,117 +13651,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "LIV-03",
-       "visible": false,
-       "looks_safe": null,
-       "note": "no distinct clutter visible in this region beyond rug edge"
-      },
-      {
-       "key": "KIT-03",
-       "visible": false,
-       "looks_safe": null,
-       "note": "no step stool or chair visible at this location; appears to be empty floor/shadow"
-      },
-      {
-       "key": "LIV-02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "cord visible running along wall/floor near left chair, crossing walkway"
-      },
-      {
-       "key": "LIV-01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "large area rug with curled/loose edges lies across the main walking path"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "wooden-framed armchair with sturdy arms and legs, stable and upright"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "LIV-03",
-       "visible": false,
-       "looks_safe": null,
-       "note": "no visible clutter or narrowed path in this region, just open floor"
-      },
-      {
-       "key": "KIT-03",
-       "visible": false,
-       "looks_safe": null,
-       "note": "no step stool or chair visible in this area, appears to be near bookshelf"
-      },
-      {
-       "key": "LIV-02",
-       "visible": false,
-       "looks_safe": null,
-       "note": "no cords or wires visible in this region"
-      },
-      {
-       "key": "LIV-01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "large area rug with curled/rumpled edges visible on floor, tripping hazard"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "wooden-framed armchair with sturdy armrests and firm cushion, appears stable"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "LIV-03: Region shows only the small wooden side table/ottoman legs by the sofa. The path is open, with no clear clutter narrowing it.; KIT-03: No step stool or reaching chair here, just the dresser side and a small white object. The wooden chair near the bookshelf is well to the left and not being used for reaching.; D0: Mid-century lounge chair with wooden armrests, but it has a low, reclined sea",
-    "checks": [
-     {
-      "key": "LIV-03",
-      "visible": false,
-      "looks_safe": null,
-      "note": "Region shows only the small wooden side table/ottoman legs by the sofa. The path is open, with no clear clutter narrowing it."
-     },
-     {
-      "key": "KIT-03",
-      "visible": false,
-      "looks_safe": null,
-      "note": "No step stool or reaching chair here, just the dresser side and a small white object. The wooden chair near the bookshelf is well to the left and not being used for reaching."
-     },
-     {
-      "key": "LIV-02",
-      "visible": true,
-      "looks_safe": null,
-      "note": "A white cord runs from the wall outlet behind the armchair across the floor toward the rug. It sits mostly right of and below the box, but it is a clear walker trip hazard."
-     },
-     {
-      "key": "LIV-01",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Large loose rug in the middle of the walkway with wrinkled, curled-up edges. An obvious trip hazard."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Mid-century lounge chair with wooden armrests, but it has a low, reclined seat and back rather than a firm upright one. Standing up would be hard after hip or knee replacement."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   }
  ],
  "excluded_hazards": {},
@@ -25727,9 +22266,6 @@
    "llama-4-maverick": "us.meta.llama4-maverick-17b-instruct-v1:0",
    "mistral-large-3": "mistral.mistral-large-3-675b-instruct",
    "kimi-k3": "us.moonshotai.kimi-k3"
-  },
-  "recomputed": "2026-09-26 after Opus 5.5 re-verification (verified set changed >10%)",
-  "judge_model": "claude-opus-5.5"
- },
- "judge_model": "claude-opus-5.5"
+  }
+ }
 }

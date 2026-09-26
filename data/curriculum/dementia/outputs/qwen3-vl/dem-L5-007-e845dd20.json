@@ -1,0 +1,28 @@
+{
+ "id": "dem-L5-007",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-B02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The toilet seat and bowl are both white, blending with the light-colored floor and walls, which may make it difficult for someone with dementia to perceive the toilet\u2019s location or edges.\",\n      \"box\": [514, 555, 743, 997]\n    },\n    {\n      \"id\": \"DEM-B01\",\n      \"severity\": \"low\",\n      \"evidence\": \"An electric toothbrush is plugged in and sitting on the sink counter, which could be a minor electrical or tripping hazard if knocked over.\",\n      \"box\": [909, 487, 951, 712]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "The toilet seat and bowl are both white, blending with the light-colored floor and walls, which may make it difficult for someone with dementia to perceive the toilet\u2019s location or edges.",
+   "box": [
+    514,
+    555,
+    743,
+    997
+   ]
+  },
+  {
+   "id": "DEM-B01",
+   "severity": "low",
+   "evidence": "An electric toothbrush is plugged in and sitting on the sink counter, which could be a minor electrical or tripping hazard if knocked over.",
+   "box": [
+    909,
+    487,
+    951,
+    712
+   ]
+  }
+ ]
+}

@@ -563,32 +563,32 @@
     "n_distractors": 0
    },
    "2": {
-    "n_items": 8,
-    "recall": 0.875,
+    "n_items": 9,
+    "recall": 0.889,
     "distractor_false_flag": null,
-    "n_hazards": 8,
+    "n_hazards": 9,
     "n_distractors": 0
    },
    "3": {
-    "n_items": 10,
-    "recall": 0.9,
-    "distractor_false_flag": 0.3,
-    "n_hazards": 20,
-    "n_distractors": 10
+    "n_items": 12,
+    "recall": 0.917,
+    "distractor_false_flag": 0.25,
+    "n_hazards": 24,
+    "n_distractors": 12
    },
    "4": {
-    "n_items": 2,
-    "recall": 0.857,
+    "n_items": 6,
+    "recall": 0.727,
     "distractor_false_flag": null,
-    "n_hazards": 7,
+    "n_hazards": 22,
     "n_distractors": 0
    },
    "5": {
-    "n_items": 5,
-    "recall": 0.75,
-    "distractor_false_flag": 0.583,
-    "n_hazards": 4,
-    "n_distractors": 12
+    "n_items": 3,
+    "recall": 0.875,
+    "distractor_false_flag": 0.667,
+    "n_hazards": 8,
+    "n_distractors": 3
    }
   },
   "nova-2-lite": {
@@ -600,32 +600,32 @@
     "n_distractors": 0
    },
    "2": {
-    "n_items": 8,
-    "recall": 0.75,
+    "n_items": 9,
+    "recall": 0.778,
     "distractor_false_flag": null,
-    "n_hazards": 8,
+    "n_hazards": 9,
     "n_distractors": 0
    },
    "3": {
-    "n_items": 10,
+    "n_items": 12,
     "recall": 1.0,
     "distractor_false_flag": 0.0,
-    "n_hazards": 20,
-    "n_distractors": 10
+    "n_hazards": 24,
+    "n_distractors": 12
    },
    "4": {
-    "n_items": 2,
-    "recall": 0.714,
+    "n_items": 6,
+    "recall": 0.636,
     "distractor_false_flag": null,
-    "n_hazards": 7,
+    "n_hazards": 22,
     "n_distractors": 0
    },
    "5": {
-    "n_items": 5,
-    "recall": 0.25,
-    "distractor_false_flag": 0.25,
-    "n_hazards": 4,
-    "n_distractors": 12
+    "n_items": 3,
+    "recall": 0.625,
+    "distractor_false_flag": 0.667,
+    "n_hazards": 8,
+    "n_distractors": 3
    }
   },
   "mistral-large-3": {
@@ -637,32 +637,32 @@
     "n_distractors": 0
    },
    "2": {
-    "n_items": 8,
-    "recall": 0.625,
+    "n_items": 9,
+    "recall": 0.667,
     "distractor_false_flag": null,
-    "n_hazards": 8,
+    "n_hazards": 9,
     "n_distractors": 0
    },
    "3": {
-    "n_items": 10,
+    "n_items": 12,
     "recall": 1.0,
-    "distractor_false_flag": 0.1,
-    "n_hazards": 20,
-    "n_distractors": 10
+    "distractor_false_flag": 0.083,
+    "n_hazards": 24,
+    "n_distractors": 12
    },
    "4": {
-    "n_items": 2,
-    "recall": 0.714,
+    "n_items": 6,
+    "recall": 0.5,
     "distractor_false_flag": null,
-    "n_hazards": 7,
+    "n_hazards": 22,
     "n_distractors": 0
    },
    "5": {
-    "n_items": 5,
+    "n_items": 3,
     "recall": 0.5,
     "distractor_false_flag": 0.333,
-    "n_hazards": 4,
-    "n_distractors": 12
+    "n_hazards": 8,
+    "n_distractors": 3
    }
   },
   "nova-pro": {
@@ -674,32 +674,32 @@
     "n_distractors": 0
    },
    "2": {
-    "n_items": 8,
-    "recall": 0.375,
+    "n_items": 9,
+    "recall": 0.333,
     "distractor_false_flag": null,
-    "n_hazards": 8,
+    "n_hazards": 9,
     "n_distractors": 0
    },
    "3": {
-    "n_items": 10,
-    "recall": 0.85,
-    "distractor_false_flag": 0.1,
-    "n_hazards": 20,
-    "n_distractors": 10
+    "n_items": 12,
+    "recall": 0.875,
+    "distractor_false_flag": 0.083,
+    "n_hazards": 24,
+    "n_distractors": 12
    },
    "4": {
-    "n_items": 2,
-    "recall": 0.714,
+    "n_items": 6,
+    "recall": 0.727,
     "distractor_false_flag": null,
-    "n_hazards": 7,
+    "n_hazards": 22,
     "n_distractors": 0
    },
    "5": {
-    "n_items": 5,
-    "recall": 1.0,
-    "distractor_false_flag": 0.25,
-    "n_hazards": 4,
-    "n_distractors": 12
+    "n_items": 3,
+    "recall": 0.875,
+    "distractor_false_flag": 0.0,
+    "n_hazards": 8,
+    "n_distractors": 3
    }
   },
   "claude-sonnet-5": {
@@ -711,32 +711,32 @@
     "n_distractors": 0
    },
    "2": {
-    "n_items": 8,
-    "recall": 0.75,
+    "n_items": 9,
+    "recall": 0.667,
     "distractor_false_flag": null,
-    "n_hazards": 8,
+    "n_hazards": 9,
     "n_distractors": 0
    },
    "3": {
-    "n_items": 10,
+    "n_items": 12,
     "recall": 1.0,
     "distractor_false_flag": 0.0,
-    "n_hazards": 20,
-    "n_distractors": 10
+    "n_hazards": 24,
+    "n_distractors": 12
    },
    "4": {
-    "n_items": 2,
-    "recall": 0.714,
+    "n_items": 6,
+    "recall": 0.682,
     "distractor_false_flag": null,
-    "n_hazards": 7,
+    "n_hazards": 22,
     "n_distractors": 0
    },
    "5": {
-    "n_items": 5,
-    "recall": 1.0,
+    "n_items": 3,
+    "recall": 0.875,
     "distractor_false_flag": 0.0,
-    "n_hazards": 4,
-    "n_distractors": 12
+    "n_hazards": 8,
+    "n_distractors": 3
    }
   },
   "gpt-5.6-sol": {
@@ -748,32 +748,32 @@
     "n_distractors": 0
    },
    "2": {
-    "n_items": 8,
-    "recall": 0.75,
+    "n_items": 9,
+    "recall": 0.667,
     "distractor_false_flag": null,
-    "n_hazards": 8,
+    "n_hazards": 9,
     "n_distractors": 0
    },
    "3": {
-    "n_items": 10,
+    "n_items": 12,
     "recall": 1.0,
-    "distractor_false_flag": 0.2,
-    "n_hazards": 20,
-    "n_distractors": 10
+    "distractor_false_flag": 0.167,
+    "n_hazards": 24,
+    "n_distractors": 12
    },
    "4": {
-    "n_items": 2,
-    "recall": 1.0,
+    "n_items": 6,
+    "recall": 0.864,
     "distractor_false_flag": null,
-    "n_hazards": 7,
+    "n_hazards": 22,
     "n_distractors": 0
    },
    "5": {
-    "n_items": 5,
+    "n_items": 3,
     "recall": 1.0,
-    "distractor_false_flag": 0.083,
-    "n_hazards": 4,
-    "n_distractors": 12
+    "distractor_false_flag": 0.0,
+    "n_hazards": 8,
+    "n_distractors": 3
    }
   },
   "qwen3-vl": {
@@ -785,32 +785,32 @@
     "n_distractors": 0
    },
    "2": {
-    "n_items": 8,
-    "recall": 0.875,
+    "n_items": 9,
+    "recall": 0.889,
     "distractor_false_flag": null,
-    "n_hazards": 8,
+    "n_hazards": 9,
     "n_distractors": 0
    },
    "3": {
-    "n_items": 10,
+    "n_items": 12,
     "recall": 1.0,
-    "distractor_false_flag": 0.2,
-    "n_hazards": 20,
-    "n_distractors": 10
+    "distractor_false_flag": 0.167,
+    "n_hazards": 24,
+    "n_distractors": 12
    },
    "4": {
-    "n_items": 2,
-    "recall": 1.0,
+    "n_items": 6,
+    "recall": 0.864,
     "distractor_false_flag": null,
-    "n_hazards": 7,
+    "n_hazards": 22,
     "n_distractors": 0
    },
    "5": {
-    "n_items": 5,
+    "n_items": 3,
     "recall": 1.0,
-    "distractor_false_flag": 0.417,
-    "n_hazards": 4,
-    "n_distractors": 12
+    "distractor_false_flag": 0.333,
+    "n_hazards": 8,
+    "n_distractors": 3
    }
   },
   "kimi-k3": {
@@ -822,32 +822,32 @@
     "n_distractors": 0
    },
    "2": {
-    "n_items": 8,
-    "recall": 0.875,
+    "n_items": 9,
+    "recall": 0.778,
     "distractor_false_flag": null,
-    "n_hazards": 8,
+    "n_hazards": 9,
     "n_distractors": 0
    },
    "3": {
-    "n_items": 10,
+    "n_items": 12,
     "recall": 1.0,
     "distractor_false_flag": 0.0,
-    "n_hazards": 20,
-    "n_distractors": 10
+    "n_hazards": 24,
+    "n_distractors": 12
    },
    "4": {
-    "n_items": 2,
-    "recall": 0.857,
+    "n_items": 6,
+    "recall": 0.727,
     "distractor_false_flag": null,
-    "n_hazards": 7,
+    "n_hazards": 22,
     "n_distractors": 0
    },
    "5": {
-    "n_items": 5,
-    "recall": 0.75,
+    "n_items": 3,
+    "recall": 0.875,
     "distractor_false_flag": 0.0,
-    "n_hazards": 4,
-    "n_distractors": 12
+    "n_hazards": 8,
+    "n_distractors": 3
    }
   }
  },
@@ -920,35 +920,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Spray bottle and small containers near sink area visible in region, consistent with unlocked cleaning chemicals accessible on counter."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-K03: Small white bottle with red cap (likely dish soap or cleaner) sits on the rack right of the sink, just at/below the box, and a hand-soap pump is left of the sink. Products are unsecured on the counter, but they are small and not clearly harsh chemicals, so the hazard is weakly depicted.",
-    "checks": [
-     {
-      "key": "DEM-K03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Small white bottle with red cap (likely dish soap or cleaner) sits on the rack right of the sink, just at/below the box, and a hand-soap pump is left of the sink. Products are unsecured on the counter, but they are small and not clearly harsh chemicals, so the hazard is weakly depicted."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true
   },
   {
    "id": "dem-L1-001",
@@ -1009,35 +981,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-E03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Pile of newspapers scattered on floor in walkway near recliner, creating a trip hazard"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-E03: Stacks of newspapers, a shoe, and crumpled paper sit on the floor beside the recliner and extend into the open walkway. This is a clear trip hazard an assessor would flag.",
-    "checks": [
-     {
-      "key": "DEM-E03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Stacks of newspapers, a shoe, and crumpled paper sit on the floor beside the recliner and extend into the open walkway. This is a clear trip hazard an assessor would flag."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true
   },
   {
    "id": "dem-L1-002",
@@ -1115,35 +1059,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-R02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "High-contrast black/white striped rug pattern can be misperceived as steps or gaps by someone with dementia, increasing fall/trip risk"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-R02: Black-and-white offset-stripe rug on the floor beside the bed. A person with dementia may misperceive the high-contrast pattern as steps, holes or a moving surface. The loose rug edges are also a trip hazard.",
-    "checks": [
-     {
-      "key": "DEM-R02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Black-and-white offset-stripe rug on the floor beside the bed. A person with dementia may misperceive the high-contrast pattern as steps, holes or a moving surface. The loose rug edges are also a trip hazard."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L1-003",
@@ -1221,35 +1137,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Multiple pill bottles and a pill organizer are visible on the kitchen counter, left out and accessible - a real hazard for a person with dementia."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-K04: Several orange prescription bottles and an open pill organizer sit on the counter by the coffee maker, easily reachable. This is a clear medication-access hazard for someone with dementia. The box matches the bottles only if read as pixel coordinates; in 0-1000 space they sit at about x 689-740, y 322-375, left of the stated box.",
-    "checks": [
-     {
-      "key": "DEM-K04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Several orange prescription bottles and an open pill organizer sit on the counter by the coffee maker, easily reachable. This is a clear medication-access hazard for someone with dementia. The box matches the bottles only if read as pixel coordinates; in 0-1000 space they sit at about x 689-740, y 322-375, left of the stated box."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L1-004",
@@ -1327,35 +1215,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-E02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Front door open to outside with stairs visible, elopement/fall risk for person with dementia"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-E02: The front door stands wide open with a view straight to the outside yard, steps and railing. The box sits slightly right of the door slab but covers the open doorway. This is a clear wandering/elopement risk for someone with dementia.",
-    "checks": [
-     {
-      "key": "DEM-E02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "The front door stands wide open with a view straight to the outside yard, steps and railing. The box sits slightly right of the door slab but covers the open doorway. This is a clear wandering/elopement risk for someone with dementia."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L1-005",
@@ -1433,35 +1293,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-R01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Tall standing mirror positioned to directly face the bed; reflections at night can confuse/frighten a person with dementia, increasing agitation or fall risk if they mistake reflection for an intruder."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-R01: A tall wood-framed floor mirror stands in the corner beside the bed, just left of the box, and is angled toward the bed. A person with dementia may mistake their reflection for an intruder, causing confusion or agitation, especially at night.",
-    "checks": [
-     {
-      "key": "DEM-R01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A tall wood-framed floor mirror stands in the corner beside the bed, just left of the box, and is angled toward the bed. A person with dementia may mistake their reflection for an intruder, causing confusion or agitation, especially at night."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L1-006",
@@ -1539,35 +1371,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-B03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Dark bath mat visible on light tile floor near tub, a trip/contrast hazard for someone with dementia"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-B03: A black rectangular bath mat sits on light beige tile in front of the tub. A person with dementia may see the high-contrast dark area as a hole or void and avoid it or misstep. The mat is also a possible trip or slip hazard.",
-    "checks": [
-     {
-      "key": "DEM-B03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A black rectangular bath mat sits on light beige tile in front of the tub. A person with dementia may see the high-contrast dark area as a hole or void and avoid it or misstep. The mat is also a possible trip or slip hazard."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L1-007",
@@ -1645,35 +1449,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Knife block with multiple knives visible on counter near sink, plus a knife lying on the countertop - accessible sharps hazard for a person with dementia"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-K02: A knife block full of knives and a loose large knife/cleaver sit on the counter right of the sink, easily reached. The box values match these objects in pixel coordinates; in 0-1000 coordinates the box falls on the doorway wall to the right.",
-    "checks": [
-     {
-      "key": "DEM-K02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A knife block full of knives and a loose large knife/cleaver sit on the counter right of the sink, easily reached. The box values match these objects in pixel coordinates; in 0-1000 coordinates the box falls on the doorway wall to the right."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L2-000",
@@ -1749,45 +1525,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K02",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Region shows the doorway/hallway to dining room; no knives or sharps are visible there."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "DEM-K02",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Region shows a doorway leading to a dining room; no knives or sharps are visible in this area."
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "DEM-K02: Counter area shows a coffee maker, soap dispenser, towel, sink and colander. The only candidate is a small dark object near the towel, which is ambiguous (possibly a phone or remote) and not recognisable as knives or sharps.",
-    "checks": [
-     {
-      "key": "DEM-K02",
-      "visible": false,
-      "looks_safe": null,
-      "note": "Counter area shows a coffee maker, soap dispenser, towel, sink and colander. The only candidate is a small dark object near the towel, which is ambiguous (possibly a phone or remote) and not recognisable as knives or sharps."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "dem-L2-001",
@@ -1851,35 +1589,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-E01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Key hooks with hanging keys mounted on wall near entry; potential hazard as person with dementia may attempt to leave unsupervised or lose keys."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-E01: A set of keys, including a car-style fob, hangs from a small wooden key holder at the left edge near the lamp. They are recognisable and within easy reach, which is a driving risk for someone with dementia. However, they are by the side-table lamp, not by the front door as the label says.",
-    "checks": [
-     {
-      "key": "DEM-E01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A set of keys, including a car-style fob, hangs from a small wooden key holder at the left edge near the lamp. They are recognisable and within easy reach, which is a driving risk for someone with dementia. However, they are by the side-table lamp, not by the front door as the label says."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true
   },
   {
    "id": "dem-L2-002",
@@ -1969,45 +1679,7 @@
     ],
     "photoreal": true
    },
-   "verified_via": "re-judge after box localization",
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-R02",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Box coordinates fall outside image bounds (image height ~854); no rug pattern visible at that location"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "DEM-R02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Patterned area rug with contrasting border on carpet could be a trip hazard or visually confusing for someone with dementia due to depth perception issues."
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-R02: Loose throw rug on carpet with dark multi-stripe border; contrast is moderate rather than bold, but the dark border could be misread as a step or hole, and the rug is a trip hazard.",
-    "checks": [
-     {
-      "key": "DEM-R02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Loose throw rug on carpet with dark multi-stripe border; contrast is moderate rather than bold, but the dark border could be misread as a step or hole, and the rug is a trip hazard."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified_via": "re-judge after box localization"
   },
   {
    "id": "dem-L2-003",
@@ -2068,35 +1740,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-B04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "A cord-attached handheld device hangs on the wall near the sink, resembling a plugged-in hair dryer, posing an electrical hazard near water."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-B04: A small wall-mounted hair dryer in a bracket, with its coiled cord plugged into the outlet, sits just above the vanity sink. An assessor would flag it as a water/electrical and burn risk.",
-    "checks": [
-     {
-      "key": "DEM-B04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A small wall-mounted hair dryer in a bracket, with its coiled cord plugged into the outlet, sits just above the vanity sink. An assessor would flag it as a water/electrical and burn risk."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true
   },
   {
    "id": "dem-L2-004",
@@ -2157,35 +1801,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Knife handles visible in a block/holder on countertop near stove, accessible to someone with dementia"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-K02: Two large chef's knives stand upright, blade-up, on the counter beside the coffee maker. They are easily reachable and a clear sharps hazard for someone with dementia.",
-    "checks": [
-     {
-      "key": "DEM-K02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Two large chef's knives stand upright, blade-up, on the counter beside the coffee maker. They are easily reachable and a clear sharps hazard for someone with dementia."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true
   },
   {
    "id": "dem-L2-005",
@@ -2263,35 +1879,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-R01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Full-length mirror on door reflects the bed; for a person with dementia, mirror reflections can cause confusion, disorientation, or perception of an intruder/stranger, which is a recognized dementia-care hazard."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-R01: Full-length mirror on the closet door directly reflects the bed. A person with dementia may mistake their reflection for an intruder, especially at night.",
-    "checks": [
-     {
-      "key": "DEM-R01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Full-length mirror on the closet door directly reflects the bed. A person with dementia may mistake their reflection for an intruder, especially at night."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L2-006",
@@ -2381,45 +1969,7 @@
     ],
     "photoreal": true
    },
-   "verified_via": "re-judge after box localization",
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-B03",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Bath mat visible in image is gray, located higher up (~700-810 y range), not at the specified box coordinates which fall below the image content"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "DEM-B03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Dark gray bath mat contrasts with light tile floor; could create visual confusion or trip risk for someone with dementia due to depth perception issues"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-B03: A dark charcoal bath mat sits on light beige tile in front of the tub. People with dementia may see it as a hole or step and avoid it or misstep. It is also a loose rug trip hazard.",
-    "checks": [
-     {
-      "key": "DEM-B03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A dark charcoal bath mat sits on light beige tile in front of the tub. People with dementia may see it as a hole or step and avoid it or misstep. It is also a loose rug trip hazard."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified_via": "re-judge after box localization"
   },
   {
    "id": "dem-L2-007",
@@ -2497,35 +2047,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Orange pill bottle visible on counter near coffee maker, within/near the labeled region - unsecured medication accessible to someone with dementia"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-K04: An orange prescription pill bottle with a white cap sits on the counter near the coffee maker. It is slightly left of and below the box but close to it. Medication within easy reach is a real hazard for a person with dementia.",
-    "checks": [
-     {
-      "key": "DEM-K04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "An orange prescription pill bottle with a white cap sits on the counter near the coffee maker. It is slightly left of and below the box but close to it. Medication within easy reach is a real hazard for a person with dementia."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L2-008",
@@ -2603,35 +2125,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-E02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Front door visible ajar/open at end of hallway, revealing exterior light and door frame - potential wandering hazard for person with dementia"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-E02: A white exterior door stands ajar, with daylight and greenery visible outside. It sits just left of the box, near the doorway frame. This is an elopement/wandering risk for a person with dementia.",
-    "checks": [
-     {
-      "key": "DEM-E02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A white exterior door stands ajar, with daylight and greenery visible outside. It sits just left of the box, near the doorway frame. This is an elopement/wandering risk for a person with dementia."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L2-009",
@@ -2695,36 +2189,8 @@
     ],
     "photoreal": true
    },
-   "verified": false,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-R02",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Rug at bedside is a light neutral tone with subtle patterning, not bold or high-contrast; low trip risk but flat lying on carpet."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "DEM-R02: Box covers the bed and quilt, not a rug. The only nearby rug (lower center-right, beside the bed) is muted and low-contrast, not a bold high-contrast pattern. The hallway runners are dark and subdued.",
-    "checks": [
-     {
-      "key": "DEM-R02",
-      "visible": false,
-      "looks_safe": null,
-      "note": "Box covers the bed and quilt, not a rug. The only nearby rug (lower center-right, beside the bed) is muted and low-contrast, not a bold high-contrast pattern. The hallway runners are dark and subdued."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true,
+   "box_refined": true
   },
   {
    "id": "dem-L3-000",
@@ -2910,59 +2376,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Cleaning spray bottles and container of pods left open on counter, accessible"
-      },
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Inset shows gas burner lit with open flame, knobs exposed and easily turned"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Utensil crock with wooden spoons, no hazard present"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-K03: Bleach jug, spray cleaner and a clear tub of laundry pods sit openly on the counter just left of the box. They are unlocked and within easy reach, a clear ingestion hazard for someone with dementia.; DEM-K01: An inset photo shows a lit gas burner with a blue flame and four exposed, unguarded control knobs. It is clearly a stove-left-on hazard.",
-    "checks": [
-     {
-      "key": "DEM-K03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Bleach jug, spray cleaner and a clear tub of laundry pods sit openly on the counter just left of the box. They are unlocked and within easy reach, a clear ingestion hazard for someone with dementia."
-     },
-     {
-      "key": "DEM-K01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "An inset photo shows a lit gas burner with a blue flame and four exposed, unguarded control knobs. It is clearly a stove-left-on hazard."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A ceramic crock with wooden spoons and spatulas sits on the counter left of the chemicals, somewhat left of the box. It is a benign item."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L3-001",
@@ -3148,59 +2562,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-E03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Stacked newspapers and boxes cluttering the floor create a tripping hazard in the walkway"
-      },
-      {
-       "key": "DEM-E01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Car keys hanging near door could tempt wandering/driving; also a small sensor device is visible on the door frame"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Front door appears closed with a sensor mounted on the frame, indicating a door alarm/chime setup"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "DEM-E03",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Stacks of newspapers, cardboard boxes and several pairs of shoes sit on the hallway floor, obstructing the walkway. This is a clear trip and fall hazard."
-     },
-     {
-      "key": "DEM-E01",
-      "visible": true,
-      "looks_safe": null,
-      "note": "A car key with a fob hangs on a wall hook beside the front door, easily reachable. This is a driving and wandering risk for someone with dementia."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "The front door is closed and a small white contact/chime sensor is mounted on the upper frame. Visible wiring runs along the wall but not across the floor, so it does not read as a hazard."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L3-002",
@@ -3386,59 +2748,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-E02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Front door open to outside, showing stairs and exterior - exit/wandering hazard for dementia patient"
-      },
-      {
-       "key": "DEM-E03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Boxes, newspapers, and shoes piled on floor in main walkway - tripping hazard"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Small metal box mounted on wall near door, appears closed and secure"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-E02: Front door stands wide open to the porch and street; the box overlaps the open doorway. This is a wandering/exit risk for someone with dementia.; DEM-E03: Boxes, newspaper stacks and loose shoes sit in the middle of the walkway, a clear trip and fall hazard.",
-    "checks": [
-     {
-      "key": "DEM-E02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Front door stands wide open to the porch and street; the box overlaps the open doorway. This is a wandering/exit risk for someone with dementia."
-     },
-     {
-      "key": "DEM-E03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Boxes, newspaper stacks and loose shoes sit in the middle of the walkway, a clear trip and fall hazard."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A closed wall-mounted keypad key lockbox sits just left of the box, near the door. It poses no hazard."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L3-003",
@@ -3624,59 +2934,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-E03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Piles of shoes, newspapers, and boxes block the walkway near the front door, a trip hazard."
-      },
-      {
-       "key": "DEM-E01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Car keys hang on a hook by the door, an elopement risk for a person with dementia."
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Front door is closed with a visible door/window sensor on the frame, indicating a monitored, secure exit."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "DEM-E03",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Stacked newspapers, a cardboard box and scattered shoes and boots block the hallway floor, a clear trip and fall hazard."
-     },
-     {
-      "key": "DEM-E01",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Car keys with a fob hang on a wall hook near the front door, making it easy to take them for unsafe driving or wandering."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "The front door is closed, and a small white sensor is mounted on the upper right frame, sitting just at the box edge."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L3-004",
@@ -3861,60 +3119,8 @@
     ],
     "photoreal": true
    },
-   "verified": false,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K02",
-       "visible": true,
-       "looks_safe": null,
-       "note": "Knife block with multiple knives visible on counter near sink, accessible"
-      },
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": null,
-       "note": "Inset shows gas burner actively lit with blue flame, knobs exposed and reachable"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Gray lockbox with keypad and padlock, appears closed and secured"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "DEM-K01: The in-scene range is a black electric/smooth-top with no visible sign it is on. The lit gas burner and knobs appear only in a pasted inset in the top-left corner, which does not match the actual stove.",
-    "checks": [
-     {
-      "key": "DEM-K02",
-      "visible": true,
-      "looks_safe": null,
-      "note": "Knife block full of knives is clearly on the counter left of the gray safe. Boxes appear to be pixel coords, not 0-1000. An assessor would flag the accessible sharps."
-     },
-     {
-      "key": "DEM-K01",
-      "visible": false,
-      "looks_safe": null,
-      "note": "The in-scene range is a black electric/smooth-top with no visible sign it is on. The lit gas burner and knobs appear only in a pasted inset in the top-left corner, which does not match the actual stove."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Gray keypad lockbox with a padlock sits closed on the counter. It looks secure."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true,
+   "box_refined": true
   },
   {
    "id": "dem-L3-005",
@@ -4100,59 +3306,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-B04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Hair dryer with cord plugged into outlet near sink/water - electrical shock hazard"
-      },
-      {
-       "key": "DEM-B03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Dark bath mat on light tile could be mistaken for a hole/shadow by someone with dementia, tripping hazard"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Toothbrush cup and soap dispenser on counter, no hazard visible"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-B04: White hair dryer lies on the counter beside the sink, its cord running to a wall outlet. This is a clear electrical and water hazard.; DEM-B03: Black rectangular mat on a light tile floor. The high contrast can look like a hole to someone with dementia, and the mat is a trip risk.",
-    "checks": [
-     {
-      "key": "DEM-B04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "White hair dryer lies on the counter beside the sink, its cord running to a wall outlet. This is a clear electrical and water hazard."
-     },
-     {
-      "key": "DEM-B03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Black rectangular mat on a light tile floor. The high contrast can look like a hole to someone with dementia, and the mat is a trip risk."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Patterned toothbrush cup and white pump soap dispenser on the counter. Ordinary, benign items."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L3-006",
@@ -4338,59 +3492,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Stove burner shown lit with open flame, knobs accessible, clear fire hazard"
-      },
-      {
-       "key": "DEM-K04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Multiple prescription bottles left open on counter, accessible and potential mix-up/overdose risk"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Ceramic crock with wooden utensils near sink, benign kitchen item"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-K01: Gas stove with a lit blue burner flame and accessible front knobs is clearly shown (in an inset panel); an assessor would flag an unattended open flame.; DEM-K04: Several orange prescription bottles, loose pills and a pill organizer sit openly on the counter; unsecured medication is a clear risk for someone with dementia.",
-    "checks": [
-     {
-      "key": "DEM-K01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Gas stove with a lit blue burner flame and accessible front knobs is clearly shown (in an inset panel); an assessor would flag an unattended open flame."
-     },
-     {
-      "key": "DEM-K04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Several orange prescription bottles, loose pills and a pill organizer sit openly on the counter; unsecured medication is a clear risk for someone with dementia."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Ceramic crock with wooden spoons and spatulas by the sink; ordinary and not a hazard."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L3-007",
@@ -4576,59 +3678,7 @@
     "photoreal": false
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-R02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "High-contrast black/white chevron rug creates trip/confusion risk, especially for dementia patients with depth perception issues"
-      },
-      {
-       "key": "DEM-R04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Electric space heater with exposed glowing coils positioned directly beside bed and bedding - serious fire hazard"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Small framed family photo mounted safely on wall, no hazard"
-      }
-     ],
-     "photoreal": false
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-R02: Bold black-and-white chevron rug clearly visible. The high-contrast pattern can be misperceived as steps or holes by someone with dementia, and its edges pose a trip risk.; DEM-R04: Glowing halogen space heater sits right beside the draped bedspread, with its cord running across the floor. This is a fire and burn hazard an assessor would flag.",
-    "checks": [
-     {
-      "key": "DEM-R02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Bold black-and-white chevron rug clearly visible. The high-contrast pattern can be misperceived as steps or holes by someone with dementia, and its edges pose a trip risk."
-     },
-     {
-      "key": "DEM-R04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Glowing halogen space heater sits right beside the draped bedspread, with its cord running across the floor. This is a fire and burn hazard an assessor would flag."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Small framed family photo hung securely on the wall. It is not a hazard and is supportive for orientation."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L3-008",
@@ -4814,59 +3864,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Gas stove burner shown lit with visible blue flame, knobs accessible - fire/burn hazard for person with dementia"
-      },
-      {
-       "key": "DEM-K04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Multiple pill bottles and pill organizer left out on counter, unsecured - risk of missed/double dosing or accidental ingestion"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Ceramic crock with wooden utensils on counter - normal kitchen item, no hazard"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-K01: Inset clearly shows a gas burner lit with a blue flame and accessible front knobs. This is an obvious unattended-stove hazard.; DEM-K04: Inset shows several orange prescription bottles and a pill organizer left out on the counter. This is a clear medication-access hazard.",
-    "checks": [
-     {
-      "key": "DEM-K01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Inset clearly shows a gas burner lit with a blue flame and accessible front knobs. This is an obvious unattended-stove hazard."
-     },
-     {
-      "key": "DEM-K04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Inset shows several orange prescription bottles and a pill organizer left out on the counter. This is a clear medication-access hazard."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Ceramic crock with wooden spoons is on the counter, but the box sits about 100 units too far right, over the pill inset. The item is harmless."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L3-009",
@@ -5046,59 +4044,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-E03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Boxes, shoes, and clothing piled in the hallway walkway create a tripping hazard, especially at floor level where they're hard to see."
-      },
-      {
-       "key": "DEM-E01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Car keys hang on a hook near the door, an elopement risk for someone with dementia who could take keys and leave/drive unsupervised."
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Door appears closed with a small sensor/chime device visible on the frame, a reasonable safety measure to alert caregivers if the door opens."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-E03: Stacked boxes, newspapers, and shoes are piled on the floor in front of the door, a clear trip and fall hazard in the walkway.; DEM-E01: A car key fob and keys hang on a wall hook near the exit, easily accessible and a driving/wandering risk for someone with dementia.",
-    "checks": [
-     {
-      "key": "DEM-E03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Stacked boxes, newspapers, and shoes are piled on the floor in front of the door, a clear trip and fall hazard in the walkway."
-     },
-     {
-      "key": "DEM-E01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A car key fob and keys hang on a wall hook near the exit, easily accessible and a driving/wandering risk for someone with dementia."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "The front door is closed, with a small white sensor/chime unit on the upper right of the frame; the door itself looks safe."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L3-010",
@@ -5283,60 +4229,8 @@
     ],
     "photoreal": true
    },
-   "verified": false,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Bottles of cleaning/laundry chemicals (Clorox, Gain) left accessible on open counter"
-      },
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Inset shows gas burner lit with blue flame, knobs exposed and reachable"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Ceramic crock with wooden spoons/spatulas on counter, no hazard evident"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "DEM-K03: Bleach jug, spray cleaner and a laundry-pod tub sit openly on the counter just left of the box. The box itself mostly covers the utensil crock. A clear hazard for someone with dementia.; DEM-K01: The inset shows a lit blue gas flame and exposed, easily turned knobs. The box overlaps the knob row. A clear hazard.; D0: The box falls on the upper wooden cabinet door at right. The wooden-spoo",
-    "checks": [
-     {
-      "key": "DEM-K03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Bleach jug, spray cleaner and a laundry-pod tub sit openly on the counter just left of the box. The box itself mostly covers the utensil crock. A clear hazard for someone with dementia."
-     },
-     {
-      "key": "DEM-K01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "The inset shows a lit blue gas flame and exposed, easily turned knobs. The box overlaps the knob row. A clear hazard."
-     },
-     {
-      "key": "D0",
-      "visible": false,
-      "looks_safe": null,
-      "note": "The box falls on the upper wooden cabinet door at right. The wooden-spoon crock is further left, around x 650-700, not in or near the box."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true,
+   "box_refined": true
   },
   {
    "id": "dem-L3-011",
@@ -5522,59 +4416,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Gas burner visibly lit blue flame on stove with knobs accessible - active fire hazard for someone with dementia"
-      },
-      {
-       "key": "DEM-K04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Multiple pill bottles and medication organizers left open on countertop, easily accessible"
-      },
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Ceramic crock with wooden utensils on counter near sink - normal kitchen item, no hazard"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-K01: Gas burner with a lit blue flame and accessible front knobs are clearly visible; the stove top appears pasted in.; DEM-K04: Several orange prescription bottles, one tipped over with pills spilled, plus a pill organizer are out on the counter.",
-    "checks": [
-     {
-      "key": "DEM-K01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Gas burner with a lit blue flame and accessible front knobs are clearly visible; the stove top appears pasted in."
-     },
-     {
-      "key": "DEM-K04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Several orange prescription bottles, one tipped over with pills spilled, plus a pill organizer are out on the counter."
-     },
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A ceramic crock holding wooden spoons and spatulas sits on the counter; it is benign."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L4-000",
@@ -5832,99 +4674,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K02",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No knives or sharps visible; only pill bottles seen on counter"
-      },
-      {
-       "key": "DEM-K03",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No cleaning chemicals visible in this area"
-      },
-      {
-       "key": "DEM-K04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Multiple pill bottles and a rainbow pill organizer left open on kitchen counter"
-      },
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Inset shows gas stove with lit blue flame and unguarded knobs"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "DEM-K02",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No knives or sharps visible in this region; only fridge and counter area"
-      },
-      {
-       "key": "DEM-K03",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No cleaning chemicals visible; only fridge and cabinets seen"
-      },
-      {
-       "key": "DEM-K04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Multiple pill bottles clearly left out on counter, unsecured"
-      },
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Stove burner shows active blue flame with knobs accessible - active fire hazard"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "DEM-K02: No knives or sharps visible; the region shows only the fridge, cabinets and counter.; DEM-K03: No cleaning chemicals visible anywhere in or near the region.; DEM-K04: Several orange prescription bottles and a rainbow weekly pill organizer sit openly on the counter, slightly left of the box.; DEM-K01: Top-right inset shows a gas burner with a lit blue flame and exposed knobs. It is a paste",
-    "checks": [
-     {
-      "key": "DEM-K02",
-      "visible": false,
-      "looks_safe": null,
-      "note": "No knives or sharps visible; the region shows only the fridge, cabinets and counter."
-     },
-     {
-      "key": "DEM-K03",
-      "visible": false,
-      "looks_safe": null,
-      "note": "No cleaning chemicals visible anywhere in or near the region."
-     },
-     {
-      "key": "DEM-K04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Several orange prescription bottles and a rainbow weekly pill organizer sit openly on the counter, slightly left of the box."
-     },
-     {
-      "key": "DEM-K01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Top-right inset shows a gas burner with a lit blue flame and exposed knobs. It is a pasted inset, not part of the room scene."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "dem-L4-001",
@@ -5972,20 +4722,7 @@
     "checks": [],
     "photoreal": true
    },
-   "verified": false,
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "edit plan incomplete (skipped steps); not judged"
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": false
   },
   {
    "id": "dem-L4-002",
@@ -6183,60 +4920,8 @@
     ],
     "photoreal": true
    },
-   "verified": false,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-R02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Patterned rug present but pattern is subtle tan/beige tones, not strongly high-contrast; still a trip-hazard edge on carpet."
-      },
-      {
-       "key": "DEM-R04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Portable space heater with glowing coils sits directly beside bed skirt/blanket - fire risk hazard."
-      },
-      {
-       "key": "DEM-R01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Tall floor mirror reflecting the bed, could cause confusion/fear for a person with dementia."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "DEM-R02: An area rug is present, but it is muted beige with only a subtle striped border, not bold or high-contrast. It remains a loose-rug trip hazard.; DEM-R04: A glowing halogen space heater sits on the rug very close to the duvet hanging off the bed, a clear fire hazard.; DEM-R01: A tall full-length mirror on the wall clearly reflects the bed, which could confuse or distress someone with demen",
-    "checks": [
-     {
-      "key": "DEM-R02",
-      "visible": false,
-      "looks_safe": false,
-      "note": "An area rug is present, but it is muted beige with only a subtle striped border, not bold or high-contrast. It remains a loose-rug trip hazard."
-     },
-     {
-      "key": "DEM-R04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A glowing halogen space heater sits on the rug very close to the duvet hanging off the bed, a clear fire hazard."
-     },
-     {
-      "key": "DEM-R01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A tall full-length mirror on the wall clearly reflects the bed, which could confuse or distress someone with dementia."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true,
+   "box_refined": true
   },
   {
    "id": "dem-L4-003",
@@ -6435,59 +5120,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-E02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Front door ajar showing outside light, clear elopement/exit hazard for a person with dementia"
-      },
-      {
-       "key": "DEM-E01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Key hanging on wall hook near entryway, accessible and could enable unsupervised exit"
-      },
-      {
-       "key": "DEM-E03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Stacks of newspapers, shoes, and boxes piled on the floor in the main walkway, trip hazard"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-E02: Wooden front door stands ajar with daylight and the outdoors visible through the gap. This is a clear wandering/elopement risk.; DEM-E01: A small set of keys with a fob hangs on the wall right beside the door. They are recognisable, though a red annotation box is visibly drawn around them. Easy access to car keys is a driving/wandering risk.; DEM-E03: Stacks of newspapers, cardboard boxes",
-    "checks": [
-     {
-      "key": "DEM-E02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Wooden front door stands ajar with daylight and the outdoors visible through the gap. This is a clear wandering/elopement risk."
-     },
-     {
-      "key": "DEM-E01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A small set of keys with a fob hangs on the wall right beside the door. They are recognisable, though a red annotation box is visibly drawn around them. Easy access to car keys is a driving/wandering risk."
-     },
-     {
-      "key": "DEM-E03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Stacks of newspapers, cardboard boxes and several pairs of shoes sit in the walkway to the door. This is an obvious trip/fall hazard."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L4-004",
@@ -6689,72 +5322,8 @@
     ],
     "photoreal": true
    },
-   "verified": false,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "knife and utensils visible on counter near sink area"
-      },
-      {
-       "key": "DEM-K03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "bottles (cleaning-type containers) visible on counter, unsecured"
-      },
-      {
-       "key": "DEM-K04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "pill organizer and prescription bottles left out on counter"
-      },
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "gas range with accessible knobs at floor level, no visible child/adult lock or barrier"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "DEM-K02: Box mostly shows the kettle and coffee maker, but a loose knife lies on the counter just below it, near the left stove. The knife block is far right, not in the box.; DEM-K03: Bleach jug and dish soap sit out on the counter by the sink, unsecured. The bleach is at the box's left edge.; DEM-K04: Rainbow pill organizer and several orange prescription bottles are left out on the counter.; DE",
-    "checks": [
-     {
-      "key": "DEM-K02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Box mostly shows the kettle and coffee maker, but a loose knife lies on the counter just below it, near the left stove. The knife block is far right, not in the box."
-     },
-     {
-      "key": "DEM-K03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Bleach jug and dish soap sit out on the counter by the sink, unsecured. The bleach is at the box's left edge."
-     },
-     {
-      "key": "DEM-K04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Rainbow pill organizer and several orange prescription bottles are left out on the counter."
-     },
-     {
-      "key": "DEM-K01",
-      "visible": false,
-      "looks_safe": null,
-      "note": "Box covers the left stove, whose burners appear off. The lit blue flame is on the pasted center stove, well outside the box."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true,
+   "box_refined": true
   },
   {
    "id": "dem-L4-005",
@@ -7008,7 +5577,7 @@
     ],
     "photoreal": true
    },
-   "verified": false,
+   "verified": true,
    "box_refined": true,
    "verify_after_refine": {
     "checks": [
@@ -7039,99 +5608,7 @@
     ],
     "photoreal": true
    },
-   "verified_via": "re-judge after box localization",
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Spray bottles/cleaning supplies visible on counter near sink, unsecured"
-      },
-      {
-       "key": "DEM-K04",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No clearly identifiable medication bottles visible in this region; appears to be small kitchen items/toaster"
-      },
-      {
-       "key": "DEM-K02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Knife block and a loose knife visible on counter, accessible"
-      },
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Inset shows stove burner lit with blue flame, knobs exposed and reachable"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "DEM-K03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Bottles/containers visible near sink area, unlocked and accessible"
-      },
-      {
-       "key": "DEM-K04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Small bottles/containers on counter could be mistaken for medication, left accessible"
-      },
-      {
-       "key": "DEM-K02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Knife block with knives and a knife lying flat on counter, easily accessible"
-      },
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Inset shows lit blue gas burner flame on stove with knobs freely accessible"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "DEM-K03: A bleach bottle sits out on the counter by the sink, just left of the box. It is unsecured and within reach.; DEM-K04: No recognisable medication bottles. The small items in this area look like a canister, a toaster and a utensil crock.; DEM-K02: A full knife block and a loose knife on the counter are visible, slightly left of the box. Sharps are accessible.; DEM-K01: The actual stove in ",
-    "checks": [
-     {
-      "key": "DEM-K03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A bleach bottle sits out on the counter by the sink, just left of the box. It is unsecured and within reach."
-     },
-     {
-      "key": "DEM-K04",
-      "visible": false,
-      "looks_safe": null,
-      "note": "No recognisable medication bottles. The small items in this area look like a canister, a toaster and a utensil crock."
-     },
-     {
-      "key": "DEM-K02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A full knife block and a loose knife on the counter are visible, slightly left of the box. Sharps are accessible."
-     },
-     {
-      "key": "DEM-K01",
-      "visible": false,
-      "looks_safe": null,
-      "note": "The actual stove in the scene shows no lit burner. The flame appears only in a pasted inset photo, so it is not credible as this stove's state."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified_via": "re-judge after box localization"
   },
   {
    "id": "dem-L4-006",
@@ -7416,99 +5893,7 @@
     ],
     "photoreal": true
    },
-   "verified_via": "re-judge after box localization",
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K03",
-       "visible": false,
-       "looks_safe": null,
-       "note": "This area shows the sink and faucet, no visible cleaning chemicals or unlocked box."
-      },
-      {
-       "key": "DEM-K02",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No knives or sharps visible on the counter in this region; appears to be sink area."
-      },
-      {
-       "key": "DEM-K04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Medication bottles are clearly visible on the counter, left out in the open."
-      },
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Inset image shows a stove burner with an active blue flame, knobs accessible."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "DEM-K03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Bottle (likely cleaning chemical) on counter near sink, unlocked/accessible"
-      },
-      {
-       "key": "DEM-K02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Knife block with utensils/knives visible on counter, within reach"
-      },
-      {
-       "key": "DEM-K04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Multiple orange pill bottles left out on open counter"
-      },
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Inset shows gas burner actively lit with visible flame, knobs exposed and reachable"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-K03: White gallon jug (bleach-like cleaner) with a small bottle sits openly on the counter beside the sink. The label is not legible, but it reads as an unsecured household chemical.; DEM-K02: Knife block with handles and utensils stands in the counter corner, openly accessible. The knives are in a block rather than loose, but an assessor would still flag them.; DEM-K04: Several orange prescri",
-    "checks": [
-     {
-      "key": "DEM-K03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "White gallon jug (bleach-like cleaner) with a small bottle sits openly on the counter beside the sink. The label is not legible, but it reads as an unsecured household chemical."
-     },
-     {
-      "key": "DEM-K02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Knife block with handles and utensils stands in the counter corner, openly accessible. The knives are in a block rather than loose, but an assessor would still flag them."
-     },
-     {
-      "key": "DEM-K04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Several orange prescription bottles and a weekly pill organizer are left out on the counter. The hazard is clearly recognisable."
-     },
-     {
-      "key": "DEM-K01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Inset close-up shows a gas burner lit with a blue flame and exposed, unguarded knobs. The stove is also visible in the main scene."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified_via": "re-judge after box localization"
   },
   {
    "id": "dem-L4-007",
@@ -7556,20 +5941,7 @@
     "checks": [],
     "photoreal": true
    },
-   "verified": false,
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "edit plan incomplete (skipped steps); not judged"
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": false
   },
   {
    "id": "dem-L4-008",
@@ -7840,99 +6212,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K04",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Region shows countertop items, no clear medication bottles distinguishable"
-      },
-      {
-       "key": "DEM-K03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Bottle (likely cleaning/soap) visible near sink area, out and accessible"
-      },
-      {
-       "key": "DEM-K02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Knife block with knives visible on counter, unsecured"
-      },
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Gas burner clearly lit with blue flame, knobs exposed and reachable"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "DEM-K04",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Area near stove controls, no distinct medication bottles visible, just indistinct kitchen items"
-      },
-      {
-       "key": "DEM-K03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Bottle (likely cleaning chemical) visible on counter near sink, unsecured"
-      },
-      {
-       "key": "DEM-K02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Knife block with knives visible on counter, accessible"
-      },
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Gas burner clearly lit with blue flame, knobs exposed and reachable"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "DEM-K04: Region shows the edge of the inset stove and plain backsplash; no medication bottles are recognisable there.; DEM-K03: Region is backsplash/upper cabinet area. A white jug near the sink sits well outside the box, and no chemical container appears in the region.; DEM-K02: Region falls on the upper fridge. The knife block is on the counter to the left, well outside the box.; DEM-K01: Lit bl",
-    "checks": [
-     {
-      "key": "DEM-K04",
-      "visible": false,
-      "looks_safe": null,
-      "note": "Region shows the edge of the inset stove and plain backsplash; no medication bottles are recognisable there."
-     },
-     {
-      "key": "DEM-K03",
-      "visible": false,
-      "looks_safe": null,
-      "note": "Region is backsplash/upper cabinet area. A white jug near the sink sits well outside the box, and no chemical container appears in the region."
-     },
-     {
-      "key": "DEM-K02",
-      "visible": false,
-      "looks_safe": null,
-      "note": "Region falls on the upper fridge. The knife block is on the counter to the left, well outside the box."
-     },
-     {
-      "key": "DEM-K01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Lit blue gas burner flame is clearly visible with accessible knobs, an obvious hazard."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "dem-L4-009",
@@ -8141,81 +6421,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-B01",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Region shows toilet paper holder, not sink; no razor or medications visible there"
-      },
-      {
-       "key": "DEM-B04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "White hair dryer with cord plugged into outlet, sitting on counter near sink - trip/electrical hazard"
-      },
-      {
-       "key": "DEM-B03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Black mat clearly visible on light tile floor - could be a trip hazard or visually confusing for someone with dementia"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "DEM-B01",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No razor or medications visible near sink; area appears empty"
-      },
-      {
-       "key": "DEM-B04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Hair dryer plugged in and left on counter near sink, potential electrical hazard"
-      },
-      {
-       "key": "DEM-B03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Dark bath mat contrasts with light floor, could be tripping hazard or visually confusing"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "DEM-B01: No razor or medications visible; the region shows only the wall and toilet paper holder, and the vanity holds just a flower vase and faucet.; DEM-B04: A white hair dryer is plugged into the wall outlet and lying on the counter beside the sink, an electrical shock hazard near water.; DEM-B03: A black rectangular mat on a light tile floor could be perceived as a hole or step by someone with",
-    "checks": [
-     {
-      "key": "DEM-B01",
-      "visible": false,
-      "looks_safe": null,
-      "note": "No razor or medications visible; the region shows only the wall and toilet paper holder, and the vanity holds just a flower vase and faucet."
-     },
-     {
-      "key": "DEM-B04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A white hair dryer is plugged into the wall outlet and lying on the counter beside the sink, an electrical shock hazard near water."
-     },
-     {
-      "key": "DEM-B03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "A black rectangular mat on a light tile floor could be perceived as a hole or step by someone with dementia; it is also a trip risk."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "dem-L4-010",
@@ -8263,20 +6469,7 @@
     "checks": [],
     "photoreal": true
    },
-   "verified": false,
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "edit plan incomplete (skipped steps); not judged"
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": false
   },
   {
    "id": "dem-L4-011",
@@ -8530,7 +6723,7 @@
     ],
     "photoreal": true
    },
-   "verified": false,
+   "verified": true,
    "box_refined": true,
    "verify_after_refine": {
     "checks": [
@@ -8561,99 +6754,7 @@
     ],
     "photoreal": true
    },
-   "verified_via": "re-judge after box localization",
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K02",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Region shows edge of stove/counter, no knives visible"
-      },
-      {
-       "key": "DEM-K03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Bottles/containers on counter near sink, ambiguous if cleaning chemicals but plausible hazard items left accessible"
-      },
-      {
-       "key": "DEM-K04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Multiple pill/medication bottles clearly visible on counter, unsecured"
-      },
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Stove with knobs visible and accessible; cannot confirm burner is on from image, but knobs are freely reachable"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "DEM-K02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Knife block and utensils visible on counter near sink area"
-      },
-      {
-       "key": "DEM-K03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Spray bottle visible on counter, accessible/unlocked"
-      },
-      {
-       "key": "DEM-K04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Multiple orange pill bottles clustered openly on countertop"
-      },
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Stove/range visible with knobs at front, reachable and freely operable"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "DEM-K02: Box covers the fridge's right edge and dark cabinetry. No knives or sharps there. A possible utensil or knife holder sits well to the left by the fridge, outside the box.; DEM-K03: Box lands on the orange pill bottles. A white jug that may be a cleaner sits further left, well outside the box, and is not clearly identifiable as chemicals.; DEM-K04: Many orange prescription bottles and blue",
-    "checks": [
-     {
-      "key": "DEM-K02",
-      "visible": false,
-      "looks_safe": null,
-      "note": "Box covers the fridge's right edge and dark cabinetry. No knives or sharps there. A possible utensil or knife holder sits well to the left by the fridge, outside the box."
-     },
-     {
-      "key": "DEM-K03",
-      "visible": false,
-      "looks_safe": null,
-      "note": "Box lands on the orange pill bottles. A white jug that may be a cleaner sits further left, well outside the box, and is not clearly identifiable as chemicals."
-     },
-     {
-      "key": "DEM-K04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Many orange prescription bottles and blue pill organizers sit out on the counter, just left of and at the edge of the box. An assessor would clearly flag this."
-     },
-     {
-      "key": "DEM-K01",
-      "visible": false,
-      "looks_safe": null,
-      "note": "Box sits mostly on the backsplash and kettle area above the stove. There is a small blue item on the left of the stovetop, but no clear lit flame or accessible knobs can be made out."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified_via": "re-judge after box localization"
   },
   {
    "id": "dem-L5-000",
@@ -8847,81 +6948,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "D0",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Region shows blank wall/toilet tank area near toilet paper holder; no electric toothbrush or charging base visible"
-      },
-      {
-       "key": "D1",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Region is near toilet paper holder on wall, not near the toothbrush cup/soap dispenser (which is actually at the main sink area, far right)"
-      },
-      {
-       "key": "D2",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Light beige textured bath mat is visible on the floor in front of toilet, blends with floor tone but lies flat and non-slip textured"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "D0",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No electric toothbrush or charging base visible in that region; only wall and toilet paper holder present"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Toothbrush cup with toothbrushes and pump soap dispenser visible on counter, appear stable and safe"
-      },
-      {
-       "key": "D2",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Light beige textured bath mat on floor, appears non-slip and matches floor tone"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "D0: No electric toothbrush or charging base is visible here; the region shows only the toilet tank top and wall near the paper holder.",
-    "checks": [
-     {
-      "key": "D0",
-      "visible": false,
-      "looks_safe": null,
-      "note": "No electric toothbrush or charging base is visible here; the region shows only the toilet tank top and wall near the paper holder."
-     },
-     {
-      "key": "D1",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A toothbrush cup with brushes and a pump soap dispenser sit on the vanity counter. Nothing hazardous."
-     },
-     {
-      "key": "D2",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A light beige textured non-slip mat lies flat on the floor. Its low contrast with the floor is a minor visibility consideration but not a clear hazard."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "dem-L5-001",
@@ -9178,71 +7205,7 @@
     ],
     "photoreal": true
    },
-   "verified_via": "re-judge after box localization",
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {},
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "DEM-K03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Cleaning bottles visible on counter near sink, unsecured"
-      },
-      {
-       "key": "DEM-K04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Orange pill bottle visible on counter near stove, easily accessible"
-      },
-      {
-       "key": "DEM-K02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Knife block with multiple knives plus additional utensils out on counter"
-      },
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Blue flame visible on stove burner, knobs accessible and unattended"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "DEM-K03: White bleach-type jug sits unsecured on the counter right of the sink, somewhat left of the box. Chemical access hazard.; DEM-K04: Orange prescription bottle on the counter beside the stove, slightly left of and below the box. Unsecured medication.; DEM-K02: Knife block full of knives, plus a loose cleaver on the counter, somewhat left of the box. Sharps are accessible.; DEM-K01: Blue gas",
-    "checks": [
-     {
-      "key": "DEM-K03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "White bleach-type jug sits unsecured on the counter right of the sink, somewhat left of the box. Chemical access hazard."
-     },
-     {
-      "key": "DEM-K04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Orange prescription bottle on the counter beside the stove, slightly left of and below the box. Unsecured medication."
-     },
-     {
-      "key": "DEM-K02",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Knife block full of knives, plus a loose cleaver on the counter, somewhat left of the box. Sharps are accessible."
-     },
-     {
-      "key": "DEM-K01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Blue gas flame is lit on the back-left burner with no pot on it. Stove knobs are exposed and unguarded."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified_via": "re-judge after box localization"
   },
   {
    "id": "dem-L5-002",
@@ -9425,7 +7388,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
+   "verified": false,
    "box_refined": true,
    "verify_after_refine": {
     "checks": [
@@ -9449,81 +7412,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "D0",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Region actually shows an empty wall-mounted sink, not a cup/soap dispenser"
-      },
-      {
-       "key": "D1",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Region shows the toilet, not an electric toothbrush"
-      },
-      {
-       "key": "D2",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Region shows the bathtub with a white mat draped over the edge, not a floor bath mat"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Toothbrush cup and soap dispenser sit neatly on counter, no hazard."
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Electric toothbrush has a visible power cord running toward the sink, indicating it's plugged in near water despite claim of being unplugged."
-      },
-      {
-       "key": "D2",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Bath mat blends closely with the floor color, reducing visual contrast and increasing trip risk for a person with dementia."
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "White cup and pump soap dispenser sit on the vanity counter behind the sink."
-     },
-     {
-      "key": "D1",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Electric toothbrush stands upright in its base, set back from the basin. The cord is coiled on the counter and appears unplugged."
-     },
-     {
-      "key": "D2",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Light beige bath mat lies flat beside the tub and blends with the light floor."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "dem-L5-003",
@@ -9777,72 +7666,8 @@
     ],
     "photoreal": true
    },
-   "verified": false,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Stove visible with knobs at front, reachable and hazardous."
-      },
-      {
-       "key": "DEM-K03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Bottle resembling cleaning chemical sits open on counter near sink."
-      },
-      {
-       "key": "DEM-K04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Multiple pill bottles and organizer left accessible on counter."
-      },
-      {
-       "key": "DEM-K02",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Knife block with exposed blades sits on counter near sink area."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "DEM-K01: Gas stove and front knobs are visible at the left, overlapping the box. The scene is dark, so a lit flame is hard to confirm, but accessible knobs and burners are a hazard an assessor would flag.; DEM-K03: A bleach jug is out on the counter, but it sits right of the sink at about x=450-480, well left of the box. The box covers the backsplash and pill-bottle area instead.; DEM-K04: Pill bo",
-    "checks": [
-     {
-      "key": "DEM-K01",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Gas stove and front knobs are visible at the left, overlapping the box. The scene is dark, so a lit flame is hard to confirm, but accessible knobs and burners are a hazard an assessor would flag."
-     },
-     {
-      "key": "DEM-K03",
-      "visible": false,
-      "looks_safe": false,
-      "note": "A bleach jug is out on the counter, but it sits right of the sink at about x=450-480, well left of the box. The box covers the backsplash and pill-bottle area instead."
-     },
-     {
-      "key": "DEM-K04",
-      "visible": false,
-      "looks_safe": false,
-      "note": "Pill bottles and a weekly pill organizer are out on the counter at about x=540-660. The box is on the refrigerator door, far from them."
-     },
-     {
-      "key": "DEM-K02",
-      "visible": false,
-      "looks_safe": false,
-      "note": "A knife block and a loose knife are on the counter at about x=465-545. The box sits over the upper cabinets and utensil crock area to the right, not on the knives."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": true,
+   "box_refined": true
   },
   {
    "id": "dem-L5-004",
@@ -9890,20 +7715,7 @@
     "checks": [],
     "photoreal": true
    },
-   "verified": false,
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "edit plan incomplete (skipped steps); not judged"
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": false
   },
   {
    "id": "dem-L5-005",
@@ -10087,59 +7899,7 @@
     "photoreal": true
    },
    "verified": true,
-   "box_refined": true,
-   "verify_sonnet": {
-    "verified": true,
-    "verify": {
-     "checks": [
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": true,
-       "note": "gray lockbox with handle and lock, closed, on counter"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "ceramic crock with wooden utensils by sink, no hazard"
-      },
-      {
-       "key": "D2",
-       "visible": true,
-       "looks_safe": true,
-       "note": "stove appears off, knob area partially obscured by towel, no visible flame or safety covers confirmed but no active hazard seen"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Gray keyed lockbox sits closed on the counter left of the sink."
-     },
-     {
-      "key": "D1",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Ceramic crock holding wooden spoons and spatulas stands beside the sink; no sharp utensils."
-     },
-     {
-      "key": "D2",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Black stove appears off, with clear plastic covers visible on the front knobs. Dish towels hang on the oven handle."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   "box_refined": true
   },
   {
    "id": "dem-L5-006",
@@ -10187,20 +7947,7 @@
     "checks": [],
     "photoreal": true
    },
-   "verified": false,
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "edit plan incomplete (skipped steps); not judged"
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": false
   },
   {
    "id": "dem-L5-007",
@@ -10383,7 +8130,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
+   "verified": false,
    "box_refined": true,
    "verify_after_refine": {
     "checks": [
@@ -10407,81 +8154,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "D0",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No toothbrush/charger visible in this region; it's blank counter/cabinet area, actual toothbrush is farther right on sink counter."
-      },
-      {
-       "key": "D1",
-       "visible": false,
-       "looks_safe": null,
-       "note": "This region is on the wall above toilet tank, no cup or soap dispenser here; those items are actually near the pedestal sink further right."
-      },
-      {
-       "key": "D2",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Light beige textured bath mat is visible on the floor near this area, color matches floor and it's flat/non-slip."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Electric toothbrush stands right at counter edge near sink, close to water, not far from basin as claimed"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Toothbrush cup and soap dispenser sit normally on counter, no hazard"
-      },
-      {
-       "key": "D2",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Flat bath mat blends with floor color but lies flat with no visible curling or trip edge"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Electric toothbrush upright in its charging base on the counter. No cord is visible and it is not in the basin, though it sits fairly close to the right sink."
-     },
-     {
-      "key": "D1",
-      "visible": true,
-      "looks_safe": true,
-      "note": "A cup holding a toothbrush and a white pump soap dispenser sit on the vanity by the sink. Ordinary items with no evident hazard."
-     },
-     {
-      "key": "D2",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Light beige textured mat lying flat on the light floor. The low contrast avoids the dark-hole illusion, and it appears non-slip with no curled edges."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "dem-L5-008",
@@ -10529,20 +8202,7 @@
     "checks": [],
     "photoreal": true
    },
-   "verified": false,
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "edit plan incomplete (skipped steps); not judged"
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": false
   },
   {
    "id": "dem-L5-009",
@@ -10800,99 +8460,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "DEM-K01",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Box covers oven door/lower stove, not the burner knobs; no flame or knob state visible in the dim image."
-      },
-      {
-       "key": "DEM-K02",
-       "visible": false,
-       "looks_safe": null,
-       "note": "Counter area near stove appears empty; no knives or sharp utensils discernible in this region."
-      },
-      {
-       "key": "DEM-K04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Multiple bottles/boxes (some pill-bottle-like shapes) are clustered on the counter under the cabinet light, left out and accessible."
-      },
-      {
-       "key": "DEM-K03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "A large jug (bleach-like bottle) sits on the counter near the sink, unsecured and within reach."
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "DEM-K01",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Gas stove burners with knobs visible; no flame confirmed but knobs are accessible/usable"
-      },
-      {
-       "key": "DEM-K02",
-       "visible": false,
-       "looks_safe": null,
-       "note": "No knives or sharp objects clearly visible in this region; appears to be cabinet/counter edge"
-      },
-      {
-       "key": "DEM-K04",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Multiple bottles/containers on counter resembling medication or supplement bottles, left accessible"
-      },
-      {
-       "key": "DEM-K03",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Bleach bottle and other cleaning product containers visible on counter, unsecured"
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "DEM-K01: Gas stove top is visible, but no flame or glow shows a burner left on. Knobs are not clearly discernible in the dark image.; DEM-K02: The box covers the sink and faucet area; no loose knives or sharps are on the counter. The only knives are in a holder near the fridge, far outside the box.; DEM-K04: Orange prescription bottles and an open weekly pill organizer sit on the counter under the",
-    "checks": [
-     {
-      "key": "DEM-K01",
-      "visible": false,
-      "looks_safe": null,
-      "note": "Gas stove top is visible, but no flame or glow shows a burner left on. Knobs are not clearly discernible in the dark image."
-     },
-     {
-      "key": "DEM-K02",
-      "visible": false,
-      "looks_safe": null,
-      "note": "The box covers the sink and faucet area; no loose knives or sharps are on the counter. The only knives are in a holder near the fridge, far outside the box."
-     },
-     {
-      "key": "DEM-K04",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Orange prescription bottles and an open weekly pill organizer sit on the counter under the cabinet light. An assessor would clearly flag this."
-     },
-     {
-      "key": "DEM-K03",
-      "visible": true,
-      "looks_safe": false,
-      "note": "Bleach jug and spray bottle are clearly out on the counter, but they sit left of the box, which mostly covers the pill organizer."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "dem-L5-010",
@@ -11075,7 +8643,7 @@
     ],
     "photoreal": true
    },
-   "verified": true,
+   "verified": false,
    "box_refined": true,
    "verify_after_refine": {
     "checks": [
@@ -11099,81 +8667,7 @@
      }
     ],
     "photoreal": true
-   },
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": false,
-       "note": "toothbrush is on the floor, unplugged with cord loose, and not in charging base near sink - trip/clutter hazard"
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "toothbrush cup and soap dispenser sit safely on counter"
-      },
-      {
-       "key": "D2",
-       "visible": true,
-       "looks_safe": false,
-       "note": "mat blends closely with floor color, low contrast could cause tripping for someone with visual impairment"
-      }
-     ],
-     "photoreal": true
-    },
-    "verify_after_refine": {
-     "checks": [
-      {
-       "key": "D0",
-       "visible": true,
-       "looks_safe": false,
-       "note": "Toothbrush base sits on floor with cord running to wall outlet, plugged in, creating a trip/electrical hazard rather than being safely unplugged."
-      },
-      {
-       "key": "D1",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Toothbrush cup and soap dispenser sit stably on counter, no hazard."
-      },
-      {
-       "key": "D2",
-       "visible": true,
-       "looks_safe": true,
-       "note": "Bath mat lies flat on carpet, matches floor tone but no visible curling edges or hazard."
-      }
-     ],
-     "photoreal": true
-    }
-   },
-   "verify_opus": {
-    "verdict": true,
-    "note": "all labelled items visible; distractors look safe",
-    "checks": [
-     {
-      "key": "D0",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Electric toothbrush on its charging base sits on the floor beside the vanity, away from the sink. The unplugged cord is loosely coiled against the wall, so trip risk is minimal."
-     },
-     {
-      "key": "D1",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Ceramic toothbrush cup and pump soap dispenser on the countertop, both ordinary and benign."
-     },
-     {
-      "key": "D2",
-      "visible": true,
-      "looks_safe": true,
-      "note": "Low-profile beige mat with a rounded edge, lying flat and matching the carpet tone, so it avoids the dark 'hole' illusion that can confuse someone with dementia."
-     }
-    ]
-   },
-   "judge_model": "claude-opus-5.5"
+   }
   },
   {
    "id": "dem-L5-011",
@@ -11221,20 +8715,7 @@
     "checks": [],
     "photoreal": true
    },
-   "verified": false,
-   "verify_sonnet": {
-    "verified": false,
-    "verify": {
-     "checks": [],
-     "photoreal": true
-    },
-    "verify_after_refine": null
-   },
-   "verify_opus": {
-    "verdict": false,
-    "note": "edit plan incomplete (skipped steps); not judged"
-   },
-   "judge_model": "claude-opus-5.5"
+   "verified": false
   }
  ],
  "excluded_hazards": {
@@ -17376,9 +14857,6 @@
    "llama-4-maverick": "us.meta.llama4-maverick-17b-instruct-v1:0",
    "mistral-large-3": "mistral.mistral-large-3-675b-instruct",
    "kimi-k3": "us.moonshotai.kimi-k3"
-  },
-  "recomputed": "2026-09-26 after Opus 5.5 re-verification (verified set changed >10%)",
-  "judge_model": "claude-opus-5.5"
- },
- "judge_model": "claude-opus-5.5"
+  }
+ }
 }

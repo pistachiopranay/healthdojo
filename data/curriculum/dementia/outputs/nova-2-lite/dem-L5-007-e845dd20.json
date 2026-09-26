@@ -1,0 +1,12 @@
+{
+ "id": "dem-L5-007",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-B02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"White toilet seat and white toilet on a light-colored floor create low contrast, making it difficult for someone with dementia to perceive the toilet clearly.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White toilet seat and white toilet on a light-colored floor create low contrast, making it difficult for someone with dementia to perceive the toilet clearly.",
+   "box": null
+  }
+ ]
+}

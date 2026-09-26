@@ -1,0 +1,61 @@
+{
+ "id": "fal-L2-001",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Furniture placement (recliner, sofa, TV stand, side tables) creates a narrow central path; walker may have difficulty navigating between items.\",\n      \"box\": [0, 0, 1000, 1000]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The dark blue recliner and light armchair have soft, deep seats and low height, which may make standing up difficult without proper armrest support for someone recovering from hip/knee surgery.\",\n      \"box\": [87, 259, 436, 741]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"Bright sunlight through windows creates glare on the hardwood floor, which may reduce visibility of floor texture or small obstacles.\",\n      \"box\": [636, 0, 910, 270]\n    },\n    {\n      \"id\": \"ENT-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The white interior door has a visible threshold/sill that may catch a walker wheel or foot, posing a tripping hazard.\",\n      \"box\": [362, 0, 445, 374]\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The doorway leading to the adjacent room appears narrow; a walker may not fit through easily without scraping or getting stuck.\",\n      \"box\": [330, 0, 450, 410]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Furniture placement (recliner, sofa, TV stand, side tables) creates a narrow central path; walker may have difficulty navigating between items.",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "The dark blue recliner and light armchair have soft, deep seats and low height, which may make standing up difficult without proper armrest support for someone recovering from hip/knee surgery.",
+   "box": [
+    87,
+    259,
+    436,
+    741
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Bright sunlight through windows creates glare on the hardwood floor, which may reduce visibility of floor texture or small obstacles.",
+   "box": [
+    636,
+    0,
+    910,
+    270
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "The white interior door has a visible threshold/sill that may catch a walker wheel or foot, posing a tripping hazard.",
+   "box": [
+    362,
+    0,
+    445,
+    374
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "The doorway leading to the adjacent room appears narrow; a walker may not fit through easily without scraping or getting stuck.",
+   "box": [
+    330,
+    0,
+    450,
+    410
+   ]
+  }
+ ]
+}
