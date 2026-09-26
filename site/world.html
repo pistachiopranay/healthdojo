@@ -58,6 +58,15 @@ h1 em,h2 em,h3 em,.headline em,.logo i,.hero h1 em{font-style:normal;font-weight
 .logo{font-size:19px!important;letter-spacing:-.02em}
 #top h1{font-family:var(--font-sans);font-weight:600;font-size:20px;letter-spacing:-.02em}
 #load .t{font-family:var(--font-sans);font-weight:600;font-size:22px;letter-spacing:-.02em}
+/* ---- embed/autopilot mode (landing-page hero): ?autopilot=1&embed=1 ---- */
+.embed #top,.embed #links,.embed #keys,.embed #stat,.embed #joy,.embed #updn,.embed #tip{display:none!important}
+.embed #load{background:transparent}.embed #load .t,.embed #load .bar,.embed #load .n{display:none}
+#cap{position:fixed;left:12px;bottom:12px;display:none;align-items:center;gap:8px;padding:6px 10px;border-radius:8px;background:rgba(31,33,35,.72);color:#fcfcfa;font:500 12px var(--font-mono);backdrop-filter:blur(6px);transition:background .4s,color .4s}
+.embed #cap{display:flex}.embed.capext #cap{display:none}
+#cap i{width:8px;height:8px;border-radius:50%;background:var(--lime)}
+#cap.hz{background:var(--gold);color:#3d2c08}#cap.hz i{background:var(--gold-ink);animation:cp 1.1s ease-in-out infinite}
+@keyframes cp{50%{opacity:.25}}
+#fade{position:fixed;inset:0;background:#1f2123;opacity:0;pointer-events:none;transition:opacity .6s}
 </style>
 <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/","@sparkjsdev/spark":"https://sparkjs.dev/releases/spark/2.2.0/spark.module.js","three-mesh-bvh":"https://cdn.jsdelivr.net/npm/three-mesh-bvh@0.9.1/build/index.module.js"}}</script>
 </head>
@@ -92,6 +101,7 @@ h1 em,h2 em,h3 em,.headline em,.logo i,.hero h1 em{font-style:normal;font-weight
   <kbd>Q</kbd>/<kbd>E</kbd> or <kbd>Space</kbd>/<kbd>Shift</kbd> down/up &nbsp; scroll = zoom (FOV) &nbsp; <kbd>T</kbd> speed &nbsp; <kbd>H</kbd> hazard &nbsp; <kbd>G</kbd> look at it &nbsp; <kbd>R</kbd> reset &nbsp; <kbd>C</kbd> collision
 </div>
 <div id="stat" class="panel"></div>
+<div id="cap"><i></i><span id="capT">Loading 3D home…</span></div><div id="fade"></div>
 <div id="joy"><i></i></div>
 <div id="updn"><button class="btn" id="bUp" type="button">&uarr;</button><button class="btn" id="bDn" type="button">&darr;</button></div>
 
@@ -122,13 +132,17 @@ $("lMarble").href = W.viewer_url;
 if (isLocal) { $("lLive").style.display = ""; }
 if ((W.hazard_dirs || []).some(d => d.approx)) $("approx").style.display = "block";
 $("kx").onclick = () => $("keys").style.display = "none";
+const EMBED = q.get("embed") === "1", AUTO = q.get("autopilot") === "1";
+if (EMBED) document.body.classList.add("embed");
+if (EMBED && q.get("capext") === "1") document.body.classList.add("capext");
+function setCap(text, hz) { $("capT").textContent = text; $("cap").classList.toggle("hz", !!hz); try { parent !== window && parent.postMessage({ hd: "cap", text, hz: !!hz }, "*"); } catch (e) {} }
 const isTouch = matchMedia("(pointer: coarse)").matches || q.has("touch");
 if (isTouch) document.body.classList.add("touch");
 
 // ---------- scene ----------
 const stage = $("stage");
 const renderer = new THREE.WebGLRenderer({ antialias: false, preserveDrawingBuffer: q.has("test") });
-renderer.setPixelRatio(Math.min(devicePixelRatio, 1.5));
+renderer.setPixelRatio(EMBED ? 1 : Math.min(devicePixelRatio, 1.5));
 stage.appendChild(renderer.domElement);
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(70, 1, 0.02, 200);
@@ -196,6 +210,8 @@ async function load() {
   reset();
   $("load").classList.add("gone");
   window.__ready = true;
+  if (AUTO) startAuto();
+  requestAnimationFrame(() => requestAnimationFrame(() => { try { parent !== window && parent.postMessage({ hd: "world-ready", id }, "*"); } catch (e) {} }));
 }
 
 // ---------- first-person state ----------
@@ -274,7 +290,7 @@ cv.addEventListener("pointermove", e => {
   if (!drag) return; const dx = e.clientX - drag.x, dy = e.clientY - drag.y; drag.moved += Math.abs(dx) + Math.abs(dy);
   yaw -= dx * 0.004 * fov / 70; pitch += dy * 0.004 * fov / 70; drag.x = e.clientX; drag.y = e.clientY; lookAnim = null;
 });
-cv.addEventListener("pointerup", e => { if (drag && drag.moved < 4 && e.pointerType === "mouse" && !isTouch) cv.requestPointerLock?.(); drag = null; });
+cv.addEventListener("pointerup", e => { if (drag && drag.moved < 4 && e.pointerType === "mouse" && !isTouch && !EMBED) cv.requestPointerLock?.(); drag = null; });
 document.addEventListener("pointerlockchange", () => { $("tip").style.display = document.pointerLockElement === cv ? "block" : "none"; });
 cv.addEventListener("wheel", e => { e.preventDefault(); fov = THREE.MathUtils.clamp(fov + e.deltaY * 0.03, 25, 100); }, { passive: false });
 
@@ -308,10 +324,46 @@ function blocked(from, dir, dist) {
   }
   return false;
 }
+// ---------- autopilot (hero embed): glide forward with a gentle yaw sweep, turn to the hazard, pulse + caption, hold, loop ----------
+const T_GLIDE = 9, T_TURN = 2.2, T_HOLD = 3.2, T_FADE = 0.7, GLIDE_M = Math.min(2.0, Math.max(1.2, +(q.get("glide") || 1.8)));
+let auto = null;
+const easeIO = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+function startAuto() {
+  reset(); markers.visible = false; $("fade").style.opacity = 0;
+  auto = { t: +(q.get("t0") || 0), trav: 0, turn: null, phase: "glide" }; q.delete("t0");
+  setCap(`Walking the ${W.title.toLowerCase()} · live 3D`, false);
+}
+function stepAuto(dt, now) {
+  auto.t += dt; const t = auto.t;
+  if (t < T_GLIDE) {
+    const e = easeIO(t / T_GLIDE), want = GLIDE_M * e, d = want - auto.trav;
+    if (d > 1e-4) {
+      const v = new THREE.Vector3(0, 0, -d); // path heads along the source-photo view (-Z)
+      if (!blocked(camera.position.clone(), new THREE.Vector3(0, 0, -1), d)) { pos.add(v); auto.trav = want; }
+    }
+    yaw = 0.32 * Math.sin(Math.PI * 2 * t / T_GLIDE) * (1 - 0.35 * e); pitch = -0.06 * e;
+  } else if (t < T_GLIDE + T_TURN) {
+    if (!auto.turn) {
+      const tp0 = hazardPts[0] ? hazardPts[0].clone().sub(camera.position).normalize() : new THREE.Vector3(0, -0.3, -1).normalize();
+      const ty = Math.atan2(-tp0.x, -tp0.z), tpi = Math.asin(THREE.MathUtils.clamp(tp0.y, -1, 1));
+      auto.turn = { y0: yaw, p0: pitch, y1: yaw + Math.atan2(Math.sin(ty - yaw), Math.cos(ty - yaw)), p1: tpi, f0: fov };
+      markers.visible = true;
+      const org = (W.guideline && W.guideline.org) || "guideline";
+      setCap(`Seeded hazard: ${W.hazard_name || W.hazard_id} · ${org}`, true);
+    }
+    const s = easeIO((t - T_GLIDE) / T_TURN), a = auto.turn;
+    yaw = a.y0 + (a.y1 - a.y0) * s; pitch = a.p0 + (a.p1 - a.p0) * s; fov = a.f0 - 12 * s;
+  } else if (t < T_GLIDE + T_TURN + T_HOLD) {
+    // hold on the hazard; marker pulses in the main loop
+  } else if (t < T_GLIDE + T_TURN + T_HOLD + T_FADE) {
+    $("fade").style.opacity = 1;
+  } else { startAuto(); }
+}
 let last = performance.now(), stat = $("stat"), frames = 0, fpsT = last, fps = 0;
 renderer.setAnimationLoop(() => {
   const now = performance.now(), dt = Math.min(0.05, (now - last) / 1000); last = now;
   frames++; if (now - fpsT > 500) { fps = Math.round(frames * 1000 / (now - fpsT)); frames = 0; fpsT = now; }
+  if (auto) stepAuto(Math.min(0.5, (now - (auto.last || now)) / 1000), now), auto && (auto.last = now);
   // look
   const kl = (keys.has("KeyJ") ? 1 : 0) - (keys.has("KeyL") ? 1 : 0); yaw += kl * dt * 1.6;
   if (lookAnim) { lookAnim.t = Math.min(1, lookAnim.t + dt * 1.8); const s = 1 - Math.pow(1 - lookAnim.t, 3); yaw = lookAnim.y0 + (lookAnim.y1 - lookAnim.y0) * s; pitch = lookAnim.p0 + (lookAnim.p1 - lookAnim.p0) * s; if (lookAnim.t >= 1) lookAnim = null; }

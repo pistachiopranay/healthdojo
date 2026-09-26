@@ -108,20 +108,20 @@ if run:
     film_end = (f"Target {world.get('hazard_id', '?')} · {world.get('hazard_name', '')}. "
                 f"{len(flags)} flags, {sum(1 for f in flags if f == world.get('hazard_id'))} on target.")
 
-# hero proof strip
-n_models_bench = len(LB)
+# hero proof strip (computed; see stats row spec)
 proof = []
-if LB:
-    proof.append(f"<div><b>{n_models_bench}</b><span>vision models scored</span></div>")
+_models_all = {m["model"] for m in LB} | {m["model"] for m in DEM.get("leaderboard", [])} | {r["model"] for r in WALK.get("runs", [])}
 v_scenes = sum(1 for s in R.get("scenes", []) if is_verified(s))
-if v_scenes:
-    proof.append(f"<div><b>{v_scenes}</b><span>verified HomeBench scenes</span></div>")
 n_worlds = sum(1 for w in WORLDS.values() if w.get("status") == "done")
+if _models_all:
+    proof.append(f"<div><b>{len(_models_all)}</b><span>frontier models tested</span></div>")
 if n_worlds:
     proof.append(f"<div><b>{n_worlds}</b><span>walkable 3D homes</span></div>")
+_b3 = [m["by_hazard"]["BATH-03"] for m in LB if "BATH-03" in m.get("by_hazard", {})]
+if _b3:
+    proof.append(f"<div><b>{pct(sum(_b3) / len(_b3))}</b><span>of models caught a towel bar used as a grab bar</span></div>")
 if LB:
-    worst = min(LB, key=lambda m: -m.get("false_alarm", 0))
-    proof.append(f"<div><b>{pct(max(m.get('false_alarm', 0) for m in LB))}</b><span>worst false-alarm rate</span></div>")
+    proof.append(f"<div><b>{pct(max(m.get('false_alarm', 0) for m in LB))}</b><span>false alarms, worst model</span></div>")
 
 # ---------------------------------------------------------------- 3 how it works
 how = ""
@@ -178,23 +178,20 @@ if hs:
                   f'<div class="what">flagged {esc(", ".join(preds[m]["pred"][:3]))}</div></div></div>')
     for m in missm[:2]:
         vd.append(f'<div class="vd miss"><span class="mk">MISS</span><div><div class="vwho">{esc(pn(m))}</div>'
-                  f'<div class="what">flagged {esc(", ".join(preds[m]["pred"][:3]) or "nothing")} — not {esc(hid)}</div></div></div>')
+                  f'<div class="what">flagged {esc(", ".join(preds[m]["pred"][:3]) or "nothing")}, not {esc(hid)}</div></div></div>')
     how = f'''
-    <div class="fc"><div class="n">01 · guideline line</div><h4>{esc(gname)}</h4>
-      <blockquote>“{qline}”</blockquote><div class="src">{esc(src)}</div></div>
-    <div class="arr">→</div>
-    <div class="fc"><div class="n">02 · rubric row that cites it</div><h4><span class="tag">{esc(hid)}</span> {esc(rr.get('name') or TAX.get(hid, {}).get('name', ''))}</h4>
+    <div class="fc"><div class="chev"><b>01</b>Guideline</div><div class="gtitle"><img src="home-assets/cdc-logo.svg" alt="CDC" onerror="this.remove()"><h4>CDC STEADI · Check for Safety</h4></div><div class="gpub">{esc(gname)}</div>
+      <blockquote>“{qline}”</blockquote><div class="src">{esc(src)}</div><div class="disc">Reference document. HealthDojo is not affiliated with or endorsed by CDC.</div></div>
+    <div class="fc"><div class="chev"><b>02</b>Rubric</div><h4><span class="tag">{esc(hid)}</span> {esc(rr.get('name') or TAX.get(hid, {}).get('name', ''))}</h4>
       <dl class="kv"><dt>type</dt><dd>{esc(rr.get('type', TAX.get(hid, {}).get('type', '')))}</dd><dt>room</dt><dd>{esc(rr.get('room', ''))}</dd>
       <dt>severity</dt><dd><span class="chipk ck-miss">high</span> {esc(sev.get('high', ''))}</dd>
-      <dt>ICD-10</dt><dd><span class="mono">{esc(icd.get('code', '—'))}</dd><dt></dt><dd class="note" style="margin:0">{esc(icd.get('title', ''))}</dd>
+      <dt>ICD-10</dt><dd><span class="mono">{esc(icd.get('code', 'n/a'))}</dd><dt></dt><dd class="note" style="margin:0">{esc(icd.get('title', ''))}</dd>
       <dt>cites</dt><dd class="note" style="margin:0">{esc(', '.join(f"{k}: {v}" for k, v in rr.get('citation', {}).get('instruments', {}).items() if k != 'HOMEFAST'))}</dd></dl></div>
-    <div class="arr">→</div>
-    <div class="fc"><div class="n">03 · synthetic home, exact box</div>
+    <div class="fc"><div class="chev"><b>03</b>Synthetic home</div>
       <div class="frame">{f'<img src="{img}" alt="">' if img else ''}{box_html(h.get('box'), 'TRUTH · ' + hid)}</div>
       <div class="lbl">label written before the pixels · judge-verified ✓</div>
       <div class="note" style="margin:0">{esc(s.get('verify', {}).get('note', ''))}</div></div>
-    <div class="arr">→</div>
-    <div class="fc"><div class="n">04 · model verdicts</div><div class="verdicts">{''.join(vd)}</div>
+    <div class="fc"><div class="chev last"><b>04</b>Verdict</div><div class="verdicts">{''.join(vd)}</div>
       <div class="tally">{hits} of {len(preds)} models caught {esc(hid)}</div></div>'''
 
 # ---------------------------------------------------------------- 4 finding
@@ -211,7 +208,7 @@ for m in show:
                    f'<td><div class="sc"><b>{m.get("score", 0):.2f}</b><div class="sbar"><i style="width:{100*m.get("score",0):.0f}%"></i></div></div></td>'
                    f'<td class="fa {fac}">{pct(fa)}</td></tr>')
 lb_html = f'<table class="lb"><thead><tr><th>#</th><th>Model</th><th>Score</th><th>False alarm</th></tr></thead><tbody>{"".join(lb_rows)}</tbody></table>'
-lb_note = (f"Recall {pct(min(m['recall'] for m in LB))}–{pct(max(m['recall'] for m in LB))}; false alarms up to "
+lb_note = (f"Recall {pct(min(m['recall'] for m in LB))} to {pct(max(m['recall'] for m in LB))}; false alarms up to "
            f"{pct(max(m['false_alarm'] for m in LB))}." if LB else "")
 
 hard_rows = []
@@ -269,6 +266,7 @@ if curve and isinstance(curve, dict) and any(isinstance(v, dict) for v in curve.
     axis = "".join(f'<text x="{xs(i):.0f}" y="{H_-6}" font-size="11" text-anchor="middle" font-family="IBM Plex Mono">L{l}</text>' for i, l in enumerate(lv))
     diff = f'<div class="appwin" style="padding:16px"><svg viewBox="0 0 {W_+80} {H_}" width="100%">{"".join(paths)}{axis}</svg></div>'
 else:
+    fall_worlds = [w for w in WORLDS.values() if w.get("status") == "done" and w.get("bench") == "falls" and w.get("scene_id")]
     by_level = collections.defaultdict(list)
     for it in fm.get("items", []):
         by_level[it.get("level")].append(it)
@@ -292,12 +290,22 @@ else:
         else:
             th = '<div class="th none"></div>'
             chip = '<span class="chipk ck-gen">generating</span>'
+        rooms = [it.get("room") for it in (ver or by_level.get(lvl, []))]
+        wmatch = next((w for r_ in rooms for w in fall_worlds if r_ and w["scene_id"].startswith(r_)), None)
+        lv3 = (f'<a class="lv3" href="world.html?id={esc(wmatch["scene_id"])}">3D · {esc(wmatch.get("title", ""))} →</a>' if wmatch else "")
         cards.append(f'<div class="lv">{th}<div class="bd"><div class="k"><span>L{lvl} · n={L.get("n", "?")} planned</span>{chip}</div>'
                      f'<h4>{esc(L.get("name", ""))}</h4><p>{esc(L.get("description", ""))}</p>'
-                     f'<div class="meter"><i style="width:{20*lvl}%"></i></div></div></div>')
+                     f'<div class="meter"><i style="width:{20*lvl}%"></i></div>{lv3}</div></div>')
     diff = f'<div class="ramp">{"".join(cards)}</div>'
     diff_p = (f"Each level stacks more hazards, safe look-alike distractors and worse light. {nver} curriculum images verified so far; "
               f"the recall-by-level curve lands when the upper levels finish rendering. <a href='guideline-falls.html' style='color:var(--green-ink)'>Browse the curriculum →</a>")
+
+# 3D strip under the curriculum
+w3strip = []
+for w in [w for w in WORLDS.values() if w.get("status") == "done" and w.get("bench") == "falls"][:6]:
+    t = copy(DATA / "worlds" / f"{w['scene_id']}.thumb.jpg", f"world-{w['scene_id']}.jpg")
+    if t:
+        w3strip.append(f'<a href="world.html?id={esc(w["scene_id"])}"><img src="{t}" alt=""><span>{esc(w.get("hazard_id", ""))} · Walk in 3D →</span></a>')
 
 # ---------------------------------------------------------------- 6 worlds
 walked = set(WALK.get("worlds", {}).keys())
@@ -348,16 +356,57 @@ counts = [(len(models), "vision models evaluated"), (n_guides, "clinical guideli
 counts_html = "".join(f"<div><b>{n}</b><span>{esc(t)}</span></div>" for n, t in counts)
 smalln = f"{v_scenes} falls scenes, {v_dem} dementia scenes, {len(std_worlds)} walk worlds per model"
 
+# ---------------------------------------------------------------- hero 3D world
+W3_ID = next((w for w in ("stairs-base0-STAIR-03", "living-base0-LIV-01") if WORLDS.get(w, {}).get("status") == "done"),
+             next(iter(WORLDS), ""))
+w3 = WORLDS.get(W3_ID, {})
+w3_pano = None
+pano_src = DATA / "worlds" / f"{W3_ID}.pano.png"
+if pano_src.exists():
+    dst = ASSETS / f"pano-{W3_ID}.jpg"
+    if not dst.exists() or dst.stat().st_mtime < pano_src.stat().st_mtime:
+        from PIL import Image
+        ASSETS.mkdir(parents=True, exist_ok=True)
+        im = Image.open(pano_src).convert("RGB")
+        im.thumbnail((1600, 1600))
+        im.save(dst, quality=82)
+    w3_pano = f"home-assets/pano-{W3_ID}.jpg"
+w3_haz = f"{w3.get('hazard_id', '')} · {(w3.get('guideline') or {}).get('org', 'CDC STEADI')}" if w3 else ""
+film_story = ""
+if run:
+    m = run.get("metrics", {})
+    wd = WALK.get("worlds", {}).get(run["scene"], {})
+    film_story = (f"{pn(run['model'])} walked the {wd.get('title', run['scene']).lower()} for {len(run.get('steps', []))} steps. "
+                  f"It pointed the camera at the {wd.get('hazard_name', 'hazard').lower()} and flagged {len(m.get('flags', []))} other things "
+                  f"(grab bars, toilet height, tub floor, a towel bar), none of them the seeded hazard. It knows what's in the room. "
+                  f"It doesn't know what matters.")
+
+# ---------------------------------------------------------------- leaderboard (full)
+PROV = [("claude", "Anthropic"), ("gpt", "OpenAI"), ("kimi", "Moonshot"), ("grok", "xAI"), ("nova", "Amazon"), ("llama", "Meta"),
+        ("qwen", "Alibaba"), ("mistral", "Mistral"), ("gemma", "Google"), ("nemotron", "NVIDIA")]
+prov = lambda m: next((v for k, v in PROV if m.startswith(k)), "")
+rows = []
+for i, m in enumerate(LB, 1):
+    fa = m.get("false_alarm", 0)
+    fac = "hi" if fa >= .35 else "md" if fa >= .2 else "lo"
+    rows.append(f'<tr class="{"top1" if i == 1 else ""}"><td class="rk">{i}</td><td class="mn">{esc(pn(m["model"]))}</td><td><span class="pv">{esc(prov(m["model"]))}</span></td>'
+                f'<td class="scc"><div class="sc"><b>{m.get("score", 0):.2f}</b><div class="sbar"><i style="width:{100*m.get("score",0):.0f}%"></i></div></div></td>'
+                f'<td class="r">{pct(m.get("recall", 0))}</td><td class="fa {fac}">{pct(fa)}</td></tr>')
+lb_full = ('<table class="lbf"><thead><tr><th>#</th><th>Model</th><th>Provider</th><th>Score</th><th>Recall</th><th>False alarms</th></tr></thead>'
+           f'<tbody>{"".join(rows)}</tbody></table>')
+lb_line = f"{len(LB)} models on {v_scenes} verified scenes. Score blends recall and false alarms."
+
 # ---------------------------------------------------------------- render
 sub = {
-    "HERO_PROOF": "".join(proof), "FILM_TITLE": esc(film_title), "FILM_MODEL": esc(film_model), "FILM_END": esc(film_end),
-    "FILM_IMGS": "".join(film_imgs), "FILM_TICKS": "".join(ticks), "FILM_JSON": json.dumps(film),
+    "FILM_TITLE": esc(film_title), "FILM_MODEL": esc(film_model), "FILM_END": esc(film_end),
+    "FILM_IMGS": "".join(film_imgs), "FILM_STORY": esc(film_story), "FILM_SCENE": esc(run["scene"] if run else ""),
+    "W3_ID": esc(W3_ID), "W3_TITLE": esc(f"{w3.get('title', W3_ID)} · {W3_ID}"), "W3_HAZ": esc(w3_haz), "W3_PANO": w3_pano or "art/bg-stairs.jpg", "FILM_TICKS": "".join(ticks), "FILM_JSON": json.dumps(film),
     "HOW": how or '<div class="note">No verified scene available.</div>',
     "FIND_EYEBROW": esc(find_eyebrow), "LB": lb_html, "LB_NOTE": esc(lb_note), "HARD": "".join(hard_rows),
     "WALKS": walks_html, "WALK_CALLOUT": walk_callout,
-    "DIFF_H": esc(diff_h), "DIFF_P": diff_p, "DIFF": diff,
+    "DIFF_H": esc(diff_h), "W3STRIP": "".join(w3strip), "DIFF_P": diff_p, "DIFF": diff,
     "WORLDS": "".join(wcards), "WORLDS_P": esc(worlds_p), "LIB": "".join(lib),
-    "COUNTS": counts_html, "SMALLN": esc(smalln), "FOOT": "built at the Healthcare AI Hackathon, 2026-09-26.",
+    "COUNTS": counts_html, "LB_FULL": lb_full, "LB_LINE": esc(lb_line), "SMALLN": esc(smalln), "FOOT": "built at the Healthcare AI Hackathon, 2026-09-26.",
 }
 out = TEMPLATE.read_text()
 for k, v in sub.items():
