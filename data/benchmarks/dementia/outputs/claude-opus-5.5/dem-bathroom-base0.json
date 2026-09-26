@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bathroom-base0",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"The toilet seat is white on a white toilet, next to a white tub and light beige floor tiles. This low contrast makes the seat hard for someone with dementia to see, which raises the risk of falls or missing the toilet. The gray grab rails on the toilet safety frame add only a little contrast.\", \"box\": [518, 669, 703, 996]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "The toilet seat is white on a white toilet, next to a white tub and light beige floor tiles. This low contrast makes the seat hard for someone with dementia to see, which raises the risk of falls or missing the toilet. The gray grab rails on the toilet safety frame add only a little contrast.",
+   "box": [
+    518,
+    669,
+    703,
+    996
+   ]
+  }
+ ]
+}

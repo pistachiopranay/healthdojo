@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R02",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R02\", \"severity\": \"medium\", \"evidence\": \"A large black-and-white geometric rug lies at the foot of the bed. A person with dementia may see the dark bands as holes, steps or obstacles, which can cause hesitation, high stepping, or a trip or fall.\", \"box\": [205, 720, 983, 1000]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "A large black-and-white geometric rug lies at the foot of the bed. A person with dementia may see the dark bands as holes, steps or obstacles, which can cause hesitation, high stepping, or a trip or fall.",
+   "box": [
+    205,
+    720,
+    983,
+    1000
+   ]
+  }
+ ]
+}

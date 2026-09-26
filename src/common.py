@@ -1,8 +1,10 @@
 """Shared helpers: paths, taxonomy, treg image generation."""
-import json, subprocess, time, pathlib, urllib.request
+import json, os, subprocess, time, pathlib, urllib.request
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-DATA = ROOT / "data"
+# BENCH=<name> points the whole pipeline at data/benchmarks/<name>/ (unset = HomeBench, the original data/ layout)
+BENCH = os.getenv("BENCH") or None
+DATA = ROOT / "data" / "benchmarks" / BENCH if BENCH else ROOT / "data"
 RENDERS = DATA / "renders"
 SCENES = DATA / "scenes"
 RENDERS.mkdir(parents=True, exist_ok=True)
@@ -14,10 +16,17 @@ LIGHTING = {"BED-03", "STAIR-04", "LIV-05", "ENT-04"}
 
 
 def hazard_type(hid):
+    if BENCH:  # benchmark taxonomies carry their own type field
+        return taxonomy()[hid]["type"]
     if hid in ABSENCE: return "absence"
     if hid in MEASURE: return "measurement"
     if hid in LIGHTING: return "lighting"
     return "object"
+
+
+def bench_meta():
+    """Top-level taxonomy fields (bases, model_prompt, site copy) for a BENCH; {} for HomeBench."""
+    return json.loads((DATA / "hazard_taxonomy.json").read_text()) if BENCH else {}
 
 
 def taxonomy():
@@ -52,6 +61,28 @@ def gen_image(prompt, dest, image_urls=None, size="4:3", timeout=240):
     if os.getenv("IMAGE_BACKEND", "openai") == "openai":
         return gen_image_openai(prompt, dest, base_path=image_urls[0] if image_urls else None)
     return gen_image_treg(prompt, dest, image_urls, size, timeout)
+
+
+def gen_image_bedrock_inpaint(prompt, dest, base_path, mask_box, model="us.stability.stable-image-inpaint-v1:0"):
+    """Local edit via Stability inpaint on Bedrock: only pixels inside mask_box (0-1000 coords) may change."""
+    import base64, io, os, boto3
+    from dotenv import load_dotenv
+    from PIL import Image, ImageDraw
+    load_dotenv(ROOT / ".env", override=True)
+    if os.getenv("AWS_ACCESS_KEY_ID"):
+        os.environ.pop("AWS_PROFILE", None)
+    im = Image.open(base_path).convert("RGB")
+    W, H = im.size
+    mask = Image.new("L", im.size, 0)
+    x0, y0, x1, y1 = mask_box
+    ImageDraw.Draw(mask).rectangle([x0 * W / 1000, y0 * H / 1000, x1 * W / 1000, y1 * H / 1000], fill=255)
+    b64 = lambda img: (lambda buf: (img.save(buf, "PNG"), base64.b64encode(buf.getvalue()).decode())[1])(io.BytesIO())
+    body = {"image": b64(im), "mask": b64(mask), "prompt": prompt, "output_format": "png", "grow_mask": 5}
+    c = boto3.client("bedrock-runtime", region_name=os.getenv("AWS_REGION", "us-east-1"))
+    r = json.loads(c.invoke_model(modelId=model, body=json.dumps(body))["body"].read())
+    out = Image.open(io.BytesIO(base64.b64decode(r["images"][0]))).convert("RGB").resize((W, H))
+    out.save(dest, "PNG")
+    return str(dest)
 
 
 def gen_image_treg(prompt, dest, image_urls=None, size="4:3", timeout=240):

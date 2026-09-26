@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R02",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Bold black-and-white geometric patterned rug on the floor, which can be misperceived as a hole or obstacle by someone with dementia.\",\n      \"box\": [200, 716, 984, 997]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "Bold black-and-white geometric patterned rug on the floor, which can be misperceived as a hole or obstacle by someone with dementia.",
+   "box": [
+    200,
+    716,
+    984,
+    997
+   ]
+  }
+ ]
+}

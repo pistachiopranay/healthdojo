@@ -1,0 +1,28 @@
+{
+ "scene": "dem-bathroom-base0-DEM-B03",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-B02\",\"severity\":\"medium\",\"evidence\":\"The white toilet seat and toilet blend into the surrounding light-colored floor and fixtures, creating low contrast.\",\"box\":[515,545,718,908]},{\"id\":\"DEM-B03\",\"severity\":\"medium\",\"evidence\":\"A dark bath mat lies on the light-colored bathroom floor and may be misperceived as a hole or obstacle.\",\"box\":[342,854,686,995]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "The white toilet seat and toilet blend into the surrounding light-colored floor and fixtures, creating low contrast.",
+   "box": [
+    515,
+    545,
+    718,
+    908
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "medium",
+   "evidence": "A dark bath mat lies on the light-colored bathroom floor and may be misperceived as a hole or obstacle.",
+   "box": [
+    342,
+    854,
+    686,
+    995
+   ]
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "scene": "dem-entry-base0-DEM-E02",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E02\", \"severity\": \"high\", \"evidence\": \"The front glass door is open, showing the outside patio and greenery, creating a wandering risk for a person with dementia\", \"box\": [560, 0, 700, 430]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "The front glass door is open, showing the outside patio and greenery, creating a wandering risk for a person with dementia",
+   "box": [
+    560,
+    0,
+    700,
+    430
+   ]
+  }
+ ]
+}

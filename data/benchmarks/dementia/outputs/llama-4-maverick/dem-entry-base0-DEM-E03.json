@@ -1,0 +1,28 @@
+{
+ "scene": "dem-entry-base0-DEM-E03",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-E02\", \"severity\": \"high\", \"evidence\": \"The front door is slightly ajar, allowing for easy exit.\", \"box\": [334, 0, 456, 0.375]},\n    {\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"Newspapers are scattered on the floor, creating a tripping hazard.\", \"box\": [360, 0.625, 0.630, 0.810]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "The front door is slightly ajar, allowing for easy exit.",
+   "box": [
+    334,
+    0,
+    456,
+    0.375
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Newspapers are scattered on the floor, creating a tripping hazard.",
+   "box": [
+    360,
+    0.625,
+    0.63,
+    0.81
+   ]
+  }
+ ]
+}

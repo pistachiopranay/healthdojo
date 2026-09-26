@@ -1,0 +1,28 @@
+{
+ "scene": "dem-entry-base0-DEM-E02",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E02\",\n      \"severity\": \"high\",\n      \"evidence\": \"The front door with glass panels is visibly open, leading directly outside, which poses a significant wandering risk for an individual with dementia.\",\n      \"box\": [328, 0, 450, 416]\n    },\n    {\n      \"id\": \"DEM-E01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"While car keys are not explicitly visible, the open front door and accessible entryway increase the risk of unsupervised exit, which may include access to vehicles if keys are nearby or in the person\u2019s possession.\",\n      \"box\": [328, 0, 450, 416]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "The front door with glass panels is visibly open, leading directly outside, which poses a significant wandering risk for an individual with dementia.",
+   "box": [
+    328,
+    0,
+    450,
+    416
+   ]
+  },
+  {
+   "id": "DEM-E01",
+   "severity": "medium",
+   "evidence": "While car keys are not explicitly visible, the open front door and accessible entryway increase the risk of unsupervised exit, which may include access to vehicles if keys are nearby or in the person\u2019s possession.",
+   "box": [
+    328,
+    0,
+    450,
+    416
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "scene": "dem-bathroom-base0-DEM-B04",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-B01\", \"severity\": \"high\", \"evidence\": \"Hair dryer by the sink\", \"box\": [700, 440, 920, 0.6]},\n    {\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"White toilet seat on white toilet\", \"box\": [0.45, 0.65, 0.7, 0.95]},\n    {\"id\": \"DEM-B04\", \"severity\": \"high\", \"evidence\": \"Plugged-in hair dryer by the sink\", \"box\": [700, 440, 920, 0.6]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-B01",
+   "severity": "high",
+   "evidence": "Hair dryer by the sink",
+   "box": [
+    700,
+    440,
+    920,
+    0.6
+   ]
+  },
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White toilet seat on white toilet",
+   "box": [
+    0.45,
+    0.65,
+    0.7,
+    0.95
+   ]
+  },
+  {
+   "id": "DEM-B04",
+   "severity": "high",
+   "evidence": "Plugged-in hair dryer by the sink",
+   "box": [
+    700,
+    440,
+    920,
+    0.6
+   ]
+  }
+ ]
+}

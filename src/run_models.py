@@ -1,7 +1,7 @@
 """Run every model on every scene with the same prompt; cache raw outputs in data/outputs/<model>/<scene>.json."""
 import base64, json, os, re, sys, concurrent.futures as cf, pathlib
 from dotenv import load_dotenv
-from common import ROOT, DATA, SCENES, taxonomy
+from common import ROOT, DATA, SCENES, BENCH, bench_meta, taxonomy
 
 load_dotenv(ROOT / ".env", override=True)
 if os.getenv("AWS_ACCESS_KEY_ID"):
@@ -16,6 +16,8 @@ List every hazard from this checklist that is present in the photo. Only use the
 
 Return ONLY JSON: {{"hazards": [{{"id": "<id>", "severity": "low|medium|high", "evidence": "<what you see>", "box": [x0, y0, x1, y1]}}]}}
 box = where the hazard is, in 0-1000 normalized image coordinates (omit for whole-room issues). Return {{"hazards": []}} if the room is safe."""
+if BENCH:  # each benchmark states its own patient context
+    PROMPT = bench_meta().get("model_prompt", PROMPT)
 
 
 def checklist():
@@ -30,7 +32,8 @@ def parse(text):
             h = json.loads(h)
         return [x for x in h if isinstance(x, dict)]
     except Exception:
-        return [{"id": i} for i in dict.fromkeys(re.findall(r"[A-Z]{3,5}-0\d", text))]
+        pat = r"[A-Z]{3,5}-[A-Z]?\d\d" if BENCH else r"[A-Z]{3,5}-0\d"
+        return [{"id": i} for i in dict.fromkeys(re.findall(pat, text))]
 
 
 def anthropic_call(model):

@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bedroom-base0",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R01\", \"severity\": \"low\", \"evidence\": \"Large mirror facing the bed\", \"box\": [476, 134, 551, 266]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "low",
+   "evidence": "Large mirror facing the bed",
+   "box": [
+    476,
+    134,
+    551,
+    266
+   ]
+  }
+ ]
+}

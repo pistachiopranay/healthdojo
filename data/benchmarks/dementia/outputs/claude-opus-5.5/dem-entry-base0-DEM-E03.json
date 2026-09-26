@@ -1,0 +1,17 @@
+{
+ "scene": "dem-entry-base0-DEM-E03",
+ "raw": "```json\n{\"hazards\": [{\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"A pile of newspapers lies in the middle of the open floor walkway between the recliners, with more loose papers and a small item at the base of the dark recliner. This is a trip and fall hazard, especially for someone with dementia who may not notice or understand the obstacle.\", \"box\": [374, 600, 615, 815]}]}\n```",
+ "hazards": [
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "A pile of newspapers lies in the middle of the open floor walkway between the recliners, with more loose papers and a small item at the base of the dark recliner. This is a trip and fall hazard, especially for someone with dementia who may not notice or understand the obstacle.",
+   "box": [
+    374,
+    600,
+    615,
+    815
+   ]
+  }
+ ]
+}

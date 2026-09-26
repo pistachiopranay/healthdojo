@@ -1,0 +1,28 @@
+{
+ "scene": "dem-bathroom-base0-DEM-B03",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"A white raised toilet seat sits on a white toilet, set against a white bathtub and light beige floor. The low contrast makes the seat hard for a person with dementia to see and judge when sitting down. Only the gray frame handles stand out.\", \"box\": [518, 547, 706, 938]}, {\"id\": \"DEM-B03\", \"severity\": \"medium\", \"evidence\": \"A black rectangular mat lies on light beige tile in front of the toilet and tub. A person with dementia may see it as a hole or a step, which can cause hesitation, stepping around it, or a fall in a key transfer area.\", \"box\": [344, 857, 685, 996]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "A white raised toilet seat sits on a white toilet, set against a white bathtub and light beige floor. The low contrast makes the seat hard for a person with dementia to see and judge when sitting down. Only the gray frame handles stand out.",
+   "box": [
+    518,
+    547,
+    706,
+    938
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "medium",
+   "evidence": "A black rectangular mat lies on light beige tile in front of the toilet and tub. A person with dementia may see it as a hole or a step, which can cause hesitation, stepping around it, or a fall in a key transfer area.",
+   "box": [
+    344,
+    857,
+    685,
+    996
+   ]
+  }
+ ]
+}

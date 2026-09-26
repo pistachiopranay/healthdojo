@@ -1,0 +1,17 @@
+{
+ "scene": "dem-entry-base0-DEM-E03",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Stack of newspapers on the hardwood floor in the middle of the room, creating a tripping hazard and obstructing the walkway.\",\n      \"box\": [372, 645, 617, 818]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Stack of newspapers on the hardwood floor in the middle of the room, creating a tripping hazard and obstructing the walkway.",
+   "box": [
+    372,
+    645,
+    617,
+    818
+   ]
+  }
+ ]
+}

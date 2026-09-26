@@ -1,0 +1,28 @@
+{
+ "scene": "dem-kitchen-base0-DEM-K03",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Stove with visible knobs and oven door; no indication of knob locks or safety covers, posing risk of accidental activation.\",\n      \"box\": [142, 327, 257, 747]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Multiple cleaning chemical bottles (sprays, bleach) sitting openly on the counter next to the sink, within easy reach.\",\n      \"box\": [598, 214, 692, 314]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "medium",
+   "evidence": "Stove with visible knobs and oven door; no indication of knob locks or safety covers, posing risk of accidental activation.",
+   "box": [
+    142,
+    327,
+    257,
+    747
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Multiple cleaning chemical bottles (sprays, bleach) sitting openly on the counter next to the sink, within easy reach.",
+   "box": [
+    598,
+    214,
+    692,
+    314
+   ]
+  }
+ ]
+}

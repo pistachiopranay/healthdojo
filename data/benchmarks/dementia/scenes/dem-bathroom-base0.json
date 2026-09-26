@@ -1,0 +1,9 @@
+{
+ "id": "dem-bathroom-base0",
+ "room": "bathroom",
+ "kind": "base",
+ "hazards": [],
+ "prompt": "reused: renders/bathroom-base1.jpg",
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/benchmarks/dementia/renders/dem-bathroom-base0.jpg",
+ "image": "renders/dem-bathroom-base0.jpg"
+}

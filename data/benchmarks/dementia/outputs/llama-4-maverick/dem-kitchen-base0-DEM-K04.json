@@ -1,0 +1,50 @@
+{
+ "scene": "dem-kitchen-base0-DEM-K04",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"Stove with knobs on the front\", \"box\": [0.158, 0.229,0.264,0.762]},\n    {\"id\": \"DEM-K02\", \"severity\": \"high\", \"evidence\": \"Knives in a holder on the counter\", \"box\": [0.158,0.229,0.264,0.762]},\n    {\"id\": \"DEM-K04\", \"severity\": \"high\", \"evidence\": \"Medication bottles on the counter\", \"box\": [0.201,0.212,0.298,0.326]},\n    {\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"Clutter on the counter\", \"box\": [0.201,0.212,0.298,0.326]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove with knobs on the front",
+   "box": [
+    0.158,
+    0.229,
+    0.264,
+    0.762
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Knives in a holder on the counter",
+   "box": [
+    0.158,
+    0.229,
+    0.264,
+    0.762
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Medication bottles on the counter",
+   "box": [
+    0.201,
+    0.212,
+    0.298,
+    0.326
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Clutter on the counter",
+   "box": [
+    0.201,
+    0.212,
+    0.298,
+    0.326
+   ]
+  }
+ ]
+}

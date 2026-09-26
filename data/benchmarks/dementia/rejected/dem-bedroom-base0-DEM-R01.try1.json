@@ -1,0 +1,34 @@
+{
+ "id": "dem-bedroom-base0-DEM-R01",
+ "room": "bedroom",
+ "kind": "edit",
+ "base": "dem-bedroom-base0",
+ "prompt": "a large full-length standing floor mirror clearly reflecting the bed, photorealistic, same lighting and camera as the rest of the photo",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "type": "perception",
+   "box": [
+    606,
+    346,
+    834,
+    642
+   ]
+  }
+ ],
+ "mask": [
+  600,
+  330,
+  860,
+  960
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/benchmarks/dementia/renders/dem-bedroom-base0-DEM-R01.jpg",
+ "image": "renders/dem-bedroom-base0-DEM-R01.jpg",
+ "verify": {
+  "hazard_visible": false,
+  "other_major_changes": true,
+  "note": "No mirror appears anywhere in image 2. Other edits: the nightstand is replaced with a multi-drawer chest, the lamp is swapped for a white ceramic one, clutter is added on the nightstand and floor (cup of items, small object), and the doorway area is altered.",
+  "changed_frac": 0.0297
+ },
+ "verified": false
+}

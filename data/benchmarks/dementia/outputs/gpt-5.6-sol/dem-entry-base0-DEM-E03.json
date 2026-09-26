@@ -1,0 +1,17 @@
+{
+ "scene": "dem-entry-base0-DEM-E03",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-E03\",\"severity\":\"medium\",\"evidence\":\"A pile of newspapers and loose papers is lying in the main walking path, creating a trip hazard.\",\"box\":[375,612,616,815]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "A pile of newspapers and loose papers is lying in the main walking path, creating a trip hazard.",
+   "box": [
+    375,
+    612,
+    616,
+    815
+   ]
+  }
+ ]
+}

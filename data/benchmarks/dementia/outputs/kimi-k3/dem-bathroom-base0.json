@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bathroom-base0",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"White raised toilet seat on a white toilet with light/white floor tile, creating low contrast that is easy for a person with dementia to misperceive.\", \"box\": [515, 548, 720, 1000]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White raised toilet seat on a white toilet with light/white floor tile, creating low contrast that is easy for a person with dementia to misperceive.",
+   "box": [
+    515,
+    548,
+    720,
+    1000
+   ]
+  }
+ ]
+}

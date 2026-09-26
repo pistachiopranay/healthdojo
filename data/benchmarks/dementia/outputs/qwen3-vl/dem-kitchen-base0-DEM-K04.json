@@ -1,0 +1,50 @@
+{
+ "scene": "dem-kitchen-base0-DEM-K04",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Knives and utensils are visible in a holder on the counter near the sink and stove.\",\n      \"box\": [178, 206, 220, 260]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cleaning chemicals (e.g., dish soap) are visible on the counter near the sink, within easy reach.\",\n      \"box\": [320, 244, 340, 300]\n    },\n    {\n      \"id\": \"DEM-K04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Multiple orange prescription medication bottles are left out on the counter near the stove.\",\n      \"box\": [198, 250, 248, 320]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"Towels are hanging on the oven handle, creating a minor clutter hazard in the walkway.\",\n      \"box\": [200, 360, 262, 535]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-K02",
+   "severity": "medium",
+   "evidence": "Knives and utensils are visible in a holder on the counter near the sink and stove.",
+   "box": [
+    178,
+    206,
+    220,
+    260
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning chemicals (e.g., dish soap) are visible on the counter near the sink, within easy reach.",
+   "box": [
+    320,
+    244,
+    340,
+    300
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Multiple orange prescription medication bottles are left out on the counter near the stove.",
+   "box": [
+    198,
+    250,
+    248,
+    320
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "Towels are hanging on the oven handle, creating a minor clutter hazard in the walkway.",
+   "box": [
+    200,
+    360,
+    262,
+    535
+   ]
+  }
+ ]
+}

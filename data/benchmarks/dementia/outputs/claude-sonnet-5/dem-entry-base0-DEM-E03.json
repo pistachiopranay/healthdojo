@@ -1,0 +1,17 @@
+{
+ "scene": "dem-entry-base0-DEM-E03",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"Pile of newspapers scattered on the floor in the main walking path of the living room, creating a trip/fall hazard\", \"box\": [575, 615, 946, 838]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Pile of newspapers scattered on the floor in the main walking path of the living room, creating a trip/fall hazard",
+   "box": [
+    575,
+    615,
+    946,
+    838
+   ]
+  }
+ ]
+}

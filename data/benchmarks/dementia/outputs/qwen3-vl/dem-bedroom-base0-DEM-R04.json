@@ -1,0 +1,28 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R04",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R04\",\n      \"severity\": \"high\",\n      \"evidence\": \"A glowing orange space heater is placed directly on the carpet next to the bed, with its power cord coiled on the floor nearby, posing a fire and tripping hazard.\",\n      \"box\": [613, 429, 747, 769]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The power cord of the space heater is loosely coiled on the floor, creating a tripping hazard in the walkway.\",\n      \"box\": [587, 680, 833, 901]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "A glowing orange space heater is placed directly on the carpet next to the bed, with its power cord coiled on the floor nearby, posing a fire and tripping hazard.",
+   "box": [
+    613,
+    429,
+    747,
+    769
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "The power cord of the space heater is loosely coiled on the floor, creating a tripping hazard in the walkway.",
+   "box": [
+    587,
+    680,
+    833,
+    901
+   ]
+  }
+ ]
+}

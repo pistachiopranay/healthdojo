@@ -1,0 +1,39 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R04",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-R04\",\"severity\":\"high\",\"evidence\":\"An operating space heater is positioned immediately beside the bed and bedding.\",\"box\":[614,425,746,780]},{\"id\":\"DEM-E03\",\"severity\":\"high\",\"evidence\":\"A large tangle of cords or rope surrounds the heater in the walking area, creating a trip hazard.\",\"box\":[583,686,832,906]},{\"id\":\"DEM-B03\",\"severity\":\"medium\",\"evidence\":\"A dark gray bath mat is visible on the light-colored bathroom floor.\",\"box\":[825,423,948,515]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "An operating space heater is positioned immediately beside the bed and bedding.",
+   "box": [
+    614,
+    425,
+    746,
+    780
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "high",
+   "evidence": "A large tangle of cords or rope surrounds the heater in the walking area, creating a trip hazard.",
+   "box": [
+    583,
+    686,
+    832,
+    906
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "medium",
+   "evidence": "A dark gray bath mat is visible on the light-colored bathroom floor.",
+   "box": [
+    825,
+    423,
+    948,
+    515
+   ]
+  }
+ ]
+}

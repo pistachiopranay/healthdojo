@@ -1,0 +1,17 @@
+{
+ "scene": "dem-entry-base0-DEM-E01",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Car keys are hanging on a hook by the front door, within easy reach, which could enable an individual with dementia to leave unsupervised.\",\n      \"box\": [300, 143, 330, 354]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "medium",
+   "evidence": "Car keys are hanging on a hook by the front door, within easy reach, which could enable an individual with dementia to leave unsupervised.",
+   "box": [
+    300,
+    143,
+    330,
+    354
+   ]
+  }
+ ]
+}

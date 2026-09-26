@@ -1,0 +1,34 @@
+{
+ "id": "dem-entry-base0-DEM-E01",
+ "room": "entry",
+ "kind": "edit",
+ "base": "dem-entry-base0",
+ "prompt": "a small wall hook beside the front door with a car key and car remote fob hanging from it, photorealistic, same lighting and camera as the rest of the photo",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "type": "access",
+   "box": [
+    238,
+    157,
+    332,
+    429
+   ]
+  }
+ ],
+ "mask": [
+  230,
+  150,
+  335,
+  460
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/benchmarks/dementia/renders/dem-entry-base0-DEM-E01.jpg",
+ "image": "renders/dem-entry-base0-DEM-E01.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": true,
+  "note": "Car keys with a keypad fob hang from an odd lever/hook on the wall edge by the hallway to the front door, clearly visible. The dark recliner was also altered: a second blue pillow was added and its backrest has a new dark curved wing.",
+  "changed_frac": 0.0135
+ },
+ "verified": true
+}

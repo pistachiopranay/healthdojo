@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bathroom-base0",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"White toilet seat and toilet on white/light-colored floor and bathroom, low visual contrast making it hard to distinguish for someone with dementia\", \"box\": [793, 660, 1101, 1023]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White toilet seat and toilet on white/light-colored floor and bathroom, low visual contrast making it hard to distinguish for someone with dementia",
+   "box": [
+    793,
+    660,
+    1101,
+    1023
+   ]
+  }
+ ]
+}

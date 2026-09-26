@@ -1,0 +1,28 @@
+{
+ "scene": "dem-bathroom-base0-DEM-B03",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-B02\",\"severity\":\"medium\",\"evidence\":\"White raised toilet seat on a white toilet next to a light/cream tile floor; the low contrast makes the seat and toilet edge hard for a person with dementia to distinguish.\",\"box\":[514,665,724,908]},{\"id\":\"DEM-B03\",\"severity\":\"high\",\"evidence\":\"Solid black/dark bath mat on the light tile floor directly in front of the toilet; commonly misperceived in dementia as a hole, which can trigger sudden avoidance/stepping-over and a fall.\",\"box\":[343,856,688,998]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White raised toilet seat on a white toilet next to a light/cream tile floor; the low contrast makes the seat and toilet edge hard for a person with dementia to distinguish.",
+   "box": [
+    514,
+    665,
+    724,
+    908
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "high",
+   "evidence": "Solid black/dark bath mat on the light tile floor directly in front of the toilet; commonly misperceived in dementia as a hole, which can trigger sudden avoidance/stepping-over and a fall.",
+   "box": [
+    343,
+    856,
+    688,
+    998
+   ]
+  }
+ ]
+}

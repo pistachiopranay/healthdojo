@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R04",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R04\", \"severity\": \"high\", \"evidence\": \"Space heater glowing orange with exposed heating element, positioned directly next to bed and bedding, with cord tangled on carpet nearby\", \"box\": [906, 445, 1279, 913]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "Space heater glowing orange with exposed heating element, positioned directly next to bed and bedding, with cord tangled on carpet nearby",
+   "box": [
+    906,
+    445,
+    1279,
+    913
+   ]
+  }
+ ]
+}

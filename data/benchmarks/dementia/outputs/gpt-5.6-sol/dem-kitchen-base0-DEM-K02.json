@@ -1,0 +1,28 @@
+{
+ "scene": "dem-kitchen-base0-DEM-K02",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-K02\",\"severity\":\"high\",\"evidence\":\"Multiple exposed kitchen knives are accessible in a knife block on the countertop.\",\"box\":[468,174,531,319]},{\"id\":\"DEM-K03\",\"severity\":\"high\",\"evidence\":\"Several cleaning-product bottles are visibly accessible on an unlocked counter in the adjoining room.\",\"box\":[760,208,822,280]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Multiple exposed kitchen knives are accessible in a knife block on the countertop.",
+   "box": [
+    468,
+    174,
+    531,
+    319
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "Several cleaning-product bottles are visibly accessible on an unlocked counter in the adjoining room.",
+   "box": [
+    760,
+    208,
+    822,
+    280
+   ]
+  }
+ ]
+}

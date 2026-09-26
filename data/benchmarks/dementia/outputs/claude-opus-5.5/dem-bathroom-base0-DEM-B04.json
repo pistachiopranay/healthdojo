@@ -1,0 +1,28 @@
+{
+ "scene": "dem-bathroom-base0-DEM-B04",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B04\", \"severity\": \"high\", \"evidence\": \"A black hair dryer sits on the vanity countertop right next to the sink basin, with its cord dangling over the counter edge. It appears to be plugged in, creating a risk of electrocution or burns if it is misused or knocked into water.\", \"box\": [736, 469, 925, 742]}, {\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"A white raised toilet seat sits on a white toilet bowl in front of a white tub, giving very low color contrast. This makes it hard for a person with dementia to see and locate the seat, which increases the risk of falls and toileting accidents.\", \"box\": [518, 547, 716, 1000]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B04",
+   "severity": "high",
+   "evidence": "A black hair dryer sits on the vanity countertop right next to the sink basin, with its cord dangling over the counter edge. It appears to be plugged in, creating a risk of electrocution or burns if it is misused or knocked into water.",
+   "box": [
+    736,
+    469,
+    925,
+    742
+   ]
+  },
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "A white raised toilet seat sits on a white toilet bowl in front of a white tub, giving very low color contrast. This makes it hard for a person with dementia to see and locate the seat, which increases the risk of falls and toileting accidents.",
+   "box": [
+    518,
+    547,
+    716,
+    1000
+   ]
+  }
+ ]
+}

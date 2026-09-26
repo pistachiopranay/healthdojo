@@ -4,7 +4,7 @@ import base64, json, concurrent.futures as cf
 import numpy as np
 from PIL import Image, ImageFilter
 from dotenv import load_dotenv
-from common import ROOT, DATA, SCENES, taxonomy
+from common import ROOT, DATA, SCENES, BENCH, bench_meta, taxonomy
 
 load_dotenv(ROOT / ".env")
 TAX = taxonomy()
@@ -13,6 +13,9 @@ JUDGE = "claude-opus-5-5"
 Q = """Image 1 is the original room. Image 2 was edited to add exactly one fall hazard: "{name}" ({desc}).
 Answer ONLY JSON: {{"hazard_visible": true|false, "other_major_changes": true|false, "note": "<short>"}}
 hazard_visible = a careful home-safety assessor looking only at image 2 would clearly see this hazard."""
+if BENCH:
+    Q = Q.replace("fall hazard", bench_meta().get("hazard_noun", "hazard"))
+BOXED = ("object", "absence", "access", "perception") if BENCH else ("object", "absence")
 
 
 def diff_box(base, edit):
@@ -49,7 +52,7 @@ def one(p):
         v = {"hazard_visible": False, "note": f"judge error {e}"}
     s["verify"] = v | {"changed_frac": round(changed, 4)}
     s["verified"] = bool(v.get("hazard_visible"))
-    if box and s["hazards"][0]["type"] in ("object", "absence"):
+    if box and s["hazards"][0]["type"] in BOXED:
         s["hazards"][0]["box"] = box
     p.write_text(json.dumps(s, indent=1))
     print(s["id"], "VERIFIED" if s["verified"] else "REJECT", v.get("note", ""), flush=True)

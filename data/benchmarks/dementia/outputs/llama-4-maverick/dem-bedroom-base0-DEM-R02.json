@@ -1,0 +1,28 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R02",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-R01\", \"severity\": \"medium\", \"evidence\": \"Large mirror facing the bed\", \"box\": [340, 0, 640, 0.4]},\n    {\"id\": \"DEM-R02\", \"severity\": \"medium\", \"evidence\": \"Bold high-contrast patterned rug\", \"box\": [220, 0.7, 0.98, 0.99]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "Large mirror facing the bed",
+   "box": [
+    340,
+    0,
+    640,
+    0.4
+   ]
+  },
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "Bold high-contrast patterned rug",
+   "box": [
+    220,
+    0.7,
+    0.98,
+    0.99
+   ]
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "scene": "dem-entry-base0-DEM-E02",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E02\", \"severity\": \"high\", \"evidence\": \"An exterior door with glass panels at the entryway is standing open to the outside (green outdoor foliage and a step are visible through the doorway), creating a wandering/elopement risk.\", \"box\": [323, 0, 453, 421]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "An exterior door with glass panels at the entryway is standing open to the outside (green outdoor foliage and a step are visible through the doorway), creating a wandering/elopement risk.",
+   "box": [
+    323,
+    0,
+    453,
+    421
+   ]
+  }
+ ]
+}

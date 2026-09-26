@@ -1,0 +1,34 @@
+{
+ "id": "dem-bathroom-base0-DEM-B03",
+ "room": "bathroom",
+ "kind": "edit",
+ "base": "dem-bathroom-base0",
+ "prompt": "a solid black bath mat lying on the light tile floor, photorealistic, same lighting and camera as the rest of the photo",
+ "hazards": [
+  {
+   "id": "DEM-B03",
+   "type": "perception",
+   "box": [
+    358,
+    866,
+    711,
+    994
+   ]
+  }
+ ],
+ "mask": [
+  300,
+  830,
+  740,
+  1000
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/benchmarks/dementia/renders/dem-bathroom-base0-DEM-B03.jpg",
+ "image": "renders/dem-bathroom-base0-DEM-B03.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": true,
+  "note": "A solid black mat is clearly visible on the light tile in front of the tub and toilet. However, the toilet's pedestal base is gone, so the bowl looks like it is floating above the mat. The safety-frame legs and vanity also look altered.",
+  "changed_frac": 0.0299
+ },
+ "verified": true
+}

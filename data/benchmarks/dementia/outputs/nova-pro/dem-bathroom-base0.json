@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bathroom-base0",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"White toilet seat on white toilet and floor (low contrast)\", \"box\": [515, 549, 715, 999]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White toilet seat on white toilet and floor (low contrast)",
+   "box": [
+    515,
+    549,
+    715,
+    999
+   ]
+  }
+ ]
+}

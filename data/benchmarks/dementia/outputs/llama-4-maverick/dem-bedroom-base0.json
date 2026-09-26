@@ -1,0 +1,39 @@
+{
+ "scene": "dem-bedroom-base0",
+ "raw": "{\"hazards\": [\n  {\"id\": \"DEM-R01\", \"severity\": \"medium\", \"evidence\": \"large mirror above the bed\", \"box\": [340, 0, 630, 270]},\n  {\"id\": \"DEM-B04\", \"severity\": \"high\", \"evidence\": \"lamp plugged into the outlet next to the bed\", \"box\": [610, 270, 0.75, 0.57]},\n  {\"id\": \"DEM-R03\", \"severity\": \"high\", \"evidence\": \"remote on the nightstand\", \"box\": [610, 270, 0.75, 0.57]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "large mirror above the bed",
+   "box": [
+    340,
+    0,
+    630,
+    270
+   ]
+  },
+  {
+   "id": "DEM-B04",
+   "severity": "high",
+   "evidence": "lamp plugged into the outlet next to the bed",
+   "box": [
+    610,
+    270,
+    0.75,
+    0.57
+   ]
+  },
+  {
+   "id": "DEM-R03",
+   "severity": "high",
+   "evidence": "remote on the nightstand",
+   "box": [
+    610,
+    270,
+    0.75,
+    0.57
+   ]
+  }
+ ]
+}

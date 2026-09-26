@@ -1,0 +1,17 @@
+{
+ "scene": "dem-kitchen-base0-DEM-K02",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K02\", \"severity\": \"high\", \"evidence\": \"Wooden knife block with multiple large kitchen knives (black handles) sitting out on the countertop immediately right of the sink, within easy reach.\", \"box\": [468, 176, 530, 318]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Wooden knife block with multiple large kitchen knives (black handles) sitting out on the countertop immediately right of the sink, within easy reach.",
+   "box": [
+    468,
+    176,
+    530,
+    318
+   ]
+  }
+ ]
+}

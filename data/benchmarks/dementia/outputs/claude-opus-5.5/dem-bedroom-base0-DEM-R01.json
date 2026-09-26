@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R01",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R01\", \"severity\": \"medium\", \"evidence\": \"A large framed floor mirror and a tall standing mirror sit in the corner facing the bed and clearly reflect it. A person with dementia may misread their reflection as a stranger in the room, especially at night, causing fear or agitation.\", \"box\": [183, 195, 338, 423]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "A large framed floor mirror and a tall standing mirror sit in the corner facing the bed and clearly reflect it. A person with dementia may misread their reflection as a stranger in the room, especially at night, causing fear or agitation.",
+   "box": [
+    183,
+    195,
+    338,
+    423
+   ]
+  }
+ ]
+}

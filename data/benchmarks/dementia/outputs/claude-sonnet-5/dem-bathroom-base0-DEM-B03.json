@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bathroom-base0-DEM-B03",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"White toilet seat and white toilet bowl blend with each other and light-colored floor tile, making the toilet hard to distinguish for someone with dementia or low vision\", \"box\": [790, 570, 1090, 930]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White toilet seat and white toilet bowl blend with each other and light-colored floor tile, making the toilet hard to distinguish for someone with dementia or low vision",
+   "box": [
+    790,
+    570,
+    1090,
+    930
+   ]
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "scene": "dem-bathroom-base0-DEM-B04",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B02\", \"severity\": \"low\", \"evidence\": \"white toilet seat on white toilet and floor\", \"box\": [515, 662, 714, 999]}, {\"id\": \"DEM-B04\", \"severity\": \"high\", \"evidence\": \"plugged-in hair dryer by the sink\", \"box\": [736, 469, 928, 766]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "low",
+   "evidence": "white toilet seat on white toilet and floor",
+   "box": [
+    515,
+    662,
+    714,
+    999
+   ]
+  },
+  {
+   "id": "DEM-B04",
+   "severity": "high",
+   "evidence": "plugged-in hair dryer by the sink",
+   "box": [
+    736,
+    469,
+    928,
+    766
+   ]
+  }
+ ]
+}

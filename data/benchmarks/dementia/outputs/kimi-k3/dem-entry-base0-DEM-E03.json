@@ -1,0 +1,17 @@
+{
+ "scene": "dem-entry-base0-DEM-E03",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"Pile of newspapers/magazines and loose papers sitting on the hardwood floor in the central walkway (with additional papers/book on the floor beside the blue recliner), creating a trip/slip hazard in the main walking path.\", \"box\": [373, 600, 617, 820]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Pile of newspapers/magazines and loose papers sitting on the hardwood floor in the central walkway (with additional papers/book on the floor beside the blue recliner), creating a trip/slip hazard in the main walking path.",
+   "box": [
+    373,
+    600,
+    617,
+    820
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "scene": "dem-kitchen-base0",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"Stove with knobs on the front\", \"box\": [0.165, 0.330,0.257,0.748]},\n    {\"id\": \"DEM-K03\", \"severity\": \"high\", \"evidence\": \"Dish soap by the sink\", \"box\": [0.315,0.243,0.333,0.295]},\n    {\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"Clutter on the countertops\", \"box\": [0.165,0.187,0.721,0.358]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove with knobs on the front",
+   "box": [
+    0.165,
+    0.33,
+    0.257,
+    0.748
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "Dish soap by the sink",
+   "box": [
+    0.315,
+    0.243,
+    0.333,
+    0.295
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Clutter on the countertops",
+   "box": [
+    0.165,
+    0.187,
+    0.721,
+    0.358
+   ]
+  }
+ ]
+}

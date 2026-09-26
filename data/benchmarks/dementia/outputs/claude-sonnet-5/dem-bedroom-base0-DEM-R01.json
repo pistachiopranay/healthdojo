@@ -1,0 +1,28 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R01",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R01\", \"severity\": \"medium\", \"evidence\": \"A tall wardrobe with mirrored doors stands near the window, angled toward the bed, creating a large reflective surface facing the sleeping area which could be misperceived as another person or room.\", \"box\": [283, 190, 520, 430]}, {\"id\": \"DEM-R02\", \"severity\": \"low\", \"evidence\": \"A dark, high-contrast patterned area rug lies on the light-colored floor in the hallway just outside the bedroom, which could be misread as a hole or obstacle.\", \"box\": [1250, 500, 1440, 630]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "A tall wardrobe with mirrored doors stands near the window, angled toward the bed, creating a large reflective surface facing the sleeping area which could be misperceived as another person or room.",
+   "box": [
+    283,
+    190,
+    520,
+    430
+   ]
+  },
+  {
+   "id": "DEM-R02",
+   "severity": "low",
+   "evidence": "A dark, high-contrast patterned area rug lies on the light-colored floor in the hallway just outside the bedroom, which could be misread as a hole or obstacle.",
+   "box": [
+    1250,
+    500,
+    1440,
+    630
+   ]
+  }
+ ]
+}

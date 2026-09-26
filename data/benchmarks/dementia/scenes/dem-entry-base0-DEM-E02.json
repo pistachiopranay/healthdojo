@@ -1,0 +1,34 @@
+{
+ "id": "dem-entry-base0-DEM-E02",
+ "room": "entry",
+ "kind": "edit",
+ "base": "dem-entry-base0",
+ "prompt": "the front door standing wide open, showing the sunny porch and street outside, photorealistic, same lighting and camera as the rest of the photo",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "type": "access",
+   "box": [
+    326,
+    42,
+    426,
+    637
+   ]
+  }
+ ],
+ "mask": [
+  320,
+  40,
+  430,
+  660
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/benchmarks/dementia/renders/dem-entry-base0-DEM-E02.jpg",
+ "image": "renders/dem-entry-base0-DEM-E02.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "The back doorway now has glass-paned doors with one leaf standing open, showing a patio and garden outside, so an open exterior door is clearly visible. The door style changed from a solid white door to glass French doors, but this is part of the hazard edit. The rest of the room is essentially unchanged.",
+  "changed_frac": 0.0299
+ },
+ "verified": true
+}

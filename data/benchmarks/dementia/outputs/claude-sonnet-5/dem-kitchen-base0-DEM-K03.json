@@ -1,0 +1,17 @@
+{
+ "scene": "dem-kitchen-base0-DEM-K03",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K03\", \"severity\": \"high\", \"evidence\": \"Multiple spray bottles of cleaning chemicals (glass cleaner, disinfectant) and a large blue detergent/jug left out openly on kitchen counter near sink, easily accessible\", \"box\": [906, 205, 1063, 320]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "Multiple spray bottles of cleaning chemicals (glass cleaner, disinfectant) and a large blue detergent/jug left out openly on kitchen counter near sink, easily accessible",
+   "box": [
+    906,
+    205,
+    1063,
+    320
+   ]
+  }
+ ]
+}

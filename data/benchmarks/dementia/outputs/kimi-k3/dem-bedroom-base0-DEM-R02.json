@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R02",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R02\", \"severity\": \"medium\", \"evidence\": \"Large bold black-and-white geometric high-contrast patterned area rug in the foreground walkway at the foot of the bed; can be misperceived by a person with dementia as holes, steps, water, or a barrier, increasing fall and wandering-hesitation risk.\", \"box\": [200, 716, 986, 1000]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "Large bold black-and-white geometric high-contrast patterned area rug in the foreground walkway at the foot of the bed; can be misperceived by a person with dementia as holes, steps, water, or a barrier, increasing fall and wandering-hesitation risk.",
+   "box": [
+    200,
+    716,
+    986,
+    1000
+   ]
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R02",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R02\", \"severity\": \"medium\", \"evidence\": \"Large black and white bold geometric patterned rug at foot of bed, high contrast pattern could cause visual confusion or trip perception issues for someone with dementia\", \"box\": [310, 733, 1510, 1024]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "Large black and white bold geometric patterned rug at foot of bed, high contrast pattern could cause visual confusion or trip perception issues for someone with dementia",
+   "box": [
+    310,
+    733,
+    1510,
+    1024
+   ]
+  }
+ ]
+}

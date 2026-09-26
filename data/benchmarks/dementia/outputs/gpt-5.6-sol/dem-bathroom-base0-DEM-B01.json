@@ -1,0 +1,28 @@
+{
+ "scene": "dem-bathroom-base0-DEM-B01",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-B01\",\"severity\":\"high\",\"evidence\":\"Multiple medication bottles and containers are left accessible on the vanity beside the sink.\",\"box\":[744,492,930,718]},{\"id\":\"DEM-B02\",\"severity\":\"medium\",\"evidence\":\"The white toilet seat blends into the white toilet and surrounding light-colored surfaces, providing low visual contrast.\",\"box\":[515,652,718,999]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B01",
+   "severity": "high",
+   "evidence": "Multiple medication bottles and containers are left accessible on the vanity beside the sink.",
+   "box": [
+    744,
+    492,
+    930,
+    718
+   ]
+  },
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "The white toilet seat blends into the white toilet and surrounding light-colored surfaces, providing low visual contrast.",
+   "box": [
+    515,
+    652,
+    718,
+    999
+   ]
+  }
+ ]
+}

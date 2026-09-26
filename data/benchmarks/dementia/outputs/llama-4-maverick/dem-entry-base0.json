@@ -1,0 +1,11 @@
+{
+ "scene": "dem-entry-base0",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E01\", \"severity\": \"high\", \"evidence\": \"The front door is visible and appears to be unlocked, with car keys potentially nearby, increasing the risk of the person with dementia leaving the house unsupervised.\"}]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "The front door is visible and appears to be unlocked, with car keys potentially nearby, increasing the risk of the person with dementia leaving the house unsupervised."
+  }
+ ]
+}

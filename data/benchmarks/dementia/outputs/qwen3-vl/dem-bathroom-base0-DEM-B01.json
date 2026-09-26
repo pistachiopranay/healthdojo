@@ -1,0 +1,28 @@
+{
+ "scene": "dem-bathroom-base0-DEM-B01",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-B01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Multiple orange medication bottles and tubes are left out on the bathroom sink counter, within easy reach.\",\n      \"box\": [743, 491, 930, 707]\n    },\n    {\n      \"id\": \"DEM-B02\",\n      \"severity\": \"low\",\n      \"evidence\": \"The white toilet seat blends with the white toilet bowl and the light-colored tiled floor, reducing visual contrast and potentially making it harder to identify for someone with dementia.\",\n      \"box\": [515, 666, 719, 824]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-B01",
+   "severity": "medium",
+   "evidence": "Multiple orange medication bottles and tubes are left out on the bathroom sink counter, within easy reach.",
+   "box": [
+    743,
+    491,
+    930,
+    707
+   ]
+  },
+  {
+   "id": "DEM-B02",
+   "severity": "low",
+   "evidence": "The white toilet seat blends with the white toilet bowl and the light-colored tiled floor, reducing visual contrast and potentially making it harder to identify for someone with dementia.",
+   "box": [
+    515,
+    666,
+    719,
+    824
+   ]
+  }
+ ]
+}

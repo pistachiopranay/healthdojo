@@ -1,0 +1,39 @@
+{
+ "scene": "dem-kitchen-base0",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Stove with visible knobs and oven door; no indication of knob covers or safety locks, posing risk of accidental activation by someone with dementia.\",\n      \"box\": [143, 327, 257, 747]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cleaning chemicals (e.g., dish soap) visible on the sink counter, within easy reach and not stored in a locked cabinet.\",\n      \"box\": [319, 243, 340, 299]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"Towels hanging on the oven handle and various small appliances on the counter may create minor clutter, potentially obstructing movement or causing distraction.\",\n      \"box\": [143, 200, 260, 538]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "medium",
+   "evidence": "Stove with visible knobs and oven door; no indication of knob covers or safety locks, posing risk of accidental activation by someone with dementia.",
+   "box": [
+    143,
+    327,
+    257,
+    747
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning chemicals (e.g., dish soap) visible on the sink counter, within easy reach and not stored in a locked cabinet.",
+   "box": [
+    319,
+    243,
+    340,
+    299
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "Towels hanging on the oven handle and various small appliances on the counter may create minor clutter, potentially obstructing movement or causing distraction.",
+   "box": [
+    143,
+    200,
+    260,
+    538
+   ]
+  }
+ ]
+}

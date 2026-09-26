@@ -1,0 +1,17 @@
+{
+ "scene": "dem-entry-base0-DEM-E01",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E01\", \"severity\": \"medium\", \"evidence\": \"Car keys hanging by the front door\", \"box\": [299, 186, 327, 358]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "medium",
+   "evidence": "Car keys hanging by the front door",
+   "box": [
+    299,
+    186,
+    327,
+    358
+   ]
+  }
+ ]
+}

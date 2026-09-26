@@ -1,0 +1,50 @@
+{
+ "scene": "dem-kitchen-base0-DEM-K02",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"black oven with knobs\", \"box\": [0.165, 0.328,0.257,0.762]},\n    {\"id\": \"DEM-K02\", \"severity\": \"high\", \"evidence\": \"knife block on the counter\", \"box\": [0.170,0.243,0.740,0.585]},\n    {\"id\": \"DEM-K04\", \"severity\": \"high\", \"evidence\": \"bottles on a shelf in the adjacent room\", \"box\": [0.750,0.000,0.860,0.450]},\n    {\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"carrots on the counter\", \"box\": [0.170,0.243,0.740,0.585]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "black oven with knobs",
+   "box": [
+    0.165,
+    0.328,
+    0.257,
+    0.762
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "knife block on the counter",
+   "box": [
+    0.17,
+    0.243,
+    0.74,
+    0.585
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "bottles on a shelf in the adjacent room",
+   "box": [
+    0.75,
+    0.0,
+    0.86,
+    0.45
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "carrots on the counter",
+   "box": [
+    0.17,
+    0.243,
+    0.74,
+    0.585
+   ]
+  }
+ ]
+}

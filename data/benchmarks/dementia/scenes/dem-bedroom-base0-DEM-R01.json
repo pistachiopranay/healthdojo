@@ -1,0 +1,34 @@
+{
+ "id": "dem-bedroom-base0-DEM-R01",
+ "room": "bedroom",
+ "kind": "edit",
+ "base": "dem-bedroom-base0",
+ "prompt": "a large rectangular wall mirror hanging on the wall, clearly reflecting the bedroom and the bed, photorealistic, same lighting and camera as the rest of the photo",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "type": "perception",
+   "box": [
+    176,
+    224,
+    324,
+    581
+   ]
+  }
+ ],
+ "mask": [
+  170,
+  230,
+  330,
+  700
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/benchmarks/dementia/renders/dem-bedroom-base0-DEM-R01.jpg",
+ "image": "renders/dem-bedroom-base0-DEM-R01.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "Two large wood-framed mirrors now stand in the corner by the window, clearly reflecting the bed. They replace the corner curio cabinet. The throw blanket at the foot of the bed is mostly gone, a minor change.",
+  "changed_frac": 0.0292
+ },
+ "verified": true
+}

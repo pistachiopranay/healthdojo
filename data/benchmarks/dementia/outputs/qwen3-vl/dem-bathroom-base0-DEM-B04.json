@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bathroom-base0-DEM-B04",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-B04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A black hair dryer is plugged in and sitting on the bathroom counter next to the sink, posing a risk of electrocution if used near water or if the cord is pulled into the sink or tub.\",\n      \"box\": [735, 463, 928, 761]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-B04",
+   "severity": "medium",
+   "evidence": "A black hair dryer is plugged in and sitting on the bathroom counter next to the sink, posing a risk of electrocution if used near water or if the cord is pulled into the sink or tub.",
+   "box": [
+    735,
+    463,
+    928,
+    761
+   ]
+  }
+ ]
+}

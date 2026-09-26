@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R03",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R03\", \"severity\": \"high\", \"evidence\": \"handgun on the nightstand\", \"box\": [639, 395, 719, 462]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R03",
+   "severity": "high",
+   "evidence": "handgun on the nightstand",
+   "box": [
+    639,
+    395,
+    719,
+    462
+   ]
+  }
+ ]
+}

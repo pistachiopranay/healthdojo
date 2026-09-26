@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R01",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R01\", \"severity\": \"medium\", \"evidence\": \"Large mirrored dresser/wardrobe with tall mirrors facing the bed; the bed and room are clearly reflected in it, which can be misperceived by a person with dementia as another person/room.\", \"box\": [181, 193, 341, 426]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "Large mirrored dresser/wardrobe with tall mirrors facing the bed; the bed and room are clearly reflected in it, which can be misperceived by a person with dementia as another person/room.",
+   "box": [
+    181,
+    193,
+    341,
+    426
+   ]
+  }
+ ]
+}

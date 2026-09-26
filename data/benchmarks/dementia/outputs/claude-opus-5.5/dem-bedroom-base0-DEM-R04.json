@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R04",
+ "raw": "```json\n{\"hazards\": [{\"id\": \"DEM-R04\", \"severity\": \"high\", \"evidence\": \"A space heater is running with an orange glowing element. It sits directly beside the nightstand, a short distance from the bed and its draping quilt and bed skirt. A tangled mass of cords lies on the carpet around its base, which adds fire and trip risk.\", \"box\": [590, 435, 835, 900]}]}\n```",
+ "hazards": [
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "A space heater is running with an orange glowing element. It sits directly beside the nightstand, a short distance from the bed and its draping quilt and bed skirt. A tangled mass of cords lies on the carpet around its base, which adds fire and trip risk.",
+   "box": [
+    590,
+    435,
+    835,
+    900
+   ]
+  }
+ ]
+}

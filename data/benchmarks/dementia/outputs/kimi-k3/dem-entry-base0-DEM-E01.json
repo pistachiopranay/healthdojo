@@ -1,0 +1,17 @@
+{
+ "scene": "dem-entry-base0-DEM-E01",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E01\", \"severity\": \"high\", \"evidence\": \"A set of keys is hanging on the wall by the entry/front door area, next to the wall-mounted telephone and door lever, within easy reach.\", \"box\": [296, 142, 333, 357]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "A set of keys is hanging on the wall by the entry/front door area, next to the wall-mounted telephone and door lever, within easy reach.",
+   "box": [
+    296,
+    142,
+    333,
+    357
+   ]
+  }
+ ]
+}

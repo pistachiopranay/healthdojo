@@ -1,0 +1,39 @@
+{
+ "scene": "dem-bathroom-base0-DEM-B01",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K04\", \"severity\": \"high\", \"evidence\": \"Multiple medication/antiseptic bottles (orange prescription-style vials, a large orange povidone-iodine/Betadine-type bottle, antifungal bottle) left out on the vanity within easy reach.\", \"box\": [1115, 492, 1435, 725]}, {\"id\": \"DEM-B01\", \"severity\": \"high\", \"evidence\": \"Razor/shaving items (shaving gel can and an orange-handled razor lying by the basin) together with medication bottles out on the sink.\", \"box\": [1130, 490, 1455, 720]}, {\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"White raised toilet seat and white safety frame on a white toilet against a light tile floor\u2014low contrast that is easy to misperceive.\", \"box\": [792, 560, 1102, 998]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Multiple medication/antiseptic bottles (orange prescription-style vials, a large orange povidone-iodine/Betadine-type bottle, antifungal bottle) left out on the vanity within easy reach.",
+   "box": [
+    1115,
+    492,
+    1435,
+    725
+   ]
+  },
+  {
+   "id": "DEM-B01",
+   "severity": "high",
+   "evidence": "Razor/shaving items (shaving gel can and an orange-handled razor lying by the basin) together with medication bottles out on the sink.",
+   "box": [
+    1130,
+    490,
+    1455,
+    720
+   ]
+  },
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White raised toilet seat and white safety frame on a white toilet against a light tile floor\u2014low contrast that is easy to misperceive.",
+   "box": [
+    792,
+    560,
+    1102,
+    998
+   ]
+  }
+ ]
+}

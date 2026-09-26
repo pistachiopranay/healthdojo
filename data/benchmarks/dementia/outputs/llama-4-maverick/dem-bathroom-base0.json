@@ -1,0 +1,39 @@
+{
+ "scene": "dem-bathroom-base0",
+ "raw": "{\"hazards\": [\n  {\"id\": \"DEM-B01\", \"severity\": \"medium\", \"evidence\": \"no razor is visible, but the sink area is not fully visible\", \"box\": [830, 716, 1000, 1000]},\n  {\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"white toilet on a light floor\", \"box\": [510, 670, 700, 1000]},\n  {\"id\": \"DEM-B04\", \"severity\": \"high\", \"evidence\": \"no hair dryer is visible, but the sink area is not fully visible\", \"box\": [830, 716, 1000, 1000]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-B01",
+   "severity": "medium",
+   "evidence": "no razor is visible, but the sink area is not fully visible",
+   "box": [
+    830,
+    716,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "white toilet on a light floor",
+   "box": [
+    510,
+    670,
+    700,
+    1000
+   ]
+  },
+  {
+   "id": "DEM-B04",
+   "severity": "high",
+   "evidence": "no hair dryer is visible, but the sink area is not fully visible",
+   "box": [
+    830,
+    716,
+    1000,
+    1000
+   ]
+  }
+ ]
+}

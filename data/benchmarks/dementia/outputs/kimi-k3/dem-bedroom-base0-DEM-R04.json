@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R04",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-R04\",\"severity\":\"high\",\"evidence\":\"Glowing portable space heater on carpet beside the bed/nightstand, very close to bedding and with a visible power cord.\",\"box\":[612,432,748,787]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "Glowing portable space heater on carpet beside the bed/nightstand, very close to bedding and with a visible power cord.",
+   "box": [
+    612,
+    432,
+    748,
+    787
+   ]
+  }
+ ]
+}

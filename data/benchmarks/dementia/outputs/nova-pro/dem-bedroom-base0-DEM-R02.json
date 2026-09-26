@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R02",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R02\", \"severity\": \"medium\", \"evidence\": \"rug with high contrast pattern\", \"box\": [199, 719, 985, 999]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "rug with high contrast pattern",
+   "box": [
+    199,
+    719,
+    985,
+    999
+   ]
+  }
+ ]
+}

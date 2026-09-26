@@ -1,0 +1,28 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R01",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Large wooden-framed mirror directly facing the bed, which may cause confusion or distress for someone with dementia who may not recognize their reflection.\",\n      \"box\": [180, 200, 339, 418]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"Small decorative items and a basket on the chest at the foot of the bed may create minor tripping hazards or encourage clutter accumulation in the walkway.\",\n      \"box\": [6, 390, 178, 563]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "Large wooden-framed mirror directly facing the bed, which may cause confusion or distress for someone with dementia who may not recognize their reflection.",
+   "box": [
+    180,
+    200,
+    339,
+    418
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "Small decorative items and a basket on the chest at the foot of the bed may create minor tripping hazards or encourage clutter accumulation in the walkway.",
+   "box": [
+    6,
+    390,
+    178,
+    563
+   ]
+  }
+ ]
+}

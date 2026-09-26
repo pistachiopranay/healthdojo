@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bedroom-base0",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K04\", \"severity\": \"medium\", \"evidence\": \"Small white bottle (appears to be medication) left out on the nightstand next to the lamp, within easy reach of the bed.\", \"box\": [657, 404, 684, 447]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Small white bottle (appears to be medication) left out on the nightstand next to the lamp, within easy reach of the bed.",
+   "box": [
+    657,
+    404,
+    684,
+    447
+   ]
+  }
+ ]
+}

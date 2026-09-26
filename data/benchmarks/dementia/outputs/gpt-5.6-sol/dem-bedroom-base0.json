@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bedroom-base0",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-B03\",\"severity\":\"medium\",\"evidence\":\"A dark bath mat is visible on the light-colored bathroom floor through the doorway.\",\"box\":[826,429,949,514]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B03",
+   "severity": "medium",
+   "evidence": "A dark bath mat is visible on the light-colored bathroom floor through the doorway.",
+   "box": [
+    826,
+    429,
+    949,
+    514
+   ]
+  }
+ ]
+}

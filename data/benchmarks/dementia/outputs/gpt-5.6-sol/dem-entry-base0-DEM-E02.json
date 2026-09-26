@@ -1,0 +1,28 @@
+{
+ "scene": "dem-entry-base0-DEM-E02",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-E01\",\"severity\":\"high\",\"evidence\":\"Keys are hanging at the lock/handle area beside the front door.\",\"box\":[342,226,369,294]},{\"id\":\"DEM-E02\",\"severity\":\"high\",\"evidence\":\"The front entry door is standing open, creating a wandering/exit risk.\",\"box\":[323,0,453,420]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "Keys are hanging at the lock/handle area beside the front door.",
+   "box": [
+    342,
+    226,
+    369,
+    294
+   ]
+  },
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "The front entry door is standing open, creating a wandering/exit risk.",
+   "box": [
+    323,
+    0,
+    453,
+    420
+   ]
+  }
+ ]
+}

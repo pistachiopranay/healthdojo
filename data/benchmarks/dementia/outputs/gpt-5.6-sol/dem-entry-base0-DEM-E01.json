@@ -1,0 +1,17 @@
+{
+ "scene": "dem-entry-base0-DEM-E01",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-E01\",\"severity\":\"high\",\"evidence\":\"Car keys and electronic key fobs are hanging openly on the wall immediately beside the front door.\",\"box\":[298,181,329,330]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "Car keys and electronic key fobs are hanging openly on the wall immediately beside the front door.",
+   "box": [
+    298,
+    181,
+    329,
+    330
+   ]
+  }
+ ]
+}

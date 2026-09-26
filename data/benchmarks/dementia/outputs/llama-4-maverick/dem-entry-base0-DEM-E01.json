@@ -1,0 +1,33 @@
+{
+ "scene": "dem-entry-base0-DEM-E01",
+ "raw": "{\"hazards\": [\n  {\"id\": \"DEM-E01\", \"severity\": \"high\", \"evidence\": \"Keys hanging by the front door\", \"box\": [295, 172, 330, 358]},\n  {\"id\": \"DEM-E02\", \"severity\": \"high\", \"evidence\": \"Front door slightly ajar\", \"box\": [295, 0, 456, 0.4]},\n  {\"id\": \"DEM-R02\", \"severity\": \"medium\", \"evidence\": \"No rug is visible, but the hardwood floor may be slippery\"}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "Keys hanging by the front door",
+   "box": [
+    295,
+    172,
+    330,
+    358
+   ]
+  },
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "Front door slightly ajar",
+   "box": [
+    295,
+    0,
+    456,
+    0.4
+   ]
+  },
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "No rug is visible, but the hardwood floor may be slippery"
+  }
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "id": "dem-bedroom-base0-DEM-R02",
+ "room": "bedroom",
+ "kind": "edit",
+ "base": "dem-bedroom-base0",
+ "prompt": "a large area rug with a bold black-and-white zigzag geometric pattern on the carpet, photorealistic, same lighting and camera as the rest of the photo",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "type": "perception",
+   "box": [
+    624,
+    738,
+    953,
+    978
+   ]
+  }
+ ],
+ "mask": [
+  200,
+  720,
+  980,
+  1000
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/benchmarks/dementia/renders/dem-bedroom-base0-DEM-R02.jpg",
+ "image": "renders/dem-bedroom-base0-DEM-R02.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "A large black-and-white geometric rug now lies on the carpet at the foot and side of the bed and is clearly visible. The rest of the room is essentially unchanged.",
+  "changed_frac": 0.0294
+ },
+ "verified": true
+}

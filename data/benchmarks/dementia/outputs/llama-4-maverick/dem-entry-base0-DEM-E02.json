@@ -1,0 +1,28 @@
+{
+ "scene": "dem-entry-base0-DEM-E02",
+ "raw": "{\"hazards\": [\n  {\"id\": \"DEM-E01\", \"severity\": \"high\", \"evidence\": \"Car keys are not visible, but the front door is visible and could be unlocked\", \"box\": [0.315, 0.000, 0.452, 0.413]},\n  {\"id\": \"DEM-E02\", \"severity\": \"high\", \"evidence\": \"The front door is closed, but not locked, and could be easily opened\", \"box\": [0.315, 0.000, 0.452, 0.413]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "Car keys are not visible, but the front door is visible and could be unlocked",
+   "box": [
+    0.315,
+    0.0,
+    0.452,
+    0.413
+   ]
+  },
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "The front door is closed, but not locked, and could be easily opened",
+   "box": [
+    0.315,
+    0.0,
+    0.452,
+    0.413
+   ]
+  }
+ ]
+}

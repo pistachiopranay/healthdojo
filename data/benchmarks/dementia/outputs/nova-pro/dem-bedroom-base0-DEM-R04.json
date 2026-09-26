@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R04",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R04\", \"severity\": \"high\", \"evidence\": \"space heater next to bedding\", \"box\": [616, 432, 748, 775]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "space heater next to bedding",
+   "box": [
+    616,
+    432,
+    748,
+    775
+   ]
+  }
+ ]
+}

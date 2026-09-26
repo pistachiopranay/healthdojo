@@ -1,0 +1,39 @@
+{
+ "scene": "dem-bathroom-base0-DEM-B01",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K04\", \"severity\": \"medium\", \"evidence\": \"Multiple medication bottles (orange prescription bottles) left out openly on the bathroom counter\", \"box\": [1130, 500, 1450, 700]}, {\"id\": \"DEM-B01\", \"severity\": \"medium\", \"evidence\": \"Medication bottles are placed directly on the sink countertop within easy reach\", \"box\": [1150, 540, 1460, 690]}, {\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"White/light gray raised toilet seat riser on a white toilet creates very low contrast, making the seat edge hard to distinguish, increasing fall risk\", \"box\": [795, 685, 1090, 1024]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Multiple medication bottles (orange prescription bottles) left out openly on the bathroom counter",
+   "box": [
+    1130,
+    500,
+    1450,
+    700
+   ]
+  },
+  {
+   "id": "DEM-B01",
+   "severity": "medium",
+   "evidence": "Medication bottles are placed directly on the sink countertop within easy reach",
+   "box": [
+    1150,
+    540,
+    1460,
+    690
+   ]
+  },
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White/light gray raised toilet seat riser on a white toilet creates very low contrast, making the seat edge hard to distinguish, increasing fall risk",
+   "box": [
+    795,
+    685,
+    1090,
+    1024
+   ]
+  }
+ ]
+}

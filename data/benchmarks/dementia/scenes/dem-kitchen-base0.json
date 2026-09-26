@@ -1,0 +1,9 @@
+{
+ "id": "dem-kitchen-base0",
+ "room": "kitchen",
+ "kind": "base",
+ "hazards": [],
+ "prompt": "reused: renders/kitchen-base0.jpg",
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/benchmarks/dementia/renders/dem-kitchen-base0.jpg",
+ "image": "renders/dem-kitchen-base0.jpg"
+}

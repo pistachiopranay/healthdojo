@@ -1,0 +1,28 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R01",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-R01\",\"severity\":\"medium\",\"evidence\":\"A large full-length mirror directly faces the bed and could be misperceived as another person or space.\",\"box\":[183,225,329,429]},{\"id\":\"DEM-B03\",\"severity\":\"medium\",\"evidence\":\"A dark bath mat is visible on the light-colored bathroom floor.\",\"box\":[833,426,941,511]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "A large full-length mirror directly faces the bed and could be misperceived as another person or space.",
+   "box": [
+    183,
+    225,
+    329,
+    429
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "medium",
+   "evidence": "A dark bath mat is visible on the light-colored bathroom floor.",
+   "box": [
+    833,
+    426,
+    941,
+    511
+   ]
+  }
+ ]
+}

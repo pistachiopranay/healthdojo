@@ -1,0 +1,39 @@
+{
+ "scene": "dem-kitchen-base0-DEM-K04",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K04\", \"severity\": \"high\", \"evidence\": \"Multiple orange prescription medication bottles left open on the kitchen counter near the sink, accessible\", \"box\": [300, 200, 460, 320]}, {\"id\": \"DEM-K02\", \"severity\": \"medium\", \"evidence\": \"Knife block/utensils with sharp items visible on counter near coffee maker\", \"box\": [265, 200, 340, 260]}, {\"id\": \"DEM-K03\", \"severity\": \"medium\", \"evidence\": \"Cleaning/soap bottle (appears to be dish soap or cleaner) left out on counter near sink, unlocked and accessible\", \"box\": [485, 250, 520, 305]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Multiple orange prescription medication bottles left open on the kitchen counter near the sink, accessible",
+   "box": [
+    300,
+    200,
+    460,
+    320
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "medium",
+   "evidence": "Knife block/utensils with sharp items visible on counter near coffee maker",
+   "box": [
+    265,
+    200,
+    340,
+    260
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning/soap bottle (appears to be dish soap or cleaner) left out on counter near sink, unlocked and accessible",
+   "box": [
+    485,
+    250,
+    520,
+    305
+   ]
+  }
+ ]
+}

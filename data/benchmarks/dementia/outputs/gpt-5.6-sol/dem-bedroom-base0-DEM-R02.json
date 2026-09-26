@@ -1,0 +1,17 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R02",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-R02\",\"severity\":\"medium\",\"evidence\":\"Large bold black-and-white high-contrast patterned rug beside the bed could be misperceived as holes or obstacles.\",\"box\":[200,720,986,997]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "Large bold black-and-white high-contrast patterned rug beside the bed could be misperceived as holes or obstacles.",
+   "box": [
+    200,
+    720,
+    986,
+    997
+   ]
+  }
+ ]
+}

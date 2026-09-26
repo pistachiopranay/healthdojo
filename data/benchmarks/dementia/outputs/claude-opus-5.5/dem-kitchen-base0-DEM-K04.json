@@ -1,0 +1,17 @@
+{
+ "scene": "dem-kitchen-base0-DEM-K04",
+ "raw": "```json\n{\"hazards\": [{\"id\": \"DEM-K04\", \"severity\": \"high\", \"evidence\": \"Several orange prescription medication bottles and a tall supplement bottle sit uncapped and unsecured on the counter next to the sink, where a person with dementia could easily reach them and take too much.\", \"box\": [198, 193, 302, 322]}]}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Several orange prescription medication bottles and a tall supplement bottle sit uncapped and unsecured on the counter next to the sink, where a person with dementia could easily reach them and take too much.",
+   "box": [
+    198,
+    193,
+    302,
+    322
+   ]
+  }
+ ]
+}

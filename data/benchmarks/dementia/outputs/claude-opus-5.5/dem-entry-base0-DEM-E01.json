@@ -1,0 +1,17 @@
+{
+ "scene": "dem-entry-base0-DEM-E01",
+ "raw": "```json\n{\"hazards\": [{\"id\": \"DEM-E01\", \"severity\": \"medium\", \"evidence\": \"A key fob and a set of keys hang openly on the door handle near the entryway leading to the front door. A person with dementia could easily take them and attempt to drive or leave the home.\", \"box\": [295, 140, 340, 360]}]}\n```",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "medium",
+   "evidence": "A key fob and a set of keys hang openly on the door handle near the entryway leading to the front door. A person with dementia could easily take them and attempt to drive or leave the home.",
+   "box": [
+    295,
+    140,
+    340,
+    360
+   ]
+  }
+ ]
+}

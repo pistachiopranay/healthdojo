@@ -1,0 +1,28 @@
+{
+ "scene": "dem-bedroom-base0-DEM-R03",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-R03\", \"severity\": \"high\", \"evidence\": \"handgun on the nightstand\", \"box\": [0.608, 0.384,0.718,0.478]},\n    {\"id\": \"DEM-R01\", \"severity\": \"medium\", \"evidence\": \"large mirror above the bed\", \"box\": [0.344,0.044,0.664,0.436]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-R03",
+   "severity": "high",
+   "evidence": "handgun on the nightstand",
+   "box": [
+    0.608,
+    0.384,
+    0.718,
+    0.478
+   ]
+  },
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "large mirror above the bed",
+   "box": [
+    0.344,
+    0.044,
+    0.664,
+    0.436
+   ]
+  }
+ ]
+}

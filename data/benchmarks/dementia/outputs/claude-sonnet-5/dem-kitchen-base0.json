@@ -1,0 +1,17 @@
+{
+ "scene": "dem-kitchen-base0",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K03\", \"severity\": \"medium\", \"evidence\": \"Bottle of what appears to be dish soap/cleaning liquid sitting out unlocked on countertop near sink\", \"box\": [487, 251, 517, 305]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Bottle of what appears to be dish soap/cleaning liquid sitting out unlocked on countertop near sink",
+   "box": [
+    487,
+    251,
+    517,
+    305
+   ]
+  }
+ ]
+}

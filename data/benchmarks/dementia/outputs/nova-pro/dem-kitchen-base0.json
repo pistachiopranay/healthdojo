@@ -1,0 +1,17 @@
+{
+ "scene": "dem-kitchen-base0",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K03\", \"severity\": \"high\", \"evidence\": \"Cleaning chemicals out and unlocked\", \"box\": [316, 245, 336, 292]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "Cleaning chemicals out and unlocked",
+   "box": [
+    316,
+    245,
+    336,
+    292
+   ]
+  }
+ ]
+}

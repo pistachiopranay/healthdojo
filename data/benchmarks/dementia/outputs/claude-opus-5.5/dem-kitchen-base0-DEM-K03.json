@@ -1,0 +1,17 @@
+{
+ "scene": "dem-kitchen-base0-DEM-K03",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K03\", \"severity\": \"high\", \"evidence\": \"Multiple spray cleaning bottles (colored liquids, including one blue) and a large jug of liquid laundry detergent sit openly on the counter beside the dishwasher, unlocked and within easy reach. A person with dementia could mistake them for drinks and swallow them.\", \"box\": [598, 212, 692, 315]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "Multiple spray cleaning bottles (colored liquids, including one blue) and a large jug of liquid laundry detergent sit openly on the counter beside the dishwasher, unlocked and within easy reach. A person with dementia could mistake them for drinks and swallow them.",
+   "box": [
+    598,
+    212,
+    692,
+    315
+   ]
+  }
+ ]
+}

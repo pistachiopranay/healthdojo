@@ -1,0 +1,34 @@
+{
+ "id": "dem-kitchen-base0-DEM-K03",
+ "room": "kitchen",
+ "kind": "edit",
+ "base": "dem-kitchen-base0",
+ "prompt": "a white bleach jug, a blue spray cleaner bottle and a clear tub of colorful laundry detergent pods on the countertop, photorealistic, same lighting and camera as the rest of the photo",
+ "hazards": [
+  {
+   "id": "DEM-K03",
+   "type": "object",
+   "box": [
+    602,
+    237,
+    716,
+    320
+   ]
+  }
+ ],
+ "mask": [
+  590,
+  170,
+  730,
+  330
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/benchmarks/dementia/renders/dem-kitchen-base0-DEM-K03.jpg",
+ "image": "renders/dem-kitchen-base0-DEM-K03.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "Several spray cleaner bottles and a large laundry detergent jug sit openly on the counter right of the sink, a clear cleaning-chemical hazard. No distinct bleach bottle or pod tub is seen. Small items previously on that counter were replaced, and the counter and cabinet edge near the dishwasher is slightly altered, but these changes are minor.",
+  "changed_frac": 0.0092
+ },
+ "verified": true
+}

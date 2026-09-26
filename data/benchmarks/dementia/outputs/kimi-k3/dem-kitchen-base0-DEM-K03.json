@@ -1,0 +1,17 @@
+{
+ "scene": "dem-kitchen-base0-DEM-K03",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K03\", \"severity\": \"high\", \"evidence\": \"Multiple cleaning chemicals are out on the counter within easy reach and unlocked: trigger spray bottles and a large blue bottle of Radiant detergent sit beside the sink/dishwasher, and could be misperceived as a beverage.\", \"box\": [596, 202, 694, 319]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "Multiple cleaning chemicals are out on the counter within easy reach and unlocked: trigger spray bottles and a large blue bottle of Radiant detergent sit beside the sink/dishwasher, and could be misperceived as a beverage.",
+   "box": [
+    596,
+    202,
+    694,
+    319
+   ]
+  }
+ ]
+}

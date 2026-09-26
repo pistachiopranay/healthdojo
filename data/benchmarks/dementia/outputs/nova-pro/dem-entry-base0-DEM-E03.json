@@ -1,0 +1,17 @@
+{
+ "scene": "dem-entry-base0-DEM-E03",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"Newspapers and other papers are piled on the floor, creating a tripping hazard.\", \"box\": [372, 642, 619, 818]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Newspapers and other papers are piled on the floor, creating a tripping hazard.",
+   "box": [
+    372,
+    642,
+    619,
+    818
+   ]
+  }
+ ]
+}

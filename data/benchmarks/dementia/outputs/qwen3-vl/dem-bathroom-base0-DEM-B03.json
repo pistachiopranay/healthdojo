@@ -1,0 +1,28 @@
+{
+ "scene": "dem-bathroom-base0-DEM-B03",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-B02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The toilet seat and bowl are both white, blending with the white toilet tank and light-colored floor, reducing visual contrast and potentially causing misperception for someone with dementia.\",\n      \"box\": [516, 666, 717, 904]\n    },\n    {\n      \"id\": \"DEM-B03\",\n      \"severity\": \"low\",\n      \"evidence\": \"A dark, textured bath mat is placed on a light-colored tiled floor, which may be misperceived as a hole or step, posing a tripping hazard.\",\n      \"box\": [343, 856, 687, 997]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "The toilet seat and bowl are both white, blending with the white toilet tank and light-colored floor, reducing visual contrast and potentially causing misperception for someone with dementia.",
+   "box": [
+    516,
+    666,
+    717,
+    904
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "low",
+   "evidence": "A dark, textured bath mat is placed on a light-colored tiled floor, which may be misperceived as a hole or step, posing a tripping hazard.",
+   "box": [
+    343,
+    856,
+    687,
+    997
+   ]
+  }
+ ]
+}

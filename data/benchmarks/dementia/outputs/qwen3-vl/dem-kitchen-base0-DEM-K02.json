@@ -1,0 +1,39 @@
+{
+ "scene": "dem-kitchen-base0-DEM-K02",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K02\",\n      \"severity\": \"high\",\n      \"evidence\": \"A wooden knife block with multiple large kitchen knives is sitting openly on the countertop near the sink, easily accessible.\",\n      \"box\": [468, 176, 528, 316]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A bottle of dish soap is visible on the counter next to the sink, and other cleaning supplies may be present in the open cabinet to the right, though not clearly identifiable.\",\n      \"box\": [320, 244, 340, 300]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"Towels are hanging from the oven handle, and there are items on the counter (knives, dish soap, carrots) that could create minor clutter in the walkway.\",\n      \"box\": [197, 362, 262, 538]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "A wooden knife block with multiple large kitchen knives is sitting openly on the countertop near the sink, easily accessible.",
+   "box": [
+    468,
+    176,
+    528,
+    316
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "A bottle of dish soap is visible on the counter next to the sink, and other cleaning supplies may be present in the open cabinet to the right, though not clearly identifiable.",
+   "box": [
+    320,
+    244,
+    340,
+    300
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "Towels are hanging from the oven handle, and there are items on the counter (knives, dish soap, carrots) that could create minor clutter in the walkway.",
+   "box": [
+    197,
+    362,
+    262,
+    538
+   ]
+  }
+ ]
+}

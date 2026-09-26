@@ -1,0 +1,28 @@
+{
+ "scene": "dem-bathroom-base0-DEM-B01",
+ "raw": "```json\n{\"hazards\": [{\"id\": \"DEM-B01\", \"severity\": \"high\", \"evidence\": \"Several orange-and-white medication bottles, small tubes, and loose items sit open and unsecured on the sink counter and toilet tank. A person with dementia could easily reach them and take too much or swallow the wrong item. No razor is clearly visible, but the medications alone make this hazard apply.\", \"box\": [742, 493, 931, 703]}, {\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"The white raised toilet seat sits on a white toilet in front of a white tub, with a light beige tile floor. The low contrast makes the seat hard to see and judge, which raises the risk of falls and toileting accidents.\", \"box\": [518, 547, 716, 1000]}]}\n```",
+ "hazards": [
+  {
+   "id": "DEM-B01",
+   "severity": "high",
+   "evidence": "Several orange-and-white medication bottles, small tubes, and loose items sit open and unsecured on the sink counter and toilet tank. A person with dementia could easily reach them and take too much or swallow the wrong item. No razor is clearly visible, but the medications alone make this hazard apply.",
+   "box": [
+    742,
+    493,
+    931,
+    703
+   ]
+  },
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "The white raised toilet seat sits on a white toilet in front of a white tub, with a light beige tile floor. The low contrast makes the seat hard to see and judge, which raises the risk of falls and toileting accidents.",
+   "box": [
+    518,
+    547,
+    716,
+    1000
+   ]
+  }
+ ]
+}
