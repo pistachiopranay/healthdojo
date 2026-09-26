@@ -17,7 +17,7 @@ for m in models:
         r = c.converse(modelId=m, messages=[{"role":"user","content":[
             {"image":{"format":"png","source":{"bytes":png}}},
             {"text":"This is a schematic of a room floor. List any trip/fall hazards via the tool."}]}],
-            toolConfig={"tools":[tool], "toolChoice":({"any":{}} if os.environ.get("ANY") else {"tool":{"name":"report_hazards"}})},
+            toolConfig={"tools":[tool], "toolChoice":(({"auto":{}}) if os.environ.get("AUTO") else {"any":{}} if os.environ.get("ANY") else {"tool":{"name":"report_hazards"}})},
             inferenceConfig={"maxTokens":400})
         blocks = r["output"]["message"]["content"]
         tu = [b["toolUse"]["input"] for b in blocks if "toolUse" in b]

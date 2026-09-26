@@ -1,0 +1,113 @@
+<!doctype html><meta charset=utf-8><title>HomeDojo v0 spec</title><style>body{font:15px/1.55 -apple-system,system-ui;max-width:860px;margin:40px auto;padding:0 20px;color:#1a1a1a}h1{font-size:26px}h2{margin-top:28px;border-bottom:1px solid #eee;padding-bottom:4px}table{border-collapse:collapse}td,th{border:1px solid #ddd;padding:6px 10px}code{background:#f4f4f4;padding:1px 4px;border-radius:3px}</style><h1 id="homedojo-v0-4-hour-hackathon-spec">HomeDojo v0: 4-hour hackathon
+spec</h1>
+<p><strong>One line:</strong> HomeBench is the first clinically grounded
+benchmark for whether AI models can see what makes a home unsafe for a
+patient going home after surgery.</p>
+<h2 id="demo-story-3-min">Demo story (3 min)</h2>
+<ol type="1">
+<li><strong>Problem:</strong> about 1 in 3 joint-replacement patients
+fall within a year, most of them at home. Home-health AI is shipping
+vision models into homes, and nobody can test them because real ground
+truth doesn't exist.</li>
+<li><strong>Dojo:</strong> we generate homes with <em>known</em>
+hazards. The label comes first, then we render the scene, so every image
+has exact ground truth.</li>
+<li><strong>Leaderboard:</strong> Claude, Nova, Llama (Bedrock) and GPT,
+scored on 40 scenes.</li>
+<li><strong>Money slide:</strong> the failure finding, e.g. every model
+misses <em>absent</em> hazards (no grab bar) and <em>measurement</em>
+hazards (walker won't fit through the doorway).</li>
+<li><strong>Dojo loop:</strong> the failures get exported as a
+hard-example training pack. "Bring your model" means a submission form
+for a model URL.</li>
+<li><strong>Origin and ask:</strong> "We built this because HomeReady
+needed it."</li>
+</ol>
+<h2 id="scope-in">Scope (IN)</h2>
+<ul>
+<li><strong>Scene generation.</strong> 40 scenes: 6 rooms × hazard
+mixes, plus 6 clean negatives. Method: generate a clean base room image,
+then <em>edit</em> it to insert 1 to 3 hazards from the taxonomy.
+Absent-type hazards (no grab bar) come from generation prompts instead.
+Each scene is <code>scene.json</code> = {room, hazards:[{id, severity}],
+prompt, image}.</li>
+<li><strong>Label verification.</strong> One VLM pass checks that each
+seeded hazard is visible. Scenes that fail get dropped or fixed. We
+report how many were dropped: that's an honest number to show.</li>
+<li><strong>Runner.</strong> The same prompt goes to every model: the
+image plus the list of 35 taxonomy ids and names, and the model returns
+JSON <code>[{id, severity, evidence}]</code>. Models:
+<ul>
+<li>Bedrock Converse: Claude, Nova Pro, Llama vision</li>
+<li>OpenAI: GPT</li>
+</ul></li>
+<li><strong>Grader.</strong> Match on id → TP/FP/FN. Metrics: recall,
+precision, F1 overall, by room, and by hazard <em>type</em> (visible
+object / absent feature / measurement). Severity-weighted recall uses
+post-op escalation. Jev is optional, used only to map free-text answers
+from models that don't return clean ids.</li>
+<li><strong>UI.</strong> A single static page: leaderboard, a heatmap of
+hazard type × model, and a scene browser (image, ground truth, each
+model's answer with hits and misses marked).</li>
+<li><strong>Hosting.</strong> S3 static site (AWS points).</li>
+</ul>
+<h2 id="scope-out-today">Scope (OUT today)</h2>
+<p>Marble 3D worlds and video walkthroughs (roadmap slide only), real
+training, auth, a real submission API.</p>
+<h2 id="stack">Stack</h2>
+<ul>
+<li>Python 3 scripts in <code>src/</code>: <code>gen_scenes.py</code>,
+<code>verify.py</code>, <code>run_models.py</code>,
+<code>grade.py</code>, <code>build_site.py</code></li>
+<li>Images: treg image models (GPT Image / Gemini image / Seedream,
+editing), or Bedrock Nova Canvas as the fallback</li>
+<li>Eval: boto3 <code>bedrock-runtime</code> Converse, plus the OpenAI
+Responses API with json_schema</li>
+<li>UI: one self-contained HTML file, rendered from
+<code>results.json</code> with vanilla JS. No build step.</li>
+</ul>
+<h2 id="timeline-t0--1815-utc-demo-about-2210">Timeline (T0 = 18:15 UTC;
+demo about 22:10)</h2>
+<table>
+<thead>
+<tr>
+<th>Slot</th>
+<th>Work</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0:00–0:20</td>
+<td>Lock spec, keys in, smoke-test every model on 1 image</td>
+</tr>
+<tr>
+<td>0:20–1:20</td>
+<td>Generate + verify 40 scenes (runs in background)</td>
+</tr>
+<tr>
+<td>0:40–1:40</td>
+<td>Runner + grader over first scenes</td>
+</tr>
+<tr>
+<td>1:40–2:40</td>
+<td>Full run, leaderboard/scene browser UI, host on S3</td>
+</tr>
+<tr>
+<td>2:40–3:15</td>
+<td>Failure analysis → money slide, training-pack export</td>
+</tr>
+<tr>
+<td>3:15–4:00</td>
+<td>Pitch deck (6 slides) + rehearse; buffer</td>
+</tr>
+</tbody>
+</table>
+<h2 id="risks">Risks</h2>
+<ul>
+<li>The image editor won't insert the hazard reliably → verification
+pass. Fall back to generating the whole scene from the prompt.</li>
+<li>AWS event credentials expire → refresh them from Workshop
+Studio.</li>
+<li>Absent and measurement hazards are hard to <em>render</em>
+faithfully → keep a small, hand-checked set (8 to 10 scenes).</li>
+</ul>
