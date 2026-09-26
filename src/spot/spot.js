@@ -29,7 +29,7 @@ function preloadWorld() {
   wframe.onload = () => {
     try {
       const d = wframe.contentDocument, st = d.createElement("style");
-      st.textContent = "#cap{display:none!important}.embed.touch #joy{display:block!important}.embed.touch #updn{display:flex!important}.embed #load .bar{display:block!important}";
+      st.textContent = "#cap{display:none!important}.embed.touch #joy{display:block!important;bottom:150px!important}.embed.touch #updn{display:flex!important;bottom:150px!important}.embed #load .bar{display:block!important}";
       d.head.appendChild(st);
       const poll = setInterval(() => { const l = d.getElementById("load"); if (!l || l.classList.contains("gone")) { wready = true; clearInterval(poll); } }, 300);
     } catch { wready = true; }
@@ -46,7 +46,8 @@ function show() {
   const W = it.kind === "world";
   $("#q-room").textContent = W ? "3D · walk around" : it.room; $("#q-room").classList.toggle("w3d", W);
   $("#q-imgbox").classList.toggle("hide", W); $("#q-whint").classList.toggle("hide", !W);
-  if (W) { $("#q-world").classList.remove("pre", "hide"); } else { $("#q-img").src = it.image; }
+  document.body.classList.toggle("wfull", W); $("#wov").classList.toggle("hide", !W); $("#wbar").classList.toggle("hide", !W);
+  if (W) { $("#q-world").classList.remove("pre", "hide"); $("#w-text").value = P.get("text") || ""; } else { $("#q-img").src = it.image; }
   $("#q-text").value = P.get("text") || "";
   $("#q-next").textContent = idx === Q.items.length - 1 ? "Finish →" : "Next →";
   const secs = it.seconds || Q.seconds; cur = secs;
@@ -54,27 +55,35 @@ function show() {
   if (P.get("freeze")) { left = 12; render(); return; }
   let t0 = W && !wready ? null : Date.now();
   tick = setInterval(() => {
-    if (t0 === null) { if (wready) t0 = Date.now(); else { $("#q-t").textContent = "…"; return; } }
+    if (t0 === null) { if (wready) t0 = Date.now(); else { $("#q-t").textContent = $("#w-t").textContent = "…"; return; } }
     left = Math.max(0, secs - (Date.now() - t0) / 1000); render();
     if (left <= 0) { timeouts.push(it.id); next(false); }
   }, 200);
 }
 function render() {
-  $("#q-t").textContent = Math.ceil(left);
+  $("#q-t").textContent = Math.ceil(left); $("#w-t").textContent = Math.ceil(left); $(".wpill").classList.toggle("low", left <= 5);
   const low = left <= 5; $("#q-t").classList.toggle("low", low); $(".bar").classList.toggle("low", low);
   $("#q-bar").style.transform = `scaleX(${left / cur})`;
 }
 function next(safe) {
   clearInterval(tick);
-  const it = Q.items[idx], text = $("#q-text").value.trim();
+  const it = Q.items[idx], text = (it.kind === "world" ? $("#w-text") : $("#q-text")).value.trim();
   answers[it.id] = { text: safe ? "" : text, safe: !!safe };
-  $("#q-text").blur();
+  $("#q-text").blur(); $("#w-text").blur();
+  if (it.kind === "world") { document.body.classList.remove("wfull"); $("#wov").classList.add("hide"); $("#wbar").classList.add("hide"); }
   if (Q.items[idx].kind === "world") { $("#q-world").classList.add("hide"); if (wframe) wframe.src = "about:blank"; }
   if (++idx < Q.items.length) return show();
   submit();
 }
 $("#q-next").onclick = () => next(false);
 $("#q-safe").onclick = () => next(true);
+$("#w-safe").onclick = () => next(true);
+$("#wbar").onsubmit = e => { e.preventDefault(); next(false); };
+// keep the docked bar above the on-screen keyboard
+if (window.visualViewport) {
+  const vv = visualViewport, fit = () => { const kb = Math.max(0, innerHeight - vv.height - vv.offsetTop); $("#wbar").style.transform = kb ? `translateY(${-kb}px)` : ""; };
+  vv.addEventListener("resize", fit); vv.addEventListener("scroll", fit);
+}
 
 async function submit() {
   $("#s-quiz").classList.add("hide"); $("#s-wait").classList.remove("hide");

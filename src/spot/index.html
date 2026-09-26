@@ -54,5 +54,9 @@
     <p class="sub">Score = average of recall and (1 &minus; false-alarm rate), same as HomeBench. Humans answered free-text with no checklist; models were given the 35-item checklist. <a href="/results">Room results &rarr;</a></p>
   </section>
 </div>
+<!-- full-screen 3D overlay (shown only for the world item) -->
+<div id="wov" class="hide"><span class="wpill mono"><i></i><b id="w-t">30</b>s</span><span class="wq">Walk around. What's unsafe here?</span></div>
+<form id="wbar" class="hide" autocomplete="off"><input id="w-text" type="text" enterkeyhint="done" placeholder="Type what you found" autocapitalize="sentences">
+<div class="wbtns"><button class="btn ghost" id="w-safe" type="button">Looks safe</button><button class="btn" id="w-done" type="submit">Done</button></div></form>
 <script src="/static/spot.js"></script>
 </body></html>
