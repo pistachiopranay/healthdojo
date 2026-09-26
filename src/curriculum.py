@@ -762,6 +762,62 @@ def refine(b: Bench):
     b.save()
 
 
+OPUS = "claude-opus-5-5"
+
+
+def opus_verify(b: Bench):
+    """Re-run ONLY the verification step with Claude Opus 5.5 (Anthropic API). Same prompt/criteria as judge(); Opus is the authority."""
+    import anthropic
+    client = anthropic.Anthropic()
+
+    def ask(im, text):
+        raw = jpg(im, 1280, 88)
+        mt = "image/png" if raw[:4] == b"\x89PNG" else "image/jpeg"
+        for attempt in range(3):
+            try:
+                r = client.messages.create(model=OPUS, max_tokens=2000, messages=[{"role": "user", "content": [
+                    {"type": "image", "source": {"type": "base64", "media_type": mt, "data": base64.b64encode(raw).decode()}}, {"type": "text", "text": text}]}])
+                t = "".join(x.text for x in r.content if x.type == "text")
+                if t.strip():
+                    return t
+            except Exception as e:
+                if attempt == 2:
+                    raise
+                time.sleep(3 + attempt * 4)
+        return ""
+
+    def one(it):
+        if it.get("judge_model") == "claude-opus-5.5":
+            return
+        rows = [f'- {h["id"]}: HAZARD "{b.tax[h["id"]]["name"]}" box={h["box"]}' for h in it["hazards"] if h.get("box")]
+        rows += [f'- D{i}: SAFE "{d["label"]}" box={d["box"]}' for i, d in enumerate(it["distractors"])]
+        complete = all(t.get("skipped") is None for t in it["prompt_trace"])
+        it["verify_sonnet"] = {"verified": it.get("verified"), "verify": it.get("verify"), "verify_after_refine": it.get("verify_after_refine")}
+        if not complete:
+            it["verify_opus"] = {"verdict": False, "note": "edit plan incomplete (skipped steps); not judged"}
+        elif not rows:
+            it["verify_opus"] = {"verdict": True, "note": "no boxed items to check (whole-image labels only)"}
+        else:
+            try:
+                im = Image.open(b.out / it["image"]).convert("RGB")
+                v = first_json(ask(im, JUDGE_Q.format(patient=b.cfg["patient"], rows="\n".join(rows))))
+                ch = {c.get("key"): c for c in v.get("checks", []) if isinstance(c, dict)}
+                ok = bool(ch) and all(ch.get(h["id"], {}).get("visible") for h in it["hazards"] if h.get("box")) and \
+                     all(ch.get(f"D{i}", {}).get("visible") and ch.get(f"D{i}", {}).get("looks_safe") is not False for i in range(len(it["distractors"])))
+                fails = [f'{k}: {c.get("note", "")}' for k, c in ch.items() if not c.get("visible") or (k.startswith("D") and c.get("looks_safe") is False)]
+                it["verify_opus"] = {"verdict": ok, "note": "; ".join(fails)[:400] or "all labelled items visible; distractors look safe", "checks": v.get("checks", [])}
+            except Exception as e:
+                print("opus ERR", it["id"], str(e)[:120], flush=True)
+                it["verify_opus"] = {"verdict": False, "note": f"judge error: {str(e)[:120]}"}
+        it["verified"] = bool(it["verify_opus"]["verdict"])
+        it["judge_model"] = "claude-opus-5.5"
+        print("opus", it["id"], it["verify_sonnet"]["verified"], "->", it["verified"], flush=True)
+    with cf.ThreadPoolExecutor(8) as ex:
+        list(ex.map(one, b.m["items"]))
+    b.m["judge_model"] = "claude-opus-5.5"
+    b.save()
+
+
 # ---------------------------------------------------------------- difficulty curve
 CURVE_MODELS = {"nova-pro": "amazon.nova-pro-v1:0", "nova-2-lite": "us.amazon.nova-2-lite-v1:0", "qwen3-vl": "qwen.qwen3-vl-235b-a22b", "gpt-5.6-sol": "us.openai.gpt-5.6-sol",
                 "claude-sonnet-5": "us.anthropic.claude-sonnet-5", "llama-4-maverick": "us.meta.llama4-maverick-17b-instruct-v1:0",
@@ -831,7 +887,9 @@ def curve(b: Bench, models=None):
 if __name__ == "__main__":
     bench = sys.argv[1]
     b = Bench(bench)
-    if len(sys.argv) > 2 and sys.argv[2] == "refine":
+    if len(sys.argv) > 2 and sys.argv[2] == "opus":
+        opus_verify(b)
+    elif len(sys.argv) > 2 and sys.argv[2] == "refine":
         refine(b)
     elif len(sys.argv) > 2 and sys.argv[2] == "curve":
         curve(b, sys.argv[3:] or None)
