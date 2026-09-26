@@ -38,11 +38,11 @@
 <body>
 <main>
 <h1><span data-b="a">Health</span><em data-b="b">Dojo</em> demo script</h1>
-<p class="sub"><b>Guidelines in. Benchmarks out.</b> 3:00 spoken. Pear Healthcare AI Hackathon, AWS Builder Loft, 2026-09-26. Numbers come from <code>data/results.json</code>: 14 models, 43 verified scenes (31 seeded hazards, 12 clean rooms). Remaining <span class="tbd">[amber]</span> items are URLs only.</p>
+<p class="sub"><b>Guidelines in. Benchmarks out.</b> 3:00 spoken. Pear Healthcare AI Hackathon, AWS Builder Loft, 2026-09-26. Numbers come from <code>data/results.json</code>: 14 models, 43 verified scenes (31 seeded hazards, 12 clean rooms). No placeholders remain.</p>
 
 <div class="rules">
-  <div><b>Before you go on</b>Tab 1: brief page at <code>http://localhost:8791</code>. Tab 2: report card (<code>site/index.html</code> or <span class="tbd">[S3 URL]</span>). Tab 3: 3D world (optional). Zoom the browser to 125%.</div>
-  <div><b>Pace</b>About 150 words a minute. The script runs about 450 words (just under 3:00), so keep clicks fast and pre-load every tab.</div>
+  <div><b>Before you go on</b>Tab 1: brief page at <code>http://localhost:8791</code>. Tab 2: report card <code>http://healthdojo-demo-pear.s3-website-us-east-1.amazonaws.com</code>. Tab 3: walkthrough <code>http://healthdojo-demo-pear.s3-website-us-east-1.amazonaws.com/walk.html</code>. Zoom the browser to 125%.</div>
+  <div><b>Pace</b>About 150 words a minute. The script runs about 410 words (about 2:45 spoken, about 3:00 with clicks). Pre-load every tab and keep clicks fast.</div>
   <div><b>Fallback</b>If a live step stalls, say "here's the run from this morning" and jump to tab 2. Deck slides 4 (pipeline) and 6 (finding) cover every number.</div>
 </div>
 
@@ -51,68 +51,69 @@
   <li><b>Brief</b> (<code>:8791</code>): the startup pastes its use case, clinical guideline, and model endpoint</li>
   <li><b>Guideline → rubric</b> (live): hazard rows appear, each citing a guideline line. Click <i>Clinician approve</i></li>
   <li><b>Rubric → scenes</b> (live): clean room, hazard edited in, verify check, bounding box drawn from the pixel diff</li>
-  <li><b>Report card</b> (<code>site/index.html</code>): leaderboard → failure heatmap → scene explorer on <code>bathroom-base0</code> → training-pack export</li>
-  <li><b>3D world</b> (optional, only if there's time): labeled as roadmap</li>
+  <li><b>Report card</b> (S3 site): leaderboard → failure heatmap → scene explorer on <code>bathroom-base0</code></li>
+  <li><b>Walkthrough</b> (<code>walk.html</code>): bathroom world, GPT-5.6 Sol trace, then back to Tab 2 for the training-pack export</li>
 </ol>
 
 <h2>Script (3:00)</h2>
 
 <div class="beat">
-  <div class="t">0:00<small>Hook · 20s</small></div>
+  <div class="t">0:00<small>Hook · 18s</small></div>
   <div>
     <span class="click">Tab 1 · Brief page</span>
-    <p class="say">"One in three new-hip-or-knee patients falls within a year, mostly at home. Home-health AI companies are shipping vision models to catch the hazards. But the guidelines that define 'safe' are PDFs, not tests, so <b>nobody can check whether these models work.</b> <span data-b="name">HealthDojo</span> turns clinical guidelines into evals any home-health AI can run out of the box. <b>Guidelines in. Benchmarks out.</b>"</p>
+    <p class="say">"One in three new-hip-or-knee patients falls within a year, mostly at home. AI companies are shipping vision models to catch the hazards, but the guidelines that define 'safe' are PDFs, not tests. <b>Nobody can check whether these models work.</b> <span data-b="name">HealthDojo</span> turns clinical guidelines into evals any home-health AI can run out of the box. <b>Guidelines in. Benchmarks out.</b>"</p>
   </div>
 </div>
 
 <div class="beat">
-  <div class="t">0:20<small>Brief · 15s</small></div>
+  <div class="t">0:18<small>Brief + rubric · 27s</small></div>
   <div>
-    <span class="click">1 · Paste the brief → Submit</span>
-    <p class="say">"Say I'm a startup. I paste my use case: home-safety checks after joint replacement. I paste the guideline I follow, a post-op walker guideline. And I paste my model endpoint."</p>
-    <p class="note">Keep the brief pre-filled; just point at the three fields and click.</p>
+    <span class="click">1 · Submit pre-filled brief → 2 · Rubric streams in → Clinician approve</span>
+    <p class="say">"A startup pastes its use case, the guideline it follows, and its model. <span data-b="name">HealthDojo</span> turns the guideline into a rubric. <b>Every row cites the guideline line it came from</b>, and a clinician approves it. Our first benchmark, <span data-b="bench">HomeBench</span>, came from customer #1 HomeReady's post-op fall-prevention guideline: 35 hazards across 6 rooms."</p>
+    <p class="note">Keep the brief pre-filled; point at the three fields and click.</p>
   </div>
 </div>
 
 <div class="beat">
-  <div class="t">0:35<small>Guideline → rubric · 25s</small></div>
-  <div>
-    <span class="click">2 · Rubric streams in → Clinician approve</span>
-    <p class="say">"<span data-b="name">HealthDojo</span> reads the guideline and builds a rubric. <b>Every row cites the guideline line it came from</b>, like 'grab bar at tub' or 'walker fits through the bathroom door.' A clinician approves it, so the answer key is clinical, not our opinion. Our first benchmark, <span data-b="bench">HomeBench</span>, was compiled from customer #1 HomeReady's post-op fall-prevention guideline: 35 hazards across 6 rooms, cross-checked against CDC and HOME FAST."</p>
-  </div>
-</div>
-
-<div class="beat">
-  <div class="t">1:00<small>Rubric → scenes · 30s</small></div>
+  <div class="t">0:45<small>Rubric → scenes · 22s</small></div>
   <div>
     <span class="click">3 · Scenes: base → edit → verified → box</span>
-    <p class="say">"Now each rubric row becomes test scenes. We generate a clean room, edit in exactly one hazard (here the grab bars come out), and a vision model confirms the edit. <b>We write the label before the pixels</b>, so the pixel diff hands us a bounding box for free. Only 2% of the image changed and the ground truth is exact."</p>
+    <p class="say">"Each row becomes test scenes: a clean room, one hazard edited in (here the grab bars come out), then a vision check. <b>We write the label before the pixels</b>, so the pixel diff gives us a bounding box for free, and the ground truth is exact."</p>
   </div>
 </div>
 
 <div class="beat">
-  <div class="t">1:30<small>Report card · 25s</small></div>
+  <div class="t">1:07<small>Report card · 20s</small></div>
   <div>
-    <span class="click">4a · Tab 2 · Leaderboard</span>
-    <p class="say">"Then your model is scored against 14 others: Claude, GPT, Nova, Llama, Qwen and more. 13 of them run on AWS Bedrock, across 43 verified scenes. Claude Opus 5.5 tops the board at 0.92 and caught every hazard. <b>Even so, 17% of its flags were false alarms.</b> At the bottom, Mistral Large 3 false-alarms 59% of the time."</p>
+    <span class="click">4a · Tab 2 · Report card → Leaderboard</span>
+    <p class="say">"Your model is scored against 14 others, 13 of them on AWS Bedrock, across 43 verified scenes. Claude Opus 5.5 leads at 0.92 and caught every hazard, <b>but 17% of its flags were false alarms.</b> Mistral Large 3: 59%."</p>
   </div>
 </div>
 
 <div class="beat">
-  <div class="t">1:55<small>The finding · 35s</small></div>
+  <div class="t">1:27<small>The finding · 33s</small></div>
   <div>
     <span class="click">4b · Failure heatmap → 4c · Scene explorer, bathroom-base0</span>
-    <p class="say">"Here's what surprised us. We bet models would miss what's <i>absent</i>. Wrong: they catch a missing grab bar 84% of the time, same as a rug. <b>Models see objects. They can't judge whether they're safe.</b> A towel bar sitting where you'd grab? Only 20% caught it. Broken steps: 36%. A handrail too short to hold: 57%. And every model cries wolf, on 11 to 59% of hazards we verified weren't there. This bathroom has <b>three</b> grab bars. Mistral Large 3 and Nemotron both said 'no grab bar.' Small n, directional, and exactly what a hospital needs to see before a pilot."</p>
-    <p class="note">Toggle the model answers so the red X on the false positive is visible.</p>
+    <p class="say">"We bet models would miss what's <i>absent</i>. Wrong: 84%, same as a rug. <b>Models see objects. They can't judge whether they're safe.</b> A towel bar where you'd grab? 20% caught it. Broken steps: 36%. A handrail too short to hold: 57%. And every model cries wolf on 11 to 59% of hazards that weren't there. This bathroom has <b>three</b> grab bars. Mistral and Nemotron said 'no grab bar.' Small n, directional, and exactly what a hospital needs before a pilot."</p>
+    <p class="note">Toggle model answers so the red X on the false positive is visible.</p>
   </div>
 </div>
 
 <div class="beat">
-  <div class="t">2:30<small>Training pack + close · 30s</small></div>
+  <div class="t">2:00<small>Walkthrough · 20s</small></div>
   <div>
-    <span class="click">4d · Export training pack → (optional) Tab 3 · 3D world</span>
-    <p class="say">"Every failure comes back to you as a hard-example training pack, labeled and boxed. And every new guideline becomes a new benchmark: dementia home safety, pediatric, wound photos. Why now? From 2028, CMS's CJR-X makes joint replacement a mandatory 90-day bundle at 2,500+ hospitals. <b>Hospitals will own the fall that happens at home on day 40</b>, and they'll need to pick vendors. <b>Every home-health model should pass the Dojo before it goes into a patient's home.</b>"</p>
-    <p class="note">Only open the 3D world if you're under 2:40. Stop at 3:00 no matter what.</p>
+    <span class="click">5 · Tab 3 · walk.html → bathroom world → GPT-5.6 Sol</span>
+    <p class="say">"Photos ask 'can it see the hazard?' Walkthrough asks <b>'does it know where to look?'</b> We drop each model into a 360° world facing away from the hazard and give it 8 moves. GPT-5.6 Sol stared at this tub for six steps with the loose bath mat in view, flagged five other things, and said 'done.' Kimi K3 found 4 of 4. Nova Pro found 1."</p>
+    <p class="note">Pre-select the bathroom world and GPT-5.6 Sol so the trace is already on screen.</p>
+  </div>
+</div>
+
+<div class="beat">
+  <div class="t">2:20<small>Pack + close · 40s</small></div>
+  <div>
+    <span class="click">Back to Tab 2 · Export training pack</span>
+    <p class="say">"Every failure comes back as a hard-example training pack. And every guideline is a new benchmark: DementiaBench is being built now. Why now? From 2028, CMS's CJR-X makes joint replacement a mandatory 90-day bundle at 2,500+ hospitals. <b>Hospitals will own the fall that happens at home on day 40</b>, and they'll have to pick vendors. <b>Every home-health model should pass the Dojo before it goes into a patient's home.</b>"</p>
+    <p class="note">This beat has slack. If you're over time, cut the training-pack sentence. Stop at 3:00 no matter what.</p>
   </div>
 </div>
 
@@ -125,7 +126,7 @@
 
 <div class="qa">
   <h3>2. "Is synthetic data realistic enough to matter?"</h3>
-  <p><span class="short">It's a controlled experiment, not a replacement for real homes.</span> Each scene is a photoreal room where one edit changes about 2% of the pixels. Everything except the hazard is held constant, so a miss tells you exactly what the model can't see. Real photos can't isolate that. Images are also a clinically valid medium: OTs rating HOME FAST from photos agreed at AC1 0.91. Real-home validation is on the roadmap, where we measure the sim-to-real gap directly.</p>
+  <p><span class="short">It's a controlled experiment, not a replacement for real homes.</span> Each scene is a photoreal room where one edit changes about 2% of the pixels. Everything except the hazard is held constant, so a miss tells you exactly what the model can't see. Real photos can't isolate that. Images are also a clinically valid medium: OTs rating HOME FAST from photos agreed at AC1 0.91. Walkthrough mode already tests models in 360° worlds, and real-home validation is on the roadmap, where we measure the sim-to-real gap directly.</p>
 </div>
 
 <div class="qa">
