@@ -179,7 +179,8 @@ footer .wrap{border-top:1px solid var(--line);padding-top:28px;display:flex;just
 <nav><div class="wrap">
   <a class="logo" href="#top">Health<i>Dojo</i></a>
   <div class="links">
-    <a href="#why">How it works</a><a href="#leaderboard">Leaderboard</a><a href="#failures">Where models fail</a><a href="#scenes">Scenes</a><a href="http://localhost:8791" class="ext">Run a brief ↗</a><a href="#worlds">3D</a>
+    <a href="index.html" data-bench="homebench" style="color:var(--ink);text-decoration:underline"><b>HomeBench</b></a><a href="dementia.html" data-bench="dementia"><b>DementiaBench</b></a>
+    <a href="#why">How it works</a><a href="#leaderboard">Leaderboard</a><a href="#failures">Where models fail</a><a href="#scenes">Scenes</a><a href="http://localhost:8791" class="ext">Run a brief ↗</a><a href="#worlds">3D</a><a href="walk.html">Walkthrough</a>
   </div>
 </div></nav>
 
@@ -261,9 +262,9 @@ const $=s=>document.querySelector(s);
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const pct=v=>v==null?"—":Math.round(v*100)+"%";
 const TAX=D.taxonomy||{};
-const TYPES=["object","absence","measurement","lighting"];
-const TLABEL={object:"Visible object",absence:"Missing feature",measurement:"Measurement",lighting:"Lighting"};
-const TPHRASE={object:"visible objects like rugs and cords",absence:"missing safety features like grab bars",measurement:"measurement hazards like toilet height",lighting:"lighting hazards"};
+const TYPES=["object","absence","measurement","lighting","access","perception"];
+const TLABEL={object:"Visible object",absence:"Missing feature",measurement:"Measurement",lighting:"Lighting",access:"Access / wandering",perception:"Misperception"};
+const TPHRASE={object:"visible objects like rugs and cords",absence:"missing safety features like grab bars",measurement:"measurement hazards like toilet height",lighting:"lighting hazards",access:"access and wandering risks like car keys and open doors",perception:"misperception hazards like dark mats and mirrors"};
 const LB=D.leaderboard||[];
 const MODELS=LB.map(r=>r.model);
 const SCENES=(D.scenes||[]).slice().sort((a,b)=>a.room.localeCompare(b.room)||(a.kind==="base"?-1:1)-(b.kind==="base"?-1:1)||a.id.localeCompare(b.id));

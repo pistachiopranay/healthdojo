@@ -1,0 +1,205 @@
+{
+ "model": "nova-pro",
+ "scene": "stairs-base0-STAIR-03",
+ "budget": 8,
+ "start": {
+  "yaw": 180.0,
+  "pitch": 0,
+  "fov": 90
+ },
+ "steps": [
+  {
+   "step": 1,
+   "view": {
+    "yaw": 180.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step01.jpg",
+   "action": {
+    "thought": "The image shows a kitchen with a door leading to another room. I need to check if the doorway is wide enough for a walker.",
+    "action": "flag",
+    "hazard_id": "ENT-05",
+    "evidence": "The doorway appears to be narrow, which could be a hazard for someone using a walker.",
+    "box": [
+     353,
+     233,
+     616,
+     940
+    ]
+   },
+   "thought": "The image shows a kitchen with a door leading to another room. I need to check if the doorway is wide enough for a walker.",
+   "latency_s": 2.2,
+   "flag_dir": [
+    178.22439947344273,
+    -7.389315329980023
+   ]
+  },
+  {
+   "step": 2,
+   "view": {
+    "yaw": 180.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step02.jpg",
+   "action": {
+    "thought": "The cabinet on the right side of the room appears to have glass doors, which could be a hazard if someone using a walker accidentally bumps into it.",
+    "action": "turn",
+    "yaw": 270
+   },
+   "thought": "The cabinet on the right side of the room appears to have glass doors, which could be a hazard if someone using a walker accidentally bumps into it.",
+   "latency_s": 1.5
+  },
+  {
+   "step": 3,
+   "view": {
+    "yaw": 270.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step03.jpg",
+   "action": {
+    "thought": "The wooden cabinet with glass doors could pose a hazard if someone using a walker accidentally bumps into it, so I will flag it.",
+    "action": "flag",
+    "hazard_id": "LIV-03",
+    "evidence": "The wooden cabinet with glass doors could pose a hazard if someone using a walker accidentally bumps into it.",
+    "box": [
+     0,
+     129,
+     171,
+     740
+    ]
+   },
+   "thought": "The wooden cabinet with glass doors could pose a hazard if someone using a walker accidentally bumps into it, so I will flag it.",
+   "latency_s": 1.6,
+   "flag_dir": [
+    -129.65873156482772,
+    4.32554114400622
+   ]
+  },
+  {
+   "step": 4,
+   "view": {
+    "yaw": 270.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step04.jpg",
+   "action": {
+    "thought": "The area around the table and chairs appears to be cluttered, which could pose a hazard for someone using a walker.",
+    "action": "flag",
+    "hazard_id": "LIV-03",
+    "evidence": "Cluttered or narrowed walking path around the dining table.",
+    "box": [
+     0,
+     550,
+     580,
+     999
+    ]
+   },
+   "thought": "The area around the table and chairs appears to be cluttered, which could pose a hazard for someone using a walker.",
+   "latency_s": 1.5,
+   "flag_dir": [
+    -112.7824057304817,
+    -20.788070531869757
+   ]
+  },
+  {
+   "step": 5,
+   "view": {
+    "yaw": 270.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step05.jpg",
+   "action": {
+    "thought": "The throw rug on the floor could be a tripping hazard for someone using a walker.",
+    "action": "flag",
+    "hazard_id": "LIV-01",
+    "evidence": "Throw rug on the floor.",
+    "box": [
+     670,
+     660,
+     999,
+     900
+    ]
+   },
+   "thought": "The throw rug on the floor could be a tripping hazard for someone using a walker.",
+   "latency_s": 1.6,
+   "flag_dir": [
+    -56.2174774006034,
+    -19.2433148203607
+   ]
+  },
+  {
+   "step": 6,
+   "view": {
+    "yaw": 270.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step06.jpg",
+   "action": {
+    "thought": "The throw rug on the floor is a potential hazard for someone using a walker, as it could cause tripping.",
+    "action": "flag",
+    "hazard_id": "LIV-01",
+    "evidence": "Throw rug on the floor.",
+    "box": [
+     670,
+     660,
+     999,
+     900
+    ]
+   },
+   "thought": "The throw rug on the floor is a potential hazard for someone using a walker, as it could cause tripping.",
+   "latency_s": 1.6,
+   "flag_dir": [
+    -56.2174774006034,
+    -19.2433148203607
+   ]
+  },
+  {
+   "step": 7,
+   "view": {
+    "yaw": 270.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step07.jpg",
+   "action": {
+    "thought": "The throw rug on the floor is a potential hazard for someone using a walker, as it could cause tripping.",
+    "action": "flag",
+    "hazard_id": "LIV-01",
+    "evidence": "Throw rug on the floor.",
+    "box": [
+     667,
+     659,
+     999,
+     903
+    ]
+   },
+   "thought": "The throw rug on the floor is a potential hazard for someone using a walker, as it could cause tripping.",
+   "latency_s": 1.5,
+   "flag_dir": [
+    -56.336384817253034,
+    -19.33174310869241
+   ]
+  },
+  {
+   "step": 8,
+   "view": {
+    "yaw": 270.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step08.jpg",
+   "action": {
+    "thought": "The throw rug on the floor is a fall hazard, and I have already flagged it three times. I will now mark the task as done.",
+    "action": "done"
+   },
+   "thought": "The throw rug on the floor is a fall hazard, and I have already flagged it three times. I will now mark the task as done.",
+   "latency_s": 0.9
+  }
+ ]
+}

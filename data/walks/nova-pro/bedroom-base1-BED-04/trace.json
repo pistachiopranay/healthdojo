@@ -1,0 +1,172 @@
+{
+ "model": "nova-pro",
+ "scene": "bedroom-base1-BED-04",
+ "budget": 8,
+ "start": {
+  "yaw": 180.0,
+  "pitch": 0,
+  "fov": 90
+ },
+ "steps": [
+  {
+   "step": 1,
+   "view": {
+    "yaw": 180.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step01.jpg",
+   "action": {
+    "thought": "The doorway appears to be narrow, which could pose a hazard for someone using a walker.",
+    "action": "flag",
+    "hazard_id": "ENT-05",
+    "evidence": "The doorway is narrow, potentially too narrow for a walker to pass through easily.",
+    "box": [
+     550,
+     36,
+     695,
+     999
+    ]
+   },
+   "thought": "The doorway appears to be narrow, which could pose a hazard for someone using a walker.",
+   "latency_s": 2.1,
+   "flag_dir": [
+    -166.23369931453374,
+    -1.4604941078819766
+   ]
+  },
+  {
+   "step": 2,
+   "view": {
+    "yaw": 180.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step02.jpg",
+   "action": {
+    "thought": "The hallway appears to be clear, but I need to check the other doorway to ensure it is also wide enough for a walker.",
+    "action": "turn",
+    "yaw": 270
+   },
+   "thought": "The hallway appears to be clear, but I need to check the other doorway to ensure it is also wide enough for a walker.",
+   "latency_s": 1.1
+  },
+  {
+   "step": 3,
+   "view": {
+    "yaw": 270.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step03.jpg",
+   "action": {
+    "thought": "The doorway appears to be clear, but I need to check the other doorway to ensure it is also wide enough for a walker.",
+    "action": "turn",
+    "yaw": 360
+   },
+   "thought": "The doorway appears to be clear, but I need to check the other doorway to ensure it is also wide enough for a walker.",
+   "latency_s": 1.5
+  },
+  {
+   "step": 4,
+   "view": {
+    "yaw": 0.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step04.jpg",
+   "action": {
+    "thought": "The bed area is cluttered with clothes and other items, which could pose a tripping hazard for someone using a walker.",
+    "action": "flag",
+    "hazard_id": "BED-04",
+    "evidence": "Cluttered floor around the bed with clothes and other items.",
+    "box": [
+     180,
+     730,
+     920,
+     999
+    ]
+   },
+   "thought": "The bed area is cluttered with clothes and other items, which could pose a tripping hazard for someone using a walker.",
+   "latency_s": 1.2,
+   "flag_dir": [
+    5.710593137499647,
+    -28.547808142806105
+   ]
+  },
+  {
+   "step": 5,
+   "view": {
+    "yaw": 0.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step05.jpg",
+   "action": {
+    "thought": "The bed appears to be at a reasonable height, but I need to check the clearance around it for the walker.",
+    "action": "flag",
+    "hazard_id": "BED-05",
+    "evidence": "Insufficient walker clearance around bed.",
+    "box": [
+     150,
+     475,
+     605,
+     915
+    ]
+   },
+   "thought": "The bed appears to be at a reasonable height, but I need to check the clearance around it for the walker.",
+   "latency_s": 1.5,
+   "flag_dir": [
+    -13.766300685466256,
+    -15.859729721193233
+   ]
+  },
+  {
+   "step": 6,
+   "view": {
+    "yaw": 0.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step06.jpg",
+   "action": {
+    "thought": "The bed appears to be at a standard height, but I need to check the lighting in the room to ensure it is adequate for safe movement.",
+    "action": "look",
+    "pitch": 10
+   },
+   "thought": "The bed appears to be at a standard height, but I need to check the lighting in the room to ensure it is adequate for safe movement.",
+   "latency_s": 1.3
+  },
+  {
+   "step": 7,
+   "view": {
+    "yaw": 0.0,
+    "pitch": 10.0,
+    "fov": 90.0
+   },
+   "img": "step07.jpg",
+   "action": {
+    "thought": "The bed appears to be at a standard height, but I need to check the lighting in the room to ensure it is adequate for safety.",
+    "action": "look",
+    "pitch": 10
+   },
+   "thought": "The bed appears to be at a standard height, but I need to check the lighting in the room to ensure it is adequate for safety.",
+   "latency_s": 1.1
+  },
+  {
+   "step": 8,
+   "view": {
+    "yaw": 0.0,
+    "pitch": 10.0,
+    "fov": 90.0
+   },
+   "img": "step08.jpg",
+   "action": {
+    "thought": "The bed appears to be at a standard height, but I need to check the lighting in the room to ensure it is adequate for safety.",
+    "action": "done"
+   },
+   "thought": "The bed appears to be at a standard height, but I need to check the lighting in the room to ensure it is adequate for safety.",
+   "latency_s": 0.8
+  }
+ ]
+}

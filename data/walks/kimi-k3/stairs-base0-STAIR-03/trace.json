@@ -1,0 +1,199 @@
+{
+ "model": "kimi-k3",
+ "scene": "stairs-base0-STAIR-03",
+ "budget": 8,
+ "start": {
+  "yaw": 180.0,
+  "pitch": 0,
+  "fov": 90
+ },
+ "steps": [
+  {
+   "step": 1,
+   "view": {
+    "yaw": 180.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step01.jpg",
+   "action": {
+    "thought": "Kitchen view: high wall-mounted wooden cabinets above the counter on the left would require overhead reaching while on a walker; flagging that, then I'll rotate to survey the rest of the room.",
+    "action": "flag",
+    "hazard_id": "KIT-01",
+    "evidence": "Wooden wall cabinets mounted high above the kitchen counter (left side); frequently used kitchen items stored overhead require reaching up, a fall risk when using a walker.",
+    "box": [
+     0,
+     55,
+     220,
+     300
+    ]
+   },
+   "thought": "Kitchen view: high wall-mounted wooden cabinets above the counter on the left would require overhead reaching while on a walker; flagging that, then I'll rotate to survey the rest of the room.",
+   "latency_s": 21.2,
+   "flag_dir": [
+    142.0457691248675,
+    20.878751361910112
+   ]
+  },
+  {
+   "step": 2,
+   "view": {
+    "yaw": 180.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step02.jpg",
+   "action": {
+    "thought": "Door/entry is centered with kitchen cabinets to the left and a china cabinet to the right; no rug/cords seen on the floor here, so I will pan left toward the kitchen counter run (smaller yaw) to check the sink/stove zone for low storage, loose mats, and walkway hazards.",
+    "action": "turn",
+    "yaw": 90,
+    "pitch": 0,
+    "fov": 90
+   },
+   "thought": "Door/entry is centered with kitchen cabinets to the left and a china cabinet to the right; no rug/cords seen on the floor here, so I will pan left toward the kitchen counter run (smaller yaw) to check the sink/stove zone for low storage, loose mats, and walkway hazards.",
+   "latency_s": 19.2
+  },
+  {
+   "step": 3,
+   "view": {
+    "yaw": 90.0,
+    "pitch": 0.0,
+    "fov": 90
+   },
+   "img": "step03.jpg",
+   "action": {
+    "thought": "A loose patterned rug lies on the wood floor at the sink/dishwasher walkway, a slip/trip hazard for a walker; flag it now.",
+    "action": "flag",
+    "hazard_id": "KIT-04",
+    "evidence": "Loose patterned mat/rug on the wooden kitchen floor in front of the sink and dishwasher, within the main walker path.",
+    "box": [
+     624,
+     862,
+     796,
+     1000
+    ]
+   },
+   "thought": "A loose patterned rug lies on the wood floor at the sink/dishwasher walkway, a slip/trip hazard for a walker; flag it now.",
+   "latency_s": 3.4,
+   "flag_dir": [
+    112.78240573048168,
+    -30.797539232701265
+   ]
+  },
+  {
+   "step": 4,
+   "view": {
+    "yaw": 90.0,
+    "pitch": 0.0,
+    "fov": 90
+   },
+   "img": "step04.jpg",
+   "action": {
+    "thought": "This yaw-90 kitchen view's clear hazards (high wall cabinets and the loose sink mat) are already flagged as KIT-01/KIT-04; the visible walkway is otherwise clear, so I'll rotate toward the unviewed side (yaw 0) to check the entry/living approach for thresholds, cords, rugs, or lighting issues.",
+    "action": "turn",
+    "yaw": 0
+   },
+   "thought": "This yaw-90 kitchen view's clear hazards (high wall cabinets and the loose sink mat) are already flagged as KIT-01/KIT-04; the visible walkway is otherwise clear, so I'll rotate toward the unviewed side (yaw 0) to check the entry/living approach for thresholds, cords, rugs, or lighting issues.",
+   "latency_s": 19.2
+  },
+  {
+   "step": 5,
+   "view": {
+    "yaw": 0.0,
+    "pitch": 0.0,
+    "fov": 90
+   },
+   "img": "step05.jpg",
+   "action": {
+    "thought": "The centered staircase has both handrails but is cluttered with a laundry basket, shoes, clothing and papers on multiple treads plus a laundry basket at the foot\u2014clear objects-on-stairs hazard for a walker user; flagging it now.",
+    "action": "flag",
+    "hazard_id": "STAIR-03",
+    "evidence": "Multiple items stored on the stair treads and at the foot of the stairs: white laundry basket mid-flight, pairs of shoes, dark clothing, papers/books, and a full laundry basket on the bottom step, narrowing the usable stair path.",
+    "box": [
+     283,
+     226,
+     620,
+     998
+    ]
+   },
+   "thought": "The centered staircase has both handrails but is cluttered with a laundry basket, shoes, clothing and papers on multiple treads plus a laundry basket at the foot\u2014clear objects-on-stairs hazard for a walker user; flagging it now.",
+   "latency_s": 9.3,
+   "flag_dir": [
+    -5.540357589574457,
+    -9.492897479533276
+   ]
+  },
+  {
+   "step": 6,
+   "view": {
+    "yaw": 0.0,
+    "pitch": 0.0,
+    "fov": 90
+   },
+   "img": "step06.jpg",
+   "action": {
+    "thought": "Stairs/laundry items already flagged as STAIR-03; the uninspected dark doorway on the right edge may be a bathroom, so I am turning toward it to check for unassessed bath hazards.",
+    "action": "turn",
+    "yaw": 45,
+    "pitch": 0,
+    "fov": 90
+   },
+   "thought": "Stairs/laundry items already flagged as STAIR-03; the uninspected dark doorway on the right edge may be a bathroom, so I am turning toward it to check for unassessed bath hazards.",
+   "latency_s": 16.0
+  },
+  {
+   "step": 7,
+   "view": {
+    "yaw": 45.0,
+    "pitch": 0.0,
+    "fov": 90
+   },
+   "img": "step07.jpg",
+   "action": {
+    "thought": "At yaw 45 the staircase is seen edge-on: there is a handrail on only the open side and no second rail on the wall side, which is risky for a post-op walker user who may need support on a specific side; I flag this rather than re-flagging the stair clutter.",
+    "action": "flag",
+    "hazard_id": "STAIR-01",
+    "evidence": "Staircase at the left edge has a graspable-looking rail on only one side (open/room side); the opposite side along the run has no second handrail, so support is available on one side only for someone after hip/knee replacement.",
+    "box": [
+     0,
+     60,
+     220,
+     760
+    ]
+   },
+   "thought": "At yaw 45 the staircase is seen edge-on: there is a handrail on only the open side and no second rail on the wall side, which is risky for a post-op walker user who may need support on a specific side; I flag this rather than re-flagging the stair clutter.",
+   "latency_s": 24.0,
+   "flag_dir": [
+    7.045769124867492,
+    6.076129446565326
+   ]
+  },
+  {
+   "step": 8,
+   "view": {
+    "yaw": 45.0,
+    "pitch": 0.0,
+    "fov": 90
+   },
+   "img": "step08.jpg",
+   "action": {
+    "thought": "The left stair rail appears to stop well above the lower treads, leaving the bottom steps without a graspable rail; I\u2019ll flag this distinct short-rail hazard.",
+    "action": "flag",
+    "hazard_id": "STAIR-02",
+    "evidence": "Wooden handrail on the left staircase runs only partway down and ends before the lower steps, so the bottom treads lack a graspable rail.",
+    "box": [
+     0,
+     140,
+     290,
+     730
+    ]
+   },
+   "thought": "The left stair rail appears to stop well above the lower treads, leaving the bottom steps without a graspable rail; I\u2019ll flag this distinct short-rail hazard.",
+   "latency_s": 24.5,
+   "flag_dir": [
+    9.625248156123924,
+    4.545445368807344
+   ]
+  }
+ ]
+}

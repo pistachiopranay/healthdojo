@@ -1,0 +1,177 @@
+{
+ "model": "gpt-5.6-sol",
+ "scene": "bedroom-base1-BED-04",
+ "budget": 8,
+ "start": {
+  "yaw": 180.0,
+  "pitch": 0,
+  "fov": 90
+ },
+ "steps": [
+  {
+   "step": 1,
+   "view": {
+    "yaw": 180.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step01.jpg",
+   "action": {
+    "thought": "A partially open door narrows the hallway, but clearance is uncertain; I will turn right to inspect the adjacent room for clearer hazards.",
+    "action": "turn",
+    "yaw": 270
+   },
+   "thought": "A partially open door narrows the hallway, but clearance is uncertain; I will turn right to inspect the adjacent room for clearer hazards.",
+   "latency_s": 2.9
+  },
+  {
+   "step": 2,
+   "view": {
+    "yaw": 270.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step02.jpg",
+   "action": {
+    "thought": "The bedroom doorway and bed are visible, but the floor and threshold are partly out of frame; I will look down to check walker clearance, clutter, and trip hazards.",
+    "action": "look",
+    "pitch": -35
+   },
+   "thought": "The bedroom doorway and bed are visible, but the floor and threshold are partly out of frame; I will look down to check walker clearance, clutter, and trip hazards.",
+   "latency_s": 3.1
+  },
+  {
+   "step": 3,
+   "view": {
+    "yaw": 270.0,
+    "pitch": -35.0,
+    "fov": 90.0
+   },
+   "img": "step03.jpg",
+   "action": {
+    "thought": "The bedroom floor and doorway appear clear with no obvious threshold or clutter; I will turn right to inspect the next section of the hallway for walker-path hazards.",
+    "action": "turn",
+    "yaw": 0,
+    "pitch": -25,
+    "fov": 90
+   },
+   "thought": "The bedroom floor and doorway appear clear with no obvious threshold or clutter; I will turn right to inspect the next section of the hallway for walker-path hazards.",
+   "latency_s": 4.4
+  },
+  {
+   "step": 4,
+   "view": {
+    "yaw": 0.0,
+    "pitch": -25.0,
+    "fov": 90
+   },
+   "img": "step04.jpg",
+   "action": {
+    "thought": "Clothing, shoes, a bag, and an open box are scattered on the floor beside and at the foot of the bed, obstructing the walker path.",
+    "action": "flag",
+    "hazard_id": "BED-04",
+    "evidence": "Multiple loose items visibly clutter the floor around the bed.",
+    "box": [
+     220,
+     440,
+     845,
+     710
+    ]
+   },
+   "thought": "Clothing, shoes, a bag, and an open box are scattered on the floor beside and at the foot of the bed, obstructing the walker path.",
+   "latency_s": 2.9,
+   "flag_dir": [
+    4.328478244739639,
+    -31.346030670046982
+   ]
+  },
+  {
+   "step": 5,
+   "view": {
+    "yaw": 0.0,
+    "pitch": -25.0,
+    "fov": 90
+   },
+   "img": "step05.jpg",
+   "action": {
+    "thought": "The walker route around the foot and right side of the bed is narrowed by clothing, a bag, and an open box, leaving insufficient clearance.",
+    "action": "flag",
+    "hazard_id": "BED-05",
+    "evidence": "Loose clothing, a handbag, and an open box obstruct and narrow the floor space around the bed where a walker would pass.",
+    "box": [
+     218,
+     438,
+     823,
+     691
+    ]
+   },
+   "thought": "The walker route around the foot and right side of the bed is narrowed by clothing, a bag, and an open box, leaving insufficient clearance.",
+   "latency_s": 4.8,
+   "flag_dir": [
+    2.712409284166766,
+    -30.49807298011568
+   ]
+  },
+  {
+   "step": 6,
+   "view": {
+    "yaw": 0.0,
+    "pitch": -25.0,
+    "fov": 90
+   },
+   "img": "step06.jpg",
+   "action": {
+    "thought": "The visible bedroom hazards have been flagged; I will turn right to inspect the remaining side of the room and adjacent path for additional hazards.",
+    "action": "turn",
+    "yaw": 90
+   },
+   "thought": "The visible bedroom hazards have been flagged; I will turn right to inspect the remaining side of the room and adjacent path for additional hazards.",
+   "latency_s": 4.3
+  },
+  {
+   "step": 7,
+   "view": {
+    "yaw": 90.0,
+    "pitch": -25.0,
+    "fov": 90
+   },
+   "img": "step07.jpg",
+   "action": {
+    "thought": "This view shows a clear carpeted doorway with no definite visible hazard; I will turn right to inspect the remaining hallway area and floor.",
+    "action": "turn",
+    "yaw": 180,
+    "pitch": -25,
+    "fov": 90
+   },
+   "thought": "This view shows a clear carpeted doorway with no definite visible hazard; I will turn right to inspect the remaining hallway area and floor.",
+   "latency_s": 2.7
+  },
+  {
+   "step": 8,
+   "view": {
+    "yaw": 180.0,
+    "pitch": -25.0,
+    "fov": 90
+   },
+   "img": "step08.jpg",
+   "action": {
+    "thought": "The partially open door projects into the hallway and creates a pinch point for a walker, so I am flagging the narrowed walking path.",
+    "action": "flag",
+    "hazard_id": "LIV-03",
+    "evidence": "The open door leaf visibly extends across the carpeted hallway, narrowing the walker route.",
+    "box": [
+     560,
+     0,
+     735,
+     785
+    ]
+   },
+   "thought": "The partially open door projects into the hallway and creates a pinch point for a walker, so I am flagging the narrowed walking path.",
+   "latency_s": 4.3,
+   "flag_dir": [
+    -163.1571868418436,
+    -15.192478835052967
+   ]
+  }
+ ]
+}

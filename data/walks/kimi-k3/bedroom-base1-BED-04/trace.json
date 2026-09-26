@@ -1,0 +1,192 @@
+{
+ "model": "kimi-k3",
+ "scene": "bedroom-base1-BED-04",
+ "budget": 8,
+ "start": {
+  "yaw": 180.0,
+  "pitch": 0,
+  "fov": 90
+ },
+ "steps": [
+  {
+   "step": 1,
+   "view": {
+    "yaw": 180.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step01.jpg",
+   "action": {
+    "thought": "Carpeted hallway; the walker route runs through the cased opening at frame-right into a dimmer room with a closet and a closed door (likely bedroom/bath). I'll center that opening and tighten the view to inspect the threshold and route.",
+    "action": "turn",
+    "yaw": 212,
+    "pitch": -8,
+    "fov": 70
+   },
+   "thought": "Carpeted hallway; the walker route runs through the cased opening at frame-right into a dimmer room with a closet and a closed door (likely bedroom/bath). I'll center that opening and tighten the view to inspect the threshold and route.",
+   "latency_s": 21.9
+  },
+  {
+   "step": 2,
+   "view": {
+    "yaw": 212.0,
+    "pitch": -8.0,
+    "fov": 70.0
+   },
+   "img": "step02.jpg",
+   "action": {
+    "thought": "Bed is visible through the cased opening at frame-right; I need a fuller view of the bedside, floor clearance, and whether a reachable light exists, so I'll turn into the bedroom.",
+    "action": "turn",
+    "yaw": 258,
+    "pitch": -10,
+    "fov": 80
+   },
+   "thought": "Bed is visible through the cased opening at frame-right; I need a fuller view of the bedside, floor clearance, and whether a reachable light exists, so I'll turn into the bedroom.",
+   "latency_s": 41.0
+  },
+  {
+   "step": 3,
+   "view": {
+    "yaw": 258.0,
+    "pitch": -10.0,
+    "fov": 80.0
+   },
+   "img": "step03.jpg",
+   "action": {
+    "thought": "Through the doorway I see the bed with a lit bedside lamp, but the right-side door and jamb block the bed's near side and any bathroom path; I'll rotate right to see more of the bedroom interior and bed clearance.",
+    "action": "turn",
+    "yaw": 292,
+    "pitch": -10,
+    "fov": 80
+   },
+   "thought": "Through the doorway I see the bed with a lit bedside lamp, but the right-side door and jamb block the bed's near side and any bathroom path; I'll rotate right to see more of the bedroom interior and bed clearance.",
+   "latency_s": 5.6
+  },
+  {
+   "step": 4,
+   "view": {
+    "yaw": 292.0,
+    "pitch": -10.0,
+    "fov": 80.0
+   },
+   "img": "step04.jpg",
+   "action": {
+    "thought": "At the right edge of the bed there are shoes and a pile of clothing on the carpet, squarely in the walker path beside the bed; I will flag this as floor clutter around the bed.",
+    "action": "flag",
+    "hazard_id": "BED-04",
+    "evidence": "Pair of slip-on shoes and a gray garment left on the carpet at the side/foot of the bed (lower-right of view), creating a trip hazard in the bedside walker route.",
+    "box": [
+     898,
+     758,
+     1000,
+     1000
+    ]
+   },
+   "thought": "At the right edge of the bed there are shoes and a pile of clothing on the carpet, squarely in the walker path beside the bed; I will flag this as floor clutter around the bed.",
+   "latency_s": 5.3,
+   "flag_dir": [
+    -28.124487369963134,
+    -28.698884621136354
+   ]
+  },
+  {
+   "step": 5,
+   "view": {
+    "yaw": 292.0,
+    "pitch": -10.0,
+    "fov": 80.0
+   },
+   "img": "step05.jpg",
+   "action": {
+    "thought": "The shoes are flagged; now I'll pan right to bring the target bed (green skirt) fully into frame to judge bed height (BED-01) and the walker gap between the dresser and bed (BED-05).",
+    "action": "turn",
+    "yaw": 330,
+    "pitch": -12,
+    "fov": 75
+   },
+   "thought": "The shoes are flagged; now I'll pan right to bring the target bed (green skirt) fully into frame to judge bed height (BED-01) and the walker gap between the dresser and bed (BED-05).",
+   "latency_s": 19.7
+  },
+  {
+   "step": 6,
+   "view": {
+    "yaw": 330.0,
+    "pitch": -12.0,
+    "fov": 75.0
+   },
+   "img": "step06.jpg",
+   "action": {
+    "thought": "The bed is now fully in frame; the lane between the bed skirt and the foreground dresser is tight and is further occupied by shoes, garments and a heaped pile of linens/towels, leaving inadequate clear width for a walker around the bed.",
+    "action": "flag",
+    "hazard_id": "BED-05",
+    "evidence": "Narrow bed-to-dresser walkway at the foot/side of the bed is partly blocked by shoes, gray and dark clothing and a pile of beige linens on the carpet, so a walker cannot pass with safe clearance.",
+    "box": [
+     470,
+     360,
+     1000,
+     575
+    ]
+   },
+   "thought": "The bed is now fully in frame; the lane between the bed skirt and the foreground dresser is tight and is further occupied by shoes, garments and a heaped pile of linens/towels, leaving inadequate clear width for a walker around the bed.",
+   "latency_s": 21.4,
+   "flag_dir": [
+    -9.907873877701197,
+    -9.268536938210872
+   ]
+  },
+  {
+   "step": 7,
+   "view": {
+    "yaw": 330.0,
+    "pitch": -12.0,
+    "fov": 75.0
+   },
+   "img": "step07.jpg",
+   "action": {
+    "thought": "The same bedside walkway now shows additional loose dark clothing and a light blanket/linen pile on the carpet at the foot/right side of the bed, squarely in the walker path.",
+    "action": "flag",
+    "hazard_id": "BED-04",
+    "evidence": "Multiple garments/blankets piled on the carpet beside and at the foot of the bed, near the walker route.",
+    "box": [
+     498,
+     389,
+     999,
+     574
+    ]
+   },
+   "thought": "The same bedside walkway now shows additional loose dark clothing and a light blanket/linen pile on the carpet at the foot/right side of the bed, squarely in the walker path.",
+   "latency_s": 25.5,
+   "flag_dir": [
+    -8.787537719644245,
+    -10.065216313142582
+   ]
+  },
+  {
+   "step": 8,
+   "view": {
+    "yaw": 330.0,
+    "pitch": -12.0,
+    "fov": 75.0
+   },
+   "img": "step08.jpg",
+   "action": {
+    "thought": "Final look: the only lamp is on a table by the window at the foot/far side, while the pillows/head are on the right under the picture with no nightstand or light within reach, so there is no reachable bedside light for someone getting in/out with a walker.",
+    "action": "flag",
+    "hazard_id": "BED-02",
+    "evidence": "Lit lamp sits on a table across by the window (frame-left), not adjacent to the pillow/head end of the bed on the right; no lamp, switch, or nightstand is within reach of the bedside where a walker user would sit/transfer.",
+    "box": [
+     118,
+     138,
+     220,
+     285
+    ]
+   },
+   "thought": "Final look: the only lamp is on a table by the window at the foot/far side, while the pillows/head are on the right under the picture with no nightstand or light within reach, so there is no reachable bedside light for someone getting in/out with a walker.",
+   "latency_s": 36.8,
+   "flag_dir": [
+    -55.877141876725105,
+    5.735156117261641
+   ]
+  }
+ ]
+}

@@ -1,0 +1,173 @@
+{
+ "model": "qwen3-vl",
+ "scene": "bedroom-base1-BED-04",
+ "budget": 8,
+ "start": {
+  "yaw": 180.0,
+  "pitch": 0,
+  "fov": 90
+ },
+ "steps": [
+  {
+   "step": 1,
+   "view": {
+    "yaw": 180.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step01.jpg",
+   "action": {
+    "thought": "I see a hallway with an open door and another closed door at the end; the path appears clear but I need to check for narrow doorways that may impede walker access. I will turn right to inspect the doorway on the right for width and threshold hazards.",
+    "action": "turn",
+    "yaw": 270
+   },
+   "thought": "I see a hallway with an open door and another closed door at the end; the path appears clear but I need to check for narrow doorways that may impede walker access. I will turn right to inspect the doorway on the right for width and threshold hazards.",
+   "latency_s": 2.4
+  },
+  {
+   "step": 2,
+   "view": {
+    "yaw": 270.0,
+    "pitch": 0.0,
+    "fov": 90.0
+   },
+   "img": "step02.jpg",
+   "action": {
+    "thought": "I see the bedroom doorway and part of the hallway; the path appears clear but I need to check the doorway width for walker clearance. I will zoom in on the doorway to assess if it\u2019s wide enough.",
+    "action": "zoom",
+    "fov": 45
+   },
+   "thought": "I see the bedroom doorway and part of the hallway; the path appears clear but I need to check the doorway width for walker clearance. I will zoom in on the doorway to assess if it\u2019s wide enough.",
+   "latency_s": 1.6
+  },
+  {
+   "step": 3,
+   "view": {
+    "yaw": 270.0,
+    "pitch": 0.0,
+    "fov": 45.0
+   },
+   "img": "step03.jpg",
+   "action": {
+    "thought": "I see the edge of the bedroom door frame and part of the bed; I need to check if the doorway is wide enough for a walker to pass through safely.",
+    "action": "flag",
+    "hazard_id": "ENT-05",
+    "evidence": "The visible portion of the doorway appears narrow, and the door frame may restrict walker clearance.",
+    "box": [
+     760,
+     0,
+     860,
+     999
+    ]
+   },
+   "thought": "I see the edge of the bedroom door frame and part of the bed; I need to check if the doorway is wide enough for a walker to pass through safely.",
+   "latency_s": 5.3,
+   "flag_dir": [
+    -75.59698731954306,
+    0.017240078859532666
+   ]
+  },
+  {
+   "step": 4,
+   "view": {
+    "yaw": 270.0,
+    "pitch": 0.0,
+    "fov": 45.0
+   },
+   "img": "step04.jpg",
+   "action": {
+    "thought": "I see the edge of the bed and a bedside lamp; I need to check if the bed height is appropriate and if the lamp is reachable for someone using a walker.",
+    "action": "turn",
+    "yaw": 225
+   },
+   "thought": "I see the edge of the bed and a bedside lamp; I need to check if the bed height is appropriate and if the lamp is reachable for someone using a walker.",
+   "latency_s": 4.3
+  },
+  {
+   "step": 5,
+   "view": {
+    "yaw": 225.0,
+    "pitch": 0.0,
+    "fov": 45.0
+   },
+   "img": "step05.jpg",
+   "action": {
+    "thought": "I see the edge of the bed and a bedside lamp; I need to check if the bed height is appropriate and if the lamp is reachable, so I will look down to assess the bed height relative to the floor.",
+    "action": "look",
+    "pitch": -15
+   },
+   "thought": "I see the edge of the bed and a bedside lamp; I need to check if the bed height is appropriate and if the lamp is reachable, so I will look down to assess the bed height relative to the floor.",
+   "latency_s": 3.3
+  },
+  {
+   "step": 6,
+   "view": {
+    "yaw": 225.0,
+    "pitch": -15.0,
+    "fov": 45.0
+   },
+   "img": "step06.jpg",
+   "action": {
+    "thought": "I see the edge of the bed and part of the carpeted floor; I need to check for walker clearance around the bed and any floor clutter.",
+    "action": "turn",
+    "yaw": 180
+   },
+   "thought": "I see the edge of the bed and part of the carpeted floor; I need to check for walker clearance around the bed and any floor clutter.",
+   "latency_s": 1.1
+  },
+  {
+   "step": 7,
+   "view": {
+    "yaw": 180.0,
+    "pitch": -15.0,
+    "fov": 45.0
+   },
+   "img": "step07.jpg",
+   "action": {
+    "thought": "I see a partially open door with a doorknob; the gap between the door and frame may be too narrow for a walker to pass through safely, indicating a potential doorway clearance issue.",
+    "action": "flag",
+    "hazard_id": "ENT-05",
+    "evidence": "The visible gap between the open door and door frame appears too narrow for a walker to pass through without obstruction.",
+    "box": [
+     650,
+     0,
+     960,
+     999
+    ]
+   },
+   "thought": "I see a partially open door with a doorknob; the gap between the door and frame may be too narrow for a walker to pass through safely, indicating a potential doorway clearance issue.",
+   "latency_s": 4.5,
+   "flag_dir": [
+    -165.3420003916691,
+    -14.515503291451177
+   ]
+  },
+  {
+   "step": 8,
+   "view": {
+    "yaw": 180.0,
+    "pitch": -15.0,
+    "fov": 45.0
+   },
+   "img": "step08.jpg",
+   "action": {
+    "thought": "I see the edge of a white door with a brass doorknob and a narrow gap; this confirms the doorway is too narrow for a walker, which is a fall hazard for someone using a walker after surgery.",
+    "action": "flag",
+    "hazard_id": "ENT-05",
+    "evidence": "The visible gap between the open door and door frame appears too narrow for a walker to pass through safely.",
+    "box": [
+     650,
+     0,
+     960,
+     999
+    ]
+   },
+   "thought": "I see the edge of a white door with a brass doorknob and a narrow gap; this confirms the doorway is too narrow for a walker, which is a fall hazard for someone using a walker after surgery.",
+   "latency_s": 2.4,
+   "flag_dir": [
+    -165.3420003916691,
+    -14.515503291451177
+   ]
+  }
+ ]
+}
