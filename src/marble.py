@@ -64,13 +64,6 @@ SHOWCASE = [
     },
     # ---- 2026-09-26 batch 2: DementiaBench + falls rooms we lacked ----
     {
-        "scene_id": "dem-bedroom-base0-DEM-R03", "bench": "dementia",
-        "title": "Handgun on the nightstand",
-        "hazard": "A handgun left in reach on the bedside nightstand",
-        "text_prompt": "Carpeted bedroom of an older adult with a queen bed, dresser, corner cabinet, window with valance, and a wooden "
-        "nightstand with a lamp; a black handgun lies on top of the nightstand beside the lamp.",
-    },
-    {
         "scene_id": "dem-bathroom-base0-DEM-B03", "bench": "dementia",
         "title": "Dark bath mat on a light floor",
         "hazard": "Solid black mat on light tile that can read as a hole in the floor",
@@ -283,7 +276,6 @@ def generate(max_parallel: int = 4) -> None:
 # Hand-annotated hazard centers for batch-2 worlds, same convention as walk.py GT_REGIONS:
 # (cx, cy, radius_deg, label) in pixels of a 1280x640 downscale of the world's pano (x=640 is the source-photo view).
 MARBLE_GT_REGIONS = {
-    "dem-bedroom-base0-DEM-R03": [(705, 346, 6, "handgun on the nightstand")],
     "dem-bathroom-base0-DEM-B03": [(640, 430, 8, "dark mat in front of the tub"), (600, 565, 25, "dark mat on the light floor")],
     "dem-kitchen-base0-DEM-K04": [(230, 368, 9, "prescription bottles on the counter"), (455, 352, 7, "pill bottles by the canisters")],
     "dem-entry-base0-DEM-E02": [(960, 362, 22, "glass doors standing open to the patio")],

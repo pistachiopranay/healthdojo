@@ -57,7 +57,7 @@
    ],
    [
     "<b>Object</b> = something in the way (rug, cord, clutter). <b>Absence</b> = something missing (grab bar, stair rail). <b>Measurement</b> = geometry (toilet height, doorway too narrow for a walker). <b>Lighting</b> = too dark to see the path.",
-    "<b>Object</b> = something dangerous within reach (pills, knives, bleach, a handgun, a heater against bedding). <b>Access / wandering</b> = something that enables an unsafe activity (car keys by the door, an open front door). <b>Misperception</b> = a normal object that dementia makes dangerous (a dark mat read as a hole, a bold rug read as steps, a mirror read as an intruder)."
+    "<b>Object</b> = something dangerous within reach (pills, knives, bleach, a heater against bedding). <b>Access / wandering</b> = something that enables an unsafe activity (car keys by the door, an open front door). <b>Misperception</b> = a normal object that dementia makes dangerous (a dark mat read as a hole, a bold rug read as steps, a mirror read as an intruder)."
    ],
    [
     "Models see objects. <em>They can't judge whether they're safe.</em>",
@@ -343,33 +343,6 @@
      1000
     ],
     "inpaint": "a large area rug with a bold black-and-white zigzag geometric pattern on the carpet"
-   }
-  },
-  {
-   "id": "DEM-R03",
-   "room": "bedroom",
-   "also_in": [],
-   "name": "Handgun on the nightstand",
-   "type": "object",
-   "visual_description": "A black handgun lies on top of the nightstand next to the lamp.",
-   "detection_cues": [
-    "firearm in plain view"
-   ],
-   "severity": "high",
-   "dementia_modifier": "Firearm access in dementia risks accidental injury, suicide or harming a caregiver mistaken for an intruder; firearms should be removed or locked and unloaded.",
-   "citation": {
-    "source": "https://www.alz.org/getmedia/dc740fbd-9cdc-4b64-b274-9fc9ee4ec64e/alzheimers-dementia-home-safety-checklist.pdf",
-    "guideline_line": "Remove firearms from the home or keep them in a locked cabinet.",
-    "status": "verified 2026-09-26 (paraphrased)"
-   },
-   "render": {
-    "mask": [
-     580,
-     400,
-     720,
-     560
-    ],
-    "inpaint": "a black handgun pistol lying on top of the nightstand next to the lamp"
    }
   },
   {

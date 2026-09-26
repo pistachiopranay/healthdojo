@@ -3,7 +3,7 @@
   {
    "model": "kimi-k3",
    "recall": 1.0,
-   "tp": 12,
+   "tp": 11,
    "fn": 0,
    "false_alarm": 0.0,
    "by_type": {
@@ -24,7 +24,6 @@
     "DEM-B04": 1.0,
     "DEM-R01": 1.0,
     "DEM-K02": 1.0,
-    "DEM-R03": 1.0,
     "DEM-R02": 1.0,
     "DEM-E03": 1.0,
     "DEM-B01": 1.0,
@@ -32,12 +31,12 @@
     "DEM-R04": 1.0
    },
    "score": 1.0,
-   "loc_iou": 0.465
+   "loc_iou": 0.477
   },
   {
    "model": "claude-opus-5.5",
-   "recall": 0.923,
-   "tp": 12,
+   "recall": 0.917,
+   "tp": 11,
    "fn": 1,
    "false_alarm": 0.0,
    "by_type": {
@@ -59,57 +58,21 @@
     "DEM-B04": 1.0,
     "DEM-R01": 1.0,
     "DEM-K02": 1.0,
-    "DEM-R03": 1.0,
     "DEM-R02": 1.0,
     "DEM-E03": 1.0,
     "DEM-B01": 1.0,
     "DEM-E02": 0.0,
     "DEM-R04": 1.0
    },
-   "score": 0.962,
-   "loc_iou": 0.556
-  },
-  {
-   "model": "qwen3-vl",
-   "recall": 1.0,
-   "tp": 13,
-   "fn": 0,
-   "false_alarm": 0.116,
-   "by_type": {
-    "access": 1.0,
-    "perception": 1.0,
-    "object": 1.0
-   },
-   "by_room": {
-    "entry": 1.0,
-    "bathroom": 1.0,
-    "kitchen": 1.0,
-    "bedroom": 1.0
-   },
-   "by_hazard": {
-    "DEM-E01": 1.0,
-    "DEM-B03": 1.0,
-    "DEM-K04": 1.0,
-    "DEM-K03": 1.0,
-    "DEM-B04": 1.0,
-    "DEM-R01": 1.0,
-    "DEM-K02": 1.0,
-    "DEM-R03": 1.0,
-    "DEM-R02": 1.0,
-    "DEM-E03": 1.0,
-    "DEM-B01": 1.0,
-    "DEM-E02": 1.0,
-    "DEM-R04": 1.0
-   },
-   "score": 0.942,
-   "loc_iou": 0.51
+   "score": 0.959,
+   "loc_iou": 0.551
   },
   {
    "model": "gpt-5.6-sol",
    "recall": 1.0,
-   "tp": 13,
+   "tp": 12,
    "fn": 0,
-   "false_alarm": 0.14,
+   "false_alarm": 0.139,
    "by_type": {
     "access": 1.0,
     "perception": 1.0,
@@ -129,22 +92,55 @@
     "DEM-B04": 1.0,
     "DEM-R01": 1.0,
     "DEM-K02": 1.0,
-    "DEM-R03": 1.0,
     "DEM-R02": 1.0,
     "DEM-E03": 1.0,
     "DEM-B01": 1.0,
     "DEM-E02": 1.0,
     "DEM-R04": 1.0
    },
-   "score": 0.93,
-   "loc_iou": 0.553
+   "score": 0.931,
+   "loc_iou": 0.571
+  },
+  {
+   "model": "qwen3-vl",
+   "recall": 1.0,
+   "tp": 12,
+   "fn": 0,
+   "false_alarm": 0.139,
+   "by_type": {
+    "access": 1.0,
+    "perception": 1.0,
+    "object": 1.0
+   },
+   "by_room": {
+    "entry": 1.0,
+    "bathroom": 1.0,
+    "kitchen": 1.0,
+    "bedroom": 1.0
+   },
+   "by_hazard": {
+    "DEM-E01": 1.0,
+    "DEM-B03": 1.0,
+    "DEM-K04": 1.0,
+    "DEM-K03": 1.0,
+    "DEM-B04": 1.0,
+    "DEM-R01": 1.0,
+    "DEM-K02": 1.0,
+    "DEM-R02": 1.0,
+    "DEM-E03": 1.0,
+    "DEM-B01": 1.0,
+    "DEM-E02": 1.0,
+    "DEM-R04": 1.0
+   },
+   "score": 0.931,
+   "loc_iou": 0.526
   },
   {
    "model": "claude-sonnet-5",
-   "recall": 0.923,
-   "tp": 12,
+   "recall": 0.917,
+   "tp": 11,
    "fn": 1,
-   "false_alarm": 0.116,
+   "false_alarm": 0.139,
    "by_type": {
     "access": 1.0,
     "perception": 0.667,
@@ -164,22 +160,21 @@
     "DEM-B04": 1.0,
     "DEM-R01": 1.0,
     "DEM-K02": 1.0,
-    "DEM-R03": 1.0,
     "DEM-R02": 1.0,
     "DEM-E03": 1.0,
     "DEM-B01": 1.0,
     "DEM-E02": 1.0,
     "DEM-R04": 1.0
    },
-   "score": 0.903,
-   "loc_iou": 0.028
+   "score": 0.889,
+   "loc_iou": 0.031
   },
   {
    "model": "llama-4-maverick",
    "recall": 1.0,
-   "tp": 13,
+   "tp": 12,
    "fn": 0,
-   "false_alarm": 0.349,
+   "false_alarm": 0.361,
    "by_type": {
     "access": 1.0,
     "perception": 1.0,
@@ -199,26 +194,25 @@
     "DEM-B04": 1.0,
     "DEM-R01": 1.0,
     "DEM-K02": 1.0,
-    "DEM-R03": 1.0,
     "DEM-R02": 1.0,
     "DEM-E03": 1.0,
     "DEM-B01": 1.0,
     "DEM-E02": 1.0,
     "DEM-R04": 1.0
    },
-   "score": 0.826,
-   "loc_iou": 0.054
+   "score": 0.819,
+   "loc_iou": 0.059
   },
   {
    "model": "nova-pro",
-   "recall": 0.769,
-   "tp": 10,
+   "recall": 0.75,
+   "tp": 9,
    "fn": 3,
-   "false_alarm": 0.14,
+   "false_alarm": 0.167,
    "by_type": {
     "access": 0.5,
     "perception": 0.667,
-    "object": 0.875
+    "object": 0.857
    },
    "by_room": {
     "entry": 0.667,
@@ -234,15 +228,14 @@
     "DEM-B04": 1.0,
     "DEM-R01": 1.0,
     "DEM-K02": 1.0,
-    "DEM-R03": 1.0,
     "DEM-R02": 1.0,
     "DEM-E03": 1.0,
     "DEM-B01": 1.0,
     "DEM-E02": 0.0,
     "DEM-R04": 1.0
    },
-   "score": 0.815,
-   "loc_iou": 0.489
+   "score": 0.792,
+   "loc_iou": 0.511
   }
  ],
  "known_absent": {
@@ -264,7 +257,6 @@
   "dem-bedroom-base0": [
    "DEM-R01",
    "DEM-R02",
-   "DEM-R03",
    "DEM-R04"
   ]
  },
@@ -522,40 +514,6 @@
     "other_major_changes": false,
     "note": "A knife block with large knives, a cutting board, and carrots were added on the counter right of the sink and are clearly visible. No distinct loose chef's knife is apparent. The small bowls and white toaster/bread box that were there were replaced in the edit area. The rest of the scene is unchanged.",
     "changed_frac": 0.0121
-   },
-   "verified": true
-  },
-  {
-   "id": "dem-bedroom-base0-DEM-R03",
-   "room": "bedroom",
-   "kind": "edit",
-   "base": "dem-bedroom-base0",
-   "prompt": "a black handgun pistol lying on top of the nightstand next to the lamp, photorealistic, same lighting and camera as the rest of the photo",
-   "hazards": [
-    {
-     "id": "DEM-R03",
-     "type": "object",
-     "box": [
-      576,
-      389,
-      716,
-      512
-     ]
-    }
-   ],
-   "mask": [
-    580,
-    400,
-    720,
-    560
-   ],
-   "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/benchmarks/dementia/renders/dem-bedroom-base0-DEM-R03.jpg",
-   "image": "renders/dem-bedroom-base0-DEM-R03.jpg",
-   "verify": {
-    "hazard_visible": true,
-    "other_major_changes": false,
-    "note": "Black handgun is clearly visible on the nightstand by the lamp. Minor side edits: cordless phone removed, a dark holster-like object added at the nightstand edge, and the drawer pulls restyled.",
-    "changed_frac": 0.0131
    },
    "verified": true
   },
@@ -2292,170 +2250,6 @@
     ]
    }
   },
-  "dem-bedroom-base0-DEM-R03": {
-   "claude-opus-5.5": {
-    "pred": [
-     "DEM-R03"
-    ],
-    "raw": [
-     {
-      "id": "DEM-R03",
-      "severity": "high",
-      "evidence": "A black handgun sits unsecured on the wooden nightstand beside the lit lamp, with a holster and other black gun accessories next to it at the bedside. A person with Alzheimer's disease could easily reach it, misidentify it, or handle it unsafely.",
-      "box": [
-       590,
-       395,
-       720,
-       480
-      ]
-     }
-    ]
-   },
-   "claude-sonnet-5": {
-    "pred": [
-     "DEM-R03"
-    ],
-    "raw": [
-     {
-      "id": "DEM-R03",
-      "severity": "high",
-      "evidence": "A black handgun is placed openly on the nightstand next to the lamp, easily accessible",
-      "box": [
-       979,
-       397,
-       1104,
-       461
-      ]
-     }
-    ]
-   },
-   "gpt-5.6-sol": {
-    "pred": [
-     "DEM-R03",
-     "DEM-B03",
-     "DEM-R02"
-    ],
-    "raw": [
-     {
-      "id": "DEM-R03",
-      "severity": "high",
-      "evidence": "A handgun is openly accessible on the nightstand beside the bed.",
-      "box": [
-       638,
-       394,
-       719,
-       469
-      ]
-     },
-     {
-      "id": "DEM-B03",
-      "severity": "medium",
-      "evidence": "A dark bath mat is visible on the light-colored bathroom floor.",
-      "box": [
-       829,
-       427,
-       946,
-       511
-      ]
-     },
-     {
-      "id": "DEM-R02",
-      "severity": "medium",
-      "evidence": "A high-contrast patterned runner rug is present in the walkway, which may be misperceived as an obstacle or change in floor level.",
-      "box": [
-       811,
-       488,
-       945,
-       629
-      ]
-     }
-    ]
-   },
-   "kimi-k3": {
-    "pred": [
-     "DEM-R03"
-    ],
-    "raw": [
-     {
-      "id": "DEM-R03",
-      "severity": "high",
-      "evidence": "A black handgun (pistol) is sitting out on the wooden nightstand next to the lit lamp, within easy reach of the bed.",
-      "box": [
-       636,
-       393,
-       719,
-       466
-      ]
-     }
-    ]
-   },
-   "llama-4-maverick": {
-    "pred": [
-     "DEM-R03",
-     "DEM-R01"
-    ],
-    "raw": [
-     {
-      "id": "DEM-R03",
-      "severity": "high",
-      "evidence": "handgun on the nightstand",
-      "box": [
-       0.608,
-       0.384,
-       0.718,
-       0.478
-      ]
-     },
-     {
-      "id": "DEM-R01",
-      "severity": "medium",
-      "evidence": "large mirror above the bed",
-      "box": [
-       0.344,
-       0.044,
-       0.664,
-       0.436
-      ]
-     }
-    ]
-   },
-   "nova-pro": {
-    "pred": [
-     "DEM-R03"
-    ],
-    "raw": [
-     {
-      "id": "DEM-R03",
-      "severity": "high",
-      "evidence": "handgun on the nightstand",
-      "box": [
-       639,
-       395,
-       719,
-       462
-      ]
-     }
-    ]
-   },
-   "qwen3-vl": {
-    "pred": [
-     "DEM-R03"
-    ],
-    "raw": [
-     {
-      "id": "DEM-R03",
-      "severity": "high",
-      "evidence": "A black handgun is clearly visible and accessible on the wooden nightstand next to the bed.",
-      "box": [
-       638,
-       391,
-       719,
-       463
-      ]
-     }
-    ]
-   }
-  },
   "dem-bedroom-base0-DEM-R02": {
    "claude-opus-5.5": {
     "pred": [
@@ -3514,8 +3308,7 @@
    "llama-4-maverick": {
     "pred": [
      "DEM-R01",
-     "DEM-B04",
-     "DEM-R03"
+     "DEM-B04"
     ],
     "raw": [
      {
@@ -3627,11 +3420,6 @@
    "name": "Bold high-contrast patterned rug",
    "room": "bedroom",
    "type": "perception"
-  },
-  "DEM-R03": {
-   "name": "Handgun on the nightstand",
-   "room": "bedroom",
-   "type": "object"
   },
   "DEM-R04": {
    "name": "Space heater next to bedding",

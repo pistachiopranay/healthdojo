@@ -138,19 +138,6 @@
   ]
  },
  {
-  "id": "dem-bedroom-base0-DEM-R03",
-  "room": "bedroom",
-  "kind": "edit",
-  "base": "dem-bedroom-base0",
-  "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this dementia home-safety hazard: Handgun on the nightstand. A black handgun lies on top of the nightstand next to the lamp.",
-  "hazards": [
-   {
-    "id": "DEM-R03",
-    "type": "object"
-   }
-  ]
- },
- {
   "id": "dem-bedroom-base0-DEM-R04",
   "room": "bedroom",
   "kind": "edit",

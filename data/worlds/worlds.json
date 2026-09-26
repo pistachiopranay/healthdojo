@@ -281,64 +281,6 @@
       }
     ]
   },
-  "dem-bedroom-base0-DEM-R03": {
-    "scene_id": "dem-bedroom-base0-DEM-R03",
-    "bench": "dementia",
-    "title": "Handgun on the nightstand",
-    "hazard": "A handgun left in reach on the bedside nightstand",
-    "text_prompt": "Carpeted bedroom of an older adult with a queen bed, dresser, corner cabinet, window with valance, and a wooden nightstand with a lamp; a black handgun lies on top of the nightstand beside the lamp.",
-    "hazard_id": "DEM-R03",
-    "hazard_name": "Handgun on the nightstand",
-    "guideline": {
-      "org": "Alzheimer's Association",
-      "line": "Remove firearms from the home or keep them in a locked cabinet.",
-      "url": "https://www.alz.org/getmedia/dc740fbd-9cdc-4b64-b274-9fc9ee4ec64e/alzheimers-dementia-home-safety-checklist.pdf"
-    },
-    "operation_id": "5b96d7fb-26e8-4039-875b-c9b96be68320",
-    "started_at": 1790452091.330027,
-    "model": "marble-1.1",
-    "status": "done",
-    "world_id": "d422fd9e-b01e-44cc-9990-b320cac14e5e",
-    "viewer_url": "https://marble.worldlabs.ai/world/d422fd9e-b01e-44cc-9990-b320cac14e5e",
-    "caption": "The scene is a realistic depiction of a carpeted bedroom, suggesting a comfortable and well-maintained personal space, likely belonging to an older adult. The overall tone is calm and domestic, with soft lighting enhancing the sense of tranquility. A queen-sized bed, dressed in a light-colored quilt and several pillows, dominates the central area of the room, positioned against a light-colored wall. To the right of the bed stands a wooden nightstand, upon which rests a traditional lamp with a cream-colored shade, casting a warm glow. Beside the lamp, a black handgun is prominently displayed on the nightstand's surface. On the left side of the bed, a window adorned with a green valance overlooks an outdoor scene, with light filtering through the blinds. Below the window, a wooden chest serves as additional seating or storage, topped with a plant. A corner cabinet, crafted from matching wood, stands against the wall at the foot of the bed, providing display or storage space. A large wooden dresser is positioned to the left of the bed, its polished surface holding a blue decorative object and a white doily. Beyond the nightstand, an open doorway reveals a hallway leading to another room, suggesting a connected living space. The entire floor is covered in a plush, light-colored carpet, contributing to the room's soft aesthetic. The 360 scene is faultless.",
-    "elapsed_s": 303,
-    "cost": {
-      "total_credits": 1580,
-      "line_items": [
-        {
-          "name": "Pano generation (image, non-pano)",
-          "credits": 80
-        },
-        {
-          "name": "World generation",
-          "credits": 1500
-        }
-      ]
-    },
-    "thumbnail": "data/worlds/dem-bedroom-base0-DEM-R03.thumb.jpg",
-    "pano": "data/worlds/dem-bedroom-base0-DEM-R03.pano.png",
-    "spz_urls": {
-      "500k": "https://cdn.marble.worldlabs.ai/d422fd9e-b01e-44cc-9990-b320cac14e5e/c34eb2d5-a9fa-419b-9f5a-9572cacf90e7_ceramic_500k.spz",
-      "100k": "https://cdn.marble.worldlabs.ai/d422fd9e-b01e-44cc-9990-b320cac14e5e/6b84618a-78cc-471c-8dbe-86d73b38d40d_dust_100k.spz",
-      "150k": "https://cdn.marble.worldlabs.ai/d422fd9e-b01e-44cc-9990-b320cac14e5e/d546d71b-630e-444a-8d5d-47f0fc1a4e5b_ceramic_150k.spz",
-      "full_res": "https://cdn.marble.worldlabs.ai/d422fd9e-b01e-44cc-9990-b320cac14e5e/23b8cb56-38d8-4236-9310-b778b5d4a0e0_ceramic.spz"
-    },
-    "semantics_metadata": {
-      "metric_scale_factor": 0.5984627,
-      "ground_plane_offset": 1.3595641
-    },
-    "collider_mesh_url": "https://cdn.marble.worldlabs.ai/d422fd9e-b01e-44cc-9990-b320cac14e5e/77135e00.glb",
-    "walk_url": "world.html?id=dem-bedroom-base0-DEM-R03",
-    "hazard_dirs": [
-      {
-        "yaw": 18.3,
-        "pitch": -7.3,
-        "r": 6,
-        "label": "handgun on the nightstand",
-        "approx": false
-      }
-    ]
-  },
   "dem-bathroom-base0-DEM-B03": {
     "scene_id": "dem-bathroom-base0-DEM-B03",
     "bench": "dementia",
