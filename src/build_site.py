@@ -120,7 +120,7 @@ def main():
     html = (ROOT / "src" / "site_template.html").read_text().replace("/*DATA*/null", json.dumps(res, separators=(",", ":")))
     out = SITE / (f"{BENCH}.html" if BENCH else "index.html")
     html = bench_copy(html, len(res.get("taxonomy", {})))
-    html = html.replace(f'data-bench="{BENCH or "homebench"}"', f'data-bench="{BENCH or "homebench"}" style="color:var(--ink);text-decoration:underline"')
+    html = html.replace(f'data-bench="{BENCH or "homebench"}"', f'data-bench="{BENCH or "homebench"}" class="on"')
     out.write_text(html)
     print("wrote", out, f"({len(res['leaderboard'])} models, {len(res['scenes'])} scenes)")
 

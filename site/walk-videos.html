@@ -20,7 +20,7 @@ h1,h2{font-weight:600;letter-spacing:-.02em;color:var(--ink);margin:0}
 h1{font-size:44px;line-height:1.06;margin-top:12px}h1 em{font-style:normal;color:var(--green-ink)}
 h2{font-size:22px;margin-top:6px}
 .lede{font-size:17px;max-width:62ch;margin:16px 0 0}
-header{padding:64px 0 28px}
+header{padding:36px 0 28px}
 .vid{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin:0 0 36px}
 .vid video{display:block;width:100%;height:auto;background:#10180c;aspect-ratio:1440/900}
 .cap{padding:18px 22px 22px}.cap p{margin:8px 0 0;max-width:72ch}
@@ -29,13 +29,34 @@ header{padding:64px 0 28px}
 .live{background:var(--lime-soft);border:1px solid var(--lime);border-radius:12px;padding:20px 22px;margin:8px 0 64px}
 .live b{color:var(--green-ink)}.note{font-size:13px;color:var(--text-muted)}
 footer{border-top:1px solid var(--border-soft);padding:24px 0 48px}
+/* ---- shared floating pill nav (mirrors home.html) ---- */
+.hdnav{position:fixed;left:0;right:0;top:12px;z-index:60;display:flex;justify-content:center;pointer-events:none;font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.hdnav .pill{pointer-events:auto;width:min(1100px,calc(100vw - 32px));height:52px;display:flex;align-items:center;gap:18px;padding:0 8px 0 18px;border-radius:999px;background:rgba(252,252,250,.72);-webkit-backdrop-filter:blur(16px) saturate(1.2);backdrop-filter:blur(16px) saturate(1.2);border:1px solid rgba(31,33,35,.08);box-shadow:0 1px 2px rgba(31,33,35,.06),0 6px 20px -10px rgba(31,33,35,.18)}
+.hdnav .hd-logo{display:inline-flex;align-items:center;gap:8px;font:600 18px/1 "Inter",sans-serif;letter-spacing:-.02em;text-decoration:none;color:#1f2123}
+.hdnav .hd-logo i{font-style:normal;color:#2e7a18}
+.hdnav .hd-logo .hd-mark{display:block;flex:none;padding:0;margin:0;width:12px;height:12px;border-radius:3px;background:#d5fd51;border:1px solid #46a82c}
+.hdnav .hd-links{display:flex;align-items:center;margin-left:auto;gap:2px;font-size:14px;font-weight:500}
+.hdnav .hd-links a{color:#646668;text-decoration:none;padding:6px 12px;border-radius:999px;border:0;transition:background .2s,color .2s}
+.hdnav .hd-links a:hover,.hdnav .hd-links a.on{color:#1f2123;background:#f3fedc}
+.hdnav .hd-cta{font:600 14px "Inter",sans-serif;text-decoration:none;background:#d5fd51;color:#2e7a18;border:1px solid #46a82c;padding:8px 16px;border-radius:999px;white-space:nowrap}
+.hdnav .hd-cta:hover{background:#c7ef3d}
+.hdnav-space{height:84px}
+@media(max-width:900px){.hdnav .hd-links a:not(.on){display:none}}
+.subnav{display:inline-flex;margin-top:18px;padding:3px;border:1px solid var(--border);border-radius:999px;background:#fff;gap:2px}
+.subnav a{font:500 13px var(--sans);text-decoration:none;color:var(--text-muted);padding:6px 16px;border-radius:999px;border:1px solid transparent}
+.subnav a:hover{color:var(--ink)}.subnav a.on{background:var(--lime);color:var(--green-ink);border-color:var(--green-active);font-weight:600}
 </style></head><body>
-<nav><div class="wrap"><a class="logo" href="home.html">Health<i>Dojo</i></a><div class="links"><a href="index.html">Home</a><a href="walk.html">Walk traces</a><a href="worlds_3d.html">Worlds</a></div></div></nav>
+<div class="hdnav" role="navigation"><div class="pill">
+  <a class="hd-logo" href="home.html"><span class="hd-mark"></span><span>Health<i>Dojo</i></span></a>
+  <div class="hd-links"><a href="guidelines.html">Simulators</a><a href="index.html">Leaderboard</a><a href="worlds_3d.html">3D worlds</a><a href="walk-videos.html" class="on">Walkthroughs</a><a href="https://github.com/pistachiopranay/healthdojo">GitHub</a></div>
+  <a href="guidelines.html" class="hd-cta">Explore the simulators →</a>
+</div></div><div class="hdnav-space"></div>
 <main class="wrap">
 <header>
   <div class="eyebrow">Walkthrough replays</div>
   <h1>Drop a vision model into a <em>real home</em>. Watch it look.</h1>
   <p class="lede">Each model gets a 360° capture of a room with one seeded fall hazard and 8 steps. It turns, zooms, and flags what it sees, narrating as it goes. These are recorded replays of saved runs, with the model's own narration voiced.</p>
+  <div class="subnav"><a class="on" href="walk-videos.html">Recorded replays</a><a href="walk.html">Step-by-step traces</a></div>
 </header>
 
 <section class="vid">

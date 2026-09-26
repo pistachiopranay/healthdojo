@@ -269,7 +269,7 @@ def main():
               "rubric": len(b["rubric"]), "images": len(b["items"]), "levels": len(b["levels"]), "worlds": len(b["worlds"]),
               "status": b["status"], "cover": (b["items"][-1]["thumb"] if b["items"] else (b["worlds"][0]["thumb"] if b["worlds"] else None))}
              for b in benches]
-    (SITE / "guidelines.html").write_text(page("library_template_index.html", "HealthDojo · Guideline library",
+    (SITE / "guidelines.html").write_text(page("library_template_index.html", "HealthDojo · Simulators",
                                                {"cards": cards, "coming": COMING}, "guidelines"))
     print("wrote site/guidelines.html")
     for b in benches:

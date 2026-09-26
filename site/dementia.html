@@ -303,15 +303,30 @@ footer{padding:40px 0 32px;font-size:13px}
 .btn{font-size:14px;padding:8px 14px}
 .chipk{font-size:11px;padding:2px 8px}
 .hero-grid{grid-template-columns:1.25fr .75fr}
+/* ---- shared floating pill nav (mirrors home.html) ---- */
+.hdnav{position:fixed;left:0;right:0;top:12px;z-index:60;display:flex;justify-content:center;pointer-events:none;font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.hdnav .pill{pointer-events:auto;width:min(1100px,calc(100vw - 32px));height:52px;display:flex;align-items:center;gap:18px;padding:0 8px 0 18px;border-radius:999px;background:rgba(252,252,250,.72);-webkit-backdrop-filter:blur(16px) saturate(1.2);backdrop-filter:blur(16px) saturate(1.2);border:1px solid rgba(31,33,35,.08);box-shadow:0 1px 2px rgba(31,33,35,.06),0 6px 20px -10px rgba(31,33,35,.18)}
+.hdnav .hd-logo{display:inline-flex;align-items:center;gap:8px;font:600 18px/1 "Inter",sans-serif;letter-spacing:-.02em;text-decoration:none;color:#1f2123}
+.hdnav .hd-logo i{font-style:normal;color:#2e7a18}
+.hdnav .hd-logo .hd-mark{display:block;flex:none;padding:0;margin:0;width:12px;height:12px;border-radius:3px;background:#d5fd51;border:1px solid #46a82c}
+.hdnav .hd-links{display:flex;align-items:center;margin-left:auto;gap:2px;font-size:14px;font-weight:500}
+.hdnav .hd-links a{color:#646668;text-decoration:none;padding:6px 12px;border-radius:999px;border:0;transition:background .2s,color .2s}
+.hdnav .hd-links a:hover,.hdnav .hd-links a.on{color:#1f2123;background:#f3fedc}
+.hdnav .hd-cta{font:600 14px "Inter",sans-serif;text-decoration:none;background:#d5fd51;color:#2e7a18;border:1px solid #46a82c;padding:8px 16px;border-radius:999px;white-space:nowrap}
+.hdnav .hd-cta:hover{background:#c7ef3d}
+.hdnav-space{height:84px}
+@media(max-width:900px){.hdnav .hd-links a:not(.on){display:none}}
+.benchseg{display:inline-flex;margin-top:22px;padding:3px;border:1px solid var(--border);border-radius:999px;background:var(--card);gap:2px}
+.benchseg a{font:500 13px var(--sans);text-decoration:none;color:var(--text-muted);padding:6px 16px;border-radius:999px;border:1px solid transparent}
+.benchseg a:hover{color:var(--ink)}
+.benchseg a.on{background:var(--lime);color:var(--green-ink);border-color:var(--green-active);font-weight:600}
 </style></head><body>
 
-<nav><div class="wrap">
-  <a class="logo" href="home.html">Health<i>Dojo</i></a>
-  <div class="links">
-    <a href="guidelines.html"><b>Guidelines</b></a><a href="index.html" data-bench="homebench"><b>HomeBench</b></a><a href="dementia.html" data-bench="dementia" style="color:var(--ink);text-decoration:underline"><b>DementiaBench</b></a>
-    <a href="#why">How it works</a><a href="#leaderboard">Leaderboard</a><a href="#failures">Where models fail</a><a href="#scenes">Scenes</a><a href="walk-videos.html" class="ext">Walkthrough videos</a><a href="#worlds">3D</a><a href="walk.html">Walkthrough</a>
-  </div>
-</div></nav>
+<div class="hdnav" role="navigation"><div class="pill">
+  <a class="hd-logo" href="home.html"><span class="hd-mark"></span><span>Health<i>Dojo</i></span></a>
+  <div class="hd-links"><a href="guidelines.html">Simulators</a><a href="index.html" class="on">Leaderboard</a><a href="worlds_3d.html">3D worlds</a><a href="walk-videos.html">Walkthroughs</a><a href="https://github.com/pistachiopranay/healthdojo">GitHub</a></div>
+  <a href="guidelines.html" class="hd-cta">Explore the simulators →</a>
+</div></div><div class="hdnav-space"></div>
 
 <header class="hero" id="top"><div class="wrap">
   <div class="hero-grid">
@@ -319,6 +334,7 @@ footer{padding:40px 0 32px;font-size:13px}
       <div class="eyebrow">DementiaBench v0 · compiled from dementia home-safety guidance <span style="color:var(--mute)">(Alzheimer's Association, NIA, Alzheimer's Society)</span></div>
       <h1>The flight simulator for <em>home-health AI.</em></h1>
       <p class="lede">HealthDojo turns <b>real clinical guidelines</b> into <b>synthetic homes with exact, verified labels</b>, so AI companies can pressure-test their models before a single patient trial. Guidelines in, benchmarks out.</p>
+      <div class="benchseg" role="tablist" aria-label="Benchmark"><a href="index.html" data-bench="homebench">HomeBench</a><a href="dementia.html" data-bench="dementia" class="on">DementiaBench</a></div>
     </div>
     <figure class="hero-fig" id="heroFig"></figure>
   </div>
@@ -555,9 +571,5 @@ $("#viewer").onclick=e=>{if(e.target.id==="viewer")closeViewer()};
 document.addEventListener("keydown",e=>{if(e.key==="Escape")closeViewer()});
 
 if(location.hash.startsWith("#scene="))openViewer(decodeURIComponent(location.hash.slice(7)));
-// ---------- nav highlight ----------
-const links=[...document.querySelectorAll("nav .links a")];
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-40% 0px -55% 0px"});
-["why","leaderboard","failures","scenes","worlds"].forEach(id=>io.observe(document.getElementById(id)));
 </script>
 </body></html>
