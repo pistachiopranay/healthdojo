@@ -66,6 +66,28 @@ table.lb{width:100%;border-collapse:collapse;font-size:18px}
 .matrix td{font-size:16px}
 .note{font-size:15px;color:var(--mute);margin-top:14px;max-width:110ch}
 section{padding:40px 0}
+/* ---- Ivan-style polish: crisp floating app windows over blurred sim-home backdrops (site/art/bg-*.jpg = our own 3D worlds) ---- */
+html,body{overflow-x:clip}
+.bleed{position:relative;isolation:isolate;padding:56px 0 64px}
+.bleed::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);
+  background:linear-gradient(180deg,var(--canvas) 0,rgba(252,252,250,0) 16%,rgba(252,252,250,0) 84%,var(--canvas) 100%),
+  linear-gradient(115deg,rgba(243,254,220,.62),rgba(247,242,229,.30) 48%,rgba(234,247,226,.55)),var(--bd,url(art/bg-living.jpg)) center/cover no-repeat}
+.appwin{background:var(--card);border:1px solid rgba(31,33,35,.09);border-radius:12px;box-shadow:0 1px 2px rgba(31,33,35,.05),0 28px 72px -28px rgba(31,33,35,.32);overflow:hidden}
+.winhead{padding:40px 44px 34px;border-bottom:1px solid var(--border-soft);
+  background:radial-gradient(110% 150% at 88% 0%,var(--lime-soft) 0,rgba(243,254,220,0) 58%),radial-gradient(80% 130% at 0% 100%,var(--green-soft) 0,rgba(234,247,226,0) 62%),linear-gradient(180deg,#fbf8f0,#fff)}
+.winhead .eyebrow{color:var(--text-muted);font-size:13px}
+.say{font:500 50px/1.16 var(--sans);letter-spacing:-.035em;color:var(--ink);margin:10px 0 0;max-width:34ch}
+.say .m{color:#a3a5a7}
+.say .ic{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:var(--lime);border:1px solid var(--green-active);color:var(--green-ink);font:500 22px/1 var(--mono);vertical-align:-4px;margin:0 10px 0 2px;letter-spacing:0}
+.say .ic.g{background:var(--gold-soft);border-color:var(--gold);color:var(--gold-ink)}
+.say .ic.c{background:var(--cream);border-color:var(--cream-strong);color:var(--cream-ink)}
+/* tokens used by the shared polish block */
+:root{--canvas:#fcfcfa;--border:#e6e6e1;--border-soft:#f0f0ec;--green-soft:#eaf7e2;--green-ink:#2e7a18;--gold-ink:#8a6420;--cream-strong:#efe6cf;--text-muted:#646668}
+nav{background:rgba(252,252,250,.88);border-bottom-color:var(--border-soft)}
+.logo{font-size:27px}
+nav .links{font-weight:400;align-items:center}nav .links a{color:var(--text-muted)}
+.appwin .stage{margin-top:0}
+.appwin .side{border:0;border-left:1px solid var(--border-soft);border-radius:0}
 </style></head><body>
 <nav><div class="wrap"><a class="logo" href="index.html">Health<i>Dojo</i></a><div class="links"><a href="guidelines.html">Guidelines</a><a href="index.html">Benchmark</a><a href="worlds_3d.html">3D worlds</a><a href="walk.html" style="color:var(--ink);border-bottom:2px solid var(--green-active)">Walkthrough</a><a href="http://localhost:8792/">Live ▶</a></div></div></nav>
 <div class="wrap">
@@ -75,19 +97,19 @@ section{padding:40px 0}
   <p class="lede">Each model stands inside a 360° home, starts facing <b>away</b> from the seeded fall hazard, and has <b id="budget">8</b> moves to turn, look, zoom and flag. We grade where it chose to look, not just what it said.</p>
   <div class="pick" id="worldPick"><b>World</b></div>
   <div class="pick" id="modelPick"><b>Model</b></div>
-  <div class="stage">
+  <div class="bleed" style="--bd:url(art/bg-living.jpg);margin-top:24px"><div class="appwin" style="padding:22px 0 22px 22px"><div class="stage">
     <div>
       <div class="pano"><img id="panoImg" alt=""><svg id="ov" viewBox="0 0 1600 800" preserveAspectRatio="none"></svg></div>
       <div class="legend"><span><i style="background:var(--gold)"></i>Seeded hazard (ground truth)</span><span><i style="background:var(--lime);border:2px solid var(--teal)"></i>Where the model looked (numbered)</span><span><i style="background:#eb5d2a"></i>Flag (miss)</span><span><i style="background:#5ac53a"></i>Flag (hit)</span></div>
     </div>
     <div class="card side" id="side"></div>
-  </div>
+  </div></div></div>
   <h2 style="margin-top:36px">What it saw, and what it thought</h2>
   <div class="film" id="film"></div>
 </section>
 <section>
   <h2>Leaderboard · walkthrough</h2>
-  <div class="card"><table class="lb" id="lb"></table></div>
+  <div class="bleed" style="--bd:url(art/bg-entry.jpg);padding:40px 0 48px"><div class="card appwin"><table class="lb" id="lb"></table></div></div>
   <p class="note" id="lbnote"></p>
   <h2 style="margin-top:36px">Per-world result</h2>
   <div class="card"><table class="lb matrix" id="mx"></table></div>

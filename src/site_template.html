@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HealthDojo · Guidelines in. Benchmarks out.</title>
+<title>HealthDojo · The flight simulator for home-health AI</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -197,6 +197,36 @@ table.heat{border-collapse:separate;border-spacing:4px;width:100%}
 /* placeholders */
 .ph:empty{min-height:260px;border:1px dashed var(--border);border-radius:12px;display:flex;align-items:center;justify-content:center;color:var(--text-muted);font-size:18px;background:var(--surface-muted)}
 .ph:empty::before{content:attr(data-ph)}
+/* ---- Ivan-style polish: crisp floating app windows over blurred sim-home backdrops (site/art/bg-*.jpg = our own 3D worlds) ---- */
+html,body{overflow-x:clip}
+.bleed{position:relative;isolation:isolate;padding:56px 0 64px}
+.bleed::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);
+  background:linear-gradient(180deg,var(--canvas) 0,rgba(252,252,250,0) 16%,rgba(252,252,250,0) 84%,var(--canvas) 100%),
+  linear-gradient(115deg,rgba(243,254,220,.62),rgba(247,242,229,.30) 48%,rgba(234,247,226,.55)),var(--bd,url(art/bg-living.jpg)) center/cover no-repeat}
+.appwin{background:var(--card);border:1px solid rgba(31,33,35,.09);border-radius:12px;box-shadow:0 1px 2px rgba(31,33,35,.05),0 28px 72px -28px rgba(31,33,35,.32);overflow:hidden}
+.winhead{padding:40px 44px 34px;border-bottom:1px solid var(--border-soft);
+  background:radial-gradient(110% 150% at 88% 0%,var(--lime-soft) 0,rgba(243,254,220,0) 58%),radial-gradient(80% 130% at 0% 100%,var(--green-soft) 0,rgba(234,247,226,0) 62%),linear-gradient(180deg,#fbf8f0,#fff)}
+.winhead .eyebrow{color:var(--text-muted);font-size:13px}
+.say{font:500 50px/1.16 var(--sans);letter-spacing:-.035em;color:var(--ink);margin:10px 0 0;max-width:34ch}
+.say .m{color:#a3a5a7}
+.say .ic{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:var(--lime);border:1px solid var(--green-active);color:var(--green-ink);font:500 22px/1 var(--mono);vertical-align:-4px;margin:0 10px 0 2px;letter-spacing:0}
+.say .ic.g{background:var(--gold-soft);border-color:var(--gold);color:var(--gold-ink)}
+.say .ic.c{background:var(--cream);border-color:var(--cream-strong);color:var(--cream-ink)}
+/* quiet nav */
+nav{background:rgba(252,252,250,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--border-soft)}
+.logo{font-size:27px}
+nav .links{gap:22px;font-weight:400}
+nav .links a{color:var(--text-muted)}nav .links a b{font-weight:500}
+nav .links a.ext{padding:6px 14px;font-weight:500}
+/* hero stats inside the window: hairline table */
+.appwin .stats{margin-top:0;border-top:0}
+.appwin .stat{padding:26px 32px 28px;border-left:1px solid var(--border-soft)}
+.appwin .stat:first-child{border-left:0}
+.appwin .stat b{font-size:60px}
+.hero{padding-bottom:8px}
+#leaderboard.sec,#failures.sec{padding-top:88px}
+.bleed .money{box-shadow:0 1px 2px rgba(31,33,35,.05),0 28px 72px -28px rgba(31,33,35,.32);border-color:rgba(31,33,35,.09)}
+.appwin table.lb th{background:#fbfaf6}
 footer{padding:80px 0 60px;color:var(--text-muted);font-size:15px}
 footer .wrap{border-top:1px solid var(--border);padding-top:28px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
 </style></head><body>
@@ -213,12 +243,12 @@ footer .wrap{border-top:1px solid var(--border);padding-top:28px;display:flex;ju
   <div class="hero-grid">
     <div>
       <div class="eyebrow">HomeBench v0 · compiled from the post-op fall-prevention guideline <span style="color:var(--mute)">(customer #1: HomeReady)</span></div>
-      <h1>Guidelines in. <em>Benchmarks out.</em></h1>
-      <p class="lede">HealthDojo turns <b>clinical guidelines</b> into <b>verified, scored evals</b> for home-health AI. Every label exists before the pixels, so every answer is graded against exact ground truth.</p>
+      <h1>The flight simulator for <em>home-health AI.</em></h1>
+      <p class="lede">HealthDojo turns <b>real clinical guidelines</b> into <b>synthetic homes with exact, verified labels</b>, so AI companies can pressure-test their models before a single patient trial. Guidelines in, benchmarks out.</p>
     </div>
     <figure class="hero-fig" id="heroFig"></figure>
   </div>
-  <div class="stats" id="stats"></div>
+  <div class="bleed" style="margin-top:56px"><div class="appwin"><div class="winhead"><div class="eyebrow">The report card, at a glance</div><p class="say" id="say"></p></div><div class="stats" id="stats"></div></div></div>
 </div></header>
 
 <section class="problem" id="why"><div class="wrap">
@@ -243,13 +273,13 @@ footer .wrap{border-top:1px solid var(--border);padding-top:28px;display:flex;ju
     <div><div class="eyebrow">HomeBench leaderboard</div><h2>Who can see a dangerous home?</h2></div>
     <p>Every model sees the same scenes and the same 35-hazard checklist. Click a column to sort.</p>
   </div>
-  <div class="card" style="overflow-x:auto"><table class="lb" id="board"></table></div>
+  <div class="bleed" style="--bd:url(art/bg-bedroom.jpg)"><div class="card appwin" style="overflow-x:auto"><table class="lb" id="board"></table></div></div>
   <div class="note"><b>Score</b> = mean of recall and (1 − false-alarm rate). <b>Recall</b> = seeded hazards found. <b>False alarm</b> = model reports a hazard we verified is <i>not</i> in the room (e.g. "no grab bar" when there are three). <b>Precision</b> = hits ÷ (hits + verified false alarms). <b>Loc IoU</b> = box overlap on hits.</div>
 </div></section>
 
 <section class="sec" id="failures"><div class="wrap">
   <div class="eyebrow" style="margin-bottom:14px">Where every model fails</div>
-  <div class="money">
+  <div class="bleed" style="--bd:url(art/bg-stairs.jpg);padding-top:40px"><div class="money">
     <div class="headline" id="headline"></div>
     <p class="headline-sub" id="headlineSub"></p>
     <div class="callout" id="genCallout"></div>
@@ -259,7 +289,7 @@ footer .wrap{border-top:1px solid var(--border);padding-top:28px;display:flex;ju
       <div class="hm"><h3>Recall by room</h3><table class="heat" id="heatRoom"></table></div>
     </div>
     <div class="legend"><span>0% found</span><div class="ramp" id="ramp"></div><span>100% found</span><span style="margin-left:18px">— not tested yet</span></div>
-  </div>
+  </div></div>
   <div class="note"><b>Object</b> = something in the way (rug, cord, clutter). <b>Absence</b> = something missing (grab bar, stair rail). <b>Measurement</b> = geometry (toilet height, doorway too narrow for a walker). <b>Lighting</b> = too dark to see the path.</div>
 </div></section>
 
@@ -318,6 +348,7 @@ $("#ramp").style.background=`linear-gradient(90deg,${heat(0).bg},${heat(.25).bg}
   const nHaz=edits.reduce((n,s)=>n+s.hazards.length,0);
   const bases=SCENES.filter(s=>s.kind==="base").length;
   const stats=[[SCENES.length,"verified scenes",`${edits.length} hazard edits + ${bases} clean rooms`],[nHaz,"seeded hazards","each with exact ground truth"],[Object.keys(TAX).length,"hazard types","in the clinical taxonomy"],[MODELS.length,"vision models","scored on the same scenes"]];
+  $("#say").innerHTML=`<span class="ic">◐</span>${MODELS.length} vision models <span class="m">looked at</span> <span class="ic c">▦</span>${SCENES.length} verified scenes <span class="m">and hunted for</span> <span class="ic g">⚑</span>${nHaz} seeded hazards<span class="m">, each with exact ground truth.</span>`;
   $("#stats").innerHTML=stats.map(([n,l,s])=>`<div class="stat"><b>${n}</b><span><b style="font:600 17px var(--sans);color:var(--ink);display:inline">${l}</b><br>${s}</span></div>`).join("");
   const pick=edits.find(s=>s.hazards.some(h=>h.box))||edits[0]||SCENES[0];
   if(!pick) return;

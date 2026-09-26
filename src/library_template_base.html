@@ -56,6 +56,27 @@ h3{font-family:var(--sans);font-weight:600;font-size:24px;letter-spacing:-.01em;
 .btn.pri:hover{background:var(--lime-active)}
 footer{padding:80px 0 60px;color:var(--text-muted);font-size:15px}
 footer .wrap{border-top:1px solid var(--border);padding-top:28px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+/* ---- Ivan-style polish: crisp floating app windows over blurred sim-home backdrops (site/art/bg-*.jpg = our own 3D worlds) ---- */
+html,body{overflow-x:clip}
+.bleed{position:relative;isolation:isolate;padding:56px 0 64px}
+.bleed::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:50%;width:100vw;transform:translateX(-50%);
+  background:linear-gradient(180deg,var(--canvas) 0,rgba(252,252,250,0) 16%,rgba(252,252,250,0) 84%,var(--canvas) 100%),
+  linear-gradient(115deg,rgba(243,254,220,.62),rgba(247,242,229,.30) 48%,rgba(234,247,226,.55)),var(--bd,url(art/bg-living.jpg)) center/cover no-repeat}
+.appwin{background:var(--card);border:1px solid rgba(31,33,35,.09);border-radius:12px;box-shadow:0 1px 2px rgba(31,33,35,.05),0 28px 72px -28px rgba(31,33,35,.32);overflow:hidden}
+.winhead{padding:40px 44px 34px;border-bottom:1px solid var(--border-soft);
+  background:radial-gradient(110% 150% at 88% 0%,var(--lime-soft) 0,rgba(243,254,220,0) 58%),radial-gradient(80% 130% at 0% 100%,var(--green-soft) 0,rgba(234,247,226,0) 62%),linear-gradient(180deg,#fbf8f0,#fff)}
+.winhead .eyebrow{color:var(--text-muted);font-size:13px}
+.say{font:500 50px/1.16 var(--sans);letter-spacing:-.035em;color:var(--ink);margin:10px 0 0;max-width:34ch}
+.say .m{color:#a3a5a7}
+.say .ic{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:var(--lime);border:1px solid var(--green-active);color:var(--green-ink);font:500 22px/1 var(--mono);vertical-align:-4px;margin:0 10px 0 2px;letter-spacing:0}
+.say .ic.g{background:var(--gold-soft);border-color:var(--gold);color:var(--gold-ink)}
+.say .ic.c{background:var(--cream);border-color:var(--cream-strong);color:var(--cream-ink)}
+/* quiet nav */
+nav.top{background:rgba(252,252,250,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--border-soft)}
+nav.top .logo{font-size:27px}
+nav.top .links{gap:22px;font-weight:400}
+nav.top .links a{color:var(--text-muted)}nav.top .links a b{font-weight:500}
+nav.top .links a.ext{padding:6px 14px;font-weight:500}
 .rise{animation:rise .24s var(--ease) both}@keyframes rise{from{opacity:0;transform:translateY(4px)}}
 </style></head><body>
 <nav class="top"><div class="wrap">

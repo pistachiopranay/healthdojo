@@ -1,11 +1,12 @@
 <style>
-.hero{padding:80px 0 40px}
+.hero{padding:80px 0 0}
 .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:56px;align-items:end}
 .ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
-.hstats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink);margin-top:56px}
-.hstats div{padding:22px 24px 0 0}
+.hstats{display:grid;grid-template-columns:repeat(4,1fr)}
+.hstats div{padding:26px 32px 28px;border-left:1px solid var(--border-soft)}.hstats div:first-child{border-left:0}
 .hstats b{display:block;white-space:nowrap;font:500 60px/1 var(--mono);letter-spacing:-.03em;color:var(--ink)}
 .hstats span{display:block;margin-top:10px;color:var(--text-muted);font-size:16px}
+.hstats b span{display:inline;margin:0}
 .srcbox{padding:22px 24px}
 .srcbox .pub{font:500 13px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted)}
 .srcbox .nm{font:600 20px/1.3 var(--sans);color:var(--ink);margin:6px 0 10px}
@@ -13,7 +14,7 @@
 .srcbox a{color:var(--green-ink);font-weight:500;text-decoration:none;font-size:15px}
 
 /* step nav */
-.steps{position:sticky;top:68px;z-index:30;background:rgba(252,252,250,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--border)}
+.steps{position:sticky;top:68px;z-index:30;background:rgba(252,252,250,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--border-soft)}
 .steps .wrap{display:flex;align-items:center;gap:6px;height:64px;overflow-x:auto}
 .steps a{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text-muted);font:500 16px var(--sans);padding:8px 14px;border-radius:6px;border:1px solid transparent;white-space:nowrap}
 .steps a i{font:500 13px var(--mono);font-style:normal;color:var(--text-faint)}
@@ -211,7 +212,7 @@ details.tbl th:first-child,details.tbl td:first-child{text-align:left;font-famil
     </div>
     <div class="card srcbox" id="src"></div>
   </div>
-  <div class="hstats" id="hstats"></div>
+  <div class="bleed" style="--bd:var(--hero-bd);margin-top:48px"><div class="appwin"><div class="winhead"><div class="eyebrow">This simulator, at a glance</div><p class="say" id="say"></p></div><div class="hstats" id="hstats"></div></div></div>
 </div></header>
 
 <div class="steps"><div class="wrap" id="stepnav">
@@ -225,10 +226,10 @@ details.tbl th:first-child,details.tbl td:first-child{text-align:left;font-famil
 <section class="sec" id="guideline"><div class="wrap">
   <div class="sec-head"><div><div class="eyebrow">01 · Guideline → 02 · Rubric</div><h2>Every rubric row <em>quotes its source.</em></h2></div>
   <p>Left: the guideline as published, line by line. Right: the rubric compiled from it. Hover a row to see the exact line it comes from.</p></div>
-  <div class="gr">
-    <div class="card gpanel"><div class="gh"><b>Source text</b><a id="glink" class="note" style="text-decoration:none;color:var(--green-ink)" target="_blank" rel="noopener">Open original ↗</a></div><div class="lines" id="lines"></div></div>
-    <div id="rubric"><div class="rtop"><div class="note" id="rsum"></div><span class="appr" id="apprAll">Awaiting clinician</span></div><div class="card" id="rows"></div><div class="note" id="icdnote" style="margin-top:12px"></div></div>
-  </div>
+  <div class="bleed" style="--bd:url(art/bg-bedroom.jpg);padding:48px 0 56px"><div class="gr">
+    <div class="card appwin gpanel"><div class="gh"><b>Source text</b><a id="glink" class="note" style="text-decoration:none;color:var(--green-ink)" target="_blank" rel="noopener">Open original ↗</a></div><div class="lines" id="lines"></div></div>
+    <div id="rubric"><div class="rtop"><div class="note" id="rsum"></div><span class="appr" id="apprAll">Awaiting clinician</span></div><div class="card appwin" id="rows"></div><div class="note" id="icdnote" style="margin-top:12px"></div></div>
+  </div></div>
 </div></section>
 
 <section class="sec" id="curriculum"><div class="wrap">
@@ -248,7 +249,7 @@ details.tbl th:first-child,details.tbl td:first-child{text-align:left;font-famil
 
 <section class="sec" id="curve"><div class="wrap">
   <div class="eyebrow" style="margin-bottom:14px">05 · Difficulty curve</div>
-  <div class="card money" id="curvebox"></div>
+  <div class="bleed" style="--bd:url(art/bg-living.jpg);padding:40px 0 56px"><div class="card appwin money" id="curvebox"></div></div>
   <div class="endcta"><div><div class="eyebrow">Your turn</div><h3>Put your model in the simulator.</h3></div><div class="ctas" style="margin:0"><a class="btn pri" href="http://localhost:8791">Run your model through this simulator →</a><a class="btn" id="rc2" href="index.html">Report card →</a></div></div>
 </div></section>
 
@@ -276,6 +277,8 @@ $("#rc").href=$("#rc2").href=D.report;
 $("#src").innerHTML=`<div class="pub">Source guideline</div><div class="nm">${esc(G.name||"")}</div><div class="pub" style="text-transform:none;letter-spacing:0;font-size:14px">${esc(G.publisher||"")}</div>${G.url?`<a href="${esc(G.url)}" target="_blank" rel="noopener">${esc(G.url.replace(/^https?:\/\//,"").slice(0,64))}${G.url.length>72?"…":""} ↗</a>`:""}<div class="lic">${esc(G.license||"")}</div>`;
 if(G.url)$("#glink").href=G.url;else $("#glink").remove();
 const nHaz=IT.reduce((n,i)=>n+i.hazards.length,0),nDis=IT.reduce((n,i)=>n+i.distractors.length,0);
+document.documentElement.style.setProperty("--hero-bd",D.bench==="dementia"?"url(art/bg-kitchen.jpg)":"url(art/bg-stairs.jpg)");
+$("#say").innerHTML=`<span class="m">One guideline became</span> <span class="ic">§</span>${RUB.length} rubric rows<span class="m">,</span> <span class="ic c">▦</span>${IT.length?IT.length+" labeled homes":"synthetic homes"} <span class="m">across ${LV.length||5} levels, and</span> <span class="ic g">◎</span>${D.worlds.length||"—"} walkable 3D worlds<span class="m">.</span>`;
 $("#hstats").innerHTML=[[RUB.length,"rubric rows, each citing a guideline line"],[IT.length||"—","labeled images"+(IT.length?"":" · generating")],[nHaz?`${nHaz}<span style="font-size:28px;color:var(--text-faint)"> / ${nDis}</span>`:"—","hazards / safe look-alikes, boxed"],[D.worlds.length||"—","walkable 3D worlds"]]
   .map(([n,l])=>`<div><b>${n}</b><span>${l}</span></div>`).join("");
 

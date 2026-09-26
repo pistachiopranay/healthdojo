@@ -1,18 +1,18 @@
 <style>
-.hero{padding:88px 0 56px}
+.hero{padding:88px 0 8px}
 .posn{font-size:17px;color:var(--text-muted);max-width:74ch;margin:18px 0 0;padding-left:14px;border-left:3px solid var(--cream-strong)}
 .posn b{color:var(--ink)}
 .flow{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:40px;font:500 16px var(--mono);color:var(--text-muted)}
 .flow span{border:1px solid var(--border);background:var(--card);padding:8px 14px;border-radius:6px;color:var(--ink)}
 .flow i{font-style:normal;color:var(--green-ink)}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;padding-bottom:40px}
-.gc{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:border-color .16s,transform .16s var(--ease)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
+.gc{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid rgba(31,33,35,.09);border-radius:12px;overflow:hidden;box-shadow:0 1px 2px rgba(31,33,35,.05),0 28px 72px -28px rgba(31,33,35,.32);transition:border-color .16s,transform .16s var(--ease)}
 a.gc:hover{border-color:var(--green-active);transform:translateY(-2px)}
 .gc .cov{aspect-ratio:16/7;background:var(--surface-muted);position:relative;overflow:hidden;border-bottom:1px solid var(--border)}
 .gc .cov img{width:100%;height:100%;object-fit:cover;display:block}
 .gc .cov .chipk{position:absolute;top:16px;left:16px}
 .gc .cov.empty{display:flex;align-items:center;justify-content:center;font:500 15px var(--mono);color:var(--text-faint)}
-.gc .body{padding:24px 28px 26px;display:flex;flex-direction:column;gap:6px;flex:1}
+.gc .body{padding:26px 30px 28px;background:radial-gradient(110% 120% at 100% 0%,var(--lime-soft) 0,rgba(243,254,220,0) 55%),#fff;display:flex;flex-direction:column;gap:6px;flex:1}
 .gc .pub{font:500 14px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--text-muted)}
 .gc h3{font-family:var(--serif);font-weight:400;font-size:44px;line-height:1.05;letter-spacing:-.01em}
 .gc .gname{font-size:16px;color:var(--text-muted)}
@@ -34,7 +34,7 @@ a.gc:hover{border-color:var(--green-active);transform:translateY(-2px)}
   <div class="flow"><span>Guideline</span><i>→</i><span>Rubric</span><i>→</i><span>Synthetic homes · L1–L5</span><i>→</i><span>3D agent environment</span><i>→</i><span>Pressure-test models</span></div>
 </div></header>
 <main class="wrap">
-  <div class="grid" id="grid"></div>
+  <div class="bleed" style="--bd:url(art/bg-entry.jpg);margin-top:48px;padding:72px 0 80px"><div class="grid" id="grid"></div></div>
   <div class="sub"><div><div class="eyebrow" style="color:var(--text-muted)">Next in the library</div><h2 style="font-size:44px">Same compiler, new guideline.</h2></div></div>
   <div class="soon" id="soon"></div>
 </main>
