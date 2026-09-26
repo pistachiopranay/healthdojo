@@ -302,6 +302,13 @@ table.lbf{width:100%;border-collapse:collapse;font-size:13.5px}
 .lbf .r{font:500 12.5px var(--mono);color:var(--ink)}
 .lbf tr.top1 td{background:var(--lime-soft)}
 .lbfoot{display:flex;gap:22px;margin-top:12px;font-size:14px}.lbfoot a{color:var(--green-ink);font-weight:500}
+.flow5{grid-template-columns:repeat(5,1fr)}
+.lvimg{aspect-ratio:4/3}.lvimg img{height:100%;object-fit:cover}.lvimg.none{background:repeating-linear-gradient(135deg,var(--surface-muted) 0 10px,#fff 10px 20px)}
+.lvl{font-size:13px;color:var(--text-body);margin:0;line-height:1.45}
+.media{display:flex;gap:6px;margin-top:auto}
+.mchip{font:500 11px var(--mono);padding:2px 8px;border-radius:5px;border:1px solid var(--border);background:var(--surface-muted);color:var(--text-muted);text-decoration:none}
+.mchip.m3{background:var(--lime-soft);border-color:var(--lime-active);color:var(--green-ink)}
+@media (max-width:900px){.flow5{grid-template-columns:1fr}}
 </style></head><body>
 <nav class="top"><div class="pill">
   <a class="logo" href="home.html"><span class="mark"></span><span>Health<i>Dojo</i></span></a>
@@ -350,7 +357,7 @@ table.lbf{width:100%;border-collapse:collapse;font-size:13.5px}
 
 <!-- 5 DIFFICULTY -->
 <section class="sec slide" id="difficulty"><div class="wrap">
-  <div class="sec-head"><div><div class="eyebrow">The curriculum</div><h2>{{DIFF_H}}</h2><div class="dsub">Every level ships as labelled images <b>and</b> walkable 3D worlds.</div></div><p>{{DIFF_P}}</p></div>
+  <div class="sec-head"><div><div class="eyebrow">The curriculum</div><h2>{{DIFF_H}}</h2><div class="dsub">Every level ships as labelled images <b>and</b> walkable 3D worlds.</div></div></div>
   {{DIFF}}
   <div class="w3strip"><div class="lab">Same labels, walkable in 3D</div><div class="w3s">{{W3STRIP}}</div></div>
 </div></section>

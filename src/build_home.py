@@ -272,33 +272,29 @@ else:
         by_level[it.get("level")].append(it)
     cards = []
     levels = fm.get("levels", [])
-    nver = sum(1 for it in fm.get("items", []) if it.get("verified"))
-    for L in levels:
+    LINE = {1: "One clear hazard, clean room, good light.",
+            2: "Judge adequacy: a towel bar, a short rail, a low-contrast mat.",
+            3: "Two hazards plus a safe look-alike that must not be flagged.",
+            4: "Three or four hazards in dim, noisy, unfamiliar rooms.",
+            5: "Safe-but-scary rooms next to dense hazard rooms, in poor light."}
+    SHADE = ["#f3fedc", "#eafcbf", "#e1fb9f", "#dbfb7c", "#d5fd51"]
+    for k, L in enumerate(levels):
         lvl = L.get("level")
         ver = [it for it in by_level.get(lvl, []) if it.get("verified")]
-        thumbs = []
-        for it in ver[:3]:
-            src = SITE / "curriculum" / "falls" / "thumb" / f"{it['id']}.jpg"
+        img = None
+        for it in ver[:1]:
+            src = SITE / "curriculum" / "falls" / "img" / f"{it['id']}.jpg"
             if not src.exists():
-                src = DATA / "curriculum" / "falls" / (it.get("thumb") or "")
-            t = copy(src, f"cur-{it['id']}.jpg")
-            if t:
-                thumbs.append(f'<img src="{t}" alt="">')
-        if thumbs:
-            th = f'<div class="th">{"".join(thumbs)}</div>'
-            chip = f'<span class="chipk ck-live">{len(ver)} verified</span>'
-        else:
-            th = '<div class="th none"></div>'
-            chip = '<span class="chipk ck-gen">generating</span>'
+                src = SITE / "curriculum" / "falls" / "thumb" / f"{it['id']}.jpg"
+            img = copy(src, f"cur-{it['id']}.jpg")
         rooms = [it.get("room") for it in (ver or by_level.get(lvl, []))]
         wmatch = next((w for r_ in rooms for w in fall_worlds if r_ and w["scene_id"].startswith(r_)), None)
-        lv3 = (f'<a class="lv3" href="world.html?id={esc(wmatch["scene_id"])}">3D · {esc(wmatch.get("title", ""))} →</a>' if wmatch else "")
-        cards.append(f'<div class="lv">{th}<div class="bd"><div class="k"><span>L{lvl} · n={L.get("n", "?")} planned</span>{chip}</div>'
-                     f'<h4>{esc(L.get("name", ""))}</h4><p>{esc(L.get("description", ""))}</p>'
-                     f'<div class="meter"><i style="width:{20*lvl}%"></i></div>{lv3}</div></div>')
-    diff = f'<div class="ramp">{"".join(cards)}</div>'
-    diff_p = (f"Each level stacks more hazards, safe look-alike distractors and worse light. {nver} curriculum images verified so far; "
-              f"the recall-by-level curve lands when the upper levels finish rendering. <a href='guideline-falls.html' style='color:var(--green-ink)'>Browse the curriculum →</a>")
+        media = '<span class="mchip">Image</span>' + (f'<a class="mchip m3" href="world.html?id={esc(wmatch["scene_id"])}">3D →</a>' if wmatch else "")
+        ph = f'<div class="frame lvimg"><img src="{img}" alt=""></div>' if img else '<div class="frame lvimg none"></div>'
+        cards.append(f'<div class="fc"><div class="chev" style="background:{SHADE[min(k, 4)]}"><b>L{lvl}</b>{esc(L.get("name", ""))}</div>'
+                     f'{ph}<p class="lvl">{esc(LINE.get(lvl, L.get("description", "")))}</p><div class="media">{media}</div></div>')
+    diff = f'<div class="appwin"><div class="flow flow5">{"".join(cards)}</div></div>'
+    diff_p = ""
 
 # 3D strip under the curriculum
 w3strip = []
@@ -320,7 +316,6 @@ for w in wl:
     bench = "Falls · CDC STEADI" if w.get("bench") == "falls" else "Dementia · Alz. Assoc./NIA"
     wcards.append(f'''<div class="appwin wc"><div class="ph">{f'<img src="{th}" alt="">' if th else ''}<span class="chipk ck-live">{esc(bench)}</span></div>
       <div class="bd"><h4>{esc(w.get('title', wid))}</h4><p><span class="tag">{esc(w.get('hazard_id', ''))}</span> {esc(w.get('hazard', ''))}</p>
-      <div class="res">{esc(res)}</div>
       <div class="bt"><a class="btn pri sm" href="world.html?id={esc(wid)}">Walk in 3D</a>{f'<a class="btn sm" href="walk.html?w={esc(wid)}">Watch the AI walk it</a>' if wid in walked else ''}</div></div></div>''')
 worlds_p = f"{n_worlds} photoreal 3D homes generated from the same labelled scenes; hazard locations carried into 3D so an agent's gaze can be scored."
 
@@ -337,7 +332,7 @@ for b, name, src, href, res in [("falls", "Post-op fall prevention", "CDC STEADI
                                 ("dementia", "Dementia home safety", "Alzheimer's Association / NIA", "dementia.html", DEM)]:
     nr, ns, nw, nm = bench_stats(b, res)
     lib.append(f'<a class="gc live" href="{href}" style="text-decoration:none"><span class="chipk ck-live" style="align-self:flex-start">Simulator live</span>'
-               f'<h4>{esc(name)}</h4><div class="src">{esc(src)}</div><div class="st">{nr} rubric rows · {ns} scenes · {nw} worlds · {nm} models</div></a>')
+               f'<h4>{esc(name)}</h4><div class="src">{esc(src)}</div><div class="st">Images · 3D worlds · scored models</div></a>')
 for name, src in [("Pressure injuries", "NPIAP"), ("Medication safety", "AHRQ / ISMP"),
                   ("Pediatric home injury", "AAP"), ("Smoke & CO alarms", "NFPA 72")]:
     lib.append(f'<div class="gc next"><span class="chipk ck-next" style="align-self:flex-start">Next</span><h4>{esc(name)}</h4><div class="src">{esc(src)}</div><div class="st">same compiler</div></div>')
