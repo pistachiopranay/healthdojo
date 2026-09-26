@@ -181,6 +181,13 @@ def summary():
 
 
 def lan_url():
+    try:  # prefer a public ngrok tunnel (venue wifi isolates clients)
+        import urllib.request
+        t = json.load(urllib.request.urlopen("http://localhost:4040/api/tunnels", timeout=1))["tunnels"]
+        if t:
+            return t[0]["public_url"]
+    except Exception:
+        pass
     try:
         ip = subprocess.run(["ipconfig", "getifaddr", "en0"], capture_output=True, text=True, timeout=2).stdout.strip()
     except Exception:
