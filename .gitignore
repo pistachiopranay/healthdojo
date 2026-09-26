@@ -4,3 +4,4 @@ data/renders/
 node_modules/
 .venv/
 __pycache__/
+.scratch/
