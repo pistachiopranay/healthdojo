@@ -247,25 +247,64 @@ find_eyebrow = f"{len(LB)} models · {v_scenes} verified scenes · {tot} agent w
 # ---------------------------------------------------------------- 5 difficulty
 fm = CUR["falls"]
 curve = fm.get("difficulty_curve") or {}
-diff_h, diff_p, diff = "Five levels, from obvious to adversarial.", "", ""
-if curve and isinstance(curve, dict) and any(isinstance(v, dict) for v in curve.values()):
-    # expected shape: {model: {"1": recall, ...}}
-    series = {m: v for m, v in curve.items() if isinstance(v, dict)}
-    lv = sorted({int(k) for v in series.values() for k in v})
-    avg = {l: sum(v.get(str(l), v.get(l, 0)) for v in series.values()) / len(series) for l in lv}
-    diff_h = f"Recall drops from {pct(avg[lv[0]])} at L{lv[0]} to {pct(avg[lv[-1]])} at L{lv[-1]}."
-    W_, H_ = 900, 220
-    xs = lambda i: 40 + i * (W_ - 80) / max(1, len(lv) - 1)
-    ys = lambda v: 20 + (1 - v) * (H_ - 50)
-    cols = ["#46a82c", "#8a6420", "#b23e14", "#2e7a18", "#646668", "#c7ef3d"]
-    paths = []
-    for k, (m, v) in enumerate(series.items()):
-        pts = " ".join(f"{xs(i):.0f},{ys(v.get(str(l), v.get(l, 0))):.0f}" for i, l in enumerate(lv))
-        paths.append(f'<polyline fill="none" stroke="{cols[k % len(cols)]}" stroke-width="2" points="{pts}"/>'
-                     f'<text x="{W_-36}" y="{ys(v.get(str(lv[-1]), 0)):.0f}" font-size="11" font-family="IBM Plex Mono">{esc(pn(m))}</text>')
-    axis = "".join(f'<text x="{xs(i):.0f}" y="{H_-6}" font-size="11" text-anchor="middle" font-family="IBM Plex Mono">L{l}</text>' for i, l in enumerate(lv))
-    diff = f'<div class="appwin" style="padding:16px"><svg viewBox="0 0 {W_+80} {H_}" width="100%">{"".join(paths)}{axis}</svg></div>'
-else:
+diff_h, diff_p, diff = "", "", ""
+curve_html = ""
+
+
+def _rec(v, l):
+    x = v.get(str(l), v.get(l))
+    if isinstance(x, dict):
+        x = x.get("recall")
+    return x if isinstance(x, (int, float)) else None
+
+
+series = {m: v for m, v in curve.items() if isinstance(v, dict)} if isinstance(curve, dict) else {}
+if series:
+    lv = sorted({int(k) for v in series.values() for k in v if str(k).isdigit()})
+    avg = {}
+    for l in lv:
+        vals = [r for r in (_rec(v, l) for v in series.values()) if r is not None]
+        if vals:
+            avg[l] = sum(vals) / len(vals)
+    lv = [l for l in lv if l in avg]
+    if len(lv) >= 2:
+        W_, H_ = 620, 170
+        xs = lambda i: 44 + i * (W_ - 110) / max(1, len(lv) - 1)
+        ys = lambda v: 14 + (1 - v) * (H_ - 40)
+        grid = "".join(f'<line x1="40" x2="{W_-60}" y1="{ys(g):.0f}" y2="{ys(g):.0f}" stroke="#f0f0ec"/><text x="34" y="{ys(g)+4:.0f}" font-size="10" text-anchor="end" fill="#8f9193" font-family="IBM Plex Mono">{int(g*100)}%</text>' for g in (0, .25, .5, .75, 1))
+        mean = {m: sum(r for r in (_rec(v, l) for l in lv) if r is not None) / max(1, sum(1 for l in lv if _rec(v, l) is not None)) for m, v in series.items()}
+        best, worst = max(mean, key=mean.get), min(mean, key=mean.get)
+        lines = []
+        for m, v in sorted(series.items(), key=lambda kv: kv[0] in (best, worst)):
+            pts = [(xs(i), ys(_rec(v, l))) for i, l in enumerate(lv) if _rec(v, l) is not None]
+            ps = " ".join(f"{x:.0f},{y:.0f}" for x, y in pts)
+            if m in (best, worst):
+                c = "#2e7a18" if m == best else "#b23e14"
+                lines.append(f'<polyline fill="none" stroke="{c}" stroke-width="2.5" points="{ps}"/>'
+                             + "".join(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="3" fill="{c}"/>' for x, y in pts)
+                             + f'<text x="{pts[-1][0]+8:.0f}" y="{pts[-1][1]+4:.0f}" font-size="11" fill="{c}" font-family="IBM Plex Mono">{esc(pn(m))}</text>')
+            else:
+                lines.append(f'<polyline fill="none" stroke="#d6d6d0" stroke-width="1.2" points="{ps}"><title>{esc(pn(m))}</title></polyline>')
+        axis = "".join(f'<text x="{xs(i):.0f}" y="{H_-6}" font-size="11" text-anchor="middle" fill="#646668" font-family="IBM Plex Mono">L{l}</text>' for i, l in enumerate(lv))
+        svg = (f'<svg viewBox="0 0 {W_ + 70} {H_}" width="100%" style="display:block;max-height:190px">{grid}{"".join(lines)}{axis}</svg>')
+        l0, l1 = lv[0], lv[-1]
+        both = [m for m, v in series.items() if _rec(v, l0) is not None and _rec(v, l1) is not None]
+        down = sum(1 for m in both if _rec(series[m], l1) < _rec(series[m], l0))
+        if down == len(both):
+            head = f"Every model loses ground as the home gets harder: recall at L{l1} is below L{l0} for all {len(both)}."
+        else:
+            head = f"Recall at L{l1} is below L{l0} for {down} of {len(both)} models."
+        ff = []
+        for v in series.values():
+            x = v.get("4", v.get(4))
+            if isinstance(x, dict) and isinstance(x.get("distractor_false_flag"), (int, float)):
+                ff.append(x["distractor_false_flag"])
+        ffline = f'Models flagged a safe look-alike as a hazard up to <b>{pct(max(ff))}</b> of the time at L4.' if ff else ""
+        curve_html = (f'<div class="appwin curve"><div class="ctxt"><div class="eyebrow" style="color:var(--text-muted)">Difficulty curve · falls · {len(series)} models</div>'
+                      f'<div class="ch">{esc(head)}</div><div class="cstat">{ffline}</div>'
+                      f'<div class="note"><span style="color:var(--green-ink)">■</span> best ({esc(pn(best))}) · <span style="color:var(--ember-ink)">■</span> weakest ({esc(pn(worst))}) · grey: others. Not a smooth decline: L2 adequacy calls are often hardest.</div></div>'
+                      f'<div class="cplot">{svg}</div></div>')
+if True:
     fall_worlds = [w for w in WORLDS.values() if w.get("status") == "done" and w.get("bench") == "falls" and w.get("scene_id")]
     by_level = collections.defaultdict(list)
     for it in fm.get("items", []):
@@ -277,23 +316,44 @@ else:
             3: "Two hazards plus a safe look-alike that must not be flagged.",
             4: "Three or four hazards in dim, noisy, unfamiliar rooms.",
             5: "Safe-but-scary rooms next to dense hazard rooms, in poor light."}
-    SHADE = ["#f3fedc", "#eafcbf", "#e1fb9f", "#dbfb7c", "#d5fd51"]
+    used_bases = set()
+    COND = {1: "good light", 2: "good light", 3: "good light", 4: "dim, night, soft focus", 5: "poor light"}
+
+    def nmax(v):
+        return max([0] + [int(x) for x in re.findall(r"\d+", str(v if v is not None else "0"))])
+
+    def pips(v, cls):
+        n = nmax(v)
+        if not n:
+            return '<span class="zz">none</span>'
+        sq = "".join(f'<i class="{cls}"></i>' for _ in range(min(n, 4)))
+        rng = "" if re.fullmatch(r"\d+", str(v)) else f'<span class="rng">{esc(v)}</span>'
+        return f'<span class="pips2">{sq}</span>{rng}'
+
     for k, L in enumerate(levels):
         lvl = L.get("level")
         ver = [it for it in by_level.get(lvl, []) if it.get("verified")]
         img = None
-        for it in ver[:1]:
+        pick = [it for it in ver if it.get("base") not in used_bases][:1] or ver[:1]
+        for it in pick:
+            used_bases.add(it.get("base"))
             src = SITE / "curriculum" / "falls" / "img" / f"{it['id']}.jpg"
             if not src.exists():
                 src = SITE / "curriculum" / "falls" / "thumb" / f"{it['id']}.jpg"
+            if not src.exists():
+                src = DATA / "curriculum" / "falls" / (it.get("thumb") or it.get("image") or "")
             img = copy(src, f"cur-{it['id']}.jpg")
         rooms = [it.get("room") for it in (ver or by_level.get(lvl, []))]
         wmatch = next((w for r_ in rooms for w in fall_worlds if r_ and w["scene_id"].startswith(r_)), None)
         media = '<span class="mchip">Image</span>' + (f'<a class="mchip m3" href="world.html?id={esc(wmatch["scene_id"])}">3D →</a>' if wmatch else "")
-        ph = f'<div class="frame lvimg"><img src="{img}" alt=""></div>' if img else '<div class="frame lvimg none"></div>'
-        cards.append(f'<div class="fc"><div class="chev" style="background:{SHADE[min(k, 4)]}"><b>L{lvl}</b>{esc(L.get("name", ""))}</div>'
-                     f'{ph}<p class="lvl">{esc(LINE.get(lvl, L.get("description", "")))}</p><div class="media">{media}</div></div>')
-    diff = f'<div class="appwin"><div class="flow flow5">{"".join(cards)}</div></div>'
+        ph = f'<div class="stimg"><img src="{img}" alt=""></div>' if img else '<div class="stimg none"></div>'
+        cards.append(f'<div class="stp" style="min-height:{330 + k * 40}px">{ph}<div class="slv">L{lvl}</div><h4>{esc(L.get("name", ""))}</h4>'
+                     f'<p>{esc(LINE.get(lvl, ""))}</p>'
+                     f'<div class="srow"><span class="k">Hazards</span>{pips(L.get("hazards_per_image"), "h")}</div>'
+                     f'<div class="srow"><span class="k">Look-alikes</span>{pips(L.get("distractors"), "d")}</div>'
+                     f'<div class="srow"><span class="k">Conditions</span><span>{esc(COND.get(lvl, ", ".join(L.get("conditions", []))))}</span></div>'
+                     f'<div class="media">{media}</div></div>')
+    diff = f'<div class="stair2">{"".join(cards)}</div>'
     diff_p = ""
 
 # 3D strip under the curriculum
@@ -399,7 +459,7 @@ sub = {
     "HOW": how or '<div class="note">No verified scene available.</div>',
     "FIND_EYEBROW": esc(find_eyebrow), "LB": lb_html, "LB_NOTE": esc(lb_note), "HARD": "".join(hard_rows),
     "WALKS": walks_html, "WALK_CALLOUT": walk_callout,
-    "DIFF_H": esc(diff_h), "W3STRIP": "".join(w3strip), "DIFF_P": diff_p, "DIFF": diff,
+    "DIFF_H": esc(diff_h), "CURVE": curve_html, "W3STRIP": "".join(w3strip), "DIFF_P": diff_p, "DIFF": diff,
     "WORLDS": "".join(wcards), "WORLDS_P": esc(worlds_p), "LIB": "".join(lib),
     "COUNTS": counts_html, "LB_FULL": lb_full, "LB_LINE": esc(lb_line), "SMALLN": esc(smalln), "FOOT": "built at the Healthcare AI Hackathon, 2026-09-26.",
 }
