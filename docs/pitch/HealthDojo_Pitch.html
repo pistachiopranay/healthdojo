@@ -4,92 +4,107 @@
 <meta charset="utf-8">
 <title>HealthDojo: Guidelines in. Benchmarks out.</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
+  /* Pistachio design language (design/pistachio.css), scaled for a 1600x900 projected stage. */
   :root{
-    --bg:#FAFAF7; --ink:#15171C; --muted:#5E6470; --faint:#9AA0AA; --line:#E4E4DE;
-    --card:#FFFFFF; --accent:#0F7B63; --accent-soft:#E3F2EC; --hazard:#E5484D; --hazard-soft:#FDECEC;
-    --amber:#B7791F; --amber-soft:#FBF1DD;
+    --green:#5ac53a; --green-active:#46a82c; --green-soft:#eaf7e2; --green-ink:#2e7a18;
+    --lime:#d5fd51; --lime-active:#c7ef3d; --lime-soft:#f3fedc;
+    --gold:#f6c86a; --gold-soft:#fbeed3; --gold-ink:#8a6420;
+    --ember:#eb5d2a; --ember-soft:#fce7dd; --ember-ink:#b23e14;
+    --cream:#f7f2e5; --cream-strong:#efe6cf; --cream-ink:#6b6350;
+    --canvas:#fcfcfa; --surface-muted:#f5f5f2; --surface-strong:#edede9; --border-soft:#f0f0ec;
+    --text-body:#3a3d3f;
+    --serif:"Instrument Serif",Georgia,serif; --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+    /* legacy names */
+    --bg:var(--canvas); --ink:#1f2123; --muted:#646668; --faint:#8f9193; --line:#e6e6e1;
+    --card:#FFFFFF; --accent:var(--green-ink); --accent-soft:var(--green-soft); --hazard:var(--ember-ink); --hazard-soft:var(--ember-soft);
+    --amber:var(--gold-ink); --amber-soft:var(--gold-soft);
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html,body{height:100%;background:#E9E9E4;overflow:hidden}
-  body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter","Helvetica Neue",Helvetica,Arial,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+  html,body{height:100%;background:var(--surface-strong);overflow:hidden}
+  body{font-family:var(--sans);color:var(--text-body);-webkit-font-smoothing:antialiased}
+  b,strong{font-weight:600}
   #viewport{position:fixed;inset:0;display:flex;align-items:center;justify-content:center}
   #stage{width:1600px;height:900px;position:relative;transform-origin:center center;flex:none}
-  .slide{position:absolute;inset:0;background:var(--bg);padding:84px 104px 72px;display:none;flex-direction:column;box-shadow:0 10px 40px rgba(0,0,0,.08)}
+  .slide{position:absolute;inset:0;background:var(--bg);padding:84px 104px 72px;display:none;flex-direction:column;border:1px solid var(--line)}
   .slide.active{display:flex}
-  .kicker{font-size:22px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:22px}
-  h1{font-size:132px;line-height:.95;letter-spacing:-.04em;font-weight:800}
-  h2{font-size:66px;line-height:1.04;letter-spacing:-.03em;font-weight:760;max-width:1340px}
-  h2 em,h1 em{font-style:normal;color:var(--accent)}
-  h2 .red{color:var(--hazard)}
+  .kicker{font-family:var(--mono);font-size:20px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--green-ink);margin-bottom:22px}
+  h1{font-family:var(--serif);font-size:160px;line-height:.92;letter-spacing:-.02em;font-weight:400;color:var(--ink)}
+  h2{font-family:var(--serif);font-size:76px;line-height:1.02;letter-spacing:-.015em;font-weight:400;max-width:1340px;color:var(--ink)}
+  h2 em,h1 em{font-style:italic;color:var(--green-ink)}
+  h2 .red{color:var(--ember-ink);font-style:italic}
   p.lede{font-size:32px;line-height:1.35;color:var(--muted);max-width:1200px;margin-top:26px}
-  .footer{position:absolute;left:104px;right:104px;bottom:34px;display:flex;justify-content:space-between;font-size:18px;color:var(--faint)}
+  .footer{position:absolute;left:104px;right:104px;bottom:34px;display:flex;justify-content:space-between;font-size:18px;color:var(--faint);font-family:var(--mono)}
   .src{font-size:16px;color:var(--faint);line-height:1.45;margin-top:auto}
-  .tbd{background:var(--amber-soft);color:var(--amber);border-radius:8px;padding:0 10px;font-weight:700;white-space:nowrap}
+  .tbd{background:var(--gold-soft);color:var(--gold-ink);border-radius:4px;padding:0 10px;font-weight:600;white-space:nowrap}
   .grid{display:grid;gap:28px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:34px 34px 30px}
-  .stat{font-size:84px;font-weight:800;letter-spacing:-.04em;line-height:1}
-  .stat small{font-size:40px;font-weight:700}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:34px 34px 30px}
+  .stat{font-size:84px;font-weight:600;letter-spacing:-.04em;line-height:1;color:var(--ink);font-variant-numeric:tabular-nums}
+  .stat small{font-size:40px;font-weight:500}
   .statlabel{font-size:25px;line-height:1.35;color:var(--muted);margin-top:14px}
-  .card h3{font-size:32px;letter-spacing:-.01em;margin-bottom:12px}
+  .card h3{font-size:32px;letter-spacing:-.01em;margin-bottom:12px;font-weight:600;color:var(--ink)}
   .card p{font-size:24px;line-height:1.42;color:var(--muted)}
-  .pill{display:inline-block;font-size:19px;font-weight:650;padding:6px 14px;border-radius:999px;background:var(--accent-soft);color:var(--accent);margin-right:8px}
-  .pill.red{background:var(--hazard-soft);color:var(--hazard)}
-  .photo{border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#fff;position:relative}
+  .pill{display:inline-block;font-family:var(--mono);font-size:18px;font-weight:500;padding:5px 12px;border-radius:4px;background:var(--cream);border:1px solid var(--cream-strong);color:var(--cream-ink);margin-right:8px}
+  .pill.red{background:var(--ember-soft);border-color:#f6c8b4;color:var(--ember-ink)}
+  .photo{border-radius:12px;overflow:hidden;border:1px solid var(--line);background:#fff;position:relative}
   .photo img{display:block;width:100%;height:auto}
   .cap{font-size:20px;color:var(--muted);margin-top:10px;line-height:1.35}
   .cap b{color:var(--ink)}
   /* pipeline */
   .pipe{display:flex;align-items:stretch;gap:0;margin-top:38px}
-  .step{flex:1;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 18px 18px;position:relative}
-  .step .n{width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;font-size:19px;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
-  .step h4{font-size:23px;line-height:1.15;margin-bottom:8px;letter-spacing:-.01em}
+  .step{flex:1;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px 18px 18px;position:relative}
+  .step .n{width:38px;height:38px;border-radius:6px;background:var(--lime);border:1px solid var(--green-active);color:var(--green-ink);font-family:var(--mono);font-weight:500;font-size:19px;display:flex;align-items:center;justify-content:center;margin-bottom:12px}
+  .step h4{font-size:23px;line-height:1.15;margin-bottom:8px;letter-spacing:-.01em;font-weight:600;color:var(--ink)}
   .step p{font-size:17.5px;line-height:1.38;color:var(--muted)}
-  .arrow{width:34px;flex:none;display:flex;align-items:center;justify-content:center;color:var(--faint);font-size:30px}
+  .arrow{width:34px;flex:none;display:flex;align-items:center;justify-content:center;color:var(--green-ink);font-size:30px}
   .thumbs .photo img{height:210px;object-fit:cover;object-position:center 40%}
   .biz .card p{font-size:21px;line-height:1.38}.biz .card h3{font-size:26px!important}
   .lbrow,.lbhead{display:grid;grid-template-columns:160px 1fr 42px 80px 40px;gap:10px;align-items:center;height:30px;font-size:17px}
-  .lbhead{font-size:14px;font-weight:700;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;height:24px}
-  .lbn{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink);font-weight:550}
-  .lbbar{height:16px;background:#EEEEE8;border-radius:4px;position:relative;overflow:hidden}
+  .lbhead{font-size:14px;font-weight:500;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;height:24px}
+  .lbn{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--ink);font-weight:500}
+  .lbbar{height:16px;background:var(--surface-strong);border-radius:4px;position:relative;overflow:hidden}
   .lbhead .lbbar{background:none;height:auto}
-  .lbbar i{position:absolute;left:0;top:0;bottom:0;background:var(--accent);border-radius:4px}
-  .lbv{font-weight:700;font-variant-numeric:tabular-nums;font-size:16px}
-  .lbfa{position:relative;height:16px;background:#F6EDED;border-radius:4px;overflow:visible}
-  .lbfa i{position:absolute;left:0;top:0;bottom:0;background:var(--hazard);opacity:.85;border-radius:4px}
-  .lbfab{font-size:15px;font-weight:700;text-align:right;color:var(--hazard);font-variant-numeric:tabular-nums}
-  .lbrow:first-of-type .lbn{font-weight:800}
+  .lbbar i{position:absolute;left:0;top:0;bottom:0;background:var(--green);border-radius:4px}
+  .lbv{font-family:var(--mono);font-weight:500;font-variant-numeric:tabular-nums;font-size:16px;color:var(--ink)}
+  .lbfa{position:relative;height:16px;background:var(--ember-soft);border-radius:4px;overflow:visible}
+  .lbfa i{position:absolute;left:0;top:0;bottom:0;background:var(--ember);border-radius:4px}
+  .lbfab{font-family:var(--mono);font-size:15px;font-weight:500;text-align:right;color:var(--ember-ink);font-variant-numeric:tabular-nums}
+  .lbrow:first-of-type .lbn{font-weight:600}
   .hard{display:flex;gap:16px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--line)}
-  .hard>b{font-size:40px;font-weight:800;letter-spacing:-.03em;color:var(--hazard);width:92px;flex:none}
+  .hard>b{font-family:var(--mono);font-size:38px;font-weight:500;letter-spacing:-.03em;color:var(--ember-ink);width:92px;flex:none}
   .hard span{font-size:20px;color:var(--muted);line-height:1.3}
   .hard span b{color:var(--ink)}
-  .wk{display:grid;grid-template-columns:180px 150px 1fr;gap:10px;align-items:center;height:34px;font-size:19px;border-bottom:1px solid var(--line)}
-  .wk>span:first-child{font-weight:600}
-  .wk b{font-size:20px;font-variant-numeric:tabular-nums}.wk b small{font-weight:500;color:var(--accent);font-size:15px;margin-left:6px}
-  .dots{display:flex;gap:6px}.dots i{width:22px;height:22px;border-radius:50%;background:#F3DADB;border:1.5px solid #E9B5B7}
-  .dots i.y{background:var(--accent);border-color:var(--accent)}
-  .trace{font-size:18px;line-height:1.38;color:var(--muted);margin-top:12px;padding-left:14px;border-left:3px solid var(--hazard)}
+  .wk{display:grid;grid-template-columns:180px 150px 1fr;gap:10px;align-items:center;height:34px;font-size:19px;border-bottom:1px solid var(--line);color:var(--ink)}
+  .wk>span:first-child{font-weight:500}
+  .wk b{font-family:var(--mono);font-weight:500;font-size:20px;font-variant-numeric:tabular-nums}.wk b small{font-family:var(--sans);font-weight:500;color:var(--green-ink);font-size:15px;margin-left:6px}
+  .dots{display:flex;gap:6px}.dots i{width:22px;height:22px;border-radius:50%;background:var(--ember-soft);border:1.5px solid #f3b79e}
+  .dots i.y{background:var(--green);border-color:var(--green-active)}
+  .trace{font-size:18px;line-height:1.38;color:var(--muted);margin-top:12px;padding-left:14px;border-left:3px solid var(--ember)}
   .trace b{color:var(--ink)}
-  .step.key{border:2px solid var(--accent);background:var(--accent-soft)}
+  .step.key{border:1px solid var(--green-active);background:var(--lime-soft)}
   /* heatmap placeholder */
   table.heat{border-collapse:separate;border-spacing:6px;font-size:22px}
-  table.heat th{font-weight:650;color:var(--muted);text-align:left;padding:6px 10px;font-size:20px}
-  table.heat td{width:180px;height:62px;border-radius:10px;text-align:center;font-weight:700;color:var(--amber);background:var(--amber-soft);border:1.5px dashed #E3C88F}
+  table.heat th{font-weight:500;color:var(--muted);text-align:left;padding:6px 10px;font-size:20px}
+  table.heat td{width:180px;height:62px;border-radius:6px;text-align:center;font-weight:600;color:var(--gold-ink);background:var(--gold-soft);border:1.5px dashed var(--gold)}
   table.heat td.m{background:transparent;border:none;color:var(--ink);text-align:left;width:auto;font-weight:600;padding-right:14px}
-  .demo-slot{flex:1;margin-top:34px;border:3px dashed #CFCFC6;border-radius:26px;display:flex;align-items:center;justify-content:center;flex-direction:column;background:repeating-linear-gradient(135deg,#fff,#fff 18px,#F6F6F1 18px,#F6F6F1 36px)}
+  .demo-slot{flex:1;margin-top:34px;border:1px dashed var(--cream-ink);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-direction:column;background:var(--cream)}
   ol.path{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:18px 26px;margin-top:10px;width:1180px}
-  ol.path li{font-size:26px;display:flex;gap:14px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px}
-  ol.path li span{flex:none;width:40px;height:40px;border-radius:50%;background:var(--ink);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;font-size:20px}
-  .bigquote{font-size:40px;line-height:1.25;font-weight:700;letter-spacing:-.02em}
-  .ask{background:var(--ink);color:#fff;border-radius:22px;padding:30px 36px}
-  .ask h3{font-size:30px;margin-bottom:12px;color:#7FE0C2}
-  .ask li{font-size:24px;line-height:1.45;list-style:none;padding-left:26px;position:relative}
-  .ask li:before{content:"→";position:absolute;left:0;color:#7FE0C2}
-  .road li{list-style:none;font-size:23px;line-height:1.33;padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:16px}
-  .road li b{display:block;font-size:27px;margin-bottom:4px}
-  .road li .when{flex:none;width:110px;font-size:18px;font-weight:700;color:var(--accent);padding-top:6px;letter-spacing:.06em;text-transform:uppercase}
-  #nav{position:fixed;right:18px;bottom:14px;font:600 14px/1 -apple-system,Helvetica,Arial,sans-serif;color:#8a8f98;user-select:none}
-  #bar{position:fixed;left:0;bottom:0;height:4px;background:var(--accent);transition:width .25s}
+  ol.path li{font-size:26px;display:flex;gap:14px;align-items:center;background:#fff;border:1px solid var(--cream-strong);border-radius:8px;padding:16px 18px;color:var(--ink)}
+  ol.path li span{flex:none;width:40px;height:40px;border-radius:6px;background:var(--lime);border:1px solid var(--green-active);color:var(--green-ink);font-family:var(--mono);font-weight:500;display:flex;align-items:center;justify-content:center;font-size:20px}
+  .bigquote{font-size:40px;line-height:1.25;font-weight:500;letter-spacing:-.02em;color:var(--ink)}
+  .bigquote.serif{font-family:var(--serif);font-weight:400;letter-spacing:-.01em;line-height:1.1}
+  .ask{background:var(--cream);border:1px solid var(--cream-strong);color:var(--ink);border-radius:12px;padding:30px 36px}
+  .ask h3{font-family:var(--serif);font-weight:400;font-size:44px;margin-bottom:12px;color:var(--green-ink)}
+  .ask li{font-size:24px;line-height:1.45;list-style:none;padding-left:26px;position:relative;color:var(--text-body)}
+  .ask li b{color:var(--ink)}
+  .ask li:before{content:"→";position:absolute;left:0;color:var(--green-ink)}
+  .road li{list-style:none;font-size:23px;line-height:1.33;padding:12px 0;border-bottom:1px solid var(--line);display:flex;gap:16px;color:var(--muted)}
+  .road li b{display:block;font-size:27px;margin-bottom:4px;color:var(--ink)}
+  .road li .when{flex:none;width:110px;font-family:var(--mono);font-size:18px;font-weight:500;color:var(--green-ink);padding-top:6px;letter-spacing:.06em;text-transform:uppercase}
+  #nav{position:fixed;right:18px;bottom:14px;font:500 14px/1 var(--mono);color:#8f9193;user-select:none}
+  #bar{position:fixed;left:0;bottom:0;height:4px;background:var(--green-active);transition:width .24s cubic-bezier(0.16,1,0.3,1)}
   @media print{html,body{overflow:visible;background:#fff}#viewport{position:static;display:block}#stage{transform:none!important}.slide{display:flex!important;position:relative;page-break-after:always;box-shadow:none}#nav,#bar{display:none}}
 </style>
 </head>
@@ -102,7 +117,7 @@
     <div>
       <div class="kicker">Pear Healthcare AI Hackathon</div>
       <h1><span data-b="a">Health</span><em data-b="b">Dojo</em></h1>
-      <p style="font-size:56px;line-height:1.1;font-weight:760;letter-spacing:-.025em;margin-top:30px;max-width:760px">Guidelines in.<br>Benchmarks out.</p>
+      <p style="font-family:var(--serif);font-size:72px;line-height:1.02;font-weight:400;letter-spacing:-.01em;margin-top:30px;max-width:760px;color:var(--ink)">Guidelines in.<br>Benchmarks out.</p>
       <p class="lede" style="font-size:28px;max-width:740px"><span data-b="name">HealthDojo</span> turns clinical guidelines into evals any home-health AI can run out of the box. First benchmark: <b style="color:var(--ink)"><span data-b="bench">HomeBench</span></b>, compiled from a post-op fall-prevention guideline.</p>
     </div>
     <div>
@@ -131,7 +146,7 @@
   <div class="kicker">Why now</div>
   <h2>From 2028, hospitals <em>own</em> the fall that happens at home on day 40.</h2>
   <div class="grid" style="grid-template-columns:1.25fr 1fr 1fr;margin-top:48px">
-    <div class="card" style="border:2px solid var(--accent)">
+    <div class="card" style="border:1px solid var(--green-active)">
       <span class="pill">CMS CJR-X</span>
       <h3 style="margin-top:18px">Joint replacement becomes a mandatory bundle nationwide</h3>
       <p>Starts <b style="color:var(--ink)">2028-01-01</b>. <b style="color:var(--ink)">2,500+ hospitals</b>. <b style="color:var(--ink)">90-day episodes.</b> A post-discharge fall, readmission, or revision now comes out of the hospital's budget.</p>
@@ -179,7 +194,7 @@
   <div class="kicker">Live demo</div>
   <h2>A guideline becomes a benchmark, live.</h2>
   <div class="demo-slot">
-    <div style="font-size:30px;font-weight:700;color:var(--muted);margin-bottom:26px">Switch to browser: <span style="color:var(--ink)">localhost:8791</span> → <span style="color:var(--ink)">healthdojo-demo-pear</span> report card + walkthrough</div>
+    <div style="font-size:30px;font-weight:500;color:var(--muted);margin-bottom:26px">Switch to browser: <span style="color:var(--ink)">localhost:8791</span> → <span style="color:var(--ink)">healthdojo-demo-pear</span> report card + walkthrough</div>
     <ol class="path">
       <li><span>1</span>Brief: use case, guideline, model</li>
       <li><span>2</span>Guideline → rubric</li>
@@ -202,7 +217,7 @@
       <div class="cap" style="font-size:16px;margin-top:10px">14 models, 43 verified scenes (31 seeded hazards, 12 clean rooms). False alarms = hazards flagged that were verified absent. Spotting is flat across types (objects 84%, absent 84%, measurement 80%). Small n, directional.</div>
     </div>
     <div>
-      <div style="font-size:20px;font-weight:700;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px">Hardest to judge</div>
+      <div style="font-size:20px;font-weight:500;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px">Hardest to judge</div>
       <div class="hard"><b>20%</b><span>caught a <b>towel bar used as a grab bar</b></span></div>
       <div class="hard"><b>36%</b><span>caught <b>broken or uneven steps</b></span></div>
       <div class="hard"><b>57%</b><span>caught a <b>short or ungraspable handrail</b></span></div>
@@ -246,16 +261,16 @@
   <h2>We sell the <em>benchmark</em> and the <em>training data</em>.</h2>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:34px">
     <div>
-      <div style="font-size:22px;font-weight:700;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px">Who pays</div>
+      <div style="font-size:22px;font-weight:500;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px">Who pays</div>
       <div class="card" style="margin-bottom:14px;padding:20px 28px"><h3>Home-health AI companies</h3><p>They need to prove their model works before a hospital will pilot it. <span data-b="name">HealthDojo</span> gives them a report card built from the guideline the hospital already trusts.</p></div>
       <div class="card" style="margin-bottom:14px;padding:20px 28px"><h3>Hospitals and payers under CJR-X</h3><p>They own 90-day outcomes and have to pick vendors. The question becomes: "What's your <span data-b="bench">HomeBench</span> score on our guideline?"</p></div>
-      <div class="card" style="padding:20px 28px;background:var(--accent-soft);border-color:#BFE3D6"><h3>Customer #1: HomeReady</h3><p>Its post-op walker guideline became our first rubric: 35 hazards across 6 rooms.</p></div>
+      <div class="card" style="padding:20px 28px;background:var(--accent-soft);border-color:var(--green)"><h3>Customer #1: HomeReady</h3><p>Its post-op walker guideline became our first rubric: 35 hazards across 6 rooms.</p></div>
     </div>
     <div>
-      <div style="font-size:22px;font-weight:700;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px">What they buy</div>
-      <div class="card" style="margin-bottom:14px;padding:20px 28px;border:2px solid var(--accent)"><span class="pill">Eval-as-a-service</span><h3 style="margin-top:10px">Report card, out of the box</h3><p>Bring a brief and a model. Get scored against 14 models by room, hazard type, and severity. Re-run it with every model release.</p></div>
+      <div style="font-size:22px;font-weight:500;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px">What they buy</div>
+      <div class="card" style="margin-bottom:14px;padding:20px 28px;border:1px solid var(--green-active)"><span class="pill">Eval-as-a-service</span><h3 style="margin-top:10px">Report card, out of the box</h3><p>Bring a brief and a model. Get scored against 14 models by room, hazard type, and severity. Re-run it with every model release.</p></div>
       <div class="card" style="margin-bottom:14px;padding:20px 28px"><span class="pill red">Training packs</span><h3 style="margin-top:10px">Hard examples, labeled and boxed</h3><p>Generated exactly where your model fails: absent features, measurements, clean-room negatives.</p></div>
-      <div class="card" style="padding:20px 28px;background:var(--ink);border-color:var(--ink)"><h3 style="color:#7FE0C2">The moat is the answer key, not the rendering</h3><p style="color:#D6D9DE">World Labs and NVIDIA already generate homes. We own the step from guideline to clinician-approved, verified label.</p></div>
+      <div class="card" style="padding:20px 28px;background:var(--cream);border-color:var(--cream-strong)"><h3 style="color:var(--green-ink)">The moat is the answer key, not the rendering</h3><p style="color:var(--text-body)">World Labs and NVIDIA already generate homes. We own the step from guideline to clinician-approved, verified label.</p></div>
     </div>
   </div>
 </section>
@@ -281,7 +296,7 @@
           <li><b>PearX</b>: we'd like to build this with you</li>
         </ul>
       </div>
-      <p class="bigquote" style="margin-top:36px;font-size:36px">Every home-health model should have to pass the Dojo before it goes into a patient's home.</p>
+      <p class="bigquote serif" style="margin-top:36px;font-size:46px">Every home-health model should have to pass the Dojo before it goes into a patient's home.</p>
     </div>
   </div>
 </section>

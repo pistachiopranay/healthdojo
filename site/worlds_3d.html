@@ -3,32 +3,38 @@
      so the in-page preview renders the world's Gaussian splat with SparkJS instead. -->
 <meta charset="utf-8">
 <section class="hd-w3d">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-.hd-w3d{--ink:#1b1f24;--muted:#5b6470;--card:#fff;--line:#e3e6ea;--accent:#d9480f;font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink)}
-.hd-w3d h2{margin:0 0 .25rem;font-size:1.5rem}
-.hd-w3d .sub{margin:0 0 1.25rem;color:var(--muted);max-width:60ch}
+/* Pistachio design language (design/pistachio.css) */
+html,body{margin:0;background:#fcfcfa}
+.hd-w3d{--ink:#1f2123;--body:#3a3d3f;--muted:#646668;--card:#fff;--line:#e6e6e1;--accent:#b23e14;--lime:#d5fd51;--green-ink:#2e7a18;--green-active:#46a82c;--surface:#f5f5f2;
+  font-family:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--body);display:block;padding:4px 2px 12px;-webkit-font-smoothing:antialiased}
+.hd-w3d h2{margin:0 0 .35rem;font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:2.4rem;letter-spacing:-.01em;line-height:1.05;color:var(--ink)}
+.hd-w3d .sub{margin:0 0 1.25rem;color:var(--muted);max-width:64ch;font-size:1.05rem;line-height:1.5}
 .hd-w3d .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
 .hd-w3d .card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
-.hd-w3d .pair{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line)}
+.hd-w3d .pair{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line)}
 .hd-w3d .pair figure{margin:0;position:relative}
 .hd-w3d .pair img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
-.hd-w3d .pair figcaption{position:absolute;left:6px;bottom:6px;font-size:.7rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 6px;border-radius:4px}
+.hd-w3d .pair figcaption{position:absolute;left:6px;bottom:6px;font:500 .7rem "IBM Plex Mono",ui-monospace,monospace;background:rgba(255,255,255,.94);color:var(--ink);border:1px solid var(--line);padding:1px 6px;border-radius:4px}
 .hd-w3d .body{padding:.9rem 1rem 1rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
-.hd-w3d h3{margin:0;font-size:1.05rem}
-.hd-w3d .hz{margin:0;font-size:.88rem;color:var(--muted)}
-.hd-w3d .hz b{color:var(--accent)}
+.hd-w3d h3{margin:0;font-size:1.1rem;font-weight:600;color:var(--ink)}
+.hd-w3d .hz{margin:0;font-size:.92rem;color:var(--muted)}
+.hd-w3d .hz b{color:var(--accent);font-weight:500;font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.86rem}
 .hd-w3d .actions{display:flex;gap:.5rem;margin-top:auto;flex-wrap:wrap}
-.hd-w3d a.btn,.hd-w3d button.btn{font:inherit;font-size:.88rem;padding:.5rem .8rem;border-radius:8px;border:1px solid var(--ink);cursor:pointer;text-decoration:none}
-.hd-w3d a.btn{background:var(--ink);color:#fff}
+.hd-w3d a.btn,.hd-w3d button.btn{font:inherit;font-size:.9rem;font-weight:500;padding:.5rem .8rem;border-radius:6px;border:1px solid var(--line);cursor:pointer;text-decoration:none}
+.hd-w3d a.btn{background:var(--lime);color:var(--green-ink);border-color:var(--green-active);font-weight:600}
+.hd-w3d a.btn:hover{background:#c7ef3d}
 .hd-w3d button.btn{background:#fff;color:var(--ink)}
-.hd-w3d .viewer{position:fixed;inset:0;background:rgba(10,12,15,.92);display:none;z-index:9999;flex-direction:column}
+.hd-w3d button.btn:hover{background:var(--surface)}
+.hd-w3d .viewer{position:fixed;inset:0;background:rgba(31,33,35,.94);display:none;z-index:9999;flex-direction:column}
 .hd-w3d .viewer.open{display:flex}
-.hd-w3d .vbar{display:flex;justify-content:space-between;align-items:center;color:#fff;padding:.6rem 1rem;font-size:.9rem;gap:1rem}
-.hd-w3d .vbar a{color:#ffd8a8}
-.hd-w3d .vbar button{font:inherit;background:none;border:1px solid #fff;color:#fff;border-radius:6px;padding:.25rem .7rem;cursor:pointer}
+.hd-w3d .vbar{display:flex;justify-content:space-between;align-items:center;color:#fcfcfa;padding:.6rem 1rem;font-size:.9rem;gap:1rem}
+.hd-w3d .vbar a{color:var(--lime)}
+.hd-w3d .vbar button{font:inherit;background:none;border:1px solid #fcfcfa;color:#fcfcfa;border-radius:6px;padding:.25rem .7rem;cursor:pointer}
 .hd-w3d .vcanvas{flex:1;position:relative}
 .hd-w3d .vcanvas canvas{width:100%;height:100%;display:block}
-.hd-w3d .vmsg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#ccc;pointer-events:none}
+.hd-w3d .vmsg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#b4b6b8;pointer-events:none}
 </style>
 <h2>Walk the home in 3D</h2>
 <p class="sub">Each labeled hazard photo from the benchmark, grown into a navigable 3D world with World Labs Marble. Step inside and look around the hazard the way an occupational therapist would on a home visit.</p>

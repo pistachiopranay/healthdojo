@@ -4,7 +4,7 @@ Re-run any time results change:  .venv/bin/python src/build_site.py
 Images are resized into site/renders (full, max 1600px) and site/thumbs (640px).
 """
 import json, re, shutil, collections
-from common import ROOT, DATA
+from common import ROOT, DATA, BENCH, bench_meta
 
 SITE = ROOT / "site"
 TYPES = ["object", "absence", "measurement", "lighting"]
@@ -99,6 +99,18 @@ def copy_images(res):
             c = im.copy(); c.thumbnail((w, w)); c.save(dest, "JPEG", quality=84 if w > 1000 else 78)
 
 
+def bench_copy(html, n_haz):
+    """Swap HomeBench-specific page copy for a BENCH's own (from its taxonomy json 'site' block). No-op for HomeBench."""
+    if not BENCH:
+        return html
+    site = bench_meta().get("site", {})
+    for old, new in site.get("replace", []):
+        html = html.replace(old, new)
+    html = html.replace("HomeBench leaderboard", f"{site.get('title', BENCH)} leaderboard")
+    html = html.replace("the same 35-hazard checklist", f"the same {n_haz}-hazard checklist")
+    return html
+
+
 def main():
     res = enrich(json.loads((DATA / "results.json").read_text()))
     copy_images(res)
@@ -106,8 +118,11 @@ def main():
         stem = (DATA / s["image"]).stem
         s["img"], s["thumb"] = f"renders/{stem}.jpg", f"thumbs/{stem}.jpg"
     html = (ROOT / "src" / "site_template.html").read_text().replace("/*DATA*/null", json.dumps(res, separators=(",", ":")))
-    (SITE / "index.html").write_text(html)
-    print("wrote", SITE / "index.html", f"({len(res['leaderboard'])} models, {len(res['scenes'])} scenes)")
+    out = SITE / (f"{BENCH}.html" if BENCH else "index.html")
+    html = bench_copy(html, len(res.get("taxonomy", {})))
+    html = html.replace(f'data-bench="{BENCH or "homebench"}"', f'data-bench="{BENCH or "homebench"}" style="color:var(--ink);text-decoration:underline"')
+    out.write_text(html)
+    print("wrote", out, f"({len(res['leaderboard'])} models, {len(res['scenes'])} scenes)")
 
 
 if __name__ == "__main__":

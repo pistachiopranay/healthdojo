@@ -4,33 +4,42 @@
 <meta charset="utf-8">
 <title>HealthDojo: 3-minute demo script and judge Q&amp;A</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root{--bg:#FAFAF7;--ink:#15171C;--muted:#5E6470;--line:#E4E4DE;--accent:#0F7B63;--accent-soft:#E3F2EC;--hazard:#E5484D;--amber:#B7791F;--amber-soft:#FBF1DD}
+  /* Pistachio design language (design/pistachio.css) */
+  :root{--green:#5ac53a;--green-active:#46a82c;--green-soft:#eaf7e2;--green-ink:#2e7a18;--lime:#d5fd51;--lime-soft:#f3fedc;
+    --gold:#f6c86a;--gold-soft:#fbeed3;--gold-ink:#8a6420;--ember:#eb5d2a;--ember-soft:#fce7dd;--ember-ink:#b23e14;
+    --cream:#f7f2e5;--cream-strong:#efe6cf;--cream-ink:#6b6350;--surface-muted:#f5f5f2;--text-body:#3a3d3f;
+    --serif:"Instrument Serif",Georgia,serif;--sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+    --bg:#fcfcfa;--ink:#1f2123;--muted:#646668;--line:#e6e6e1;--accent:var(--green-ink);--accent-soft:var(--green-soft);--hazard:var(--ember-ink);--amber:var(--gold-ink);--amber-soft:var(--gold-soft)}
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Inter","Helvetica Neue",Arial,sans-serif;font-size:19px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  body{margin:0;background:var(--bg);color:var(--text-body);font-family:var(--sans);font-size:19px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  b,strong{font-weight:600;color:var(--ink)}
   main{max-width:980px;margin:0 auto;padding:56px 32px 96px}
-  h1{font-size:44px;letter-spacing:-.03em;line-height:1.05;margin:0 0 8px}
-  h1 em{font-style:normal;color:var(--accent)}
+  h1{font-family:var(--serif);font-weight:400;font-size:64px;letter-spacing:-.015em;line-height:1;margin:0 0 12px;color:var(--ink)}
+  h1 em{font-style:italic;color:var(--green-ink)}
   .sub{color:var(--muted);font-size:20px;margin:0 0 28px}
-  h2{font-size:28px;letter-spacing:-.02em;margin:48px 0 16px;padding-top:24px;border-top:1px solid var(--line)}
+  h2{font-family:var(--serif);font-weight:400;font-size:40px;letter-spacing:-.01em;line-height:1.1;margin:48px 0 16px;padding-top:24px;border-top:1px solid var(--line);color:var(--ink)}
   .rules{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0 8px}
-  .rules div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:16px;color:var(--muted)}
+  .rules div{background:var(--cream);border:1px solid var(--cream-strong);border-radius:8px;padding:14px 16px;font-size:16px;color:var(--cream-ink)}
   .rules b{display:block;color:var(--ink);font-size:17px;margin-bottom:2px}
-  .beat{display:grid;grid-template-columns:120px 1fr;gap:20px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin:14px 0}
-  .t{font-weight:800;font-size:22px;color:var(--accent);font-variant-numeric:tabular-nums}
-  .t small{display:block;font-size:13px;color:var(--muted);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-top:2px}
-  .click{display:inline-block;background:var(--ink);color:#fff;border-radius:8px;padding:3px 10px;font-size:15px;font-weight:650;margin-bottom:10px}
-  .say{font-size:21px;line-height:1.5;margin:0}
+  .beat{display:grid;grid-template-columns:120px 1fr;gap:20px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 22px;margin:14px 0}
+  .t{font-family:var(--mono);font-weight:500;font-size:22px;color:var(--green-ink);font-variant-numeric:tabular-nums}
+  .t small{display:block;font-family:var(--sans);font-size:13px;color:var(--muted);font-weight:500;letter-spacing:.06em;text-transform:uppercase;margin-top:2px}
+  .click{display:inline-block;background:var(--lime);color:var(--green-ink);border:1px solid var(--green-active);border-radius:6px;padding:3px 10px;font-size:15px;font-weight:600;margin-bottom:10px}
+  .say{font-size:21px;line-height:1.5;margin:0;color:var(--ink)}
   .note{font-size:15.5px;color:var(--muted);margin-top:10px}
   .note b{color:var(--ink)}
-  .tbd{background:var(--amber-soft);color:var(--amber);border-radius:6px;padding:0 7px;font-weight:700;white-space:nowrap}
-  .qa{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin:12px 0}
-  .qa h3{margin:0 0 6px;font-size:20px}
-  .qa p{margin:0;color:#2B2F37}
-  .qa .short{color:var(--accent);font-weight:700}
+  .tbd{background:var(--gold-soft);color:var(--gold-ink);border-radius:4px;padding:0 7px;font-weight:600;white-space:nowrap}
+  .qa{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin:12px 0}
+  .qa h3{margin:0 0 6px;font-size:20px;font-weight:600;color:var(--ink)}
+  .qa p{margin:0;color:var(--text-body)}
+  .qa .short{color:var(--green-ink);font-weight:600}
   ol.path{padding-left:22px;margin:8px 0}
   ol.path li{margin:4px 0}
-  code{font-family:ui-monospace,Menlo,monospace;font-size:.88em;background:#F0F0EA;padding:1px 5px;border-radius:5px}
+  ol.path li::marker{font-family:var(--mono);color:var(--green-ink)}
+  code{font-family:var(--mono);font-size:.86em;background:var(--surface-muted);border:1px solid var(--line);padding:0 5px;border-radius:4px}
   .lines li{margin:6px 0}
   @media print{body{font-size:14px}main{padding:20px}.beat,.qa{break-inside:avoid}}
 </style>

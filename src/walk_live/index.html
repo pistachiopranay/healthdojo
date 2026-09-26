@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HealthDojo · Live walkthrough</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#5ac53a;--green-active:#46a82c;--green-soft:#eaf7e2;--green-ink:#2e7a18;--lime:#d5fd51;--lime-active:#c7ef3d;--lime-soft:#f3fedc;
+  --gold:#f6c86a;--gold-soft:#fbeed3;--gold-ink:#8a6420;--ember:#eb5d2a;--ember-soft:#fce7dd;--ember-ink:#b23e14;--cream:#f7f2e5;--cream-strong:#efe6cf;--cream-ink:#6b6350;
+  --canvas:#fcfcfa;--card:#fff;--muted:#f5f5f2;--border:#e6e6e1;--ink:#1f2123;--body:#3a3d3f;--mute:#646668;--faint:#8f9193;
+  --serif:"Instrument Serif",Georgia,serif;--sans:"Inter",-apple-system,system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;--ease:cubic-bezier(0.16,1,0.3,1)}
+*{box-sizing:border-box}html,body{margin:0;height:100%;overflow:hidden}
+body{background:var(--ink);color:var(--ink);font:400 18px/1.45 var(--sans);-webkit-font-smoothing:antialiased}
+#bar{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;gap:16px;padding:12px 24px;background:var(--canvas);border-bottom:1px solid var(--border)}
+.logo{font-family:var(--serif);font-size:34px;letter-spacing:-.01em;line-height:1}.logo i{font-style:italic;color:var(--green-ink)}
+.tag{display:inline-block;font:500 13px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--green-ink);background:var(--lime-soft);border:1px solid var(--lime-active);border-radius:999px;padding:3px 10px}
+select{font:500 17px var(--sans);padding:9px 14px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--ink)}
+.seg{display:flex;border:1px solid var(--border);border-radius:8px;overflow:hidden;background:var(--cream)}
+.seg button{border:0;background:none;padding:9px 16px;font:500 15px var(--sans);color:var(--cream-ink);cursor:pointer}
+.seg button.on{background:var(--ink);color:#fff}
+.btn{border:1px solid var(--green-active);border-radius:8px;padding:10px 24px;font:600 17px var(--sans);cursor:pointer;background:var(--lime);color:var(--green-ink)}
+.btn:hover{background:var(--lime-active)}
+.btn.ghost{background:var(--card);color:var(--ink);border:1px solid var(--border)}
+.sp{flex:1}
+#stage{position:fixed;inset:0}#stage canvas{display:block}
+.hud{position:fixed;z-index:10;pointer-events:none}
+#stepbox{top:92px;left:28px;background:rgba(31,33,35,.82);color:#fff;border-radius:12px;padding:14px 22px;min-width:260px;border:1px solid rgba(213,253,81,.35)}
+#stepbox .n{font:500 60px/1 var(--mono);letter-spacing:-.03em}
+#stepbox .n small{font-size:26px;color:var(--faint)}
+#stepbox .who{font:500 14px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--lime);margin-bottom:6px}
+#stepbox .act{font:500 18px var(--mono);margin-top:8px;color:#fff}
+#thinking{display:none;margin-top:10px;font:500 15px var(--mono);color:var(--ink);background:var(--lime);border-radius:999px;padding:3px 12px;width:max-content}
+#thinking.on{display:block;animation:pulse 1.4s ease-in-out infinite}
+@keyframes pulse{50%{background:var(--lime-soft)}}
+#caption{left:28px;right:476px;bottom:28px;background:var(--canvas);border:1px solid var(--border);border-radius:12px;padding:20px 28px;display:none}
+#caption.on{display:block;animation:rise .24s var(--ease)}
+@keyframes rise{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+#caption .say{font:500 34px/1.22 var(--sans);letter-spacing:-.015em}
+#caption .th{font-size:17px;color:var(--mute);margin-top:10px}
+#caption .flag{display:inline-block;font:500 15px var(--mono);padding:4px 12px;border-radius:999px;margin-bottom:10px;border:1px solid}
+.f-hit{background:var(--green-soft);color:var(--green-ink);border-color:var(--green-active)!important}
+.f-miss{background:var(--ember-soft);color:var(--ember-ink);border-color:var(--ember)!important}
+#right{top:92px;right:28px;width:420px;display:flex;flex-direction:column;gap:12px}
+.panel{background:var(--canvas);border:1px solid var(--border);border-radius:12px;padding:12px}
+.panel h4{margin:0 0 8px;font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+#mini{width:100%;display:block;border-radius:6px}
+#seen{width:100%;display:block;border-radius:6px;aspect-ratio:4/3;object-fit:cover;background:var(--muted);border:2px solid var(--lime)}
+#score{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;font-size:13px;color:var(--mute)}
+#score b{display:block;font:500 24px var(--mono);color:var(--ink)}
+#endcard{position:fixed;inset:0;z-index:30;display:none;align-items:center;justify-content:center;background:rgba(31,33,35,.5)}
+#endcard.on{display:flex;animation:rise .24s var(--ease)}
+#endcard .card{background:var(--canvas);border:1px solid var(--border);border-radius:12px;padding:44px 56px;min-width:820px;box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+#endcard h2{font:400 76px/1 var(--serif);margin:14px 0 24px;letter-spacing:-.01em}
+#endcard .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;border-top:1px solid var(--border);padding-top:18px}
+#endcard .grid>div>span{display:block;font:500 13px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+#endcard .grid b{font:500 44px var(--mono);letter-spacing:-.02em}
+.yes{color:var(--green-ink)}.no{color:var(--ember-ink)}.goldt{color:var(--gold-ink)}
+#intro{position:fixed;inset:0;z-index:5;display:flex;align-items:center;justify-content:center;pointer-events:none}
+#intro .t{text-align:center;color:#fff;text-shadow:0 4px 30px rgba(0,0,0,.6)}
+#intro h1{font:400 96px/1 var(--serif);margin:0;letter-spacing:-.01em}
+#intro h1 em{color:var(--lime)}
+#intro p{font-size:24px;margin:14px 0 0}
+</style>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script>
+</head><body>
+<div id="bar">
+  <div class="logo">Health<i>Dojo</i></div><div class="tag">Walkthrough · live</div>
+  <div class="sp"></div>
+  <select id="world"></select><select id="model"></select>
+  <div class="seg" id="mode"><button data-m="live" class="on">Live</button><button data-m="replay">Replay</button></div>
+  <label style="font-size:15px;color:var(--ink2)"><input type="checkbox" id="voice" checked> Voice</label>
+  <button class="btn" id="start">Start ▶</button>
+  <button class="btn ghost" id="fs" title="Fullscreen">⛶</button>
+</div>
+<div id="stage"></div>
+<div id="intro"><div class="t"><h1>Drop the model <em>into the home.</em></h1><p>It starts facing away from the hazard. Eight moves. Where will it look?</p></div></div>
+<div class="hud" id="stepbox"><div class="who" id="who">—</div><div class="n" id="stepn">0<small> / 8</small></div><div class="act" id="act">ready</div><div id="thinking">model is thinking</div></div>
+<div class="hud" id="right">
+  <div class="panel"><h4>Gaze path · full 360°</h4><canvas id="mini" width="840" height="420"></canvas></div>
+  <div class="panel"><h4>What the model sees</h4><img id="seen" alt=""></div>
+  <div class="panel"><div id="score"><div><b id="sFound">–</b>found at step</div><div><b id="sFlags">0</b>off-target flags</div><div><b id="sCov">0%</b>coverage</div><div><b id="sLat">–</b>last step</div></div></div>
+</div>
+<div class="hud" id="caption"><div id="capflag"></div><div class="say" id="say"></div><div class="th" id="th"></div></div>
+<div id="endcard"><div class="card"><div class="tag" id="endWho"></div><h2 id="endTitle"></h2><div class="grid">
+  <div><span>Found</span><b id="eFound"></b></div><div><span>Steps to find</span><b id="eSteps"></b></div><div><span>Off-target flags</span><b id="eFlags"></b></div><div><span>Had it in view</span><b id="eSaw"></b></div></div>
+  <p id="eNote" style="color:var(--ink2);font-size:18px;margin:22px 0 0"></p>
+  <div style="margin-top:22px;display:flex;gap:12px"><button class="btn" onclick="document.getElementById('endcard').classList.remove('on')">Look around</button></div></div></div>
+<script type="module">
+import * as THREE from "three";
+const $=id=>document.getElementById(id);
+let META, mode="live", es=null, queue=[], busy=false, runId=0;
+// ---------- three.js pano sphere ----------
+const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setPixelRatio(Math.min(2,devicePixelRatio));
+$("stage").appendChild(renderer.domElement);
+const scene=new THREE.Scene();const camera=new THREE.PerspectiveCamera(75,innerWidth/innerHeight,1,2000);
+const geo=new THREE.SphereGeometry(500,96,64);geo.scale(-1,1,1);
+const mat=new THREE.MeshBasicMaterial({color:0xffffff});const sphere=new THREE.Mesh(geo,mat);scene.add(sphere);
+const pins=new THREE.Group();scene.add(pins);
+const cam={yaw:180,pitch:0,fov:90};let tween=null,drag=null;
+const D2R=Math.PI/180;
+const dir=(yaw,pitch)=>new THREE.Vector3(-Math.cos(yaw*D2R)*Math.cos(pitch*D2R),Math.sin(pitch*D2R),-Math.sin(yaw*D2R)*Math.cos(pitch*D2R));
+// model fov is horizontal; three's fov is vertical
+const vfov=h=>2*Math.atan(Math.tan(h*D2R/2)/camera.aspect)/D2R;
+function resize(){renderer.setSize(innerWidth,innerHeight);camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();}
+addEventListener("resize",resize);resize();
+function applyCam(){camera.fov=Math.min(110,vfov(cam.fov)*1.0);camera.updateProjectionMatrix();camera.lookAt(dir(cam.yaw,cam.pitch));}
+const ease=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;
+function tweenTo(v,ms=1100){return new Promise(res=>{let dy=((v.yaw-cam.yaw)%360+540)%360-180;
+  const from={...cam};const dur=Math.max(500,ms*Math.min(1.6,0.6+Math.abs(dy)/180));
+  tween={from,dy,to:v,t0:performance.now(),dur,res};});}
+function loop(now){requestAnimationFrame(loop);
+  if(tween){const t=Math.min(1,(now-tween.t0)/tween.dur),e=ease(t);
+    cam.yaw=tween.from.yaw+tween.dy*e;cam.pitch=tween.from.pitch+(tween.to.pitch-tween.from.pitch)*e;cam.fov=tween.from.fov+(tween.to.fov-tween.from.fov)*e;
+    if(t>=1){cam.yaw=((tween.to.yaw%360)+360)%360;const r=tween.res;tween=null;r();}}
+  pins.children.forEach(p=>{if(p.userData.pulse){const s=1+.25*Math.sin(now/220);p.scale.set(s,s,s);}});
+  applyCam();renderer.render(scene,camera);}
+requestAnimationFrame(loop);
+// manual look-around when idle
+renderer.domElement.addEventListener("pointerdown",e=>{if(!busy)drag={x:e.clientX,y:e.clientY,yaw:cam.yaw,pitch:cam.pitch};});
+addEventListener("pointermove",e=>{if(drag){cam.yaw=drag.yaw-(e.clientX-drag.x)*.15;cam.pitch=Math.max(-80,Math.min(80,drag.pitch+(e.clientY-drag.y)*.15));}});
+addEventListener("pointerup",()=>drag=null);
+function makePin(yaw,pitch,ok,label){const g=new THREE.Group();const c=ok?0x5ac53a:0xeb5d2a;
+  const ball=new THREE.Mesh(new THREE.SphereGeometry(9,24,16),new THREE.MeshBasicMaterial({color:c}));
+  const ring=new THREE.Mesh(new THREE.RingGeometry(13,18,40),new THREE.MeshBasicMaterial({color:0xffffff,side:THREE.DoubleSide}));
+  const cv=document.createElement("canvas");cv.width=512;cv.height=96;const x=cv.getContext("2d");
+  x.fillStyle=ok?"#5ac53a":"#eb5d2a";x.beginPath();x.roundRect(0,8,512,80,40);x.fill();x.fillStyle="#fff";x.font="500 44px IBM Plex Mono, monospace";x.textAlign="center";x.fillText(label,256,64);
+  const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(cv),depthTest:false}));sp.scale.set(90,17,1);sp.position.set(0,30,0);
+  g.add(ring,ball,sp);g.position.copy(dir(yaw,pitch).multiplyScalar(420));ring.lookAt(0,0,0);g.userData.pulse=true;
+  setTimeout(()=>g.userData.pulse=false,2500);pins.add(g);}
+function gtMarkers(gt){gt.regions.forEach(r=>{const m=new THREE.Mesh(new THREE.RingGeometry(r.r*7.5,r.r*7.5+4,64),new THREE.MeshBasicMaterial({color:0xf6c86a,transparent:true,opacity:.0,side:THREE.DoubleSide}));
+  m.position.copy(dir(r.yaw,r.pitch).multiplyScalar(440));m.lookAt(0,0,0);m.userData.gt=true;pins.add(m);});}
+// ---------- minimap ----------
+const mini=$("mini"),mx=mini.getContext("2d");let miniImg=new Image(),path=[],flags=[],gtShow=null;
+const mxy=(yaw,pitch)=>[((((yaw+180)%360)+360)%360)/360*840,(90-pitch)/180*420];
+function drawMini(){mx.clearRect(0,0,840,420);if(miniImg.complete)mx.drawImage(miniImg,0,0,840,420);
+  if(gtShow)gtShow.regions.forEach(r=>{const[x,y]=mxy(r.yaw,r.pitch);mx.strokeStyle="#f6c86a";mx.lineWidth=4;mx.setLineDash([8,5]);mx.beginPath();mx.arc(x,y,Math.max(10,r.r/360*840),0,7);mx.stroke();mx.setLineDash([]);});
+  for(let i=1;i<path.length;i++){const a=mxy(path[i-1].yaw,path[i-1].pitch),b=mxy(path[i].yaw,path[i].pitch);let dx=b[0]-a[0];if(dx>420)dx-=840;if(dx<-420)dx+=840;
+    mx.strokeStyle="#d5fd51";mx.lineWidth=5;mx.beginPath();mx.moveTo(a[0],a[1]);mx.lineTo(a[0]+dx,b[1]);mx.stroke();if(a[0]+dx<0||a[0]+dx>840){mx.beginPath();mx.moveTo(b[0]-dx,a[1]);mx.lineTo(b[0],b[1]);mx.stroke();}}
+  path.forEach((p,i)=>{const[x,y]=mxy(p.yaw,p.pitch);mx.fillStyle="#d5fd51";mx.strokeStyle="#2e7a18";mx.lineWidth=2;mx.beginPath();mx.arc(x,y,12,0,7);mx.fill();mx.stroke();
+    mx.fillStyle="#2e7a18";mx.font="500 14px IBM Plex Mono";mx.textAlign="center";mx.fillText(p.n,x,y+5);});
+  flags.forEach(f=>{const[x,y]=mxy(f.yaw,f.pitch);mx.fillStyle=f.ok?"#5ac53a":"#eb5d2a";mx.strokeStyle="#fff";mx.lineWidth=3;mx.beginPath();mx.arc(x,y,9,0,7);mx.fill();mx.stroke();});
+  // current heading
+  const[cx,cy]=mxy(cam.yaw,cam.pitch);mx.strokeStyle="#d5fd51";mx.lineWidth=3;mx.strokeRect(cx-cam.fov/360*420,cy-cam.fov*.75/180*210,cam.fov/360*840,cam.fov*.75/180*420);}
+setInterval(drawMini,100);
+// ---------- voice ----------
+function speak(ev){return new Promise(res=>{if(!$("voice").checked||!ev.say)return setTimeout(res,1400);
+  let fin=false;const done=()=>{if(!fin){fin=true;res();}};setTimeout(done,2500+ev.say.split(" ").length*450);const fallback=()=>{if(!("speechSynthesis" in window))return setTimeout(res,1500);const u=new SpeechSynthesisUtterance(ev.say);u.rate=1.05;u.onend=done;u.onerror=done;speechSynthesis.speak(u);};
+  if(ev.audio_url){const a=new Audio(ev.audio_url);a.onended=done;a.onerror=fallback;a.play().catch(fallback);}else fallback();});}
+// ---------- episode ----------
+function setAct(t){$("act").textContent=t;}
+function actText(a){if(!a)return"";const k=a.action;if(k==="flag")return`FLAG ${a.hazard_id}`;if(k==="turn"||k==="look"||k==="zoom")return k.toUpperCase()+" → "+["yaw","pitch","fov"].filter(x=>a[x]!=null).map(x=>`${x} ${Math.round(a[x])}°`).join(" · ");return(k||"?").toUpperCase();}
+function target(a,v){const t={...v};if(["turn","look","zoom"].includes(a.action)){const n=(k,lo,hi)=>{const x=parseFloat(a[k]);return isNaN(x)?t[k]:Math.max(lo,Math.min(hi,x));};
+  t.yaw=((n("yaw",-720,720)%360)+360)%360;t.pitch=n("pitch",-60,60);t.fov=n("fov",30,90);}return t;}
+async function handle(ev,id){if(id!==runId)return;
+  if(ev.type==="start"){$("who").textContent=`${ev.model} · ${ev.mode}`;$("stepn").innerHTML=`0<small> / ${ev.budget}</small>`;gtShow=null;
+    cam.yaw=ev.start.yaw;cam.pitch=ev.start.pitch;cam.fov=ev.start.fov;gtMarkers(ev.gt);window._gt=ev.gt;return;}
+  if(ev.type==="thinking"){$("thinking").classList.add("on");$("stepn").innerHTML=`${ev.step}<small> / ${META.budget}</small>`;$("seen").src=ev.view_jpg_url;
+    if(Math.abs(((ev.view.yaw-cam.yaw)%360+540)%360-180)>1||Math.abs(ev.view.pitch-cam.pitch)>1||Math.abs(ev.view.fov-cam.fov)>1)await tweenTo(ev.view);return;}
+  if(ev.type==="step"){$("thinking").classList.remove("on");$("stepn").innerHTML=`${ev.step}<small> / ${META.budget}</small>`;$("seen").src=ev.view_jpg_url;
+    await tweenTo(ev.view,600);path.push({...ev.view,n:ev.step});
+    setAct(actText(ev.action));$("sLat").textContent=ev.latency_s!=null?ev.latency_s+"s":"–";
+    const g=ev.grading;$("sFound").innerHTML=g.found?`<span class="yes">✓ ${g.steps_to_find}</span>`:"–";$("sFlags").textContent=g.false_flags;$("sCov").textContent=Math.round(g.coverage*100)+"%";
+    $("caption").classList.add("on");$("say").textContent=ev.say||"";$("th").textContent=ev.thought&&!ev.thought.startsWith((ev.say||"").replace(/(\.\.\.|\. Flagging it\.)$/,""))?ev.thought:"";
+    $("capflag").innerHTML=ev.flag?`<span class="flag ${ev.flag.correct?"f-hit":"f-miss"}">${ev.flag.correct?"✓ HIT":"✗ OFF-TARGET"} · ${ev.flag.hazard_id} · ${ev.flag.name||""}</span>`:"";
+    if(ev.flag&&ev.flag.dir){makePin(ev.flag.dir[0],ev.flag.dir[1],ev.flag.correct,`${ev.step}·${ev.flag.hazard_id}`);flags.push({yaw:ev.flag.dir[0],pitch:ev.flag.dir[1],ok:ev.flag.correct});}
+    await speak(ev);
+    const t=target(ev.action,ev.view);if(t.yaw!==ev.view.yaw||t.pitch!==ev.view.pitch||t.fov!==ev.view.fov)await tweenTo(t);
+    return;}
+  if(ev.type==="end"){$("thinking").classList.remove("on");busy=false;const m=ev.metrics;gtShow=window._gt;
+    pins.children.forEach(p=>{if(p.userData.gt)p.material.opacity=.9;});
+    const r=window._gt.regions[0];await tweenTo({yaw:(r.yaw+360)%360,pitch:r.pitch,fov:90},1400);
+    $("endWho").textContent=`${$("model").value} · ${META.worlds[$("world").value].title}`;
+    $("endTitle").innerHTML=m.found?`<span class="yes">Found it.</span>`:(m.saw_hazard?`<span class="goldt">Looked right at it. Missed it.</span>`:`<span class="no">Never found it.</span>`);
+    $("eFound").innerHTML=m.found?'<span class="yes">Yes</span>':'<span class="no">No</span>';$("eSteps").textContent=m.found?`${m.steps_to_find} / ${META.budget}`:"–";
+    $("eFlags").textContent=m.false_flags;$("eSaw").innerHTML=m.saw_hazard?'<span class="goldt">Yes</span>':"No";
+    $("eNote").textContent=`Seeded hazard: ${window._gt.hazard_id} · ${window._gt.hazard_name}. Coverage ${Math.round(m.coverage*100)}% of the sphere. Gold ring = where it actually was.`;
+    if($("voice").checked)speak({say:m.found?`Found the ${window._gt.hazard_name.toLowerCase()} in ${m.steps_to_find} steps.`:`Walkthrough over. I missed the ${window._gt.hazard_name.toLowerCase()}.`,audio_url:null});
+    $("endcard").classList.add("on");$("start").textContent="Start ▶";return;}
+  if(ev.type==="error"){alert(ev.message);busy=false;$("start").textContent="Start ▶";}}
+async function pump(id){if(pumping)return;pumping=true;while(queue.length&&id===runId){const ev=queue.shift();await handle(ev,id);}pumping=false;}
+let pumping=false;
+function loadWorld(){const w=META.worlds[$("world").value];new THREE.TextureLoader().load(w.pano,t=>{t.colorSpace=THREE.SRGBColorSpace;mat.map=t;mat.needsUpdate=true;});miniImg=new Image();miniImg.src=w.mini;}
+function reset(){runId++;if(es)es.close();queue=[];pins.clear();path=[];flags=[];gtShow=null;$("endcard").classList.remove("on");$("caption").classList.remove("on");
+  speechSynthesis&&speechSynthesis.cancel();setAct("ready");$("sFound").textContent="–";$("sFlags").textContent="0";$("sCov").textContent="0%";$("sLat").textContent="–";$("thinking").classList.remove("on");}
+function start(){reset();loadWorld();$("intro").style.display="none";busy=true;$("start").textContent="Restart ↺";const id=runId;
+  cam.yaw=180;cam.pitch=0;cam.fov=90;
+  es=new EventSource(`/api/episode?model=${encodeURIComponent($("model").value)}&world=${encodeURIComponent($("world").value)}&mode=${mode}`);
+  es.onmessage=e=>{const ev=JSON.parse(e.data);queue.push(ev);if(ev.type==="end"||ev.type==="error")es.close();pump(id);};
+  es.onerror=()=>{es.close();};}
+function refreshModels(){const w=$("world").value;[...$("model").options].forEach(o=>{const has=META.saved[o.value]?.includes(w);o.disabled=mode==="replay"&&!has;});}
+META=await (await fetch("/api/meta")).json();
+$("world").innerHTML=Object.entries(META.worlds).map(([k,w])=>`<option value="${k}">${w.title}</option>`).join("");
+$("model").innerHTML=META.models.map(m=>`<option>${m}</option>`).join("");
+const q=new URLSearchParams(location.search);if(q.get("w"))$("world").value=q.get("w");if(q.get("m"))$("model").value=q.get("m");
+if(q.get("mode")==="replay"){mode="replay";document.querySelectorAll("#mode button").forEach(x=>x.classList.toggle("on",x.dataset.m==="replay"));}
+$("world").onchange=()=>{reset();loadWorld();refreshModels();};$("model").onchange=()=>{};
+document.querySelectorAll("#mode button").forEach(b=>b.onclick=()=>{mode=b.dataset.m;document.querySelectorAll("#mode button").forEach(x=>x.classList.toggle("on",x===b));refreshModels();});
+$("start").onclick=start;$("fs").onclick=()=>document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();
+loadWorld();refreshModels();cam.yaw=180;
+if(q.get("autostart"))start();
+</script></body></html>
