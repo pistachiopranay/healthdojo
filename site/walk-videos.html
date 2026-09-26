@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HealthDojo: watch a model walk a home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#5ac53a;--green-active:#46a82c;--green-soft:#eaf7e2;--green-ink:#2e7a18;--lime:#d5fd51;--lime-soft:#f3fedc;
+  --gold-ink:#8a6420;--ember-ink:#b23e14;--canvas:#fcfcfa;--card:#fff;--border:#e6e6e1;--border-soft:#f0f0ec;
+  --ink:#1f2123;--text-body:#3a3d3f;--text-muted:#646668;--text-faint:#8f9193;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+*{box-sizing:border-box}
+body{margin:0;background:var(--canvas);color:var(--text-body);font:15px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}.wrap{max-width:1120px;margin:0 auto;padding:0 32px}
+nav{position:sticky;top:0;z-index:5;background:rgba(252,252,250,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--border-soft)}
+nav .wrap{display:flex;align-items:center;height:54px;gap:16px}
+.logo{font:600 19px var(--sans);letter-spacing:-.02em;text-decoration:none;color:var(--ink)}.logo i{font-style:normal;color:var(--green-ink)}
+nav .links{margin-left:auto;display:flex;gap:16px;font-size:13px}nav .links a{text-decoration:none;color:var(--text-muted)}nav .links a:hover{color:var(--ink)}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--green-ink);font-weight:500}
+h1,h2{font-weight:600;letter-spacing:-.02em;color:var(--ink);margin:0}
+h1{font-size:44px;line-height:1.06;margin-top:12px}h1 em{font-style:normal;color:var(--green-ink)}
+h2{font-size:22px;margin-top:6px}
+.lede{font-size:17px;max-width:62ch;margin:16px 0 0}
+header{padding:64px 0 28px}
+.vid{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;margin:0 0 36px}
+.vid video{display:block;width:100%;height:auto;background:#10180c;aspect-ratio:1440/900}
+.cap{padding:18px 22px 22px}.cap p{margin:8px 0 0;max-width:72ch}
+.tag{display:inline-block;font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:5px;margin-right:6px}
+.miss{background:#fce7dd;color:var(--ember-ink)}.hit{background:var(--green-soft);color:var(--green-ink)}.loop{background:#fbeed3;color:var(--gold-ink)}
+.live{background:var(--lime-soft);border:1px solid var(--lime);border-radius:12px;padding:20px 22px;margin:8px 0 64px}
+.live b{color:var(--green-ink)}.note{font-size:13px;color:var(--text-muted)}
+footer{border-top:1px solid var(--border-soft);padding:24px 0 48px}
+</style></head><body>
+<nav><div class="wrap"><a class="logo" href="index.html">Health<i>Dojo</i></a><div class="links"><a href="index.html">Home</a><a href="walk.html">Walk traces</a><a href="worlds_3d.html">Worlds</a></div></div></nav>
+<main class="wrap">
+<header>
+  <div class="eyebrow">Walkthrough replays</div>
+  <h1>Drop a vision model into a <em>real home</em>. Watch it look.</h1>
+  <p class="lede">Each model gets a 360° capture of a room with one seeded fall hazard and 8 steps. It turns, zooms, and flags what it sees, narrating as it goes. These are recorded replays of saved runs, with the model's own narration voiced.</p>
+</header>
+
+<section class="vid">
+  <video src="videos/gpt-5.6-sol-bathroom.mp4" poster="videos/gpt-5.6-sol-bathroom.jpg" controls preload="metadata" playsinline></video>
+  <div class="cap"><span class="tag miss">Missed</span><span class="tag">Bathroom · BATH-07</span>
+    <h2>GPT-5.6 Sol walks past the loose bath mat</h2>
+    <p>It flags grab bars and toilet support five times, has the rug in view, and never calls it. The end card says it plainly: looked right at it, missed it.</p></div>
+</section>
+
+<section class="vid">
+  <video src="videos/kimi-k3-bedroom.mp4" poster="videos/kimi-k3-bedroom.jpg" controls preload="metadata" playsinline></video>
+  <div class="cap"><span class="tag hit">Found</span><span class="tag">Bedroom · BED-04</span>
+    <h2>Kimi K3 finds the bedroom hazard</h2>
+    <p>Same 8-step budget, different model: it flags the seeded hazard early and keeps scanning the room.</p></div>
+</section>
+
+<section class="vid" id="nova">
+  <video src="videos/nova-pro-stairs.mp4" poster="videos/nova-pro-stairs.jpg" controls preload="metadata" playsinline></video>
+  <div class="cap"><span class="tag loop">Stuck</span><span class="tag">Stairs · STAIR-03</span>
+    <h2>Nova Pro gets stuck on the stairs</h2>
+    <p>It keeps flagging the same off-target spot, step after step, and never reaches the seeded stair hazard.</p></div>
+</section>
+
+<div class="live"><b>Try it live (on-site demo).</b> The interactive walkthrough, where you pick a model and a home and watch it run in real time, runs on our demo server during live sessions. Ask us for a walkthrough.</div>
+</main>
+<footer><div class="wrap note">HealthDojo · the flight simulator for home-health AI</div></footer>
+</body></html>

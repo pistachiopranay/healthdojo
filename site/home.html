@@ -327,13 +327,53 @@ table.lbf{width:100%;border-collapse:collapse;font-size:13.5px}
 .cstat{font-size:14px;color:var(--text-body);margin-top:8px}.cstat b{font-family:var(--mono);color:var(--ember-ink);font-weight:500}
 .curve .ch{font:600 20px/1.25 var(--sans);letter-spacing:-.02em;color:var(--ink);margin-top:6px}.curve .ch b{font-family:var(--mono);font-weight:500}
 .cplot{max-height:180px}
+/* images + 3D pairs (card style matches how-it-works) */
+.pairs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.pair{display:flex;flex-direction:column;gap:10px;padding:0 0 14px;overflow:hidden}
+.pair .chev{margin:0;border-radius:0;clip-path:none;padding:0 16px}
+.pair .pp{display:grid;grid-template-columns:1fr 16px 1fr;align-items:center;gap:6px;padding:0 14px}
+.pimg{position:relative;display:block;border-radius:8px;overflow:hidden;aspect-ratio:4/3;border:1px solid var(--border-soft)}
+.pimg img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s var(--ease)}
+.pimg:hover img{transform:scale(1.03)}
+.ptag{position:absolute;left:8px;bottom:8px;font:500 11px var(--mono);background:rgba(252,252,250,.92);color:var(--ink);border:1px solid var(--border);border-radius:6px;padding:2px 8px}
+.ptag.p3{background:var(--lime);color:var(--green-ink);border-color:var(--green-active)}
+.parr{color:var(--green-ink);font:500 14px var(--mono);text-align:center}
+@media(max-width:900px){.pairs{grid-template-columns:1fr}}
+/* guideline catalog */
+.lcat{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.lcard{display:grid;grid-template-columns:44% 1fr;text-decoration:none;color:inherit;transition:border-color .2s,transform .2s var(--ease)}
+.lcard:hover{border-color:var(--green-active);transform:translateY(-2px)}
+.lcard .lim{position:relative;min-height:230px}.lcard .lim img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.lcard .lbd{padding:18px 20px;display:flex;flex-direction:column;gap:10px}
+.lcard h3{font-size:22px;letter-spacing:-.02em}
+.lcard p{margin:0;font-size:14px;color:var(--text-muted);line-height:1.45}
+.lsrc{display:flex;align-items:center;gap:8px}
+.lsrc img{height:24px;width:auto}
+.lsrc .tb{font:500 11px var(--mono);padding:3px 8px;border:1px solid var(--border);border-radius:6px;background:#fff;color:var(--ink)}
+.lcard .btn{align-self:flex-start;margin-top:auto}
+.lnext{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:14px}
+.lnext div{padding:10px 14px;border:1px dashed var(--border);border-radius:10px;background:var(--surface-muted);display:flex;align-items:center;gap:10px}
+.lnext b{font-size:13px;color:var(--ink);font-weight:600}.lnext span.s{font:400 10px var(--mono);color:var(--text-faint);margin-left:auto;white-space:nowrap}
+.ck-nx{background:var(--gold-soft);color:var(--gold-ink);border-color:var(--gold)}.ck-nx::before{display:none}
+@media(max-width:900px){.lcat,.lnext{grid-template-columns:1fr}.lcard{grid-template-columns:1fr}}
+.stack{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--border-soft)}
+.stack .tile{padding:16px 20px 18px;border-right:1px solid var(--border-soft);border-bottom:1px solid var(--border-soft)}
+.stack .tile:nth-child(4n){border-right:0}
+.stack .tl{font:500 10px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--green-ink)}
+.stack b{display:block;font-size:15px;color:var(--ink);margin-top:6px;letter-spacing:-.01em}
+.stack p{margin:6px 0 0;font-size:12.5px;color:var(--text-muted);line-height:1.45}
+.stack .tile.wide{background:var(--lime-soft)}.stack .tile:last-child{grid-column:span 2;border-right:0}
+.counts{grid-template-columns:repeat(4,1fr)!important}
+.cavl{padding:12px 28px;font-size:13px;color:var(--gold-ink);background:var(--gold-soft);border-top:1px solid var(--gold)}
+.shl{padding:16px 28px;font:500 18px/1.35 var(--sans);letter-spacing:-.015em;color:var(--ink);border-top:1px solid var(--border-soft)}
+@media(max-width:900px){.stack{grid-template-columns:1fr 1fr}}
 </style></head><body>
 <nav class="top"><div class="pill">
   <a class="logo" href="home.html"><span class="mark"></span><span>Health<i>Dojo</i></span></a>
   <div class="links">
     <a href="guidelines.html">Guidelines</a><a href="index.html">Results</a><a href="worlds_3d.html">3D worlds</a><a href="walk.html">Walkthrough</a><a href="https://github.com/pistachiopranay/healthdojo">GitHub</a>
   </div>
-  <a href="https://placard-catapult-unpleased.ngrok-free.dev/" class="navcta">Fly your model through it →</a>
+  <a href="walk-videos.html" class="navcta">Fly your model through it →</a>
 </div></nav>
 <div id="dots"></div>
 
@@ -346,7 +386,7 @@ table.lbf{width:100%;border-collapse:collapse;font-size:13.5px}
     <h1><span class="hl">The flight simulator</span><span class="hl"><em>for home-health AI.</em></span></h1>
     <p class="p1">Robots, smart glasses and care apps are moving into patients' homes. Today the only test is a real patient.</p>
     <p class="p2">HealthDojo turns clinical guidelines into synthetic homes with exact labels, so your team finds the edge cases and trains on them before a patient ever does.</p>
-    <div class="ctas"><a class="btn pri" href="https://placard-catapult-unpleased.ngrok-free.dev/">Fly your model through it →</a><a class="btn" href="#finding">See how models score ↓</a></div>
+    <div class="ctas"><a class="btn pri" href="walk-videos.html">Fly your model through it →</a><a class="btn" href="#finding">See how models score ↓</a></div>
   </div></div>
   <div class="hbr"><div class="hcap" id="hcap"><i></i><span id="hcapT">Cluttered staircase · stairs-base0-STAIR-03</span></div>
     <a class="w3chip" href="world.html?id=stairs-base0-STAIR-03"><i></i>Live 3D · Gaussian splat · walk it yourself →</a></div>
@@ -392,24 +432,16 @@ table.lbf{width:100%;border-collapse:collapse;font-size:13.5px}
   <div class="stair2"><div class="stp" style="min-height:330px"><div class="stimg"><img src="home-assets/cur-fal-L1-000.jpg" alt=""></div><div class="slv">L1</div><h4>Obvious</h4><p>One clear hazard, clean room, good light.</p><div class="srow"><span class="k">Hazards</span><span class="pips2"><i class="h"></i></span></div><div class="srow"><span class="k">Look-alikes</span><span class="zz">none</span></div><div class="srow"><span class="k">Conditions</span><span>good light</span></div><div class="media"><span class="mchip">Image</span><a class="mchip m3" href="world.html?id=bathroom-base0-BATH-07">3D →</a></div></div><div class="stp" style="min-height:370px"><div class="stimg"><img src="home-assets/cur-fal-L2-000.jpg" alt=""></div><div class="slv">L2</div><h4>Subtle</h4><p>Judge adequacy: a towel bar, a short rail, a low-contrast mat.</p><div class="srow"><span class="k">Hazards</span><span class="pips2"><i class="h"></i></span></div><div class="srow"><span class="k">Look-alikes</span><span class="zz">none</span></div><div class="srow"><span class="k">Conditions</span><span>good light</span></div><div class="media"><span class="mchip">Image</span><a class="mchip m3" href="world.html?id=bedroom-base1-BED-04">3D →</a></div></div><div class="stp" style="min-height:410px"><div class="stimg"><img src="home-assets/cur-fal-L3-001.jpg" alt=""></div><div class="slv">L3</div><h4>Compound</h4><p>Two hazards plus a safe look-alike that must not be flagged.</p><div class="srow"><span class="k">Hazards</span><span class="pips2"><i class="h"></i><i class="h"></i></span></div><div class="srow"><span class="k">Look-alikes</span><span class="pips2"><i class="d"></i></span></div><div class="srow"><span class="k">Conditions</span><span>good light</span></div><div class="media"><span class="mchip">Image</span><a class="mchip m3" href="world.html?id=stairs-base0-STAIR-03">3D →</a></div></div><div class="stp" style="min-height:450px"><div class="stimg"><img src="home-assets/cur-fal-L4-001.jpg" alt=""></div><div class="slv">L4</div><h4>Cluttered</h4><p>Three or four hazards in dim, noisy, unfamiliar rooms.</p><div class="srow"><span class="k">Hazards</span><span class="pips2"><i class="h"></i><i class="h"></i><i class="h"></i><i class="h"></i></span><span class="rng">3-4</span></div><div class="srow"><span class="k">Look-alikes</span><span class="pips2"><i class="d"></i><i class="d"></i></span></div><div class="srow"><span class="k">Conditions</span><span>dim, night, soft focus</span></div><div class="media"><span class="mchip">Image</span><a class="mchip m3" href="world.html?id=kitchen-base1-KIT-04">3D →</a></div></div><div class="stp" style="min-height:490px"><div class="stimg"><img src="home-assets/cur-fal-L5-001.jpg" alt=""></div><div class="slv">L5</div><h4>Adversarial</h4><p>Safe-but-scary rooms next to dense hazard rooms, in poor light.</p><div class="srow"><span class="k">Hazards</span><span class="pips2"><i class="h"></i><i class="h"></i><i class="h"></i><i class="h"></i></span><span class="rng">0 or 4+</span></div><div class="srow"><span class="k">Look-alikes</span><span class="pips2"><i class="d"></i><i class="d"></i><i class="d"></i></span><span class="rng">2-3</span></div><div class="srow"><span class="k">Conditions</span><span>poor light</span></div><div class="media"><span class="mchip">Image</span><a class="mchip m3" href="world.html?id=bathroom-base0-BATH-07">3D →</a></div></div></div>
 </div></section>
 
-<!-- 6 WALK IT YOURSELF -->
+<!-- 6 IMAGES + 3D -->
 <section class="bleed slide" id="walk" style="--bd:url(art/bg-entry.jpg)"><div class="wrap">
-  <div class="sec-head"><div><div class="eyebrow">Walk it yourself</div><h2>Every scene is a walkable 3D home. <span class="m">Walk it, then watch the AI walk it.</span></h2></div><p>11 photoreal 3D homes generated from the same labelled scenes; hazard locations carried into 3D so an agent&#x27;s gaze can be scored.</p></div>
-  <div class="wgrid"><div class="appwin wc"><div class="ph"><img src="home-assets/world-stairs-base0-STAIR-03.jpg" alt=""><span class="chipk ck-live">Falls · CDC STEADI</span></div>
-      <div class="bd"><h4>Cluttered staircase</h4><p><span class="tag">STAIR-03</span> Objects on stairs: laundry basket, sweater, books and shoes left on the treads</p>
-      <div class="bt"><a class="btn pri sm" href="world.html?id=stairs-base0-STAIR-03">Walk in 3D</a><a class="btn sm" href="walk.html?w=stairs-base0-STAIR-03">Watch the AI walk it</a></div></div></div><div class="appwin wc"><div class="ph"><img src="home-assets/world-bathroom-base0-BATH-07.jpg" alt=""><span class="chipk ck-live">Falls · CDC STEADI</span></div>
-      <div class="bd"><h4>Bathroom with loose bath mat</h4><p><span class="tag">BATH-07</span> Loose bath mat draped over the tub edge onto a hard tile floor</p>
-      <div class="bt"><a class="btn pri sm" href="world.html?id=bathroom-base0-BATH-07">Walk in 3D</a><a class="btn sm" href="walk.html?w=bathroom-base0-BATH-07">Watch the AI walk it</a></div></div></div><div class="appwin wc"><div class="ph"><img src="home-assets/world-living-base1-LIV-02.jpg" alt=""><span class="chipk ck-live">Falls · CDC STEADI</span></div>
-      <div class="bd"><h4>Living room with cord across the walkway</h4><p><span class="tag">LIV-02</span> Extension cord snaking across the main walking path</p>
-      <div class="bt"><a class="btn pri sm" href="world.html?id=living-base1-LIV-02">Walk in 3D</a><a class="btn sm" href="walk.html?w=living-base1-LIV-02">Watch the AI walk it</a></div></div></div><div class="appwin wc"><div class="ph"><img src="home-assets/world-bedroom-base1-BED-04.jpg" alt=""><span class="chipk ck-live">Falls · CDC STEADI</span></div>
-      <div class="bd"><h4>Bedroom with floor clutter</h4><p><span class="tag">BED-04</span> Clothes, bag, shoes and an open box piled on the floor on the path from bed to door</p>
-      <div class="bt"><a class="btn pri sm" href="world.html?id=bedroom-base1-BED-04">Walk in 3D</a><a class="btn sm" href="walk.html?w=bedroom-base1-BED-04">Watch the AI walk it</a></div></div></div></div>
+  <div class="sec-head"><div><div class="eyebrow">Images and 3D worlds</div><h2>One label, two formats.</h2><div class="dsub">Every scene ships as a labelled image and a walkable 3D world.</div></div></div>
+  <div class="pairs"><div class="appwin pair"><div class="chev"><b>01</b>Cluttered stairs</div><div class="pp"><a class="pimg" href="renders/stairs-base0-STAIR-03.jpg"><img src="renders/stairs-base0-STAIR-03.jpg" alt=""><span class="ptag">Image</span></a><span class="parr">→</span><a class="pimg" href="world.html?id=stairs-base0-STAIR-03"><img src="home-assets/world-stairs-base0-STAIR-03.jpg" alt=""><span class="ptag p3">3D world</span></a></div></div><div class="appwin pair"><div class="chev"><b>02</b>Loose bath mat</div><div class="pp"><a class="pimg" href="renders/bathroom-base0-BATH-07.jpg"><img src="renders/bathroom-base0-BATH-07.jpg" alt=""><span class="ptag">Image</span></a><span class="parr">→</span><a class="pimg" href="world.html?id=bathroom-base0-BATH-07"><img src="home-assets/world-bathroom-base0-BATH-07.jpg" alt=""><span class="ptag p3">3D world</span></a></div></div><div class="appwin pair"><div class="chev"><b>03</b>Floor clutter by the bed</div><div class="pp"><a class="pimg" href="renders/bedroom-base1-BED-04.jpg"><img src="renders/bedroom-base1-BED-04.jpg" alt=""><span class="ptag">Image</span></a><span class="parr">→</span><a class="pimg" href="world.html?id=bedroom-base1-BED-04"><img src="home-assets/world-bedroom-base1-BED-04.jpg" alt=""><span class="ptag p3">3D world</span></a></div></div></div>
 </div></section>
 
 <!-- 7 LIBRARY -->
 <section class="sec slide" id="library"><div class="wrap">
-  <div class="sec-head"><div><div class="eyebrow">The guideline library</div><h2>Every guideline is <em>a new simulator.</em></h2></div><p>Same compiler, new guideline: rubric → labelled homes → 3D worlds → scored models. <a href="guidelines.html" style="color:var(--green-ink)">Open the library →</a></p></div>
-  <div class="ggrid"><a class="gc live" href="index.html" style="text-decoration:none"><span class="chipk ck-live" style="align-self:flex-start">Simulator live</span><h4>Post-op fall prevention</h4><div class="src">CDC STEADI</div><div class="st">Images · 3D worlds · scored models</div></a><a class="gc live" href="dementia.html" style="text-decoration:none"><span class="chipk ck-live" style="align-self:flex-start">Simulator live</span><h4>Dementia home safety</h4><div class="src">Alzheimer&#x27;s Association / NIA</div><div class="st">Images · 3D worlds · scored models</div></a><div class="gc next"><span class="chipk ck-next" style="align-self:flex-start">Next</span><h4>Pressure injuries</h4><div class="src">NPIAP</div><div class="st">same compiler</div></div><div class="gc next"><span class="chipk ck-next" style="align-self:flex-start">Next</span><h4>Medication safety</h4><div class="src">AHRQ / ISMP</div><div class="st">same compiler</div></div><div class="gc next"><span class="chipk ck-next" style="align-self:flex-start">Next</span><h4>Pediatric home injury</h4><div class="src">AAP</div><div class="st">same compiler</div></div><div class="gc next"><span class="chipk ck-next" style="align-self:flex-start">Next</span><h4>Smoke &amp; CO alarms</h4><div class="src">NFPA 72</div><div class="st">same compiler</div></div></div>
+  <div class="sec-head"><div><div class="eyebrow">The guideline library</div><h2>Every guideline is <em>a new simulator.</em></h2></div><p><a href="guidelines.html" style="color:var(--green-ink);font-weight:500">Open the library →</a></p></div>
+  <div class="lcat"><a class="appwin lcard" href="guideline-falls.html"><div class="lim"><img src="home-assets/lib-stairs-base0-STAIR-03.jpg" alt></div><div class="lbd"><span class="chipk ck-live" style="align-self:flex-start">Simulator live</span><h3>Post-op fall prevention</h3><div class="lsrc"><img src="home-assets/cdc-logo.svg" alt="CDC" onerror="this.remove()"><span class="tb"><b>CDC</b> STEADI</span></div><p>Check for Safety, compiled into labelled homes where a missing grab bar or a cluttered stair is the test.</p><span class="btn pri">Open the simulator →</span></div></a><a class="appwin lcard" href="guideline-dementia.html"><div class="lim"><img src="home-assets/lib-dem-kitchen-base0-DEM-K04.jpg" alt></div><div class="lbd"><span class="chipk ck-live" style="align-self:flex-start">Simulator live</span><h3>Dementia home safety</h3><div class="lsrc"><span class="tb">Alzheimer's Association / NIA</span></div><p>Wandering exits, medications left out and floors that read as holes, judged the way a caregiver would.</p><span class="btn pri">Open the simulator →</span></div></a></div><div class="lnext"><div><span class="chipk ck-nx">Next</span><b>Pressure injuries</b><span class="s">NPIAP</span></div><div><span class="chipk ck-nx">Next</span><b>Medication safety</b><span class="s">AHRQ / ISMP</span></div><div><span class="chipk ck-nx">Next</span><b>Pediatric home injury</b><span class="s">AAP</span></div><div><span class="chipk ck-nx">Next</span><b>Smoke &amp; CO alarms</b><span class="s">NFPA 72</span></div></div>
 </div></section>
 
 <!-- LEADERBOARD -->
@@ -436,20 +468,19 @@ table.lbf{width:100%;border-collapse:collapse;font-size:13.5px}
   <div class="moat">Every failure we find becomes new training data, and the simulator gets harder.</div>
 </div></section>
 
-<!-- 9 BUILT TODAY -->
+<!-- 9 BUILT / STACK -->
 <section class="bleed slide" id="built" style="--bd:url(art/bg-kitchen.jpg)"><div class="wrap"><div class="appwin">
-  <div class="winhead"><div class="eyebrow">Built today</div>
-    <div class="say">Built in one day at the Healthcare AI Hackathon <span class="m">on</span> AWS Bedrock + S3.</div></div>
-  <div class="counts"><div><b>14</b><span>vision models evaluated</span></div><div><b>2</b><span>clinical guidelines compiled</span></div><div><b>49</b><span>rubric rows, each citing a line</span></div><div><b>146</b><span>verified labelled images</span></div><div><b>11</b><span>walkable 3D worlds</span></div><div><b>901</b><span>scored model calls (Bedrock + APIs)</span></div></div>
-  <div class="built2">
-    <div><h4 style="font:500 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);margin-bottom:8px">Honest caveats</h4>
-      <ul class="cav"><li>Synthetic homes only. No real-patient homes yet.</li><li>Rubric is original synthesis cross-walked to the guidelines; pending OT/PT clinician review.</li><li>Small n: 43 falls scenes, 16 dementia scenes, 4 walk worlds per model. Treat rankings as directional.</li><li>Sim-to-real is next, with HomeReady as customer zero.</li><li class="ok">HomeBench is open (GitHub): scenes, labels, rubric and scores.</li></ul></div>
-    <div style="display:flex;flex-direction:column;justify-content:center"><div style="font:500 20px/1.35 var(--sans);letter-spacing:-.015em;color:var(--ink)">Synthetic Hospital (Park et al., 2026) did this for the chart. <span style="color:var(--green-ink)">HealthDojo does it for the home.</span></div></div>
-  </div>
+  <div class="winhead"><div class="eyebrow">The stack</div>
+    <div class="say">Built in one day on AWS.</div>
+    <div class="dsub" style="margin-top:6px">Built in one day at the Healthcare AI Hackathon, AWS Builder Loft, San Francisco. HomeBench is open on <a href="https://github.com/pistachiopranay/healthdojo" style="color:var(--green-ink)">GitHub</a>.</div></div>
+  <div class="stack"><div class="tile wide"><div class="tl">Model access</div><b>AWS Bedrock</b><p>13 of 14 models we tested run on Bedrock: Claude, OpenAI GPT-5.6 via Bedrock, Nova, Llama 4, Qwen3-VL, Mistral, Gemma, Kimi, Grok, Nemotron.</p></div><div class="tile"><div class="tl">Rubric + judge</div><b>Claude Sonnet 5 and Claude Opus 5.5</b><p>Sonnet 5 on Bedrock drafts cited rubric rows; the verifier checks every scene before it counts. Grading against labels is deterministic, no LLM grades the answers.</p></div><div class="tile"><div class="tl">Image generation</div><b>Stability AI on Bedrock + Gemini 3 Pro Image</b><p>Clean rooms, then hazards painted in one label at a time.</p></div><div class="tile"><div class="tl">3D worlds</div><b>World Labs Marble</b><p>Gaussian-splat homes with collision meshes, walkable in the browser.</p></div><div class="tile"><div class="tl">Agent environment</div><b>Custom look-around harness</b><p>Models choose where to look, then flag what they find.</p></div><div class="tile"><div class="tl">Voice</div><b>ElevenLabs</b><p>Narrates each walkthrough step.</p></div><div class="tile"><div class="tl">Hosting</div><b>Amazon S3 + GitHub</b><p>Static site on S3; code and benchmark open on GitHub.</p></div></div>
+  <div class="counts"><div><b>14</b><span>models tested</span></div><div><b>2</b><span>guidelines compiled</span></div><div><b>146</b><span>labelled homes</span></div><div><b>11</b><span>walkable 3D worlds</span></div></div>
+  <div class="cavl">Synthetic data only. Rubrics pending OT/PT review. Sim-to-real validation is next.</div>
+  <div class="shl">Synthetic Hospital (Park et al., 2026) did this for the chart. <span style="color:var(--green-ink)">HealthDojo does it for the home.</span></div>
   <div class="cta"><b>Looking for design partners: fly your model through the simulator.</b><div style="display:flex;gap:8px"><a class="btn" href="guidelines.html">Guideline library</a><a class="btn pri" href="https://github.com/pistachiopranay/healthdojo">GitHub ↗</a></div></div>
 </div></div></section>
 
-<footer><div class="wrap"><span><b style="color:var(--ink)">HealthDojo</b> · the flight simulator for home-health AI · built at the Healthcare AI Hackathon, 2026-09-26.</span><span>All numbers on this page are computed from the benchmark data at build time.</span></div></footer>
+<footer><div class="wrap"><span><b style="color:var(--ink)">HealthDojo</b> · the flight simulator for home-health AI · built at the Healthcare AI Hackathon, AWS Builder Loft, San Francisco, September 26, 2026.</span><span>All numbers on this page are computed from the benchmark data at build time.</span></div></footer>
 
 <script>
 (function(){

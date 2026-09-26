@@ -387,15 +387,26 @@ def bench_stats(b, results):
             len(results.get("leaderboard", [])))
 
 
-lib = []
-for b, name, src, href, res in [("falls", "Post-op fall prevention", "CDC STEADI", "index.html", R),
-                                ("dementia", "Dementia home safety", "Alzheimer's Association / NIA", "dementia.html", DEM)]:
-    nr, ns, nw, nm = bench_stats(b, res)
-    lib.append(f'<a class="gc live" href="{href}" style="text-decoration:none"><span class="chipk ck-live" style="align-self:flex-start">Simulator live</span>'
-               f'<h4>{esc(name)}</h4><div class="src">{esc(src)}</div><div class="st">Images · 3D worlds · scored models</div></a>')
-for name, src in [("Pressure injuries", "NPIAP"), ("Medication safety", "AHRQ / ISMP"),
-                  ("Pediatric home injury", "AAP"), ("Smoke & CO alarms", "NFPA 72")]:
-    lib.append(f'<div class="gc next"><span class="chipk ck-next" style="align-self:flex-start">Next</span><h4>{esc(name)}</h4><div class="src">{esc(src)}</div><div class="st">same compiler</div></div>')
+def lib_img(results, prefer):
+    sc = [x for x in results.get("scenes", []) if x.get("verified") and x.get("image")]
+    sc = [x for x in sc if x["id"] == prefer] or sc
+    return copy(SITE / sc[0]["image"], "lib-" + Path(sc[0]["image"]).name) if sc else None
+
+
+LIVE = [("Post-op fall prevention", '<img src="home-assets/cdc-logo.svg" alt="CDC" onerror="this.remove()"><span class="tb"><b>CDC</b> STEADI</span>',
+         "Check for Safety, compiled into labelled homes where a missing grab bar or a cluttered stair is the test.",
+         "guideline-falls.html", lib_img(R, "stairs-base0-STAIR-03")),
+        ("Dementia home safety", '<span class="tb">Alzheimer\'s Association / NIA</span>',
+         "Wandering exits, medications left out and floors that read as holes, judged the way a caregiver would.",
+         "guideline-dementia.html", lib_img(DEM, "dem-kitchen-base0-DEM-K04"))]
+cards = "".join(f'<a class="appwin lcard" href="{href}"><div class="lim">{f"<img src={chr(34)}{img}{chr(34)} alt>" if img else ""}</div>'
+                f'<div class="lbd"><span class="chipk ck-live" style="align-self:flex-start">Simulator live</span><h3>{esc(name)}</h3>'
+                f'<div class="lsrc">{badge}</div><p>{esc(desc)}</p><span class="btn pri">Open the simulator →</span></div></a>'
+                for name, badge, desc, href, img in LIVE)
+nexts = "".join(f'<div><span class="chipk ck-nx">Next</span><b>{esc(n)}</b><span class="s">{esc(src)}</span></div>'
+                for n, src in [("Pressure injuries", "NPIAP"), ("Medication safety", "AHRQ / ISMP"),
+                               ("Pediatric home injury", "AAP"), ("Smoke & CO alarms", "NFPA 72")])
+lib = [f'<div class="lcat">{cards}</div><div class="lnext">{nexts}</div>']
 
 # ---------------------------------------------------------------- 9 counts
 models = {m["model"] for m in LB} | {m["model"] for m in DEM.get("leaderboard", [])} | {r["model"] for r in WALK.get("runs", [])}
@@ -405,9 +416,8 @@ v_cur = sum(1 for m in CUR.values() for it in m.get("items", []) if it.get("veri
 n_pred = sum(len(v) for v in R.get("predictions", {}).values()) + sum(len(v) for v in DEM.get("predictions", {}).values())
 n_steps = sum(len(r.get("steps", [])) for r in WALK.get("runs", []))
 n_rub = sum(len(b.get("rubric", [])) for b in CUR.values())
-counts = [(len(models), "vision models evaluated"), (n_guides, "clinical guidelines compiled"), (n_rub, "rubric rows, each citing a line"),
-          (v_scenes + v_dem + v_cur, "verified labelled images"), (n_worlds, "walkable 3D worlds"),
-          (n_pred + n_steps, "scored model calls (Bedrock + APIs)")]
+counts = [(len(models), "models tested"), (n_guides, "guidelines compiled"),
+          (v_scenes + v_dem + v_cur, "labelled homes"), (n_worlds, "walkable 3D worlds")]
 counts_html = "".join(f"<div><b>{n}</b><span>{esc(t)}</span></div>" for n, t in counts)
 smalln = f"{v_scenes} falls scenes, {v_dem} dementia scenes, {len(std_worlds)} walk worlds per model"
 
@@ -461,7 +471,7 @@ sub = {
     "WALKS": walks_html, "WALK_CALLOUT": walk_callout,
     "DIFF_H": esc(diff_h), "CURVE": curve_html, "W3STRIP": "".join(w3strip), "DIFF_P": diff_p, "DIFF": diff,
     "WORLDS": "".join(wcards), "WORLDS_P": esc(worlds_p), "LIB": "".join(lib),
-    "COUNTS": counts_html, "LB_FULL": lb_full, "LB_LINE": esc(lb_line), "SMALLN": esc(smalln), "FOOT": "built at the Healthcare AI Hackathon, 2026-09-26.",
+    "COUNTS": counts_html, "LB_FULL": lb_full, "LB_LINE": esc(lb_line), "SMALLN": esc(smalln), "FOOT": "built at the Healthcare AI Hackathon, AWS Builder Loft, San Francisco, September 26, 2026.",
 }
 out = TEMPLATE.read_text()
 for k, v in sub.items():
