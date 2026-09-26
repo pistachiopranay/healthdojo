@@ -377,13 +377,50 @@ table.lbf{width:100%;border-collapse:collapse;font-size:13.5px}
 .pby .pi{display:inline-flex;align-items:center;gap:7px;font:500 13px var(--sans);color:var(--text-muted)}
 .pby img{height:20px}
 .stack .lg img.dk,.pby img.dk,.stack .tile:hover .lg img.dk,.pby .pi:hover img.dk{filter:brightness(0);opacity:.75}
+/* featured split slider */
+.feat{display:grid;grid-template-columns:7fr 3fr;gap:16px;align-items:stretch}
+.fmain{display:flex;flex-direction:column}
+.split{position:relative;aspect-ratio:3/2;overflow:hidden;background:#1f2123;user-select:none}
+.split .sw,.split .si,.split .si img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.split .si{clip-path:inset(0 calc(100% - var(--x)) 0 0)}
+.split .bx{position:absolute;border-radius:4px;border:3px solid var(--green);box-shadow:0 0 0 1px rgba(31,33,35,.55)}
+.split .sh{position:absolute;top:0;bottom:0;left:var(--x);width:2px;margin-left:-1px;background:#fff;box-shadow:0 0 0 1px rgba(31,33,35,.25);pointer-events:none}
+.split .sh i{position:absolute;top:50%;left:50%;width:38px;height:38px;margin:-19px 0 0 -19px;border-radius:50%;background:var(--lime);border:1px solid var(--green-active);box-shadow:0 4px 14px rgba(31,33,35,.3)}
+.split .sh i::before{content:"‹ ›";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font:600 15px var(--mono);color:var(--green-ink);letter-spacing:2px}
+.split input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.slab{position:absolute;top:12px;font:500 11px var(--mono);padding:4px 10px;border-radius:6px;pointer-events:none}
+.slab.l{left:12px;background:rgba(252,252,250,.92);color:var(--ink);border:1px solid var(--border)}
+.slab.r{right:12px;background:var(--lime);color:var(--green-ink);border:1px solid var(--green-active)}
+.fbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px}
+.fbar b{display:block;font-size:16px;color:var(--ink)}.fbar span{font:400 12px var(--mono);color:var(--text-muted)}
+.fside{display:flex;flex-direction:column;gap:12px}
+.mini{all:unset;box-sizing:border-box;cursor:pointer;display:flex;flex-direction:column;gap:8px;padding:10px;background:var(--card);border:1px solid rgba(31,33,35,.09);border-radius:12px;box-shadow:0 1px 2px rgba(31,33,35,.05);transition:border-color .2s,box-shadow .2s;flex:1}
+.mini:hover{border-color:var(--text-faint)}
+.mini.on{border-color:var(--green-active);box-shadow:inset 0 0 0 1px var(--green-active)}
+.mini .mi{display:grid;grid-template-columns:1fr 1fr;gap:4px;border-radius:8px;overflow:hidden;flex:1;min-height:0}
+.mini .mi img{width:100%;height:100%;object-fit:cover;display:block;aspect-ratio:3/2}
+.mini .mt b{display:block;font:600 14px var(--sans);color:var(--ink)}.mini .mt span{font:400 11px var(--mono);color:var(--text-muted)}
+#walk.bleed{padding-top:74px!important}
+/* who */
+.wh2 .m{display:block}
+.aud{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ac img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.ac .bd{padding:14px 18px 16px}.ac .n{font:500 11px var(--mono);color:var(--green-ink);letter-spacing:.04em}.ac h4{font-size:17px;margin-top:6px}.ac p{margin:6px 0 0;font-size:13.5px;color:var(--text-muted)}
+.getband{display:grid;grid-template-columns:auto repeat(3,1fr);gap:0;margin-top:16px;background:var(--cream);border:1px solid var(--cream-strong);border-radius:12px;overflow:hidden}
+.getband .gl{display:flex;align-items:center;padding:0 22px;font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--cream-ink);border-right:1px solid var(--cream-strong)}
+.gt{display:flex;gap:12px;align-items:flex-start;padding:16px 20px;border-right:1px solid var(--cream-strong)}.gt:last-child{border-right:0}
+.gi{flex:none;width:34px;height:34px;border-radius:9px;background:var(--lime);border:1px solid var(--green-active);color:var(--green-ink);display:flex;align-items:center;justify-content:center}.gi svg{width:18px;height:18px}
+.gt b{display:block;font-size:14px;color:var(--ink)}.gt div>span{display:block;font-size:12.5px;color:var(--cream-ink);margin-top:3px;line-height:1.4}
+.moat2{margin:34px auto 0;max-width:40ch;text-align:center;font:600 30px/1.2 var(--sans);letter-spacing:-.025em;color:var(--ink)}.moat2 span{color:var(--green-ink)}
+.later2{text-align:center;font-size:12px;color:var(--text-faint);margin-top:14px}
+@media(max-width:900px){.feat,.aud,.getband{grid-template-columns:1fr}}
 </style></head><body>
 <nav class="top"><div class="pill">
   <a class="logo" href="home.html"><span class="mark"></span><span>Health<i>Dojo</i></span></a>
   <div class="links">
-    <a href="guidelines.html">Guidelines</a><a href="index.html">Results</a><a href="worlds_3d.html">3D worlds</a><a href="walk.html">Walkthrough</a><a href="https://github.com/pistachiopranay/healthdojo">GitHub</a>
+    <a href="guidelines.html">Simulators</a><a href="index.html">Leaderboard</a><a href="worlds_3d.html">3D worlds</a><a href="walk-videos.html">Walkthroughs</a><a href="https://github.com/pistachiopranay/healthdojo">GitHub</a>
   </div>
-  <a href="walk-videos.html" class="navcta">Fly your model through it →</a>
+  <a href="guidelines.html" class="navcta">Explore the simulators →</a>
 </div></nav>
 <div id="dots"></div>
 
@@ -396,7 +433,7 @@ table.lbf{width:100%;border-collapse:collapse;font-size:13.5px}
     <h1><span class="hl">The flight simulator</span><span class="hl"><em>for home-health AI.</em></span></h1>
     <p class="p1">Robots, smart glasses and care apps are moving into patients' homes. Today the only test is a real patient.</p>
     <p class="p2">HealthDojo turns clinical guidelines into synthetic homes with exact labels, so your team finds the edge cases and trains on them before a patient ever does.</p>
-    <div class="ctas"><a class="btn pri" href="walk-videos.html">Fly your model through it →</a><a class="btn" href="#finding">See how models score ↓</a></div>
+    <div class="ctas"><a class="btn pri" href="guidelines.html">Explore the simulators →</a><a class="btn" href="walk-videos.html">Watch a model walk a home</a></div>
   </div></div>
   <div class="hbr"><div class="hcap" id="hcap"><i></i><span id="hcapT">{{W3_TITLE}}</span></div>
     <a class="w3chip" href="world.html?id={{W3_ID}}"><i></i>Live 3D · Gaussian splat · walk it yourself →</a></div>
@@ -432,12 +469,33 @@ table.lbf{width:100%;border-collapse:collapse;font-size:13.5px}
 <!-- 6 IMAGES + 3D -->
 <section class="bleed slide" id="walk" style="--bd:url(art/bg-entry.jpg)"><div class="wrap">
   <div class="sec-head"><div><div class="eyebrow">Images and 3D worlds</div><h2>One label, two formats.</h2><div class="dsub">Every scene ships as a labelled image and a walkable 3D world.</div></div></div>
-  <div class="pairs"><div class="appwin pair"><div class="chev"><b>01</b>Cluttered stairs</div><div class="pp"><a class="pimg" href="renders/stairs-base0-STAIR-03.jpg"><img src="renders/stairs-base0-STAIR-03.jpg" alt=""><span class="ptag">Image</span></a><span class="parr">→</span><a class="pimg" href="world.html?id=stairs-base0-STAIR-03"><img src="home-assets/world-stairs-base0-STAIR-03.jpg" alt=""><span class="ptag p3">3D world</span></a></div></div><div class="appwin pair"><div class="chev"><b>02</b>Loose bath mat</div><div class="pp"><a class="pimg" href="renders/bathroom-base0-BATH-07.jpg"><img src="renders/bathroom-base0-BATH-07.jpg" alt=""><span class="ptag">Image</span></a><span class="parr">→</span><a class="pimg" href="world.html?id=bathroom-base0-BATH-07"><img src="home-assets/world-bathroom-base0-BATH-07.jpg" alt=""><span class="ptag p3">3D world</span></a></div></div><div class="appwin pair"><div class="chev"><b>03</b>Floor clutter by the bed</div><div class="pp"><a class="pimg" href="renders/bedroom-base1-BED-04.jpg"><img src="renders/bedroom-base1-BED-04.jpg" alt=""><span class="ptag">Image</span></a><span class="parr">→</span><a class="pimg" href="world.html?id=bedroom-base1-BED-04"><img src="home-assets/world-bedroom-base1-BED-04.jpg" alt=""><span class="ptag p3">3D world</span></a></div></div></div>
+  <div class="feat">
+    <div class="appwin fmain">
+      <div class="split" id="split" style="--x:50%">
+        <img class="sw" id="spW" alt="">
+        <div class="si" id="spI"><img id="spImg" alt=""><div class="bx" id="spBox"><b id="spBoxL"></b></div></div>
+        <div class="sh"><i></i></div>
+        <span class="slab l">Labelled image</span><span class="slab r">Walkable 3D world</span>
+        <input type="range" min="0" max="100" value="50" id="spR" aria-label="Compare image and 3D world">
+      </div>
+      <div class="fbar"><div><b id="spT"></b><span id="spH"></span></div><a class="btn pri" id="spGo" href="world.html?id=stairs-base0-STAIR-03">Walk in 3D →</a></div>
+    </div>
+    <div class="fside">{{PAIRS_SIDE}}</div>
+  </div>
 </div></section>
+<script>
+(function(){const P={{PAIRS_JSON}};if(!P.length)return;const $=id=>document.getElementById(id);
+  function show(i){const p=P[i];$("spW").src=p.w3;$("spImg").src=p.img;$("spT").textContent=p.title;$("spH").textContent=(p.hid?p.hid+" · ":"")+p.haz;
+    $("spGo").href="world.html?id="+encodeURIComponent(p.id);const b=$("spBox");
+    if(p.box){const[x0,y0,x1,y1]=p.box;Object.assign(b.style,{display:"block",left:x0/10+"%",top:y0/10+"%",width:(x1-x0)/10+"%",height:(y1-y0)/10+"%"});$("spBoxL").textContent="TRUTH · "+p.hid}else b.style.display="none";
+    document.querySelectorAll(".mini").forEach(m=>m.classList.toggle("on",+m.dataset.i===i))}
+  document.querySelectorAll(".mini").forEach(m=>m.onclick=()=>show(+m.dataset.i));
+  $("spR").oninput=e=>$("split").style.setProperty("--x",e.target.value+"%");show(0)})();
+</script>
 
 <!-- 7 LIBRARY -->
 <section class="sec slide" id="library"><div class="wrap">
-  <div class="sec-head"><div><div class="eyebrow">The guideline library</div><h2>Every guideline is <em>a new simulator.</em></h2></div><p><a href="guidelines.html" style="color:var(--green-ink);font-weight:500">Open the library →</a></p></div>
+  <div class="sec-head"><div><div class="eyebrow">Simulators</div><h2>Every guideline is <em>a new simulator.</em></h2></div><p><a href="guidelines.html" style="color:var(--green-ink);font-weight:500">Open the library →</a></p></div>
   {{LIB}}
 </div></section>
 
@@ -450,19 +508,19 @@ table.lbf{width:100%;border-collapse:collapse;font-size:13.5px}
 
 <!-- 8 WHO -->
 <section class="sec slide" id="who"><div class="wrap">
-  <div class="sec-head"><div><div class="eyebrow">Who it's for</div><h2>For the teams putting AI in the home. <span class="m">Find the edge cases, train on them.</span></h2></div></div>
-  <div class="who">
-    <div class="appwin wh"><div class="n">01 · Home robots</div><h4>Humanoids &amp; home robots</h4><p>Find and train on hazard-perception edge cases in walkable 3D homes before sharing a hallway with an 80-year-old on a walker.</p></div>
-    <div class="appwin wh"><div class="n">02 · Smart glasses &amp; wearables</div><h4>Vision on the patient's face</h4><p>See what the device notices, and what it misses, from the user's own point of view. Then train on the misses.</p></div>
-    <div class="appwin wh"><div class="n">03 · Home-health &amp; care apps</div><h4>Edge cases before the pilot</h4><p>Discharge, remote-monitoring and caregiver apps find their blind spots on synthetic homes instead of real patients.</p></div>
+  <div class="sec-head"><div><div class="eyebrow">Who it's for</div><h2 class="wh2">For teams putting AI in the home.<span class="m">Find the edge cases. Train on them.</span></h2></div></div>
+  <div class="aud">
+    <div class="appwin ac"><img src="home-assets/bld-robot.jpg" alt=""><div class="bd"><div class="n">Home robots</div><h4>Humanoids that share the hallway</h4><p>Train hazard perception in walkable 3D homes before meeting a walker.</p></div></div>
+    <div class="appwin ac"><img src="home-assets/bld-glasses.jpg" alt=""><div class="bd"><div class="n">Smart glasses &amp; wearables</div><h4>Vision on the patient's face</h4><p>Score what the device notices, and what it misses, from the user's view.</p></div></div>
+    <div class="appwin ac"><img src="home-assets/bld-app.jpg" alt=""><div class="bd"><div class="n">Home-health &amp; care apps</div><h4>Edge cases before the pilot</h4><p>Find blind spots on synthetic homes instead of real patients.</p></div></div>
   </div>
-  <div class="appwin get"><div class="gh">What you get</div>
-    <div><b>A private simulator from your guideline</b><span>Your protocol, your rooms, your hazard list, compiled into labelled homes and 3D worlds.</span></div>
-    <div><b>Hard-example training packs</b><span>Every edge case your model misses, turned into labelled training data at the level where it breaks.</span></div>
-    <div><b>Re-run on every model release</b><span>Same simulator, new checkpoint: regressions show up before they reach a patient.</span></div>
+  <div class="getband"><div class="gl">What you get</div>
+    <div class="gt"><span class="gi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 9v11M13 13h5M13 16h3"/></svg></span><div><b>A private simulator</b><span>Compiled from your guideline, your rooms, your hazard list.</span></div></div>
+    <div class="gt"><span class="gi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3 8l9 5 9-5-9-5z"/><path d="m3 13 9 5 9-5"/><path d="m3 17 9 5 9-5" opacity=".6"/></svg></span><div><b>Hard-example training packs</b><span>Every miss, turned into labelled data at the level where it breaks.</span></div></div>
+    <div class="gt"><span class="gi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 1 0-2.3 5.7"/><path d="M20 4v7h-7"/></svg></span><div><b>Re-run on every release</b><span>New checkpoint, same simulator: regressions surface first.</span></div></div>
   </div>
-  <div class="later"><span class="chipk ck-next">Later</span> Hospitals and payers under CJR-X: the rating they require.</div>
-  <div class="moat">Every failure we find becomes new training data, and the simulator gets harder.</div>
+  <div class="moat2">Every failure we find <span>becomes new training data</span>, and the simulator gets harder.</div>
+  <div class="later2">Later: hospitals and payers under CJR-X, the rating they require.</div>
 </div></section>
 
 <!-- 9 BUILT / STACK -->

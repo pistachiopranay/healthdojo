@@ -461,6 +461,29 @@ lb_full = ('<table class="lbf"><thead><tr><th>#</th><th>Model</th><th>Provider</
            f'<tbody>{"".join(rows)}</tbody></table>')
 lb_line = f"{len(LB)} models on {v_scenes} verified scenes. Score blends recall and false alarms."
 
+# ---------------------------------------------------------------- images + 3D (featured split slider)
+PAIR_IDS = [("stairs-base0-STAIR-03", "Cluttered stairs"), ("bathroom-base0-BATH-07", "Loose bath mat"), ("bedroom-base1-BED-04", "Floor clutter by the bed")]
+pairs = []
+for sid, ttl in PAIR_IDS:
+    sc = next((x for x in R.get("scenes", []) if x["id"] == sid), None)
+    if not sc:
+        continue
+    pw3 = f"home-assets/w3crop-{sid}.jpg"
+    pano = DATA / "walks" / "_pano_hi" / f"{sid}.jpg"
+    if pano.exists() and not (SITE / pw3).exists():
+        from PIL import Image
+        p_ = Image.open(pano).convert("RGB"); W_, H_ = p_.size
+        cw, ch = int(W_ / 3.3), int(W_ / 3.3 / 1.5); oy = int(H_ * .04)
+        p_.crop((W_ // 2 - cw // 2, H_ // 2 - ch // 2 + oy, W_ // 2 + cw // 2, H_ // 2 + ch // 2 + oy)).resize((1200, 800)).save(SITE / w3, quality=80)
+    if not (SITE / pw3).exists():
+        pw3 = copy(DATA / "worlds" / f"{sid}.thumb.jpg", f"world-{sid}.jpg") or ""
+    h = sc["hazards"][0] if sc.get("hazards") else {}
+    pairs.append({"id": sid, "title": ttl, "img": sc["image"], "w3": pw3, "box": h.get("box"), "hid": h.get("id", ""),
+                  "haz": TAX.get(h.get("id", ""), {}).get("name", "")})
+pairs_json = json.dumps(pairs)
+side = "".join(f'<button class="mini{" on" if i == 0 else ""}" data-i="{i}"><span class="mi"><img src="{esc(p_["img"])}" alt=""><img src="{esc(p_["w3"])}" alt=""></span>'
+               f'<span class="mt"><b>{esc(p_["title"])}</b><span>{esc(p_["hid"])} · {esc(p_["haz"])}</span></span></button>' for i, p_ in enumerate(pairs))
+
 # ---------------------------------------------------------------- render
 sub = {
     "FILM_TITLE": esc(film_title), "FILM_MODEL": esc(film_model), "FILM_END": esc(film_end),
@@ -471,7 +494,7 @@ sub = {
     "WALKS": walks_html, "WALK_CALLOUT": walk_callout,
     "DIFF_H": esc(diff_h), "CURVE": curve_html, "W3STRIP": "".join(w3strip), "DIFF_P": diff_p, "DIFF": diff,
     "WORLDS": "".join(wcards), "WORLDS_P": esc(worlds_p), "LIB": "".join(lib),
-    "COUNTS": counts_html, "LB_FULL": lb_full, "LB_LINE": esc(lb_line), "SMALLN": esc(smalln), "FOOT": "built at the Healthcare AI Hackathon, AWS Builder Loft, San Francisco, September 26, 2026.",
+    "COUNTS": counts_html, "PAIRS_JSON": pairs_json, "PAIRS_SIDE": side, "LB_FULL": lb_full, "LB_LINE": esc(lb_line), "SMALLN": esc(smalln), "FOOT": "built at the Healthcare AI Hackathon, AWS Builder Loft, San Francisco, September 26, 2026.",
 }
 out = TEMPLATE.read_text()
 for k, v in sub.items():
