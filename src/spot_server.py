@@ -3,8 +3,12 @@
 Scoring mirrors src/grade.py: recall on seeded hazards; false alarms on known-absent
 hazards (hazards seeded into sibling edits of the same base room, verified absent here).
 """
-import io, json, re, subprocess, time
+import io, json, os, re, subprocess, threading, time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+
+import boto3
+from dotenv import load_dotenv
 
 import qrcode, qrcode.image.svg
 from fastapi import FastAPI, HTTPException, Request
@@ -16,6 +20,12 @@ RES = json.loads((ROOT / "data" / "results.json").read_text())
 STATIC = Path(__file__).resolve().parent / "spot"
 OUT = ROOT / "data" / "spot"; OUT.mkdir(parents=True, exist_ok=True)
 RESP = OUT / "responses.jsonl"
+load_dotenv(ROOT / ".env", override=True); os.environ.pop("AWS_PROFILE", None)
+GRADER = "us.anthropic.claude-haiku-4-5-20251001-v1:0"
+CACHE_F = OUT / "grade_cache.json"
+CACHE = json.loads(CACHE_F.read_text()) if CACHE_F.exists() else {}
+LOCK = threading.Lock()
+_br = None
 
 # Fixed set, in play order: 8 verified edits spanning object/absence/measurement/lighting + 2 clean base rooms.
 QUIZ = ["living-base1-LIV-02", "kitchen-base0", "bathroom-base0-BATH-01", "stairs-base1-STAIR-02",
@@ -55,13 +65,50 @@ def scene_spec(sid):
     return s, gt, neg
 
 
-ITEMS = []
+ITEMS = []; ROOM_TAX = {}
 for sid in QUIZ:
     s, gt, neg = scene_spec(sid)
     chips = [{"id": k, "label": PLAIN.get(k, v["name"]), "type": v["type"]} for k, v in TAX.items() if v["room"] == s["room"]]
-    ITEMS.append({"id": sid, "room": s["room"], "image": "/" + s["image"], "chips": chips,
+    ROOM_TAX[sid] = chips
+    ITEMS.append({"id": sid, "room": s["room"], "image": "/" + s["image"],
                   "clean": not gt, "answer": sorted(gt), "answer_label": [PLAIN[h] for h in sorted(gt)],
                   "hazard_type": s["hazards"][0]["type"] if gt else None})
+
+
+def norm(text):
+    return re.sub(r"[^a-z0-9 ]+", "", re.sub(r"\s+", " ", text.lower())).strip()
+
+
+def grade_text(sid, text):
+    """Map a player's free-text description to hazard ids from this room's taxonomy (Haiku on Bedrock, cached)."""
+    global _br
+    if not norm(text):
+        return {"ids": [], "why": "No hazard described."}
+    key = f"{sid}|{norm(text)}"
+    if key in CACHE:
+        return CACHE[key]
+    opts = "\n".join(f'{c["id"]}: {TAX[c["id"]]["name"]} ({c["label"]})' for c in ROOM_TAX[sid])
+    prompt = (f"A person looked at a photo of a {SCENES[sid]['room']} (home fall-safety check for an older adult using a walker) "
+              f"and wrote what hazards they saw:\n\n\"\"\"{text[:600]}\"\"\"\n\nHazard checklist for this room:\n{opts}\n\n"
+              "Map the person's text to the checklist ids they actually described. Be generous with paraphrase, synonyms and "
+              "informal wording (e.g. 'towel rack isn't strong enough to hold' = non-load-rated fixture used as support; "
+              "'no rail' = missing handrail). Do NOT add hazards they did not mention, and do not infer from the photo. "
+              "Mentions that fit no checklist item are ignored. If they say it looks safe, return no ids.\n"
+              'Reply with JSON only: {"ids": ["..."], "why": "one short line"}')
+    try:
+        if _br is None:
+            _br = boto3.client("bedrock-runtime", region_name=os.getenv("AWS_REGION", "us-east-1"))
+        r = _br.converse(modelId=GRADER, messages=[{"role": "user", "content": [{"text": prompt}]}], inferenceConfig={"maxTokens": 200})
+        raw = r["output"]["message"]["content"][0]["text"]
+        j = json.loads(re.search(r"\{.*\}", raw, re.S).group(0))
+        valid = {c["id"] for c in ROOM_TAX[sid]}
+        out = {"ids": [i for i in dict.fromkeys(j.get("ids", [])) if i in valid], "why": str(j.get("why", ""))[:200]}
+    except Exception as e:  # don't cache failures
+        return {"ids": [], "why": f"grader error: {type(e).__name__}", "error": True}
+    with LOCK:
+        CACHE[key] = out
+        CACHE_F.write_text(json.dumps(CACHE, indent=1))
+    return out
 
 
 def grade(picks):
@@ -136,7 +183,7 @@ def index():
 @app.get("/api/quiz")
 def quiz():
     # answers are revealed only on the results screen, but this is a party game -- fine to ship them.
-    return {"items": ITEMS, "seconds": 15, "models": len(MODELS)}
+    return {"items": ITEMS, "seconds": 20, "models": len(MODELS)}
 
 
 @app.post("/api/submit")
@@ -145,15 +192,22 @@ async def submit(req: Request):
     name = re.sub(r"\s+", " ", str(body.get("name", "")).strip())[:24]
     if not name:
         raise HTTPException(400, "name required")
-    picks = {sid: [h for h in (body.get("picks", {}).get(sid) or []) if h in TAX] for sid in QUIZ}
+    ans = body.get("answers", {}) or {}
+    answers = {sid: {"text": str((ans.get(sid) or {}).get("text", ""))[:600], "safe": bool((ans.get(sid) or {}).get("safe"))} for sid in QUIZ}
+    with ThreadPoolExecutor(10) as ex:
+        graded = dict(zip(QUIZ, ex.map(lambda sid: {"ids": [], "why": "Tapped looks safe."} if answers[sid]["safe"] and not norm(answers[sid]["text"])
+                                       else grade_text(sid, answers[sid]["text"]), QUIZ)))
+    picks = {sid: graded[sid]["ids"] for sid in QUIZ}
     row = {"id": f"{int(time.time()*1000)}", "name": name, "ts": time.strftime("%Y-%m-%dT%H:%M:%S"),
-           "picks": picks, "timeouts": body.get("timeouts", []), "ua": req.headers.get("user-agent", "")[:120]}
+           "answers": answers, "graded": graded, "picks": picks, "timeouts": body.get("timeouts", []), "ua": req.headers.get("user-agent", "")[:120]}
     with RESP.open("a") as f:
         f.write(json.dumps(row) + "\n")
     g = grade(picks); s = summary()
     rank = next(i + 1 for i, r in enumerate(s["leaderboard"]) if r.get("id") == row["id"])
     models_beaten = sum(1 for m in MODEL_GRADES.values() if g["score"] > m["score"])
-    return {"id": row["id"], "grade": g, "rank": rank, "of": len(s["leaderboard"]), "models_beaten": models_beaten,
+    labels = {k: PLAIN.get(k, v["name"]) for k, v in TAX.items()}
+    return {"id": row["id"], "grade": g, "answers": answers, "graded": graded, "labels": labels,
+            "known_absent": {sid: sorted(scene_spec(sid)[2]) for sid in QUIZ}, "rank": rank, "of": len(s["leaderboard"]), "models_beaten": models_beaten,
             "summary": s, "items": ITEMS, "model_grades": {m: {k: v[k] for k in ("score", "recall", "false_alarm")} for m, v in MODEL_GRADES.items()}}
 
 

@@ -13,8 +13,8 @@
   <section id="s-start" class="panel">
     <div class="eyebrow">Humans vs 14 models</div>
     <h1>Can you spot the fall hazard faster than an AI?</h1>
-    <p class="lede">10 rooms. <b>15 seconds</b> each. Tap every hazard you see for someone recovering from hip surgery with a walker &mdash; or tap <b>Looks safe</b>.</p>
-    <p class="sub">Same 10 images the models were graded on. You get scored the same way: hazards caught vs false alarms.</p>
+    <p class="lede">10 rooms. <b>20 seconds</b> each. Someone just home from hip surgery, using a walker, lives here. <b>Type what could make them fall</b> &mdash; or tap <b>Looks safe</b>.</p>
+    <p class="sub">Same 10 images the models were graded on, same scoring: hazards caught vs false alarms. Short answers are fine (&ldquo;rug curling up, dark hallway&rdquo;). An AI grader maps your words to the benchmark's hazard list.</p>
     <form id="f-start"><input id="name" autocomplete="given-name" maxlength="24" placeholder="Your first name" required>
     <button class="btn" type="submit">Start &rarr;</button></form>
   </section>
@@ -24,10 +24,11 @@
     <div class="qhead"><span class="mono" id="q-n">1 / 10</span><span class="room mono" id="q-room">bathroom</span><span class="timer mono" id="q-t">15</span></div>
     <div class="bar"><i id="q-bar"></i></div>
     <div class="img"><img id="q-img" alt="room"></div>
-    <div class="ask">Tap every hazard you see</div>
-    <div class="chips" id="q-chips"></div>
-    <button class="btn" id="q-next">Next &rarr;</button>
+    <textarea id="q-text" rows="3" placeholder="What could make them fall? (list as many as you see)" autocomplete="off" autocapitalize="sentences"></textarea>
+    <div class="acts"><button class="btn ghost" id="q-safe" type="button">Looks safe</button><button class="btn" id="q-next" type="button">Next &rarr;</button></div>
   </section>
+
+  <section id="s-wait" class="panel hide"><div class="eyebrow">Grading</div><h1>Reading your answers&hellip;</h1><p class="sub">Mapping what you wrote to the hazard list. A few seconds.</p></section>
 
   <!-- done -->
   <section id="s-done" class="panel hide">
@@ -41,11 +42,11 @@
     <p class="verdict" id="d-verdict"></p>
     <h3>On these 10 images</h3>
     <div id="d-cmp" class="cmp"></div>
-    <h3>Your answers</h3>
-    <div id="d-per" class="per"></div>
+    <h3>What you wrote &rarr; how it was graded</h3>
+    <div id="d-per" class="ans"></div>
     <h3>Live leaderboard</h3>
     <table class="lb" id="d-lb"></table>
-    <p class="sub">Score = average of recall and (1 &minus; false-alarm rate), same as HomeBench. <a href="/results">Room results &rarr;</a></p>
+    <p class="sub">Score = average of recall and (1 &minus; false-alarm rate), same as HomeBench. Humans answered free-text with no checklist; models were given the 35-item checklist. <a href="/results">Room results &rarr;</a></p>
   </section>
 </div>
 <script src="/static/spot.js"></script>
