@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <title>Walk in 3D · HealthDojo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 /* Pistachio design language (design/pistachio.css): lime = primary/agent, green = pass, gold = hazard marker / needs a human,
    ember = fail, cream = secondary. Borders over shadows; shadow only on raised overlays. */
-:root{--font-sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--font-serif:"Instrument Serif",Georgia,serif;--font-mono:"IBM Plex Mono",ui-monospace,monospace;
+:root{--font-sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--font-serif:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--font-mono:"IBM Plex Mono",ui-monospace,monospace;
 --green:#5ac53a;--green-active:#46a82c;--green-soft:#eaf7e2;--green-ink:#2e7a18;--lime:#d5fd51;--lime-active:#c7ef3d;--lime-soft:#f3fedc;
 --gold:#f6c86a;--gold-soft:#fbeed3;--gold-ink:#8a6420;--ember:#eb5d2a;--ember-soft:#fce7dd;--ember-ink:#b23e14;--cream:#f7f2e5;--cream-strong:#efe6cf;--cream-ink:#6b6350;
 --canvas:#fcfcfa;--card:#fff;--border:#e6e6e1;--ink:#1f2123;--text-body:#3a3d3f;--text-muted:#646668;--text-faint:#8f9193;
@@ -52,6 +52,12 @@ html,body{margin:0;height:100%;overflow:hidden;background:#1f2123;font-family:va
 #tip{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);width:8px;height:8px;border-radius:50%;border:1px solid rgba(255,255,255,.8);pointer-events:none;display:none}
 .touch #joy,.touch #updn{display:block}.touch #updn{display:flex}.touch #keys{display:none}
 @media (max-width:700px){#top h1{font-size:24px}#links{top:auto;bottom:160px}}
+/* ---- Round 2: no serif, dense data-first type scale (artificialanalysis / arcprize) ---- */
+h1,h2,h3,h4,.logo,.headline{font-family:var(--sans);font-weight:600;letter-spacing:-.02em}
+h1 em,h2 em,h3 em,.headline em,.logo i,.hero h1 em{font-style:normal;font-weight:600}
+.logo{font-size:19px!important;letter-spacing:-.02em}
+#top h1{font-family:var(--font-sans);font-weight:600;font-size:20px;letter-spacing:-.02em}
+#load .t{font-family:var(--font-sans);font-weight:600;font-size:22px;letter-spacing:-.02em}
 </style>
 <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/","@sparkjsdev/spark":"https://sparkjs.dev/releases/spark/2.2.0/spark.module.js","three-mesh-bvh":"https://cdn.jsdelivr.net/npm/three-mesh-bvh@0.9.1/build/index.module.js"}}</script>
 </head>

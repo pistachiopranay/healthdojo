@@ -2,11 +2,11 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>HealthDojo · Brief in, benchmark out</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-serif: "Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
   --green: #5ac53a; --green-active: #46a82c; --green-soft: #eaf7e2; --green-ink: #2e7a18;
   --lime: #d5fd51;  --lime-active: #c7ef3d;  --lime-soft: #f3fedc;
@@ -128,6 +128,38 @@ table.lb{width:100%;border-collapse:collapse;font-size:20px}
 .legend .dot{width:18px;height:18px;display:inline-block;vertical-align:-3px;margin-right:6px}
 footer{padding:50px 0 60px;color:var(--mute);font-size:14px}
 .replaybadge{position:fixed;right:18px;bottom:14px;font:600 12px var(--mono);color:var(--mute);opacity:.6}
+/* ---- Round 2: no serif, dense data-first type scale (artificialanalysis / arcprize) ---- */
+h1,h2,h3,h4,.logo,.headline{font-family:var(--sans);font-weight:600;letter-spacing:-.02em}
+h1 em,h2 em,h3 em,.headline em,.logo i,.hero h1 em{font-style:normal;font-weight:600}
+.logo{font-size:19px!important;letter-spacing:-.02em}
+body{font-size:15px}
+.wrap{padding:0 40px}
+.tag,.eyebrow{font-size:11px}
+h1{font-size:44px;line-height:1.05;margin-top:8px}
+h1 em{color:var(--green-ink)}
+.lede{font-size:16px;margin-top:12px}
+section.stage{padding:24px 0 8px}
+h2{font-size:26px;line-height:1.15}
+.shead{margin-bottom:12px;gap:12px}.shead .n{font-size:12px}.shead .sub{font-size:13px}
+.stp{font-size:13px;padding:5px 12px}.stp b{width:20px;height:20px;font-size:11px}.stp .tm{font-size:11px}
+label.f{font-size:11px}
+textarea{font-size:14px}
+table.rb{font-size:14px}
+.rb th{font:500 11px var(--mono);letter-spacing:.06em;padding:8px 10px}
+.rb td{padding:8px 10px}
+.rb code{font-size:12px}.rb .nm{font-size:14px}.rb .cite,.rb .pm{font-size:12px}
+.pill{font-size:11px;padding:2px 8px}
+.scn{gap:18px;margin-bottom:18px}
+.scn .title h3{font-size:18px}
+.fig .cap{font-size:12px}
+.motto{font-family:var(--sans);font-style:normal;font-weight:600;font-size:18px;letter-spacing:-.01em}
+input[type=text],textarea,select{font-size:15px;padding:9px 12px;border-radius:8px}
+textarea{font-size:13px;height:260px}
+.card{padding:20px 24px}
+.btn{font-size:14px;padding:8px 16px}
+.tab{font-size:13px;padding:4px 12px}
+.meta{font-size:13px}
+#use_case{font-size:15px!important;height:84px!important}
 </style></head>
 <body>
 <nav><div class="wrap">

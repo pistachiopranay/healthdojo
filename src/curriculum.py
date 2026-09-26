@@ -161,7 +161,7 @@ BENCHES = {
                   "bedroom": ["data/benchmarks/dementia/renders/dem-bedroom-base0.jpg", "data/renders/bedroom-base1.jpg", "data/renders/bedroom-base0.jpg"],
                   "entry": ["data/benchmarks/dementia/renders/dem-entry-base0.jpg", "data/renders/living-base1.jpg"]},
         "pool": {"kitchen": ["DEM-K01", "DEM-K02", "DEM-K03", "DEM-K04"], "bathroom": ["DEM-B01", "DEM-B03", "DEM-B04"],
-                 "bedroom": ["DEM-R01", "DEM-R02", "DEM-R03", "DEM-R04"], "entry": ["DEM-E01", "DEM-E02", "DEM-E03"]},
+                 "bedroom": ["DEM-R01", "DEM-R02", "DEM-R04"], "entry": ["DEM-E01", "DEM-E02", "DEM-E03"]},
         "subtle": {"DEM-K01": "one small burner glowing faintly orange at the back of the stove, no pot on it",
                    "DEM-K02": "a single paring knife lying half under a dish towel on the counter",
                    "DEM-K03": "a small bottle of bleach tucked behind the dish soap by the sink",
@@ -171,18 +171,19 @@ BENCHES = {
                    "DEM-B04": "a hair straightener plugged in, its cord draped near the sink basin",
                    "DEM-R01": "a medium wall mirror on the closet door that reflects the bed",
                    "DEM-R02": "a rug with a bold dark striped border pattern at the bedside",
-                   "DEM-R03": "the grip of a black handgun partly visible in an open nightstand drawer",
                    "DEM-R04": "a small space heater on the floor close to the hanging bedspread",
                    "DEM-E01": "a car key fob lying in a small dish on the entry table by the door",
                    "DEM-E02": "the front door left slightly ajar with daylight showing through the gap",
                    "DEM-E03": "a small stack of boxes partly blocking the hallway edge"},
         "distractors": {"kitchen": [("DEM-K01", "a stove that is off with plastic safety covers on all the knobs"), ("DEM-K04", "a closed locked gray medication lockbox"), ("DEM-K02", "a ceramic utensil crock holding wooden spoons and spatulas")],
                         "bathroom": [("DEM-B04", "an electric toothbrush standing in its charging base far from the sink basin, unplugged"), ("DEM-B03", "a light beige non-slip bath mat matching the light floor"), ("DEM-B01", "a toothbrush cup and pump soap dispenser")],
-                        "bedroom": [("DEM-R01", "a small framed family photograph on the wall"), ("DEM-R03", "a TV remote and reading glasses on the nightstand"), ("DEM-R02", "a plain solid-color low-pile rug beside the bed")],
+                        "bedroom": [("DEM-R01", "a small framed family photograph on the wall"), ("DEM-R04", "an unplugged oil-filled radiator standing against the far wall, away from any fabric"), ("DEM-R02", "a plain solid-color low-pile rug beside the bed")],
                         "entry": [("DEM-E01", "a small closed metal key lockbox mounted on the wall"), ("DEM-E02", "the front door closed with a door chime alarm sensor on the frame"), ("DEM-E03", "a neat low shoe rack against the wall")]},
         "lighting_hazard": None,
     },
 }
+
+EXCLUDED = {"DEM-R03"}
 
 LEVELS = [
     {"level": 1, "name": "Obvious", "n": 10, "hazards_per_image": "1", "distractors": 0, "conditions": ["good light"],
@@ -223,13 +224,18 @@ class Bench:
         for d in ("img", "thumb", "bases", "steps"):
             (self.out / d).mkdir(parents=True, exist_ok=True)
         t = json.loads(self.cfg["taxonomy"].read_text())
+        t["hazards"] = [h for h in t["hazards"] if h["id"] not in EXCLUDED]  # firearms removed at owner's request
         self.tax = {h["id"]: h for h in t["hazards"]}
         self.meta = t
         self.mpath = self.out / "manifest.json"
         self.m = json.loads(self.mpath.read_text()) if self.mpath.exists() else {}
         self.lock = threading.Lock()
+        if self.m.get("items"):
+            self.m["items"] = [it for it in self.m["items"] if not any(h["id"] in EXCLUDED for h in it["hazards"]) and not any(d.get("looks_like") in EXCLUDED for d in it["distractors"])]
+
         if name == "dementia":
             self.cfg["guideline"]["excerpt"] = list(dict.fromkeys(h["citation"]["guideline_line"] for h in t["hazards"]))
+        self.m["excluded_hazards"] = {"DEM-R03": "firearm hazard removed at the owner's request; no weapon imagery generated"} if name == "dementia" else {}
 
     def citation(self, hid):
         h = self.tax[hid]
@@ -253,7 +259,7 @@ class Bench:
             m.update({"bench": self.name, "title": self.cfg["title"], "guideline": self.cfg["guideline"], "rubric": self.rubric(),
                       "levels": LEVELS, "worlds": m.get("worlds", []), "difficulty_curve": m.get("difficulty_curve", {}),
                       "method": "Label-before-pixels: Sonnet 5 (Bedrock) plans each edit's label+region, Stability inpaint (Bedrock) paints one region per step on a clean base; box = pixel diff between consecutive steps. Distractors are labelled negatives. Conditions are deterministic global grades applied last. New bases: Stability control-structure restyles of existing clean rooms (no Stability text-to-image model is enabled on this account), judge-checked for hazards.",
-                      "cost": {"stability_calls": COST["image_calls"], "llm_calls": COST["llm_calls"], "est_usd": round(COST["image_calls"] * 0.06 + COST["llm_calls"] * 0.015, 2)}})
+                      "cost": {"stability_calls": COST["image_calls"], "llm_calls": COST["llm_calls"], "treg_gemini_calls": COST.get("treg_gemini_calls", 0), "est_usd": round(COST["image_calls"] * 0.06 + COST["llm_calls"] * 0.015 + COST.get("treg_gemini_calls", 0) * 0.03, 2)}})
             m.setdefault("items", [])
             m["items"].sort(key=lambda it: (it["level"], it["id"]))
             m["bases"] = m.get("bases", [])
@@ -475,8 +481,91 @@ def gemini_edit(im, box, prompt, key):
     return open_img(raw).resize(im.size), slug
 
 
-def edit(im, box, prompt):
-    """Backend switch: Gemini 3 Pro Image via OpenRouter when a key is in .env (polled per call), else Bedrock Stability inpaint."""
+TREGHOME = str(ROOT / ".scratch/treghome")
+TREG_SEM = threading.Semaphore(int(os.getenv("TREG_CONC", "7")))
+_s3 = {}
+
+
+def treg(args):
+    import subprocess
+    out = subprocess.run(["treg", "call", *args], capture_output=True, text=True, env={**os.environ, "HOME": TREGHOME}, timeout=120)
+    body = out.stdout[out.stdout.find("{"):]
+    return json.loads(body)
+
+
+def treg_balance():
+    import subprocess
+    try:
+        out = subprocess.run(["treg", "balance"], capture_output=True, text=True, env={**os.environ, "HOME": TREGHOME}, timeout=30).stdout
+        return float(re.search(r"\$([0-9.]+)", out).group(1))
+    except Exception:
+        return 0.0
+
+
+_BAL = {"t": 0, "v": 0.0}
+
+
+def treg_ok():
+    if os.getenv("NO_TREG"):
+        return False
+    if time.time() - _BAL["t"] > 60:
+        _BAL.update(t=time.time(), v=treg_balance())
+    return _BAL["v"] >= 0.10
+
+
+def public_url(im, key):
+    """Presigned S3 URL (pistachio profile) so treg's Gemini can fetch the current step image."""
+    import boto3
+    with _lk:
+        if "c" not in _s3:
+            _s3["c"] = boto3.Session(profile_name="pistachio").client("s3", region_name="us-east-1")
+    c = _s3["c"]
+    c.put_object(Bucket="healthdojo-demo-pear", Key=f"curriculum-tmp/{key}.jpg", Body=jpg(im, 1280, 92), ContentType="image/jpeg")
+    return c.generate_presigned_url("get_object", Params={"Bucket": "healthdojo-demo-pear", "Key": f"curriculum-tmp/{key}.jpg"}, ExpiresIn=7200)
+
+
+def gemini_treg_edit(im, box, prompt, key):
+    import urllib.request
+    x0, y0, x1, y1 = [int(v) for v in box[:4]]
+    horiz = "left" if x1 < 400 else "right" if x0 > 600 else "center"
+    vert = "top" if y1 < 400 else "bottom" if y0 > 600 else "middle"
+    instr = (f"Edit this exact photo. Add ONLY this one change, placed in the {vert}-{horiz} of the frame, inside the rectangle from {x0/10:.0f}% to {x1/10:.0f}% of the width (from the left) "
+             f"and {y0/10:.0f}% to {y1/10:.0f}% of the height (from the top): {prompt}. Keep everything else exactly identical - same framing, camera, lighting, objects and colors. Photorealistic.")
+    W, H = im.size
+    ar = W / H
+    size = "3:2" if ar > 1.4 else "4:3" if ar > 1.2 else "1:1"
+    url = public_url(im, key)
+
+    def go():
+        with TREG_SEM:
+            task = treg(["reapi.image-gen.gemini-3-pro-image", "--method", "POST", "--data", json.dumps(
+                {"model": "gemini-3-pro-image-preview", "prompt": instr, "size": size, "resolution": "1K", "image_urls": [url]})])
+            if "id" not in task:
+                raise RuntimeError(f"treg submit: {str(task)[:150]}")
+            t0 = time.time()
+            while time.time() - t0 < 200:
+                time.sleep(5)
+                r = treg(["reapi.tasks.get", "--query", f"id={task['id']}"])
+                if r.get("status") == "completed":
+                    u = r["output"]["image_urls"][0]
+                    return urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0 HomeDojo/0.1"}), timeout=60).read()
+                if r.get("status") == "failed":
+                    raise RuntimeError(f"treg task failed: {str(r.get('error'))[:150]}")
+            raise RuntimeError("treg timeout")
+    t0 = time.time()
+    raw = retry(go, 2)
+    COST["treg_gemini_calls"] = COST.get("treg_gemini_calls", 0) + 1
+    print(f"  treg-gemini {time.time() - t0:.0f}s", flush=True)
+    return open_img(raw).resize(im.size)
+
+
+def edit(im, box, prompt, key="x"):
+    """Backend switch: Gemini 3 Pro Image via treg (isolated HOME) while balance >= $0.10; else OpenRouter Gemini if key in .env; else Bedrock Stability inpaint."""
+    if treg_ok():
+        try:
+            return gemini_treg_edit(im, box, prompt, key), {"backend": "treg", "model": "gemini-3-pro-image-preview"}
+        except Exception as e:
+            print("  treg gemini failed, falling back:", str(e)[:150], flush=True)
     key = openrouter_key()
     if key:
         try:
@@ -487,11 +576,14 @@ def edit(im, box, prompt):
     return inpaint(im, box, prompt), {"backend": "bedrock", "model": INPAINT}
 
 
-def diff_box(a, c, hint):
+def diff_box(a, c, hint, wide=False):
     A = np.asarray(a.convert("L").resize((500, 375)), float); C = np.asarray(c.convert("L").resize((500, 375)), float)
     d = np.asarray(Image.fromarray(np.abs(A - C).astype("uint8")).filter(ImageFilter.GaussianBlur(3)))
     x0, y0, x1, y1 = hint
     pad = 40
+    if wide:  # whole-image editor: global drift is low-amplitude, the added object is the strong change near the planned region
+        pad = 160
+        d = np.where(d > max(40, np.percentile(d, 97)), d, 0)
     win = np.zeros_like(d, bool)
     win[max(0, int(y0 * .375) - pad // 2):int(y1 * .375) + pad // 2, max(0, int(x0 * .5) - pad // 2):int(x1 * .5) + pad // 2] = True
     mask = (d > 20) & win
@@ -504,7 +596,7 @@ def diff_box(a, c, hint):
 
 JUDGE_Q = """Home-safety image QA for {patient}. The image was edited to contain these labelled regions (0-1000 coords, x right, y down):
 {rows}
-For each key: is the described thing actually visible and recognisable in (roughly) that region? For HAZARD keys: would a careful home-safety assessor see this hazard? For SAFE keys: does it look safe (not itself a hazard)?
+Boxes are approximate (the object may extend beyond or sit slightly outside the box). For each key: is the described thing actually visible and recognisable in or near that region? For HAZARD keys: would a careful home-safety assessor see this hazard? For SAFE keys: does it look safe (not itself a hazard)?
 Return ONLY JSON {{"checks": [{{"key": "...", "visible": true|false, "looks_safe": true|false|null, "note": "<short>"}}], "photoreal": true|false}}"""
 
 
@@ -526,8 +618,8 @@ def build(b: Bench, spec):
         e = eds.get(key)
         if not e:
             trace.append({"kind": kind, "id": key, "skipped": "no plan"}); continue
-        nxt, be = edit(im, e["box"], e["prompt"])
-        box = diff_box(im, nxt, e["box"]) or [int(v) for v in e["box"][:4]]
+        nxt, be = edit(im, e["box"], e["prompt"], f"{b.name}-{iid}-s{n}")
+        box = diff_box(im, nxt, e["box"], wide=be["backend"] != "bedrock") or [int(v) for v in e["box"][:4]]
         im = nxt
         im.save(b.out / "steps" / f"{iid}-s{n}.jpg", "JPEG", quality=80)
         if kind == "hazard":
@@ -596,6 +688,46 @@ def generate(b: Bench, scale=1.0, levels=None):
         b.save()
 
 
+REFINE_Q = """This home photo contains these labelled items (planned regions are approximate, 0-1000 coords, x right, y down):
+{rows}
+For each key, give the TIGHT bounding box of the actual object in the image (0-1000 coords), or null if you cannot find it.
+Return ONLY JSON {{"boxes": {{"<key>": [x0, y0, x1, y1] | null}}}}"""
+
+
+def refine(b: Bench):
+    """Whole-image editors (Gemini) drift globally, so pixel-diff boxes are unreliable for them: localize each
+    pre-declared label with Sonnet 5 inside the final image. Label identity is unchanged (still label-before-pixels)."""
+    def one(it):
+        if it.get("box_refined") or not any(t.get("backend") not in (None, "bedrock") for t in it["prompt_trace"]):
+            return
+        rows = [f'- {h["id"]}: {h["name"]} (planned {t["planned_box"]})' for h in it["hazards"] for t in it["prompt_trace"] if t.get("id") == h["id"] and t.get("planned_box")]
+        rows += [f'- D{i}: {d["label"]} (planned {t["planned_box"]})' for i, d in enumerate(it["distractors"]) for t in it["prompt_trace"] if t.get("id") == f"D{i}" and t.get("planned_box")]
+        if not rows:
+            return
+        try:
+            r = first_json(llm([imgblock(Image.open(b.out / it["image"]).convert("RGB"), 1280), {"text": REFINE_Q.format(rows="\n".join(rows))}], 1200)).get("boxes", {})
+        except Exception as e:
+            print("refine ERR", it["id"], str(e)[:100]); return
+        for h in it["hazards"]:
+            nb = r.get(h["id"])
+            if h.get("box") and isinstance(nb, list) and len(nb) == 4:
+                h["diff_box"], h["box"], h["box_source"] = h["box"], [int(v) for v in nb], "sonnet-5 localization of pre-declared label (whole-image editor)"
+        for i, d in enumerate(it["distractors"]):
+            nb = r.get(f"D{i}")
+            if isinstance(nb, list) and len(nb) == 4:
+                d["diff_box"], d["box"], d["box_source"] = d["box"], [int(v) for v in nb], "sonnet-5 localization of pre-declared label (whole-image editor)"
+        for t in it["prompt_trace"]:
+            key = t.get("id")
+            nb = r.get(key)
+            if t.get("backend") not in (None, "bedrock") and isinstance(nb, list) and len(nb) == 4:
+                t["diff_box"], t["box"] = t.get("box"), [int(v) for v in nb]
+        it["box_refined"] = True
+        print("refined", it["id"], flush=True)
+    with cf.ThreadPoolExecutor(8) as ex:
+        list(ex.map(one, b.m["items"]))
+    b.save()
+
+
 # ---------------------------------------------------------------- difficulty curve
 CURVE_MODELS = {"nova-pro": "amazon.nova-pro-v1:0", "qwen3-vl": "qwen.qwen3-vl-235b-a22b", "gpt-5.6-sol": "us.openai.gpt-5.6-sol"}
 
@@ -655,7 +787,9 @@ def curve(b: Bench, models=None):
 if __name__ == "__main__":
     bench = sys.argv[1]
     b = Bench(bench)
-    if len(sys.argv) > 2 and sys.argv[2] == "curve":
+    if len(sys.argv) > 2 and sys.argv[2] == "refine":
+        refine(b)
+    elif len(sys.argv) > 2 and sys.argv[2] == "curve":
         curve(b, sys.argv[3:] or None)
     else:
         scale = float(sys.argv[2]) if len(sys.argv) > 2 else 1.0

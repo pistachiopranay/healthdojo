@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>HealthDojo · The flight simulator for home-health AI</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 /* Pistachio design language (design/pistachio.css), scaled up for projection. */
 :root{
@@ -18,7 +18,7 @@
   --paper:var(--canvas);--ink2:var(--text-body);--mute:var(--text-muted);--line:var(--border);--line2:var(--border-soft);
   --teal:var(--green-ink);--teal2:var(--green-soft);--coral:var(--ember);--coral2:var(--ember-soft);--amber:var(--gold);
   --gt:var(--green);--pred:var(--lime);
-  --serif:"Instrument Serif",Georgia,serif;--sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --serif:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
 }
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}
 body{margin:0;background:var(--canvas);color:var(--text-body);font:18px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
@@ -229,6 +229,80 @@ nav .links a.ext{padding:6px 14px;font-weight:500}
 .appwin table.lb th{background:#fbfaf6}
 footer{padding:80px 0 60px;color:var(--text-muted);font-size:15px}
 footer .wrap{border-top:1px solid var(--border);padding-top:28px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+/* ---- Round 2: no serif, dense data-first type scale (artificialanalysis / arcprize) ---- */
+h1,h2,h3,h4,.logo,.headline{font-family:var(--sans);font-weight:600;letter-spacing:-.02em}
+h1 em,h2 em,h3 em,.headline em,.logo i,.hero h1 em{font-style:normal;font-weight:600}
+.logo{font-size:19px!important;letter-spacing:-.02em}
+body{font-size:15px;line-height:1.5}
+.wrap{padding:0 40px}
+nav .wrap,nav.top .wrap{height:54px;gap:24px}
+nav .links,nav.top .links{font-size:13px;gap:18px}
+nav .links a.ext,nav.top .links a.ext{padding:4px 12px}
+.eyebrow{font-size:11px;letter-spacing:.1em}
+h1,.hero h1{font-size:44px;line-height:1.05;margin-top:10px;max-width:none}
+h2{font-size:26px;line-height:1.15;margin-top:6px}
+h3{font-size:17px}
+.lede{font-size:16px;margin-top:14px;max-width:60ch}
+.note{font-size:13px;margin-top:10px}
+.hero{padding:40px 0 0}
+.hero-grid{gap:40px;align-items:center}
+.hero-fig figcaption{font-size:13px;padding:8px 12px}
+.bleed{padding:32px 0 36px}
+.winhead{padding:22px 28px 20px}
+.winhead .eyebrow{font-size:11px}
+.say{font-size:28px;line-height:1.25;letter-spacing:-.025em;margin-top:6px;max-width:44ch}
+.say .ic{width:28px;height:28px;border-radius:8px;font-size:14px;vertical-align:-3px;margin:0 6px 0 2px}
+.stat,.appwin .stat{padding:16px 22px 18px}
+.stat b,.appwin .stat b{font-size:32px}
+.stat span{font-size:13px;margin-top:6px}
+.stat span b{font-size:13px!important}
+.problem{padding:44px 0}
+.problem h2{max-width:34ch!important}
+.facts{margin-top:22px}
+.fact b{font-size:38px}.fact b small{font-size:18px}
+.fact p{font-size:14px;margin-top:8px}
+.cite{font-size:12px;margin-top:18px}
+.steps{margin-top:26px;gap:16px}
+.step{padding:16px 18px}
+.step h4{font-size:16px}.step p{font-size:13px}.step i{font-size:11px}
+section.sec,#leaderboard.sec,#failures.sec{padding:48px 0 8px}
+.sec-head{margin-bottom:18px;gap:32px}
+.sec-head p{font-size:14px;color:var(--text-muted)}
+table.lb{font-size:14px}
+.lb th{font:500 11px var(--mono);letter-spacing:.06em;padding:10px 14px}
+.lb td{padding:8px 14px;font-size:13px}
+.lb .rk{font-size:13px;width:40px}
+.lb .mname{font-size:14px}
+.badge{font-size:10px;padding:1px 6px;margin-left:8px;vertical-align:1px}
+.sbar{width:140px;height:6px;border-radius:3px}
+.scorecell{gap:10px}
+.scorecell b{font-size:14px}
+.money{padding:24px 28px}
+.headline{font-size:26px;line-height:1.2;margin:4px 0 8px;max-width:40ch}
+.headline em{color:var(--ember-ink)}
+.headline-sub{font-size:14px;margin-bottom:20px}
+.callout{font-size:14px;padding:10px 14px;margin-top:16px}
+#genCallout{margin:0 0 20px}
+.hm h3{font:500 11px var(--mono);letter-spacing:.08em}
+.hrow{font-size:13px;padding:6px 0;grid-template-columns:70px 1fr 110px 44px}
+.hrow code{font-size:11px}.hrow .t{font-size:10px}
+.heat th{font-size:12px}.heat th.rl{font-size:13px}
+.heat td.c{height:32px;font-size:12px;min-width:48px;border-radius:4px}
+.heat .sub{font-size:10px}
+.hm-grid{gap:32px}
+.chips,.filters{gap:6px;margin-bottom:16px}
+.chip{font-size:13px;padding:4px 12px;border-radius:99px}
+.chip .dim{font-size:11px}
+.sgrid,.igrid{gap:14px}
+.sc .meta,.it .meta{padding:10px 12px 12px}
+.sc .ttl,.it .ttl{font-size:14px}
+.sc .sub,.it .sub{font-size:12px}
+.vtop h3{font-size:24px}
+.item .nm{font-size:14px}.item .ev{font-size:13px}
+footer{padding:40px 0 32px;font-size:13px}
+.btn{font-size:14px;padding:8px 14px}
+.chipk{font-size:11px;padding:2px 8px}
+.hero-grid{grid-template-columns:1.25fr .75fr}
 </style></head><body>
 
 <nav><div class="wrap">
@@ -248,7 +322,7 @@ footer .wrap{border-top:1px solid var(--border);padding-top:28px;display:flex;ju
     </div>
     <figure class="hero-fig" id="heroFig"></figure>
   </div>
-  <div class="bleed" style="margin-top:56px"><div class="appwin"><div class="winhead"><div class="eyebrow">The report card, at a glance</div><p class="say" id="say"></p></div><div class="stats" id="stats"></div></div></div>
+  <div class="bleed" style="margin-top:28px"><div class="appwin"><div class="winhead"><div class="eyebrow">The report card, at a glance</div><p class="say" id="say"></p></div><div class="stats" id="stats"></div></div></div>
 </div></header>
 
 <section class="problem" id="why"><div class="wrap">

@@ -2,13 +2,13 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>HealthDojo · Walkthrough mode</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
   --paper:#fcfcfa;--card:#ffffff;--ink:#1f2123;--ink2:#3a3d3f;--mute:#646668;--line:#e6e6e1;--line2:#f0f0ec;
   --teal:#2e7a18;--teal2:#f3fedc;--coral:#eb5d2a;--amber:#8a6420;--pred:#d5fd51;--gt:#46a82c;
   --lime:#d5fd51;--lime-active:#c7ef3d;--lime-soft:#f3fedc;--green-active:#46a82c;--gold:#f6c86a;--gold-soft:#fbeed3;--ember-soft:#fce7dd;--ember-ink:#b23e14;--cream:#f7f2e5;--cream-ink:#6b6350;
-  --serif:"Instrument Serif",Georgia,serif;--sans:"Inter",-apple-system,system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;
+  --serif:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--sans:"Inter",-apple-system,system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--paper);color:var(--ink);font:19px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
@@ -88,6 +88,38 @@ nav{background:rgba(252,252,250,.88);border-bottom-color:var(--border-soft)}
 nav .links{font-weight:400;align-items:center}nav .links a{color:var(--text-muted)}
 .appwin .stage{margin-top:0}
 .appwin .side{border:0;border-left:1px solid var(--border-soft);border-radius:0}
+/* ---- Round 2: no serif, dense data-first type scale (artificialanalysis / arcprize) ---- */
+h1,h2,h3,h4,.logo,.headline{font-family:var(--sans);font-weight:600;letter-spacing:-.02em}
+h1 em,h2 em,h3 em,.headline em,.logo i,.hero h1 em{font-style:normal;font-weight:600}
+.logo{font-size:19px!important;letter-spacing:-.02em}
+body{font-size:15px}
+.wrap{padding:0 40px}
+nav .wrap{height:54px}nav .links{font-size:13px;gap:18px}
+.eyebrow{font-size:11px}
+h1{font-size:44px;line-height:1.05;margin-top:8px}
+h1 em{color:var(--teal)}
+.lede{font-size:16px;margin-top:12px}
+h2{font-size:24px;margin:0 0 12px}
+h2[style]{margin-top:28px!important}
+section{padding:24px 0}
+section[style]{padding-top:36px!important}
+.pick{gap:6px;margin-top:8px}.pick b{font-size:11px;width:60px}
+.chip{font-size:13px;padding:4px 12px;border-radius:99px}
+.bleed{padding:28px 0 32px}
+.stage{grid-template-columns:1fr 280px;gap:16px}
+.side{padding:14px 18px}
+.metric{padding:8px 0}.metric span{font-size:11px}.metric b{font-size:22px}
+.legend{font-size:12px;gap:14px}
+.film{gap:12px}
+.frame .cap{padding:8px 10px 10px}.act{font-size:11px}.th{font-size:13px}
+.frame .n{font-size:12px;padding:2px 8px}
+table.lb{font-size:14px}
+.lb th{font:500 11px var(--mono);letter-spacing:.06em;padding:10px 14px}
+.lb td{padding:8px 14px;font-size:13px}.lb td.l{font-size:14px}
+.lb .rk{font-size:13px;width:40px}
+.bar{height:6px}
+.matrix td{font-size:13px}
+.note{font-size:13px}
 </style></head><body>
 <nav><div class="wrap"><a class="logo" href="index.html">Health<i>Dojo</i></a><div class="links"><a href="guidelines.html">Guidelines</a><a href="index.html">Benchmark</a><a href="worlds_3d.html">3D worlds</a><a href="walk.html" style="color:var(--ink);border-bottom:2px solid var(--green-active)">Walkthrough</a><a href="http://localhost:8792/">Live ▶</a></div></div></nav>
 <div class="wrap">

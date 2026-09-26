@@ -2,12 +2,12 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>HealthDojo · Live walkthrough</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{--green:#5ac53a;--green-active:#46a82c;--green-soft:#eaf7e2;--green-ink:#2e7a18;--lime:#d5fd51;--lime-active:#c7ef3d;--lime-soft:#f3fedc;
   --gold:#f6c86a;--gold-soft:#fbeed3;--gold-ink:#8a6420;--ember:#eb5d2a;--ember-soft:#fce7dd;--ember-ink:#b23e14;--cream:#f7f2e5;--cream-strong:#efe6cf;--cream-ink:#6b6350;
   --canvas:#fcfcfa;--card:#fff;--muted:#f5f5f2;--border:#e6e6e1;--ink:#1f2123;--body:#3a3d3f;--mute:#646668;--faint:#8f9193;
-  --serif:"Instrument Serif",Georgia,serif;--sans:"Inter",-apple-system,system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;--ease:cubic-bezier(0.16,1,0.3,1)}
+  --serif:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--sans:"Inter",-apple-system,system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;--ease:cubic-bezier(0.16,1,0.3,1)}
 *{box-sizing:border-box}html,body{margin:0;height:100%;overflow:hidden}
 body{background:var(--ink);color:var(--ink);font:400 18px/1.45 var(--sans);-webkit-font-smoothing:antialiased}
 #bar{position:fixed;top:0;left:0;right:0;z-index:20;display:flex;align-items:center;gap:16px;padding:12px 24px;background:var(--canvas);border-bottom:1px solid var(--border)}
@@ -59,6 +59,24 @@ select{font:500 17px var(--sans);padding:9px 14px;border-radius:8px;border:1px s
 #intro h1{font:400 96px/1 var(--serif);margin:0;letter-spacing:-.01em}
 #intro h1 em{color:var(--lime)}
 #intro p{font-size:24px;margin:14px 0 0}
+/* ---- Round 2: no serif, dense data-first type scale (artificialanalysis / arcprize) ---- */
+h1,h2,h3,h4,.logo,.headline{font-family:var(--sans);font-weight:600;letter-spacing:-.02em}
+h1 em,h2 em,h3 em,.headline em,.logo i,.hero h1 em{font-style:normal;font-weight:600}
+.logo{font-size:19px!important;letter-spacing:-.02em}
+body{font-size:15px}
+.logo{font-weight:600}
+.tag{font-size:11px}
+select{font-size:14px;padding:6px 10px}
+.seg button{font-size:13px;padding:6px 12px}
+.btn{font-size:14px;padding:7px 16px}
+#stepbox .n{font-size:40px}#stepbox .n small{font-size:18px}
+#stepbox .who{font-size:11px}#stepbox .act{font-size:14px}
+#caption .th{font-size:14px}
+#endcard h2{font:600 40px/1.05 var(--sans);letter-spacing:-.02em;margin:10px 0 18px}
+#endcard .grid b{font-size:30px}
+#intro h1{font:600 48px/1.05 var(--sans);letter-spacing:-.02em}
+#intro p{font-size:17px}
+#caption .say{font-size:24px;line-height:1.25}#caption .th{font-size:14px}#caption .flag{font-size:12px}
 </style>
 <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script>
 </head><body>
