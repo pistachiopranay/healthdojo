@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Spot the hazard — results</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/spot.css">
+<style>
+body{font-size:18px}
+.R{max-width:1500px;margin:0 auto;padding:22px 28px 40px}
+.R .top{padding:0 0 16px}
+.R .logo{font-size:26px}
+.grid{display:grid;grid-template-columns:1fr 340px;gap:18px;align-items:start}
+.panel{padding:24px 28px}
+h1{font-size:52px;margin:6px 0 4px}
+.lead{color:var(--text-muted);font-size:18px;margin:0}
+.heads{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);margin-top:22px}
+.heads div{padding:14px 18px 0 0}
+.heads b{display:block;font-family:var(--mono);font-weight:500;font-size:84px;line-height:1;letter-spacing:-.04em;color:var(--ink)}
+.heads .hu b{color:var(--green-ink)}
+.heads span{display:block;margin-top:8px;font-size:17px;color:var(--text-muted)}
+.heads small{display:block;font-family:var(--mono);font-size:14px;color:var(--text-faint);margin-top:2px}
+table.pi{width:100%;border-collapse:collapse;margin-top:6px}
+.pi td{padding:4px 10px 4px 0;border-bottom:1px solid var(--border-soft);vertical-align:middle;font-size:17px}
+.pi td.th{width:82px}.pi td.th img{width:72px;height:54px;object-fit:cover;border-radius:5px;border:1px solid var(--border);display:block}
+.pi .lab{color:var(--ink);font-weight:500}.pi .lab small{display:block;font:500 12px var(--mono);color:var(--text-faint);text-transform:uppercase;letter-spacing:.08em}
+.pi td.bars{width:44%}
+.b{display:grid;grid-template-columns:70px 1fr 56px;gap:8px;align-items:center;font-size:13px;color:var(--text-muted);margin:2px 0}
+.b .track{height:14px;background:var(--surface-muted);border-radius:3px;overflow:hidden}.b .track i{display:block;height:100%}
+.b b{font-family:var(--mono);font-weight:500;font-size:16px;color:var(--ink);text-align:right}
+tr.story td{background:var(--gold-soft)}
+tr.story .lab::after{content:"models 1 of 14";font:600 11px var(--mono);text-transform:uppercase;letter-spacing:.08em;background:var(--gold);color:var(--ink);padding:2px 6px;border-radius:3px;margin-left:8px}
+.qr{text-align:center}.qr img{width:100%;max-width:280px;display:block;margin:6px auto}
+.qr .u{font:500 18px var(--mono);color:var(--ink);word-break:break-all}
+table.lb{font-size:16px}
+.side h3:first-child{margin-top:0;border-top:0;padding-top:0}
+@media (max-width:900px){.R{padding:10px}.R .top{flex-wrap:wrap;gap:4px}.panel{padding:14px}.grid{grid-template-columns:1fr}.heads b{font-size:40px}.heads span{font-size:14px}.heads small{display:none}h1{font-size:30px}.lead{font-size:14px}.pi td.th{display:none}.pi td{font-size:14px}.pi td.bars{width:52%}.b{grid-template-columns:52px 1fr 42px}.b b{font-size:13px}tr.story .lab::after{display:inline-block;margin:4px 0 0}}
+</style>
+</head><body>
+<div class="R">
+  <header class="top"><span class="logo">Health<b>Dojo</b></span><span class="eyebrow">Spot the hazard · humans vs models · live</span></header>
+  <div class="grid">
+    <section class="panel">
+      <div class="eyebrow">Same 10 images · 15 s each · <span id="n">0</span> humans vs 14 models</div>
+      <h1>Humans vs models</h1>
+      <p class="lead">Score = average of hazards caught and (1 &minus; false-alarm rate) &mdash; the HomeBench metric.</p>
+      <div class="heads">
+        <div class="hu"><b id="hs">—</b><span>Humans, average</span><small id="hs2"></small></div>
+        <div><b id="bs">—</b><span>Best model</span><small id="bs2"></small></div>
+        <div><b id="ms">—</b><span>Model average</span><small id="ms2"></small></div>
+      </div>
+      <h3>Per image &mdash; share who spotted the seeded hazard (clean rooms: share with no false alarm)</h3>
+      <table class="pi" id="per"></table>
+    </section>
+    <aside class="side">
+      <section class="panel qr"><h3>Play on your phone</h3><img src="/api/qr.svg" alt="QR"><div class="u" id="url"></div></section>
+      <section class="panel" style="margin-top:18px"><h3>Leaderboard</h3><table class="lb" id="lb"></table></section>
+    </aside>
+  </div>
+</div>
+<script>
+const $ = s => document.querySelector(s), pct = x => x == null ? "—" : Math.round(x * 100) + "%";
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+fetch("/api/url").then(r => r.json()).then(d => $("#url").textContent = d.url);
+const sub = g => g.recall == null ? "" : `caught ${pct(g.recall)} · false alarms ${pct(g.false_alarm)}`;
+async function load() {
+  const s = await fetch("/api/results").then(r => r.json());
+  $("#n").textContent = s.n_humans;
+  $("#hs").textContent = pct(s.humans.score); $("#hs2").textContent = s.n_humans ? `n=${s.n_humans} · ` + sub(s.humans) : "waiting for players";
+  $("#bs").textContent = pct(s.best_model.score); $("#bs2").textContent = s.best_model.name + " · " + sub(s.best_model);
+  $("#ms").textContent = pct(s.models.score); $("#ms2").textContent = "14 models · " + sub(s.models);
+  const bar = (l, v, c) => `<div class="b"><span>${l}</span><div class="track"><i style="width:${(v||0)*100}%;background:${c}"></i></div><b>${pct(v)}</b></div>`;
+  const per = [...s.per_image].sort((a, b) => b.id.includes("BATH-03") - a.id.includes("BATH-03"));
+  $("#per").innerHTML = per.map(p => `<tr class="${p.id.includes("BATH-03") ? "story" : ""}"><td class="th"><img src="${p.image}"></td>
+    <td class="lab">${p.clean ? "Clean room (no seeded hazard)" : esc(p.answer[0])}<small>${p.room} · ${p.clean ? "false-alarm check" : p.type}</small></td>
+    <td class="bars">${bar("Humans", p.human_rate, "var(--green)")}${bar("Models", p.model_rate, "var(--text-faint)")}</td></tr>`).join("");
+  $("#lb").innerHTML = s.leaderboard.slice(0, 20).map((b, i) => `<tr class="${b.kind === "human" ? "h" : ""}"><td class="n">${i + 1}</td><td>${esc(b.name)}<span class="tag ${b.kind[0]}">${b.kind}</span></td><td class="r">${pct(b.score)}</td></tr>`).join("");
+}
+load(); setInterval(load, 5000);
+</script>
+</body></html>

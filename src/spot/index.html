@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Spot the hazard — HealthDojo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/spot.css">
+</head><body>
+<div class="wrap">
+  <header class="top"><span class="logo">Health<b>Dojo</b></span><span class="eyebrow">Spot the hazard</span></header>
+
+  <!-- start -->
+  <section id="s-start" class="panel">
+    <div class="eyebrow">Humans vs 14 models</div>
+    <h1>Can you spot the fall hazard faster than an AI?</h1>
+    <p class="lede">10 rooms. <b>15 seconds</b> each. Tap every hazard you see for someone recovering from hip surgery with a walker &mdash; or tap <b>Looks safe</b>.</p>
+    <p class="sub">Same 10 images the models were graded on. You get scored the same way: hazards caught vs false alarms.</p>
+    <form id="f-start"><input id="name" autocomplete="given-name" maxlength="24" placeholder="Your first name" required>
+    <button class="btn" type="submit">Start &rarr;</button></form>
+  </section>
+
+  <!-- quiz -->
+  <section id="s-quiz" class="panel hide">
+    <div class="qhead"><span class="mono" id="q-n">1 / 10</span><span class="room mono" id="q-room">bathroom</span><span class="timer mono" id="q-t">15</span></div>
+    <div class="bar"><i id="q-bar"></i></div>
+    <div class="img"><img id="q-img" alt="room"></div>
+    <div class="ask">Tap every hazard you see</div>
+    <div class="chips" id="q-chips"></div>
+    <button class="btn" id="q-next">Next &rarr;</button>
+  </section>
+
+  <!-- done -->
+  <section id="s-done" class="panel hide">
+    <div class="eyebrow" id="d-eyebrow">Your result</div>
+    <div class="big"><b class="mono" id="d-score">—</b><span>score</span></div>
+    <div class="kpis">
+      <div><b class="mono" id="d-rec">—</b><span>hazards caught</span></div>
+      <div><b class="mono" id="d-fa">—</b><span>false alarms</span></div>
+      <div><b class="mono" id="d-rank">—</b><span>rank</span></div>
+    </div>
+    <p class="verdict" id="d-verdict"></p>
+    <h3>On these 10 images</h3>
+    <div id="d-cmp" class="cmp"></div>
+    <h3>Your answers</h3>
+    <div id="d-per" class="per"></div>
+    <h3>Live leaderboard</h3>
+    <table class="lb" id="d-lb"></table>
+    <p class="sub">Score = average of recall and (1 &minus; false-alarm rate), same as HomeBench. <a href="/results">Room results &rarr;</a></p>
+  </section>
+</div>
+<script src="/static/spot.js"></script>
+</body></html>
