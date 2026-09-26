@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HealthDojo: 3-minute demo script and judge Q&amp;A</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root{--bg:#FAFAF7;--ink:#15171C;--muted:#5E6470;--line:#E4E4DE;--accent:#0F7B63;--accent-soft:#E3F2EC;--hazard:#E5484D;--amber:#B7791F;--amber-soft:#FBF1DD}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Inter","Helvetica Neue",Arial,sans-serif;font-size:19px;line-height:1.55;-webkit-font-smoothing:antialiased}
+  main{max-width:980px;margin:0 auto;padding:56px 32px 96px}
+  h1{font-size:44px;letter-spacing:-.03em;line-height:1.05;margin:0 0 8px}
+  h1 em{font-style:normal;color:var(--accent)}
+  .sub{color:var(--muted);font-size:20px;margin:0 0 28px}
+  h2{font-size:28px;letter-spacing:-.02em;margin:48px 0 16px;padding-top:24px;border-top:1px solid var(--line)}
+  .rules{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:18px 0 8px}
+  .rules div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-size:16px;color:var(--muted)}
+  .rules b{display:block;color:var(--ink);font-size:17px;margin-bottom:2px}
+  .beat{display:grid;grid-template-columns:120px 1fr;gap:20px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin:14px 0}
+  .t{font-weight:800;font-size:22px;color:var(--accent);font-variant-numeric:tabular-nums}
+  .t small{display:block;font-size:13px;color:var(--muted);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-top:2px}
+  .click{display:inline-block;background:var(--ink);color:#fff;border-radius:8px;padding:3px 10px;font-size:15px;font-weight:650;margin-bottom:10px}
+  .say{font-size:21px;line-height:1.5;margin:0}
+  .note{font-size:15.5px;color:var(--muted);margin-top:10px}
+  .note b{color:var(--ink)}
+  .tbd{background:var(--amber-soft);color:var(--amber);border-radius:6px;padding:0 7px;font-weight:700;white-space:nowrap}
+  .qa{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin:12px 0}
+  .qa h3{margin:0 0 6px;font-size:20px}
+  .qa p{margin:0;color:#2B2F37}
+  .qa .short{color:var(--accent);font-weight:700}
+  ol.path{padding-left:22px;margin:8px 0}
+  ol.path li{margin:4px 0}
+  code{font-family:ui-monospace,Menlo,monospace;font-size:.88em;background:#F0F0EA;padding:1px 5px;border-radius:5px}
+  .lines li{margin:6px 0}
+  @media print{body{font-size:14px}main{padding:20px}.beat,.qa{break-inside:avoid}}
+</style>
+</head>
+<body>
+<main>
+<h1><span data-b="a">Health</span><em data-b="b">Dojo</em> demo script</h1>
+<p class="sub"><b>Guidelines in. Benchmarks out.</b> 3:00 spoken. Pear Healthcare AI Hackathon, AWS Builder Loft, 2026-09-26. Numbers come from <code>data/results.json</code>: 14 models, 43 verified scenes (31 seeded hazards, 12 clean rooms). Remaining <span class="tbd">[amber]</span> items are URLs only.</p>
+
+<div class="rules">
+  <div><b>Before you go on</b>Tab 1: brief page at <code>http://localhost:8791</code>. Tab 2: report card (<code>site/index.html</code> or <span class="tbd">[S3 URL]</span>). Tab 3: 3D world (optional). Zoom the browser to 125%.</div>
+  <div><b>Pace</b>About 150 words a minute. The script runs about 450 words (just under 3:00), so keep clicks fast and pre-load every tab.</div>
+  <div><b>Fallback</b>If a live step stalls, say "here's the run from this morning" and jump to tab 2. Deck slides 4 (pipeline) and 6 (finding) cover every number.</div>
+</div>
+
+<h2>Click path</h2>
+<ol class="path">
+  <li><b>Brief</b> (<code>:8791</code>): the startup pastes its use case, clinical guideline, and model endpoint</li>
+  <li><b>Guideline → rubric</b> (live): hazard rows appear, each citing a guideline line. Click <i>Clinician approve</i></li>
+  <li><b>Rubric → scenes</b> (live): clean room, hazard edited in, verify check, bounding box drawn from the pixel diff</li>
+  <li><b>Report card</b> (<code>site/index.html</code>): leaderboard → failure heatmap → scene explorer on <code>bathroom-base0</code> → training-pack export</li>
+  <li><b>3D world</b> (optional, only if there's time): labeled as roadmap</li>
+</ol>
+
+<h2>Script (3:00)</h2>
+
+<div class="beat">
+  <div class="t">0:00<small>Hook · 20s</small></div>
+  <div>
+    <span class="click">Tab 1 · Brief page</span>
+    <p class="say">"One in three new-hip-or-knee patients falls within a year, mostly at home. Home-health AI companies are shipping vision models to catch the hazards. But the guidelines that define 'safe' are PDFs, not tests, so <b>nobody can check whether these models work.</b> <span data-b="name">HealthDojo</span> turns clinical guidelines into evals any home-health AI can run out of the box. <b>Guidelines in. Benchmarks out.</b>"</p>
+  </div>
+</div>
+
+<div class="beat">
+  <div class="t">0:20<small>Brief · 15s</small></div>
+  <div>
+    <span class="click">1 · Paste the brief → Submit</span>
+    <p class="say">"Say I'm a startup. I paste my use case: home-safety checks after joint replacement. I paste the guideline I follow, a post-op walker guideline. And I paste my model endpoint."</p>
+    <p class="note">Keep the brief pre-filled; just point at the three fields and click.</p>
+  </div>
+</div>
+
+<div class="beat">
+  <div class="t">0:35<small>Guideline → rubric · 25s</small></div>
+  <div>
+    <span class="click">2 · Rubric streams in → Clinician approve</span>
+    <p class="say">"<span data-b="name">HealthDojo</span> reads the guideline and builds a rubric. <b>Every row cites the guideline line it came from</b>, like 'grab bar at tub' or 'walker fits through the bathroom door.' A clinician approves it, so the answer key is clinical, not our opinion. Our first benchmark, <span data-b="bench">HomeBench</span>, was compiled from customer #1 HomeReady's post-op fall-prevention guideline: 35 hazards across 6 rooms, cross-checked against CDC and HOME FAST."</p>
+  </div>
+</div>
+
+<div class="beat">
+  <div class="t">1:00<small>Rubric → scenes · 30s</small></div>
+  <div>
+    <span class="click">3 · Scenes: base → edit → verified → box</span>
+    <p class="say">"Now each rubric row becomes test scenes. We generate a clean room, edit in exactly one hazard (here the grab bars come out), and a vision model confirms the edit. <b>We write the label before the pixels</b>, so the pixel diff hands us a bounding box for free. Only 2% of the image changed and the ground truth is exact."</p>
+  </div>
+</div>
+
+<div class="beat">
+  <div class="t">1:30<small>Report card · 25s</small></div>
+  <div>
+    <span class="click">4a · Tab 2 · Leaderboard</span>
+    <p class="say">"Then your model is scored against 14 others: Claude, GPT, Nova, Llama, Qwen and more. 13 of them run on AWS Bedrock, across 43 verified scenes. Claude Opus 5.5 tops the board at 0.92 and caught every hazard. <b>Even so, 17% of its flags were false alarms.</b> At the bottom, Mistral Large 3 false-alarms 59% of the time."</p>
+  </div>
+</div>
+
+<div class="beat">
+  <div class="t">1:55<small>The finding · 35s</small></div>
+  <div>
+    <span class="click">4b · Failure heatmap → 4c · Scene explorer, bathroom-base0</span>
+    <p class="say">"Here's what surprised us. We bet models would miss what's <i>absent</i>. Wrong: they catch a missing grab bar 84% of the time, same as a rug. <b>Models see objects. They can't judge whether they're safe.</b> A towel bar sitting where you'd grab? Only 20% caught it. Broken steps: 36%. A handrail too short to hold: 57%. And every model cries wolf, on 11 to 59% of hazards we verified weren't there. This bathroom has <b>three</b> grab bars. Mistral Large 3 and Nemotron both said 'no grab bar.' Small n, directional, and exactly what a hospital needs to see before a pilot."</p>
+    <p class="note">Toggle the model answers so the red X on the false positive is visible.</p>
+  </div>
+</div>
+
+<div class="beat">
+  <div class="t">2:30<small>Training pack + close · 30s</small></div>
+  <div>
+    <span class="click">4d · Export training pack → (optional) Tab 3 · 3D world</span>
+    <p class="say">"Every failure comes back to you as a hard-example training pack, labeled and boxed. And every new guideline becomes a new benchmark: dementia home safety, pediatric, wound photos. Why now? From 2028, CMS's CJR-X makes joint replacement a mandatory 90-day bundle at 2,500+ hospitals. <b>Hospitals will own the fall that happens at home on day 40</b>, and they'll need to pick vendors. <b>Every home-health model should pass the Dojo before it goes into a patient's home.</b>"</p>
+    <p class="note">Only open the 3D world if you're under 2:40. Stop at 3:00 no matter what.</p>
+  </div>
+</div>
+
+<h2>Judge Q&amp;A</h2>
+
+<div class="qa">
+  <h3>1. "Why not just use GPT (or Claude) for this?"</h3>
+  <p><span class="short">We did. They're on the report card.</span> GPT-5.6 Sol scored 0.90, second place. Even the top model, Claude Opus 5.5, raised false alarms on 17% of hazards that weren't there, and across all 14 models only 20% caught a towel bar used as a grab bar. We're not a model, we're the test. Without a guideline-derived answer key, nobody can tell whether <i>any</i> model is safe to point at a patient's home. We're model-agnostic, and the training packs make whichever model you use better.</p>
+</div>
+
+<div class="qa">
+  <h3>2. "Is synthetic data realistic enough to matter?"</h3>
+  <p><span class="short">It's a controlled experiment, not a replacement for real homes.</span> Each scene is a photoreal room where one edit changes about 2% of the pixels. Everything except the hazard is held constant, so a miss tells you exactly what the model can't see. Real photos can't isolate that. Images are also a clinically valid medium: OTs rating HOME FAST from photos agreed at AC1 0.91. Real-home validation is on the roadmap, where we measure the sim-to-real gap directly.</p>
+</div>
+
+<div class="qa">
+  <h3>3. "How do you know the labels are right?"</h3>
+  <p><span class="short">The label exists before the image does, and a clinician signs off on it.</span> Every rubric row cites a guideline line, and a clinician approves the rubric. Each scene is generated from one row. A vision-verify pass confirms the hazard is visible and nothing else changed; failed edits are dropped, and we report it: 4 of 35 edits failed, 3 of them measurement scenes that generators can't render reliably yet. The pixel diff localizes it, and the absent-feature and measurement scenes get a human spot check.</p>
+</div>
+
+<div class="qa">
+  <h3>4. "What's the business model?"</h3>
+  <p><span class="short">Eval-as-a-service plus training packs.</span> Home-health AI companies pay for a report card that proves their model works before a hospital pilot, and they re-run it on every release. They buy hard-example packs generated where their model fails. Hospitals and payers under CJR-X are the pull: they have to choose vendors, and "What's your HomeBench score on our guideline?" becomes the procurement question.</p>
+</div>
+
+<div class="qa">
+  <h3>5. "What's the moat? Can't anyone generate images?"</h3>
+  <p><span class="short">Rendering isn't the moat. World Labs and NVIDIA already generate homes.</span> The moat is the step from guideline to verified label: citing the guideline, getting clinician approval, verifying the edit, and getting a free box from the diff. Each new guideline adds a benchmark to the library, each model we test adds to the failure dataset, and whoever owns the benchmark becomes the procurement standard.</p>
+</div>
+
+<div class="qa">
+  <h3>6. "Isn't this just for falls? How big is it?"</h3>
+  <p><span class="short">Falls are the first guideline, not the product.</span> The same pipeline takes any guideline that can be checked visually: dementia home safety, pediatric home safety, wound photos. Fall detection comes later as a separate brief. Every guideline becomes a new benchmark and a new buyer.</p>
+</div>
+
+<div class="qa">
+  <h3>Bonus: "Who else is doing this?"</h3>
+  <p>Nobody owns clinical eval for the home. Lightwheel and World Labs run this loop for robots. TSHA benchmarks general safety hazards, not clinical guidelines. OmniFall covers the fall event, not the room. A 2026 systematic review says environmental factors are largely missing from AI fall-risk models.</p>
+</div>
+
+<div class="qa">
+  <h3>Bonus: "What did you build today? What's HomeReady?"</h3>
+  <p><span data-b="name">HealthDojo</span> was built today: the repo was created this morning. HomeReady is separate prior work and our customer #1. Its post-op fall-prevention guideline became <span data-b="bench">HomeBench</span>, our first 35-hazard benchmark.</p>
+</div>
+
+<div class="qa">
+  <h3>Bonus: "How does AWS fit?"</h3>
+  <p>13 of our 14 models run through one Bedrock Converse API: Nova Lite, Nova Pro, Nova 2 Lite, Llama 4, Qwen3-VL, Mistral, Pixtral, Gemma and more. The Nova models also take video natively, which is our path to walkthroughs. The report card is hosted on S3.</p>
+</div>
+
+<h2>Sources to have on hand</h2>
+<ul class="lines" style="font-size:16px;color:var(--muted)">
+  <li>~31% of falls environmental: Rubenstein 2006, Age &amp; Ageing</li>
+  <li>Home modification −26% falls, −38% in high-risk: Clemson et al. 2023, Cochrane CD013258</li>
+  <li>Living alone OR 3.63 after TKA: Alasbali et al. 2025, Cureus (PMC12103641)</li>
+  <li>Environment missing from AI fall-risk models: Song et al. 2026, PMC12889826 (preprint)</li>
+  <li>HOME FAST photo rating AC1 0.91: PMC8942624</li>
+  <li>Rubric and crosswalk: <code>docs/research/CLINICAL_HAZARD_TAXONOMY.md</code>, <code>data/hazard_taxonomy.json</code></li>
+</ul>
+</main>
+<script>
+/* ===== NAME: change here only ===== */
+var BRAND={a:"Health",b:"Dojo",bench:"HomeBench"};
+document.querySelectorAll('[data-b]').forEach(function(e){var k=e.getAttribute('data-b');e.textContent=k==='name'?BRAND.a+BRAND.b:BRAND[k];});
+document.title=BRAND.a+BRAND.b+": 3-minute demo script and judge Q&A";
+</script>
+</body>
+</html>
