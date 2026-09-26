@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HealthDojo · Fly your model through a home</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#5ac53a;--green-active:#46a82c;--green-soft:#eaf7e2;--green-ink:#2e7a18;--lime:#d5fd51;--lime-active:#c7ef3d;--lime-soft:#f3fedc;
+  --gold:#f6c86a;--gold-soft:#fbeed3;--gold-ink:#8a6420;--ember:#eb5d2a;--ember-soft:#fce7dd;--ember-ink:#b23e14;--cream:#f7f2e5;--cream-ink:#6b6350;
+  --canvas:#fcfcfa;--card:#fff;--muted:#f5f5f2;--border:#e6e6e1;--border-soft:#f0f0ec;--ink:#1f2123;--body:#3a3d3f;--mute:#646668;--faint:#8f9193;
+  --sans:"Inter",-apple-system,system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;--ease:cubic-bezier(0.16,1,0.3,1)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--canvas);color:var(--ink);font:400 16px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+nav.top{position:fixed;left:0;right:0;top:12px;z-index:60;display:flex;justify-content:center;pointer-events:none}
+nav.top .pill{pointer-events:auto;width:min(1200px,calc(100vw - 32px));height:52px;display:flex;align-items:center;gap:18px;padding:0 8px 0 18px;border-radius:999px;background:rgba(252,252,250,.72);-webkit-backdrop-filter:blur(16px) saturate(1.2);backdrop-filter:blur(16px) saturate(1.2);border:1px solid rgba(31,33,35,.08);box-shadow:0 1px 2px rgba(31,33,35,.06),0 6px 20px -10px rgba(31,33,35,.18)}
+.logo{display:inline-flex;align-items:center;gap:8px;font:600 18px var(--sans);letter-spacing:-.02em;text-decoration:none}
+.logo .mark{width:12px;height:12px;border-radius:3px;background:var(--lime);border:1px solid var(--green-active)}
+.links{margin-left:auto;display:flex;gap:2px;font-size:14px;font-weight:500}
+.links a{color:var(--mute);padding:6px 12px;border-radius:999px;text-decoration:none}.links a:hover,.links a.on{color:var(--ink);background:var(--lime-soft)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+header{padding:120px 0 28px}
+.eyebrow{font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--green-ink)}
+h1{font:600 56px/1.04 var(--sans);letter-spacing:-.035em;margin:12px 0 0;max-width:18ch}
+h1 span{background:linear-gradient(transparent 62%,var(--lime) 62%)}
+.lede{font-size:19px;color:var(--body);max-width:62ch;margin:16px 0 0}
+.how{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.how div{font:500 13px var(--mono);color:var(--cream-ink);background:var(--cream);border:1px solid var(--border);border-radius:999px;padding:5px 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:18px;padding:12px 0 80px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .24s var(--ease),transform .24s var(--ease)}
+.card:hover{border-color:var(--green-active);transform:translateY(-2px)}
+.thumb{position:relative;aspect-ratio:16/9;background:var(--muted);overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.thumb .n{position:absolute;top:10px;left:10px;font:500 12px var(--mono);background:rgba(31,33,35,.72);color:#fcfcfa;border-radius:6px;padding:3px 8px;backdrop-filter:blur(6px)}
+.thumb .v{position:absolute;top:10px;right:10px;font:500 12px var(--mono);background:rgba(252,252,250,.8);color:var(--ink);border-radius:6px;padding:3px 8px;backdrop-filter:blur(6px)}
+.body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:10px;flex:1}
+.room{font:600 20px var(--sans);letter-spacing:-.02em}
+.hid{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--mute)}
+.hid .blur{filter:blur(5px);user-select:none;color:var(--body)}
+.hid .lock{font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;background:var(--gold-soft);color:var(--gold-ink);border:1px solid var(--gold);border-radius:999px;padding:2px 8px;white-space:nowrap}
+.row{display:flex;gap:8px;align-items:center;margin-top:auto}
+select{flex:1;min-width:0;font:500 14px var(--sans);padding:9px 10px;border-radius:8px;border:1px solid var(--border);background:var(--card);color:var(--ink)}
+.btn{border:1px solid var(--green-active);border-radius:8px;padding:9px 16px;font:600 14px var(--sans);cursor:pointer;background:var(--lime);color:var(--green-ink);text-decoration:none;white-space:nowrap}
+.btn:hover{background:var(--lime-active)}
+.btn.ghost{background:var(--card);color:var(--ink);border-color:var(--border)}
+.btn[aria-disabled=true]{opacity:.45;pointer-events:none}
+.note{font-size:13px;color:var(--faint);margin-top:-4px}
+</style></head><body>
+<nav class="top"><div class="pill"><a class="logo" href="/"><span class="mark"></span>HealthDojo</a>
+  <div class="links"><a class="on" href="/">Walkthrough</a><a href="/run">Player</a></div></div></nav>
+<div class="wrap">
+<header>
+  <div class="eyebrow">Walkthrough mode · embodied eval</div>
+  <h1>Fly your model <span>through a home.</span></h1>
+  <p class="lede">Each home hides one seeded fall hazard for someone coming home on a walker after hip or knee surgery. Pick a home and a vision model. It starts facing away, gets eight moves to turn, look, zoom and flag, and narrates as it goes. The hazard is revealed at the end.</p>
+  <div class="how"><div>1 · pick a home</div><div>2 · pick a model</div><div>3 · watch it search, live</div></div>
+</header>
+<div class="grid" id="grid"></div>
+</div>
+<script>
+const FAST = {"nova-pro":"fast","qwen3-vl":"fast","gpt-5.6-sol":"~4 s/step","claude-sonnet-5":"~5 s/step","claude-opus-5.5":"~6 s/step","kimi-k3":"replay only"};
+(async()=>{
+  const M = await (await fetch("/api/meta")).json();
+  const liveModels = M.models.filter(m=>!M.replay_only.includes(m));
+  const grid = document.getElementById("grid");
+  Object.entries(M.worlds).forEach(([id,w],i)=>{
+    const opts = M.models.map(m=>`<option value="${m}" ${m==="gpt-5.6-sol"?"selected":""}>${m}${M.replay_only.includes(m)?" (replay)":""}</option>`).join("");
+    const el = document.createElement("div"); el.className="card";
+    el.innerHTML = `<div class="thumb"><img src="${w.thumb}" alt="" loading="lazy"><span class="n">Home ${i+1}</span><span class="v">360°</span></div>
+      <div class="body"><div class="room">${w.room}</div>
+      <div class="hid"><span class="lock">hazard hidden</span><span class="blur" aria-hidden="true">${"Seeded hazard revealed at the end".slice(0, 12 + (i*7)%20)}</span></div>
+      <div class="row"><select>${opts}</select><a class="btn live">Fly it live</a><a class="btn ghost rep" title="Recorded run">↺</a></div>
+      <div class="note"></div></div>`;
+    const sel = el.querySelector("select"), live = el.querySelector(".live"), rep = el.querySelector(".rep"), note = el.querySelector(".note");
+    const upd = ()=>{const m = sel.value, ro = M.replay_only.includes(m), has = (M.saved[m]||[]).includes(id);
+      live.href = `/run?w=${id}&m=${m}&autostart=1`; live.setAttribute("aria-disabled", ro);
+      rep.href = `/run?w=${id}&m=${m}&mode=replay&autostart=1`; rep.setAttribute("aria-disabled", !has);
+      note.textContent = ro ? "Too slow to run live. Watch its recorded run." : (has ? "Live calls the model now. Replay plays its recorded run." : "Live calls the model now. No recorded run for this pair yet.");};
+    sel.onchange = upd; upd(); grid.appendChild(el);
+  });
+})();
+</script></body></html>

@@ -1,12 +1,14 @@
 """HealthDojo live walkthrough: watch a model look around a 360 home in real time, narrated.
 
 Run:  .venv/bin/python -m uvicorn src.walk_live_server:app --host 0.0.0.0 --port 8792
-GET /                         -> src/walk_live/index.html
+GET /                         -> src/walk_live/gallery.html (pick a world + model)
+GET /run                      -> src/walk_live/index.html (live / replay player)
 GET /api/meta                 -> worlds (+GT), models, which saved traces exist
 GET /api/episode?model=&world=&mode=live|replay   -> SSE: thinking / step / end events
 Each step event: {step, action, view, thought, say, flag, view_jpg_url, audio_url, latency_s, grading}
 
-TTS chain: Amazon Polly (neural) -> macOS `say` (server-side m4a) -> browser speechSynthesis (audio_url null).
+TTS chain: ElevenLabs (eleven_flash_v2_5, mp3) -> macOS `say` (m4a) -> browser speechSynthesis (audio_url null).
+Polly was AccessDenied on the workshop role. Public safety: 2 concurrent live runs, 10 live runs/IP/hour, replay unlimited.
 Live traces are saved to data/walks/_live/<stamp>_<model>_<world>/ (same trace.json shape as walk.py).
 """
 import concurrent.futures as cf, hashlib, json, os, re, subprocess, sys, threading, time, pathlib
@@ -15,7 +17,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import walk  # noqa: E402  (loads .env + event creds via run_models)
 from walk import (BUDGET, START_YAW, FOV0, WALKS, WORLDS, MODELS, render, jpeg, parse_action, view_point_dir,
                   world_to_view, grade, gt, opus_call, checklist)
-from fastapi import FastAPI, HTTPException  # noqa: E402
+from fastapi import FastAPI, HTTPException, Request  # noqa: E402
 from fastapi.responses import FileResponse, JSONResponse, StreamingResponse  # noqa: E402
 from PIL import Image  # noqa: E402
 
@@ -25,12 +27,60 @@ TTS = WALKS / "_tts"
 PANO_HI = WALKS / "_pano_hi"
 for d in (LIVE, TTS, PANO_HI):
     d.mkdir(parents=True, exist_ok=True)
-LIVE_MODELS = ["kimi-k3", "claude-opus-5.5", "gpt-5.6-sol", "claude-sonnet-5", "qwen3-vl", "nova-pro"]
-WORLD_META = json.loads((WORLDS / "worlds.json").read_text())
+LIVE_MODELS = ["nova-pro", "qwen3-vl", "gpt-5.6-sol", "claude-sonnet-5", "claude-opus-5.5", "kimi-k3"]
+REPLAY_ONLY = {"kimi-k3"}  # ~20 s/step on Bedrock: too slow to run live for the public
+
+
+def _marble_gt():
+    """MARBLE_GT_REGIONS from src/marble.py, parsed (not imported) so we don't pull its deps."""
+    import ast
+    tree = ast.parse((walk.ROOT / "src" / "marble.py").read_text())
+    for n in tree.body:
+        if isinstance(n, ast.Assign) and getattr(n.targets[0], "id", "") == "MARBLE_GT_REGIONS":
+            return ast.literal_eval(n.value)
+    return {}
+
+
+for _k, _v in _marble_gt().items():  # in-process only; walk.py on disk is untouched
+    walk.GT_REGIONS.setdefault(_k, _v)
+_ALL = json.loads((WORLDS / "worlds.json").read_text())
+WORLD_META = {k: v for k, v in _ALL.items()
+              if not k.startswith("dem-") and k in walk.GT_REGIONS
+              and (WORLDS / f"{k}.pano.png").exists() and (walk.SCENES / f"{k}.json").exists()}
+ROOM_LABEL = {"stairs": "Staircase", "bathroom": "Bathroom", "living": "Living room", "bedroom": "Bedroom",
+              "kitchen": "Kitchen", "entry": "Entryway"}
+
+
+def room_of(scene):
+    return ROOM_LABEL.get(json.loads((walk.SCENES / f"{scene}.json").read_text()).get("room", ""), "Room")
+
+
+# ---------------- public safety ----------------
+MAX_CONCURRENT_LIVE = 2
+MAX_LIVE_PER_IP_HOUR = 10
+_live_sem = threading.BoundedSemaphore(MAX_CONCURRENT_LIVE)
+_ip_hits = {}
+
+
+def client_ip(request):
+    xf = request.headers.get("x-forwarded-for", "")
+    return (xf.split(",")[0].strip() if xf else (request.client.host if request.client else "?")) or "?"
+
+
+def allow_ip(ip):
+    now = time.time()
+    with _lock:
+        hits = [t for t in _ip_hits.get(ip, []) if now - t < 3600]
+        if len(hits) >= MAX_LIVE_PER_IP_HOUR:
+            _ip_hits[ip] = hits
+            return False
+        hits.append(now)
+        _ip_hits[ip] = hits
+        return True
 SAY_SUFFIX = ('\n\nAlso include a "say" key: ONE first-person sentence (max 20 words) a narrator will speak aloud, '
               'e.g. "Turning left to check the tub." or "I see a loose mat over the tub edge, flagging it."')
 
-app = FastAPI(title="HealthDojo walkthrough live")
+app = FastAPI(title="HealthDojo walkthrough live", docs_url=None, redoc_url=None, openapi_url=None)
 _calls, _panos, _lock = {}, {}, threading.Lock()
 TTS_STATE = {"engine": None}
 
@@ -64,6 +114,26 @@ def _polly(text, out):
     out.write_bytes(r["AudioStream"].read())
 
 
+EL_VOICE = "JBFqnCBsd6RMkjVDRZzb"  # ElevenLabs premade "George": warm, calm narrator
+EL_MODEL = "eleven_flash_v2_5"
+
+
+def _eleven(text, out):
+    import urllib.request
+    key = os.getenv("ELEVENLABS_API_KEY")
+    if not key:
+        raise RuntimeError("no ElevenLabs key")
+    req = urllib.request.Request(
+        f"https://api.elevenlabs.io/v1/text-to-speech/{EL_VOICE}?output_format=mp3_44100_128",
+        data=json.dumps({"text": text, "model_id": EL_MODEL,
+                         "voice_settings": {"stability": 0.5, "similarity_boost": 0.75, "style": 0.3}}).encode(),
+        headers={"xi-api-key": key, "Content-Type": "application/json", "Accept": "audio/mpeg"})
+    b = urllib.request.urlopen(req, timeout=20).read()
+    if len(b) < 1000:
+        raise RuntimeError("short audio")
+    out.write_bytes(b)
+
+
 def _say(text, out):
     subprocess.run(["say", "-v", "Samantha", "-r", "185", "-o", str(out), "--file-format=m4af", "--data-format=aac", text],
                    check=True, capture_output=True, timeout=30)
@@ -73,23 +143,18 @@ def tts(text):
     """Returns /tts/<file> url or None (-> browser speechSynthesis)."""
     if not text:
         return None
-    h = hashlib.sha1(text.encode()).hexdigest()[:16]
-    for ext in ("mp3", "m4a"):
-        if (TTS / f"{h}.{ext}").exists():
-            return f"/tts/{h}.{ext}"
-    engines = [("polly", "mp3", _polly), ("say", "m4a", _say)]
-    if TTS_STATE["engine"] == "say":
-        engines = engines[1:]
+    engines = [("eleven", "mp3", _eleven), ("say", "m4a", _say)]
     for name, ext, fn in engines:
-        out = TTS / f"{h}.{ext}"
+        h = hashlib.sha1(f"{name}:{EL_VOICE}:{text}".encode()).hexdigest()[:16]
+        out = TTS / f"{name}-{h}.{ext}"
+        if out.exists():
+            return f"/tts/{out.name}"
         try:
             fn(text, out)
             TTS_STATE["engine"] = name
             return f"/tts/{out.name}"
         except Exception as e:
-            print("tts", name, "failed:", str(e)[:120], flush=True)
-            if name == "polly":
-                TTS_STATE["engine"] = "say"  # denied on workshop role; don't retry every line
+            print("tts", name, "failed:", type(e).__name__, flush=True)
     return None
 
 
@@ -112,6 +177,8 @@ def step_event(rec, d_url, g, steps, say):
     if a.get("action") == "flag":
         flag = {"hazard_id": a.get("hazard_id"), "evidence": a.get("evidence"), "dir": rec.get("flag_dir"),
                 "correct": bool(correct), "name": walk.TAX.get(str(a.get("hazard_id")), {}).get("name")}
+    if a.get("action") in ("error", "invalid"):
+        a = {"action": a.get("action"), "raw": "model returned no usable action"}
     return {"type": "step", "step": rec["step"], "action": a, "view": rec["view"], "thought": rec["thought"], "say": say,
             "flag": flag, "view_jpg_url": d_url + rec["img"], "audio_url": tts(say), "latency_s": rec.get("latency_s"),
             "grading": m}
@@ -224,9 +291,26 @@ def replay_episode(model, scene):
 
 
 # ---------------- routes ----------------
+@app.get("/gallery")
+def gallery():
+    return FileResponse(STATIC / "gallery.html", headers={"Cache-Control": "no-store"})
+
+
 @app.get("/")
-def index():
+def root():
     return FileResponse(STATIC / "index.html", headers={"Cache-Control": "no-store"})
+
+
+@app.get("/run")
+def run_page():
+    return FileResponse(STATIC / "index.html", headers={"Cache-Control": "no-store"})
+
+
+@app.get("/thumb/{scene}.jpg")
+def thumb(scene: str):
+    if scene not in WORLD_META:
+        raise HTTPException(404)
+    return FileResponse(WORLDS / f"{scene}.thumb.jpg")
 
 
 @app.get("/static/{name}")
@@ -239,10 +323,25 @@ def static(name: str):
 
 @app.get("/api/meta")
 def meta():
-    worlds = {s: {"title": w["title"], "hazard": w["hazard"], "pano": f"/pano/{s}.jpg", "mini": f"/walks/_pano/{s}.jpg", **gt(s)}
-              for s, w in WORLD_META.items()}
+    worlds = {}
+    for i, (s, w) in enumerate(WORLD_META.items(), 1):
+        g = gt(s)
+        worlds[s] = {"title": w["title"], "room": room_of(s), "label": f"Home {i} · {room_of(s)}", "hazard": w["hazard"],
+                     "pano": f"/pano/{s}.jpg", "mini": f"/mini/{s}.jpg", "thumb": f"/thumb/{s}.jpg", **g}
     saved = {m: [s for s in WORLD_META if (WALKS / m / s / "trace.json").exists()] for m in LIVE_MODELS}
-    return JSONResponse({"worlds": worlds, "models": LIVE_MODELS, "saved": saved, "budget": BUDGET, "tts": TTS_STATE["engine"]})
+    return JSONResponse({"worlds": worlds, "models": LIVE_MODELS, "replay_only": sorted(REPLAY_ONLY), "saved": saved,
+                         "budget": BUDGET, "limits": {"concurrent": MAX_CONCURRENT_LIVE, "per_ip_hour": MAX_LIVE_PER_IP_HOUR}})
+
+
+@app.get("/mini/{scene}.jpg")
+def mini(scene: str):
+    if scene not in WORLD_META:
+        raise HTTPException(404)
+    p = WALKS / "_pano" / f"{scene}.jpg"
+    if not p.exists():
+        p.parent.mkdir(parents=True, exist_ok=True)
+        Image.open(WORLDS / f"{scene}.pano.png").convert("RGB").resize((1600, 800)).save(p, quality=85)
+    return FileResponse(p)
 
 
 @app.get("/pano/{scene}.jpg")
@@ -271,10 +370,35 @@ def tts_file(name: str):
     return FileResponse(p, media_type="audio/mpeg" if name.endswith(".mp3") else "audio/mp4")
 
 
+def _guarded(gen, release=None):
+    try:
+        yield from gen
+    except Exception as e:  # never leak a traceback to the client
+        print("episode error:", type(e).__name__, str(e)[:200], flush=True)
+        yield sse({"type": "error", "message": "Something went wrong on our side. Try replay."})
+    finally:
+        if release:
+            release()
+
+
+def _one(obj):
+    yield sse(obj)
+
+
 @app.get("/api/episode")
-def episode(model: str, world: str, mode: str = "live"):
-    if model not in LIVE_MODELS or world not in WORLD_META:
-        raise HTTPException(400, "bad model/world")
-    gen = replay_episode(model, world) if mode == "replay" else live_episode(model, world)
-    return StreamingResponse(gen, media_type="text/event-stream",
-                             headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
+def episode(request: Request, model: str, world: str, mode: str = "live"):
+    if model not in LIVE_MODELS or world not in WORLD_META or mode not in ("live", "replay"):
+        raise HTTPException(400, "unknown model or world")
+    hdr = {"Cache-Control": "no-cache", "X-Accel-Buffering": "no"}
+    if mode == "replay":
+        return StreamingResponse(_guarded(replay_episode(model, world)), media_type="text/event-stream", headers=hdr)
+    if model in REPLAY_ONLY:
+        return StreamingResponse(_one({"type": "busy", "message": f"{model} is replay only (too slow to run live)."}), media_type="text/event-stream", headers=hdr)
+    if not allow_ip(client_ip(request)):
+        return StreamingResponse(_one({"type": "busy", "message": f"You've hit {MAX_LIVE_PER_IP_HOUR} live runs this hour. Try replay."}), media_type="text/event-stream", headers=hdr)
+    if not _live_sem.acquire(blocking=False):
+        with _lock:  # don't count a rejected attempt against the IP
+            if _ip_hits.get(client_ip(request)):
+                _ip_hits[client_ip(request)].pop()
+        return StreamingResponse(_one({"type": "busy", "message": "Busy: two live runs are already going. Try replay, or retry in a minute."}), media_type="text/event-stream", headers=hdr)
+    return StreamingResponse(_guarded(live_episode(model, world), _live_sem.release), media_type="text/event-stream", headers=hdr)
