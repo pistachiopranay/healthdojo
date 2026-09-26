@@ -1,0 +1,15 @@
+<!-- HomeDojo live check embed. Paste inside the main site's #live-check section.
+     Points at the live server (src/live_server.py, port 8790) on the same host that serves the page;
+     falls back to localhost when opened from file://. -->
+<div class="live-check-embed" style="border:1px solid #e6e4df;border-radius:12px;overflow:hidden;background:#fff">
+  <iframe id="live-check-frame" title="HomeDojo: check your own home"
+          src="http://localhost:8790/" allow="camera"
+          style="display:block;width:100%;height:900px;border:0"></iframe>
+</div>
+<script>
+(function(){
+  var h = location.hostname || 'localhost';
+  var f = document.getElementById('live-check-frame');
+  if (f && h !== 'localhost') f.src = 'http://' + h + ':8790/';
+})();
+</script>

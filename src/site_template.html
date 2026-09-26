@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HomeDojo · HomeBench</title>
+<title>HomeDojo · Guidelines in. Benchmarks out.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
@@ -24,11 +24,12 @@ nav .links{display:flex;gap:26px;margin-left:auto;font-size:15px;font-weight:500
 nav .links a{text-decoration:none;color:var(--ink2);padding:6px 0;border-bottom:2px solid transparent}
 nav .links a.on{color:var(--ink);border-color:var(--teal)}
 nav .links a:hover{color:var(--ink)}
+nav .links a.ext{background:var(--ink);color:#fff;padding:7px 16px;border-radius:99px;border:0}
 
 /* hero */
 .hero{padding:88px 0 64px;position:relative}
 .eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:600}
-.hero h1{font-family:var(--serif);font-weight:600;font-size:92px;line-height:.98;letter-spacing:-.035em;margin:18px 0 0;max-width:13ch}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:100px;line-height:.98;letter-spacing:-.035em;margin:18px 0 0;max-width:14ch}
 .hero h1 em{font-style:italic;font-weight:400;color:var(--teal)}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:end}
 .lede{font-size:23px;line-height:1.5;color:var(--ink2);max-width:36ch;margin:28px 0 0}
@@ -51,8 +52,9 @@ nav .links a:hover{color:var(--ink)}
 .fact b small{font-size:34px;color:#EDE8DC;font-weight:400}
 .fact p{margin:14px 0 0;font-size:19px;color:#C9C4B8;max-width:28ch}
 .cite{margin-top:34px;font-size:13px;color:#8E968F;font-family:var(--mono)}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
-.step{border:1px solid #34413B;border-radius:14px;padding:24px 26px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:56px}
+.step{border:1px solid #34413B;border-radius:14px;padding:24px 26px;position:relative}
+.step:not(:last-child)::after{content:"→";position:absolute;right:-19px;top:50%;transform:translateY(-50%);color:#7FC8B3;font-size:20px}
 .step i{font-style:normal;font-family:var(--mono);color:#7FC8B3;font-size:14px}
 .step h4{font-family:var(--serif);font-size:26px;font-weight:600;margin:6px 0 6px;color:#fff}
 .step p{margin:0;color:#B9B4A8;font-size:17px}
@@ -72,7 +74,7 @@ table.lb{width:100%;border-collapse:collapse;font-size:18px}
 .lb th.sorted{color:var(--ink)}.lb th.sorted::after{content:" \2193";color:var(--teal)}.lb th.sorted.asc::after{content:" \2191"}
 .lb td{padding:16px 18px;border-bottom:1px solid var(--line2);text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:17px}
 .lb tr:last-child td{border-bottom:0}
-.lb td.l{text-align:left;font-family:var(--sans)}
+.lb td.l{text-align:left;font-family:var(--sans);white-space:nowrap}
 .lb tbody tr:hover{background:#FAF6EC}
 .lb .rk{font-family:var(--serif);font-size:24px;color:var(--mute);width:56px}
 .lb tr.top .rk{color:var(--teal);font-weight:700}
@@ -88,13 +90,14 @@ table.lb{width:100%;border-collapse:collapse;font-size:18px}
 
 /* heatmaps */
 .money{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:44px 48px}
-.headline{font-family:var(--serif);font-size:46px;line-height:1.1;letter-spacing:-.025em;margin:6px 0 10px;max-width:24ch;font-weight:600}
+.headline{font-family:var(--serif);font-size:52px;line-height:1.08;letter-spacing:-.025em;margin:6px 0 14px;max-width:22ch;font-weight:600}
 .headline em{font-style:normal;color:var(--coral)}
 .headline-sub{font-size:19px;color:var(--ink2);max-width:70ch;margin:0 0 36px}
 .hm-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:48px}
 .hm h3{font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin:0 0 14px;font-weight:600}
 table.heat{border-collapse:separate;border-spacing:4px;width:100%}
 .heat th{font-size:14px;font-weight:600;color:var(--ink2);padding:4px 6px;text-align:center;vertical-align:bottom;line-height:1.2}
+.heat th{vertical-align:middle}.heat tr:first-child th{vertical-align:bottom}
 .heat th.rl{text-align:right;white-space:nowrap;font-size:16px;color:var(--ink);padding-right:10px;font-weight:500}
 .heat td.c{height:54px;border-radius:8px;text-align:center;font-family:var(--mono);font-weight:600;font-size:17px;min-width:64px;transition:transform .15s}
 .heat td.c:hover{transform:scale(1.06)}
@@ -103,7 +106,9 @@ table.heat{border-collapse:separate;border-spacing:4px;width:100%}
 .heat .sub{display:block;font-size:12px;color:var(--mute);font-weight:500}
 .legend{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--mute);margin-top:18px}
 .legend .ramp{width:220px;height:12px;border-radius:99px}
-.hardest{margin-top:44px}
+.hardest{margin-top:36px}
+#genCallout{margin:0 0 32px}
+.callout{margin-top:32px;background:#FFF4E0;border:1px solid #F0D49F;border-left:5px solid var(--amber);border-radius:12px;padding:16px 20px;font-size:17px;color:var(--ink2)}
 .hard-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:10px 36px}
 .hrow{display:grid;grid-template-columns:86px 1fr 130px 52px;gap:14px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line2);font-size:16px}
 .hrow code{font-family:var(--mono);font-size:13px;color:var(--mute)}
@@ -174,16 +179,16 @@ footer .wrap{border-top:1px solid var(--line);padding-top:28px;display:flex;just
 <nav><div class="wrap">
   <a class="logo" href="#top">Home<i>Dojo</i></a>
   <div class="links">
-    <a href="#why">Why</a><a href="#leaderboard">Leaderboard</a><a href="#failures">Where models fail</a><a href="#scenes">Scenes</a><a href="#live">Check your home</a><a href="#worlds">3D</a>
+    <a href="#why">How it works</a><a href="#leaderboard">Leaderboard</a><a href="#failures">Where models fail</a><a href="#scenes">Scenes</a><a href="http://localhost:8791" class="ext">Run a brief ↗</a><a href="#worlds">3D</a>
   </div>
 </div></nav>
 
 <header class="hero" id="top"><div class="wrap">
   <div class="hero-grid">
     <div>
-      <div class="eyebrow">HomeBench · built for HomeReady</div>
-      <h1>HomeDojo — the gym where <em>home-health AI</em> trains.</h1>
-      <p class="lede">Synthetic homes with <b>clinically grounded fall hazards</b> seeded in on purpose. The label exists before the pixels, so every answer is graded against <b>exact ground truth</b>.</p>
+      <div class="eyebrow">HomeBench v0 · compiled from the post-op fall-prevention guideline <span style="color:var(--mute)">(customer #1: HomeReady)</span></div>
+      <h1>Guidelines in. <em>Benchmarks out.</em></h1>
+      <p class="lede">HomeDojo turns <b>clinical guidelines</b> into <b>verified, scored evals</b> for home-health AI. Every label exists before the pixels, so every answer is graded against exact ground truth.</p>
     </div>
     <figure class="hero-fig" id="heroFig"></figure>
   </div>
@@ -198,11 +203,12 @@ footer .wrap{border-top:1px solid var(--line);padding-top:28px;display:flex;just
     <div class="fact"><b>~31<small>%</small></b><p>of falls are caused by the environment — rugs, missing grab bars, low toilets.</p></div>
     <div class="fact"><b>26<small>%</small> <small>/</small> 38<small>%</small></b><p>fewer falls with home modification — 38% in high-risk patients (Cochrane 2023).</p></div>
   </div>
-  <div class="cite">Home-health AI is shipping vision models into homes. Nobody can test them: real homes have no ground truth.</div>
+  <div class="cite">Home-health AI is shipping vision models into homes. Nobody can test them: real homes have no ground truth. HomeDojo compiles one from the guideline.</div>
   <div class="steps">
-    <div class="step"><i>01 · label first</i><h4>Seed the hazard</h4><p>Pick a hazard from a 35-item clinical taxonomy (CDC STEADI, HOME FAST, SAFER-HOME).</p></div>
-    <div class="step"><i>02 · then pixels</i><h4>Render the home</h4><p>Generate a clean room, then edit in exactly one hazard. A verifier checks it's really there.</p></div>
-    <div class="step"><i>03 · grade</i><h4>Score every model</h4><p>Same image, same prompt. Hits, misses, and false alarms on hazards we <i>know</i> are absent.</p></div>
+    <div class="step"><i>01 · guideline</i><h4>Guideline</h4><p>Start from the post-op fall-prevention guideline (CDC STEADI, HOME FAST, SAFER-HOME).</p></div>
+    <div class="step"><i>02 · rubric</i><h4>Rubric</h4><p>Clinician-approved hazard checklist. Every row cites a guideline line.</p></div>
+    <div class="step"><i>03 · scenes</i><h4>Scenes</h4><p>Label before pixels: seed one hazard, render, verify it's really there. Boxes come free.</p></div>
+    <div class="step"><i>04 · report card</i><h4>Report card</h4><p>Any home-health model runs the same eval out of the box: hits, misses, false alarms.</p></div>
   </div>
 </div></section>
 
@@ -220,12 +226,13 @@ footer .wrap{border-top:1px solid var(--line);padding-top:28px;display:flex;just
   <div class="money">
     <div class="headline" id="headline"></div>
     <p class="headline-sub" id="headlineSub"></p>
+    <div class="callout" id="genCallout"></div>
+    <div class="hardest" style="margin:0 0 44px"><div class="hm"><h3>Hardest hazards · mean recall across models</h3></div><div class="hard-list" id="hardest"></div></div>
     <div class="hm-grid">
       <div class="hm"><h3>Recall by hazard type</h3><table class="heat" id="heatType"></table></div>
       <div class="hm"><h3>Recall by room</h3><table class="heat" id="heatRoom"></table></div>
     </div>
     <div class="legend"><span>0% found</span><div class="ramp" id="ramp"></div><span>100% found</span><span style="margin-left:18px">— not tested yet</span></div>
-    <div class="hardest"><div class="hm"><h3>Hardest hazards · mean recall across models</h3></div><div class="hard-list" id="hardest"></div></div>
   </div>
   <div class="note"><b>Object</b> = something in the way (rug, cord, clutter). <b>Absence</b> = something missing (grab bar, stair rail). <b>Measurement</b> = geometry (toilet height, doorway too narrow for a walker). <b>Lighting</b> = too dark to see the path.</div>
 </div></section>
@@ -239,17 +246,12 @@ footer .wrap{border-top:1px solid var(--line);padding-top:28px;display:flex;just
   <div class="sgrid" id="sgrid"></div>
 </div></section>
 
-<section class="sec" id="live"><div class="wrap">
-  <div class="sec-head"><div><div class="eyebrow">Try it</div><h2>Check your own home</h2></div><p>Upload a photo of a room and get the hazard checklist a post-op patient needs.</p></div>
-  <div id="live-check" class="ph" data-ph="Live check coming online"></div>
-</div></section>
-
 <section class="sec" id="worlds"><div class="wrap">
   <div class="sec-head"><div><div class="eyebrow">Next</div><h2>Walk the home in 3D</h2></div><p>From single photos to walkable worlds: the same seeded hazards, explored the way a patient moves through a house.</p></div>
   <div id="worlds-3d" class="ph" data-ph="3D worlds coming online"></div>
 </div></section>
 
-<footer><div class="wrap"><span><b style="color:var(--ink)">HomeDojo</b> · HomeBench v0 · built at the Pear hackathon, 2026-09-26. Customer zero: HomeReady.</span><span>Taxonomy is original synthesis cross-walked to CDC STEADI, HOME FAST, HSSAT, SAFER-HOME; pending OT/PT review.</span></div></footer>
+<footer><div class="wrap"><span><b style="color:var(--ink)">HomeDojo</b> · turns clinical guidelines into evals any home-health AI can run out of the box · built at the Pear hackathon, 2026-09-26. Customer zero: HomeReady.</span><span>Taxonomy is original synthesis cross-walked to CDC STEADI, HOME FAST, HSSAT, SAFER-HOME; pending OT/PT review.</span></div></footer>
 
 <div id="viewer"><div class="vbox" id="vbox"></div></div>
 
@@ -269,6 +271,8 @@ const SC=Object.fromEntries(SCENES.map(s=>[s.id,s]));
 const PRED=D.predictions||{};
 const KA=D.known_absent||{};
 const hname=id=>TAX[id]?.name||id;
+const PRETTY={"claude-opus-5.5":"Claude Opus 5.5","claude-sonnet-5":"Claude Sonnet 5","claude-haiku-4.5":"Claude Haiku 4.5","gpt-5.6-sol":"GPT-5.6 Sol","gpt-5.6-terra":"GPT-5.6 Terra","gpt-6-luna":"GPT-6 Luna","gpt-6-astra":"GPT-6 Astra","kimi-k3":"Kimi K3","grok-4.6":"Grok 4.6","nova-pro":"Nova Pro","nova-2-lite":"Nova 2 Lite","llama-4-maverick":"Llama 4 Maverick","qwen3-vl":"Qwen3-VL","mistral-large-3":"Mistral Large 3","gemma-3-27b":"Gemma 3 27B","nemotron-nano-vl":"Nemotron Nano VL","pixtral-large":"Pixtral Large","palmyra-vision":"Palmyra Vision"};
+const pn=m=>PRETTY[m]||m.split("-").map(w=>/^\d/.test(w)?w:w[0].toUpperCase()+w.slice(1)).join(" ");
 const htype=h=>h.type||TAX[h.id]?.type||"object";
 
 // color ramp: coral (0) -> sand (.5) -> teal (1)
@@ -307,7 +311,7 @@ function box(b,cls,label){
 // ---------- leaderboard ----------
 const COLS=[
   {k:"rank",l:"#",cls:"l",f:(r,i)=>`<span class="rk">${i+1}</span>`,nosort:1},
-  {k:"model",l:"Model",cls:"l",f:r=>{const aws=/bedrock/i.test(r.provider);return `<span class="mname">${esc(r.model)}</span><span class="badge ${aws?"b-aws":"b-direct"}">${esc(r.provider||"")}</span>`}},
+  {k:"model",l:"Model",cls:"l",f:r=>{const aws=/bedrock/i.test(r.provider);return `<span class="mname">${esc(pn(r.model))}</span><span class="badge ${aws?"b-aws":"b-direct"}">${esc(r.provider||"")}</span>`}},
   {k:"score",l:"Score",f:r=>`<div class="scorecell"><div class="sbar"><i style="width:${(r.score||0)*100}%"></i></div><b>${(r.score??0).toFixed(2)}</b></div>`},
   {k:"recall",l:"Recall",f:r=>pct(r.recall)},
   {k:"precision",l:"Precision",f:r=>r.precision==null?'<span class="dim">—</span>':pct(r.precision)},
@@ -330,7 +334,7 @@ function heatTable(el,cols,colLabel,get,colSub){
   const avg=cols.map(c=>mean(LB.map(r=>get(r,c))));
   const cell=v=>{const h=heat(v);return `<td class="c" style="background:${h.bg};color:${h.fg}">${pct(v)}</td>`};
   el.innerHTML=`<tr><th></th>${cols.map(c=>`<th>${esc(colLabel(c))}${colSub?`<span class="sub">${colSub(c)}</span>`:""}</th>`).join("")}</tr>`+
-    LB.map(r=>`<tr><th class="rl">${esc(r.model)}</th>${cols.map(c=>cell(get(r,c))).join("")}</tr>`).join("")+
+    LB.map(r=>`<tr><th class="rl">${esc(pn(r.model))}</th>${cols.map(c=>cell(get(r,c))).join("")}</tr>`).join("")+
     `<tr class="avg"><th class="rl">All models</th>${avg.map(cell).join("")}</tr>`;
   return avg;
 }
@@ -342,14 +346,15 @@ function heatTable(el,cols,colLabel,get,colSub){
   const rAvg=heatTable($("#heatRoom"),rooms,r=>r[0].toUpperCase()+r.slice(1),(r,c)=>r.by_room?.[c]);
   const tv=types.map((t,i)=>[t,tAvg[i]]).filter(x=>x[1]!=null).sort((a,b)=>a[1]-b[1]);
   const rv=rooms.map((t,i)=>[t,rAvg[i]]).filter(x=>x[1]!=null).sort((a,b)=>a[1]-b[1]);
-  if(tv.length>=2){
-    const [w,wv]=tv[0],[b,bv]=tv[tv.length-1];
-    $("#headline").innerHTML=`Models find ${pct(bv)} of ${TPHRASE[b].split(" like")[0]} — but only <em>${pct(wv)}</em> of ${TPHRASE[w].split(" like")[0]}.`;
-    const perfect=LB.filter(r=>r.by_type?.[w]===1).length;
-    $("#headlineSub").textContent=`The hardest category is ${TLABEL[w].toLowerCase()} hazards${TPHRASE[w].includes(" like")?" ("+TPHRASE[w].split(" like ")[1]+")":""}: ${perfect?perfect+" of "+LB.length+" models catch them all":"no model catches them all"}.`+(rv.length?` Weakest room: ${rv[0][0]} (${pct(rv[0][1])} recall across models).`:"");
-  }else if(tv.length){
-    $("#headline").innerHTML=`Across models, only <em>${pct(tv[0][1])}</em> of ${TLABEL[tv[0][0]].toLowerCase()} hazards are found.`;
-  }else $("#headline").textContent="Results loading…";
+  const hzAll=[...new Set(LB.flatMap(r=>Object.keys(r.by_hazard||{})))].map(h=>[h,mean(LB.map(r=>r.by_hazard?.[h]))]).sort((a,b)=>a[1]-b[1]);
+  const fas=LB.filter(r=>r.false_alarm!=null).sort((a,b)=>a.false_alarm-b.false_alarm);
+  $("#headline").innerHTML=`Models see objects. <em>They can't judge whether they're safe.</em>`;
+  const top3=hzAll.slice(0,3).map(([h,v])=>`${hname(h).toLowerCase()} (${pct(v)})`);
+  $("#headlineSub").innerHTML=(top3.length?`They spot <i>that</i> a grab bar, step or rail exists, not whether it's adequate. Hardest across ${LB.length} models: ${top3.join(", ")}.`:"")+
+    (fas.length?` And they over-flag: <b>${pct(fas[0].false_alarm)}–${pct(fas[fas.length-1].false_alarm)}</b> false-alarm rate on hazards we verified are absent (${esc(pn(fas[fas.length-1].model))}: ${pct(fas[fas.length-1].false_alarm)}).`:"");
+  const vm=D.verification?.by_type?.measurement;
+  if(vm&&vm.rejected.length)$("#genCallout").innerHTML=`<b>Generators can't reliably render measurements either.</b> ${vm.rejected.length} of ${vm.generated} measurement scenes failed verification and were dropped <span class="dim">(${vm.rejected.map(esc).join(", ")})</span>. ${D.verification.rejected.length} of ${D.verification.generated} scenes rejected overall.`;
+  else $("#genCallout").remove();
   // hardest hazards
   const hz=[...new Set(LB.flatMap(r=>Object.keys(r.by_hazard||{})))].map(h=>[h,mean(LB.map(r=>r.by_hazard?.[h]))]).sort((a,b)=>a[1]-b[1]).slice(0,10);
   $("#hardest").innerHTML=hz.map(([h,v])=>`<div class="hrow"><code>${h}</code><div><div>${esc(hname(h))}</div><div class="t">${TLABEL[TAX[h]?.type]||""}</div></div><div class="mini"><i style="width:${Math.max(3,v*100)}%;background:${heat(v).bg}"></i></div><b class="num" style="font-size:16px;text-align:right">${pct(v)}</b></div>`).join("")||'<div class="note">No per-hazard results yet.</div>';
@@ -398,19 +403,19 @@ function openViewer(id){
   const predIds=new Set(raw.map(h=>h.id));
   const gtList=s.hazards.length?s.hazards.map(h=>{
     const found=predIds.has(h.id);
-    const who=MODELS.filter(m=>p[m]).map(m=>`<span class="${(p[m].pred||[]).includes(h.id)?"y":"n"}">${esc(m)}</span>`).join("");
+    const who=MODELS.filter(m=>p[m]).map(m=>`<span class="${(p[m].pred||[]).includes(h.id)?"y":"n"}">${esc(pn(m))}</span>`).join("");
     return `<div class="item"><span class="mark ${curModel?(found?"m-hit":"m-miss"):"m-gt"}">${curModel?(found?"HIT":"MISS"):"TRUTH"}</span><div><div class="nm">${esc(h.id)} · ${esc(hname(h.id))}</div><div class="ev">${TLABEL[htype(h)]} hazard${h.box?"":" · whole-room (no box)"}${s.verify?.note?" — "+esc(s.verify.note):""}</div><div class="dots">${who}</div></div></div>`}).join("")
     :`<div class="item"><span class="mark m-gt">CLEAN</span><div><div class="nm">No seeded hazard.</div><div class="ev">Verified absent here: ${[...neg].map(h=>esc(h)+" "+esc(hname(h))).join("; ")||"—"}</div></div></div>`;
   const prList=raw.length?raw.map(h=>{const c=cls(h);return `<div class="item"><span class="mark ${c==="hit"?"m-hit":c==="fa"?"m-fa":"m-unk"}">${c==="hit"?"HIT":c==="fa"?"FALSE ALARM":"UNSCORED"}</span><div><div class="nm">${esc(h.id||"?")} · ${esc(hname(h.id))}${h.severity?` <span class="dim" style="font-weight:500">(${esc(h.severity)})</span>`:""}</div><div class="ev">${esc(h.evidence||"")}</div></div></div>`}).join(""):`<div class="note">${curModel?"This model reported no hazards.":"No model output for this scene yet."}</div>`;
   $("#vbox").innerHTML=`<button class="vclose" onclick="closeViewer()">×</button>
     <div class="vtop"><div><div class="eyebrow">${esc(s.room)} · ${esc(s.id)}</div><h3>${esc(title)}</h3></div>
-    ${avail.length?`<select id="msel">${avail.map(m=>`<option ${m===curModel?"selected":""}>${esc(m)}</option>`).join("")}</select>`:""}</div>
+    ${avail.length?`<select id="msel">${avail.map(m=>`<option value="${esc(m)}" ${m===curModel?"selected":""}>${esc(pn(m))}</option>`).join("")}</select>`:""}</div>
     <div class="vimgs ${base?"":"single"}">
       ${base?`<div class="pane"><div class="lab">Before · clean base room</div><div class="frame"><img src="${base.img}" alt=""></div></div>`:""}
-      <div class="pane"><div class="lab">${base?"After · hazard edit":"Scene"} ${curModel?"· "+esc(curModel)+" predictions":""}</div><div class="frame"><img src="${s.img}" alt="">${gtBoxes}${prBoxes}</div></div>
+      <div class="pane"><div class="lab">${base?"After · hazard edit":"Scene"} ${curModel?"· "+esc(pn(curModel))+" predictions":""}</div><div class="frame"><img src="${s.img}" alt="">${gtBoxes}${prBoxes}</div></div>
     </div>
     <div class="legend2"><span><i style="border:3px solid var(--gt)"></i>Ground truth</span><span><i style="border:3px dashed var(--pred)"></i>Model hit</span><span><i style="border:3px solid var(--coral)"></i>False alarm (verified absent)</span><span><i style="background:#5c625e"></i>Unscored (not in this room's verified set)</span></div>
-    <div class="vinfo"><div><h4>Ground truth</h4>${gtList}</div><div><h4>${curModel?esc(curModel)+" said":"Model output"}</h4>${prList}</div></div>`;
+    <div class="vinfo"><div><h4>Ground truth</h4>${gtList}</div><div><h4>${curModel?esc(pn(curModel))+" said":"Model output"}</h4>${prList}</div></div>`;
   const sel=$("#msel");if(sel)sel.onchange=()=>{curModel=sel.value;openViewer(id)};
   $("#viewer").classList.add("open");document.body.style.overflow="hidden";
 }
@@ -422,6 +427,6 @@ if(location.hash.startsWith("#scene="))openViewer(decodeURIComponent(location.ha
 // ---------- nav highlight ----------
 const links=[...document.querySelectorAll("nav .links a")];
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-40% 0px -55% 0px"});
-["why","leaderboard","failures","scenes","live","worlds"].forEach(id=>io.observe(document.getElementById(id)));
+["why","leaderboard","failures","scenes","worlds"].forEach(id=>io.observe(document.getElementById(id)));
 </script>
 </body></html>

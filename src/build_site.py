@@ -63,6 +63,18 @@ def enrich(res):
         row.setdefault("f1", round(2 * r * pr / (r + pr), 3) if pr and r + pr else 0)
         row["provider"] = row.get("provider") or prov_for(m, ptable)
     res["n_scenes_total"] = len(scenes)
+    # verification funnel: every generated scene, incl. rejected ones (grade.py drops them from results)
+    from common import SCENES, hazard_type
+    allsc = [json.loads(p.read_text()) for p in sorted(SCENES.glob("*.json"))]
+    edits = [s for s in allsc if s.get("kind") == "edit"]
+    by_type = collections.defaultdict(lambda: {"generated": 0, "rejected": []})
+    for s in edits:
+        for t in {hazard_type(h["id"]) for h in s["hazards"]}:
+            by_type[t]["generated"] += 1
+            if s.get("verified") is False:
+                by_type[t]["rejected"].append(s["id"])
+    res["verification"] = {"generated": len(allsc), "rejected": [s["id"] for s in allsc if s.get("verified") is False],
+                           "by_type": dict(by_type)}
     return res
 
 
