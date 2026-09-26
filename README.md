@@ -1,4 +1,4 @@
-# HomeDojo
+# HealthDojo
 
 Eval and training environment for home-health multimodal AI. We generate synthetic homes with seeded, clinically grounded fall hazards (the scene graph is the ground truth), render them, and score vision models on finding the hazards. Output: **HomeBench**, a leaderboard, failure analysis, and hard-example training packs.
 
