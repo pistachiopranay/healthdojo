@@ -1,0 +1,39 @@
+{
+ "id": "fal-L2-012",
+ "raw": "{\"hazards\": [{\"id\": \"BED-04\", \"severity\": \"medium\", \"evidence\": \"Stuffed animal toy and pet bowl on floor near bed, tripping hazard for walker user\", \"box\": [400, 435, 540, 505]}, {\"id\": \"LIV-03\", \"severity\": \"low\", \"evidence\": \"Narrow hallway visible through door with items along the walls could narrow walking path\", \"box\": [140, 150, 280, 330]}, {\"id\": \"BED-05\", \"severity\": \"low\", \"evidence\": \"Nightstand and chair positioned close to bed, may reduce walker clearance space\", \"box\": [900, 170, 1150, 320]}]}",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "severity": "medium",
+   "evidence": "Stuffed animal toy and pet bowl on floor near bed, tripping hazard for walker user",
+   "box": [
+    400,
+    435,
+    540,
+    505
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "low",
+   "evidence": "Narrow hallway visible through door with items along the walls could narrow walking path",
+   "box": [
+    140,
+    150,
+    280,
+    330
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "low",
+   "evidence": "Nightstand and chair positioned close to bed, may reduce walker clearance space",
+   "box": [
+    900,
+    170,
+    1150,
+    320
+   ]
+  }
+ ]
+}

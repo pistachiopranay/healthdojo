@@ -1,0 +1,45 @@
+{
+ "id": "fal-L4-004",
+ "raw": "{\"hazards\": [\n    {\"id\": \"LIV-01\", \"severity\": \"high\", \"evidence\": \"Throw rug on the floor\", \"box\": [290, 550, 750, 850]},\n    {\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"Cords or wires across walkway\", \"box\": [700, 450, 900, 900]},\n    {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"Pets and pet items underfoot\", \"box\": [290, 550, 750, 850]},\n    {\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"Poor lighting or glare\", \"box\": []}\n]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Throw rug on the floor",
+   "box": [
+    290,
+    550,
+    750,
+    850
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Cords or wires across walkway",
+   "box": [
+    700,
+    450,
+    900,
+    900
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pets and pet items underfoot",
+   "box": [
+    290,
+    550,
+    750,
+    850
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Poor lighting or glare",
+   "box": []
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-007",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-R02\",\"severity\":\"medium\",\"evidence\":\"A bold black-and-white high-contrast zigzag rug covers the walkway beside the bed and may be misperceived.\",\"box\":[135,520,665,998]},{\"id\":\"DEM-R04\",\"severity\":\"high\",\"evidence\":\"An operating radiant space heater is positioned immediately next to the hanging bedding.\",\"box\":[648,677,755,970]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "A bold black-and-white high-contrast zigzag rug covers the walkway beside the bed and may be misperceived.",
+   "box": [
+    135,
+    520,
+    665,
+    998
+   ]
+  },
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "An operating radiant space heater is positioned immediately next to the hanging bedding.",
+   "box": [
+    648,
+    677,
+    755,
+    970
+   ]
+  }
+ ]
+}

@@ -45,7 +45,7 @@ def retry(fn, tries=6):
             return fn()
         except Exception as e:
             s = str(e)
-            if i == tries - 1 or not any(k in s for k in ("Throttl", "Too many", "timeout", "Timeout", "ServiceUnavailable", "InternalServer", "ModelError", "503", "500", "Read timed out")):
+            if i == tries - 1 or not any(k in s for k in ("404", "429", "rate", "Too many", "in flight", "Throttl", "Too many", "timeout", "Timeout", "ServiceUnavailable", "InternalServer", "ModelError", "503", "500", "Read timed out")):
                 raise
             print("retry", i, s[:120], flush=True)
             time.sleep(min(20, 2 ** i) + random.random() * 2)
@@ -259,7 +259,7 @@ class Bench:
             m.update({"bench": self.name, "title": self.cfg["title"], "guideline": self.cfg["guideline"], "rubric": self.rubric(),
                       "levels": LEVELS, "worlds": m.get("worlds", []), "difficulty_curve": m.get("difficulty_curve", {}),
                       "method": "Label-before-pixels: Sonnet 5 (Bedrock) plans each edit's label+region, Stability inpaint (Bedrock) paints one region per step on a clean base; box = pixel diff between consecutive steps. Distractors are labelled negatives. Conditions are deterministic global grades applied last. New bases: Stability control-structure restyles of existing clean rooms (no Stability text-to-image model is enabled on this account), judge-checked for hazards.",
-                      "cost": {"stability_calls": COST["image_calls"], "llm_calls": COST["llm_calls"], "treg_gemini_calls": COST.get("treg_gemini_calls", 0), "est_usd": round(COST["image_calls"] * 0.06 + COST["llm_calls"] * 0.015 + COST.get("treg_gemini_calls", 0) * 0.03, 2)}})
+                      "cost": m.get("cost") if not any(COST.values()) else {"stability_calls": COST["image_calls"], "llm_calls": COST["llm_calls"], "treg_gemini_calls": COST.get("treg_gemini_calls", 0), "est_usd": round(COST["image_calls"] * 0.06 + COST["llm_calls"] * 0.015 + COST.get("treg_gemini_calls", 0) * 0.03, 2)}})
             m.setdefault("items", [])
             m["items"].sort(key=lambda it: (it["level"], it["id"]))
             m["bases"] = m.get("bases", [])
@@ -422,8 +422,20 @@ def plan(b, spec, im):
     for i, (look, d) in enumerate(spec["distractors"]):
         lines.append(f'- key "D{i}": SAFE look-alike (must look safe, NOT a hazard): {d}')
     W, H = im.size
-    p = first_json(llm([imgblock(im), {"text": PLAN_Q.format(room=spec["base"]["room"], W=W, H=H, patient=b.cfg["patient"], edits="\n".join(lines))}], 2000))
-    eds = {e["key"]: e for e in p.get("edits", []) if isinstance(e, dict) and e.get("box") and e.get("prompt")}
+    want = set(spec["hazards"]) | {f"D{i}" for i in range(len(spec["distractors"]))}
+    eds = {}
+    for attempt in range(3):
+        t = llm([imgblock(im), {"text": PLAN_Q.format(room=spec["base"]["room"], W=W, H=H, patient=b.cfg["patient"], edits="\n".join(lines)) + "\nOutput ONLY the JSON object, no reasoning or prose, no markdown."}], 3000)
+        p = {}
+        for cand in [t[t.find("{"):t.rfind("}") + 1]] + re.findall(r"\{\s*\"edits\".*\}", t, re.S):
+            try:
+                p = json.loads(cand); break
+            except Exception:
+                continue
+        eds = {str(e.get("key", "")).strip(): e for e in p.get("edits", []) if isinstance(e, dict) and e.get("box") and e.get("prompt")}
+        if want <= set(eds):
+            break
+        print("  plan incomplete, retry", spec["id"], sorted(set(eds)), flush=True)
     return eds
 
 
@@ -475,7 +487,7 @@ def gemini_edit(im, box, prompt, key):
         url = d["choices"][0]["message"]["images"][0]["image_url"]["url"]
         return base64.b64decode(url.split(",", 1)[1])
     t0 = time.time()
-    raw = retry(go, 3)
+    raw = retry(go, 6)
     COST["gemini_calls"] = COST.get("gemini_calls", 0) + 1
     print(f"  gemini {time.time() - t0:.0f}s", flush=True)
     return open_img(raw).resize(im.size), slug
@@ -534,10 +546,9 @@ def gemini_treg_edit(im, box, prompt, key):
     W, H = im.size
     ar = W / H
     size = "3:2" if ar > 1.4 else "4:3" if ar > 1.2 else "1:1"
-    url = public_url(im, key)
-
     def go():
         with TREG_SEM:
+            url = public_url(im, key)  # fresh upload on every attempt (deploy sync once wiped the prefix -> 404)
             task = treg(["reapi.image-gen.gemini-3-pro-image", "--method", "POST", "--data", json.dumps(
                 {"model": "gemini-3-pro-image-preview", "prompt": instr, "size": size, "resolution": "1K", "image_urls": [url]})])
             if "id" not in task:
@@ -553,7 +564,7 @@ def gemini_treg_edit(im, box, prompt, key):
                     raise RuntimeError(f"treg task failed: {str(r.get('error'))[:150]}")
             raise RuntimeError("treg timeout")
     t0 = time.time()
-    raw = retry(go, 2)
+    raw = retry(go, 6)
     COST["treg_gemini_calls"] = COST.get("treg_gemini_calls", 0) + 1
     print(f"  treg-gemini {time.time() - t0:.0f}s", flush=True)
     return open_img(raw).resize(im.size)
@@ -658,6 +669,11 @@ def build(b: Bench, spec):
 def generate(b: Bench, scale=1.0, levels=None):
     rng = random.Random(7 if b.name == "falls" else 11)
     allspecs = specs(b, scale, rng)
+    if os.getenv("REDO_FAILED"):
+        bad = [it for it in b.m.get("items", []) if not it.get("verified")]
+        b.m.setdefault("failed_attempts", []).extend(bad)
+        b.m["items"] = [it for it in b.m.get("items", []) if it.get("verified")]
+        print("requeued", len(bad), "unverified items", flush=True)
     done = {it["id"] for it in b.m.get("items", [])}
     b.m.setdefault("items", [])
     for L in LEVELS:
@@ -670,6 +686,11 @@ def generate(b: Bench, scale=1.0, levels=None):
             for attempt in range(2):
                 try:
                     it = build(b, s)
+                    if not it["verified"] and attempt == 0:
+                        with b.lock:
+                            b.m.setdefault("failed_attempts", []).append(it)
+                        print(b.name, it["id"], "failed verify, rebuilding", flush=True)
+                        continue
                     with b.lock:
                         b.m["items"].append(it)
                     print(b.name, it["id"], "VERIFIED" if it["verified"] else "flagged", len(it["hazards"]), "hz", len(it["distractors"]), "ds", flush=True)
@@ -722,14 +743,29 @@ def refine(b: Bench):
             if t.get("backend") not in (None, "bedrock") and isinstance(nb, list) and len(nb) == 4:
                 t["diff_box"], t["box"] = t.get("box"), [int(v) for v in nb]
         it["box_refined"] = True
-        print("refined", it["id"], flush=True)
-    with cf.ThreadPoolExecutor(8) as ex:
+        if not it.get("verified") and all(t.get("skipped") is None for t in it["prompt_trace"]):
+            try:  # re-judge against the localized boxes (the diff boxes the first judge saw were off for whole-image edits)
+                im = Image.open(b.out / it["image"]).convert("RGB")
+                v = judge(b, im, it)
+                ch = {c.get("key"): c for c in v.get("checks", []) if isinstance(c, dict)}
+                ok = all(ch.get(h["id"], {}).get("visible") for h in it["hazards"] if h.get("box")) and \
+                     all(ch.get(f"D{i}", {}).get("visible") and ch.get(f"D{i}", {}).get("looks_safe") is not False for i in range(len(it["distractors"])))
+                it["verify_after_refine"] = v
+                if ok:
+                    it["verified"] = True
+                    it["verified_via"] = "re-judge after box localization"
+            except Exception as e:
+                print("rejudge ERR", it["id"], str(e)[:100])
+        print("refined", it["id"], it.get("verified"), flush=True)
+    with cf.ThreadPoolExecutor(12) as ex:
         list(ex.map(one, b.m["items"]))
     b.save()
 
 
 # ---------------------------------------------------------------- difficulty curve
-CURVE_MODELS = {"nova-pro": "amazon.nova-pro-v1:0", "qwen3-vl": "qwen.qwen3-vl-235b-a22b", "gpt-5.6-sol": "us.openai.gpt-5.6-sol"}
+CURVE_MODELS = {"nova-pro": "amazon.nova-pro-v1:0", "nova-2-lite": "us.amazon.nova-2-lite-v1:0", "qwen3-vl": "qwen.qwen3-vl-235b-a22b", "gpt-5.6-sol": "us.openai.gpt-5.6-sol",
+                "claude-sonnet-5": "us.anthropic.claude-sonnet-5", "llama-4-maverick": "us.meta.llama4-maverick-17b-instruct-v1:0",
+                "mistral-large-3": "mistral.mistral-large-3-675b-instruct", "kimi-k3": "us.moonshotai.kimi-k3"}
 
 
 def curve(b: Bench, models=None):
@@ -743,16 +779,19 @@ def curve(b: Bench, models=None):
     items = [it for it in b.m["items"] if it.get("verified")]
     od = b.out / "outputs"; od.mkdir(exist_ok=True)
     res = b.m.get("difficulty_curve", {})
-    for name in (models or CURVE_MODELS):
+    import hashlib
+
+    def run_model(name):
         call = rm.bedrock_call(CURVE_MODELS[name])
+        items = [it for it in b.m["items"] if it.get("verified")]
         (od / name).mkdir(exist_ok=True)
 
         def one(it):
-            f = od / name / f"{it['id']}.json"
+            img = (b.out / it["image"]).read_bytes()
+            f = od / name / f"{it['id']}-{hashlib.sha1(img).hexdigest()[:8]}.json"  # keyed on pixels: regenerated items get re-scored
             if f.exists():
                 return json.loads(f.read_text())
             try:
-                img = (b.out / it["image"]).read_bytes()
                 text = retry(lambda: call(img, prompt), 4)
                 r = {"id": it["id"], "raw": text, "hazards": rm.parse(text)}
                 f.write_text(json.dumps(r, indent=1))
@@ -777,11 +816,16 @@ def curve(b: Bench, models=None):
             per[str(L["level"])] = {"n_items": len(lv), "recall": round(tp / tot, 3) if tot else None, "distractor_false_flag": round(ff / dtot, 3) if dtot else None,
                                     "n_hazards": tot, "n_distractors": dtot}
         res[name] = per
-        print(name, json.dumps(per), flush=True)
-        if not os.getenv("NOSAVE"):
-            b.m = json.loads(b.mpath.read_text()) if b.mpath.exists() else b.m
-            b.m["difficulty_curve"] = res
-            b.save()
+        print(name, json.dumps({k: (v["recall"], v["distractor_false_flag"]) for k, v in per.items()}), flush=True)
+    with cf.ThreadPoolExecutor(8) as ex:
+        list(ex.map(run_model, models or CURVE_MODELS))
+    if not os.getenv("NOSAVE"):
+        b.m = json.loads(b.mpath.read_text()) if b.mpath.exists() else b.m
+        b.m["difficulty_curve"] = res
+        b.m["difficulty_curve_meta"] = {"scored_on": "verified items only", "recall": "fraction of labelled hazard ids the model listed (id match, boxes ignored)",
+                                        "distractor_false_flag": "fraction of safe look-alike distractors whose look-alike hazard id the model flagged although that id was not a true hazard in the image",
+                                        "prompt": "src/run_models.py PROMPT (bench model_prompt for dementia) with this bench's checklist", "models": CURVE_MODELS}
+        b.save()
 
 
 if __name__ == "__main__":

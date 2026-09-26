@@ -1,0 +1,72 @@
+{
+ "id": "fal-L2-004",
+ "raw": "{\"hazards\":[{\"id\":\"KIT-02\",\"severity\":\"high\",\"evidence\":\"Everyday dishes/bowls stacked on the lowest shelf near floor level on the right-hand open shelving, requiring deep bending (hip-precaution risk) while using a walker.\",\"box\":[795,690,1000,1000]},{\"id\":\"KIT-01\",\"severity\":\"medium\",\"evidence\":\"Stacks of frequently used bowls/dishes kept on the upper open shelf at about shoulder height on the right shelving unit; reaching high while on a walker can cause loss of balance.\",\"box\":[800,340,1000,560]},{\"id\":\"LIV-03\",\"severity\":\"medium\",\"evidence\":\"A wooden chair is sitting in the central kitchen walkway in front of the sink/dishwasher, narrowing and obstructing the walker path.\",\"box\":[270,265,415,645]},{\"id\":\"KIT-03\",\"severity\":\"medium\",\"evidence\":\"Freestanding wooden chair (no arms, not load-rated as a support) placed by the counter/sink where it may be grabbed or used for reaching/support.\",\"box\":[270,265,415,645]},{\"id\":\"KIT-04\",\"severity\":\"low\",\"evidence\":\"Smooth, glossy vinyl/tile floor in front of the sink and stove shows a reflective sheen, indicating a potentially slippery surface when wet.\",\"box\":[150,250,930,830]},{\"id\":\"LIV-06\",\"severity\":\"low\",\"evidence\":\"Floor surface changes from kitchen tile to carpet at the right-side doorway with no contrasting edge marking, a possible trip/level-transition point for a walker.\",\"box\":[700,340,820,540]}]}",
+ "hazards": [
+  {
+   "id": "KIT-02",
+   "severity": "high",
+   "evidence": "Everyday dishes/bowls stacked on the lowest shelf near floor level on the right-hand open shelving, requiring deep bending (hip-precaution risk) while using a walker.",
+   "box": [
+    795,
+    690,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Stacks of frequently used bowls/dishes kept on the upper open shelf at about shoulder height on the right shelving unit; reaching high while on a walker can cause loss of balance.",
+   "box": [
+    800,
+    340,
+    1000,
+    560
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "A wooden chair is sitting in the central kitchen walkway in front of the sink/dishwasher, narrowing and obstructing the walker path.",
+   "box": [
+    270,
+    265,
+    415,
+    645
+   ]
+  },
+  {
+   "id": "KIT-03",
+   "severity": "medium",
+   "evidence": "Freestanding wooden chair (no arms, not load-rated as a support) placed by the counter/sink where it may be grabbed or used for reaching/support.",
+   "box": [
+    270,
+    265,
+    415,
+    645
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "low",
+   "evidence": "Smooth, glossy vinyl/tile floor in front of the sink and stove shows a reflective sheen, indicating a potentially slippery surface when wet.",
+   "box": [
+    150,
+    250,
+    930,
+    830
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "low",
+   "evidence": "Floor surface changes from kitchen tile to carpet at the right-side doorway with no contrasting edge marking, a possible trip/level-transition point for a walker.",
+   "box": [
+    700,
+    340,
+    820,
+    540
+   ]
+  }
+ ]
+}

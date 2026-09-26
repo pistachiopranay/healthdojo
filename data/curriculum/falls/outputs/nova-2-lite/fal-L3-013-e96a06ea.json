@@ -1,0 +1,30 @@
+{
+ "id": "fal-L3-013",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A coiled hose is placed across the floor, creating a potential tripping hazard for someone using a walker.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The room has limited furniture, but the placement of items like folded towels, shoes, and the coiled hose narrows the walking path, which could be problematic for someone using a walker.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The room has only one pendant light and relies heavily on natural light from the window. This could create areas of poor lighting or glare, especially if the pendant light is not sufficient for nighttime navigation.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The doorway appears to be standard width, but without seeing the full doorway, it's uncertain if it provides adequate clearance for a walker. If the doorway is narrower than typical, it could pose a challenge.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A coiled hose is placed across the floor, creating a potential tripping hazard for someone using a walker.",
+   "box": null
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The room has limited furniture, but the placement of items like folded towels, shoes, and the coiled hose narrows the walking path, which could be problematic for someone using a walker.",
+   "box": null
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The room has only one pendant light and relies heavily on natural light from the window. This could create areas of poor lighting or glare, especially if the pendant light is not sufficient for nighttime navigation.",
+   "box": null
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "The doorway appears to be standard width, but without seeing the full doorway, it's uncertain if it provides adequate clearance for a walker. If the doorway is narrower than typical, it could pose a challenge.",
+   "box": null
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "id": "dem-L5-003",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-K01\",\"severity\":\"high\",\"evidence\":\"A stove burner appears to be lit, and the stove controls are freely accessible.\",\"box\":[132,323,249,747]},{\"id\":\"DEM-K02\",\"severity\":\"high\",\"evidence\":\"Multiple knives are exposed in countertop knife blocks.\",\"box\":[505,210,709,310]},{\"id\":\"DEM-K03\",\"severity\":\"high\",\"evidence\":\"A bottle of cleaning chemical is left unsecured on the counter beside the sink.\",\"box\":[447,231,481,309]},{\"id\":\"DEM-K04\",\"severity\":\"high\",\"evidence\":\"Several medication bottles and a pill organizer are left out on the counter.\",\"box\":[539,244,660,321]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "A stove burner appears to be lit, and the stove controls are freely accessible.",
+   "box": [
+    132,
+    323,
+    249,
+    747
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Multiple knives are exposed in countertop knife blocks.",
+   "box": [
+    505,
+    210,
+    709,
+    310
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "A bottle of cleaning chemical is left unsecured on the counter beside the sink.",
+   "box": [
+    447,
+    231,
+    481,
+    309
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Several medication bottles and a pill organizer are left out on the counter.",
+   "box": [
+    539,
+    244,
+    660,
+    321
+   ]
+  }
+ ]
+}

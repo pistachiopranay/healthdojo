@@ -1,0 +1,17 @@
+{
+ "id": "fal-L2-014",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"White electrical cord/wire dangling down the side of the sofa and toward the floor at the edge of the walkway near the staircase wall outlet.\", \"box\": [0.143, 0.612, 0.272, 0.998]}]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "White electrical cord/wire dangling down the side of the sofa and toward the floor at the edge of the walkway near the staircase wall outlet.",
+   "box": [
+    0.143,
+    0.612,
+    0.272,
+    0.998
+   ]
+  }
+ ]
+}

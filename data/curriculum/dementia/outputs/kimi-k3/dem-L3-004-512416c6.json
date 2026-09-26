@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-004",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"Gas stove burner is lit with a visible blue flame and the control knobs are exposed/freely usable (shown in the inset callout of the range).\", \"box\": [12, 20, 325, 230]}, {\"id\": \"DEM-K02\", \"severity\": \"high\", \"evidence\": \"Knife block with multiple knives sitting out on the countertop next to the sink, within easy reach.\", \"box\": [641, 165, 728, 269]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Gas stove burner is lit with a visible blue flame and the control knobs are exposed/freely usable (shown in the inset callout of the range).",
+   "box": [
+    12,
+    20,
+    325,
+    230
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Knife block with multiple knives sitting out on the countertop next to the sink, within easy reach.",
+   "box": [
+    641,
+    165,
+    728,
+    269
+   ]
+  }
+ ]
+}

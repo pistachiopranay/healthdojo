@@ -1,0 +1,83 @@
+{
+ "id": "fal-L4-014",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"Long electrical/hose cord running diagonally across the kitchen floor, creating a trip hazard directly in the walking path\", \"box\": [400, 350, 1050, 850]}, {\"id\": \"KIT-04\", \"severity\": \"high\", \"evidence\": \"Wet, glossy floor surface visible across much of the kitchen tile/wood flooring, appears slippery especially near sink and stove area\", \"box\": [0, 550, 700, 850]}, {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"Loose runner rug/mat lying on the floor near the sink area, not secured and could shift under a walker\", \"box\": [750, 550, 1010, 730]}, {\"id\": \"KIT-01\", \"severity\": \"medium\", \"evidence\": \"Stacks of plates and bowls stored on high open shelving above counter height, requiring reaching overhead\", \"box\": [0, 0, 320, 230]}, {\"id\": \"KIT-02\", \"severity\": \"low\", \"evidence\": \"Baskets and items stored on low open shelves under the counter, requiring bending down\", \"box\": [0, 460, 330, 650]}, {\"id\": \"KIT-03\", \"severity\": \"medium\", \"evidence\": \"Wooden step stool/ladder positioned in the kitchen near the counter, unstable aid for reaching high items\", \"box\": [425, 320, 505, 520]}, {\"id\": \"LIV-07\", \"severity\": \"low\", \"evidence\": \"Pet water/food bowl sitting on the floor in the walking path near the center of the kitchen\", \"box\": [645, 495, 705, 535]}]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Long electrical/hose cord running diagonally across the kitchen floor, creating a trip hazard directly in the walking path",
+   "box": [
+    400,
+    350,
+    1050,
+    850
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "Wet, glossy floor surface visible across much of the kitchen tile/wood flooring, appears slippery especially near sink and stove area",
+   "box": [
+    0,
+    550,
+    700,
+    850
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Loose runner rug/mat lying on the floor near the sink area, not secured and could shift under a walker",
+   "box": [
+    750,
+    550,
+    1010,
+    730
+   ]
+  },
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Stacks of plates and bowls stored on high open shelving above counter height, requiring reaching overhead",
+   "box": [
+    0,
+    0,
+    320,
+    230
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "low",
+   "evidence": "Baskets and items stored on low open shelves under the counter, requiring bending down",
+   "box": [
+    0,
+    460,
+    330,
+    650
+   ]
+  },
+  {
+   "id": "KIT-03",
+   "severity": "medium",
+   "evidence": "Wooden step stool/ladder positioned in the kitchen near the counter, unstable aid for reaching high items",
+   "box": [
+    425,
+    320,
+    505,
+    520
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "low",
+   "evidence": "Pet water/food bowl sitting on the floor in the walking path near the center of the kitchen",
+   "box": [
+    645,
+    495,
+    705,
+    535
+   ]
+  }
+ ]
+}

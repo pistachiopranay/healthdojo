@@ -1,0 +1,17 @@
+{
+ "id": "dem-L2-001",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-E01\",\"severity\":\"high\",\"evidence\":\"Car keys are hanging openly on a wall-mounted holder near the front-door area.\",\"box\":[5,274,90,369]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "Car keys are hanging openly on a wall-mounted holder near the front-door area.",
+   "box": [
+    5,
+    274,
+    90,
+    369
+   ]
+  }
+ ]
+}

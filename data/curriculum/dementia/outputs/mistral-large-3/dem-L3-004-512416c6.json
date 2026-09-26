@@ -1,0 +1,39 @@
+{
+ "id": "dem-L3-004",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove burner and knobs are freely accessible and usable, posing a risk of being turned on accidentally or left on.\",\n      \"box\": [50, 100, 200, 250]\n    },\n    {\n      \"id\": \"DEM-K02\",\n      \"severity\": \"high\",\n      \"evidence\": \"Knives are visible on the counter near the stove, posing a risk of accidental cuts or misuse.\",\n      \"box\": [400, 180, 450, 250]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Clutter, including dishware and a towel, is present on the countertop and could obstruct safe movement.\",\n      \"box\": [200, 150, 700, 300]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner and knobs are freely accessible and usable, posing a risk of being turned on accidentally or left on.",
+   "box": [
+    50,
+    100,
+    200,
+    250
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Knives are visible on the counter near the stove, posing a risk of accidental cuts or misuse.",
+   "box": [
+    400,
+    180,
+    450,
+    250
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Clutter, including dishware and a towel, is present on the countertop and could obstruct safe movement.",
+   "box": [
+    200,
+    150,
+    700,
+    300
+   ]
+  }
+ ]
+}

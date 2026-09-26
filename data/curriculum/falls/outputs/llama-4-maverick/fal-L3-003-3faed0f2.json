@@ -1,0 +1,50 @@
+{
+ "id": "fal-L3-003",
+ "raw": "{\"hazards\": [\n  {\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"Cords across the floor\", \"box\": [300, 550, 650, 750]},\n  {\"id\": \"KIT-04\", \"severity\": \"high\", \"evidence\": \"Slippery floor due to water spill\", \"box\": [100, 600, 500, 900]},\n  {\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"Cluttered walking path due to cords and water spill\", \"box\": [100, 600, 650, 900]},\n  {\"id\": \"KIT-03\", \"severity\": \"medium\", \"evidence\": \"A stool is visible near the window, potentially used for reaching\", \"box\": [400, 350, 500, 600]}\n]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Cords across the floor",
+   "box": [
+    300,
+    550,
+    650,
+    750
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "Slippery floor due to water spill",
+   "box": [
+    100,
+    600,
+    500,
+    900
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Cluttered walking path due to cords and water spill",
+   "box": [
+    100,
+    600,
+    650,
+    900
+   ]
+  },
+  {
+   "id": "KIT-03",
+   "severity": "medium",
+   "evidence": "A stool is visible near the window, potentially used for reaching",
+   "box": [
+    400,
+    350,
+    500,
+    600
+   ]
+  }
+ ]
+}

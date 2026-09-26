@@ -1,0 +1,72 @@
+{
+ "id": "fal-L3-007",
+ "raw": "{\"hazards\": [{\"id\": \"KIT-01\", \"severity\": \"medium\", \"evidence\": \"Frequently used items stored high\", \"box\": [620, 266, 718, 469]}, {\"id\": \"KIT-02\", \"severity\": \"medium\", \"evidence\": \"Frequently used items stored low\", \"box\": [468, 573, 620, 759]}, {\"id\": \"KIT-03\", \"severity\": \"medium\", \"evidence\": \"Unstable step stool or chair used for reaching\", \"box\": [468, 573, 620, 759]}, {\"id\": \"KIT-04\", \"severity\": \"medium\", \"evidence\": \"Slippery floor / loose mat at sink or stove\", \"box\": [409, 551, 720, 773]}, {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"Throw rug / loose mat on walkway\", \"box\": [508, 859, 1000, 986]}, {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"Pets and pet items underfoot\", \"box\": [415, 771, 531, 843]}]}",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Frequently used items stored high",
+   "box": [
+    620,
+    266,
+    718,
+    469
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Frequently used items stored low",
+   "box": [
+    468,
+    573,
+    620,
+    759
+   ]
+  },
+  {
+   "id": "KIT-03",
+   "severity": "medium",
+   "evidence": "Unstable step stool or chair used for reaching",
+   "box": [
+    468,
+    573,
+    620,
+    759
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "medium",
+   "evidence": "Slippery floor / loose mat at sink or stove",
+   "box": [
+    409,
+    551,
+    720,
+    773
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Throw rug / loose mat on walkway",
+   "box": [
+    508,
+    859,
+    1000,
+    986
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pets and pet items underfoot",
+   "box": [
+    415,
+    771,
+    531,
+    843
+   ]
+  }
+ ]
+}

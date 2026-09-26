@@ -1,0 +1,17 @@
+{
+ "id": "fal-L1-001",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"Extension cord on the floor\", \"box\": [446, 525, 613, 626]}]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Extension cord on the floor",
+   "box": [
+    446,
+    525,
+    613,
+    626
+   ]
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "id": "dem-L1-007",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K02\", \"severity\": \"high\", \"evidence\": \"Knives and sharps out on the counter\", \"box\": [560, 189, 628, 308]}, {\"id\": \"DEM-K03\", \"severity\": \"high\", \"evidence\": \"Cleaning chemicals out and unlocked\", \"box\": [316, 245, 335, 291]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Knives and sharps out on the counter",
+   "box": [
+    560,
+    189,
+    628,
+    308
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "Cleaning chemicals out and unlocked",
+   "box": [
+    316,
+    245,
+    335,
+    291
+   ]
+  }
+ ]
+}

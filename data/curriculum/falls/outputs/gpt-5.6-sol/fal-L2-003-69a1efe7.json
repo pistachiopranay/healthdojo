@@ -1,0 +1,28 @@
+{
+ "id": "fal-L2-003",
+ "raw": "{\"hazards\":[{\"id\":\"STAIR-05\",\"severity\":\"medium\",\"evidence\":\"The gray concrete stair treads and risers have little visual contrast, making the step edges difficult to distinguish.\",\"box\":[300,530,752,790]},{\"id\":\"ENT-02\",\"severity\":\"medium\",\"evidence\":\"A raised door threshold is visible at the entrance and may catch a walker.\",\"box\":[456,566,635,608]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "The gray concrete stair treads and risers have little visual contrast, making the step edges difficult to distinguish.",
+   "box": [
+    300,
+    530,
+    752,
+    790
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "A raised door threshold is visible at the entrance and may catch a walker.",
+   "box": [
+    456,
+    566,
+    635,
+    608
+   ]
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-007",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Bold high-contrast patterned rug on the floor\",\n      \"box\": [150, 700, 850, 950]\n    },\n    {\n      \"id\": \"DEM-R04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Space heater next to bedding\",\n      \"box\": [800, 650, 950, 950]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "Bold high-contrast patterned rug on the floor",
+   "box": [
+    150,
+    700,
+    850,
+    950
+   ]
+  },
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "Space heater next to bedding",
+   "box": [
+    800,
+    650,
+    950,
+    950
+   ]
+  }
+ ]
+}

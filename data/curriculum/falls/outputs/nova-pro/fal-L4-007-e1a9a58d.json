@@ -1,0 +1,28 @@
+{
+ "id": "fal-L4-007",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-03\", \"severity\": \"medium\", \"evidence\": \"Objects on stairs\", \"box\": [569, 516, 742, 661]}, {\"id\": \"STAIR-04\", \"severity\": \"medium\", \"evidence\": \"Poor stair lighting\", \"box\": [645, 90, 695, 165]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "medium",
+   "evidence": "Objects on stairs",
+   "box": [
+    569,
+    516,
+    742,
+    661
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Poor stair lighting",
+   "box": [
+    645,
+    90,
+    695,
+    165
+   ]
+  }
+ ]
+}

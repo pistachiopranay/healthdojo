@@ -1,0 +1,39 @@
+{
+ "id": "dem-L4-003",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-E01\",\"severity\":\"high\",\"evidence\":\"Car keys are hanging openly on the wall immediately beside the front door.\",\"box\":[640,103,704,213]},{\"id\":\"DEM-E02\",\"severity\":\"high\",\"evidence\":\"The front door is left open, providing direct access outside and creating a wandering risk.\",\"box\":[506,0,638,498]},{\"id\":\"DEM-E03\",\"severity\":\"high\",\"evidence\":\"Piles of newspapers, cardboard boxes, and several pairs of shoes obstruct the central walking path.\",\"box\":[434,483,717,744]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "Car keys are hanging openly on the wall immediately beside the front door.",
+   "box": [
+    640,
+    103,
+    704,
+    213
+   ]
+  },
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "The front door is left open, providing direct access outside and creating a wandering risk.",
+   "box": [
+    506,
+    0,
+    638,
+    498
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "high",
+   "evidence": "Piles of newspapers, cardboard boxes, and several pairs of shoes obstruct the central walking path.",
+   "box": [
+    434,
+    483,
+    717,
+    744
+   ]
+  }
+ ]
+}

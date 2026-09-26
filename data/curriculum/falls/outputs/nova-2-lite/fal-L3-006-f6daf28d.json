@@ -1,0 +1,29 @@
+{
+ "id": "fal-L3-006",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BATH-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"There is no grab bar at the tub/shower area, which is essential for stability and support, especially for someone using a walker or recovering from surgery.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"BATH-08\",\n      \"severity\": \"high\",\n      \"evidence\": \"There is no shower seat or handheld shower visible, which could make bathing difficult and unsafe for someone recovering from hip or knee replacement surgery.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The floor near the wall is cluttered with folded clothes, shoes, and a small wooden stool, which could obstruct the path and create a tripping hazard.\",\n      \"box\": [0, 703, 355, 994]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BATH-01",
+   "severity": "high",
+   "evidence": "There is no grab bar at the tub/shower area, which is essential for stability and support, especially for someone using a walker or recovering from surgery.",
+   "box": null
+  },
+  {
+   "id": "BATH-08",
+   "severity": "high",
+   "evidence": "There is no shower seat or handheld shower visible, which could make bathing difficult and unsafe for someone recovering from hip or knee replacement surgery.",
+   "box": null
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The floor near the wall is cluttered with folded clothes, shoes, and a small wooden stool, which could obstruct the path and create a tripping hazard.",
+   "box": [
+    0,
+    703,
+    355,
+    994
+   ]
+  }
+ ]
+}

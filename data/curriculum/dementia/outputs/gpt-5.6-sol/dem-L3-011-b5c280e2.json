@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-011",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-K01\",\"severity\":\"high\",\"evidence\":\"A gas stove burner is visibly lit, and the front control knobs are freely accessible.\",\"box\":[122,326,274,486]},{\"id\":\"DEM-K04\",\"severity\":\"high\",\"evidence\":\"Several medication bottles and pill organizers are left accessible on the countertop.\",\"box\":[495,232,641,326]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "A gas stove burner is visibly lit, and the front control knobs are freely accessible.",
+   "box": [
+    122,
+    326,
+    274,
+    486
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Several medication bottles and pill organizers are left accessible on the countertop.",
+   "box": [
+    495,
+    232,
+    641,
+    326
+   ]
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-002",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E02\",\n      \"severity\": \"high\",\n      \"evidence\": \"The front door is wide open, providing unsecured access to the outside, which poses a significant wandering risk for someone with dementia.\",\n      \"box\": [328, 0, 444, 378]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There are multiple cardboard boxes, stacks of newspapers, and shoes piled in the center of the living room floor, creating tripping hazards and obstructing safe movement.\",\n      \"box\": [465, 375, 728, 666]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "The front door is wide open, providing unsecured access to the outside, which poses a significant wandering risk for someone with dementia.",
+   "box": [
+    328,
+    0,
+    444,
+    378
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "There are multiple cardboard boxes, stacks of newspapers, and shoes piled in the center of the living room floor, creating tripping hazards and obstructing safe movement.",
+   "box": [
+    465,
+    375,
+    728,
+    666
+   ]
+  }
+ ]
+}

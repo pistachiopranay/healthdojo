@@ -1,0 +1,50 @@
+{
+ "id": "fal-L1-005",
+ "raw": "{\"hazards\": [{\"id\": \"BATH-02\", \"severity\": \"high\", \"evidence\": \"No support at toilet\", \"box\": [649, 523, 979, 1000]}, {\"id\": \"BATH-03\", \"severity\": \"high\", \"evidence\": \"Non-load-rated fixture positioned as support\", \"box\": [595, 610, 938, 960]}, {\"id\": \"BATH-05\", \"severity\": \"high\", \"evidence\": \"High tub step-over without transfer aid\", \"box\": [202, 741, 426, 894]}, {\"id\": \"BATH-07\", \"severity\": \"high\", \"evidence\": \"Loose bath mat or rug on bathroom floor\", \"box\": [202, 741, 426, 894]}]}",
+ "hazards": [
+  {
+   "id": "BATH-02",
+   "severity": "high",
+   "evidence": "No support at toilet",
+   "box": [
+    649,
+    523,
+    979,
+    1000
+   ]
+  },
+  {
+   "id": "BATH-03",
+   "severity": "high",
+   "evidence": "Non-load-rated fixture positioned as support",
+   "box": [
+    595,
+    610,
+    938,
+    960
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "High tub step-over without transfer aid",
+   "box": [
+    202,
+    741,
+    426,
+    894
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "high",
+   "evidence": "Loose bath mat or rug on bathroom floor",
+   "box": [
+    202,
+    741,
+    426,
+    894
+   ]
+  }
+ ]
+}

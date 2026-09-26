@@ -1,0 +1,28 @@
+{
+ "id": "fal-L2-011",
+ "raw": "{\"hazards\": [{\"id\": \"KIT-01\", \"severity\": \"medium\", \"evidence\": \"Frequently used items stored high on shelves\", \"box\": [0, 0, 343, 882]}, {\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"Cords or wires across walkway\", \"box\": [362, 605, 522, 983]}]}",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Frequently used items stored high on shelves",
+   "box": [
+    0,
+    0,
+    343,
+    882
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Cords or wires across walkway",
+   "box": [
+    362,
+    605,
+    522,
+    983
+   ]
+  }
+ ]
+}

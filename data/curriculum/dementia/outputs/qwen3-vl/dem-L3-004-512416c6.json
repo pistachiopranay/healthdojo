@@ -1,0 +1,50 @@
+{
+ "id": "dem-L3-004",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove burner is visibly lit with a blue flame in the inset image, indicating it is turned on and accessible. Knobs are freely usable without locks or covers.\",\n      \"box\": [12, 24, 253, 264]\n    },\n    {\n      \"id\": \"DEM-K02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A wooden knife block with multiple knives is placed on the countertop near the sink, within easy reach.\",\n      \"box\": [503, 194, 567, 314]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Several bottles, likely containing cleaning chemicals or other hazardous liquids, are visible on the counter and in the open cabinet to the right, unlocked and accessible.\",\n      \"box\": [767, 208, 832, 264]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"The open doorway to the adjacent room shows a towel or cloth hanging on a chair and some items on the floor, creating potential tripping hazards or clutter in the walkway.\",\n      \"box\": [750, 319, 792, 475]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner is visibly lit with a blue flame in the inset image, indicating it is turned on and accessible. Knobs are freely usable without locks or covers.",
+   "box": [
+    12,
+    24,
+    253,
+    264
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "medium",
+   "evidence": "A wooden knife block with multiple knives is placed on the countertop near the sink, within easy reach.",
+   "box": [
+    503,
+    194,
+    567,
+    314
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Several bottles, likely containing cleaning chemicals or other hazardous liquids, are visible on the counter and in the open cabinet to the right, unlocked and accessible.",
+   "box": [
+    767,
+    208,
+    832,
+    264
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "The open doorway to the adjacent room shows a towel or cloth hanging on a chair and some items on the floor, creating potential tripping hazards or clutter in the walkway.",
+   "box": [
+    750,
+    319,
+    792,
+    475
+   ]
+  }
+ ]
+}

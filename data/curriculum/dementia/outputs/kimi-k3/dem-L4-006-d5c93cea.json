@@ -1,0 +1,39 @@
+{
+ "id": "dem-L4-006",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"Inset close-up shows a gas burner with an active blue flame; the range knobs are exposed and freely turnable.\", \"box\": [136, 312, 253, 749]}, {\"id\": \"DEM-K04\", \"severity\": \"high\", \"evidence\": \"Multiple amber prescription bottles and a compartment pill organizer sitting out on the kitchen counter by the sink.\", \"box\": [496, 232, 664, 326]}, {\"id\": \"DEM-K02\", \"severity\": \"medium\", \"evidence\": \"Countertop crock/holder with upright knife/utensil handles within easy reach next to the refrigerator.\", \"box\": [661, 220, 701, 311]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Inset close-up shows a gas burner with an active blue flame; the range knobs are exposed and freely turnable.",
+   "box": [
+    136,
+    312,
+    253,
+    749
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Multiple amber prescription bottles and a compartment pill organizer sitting out on the kitchen counter by the sink.",
+   "box": [
+    496,
+    232,
+    664,
+    326
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "medium",
+   "evidence": "Countertop crock/holder with upright knife/utensil handles within easy reach next to the refrigerator.",
+   "box": [
+    661,
+    220,
+    701,
+    311
+   ]
+  }
+ ]
+}

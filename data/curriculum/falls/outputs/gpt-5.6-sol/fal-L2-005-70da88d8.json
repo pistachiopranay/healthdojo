@@ -1,0 +1,17 @@
+{
+ "id": "fal-L2-005",
+ "raw": "{\"hazards\":[{\"id\":\"BATH-05\",\"severity\":\"high\",\"evidence\":\"The bathtub has a high side that must be stepped over; the shower chair is entirely inside the tub and is not a transfer bench.\",\"box\":[245,625,708,875]}]}",
+ "hazards": [
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "The bathtub has a high side that must be stepped over; the shower chair is entirely inside the tub and is not a transfer bench.",
+   "box": [
+    245,
+    625,
+    708,
+    875
+   ]
+  }
+ ]
+}

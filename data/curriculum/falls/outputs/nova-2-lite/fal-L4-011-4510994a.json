@@ -1,0 +1,18 @@
+{
+ "id": "fal-L4-011",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"There are objects (a pair of shoes and a stack of folded towels) placed on the stairs, which can pose a tripping hazard for someone using a walker.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The lighting on the stairs is dim, which can reduce visibility and increase the risk of falls, especially for someone with reduced mobility.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "There are objects (a pair of shoes and a stack of folded towels) placed on the stairs, which can pose a tripping hazard for someone using a walker.",
+   "box": null
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "The lighting on the stairs is dim, which can reduce visibility and increase the risk of falls, especially for someone with reduced mobility.",
+   "box": null
+  }
+ ]
+}

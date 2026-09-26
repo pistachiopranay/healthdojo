@@ -1,0 +1,17 @@
+{
+ "id": "fal-L1-007",
+ "raw": "{\"hazards\":[{\"id\":\"BED-04\",\"severity\":\"high\",\"evidence\":\"Shoes and a large bag are scattered on the floor beside the bed, creating trip and walker-obstruction hazards.\",\"box\":[410,610,710,830]}]}",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "severity": "high",
+   "evidence": "Shoes and a large bag are scattered on the floor beside the bed, creating trip and walker-obstruction hazards.",
+   "box": [
+    410,
+    610,
+    710,
+    830
+   ]
+  }
+ ]
+}

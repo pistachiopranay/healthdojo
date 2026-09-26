@@ -1,0 +1,61 @@
+{
+ "id": "fal-L4-014",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"KIT-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Wooden step stool or small ladder left in walkway near counter, posing tripping hazard and potential for falls if used for reaching.\",\n      \"box\": [328, 372, 398, 618]\n    },\n    {\n      \"id\": \"KIT-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Wet floor with visible water puddle and hose running across kitchen floor, creating a severe slip hazard.\",\n      \"box\": [370, 600, 718, 999]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"Long white hose or cord running across the floor, creating a tripping hazard for someone using a walker.\",\n      \"box\": [320, 600, 533, 999]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Dog bowl and chew toy on floor near center of room, which could be tripped over by walker or feet.\",\n      \"box\": [467, 580, 560, 640]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Strong sunlight glare on floor creates high contrast and potential visual confusion, which can increase fall risk for older adults.\",\n      \"box\": [0, 0, 1000, 999]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "KIT-03",
+   "severity": "high",
+   "evidence": "Wooden step stool or small ladder left in walkway near counter, posing tripping hazard and potential for falls if used for reaching.",
+   "box": [
+    328,
+    372,
+    398,
+    618
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "Wet floor with visible water puddle and hose running across kitchen floor, creating a severe slip hazard.",
+   "box": [
+    370,
+    600,
+    718,
+    999
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Long white hose or cord running across the floor, creating a tripping hazard for someone using a walker.",
+   "box": [
+    320,
+    600,
+    533,
+    999
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Dog bowl and chew toy on floor near center of room, which could be tripped over by walker or feet.",
+   "box": [
+    467,
+    580,
+    560,
+    640
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Strong sunlight glare on floor creates high contrast and potential visual confusion, which can increase fall risk for older adults.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  }
+ ]
+}

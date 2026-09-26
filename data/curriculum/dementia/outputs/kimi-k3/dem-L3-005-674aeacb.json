@@ -1,0 +1,39 @@
+{
+ "id": "dem-L3-005",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B04\", \"severity\": \"high\", \"evidence\": \"White hair dryer lying on the vanity right next to the sink, with its cord plugged into the wall outlet beside the basin.\", \"box\": [785, 621, 930, 721]}, {\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"White toilet seat and bowl against a white tank and light tile floor, giving very low contrast that is easy to misperceive.\", \"box\": [516, 557, 742, 1000]}, {\"id\": \"DEM-B03\", \"severity\": \"medium\", \"evidence\": \"Solid black bath mat on the light tile floor in the walking path, which can be misread as a hole and is also a trip edge.\", \"box\": [285, 770, 523, 1000]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B04",
+   "severity": "high",
+   "evidence": "White hair dryer lying on the vanity right next to the sink, with its cord plugged into the wall outlet beside the basin.",
+   "box": [
+    785,
+    621,
+    930,
+    721
+   ]
+  },
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White toilet seat and bowl against a white tank and light tile floor, giving very low contrast that is easy to misperceive.",
+   "box": [
+    516,
+    557,
+    742,
+    1000
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "medium",
+   "evidence": "Solid black bath mat on the light tile floor in the walking path, which can be misread as a hole and is also a trip edge.",
+   "box": [
+    285,
+    770,
+    523,
+    1000
+   ]
+  }
+ ]
+}

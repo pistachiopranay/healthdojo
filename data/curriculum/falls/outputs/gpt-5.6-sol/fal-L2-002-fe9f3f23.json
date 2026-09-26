@@ -1,0 +1,17 @@
+{
+ "id": "fal-L2-002",
+ "raw": "{\"hazards\":[{\"id\":\"STAIR-03\",\"severity\":\"high\",\"evidence\":\"A shoe is lying on a stair tread, creating a trip hazard.\",\"box\":[435,587,555,646]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "A shoe is lying on a stair tread, creating a trip hazard.",
+   "box": [
+    435,
+    587,
+    555,
+    646
+   ]
+  }
+ ]
+}

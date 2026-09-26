@@ -1,0 +1,28 @@
+{
+ "id": "dem-L4-002",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Large full-length mirror mounted on the wall, directly facing the bed, which may cause confusion or distress for someone with dementia.\",\n      \"box\": [286, 0, 422, 468]\n    },\n    {\n      \"id\": \"DEM-R04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Portable space heater with glowing heating elements is placed directly on a rug next to the bed, posing a fire hazard if bedding drapes onto it or if it is knocked over.\",\n      \"box\": [516, 514, 630, 800]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "Large full-length mirror mounted on the wall, directly facing the bed, which may cause confusion or distress for someone with dementia.",
+   "box": [
+    286,
+    0,
+    422,
+    468
+   ]
+  },
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "Portable space heater with glowing heating elements is placed directly on a rug next to the bed, posing a fire hazard if bedding drapes onto it or if it is knocked over.",
+   "box": [
+    516,
+    514,
+    630,
+    800
+   ]
+  }
+ ]
+}

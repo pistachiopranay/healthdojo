@@ -1,0 +1,17 @@
+{
+ "id": "fal-L2-008",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"A loose, unanchored mat is placed directly on the concrete walkway just before the entrance steps, creating a potential trip/slip hazard for someone using a walker.\", \"box\": [301, 625, 570, 703]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A loose, unanchored mat is placed directly on the concrete walkway just before the entrance steps, creating a potential trip/slip hazard for someone using a walker.",
+   "box": [
+    301,
+    625,
+    570,
+    703
+   ]
+  }
+ ]
+}

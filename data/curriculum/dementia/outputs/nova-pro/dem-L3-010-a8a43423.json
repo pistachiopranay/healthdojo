@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-010",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"Stove burner left on, knobs freely usable\", \"box\": [38, 235, 268, 519]}, {\"id\": \"DEM-K03\", \"severity\": \"high\", \"evidence\": \"Cleaning chemicals out and unlocked\", \"box\": [548, 222, 573, 313]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner left on, knobs freely usable",
+   "box": [
+    38,
+    235,
+    268,
+    519
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "Cleaning chemicals out and unlocked",
+   "box": [
+    548,
+    222,
+    573,
+    313
+   ]
+  }
+ ]
+}

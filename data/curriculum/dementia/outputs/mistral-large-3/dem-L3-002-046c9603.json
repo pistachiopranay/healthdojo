@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-002",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Newspapers and boxes cluttering the walkway, creating tripping hazards and obstructing movement.\",\n      \"box\": [500, 400, 800, 700]\n    },\n    {\n      \"id\": \"DEM-E02\",\n      \"severity\": \"high\",\n      \"evidence\": \"Front door is open to the outside, increasing the risk of wandering.\",\n      \"box\": [250, 150, 350, 400]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Newspapers and boxes cluttering the walkway, creating tripping hazards and obstructing movement.",
+   "box": [
+    500,
+    400,
+    800,
+    700
+   ]
+  },
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "Front door is open to the outside, increasing the risk of wandering.",
+   "box": [
+    250,
+    150,
+    350,
+    400
+   ]
+  }
+ ]
+}

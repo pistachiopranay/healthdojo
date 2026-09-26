@@ -1,0 +1,61 @@
+{
+ "id": "fal-L2-010",
+ "raw": "{\"hazards\": [{\"id\": \"BATH-05\", \"severity\": \"high\", \"evidence\": \"Tub has a high step-over wall with no visible transfer bench spanning the tub edge; only a shower chair inside the tub\", \"box\": [230, 400, 800, 700]}, {\"id\": \"BATH-04\", \"severity\": \"medium\", \"evidence\": \"Tub/shower floor appears smooth/glossy with only faint non-slip strips, could be slippery when wet\", \"box\": [280, 620, 750, 720]}, {\"id\": \"BATH-06\", \"severity\": \"low\", \"evidence\": \"Standard height toilet without raised seat, may be low for user post-surgery\", \"box\": [780, 480, 1080, 780]}, {\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"Electrical cord from radio hanging down near window and toilet area, potential trip hazard near walker path\", \"box\": [1030, 250, 1150, 480]}, {\"id\": \"BED-05\", \"severity\": \"low\", \"evidence\": \"Walker/transfer frame positioned tightly between toilet and tub, narrow clearance for walker maneuvering\", \"box\": [700, 540, 1150, 890]}]}",
+ "hazards": [
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "Tub has a high step-over wall with no visible transfer bench spanning the tub edge; only a shower chair inside the tub",
+   "box": [
+    230,
+    400,
+    800,
+    700
+   ]
+  },
+  {
+   "id": "BATH-04",
+   "severity": "medium",
+   "evidence": "Tub/shower floor appears smooth/glossy with only faint non-slip strips, could be slippery when wet",
+   "box": [
+    280,
+    620,
+    750,
+    720
+   ]
+  },
+  {
+   "id": "BATH-06",
+   "severity": "low",
+   "evidence": "Standard height toilet without raised seat, may be low for user post-surgery",
+   "box": [
+    780,
+    480,
+    1080,
+    780
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Electrical cord from radio hanging down near window and toilet area, potential trip hazard near walker path",
+   "box": [
+    1030,
+    250,
+    1150,
+    480
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "low",
+   "evidence": "Walker/transfer frame positioned tightly between toilet and tub, narrow clearance for walker maneuvering",
+   "box": [
+    700,
+    540,
+    1150,
+    890
+   ]
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "id": "fal-L1-002",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"Insufficient walker clearance around the bed, particularly on the right side near the nightstand.\",\n      \"box\": [600, 200, 1000, 600]\n    },\n    {\n      \"id\": \"BATH-07\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose bath mat or rug on the bathroom floor visible through the doorway.\",\n      \"box\": [800, 500, 950, 700]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose rug on the floor in front of the bed.\",\n      \"box\": [300, 600, 700, 850]\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Doorway to the bathroom appears narrow for walker access.\",\n      \"box\": [750, 100, 900, 600]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BED-05",
+   "severity": "high",
+   "evidence": "Insufficient walker clearance around the bed, particularly on the right side near the nightstand.",
+   "box": [
+    600,
+    200,
+    1000,
+    600
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "high",
+   "evidence": "Loose bath mat or rug on the bathroom floor visible through the doorway.",
+   "box": [
+    800,
+    500,
+    950,
+    700
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose rug on the floor in front of the bed.",
+   "box": [
+    300,
+    600,
+    700,
+    850
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "Doorway to the bathroom appears narrow for walker access.",
+   "box": [
+    750,
+    100,
+    900,
+    600
+   ]
+  }
+ ]
+}

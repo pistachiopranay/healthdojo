@@ -1,0 +1,28 @@
+{
+ "id": "dem-L4-005",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove burner knobs are freely accessible and usable, posing a risk if left on unintentionally.\",\n      \"box\": [100, 180, 300, 350]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Countertop has several items that could contribute to clutter and confusion.\",\n      \"box\": [350, 200, 800, 350]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner knobs are freely accessible and usable, posing a risk if left on unintentionally.",
+   "box": [
+    100,
+    180,
+    300,
+    350
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Countertop has several items that could contribute to clutter and confusion.",
+   "box": [
+    350,
+    200,
+    800,
+    350
+   ]
+  }
+ ]
+}

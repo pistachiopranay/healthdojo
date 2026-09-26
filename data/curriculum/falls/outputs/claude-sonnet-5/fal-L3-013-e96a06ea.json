@@ -1,0 +1,50 @@
+{
+ "id": "fal-L3-013",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"Loose area rug lying on wood floor in walking path, edges not secured, could cause trip with walker\", \"box\": [63, 615, 700, 800]}, {\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"Long coiled cord/rope running across the floor and walking path from rug area toward the doorway\", \"box\": [430, 630, 990, 760]}, {\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"Shoes, folded towels, and stacked blankets piled on floor near doorway, narrowing and cluttering the walking path\", \"box\": [740, 570, 985, 645]}, {\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"Strong directional sunlight creating glare and deep shadows across the floor, which could obscure hazards or uneven flooring\", \"box\": [700, 400, 1200, 750]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Loose area rug lying on wood floor in walking path, edges not secured, could cause trip with walker",
+   "box": [
+    63,
+    615,
+    700,
+    800
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Long coiled cord/rope running across the floor and walking path from rug area toward the doorway",
+   "box": [
+    430,
+    630,
+    990,
+    760
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Shoes, folded towels, and stacked blankets piled on floor near doorway, narrowing and cluttering the walking path",
+   "box": [
+    740,
+    570,
+    985,
+    645
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Strong directional sunlight creating glare and deep shadows across the floor, which could obscure hazards or uneven flooring",
+   "box": [
+    700,
+    400,
+    1200,
+    750
+   ]
+  }
+ ]
+}

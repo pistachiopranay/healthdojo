@@ -1,0 +1,28 @@
+{
+ "id": "fal-L2-007",
+ "raw": "{\"hazards\":[{\"id\":\"BED-05\",\"severity\":\"high\",\"evidence\":\"The nightstand is positioned immediately beside the bed, leaving virtually no clearance for a walker on the bed's right side.\",\"box\":[603,420,750,643]},{\"id\":\"LIV-01\",\"severity\":\"high\",\"evidence\":\"Loose runner rugs are present along the visible bed-to-bathroom hallway walkway.\",\"box\":[814,461,944,655]}]}",
+ "hazards": [
+  {
+   "id": "BED-05",
+   "severity": "high",
+   "evidence": "The nightstand is positioned immediately beside the bed, leaving virtually no clearance for a walker on the bed's right side.",
+   "box": [
+    603,
+    420,
+    750,
+    643
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose runner rugs are present along the visible bed-to-bathroom hallway walkway.",
+   "box": [
+    814,
+    461,
+    944,
+    655
+   ]
+  }
+ ]
+}

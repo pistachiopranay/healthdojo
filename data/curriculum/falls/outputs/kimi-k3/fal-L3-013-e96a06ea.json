@@ -1,0 +1,50 @@
+{
+ "id": "fal-L3-013",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"Large loose area rug/mat lying on the wood floor in the main walking path; edges can catch walker tips.\", \"box\": [14, 736, 578, 954]}, {\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"Coiled hose/cable with loops on the rug and a length trailing across the wood floor walkway toward the right wall \u2014 direct trip/catch hazard for a walker.\", \"box\": [293, 746, 688, 1000]}, {\"id\": \"LIV-03\", \"severity\": \"low\", \"evidence\": \"Shoes, a rolled towel/blanket, and a stack of folded clothes sitting on the floor near the right wall/doorway approach.\", \"box\": [724, 662, 972, 758]}, {\"id\": \"LIV-05\", \"severity\": \"medium\", \"evidence\": \"Intense sunlight through the large window creates glare and hard bright/dark shadow patches across the floor, which can hide the cord and rug edges from someone using a walker.\", \"box\": [0, 24, 205, 642]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Large loose area rug/mat lying on the wood floor in the main walking path; edges can catch walker tips.",
+   "box": [
+    14,
+    736,
+    578,
+    954
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Coiled hose/cable with loops on the rug and a length trailing across the wood floor walkway toward the right wall \u2014 direct trip/catch hazard for a walker.",
+   "box": [
+    293,
+    746,
+    688,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "low",
+   "evidence": "Shoes, a rolled towel/blanket, and a stack of folded clothes sitting on the floor near the right wall/doorway approach.",
+   "box": [
+    724,
+    662,
+    972,
+    758
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Intense sunlight through the large window creates glare and hard bright/dark shadow patches across the floor, which can hide the cord and rug edges from someone using a walker.",
+   "box": [
+    0,
+    24,
+    205,
+    642
+   ]
+  }
+ ]
+}

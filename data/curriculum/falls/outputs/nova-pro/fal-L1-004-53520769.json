@@ -1,0 +1,28 @@
+{
+ "id": "fal-L1-004",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-03\", \"severity\": \"medium\", \"evidence\": \"Extension cords on the stairs\", \"box\": [382, 582, 559, 790]}, {\"id\": \"LIV-01\", \"severity\": \"low\", \"evidence\": \"Throw rug on the walkway\", \"box\": [0, 837, 95, 958]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "medium",
+   "evidence": "Extension cords on the stairs",
+   "box": [
+    382,
+    582,
+    559,
+    790
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "low",
+   "evidence": "Throw rug on the walkway",
+   "box": [
+    0,
+    837,
+    95,
+    958
+   ]
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "fal-L3-006",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"Pile of towels, clothing, shoes, and a wooden stool stacked in the corner near the doorway, narrowing the walking path for a walker user entering the bathroom\", \"box\": [130, 560, 430, 800]}]}",
+ "hazards": [
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Pile of towels, clothing, shoes, and a wooden stool stacked in the corner near the doorway, narrowing the walking path for a walker user entering the bathroom",
+   "box": [
+    130,
+    560,
+    430,
+    800
+   ]
+  }
+ ]
+}

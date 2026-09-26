@@ -1,0 +1,24 @@
+{
+ "id": "fal-L1-002",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The bed is positioned close to the nightstand and the wall, leaving limited clearance for a walker to maneuver around it.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There is a step-down between the bedroom and the adjacent room (bathroom) which is not marked, posing a risk of tripping.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"low\",\n      \"evidence\": \"The pathway from the bed to the bathroom appears somewhat narrowed due to the placement of furniture, which could impede walker movement.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "The bed is positioned close to the nightstand and the wall, leaving limited clearance for a walker to maneuver around it.",
+   "box": null
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "There is a step-down between the bedroom and the adjacent room (bathroom) which is not marked, posing a risk of tripping.",
+   "box": null
+  },
+  {
+   "id": "LIV-03",
+   "severity": "low",
+   "evidence": "The pathway from the bed to the bathroom appears somewhat narrowed due to the placement of furniture, which could impede walker movement.",
+   "box": null
+  }
+ ]
+}

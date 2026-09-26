@@ -1,0 +1,12 @@
+{
+ "id": "dem-L1-004",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Front door is open to the outside, posing a wandering risk for someone with dementia\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "severity": "medium",
+   "evidence": "Front door is open to the outside, posing a wandering risk for someone with dementia",
+   "box": null
+  }
+ ]
+}

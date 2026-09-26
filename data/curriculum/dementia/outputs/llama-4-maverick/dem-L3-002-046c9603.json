@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-002",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-E02\", \"severity\": \"high\", \"evidence\": \"The front door is open, allowing easy exit to the outside.\", \"box\": [334, 0, 448, 393]},\n    {\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"There are piles of boxes, shoes, and newspapers in the middle of the living room floor.\", \"box\": [460, 360, 720, 650]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "The front door is open, allowing easy exit to the outside.",
+   "box": [
+    334,
+    0,
+    448,
+    393
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "There are piles of boxes, shoes, and newspapers in the middle of the living room floor.",
+   "box": [
+    460,
+    360,
+    720,
+    650
+   ]
+  }
+ ]
+}

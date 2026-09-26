@@ -1,0 +1,39 @@
+{
+ "id": "dem-L3-005",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"White toilet seat and toilet bowl blend with light-colored floor tiles, low contrast making it hard to distinguish\", \"box\": [663, 570, 897, 851]}, {\"id\": \"DEM-B03\", \"severity\": \"medium\", \"evidence\": \"Dark black bath mat placed on light tile floor creates high contrast that could be perceived as a hole or hazard\", \"box\": [372, 655, 672, 851]}, {\"id\": \"DEM-B04\", \"severity\": \"high\", \"evidence\": \"Hair dryer plugged into wall outlet sitting on counter next to sink, cord dangling near water source\", \"box\": [1017, 530, 1200, 620]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White toilet seat and toilet bowl blend with light-colored floor tiles, low contrast making it hard to distinguish",
+   "box": [
+    663,
+    570,
+    897,
+    851
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "medium",
+   "evidence": "Dark black bath mat placed on light tile floor creates high contrast that could be perceived as a hole or hazard",
+   "box": [
+    372,
+    655,
+    672,
+    851
+   ]
+  },
+  {
+   "id": "DEM-B04",
+   "severity": "high",
+   "evidence": "Hair dryer plugged into wall outlet sitting on counter next to sink, cord dangling near water source",
+   "box": [
+    1017,
+    530,
+    1200,
+    620
+   ]
+  }
+ ]
+}

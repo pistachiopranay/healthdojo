@@ -1,0 +1,50 @@
+{
+ "id": "fal-L3-007",
+ "raw": "{\"hazards\":[{\"id\":\"KIT-02\",\"severity\":\"medium\",\"evidence\":\"Cookware is stored in a low base cabinet, requiring bending or crouching to retrieve it.\",\"box\":[470,575,625,780]},{\"id\":\"LIV-03\",\"severity\":\"high\",\"evidence\":\"Open lower-cabinet doors project into the walking area and obstruct walker clearance.\",\"box\":[470,575,625,780]},{\"id\":\"LIV-07\",\"severity\":\"high\",\"evidence\":\"Pet food bowl and rope toys are directly underfoot in the kitchen walkway.\",\"box\":[414,770,670,850]},{\"id\":\"LIV-01\",\"severity\":\"high\",\"evidence\":\"A loose floor mat lies across the foreground walking path.\",\"box\":[511,860,999,999]}]}",
+ "hazards": [
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Cookware is stored in a low base cabinet, requiring bending or crouching to retrieve it.",
+   "box": [
+    470,
+    575,
+    625,
+    780
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Open lower-cabinet doors project into the walking area and obstruct walker clearance.",
+   "box": [
+    470,
+    575,
+    625,
+    780
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "Pet food bowl and rope toys are directly underfoot in the kitchen walkway.",
+   "box": [
+    414,
+    770,
+    670,
+    850
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "A loose floor mat lies across the foreground walking path.",
+   "box": [
+    511,
+    860,
+    999,
+    999
+   ]
+  }
+ ]
+}

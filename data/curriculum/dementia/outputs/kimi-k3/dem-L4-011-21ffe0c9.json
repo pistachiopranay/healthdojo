@@ -1,0 +1,28 @@
+{
+ "id": "dem-L4-011",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K01\", \"severity\": \"medium\", \"evidence\": \"Freestanding stove/oven on the left with front-facing control knobs that are freely reachable/usable (towel also hanging on the oven door); a person with dementia could turn a burner on.\", \"box\": [133, 305, 263, 756]}, {\"id\": \"DEM-K04\", \"severity\": \"high\", \"evidence\": \"Multiple prescription-style medication bottles (orange/amber bottles with white caps) and related pill packaging left out in a cluster on the kitchen counter to the right of the sink, within easy reach.\", \"box\": [485, 209, 656, 322]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "medium",
+   "evidence": "Freestanding stove/oven on the left with front-facing control knobs that are freely reachable/usable (towel also hanging on the oven door); a person with dementia could turn a burner on.",
+   "box": [
+    133,
+    305,
+    263,
+    756
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Multiple prescription-style medication bottles (orange/amber bottles with white caps) and related pill packaging left out in a cluster on the kitchen counter to the right of the sink, within easy reach.",
+   "box": [
+    485,
+    209,
+    656,
+    322
+   ]
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "id": "dem-L4-002",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R01\", \"severity\": \"medium\", \"evidence\": \"Large full-length mirror leaning against wall directly facing the bed, reflecting the bed and room\", \"box\": [372, 0, 538, 400]}, {\"id\": \"DEM-R04\", \"severity\": \"high\", \"evidence\": \"Electric space heater with glowing coils placed on carpet right next to the bed and bedding that hangs down close to it\", \"box\": [671, 441, 800, 680]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "Large full-length mirror leaning against wall directly facing the bed, reflecting the bed and room",
+   "box": [
+    372,
+    0,
+    538,
+    400
+   ]
+  },
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "Electric space heater with glowing coils placed on carpet right next to the bed and bedding that hangs down close to it",
+   "box": [
+    671,
+    441,
+    800,
+    680
+   ]
+  }
+ ]
+}

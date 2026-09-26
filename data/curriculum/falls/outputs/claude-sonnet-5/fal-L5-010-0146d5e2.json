@@ -1,0 +1,28 @@
+{
+ "id": "fal-L5-010",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-04\", \"severity\": \"medium\", \"evidence\": \"Low, soft couch in the living room with no visible armrests, seen in the lower left of the image, which would be difficult to rise from with a walker after hip/knee surgery.\", \"box\": [0, 560, 240, 830]}, {\"id\": \"STAIR-04\", \"severity\": \"low\", \"evidence\": \"The staircase is lit primarily by a single sconce near the top; the lower steps appear noticeably dimmer, creating uneven lighting along the stair path.\", \"box\": [400, 500, 800, 840]}]}",
+ "hazards": [
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "Low, soft couch in the living room with no visible armrests, seen in the lower left of the image, which would be difficult to rise from with a walker after hip/knee surgery.",
+   "box": [
+    0,
+    560,
+    240,
+    830
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "low",
+   "evidence": "The staircase is lit primarily by a single sconce near the top; the lower steps appear noticeably dimmer, creating uneven lighting along the stair path.",
+   "box": [
+    400,
+    500,
+    800,
+    840
+   ]
+  }
+ ]
+}

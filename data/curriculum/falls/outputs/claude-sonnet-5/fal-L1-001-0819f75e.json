@@ -1,0 +1,39 @@
+{
+ "id": "fal-L1-001",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"Long coiled cable/cord lying across the middle of the wood floor walkway, a clear trip hazard for someone using a walker\", \"box\": [566, 447, 786, 545]}, {\"id\": \"LIV-04\", \"severity\": \"medium\", \"evidence\": \"Blue recliner has low, soft cushioned seat that may be difficult to rise from, though it does have armrests\", \"box\": [32, 240, 445, 645]}, {\"id\": \"ENT-05\", \"severity\": \"low\", \"evidence\": \"Glass-paneled door on right appears narrow, potentially restrictive for walker clearance\", \"box\": [1113, 0, 1280, 852]}]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Long coiled cable/cord lying across the middle of the wood floor walkway, a clear trip hazard for someone using a walker",
+   "box": [
+    566,
+    447,
+    786,
+    545
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "Blue recliner has low, soft cushioned seat that may be difficult to rise from, though it does have armrests",
+   "box": [
+    32,
+    240,
+    445,
+    645
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "low",
+   "evidence": "Glass-paneled door on right appears narrow, potentially restrictive for walker clearance",
+   "box": [
+    1113,
+    0,
+    1280,
+    852
+   ]
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "fal-L2-008",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"A loose tan mat/flat sheet (like cardboard or a doormat) is lying on the concrete walkway directly at the base of the entry steps, where a walker user would approach and transition to the stairs; its edge could catch walker legs/feet or slide.\", \"box\": [302, 622, 562, 711]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A loose tan mat/flat sheet (like cardboard or a doormat) is lying on the concrete walkway directly at the base of the entry steps, where a walker user would approach and transition to the stairs; its edge could catch walker legs/feet or slide.",
+   "box": [
+    302,
+    622,
+    562,
+    711
+   ]
+  }
+ ]
+}

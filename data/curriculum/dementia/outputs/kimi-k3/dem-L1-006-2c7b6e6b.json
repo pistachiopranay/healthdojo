@@ -1,0 +1,28 @@
+{
+ "id": "dem-L1-006",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"White raised toilet seat/safety frame on a white toilet against a white wall and light tile floor, creating very low contrast that is hard for a person with dementia to distinguish.\", \"box\": [512, 462, 868, 1000]}, {\"id\": \"DEM-B03\", \"severity\": \"medium\", \"evidence\": \"Large solid dark navy bath mat on the light tile floor in front of the tub/toilet, which can be misperceived as a hole and is also a loose mat on a hard bathroom floor.\", \"box\": [240, 851, 545, 1000]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White raised toilet seat/safety frame on a white toilet against a white wall and light tile floor, creating very low contrast that is hard for a person with dementia to distinguish.",
+   "box": [
+    512,
+    462,
+    868,
+    1000
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "medium",
+   "evidence": "Large solid dark navy bath mat on the light tile floor in front of the tub/toilet, which can be misperceived as a hole and is also a loose mat on a hard bathroom floor.",
+   "box": [
+    240,
+    851,
+    545,
+    1000
+   ]
+  }
+ ]
+}

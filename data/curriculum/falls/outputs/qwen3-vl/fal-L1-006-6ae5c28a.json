@@ -1,0 +1,39 @@
+{
+ "id": "fal-L1-006",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"KIT-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Open shelving with items stored at various heights; no step stool visible but one may be needed to reach upper shelves, posing a fall risk if used unsafely.\",\n      \"box\": [0, 0, 348, 880]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Pots, pans, canned goods, and boxes cluttering the floor along the left wall, significantly narrowing the walking path for a walker.\",\n      \"box\": [107, 550, 412, 948]\n    },\n    {\n      \"id\": \"LIV-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Threshold at doorway to dining room appears to be a level change; no visual marking or ramp to indicate the step-down, which could be hazardous for someone using a walker.\",\n      \"box\": [362, 12, 580, 620]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "KIT-03",
+   "severity": "medium",
+   "evidence": "Open shelving with items stored at various heights; no step stool visible but one may be needed to reach upper shelves, posing a fall risk if used unsafely.",
+   "box": [
+    0,
+    0,
+    348,
+    880
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Pots, pans, canned goods, and boxes cluttering the floor along the left wall, significantly narrowing the walking path for a walker.",
+   "box": [
+    107,
+    550,
+    412,
+    948
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "Threshold at doorway to dining room appears to be a level change; no visual marking or ramp to indicate the step-down, which could be hazardous for someone using a walker.",
+   "box": [
+    362,
+    12,
+    580,
+    620
+   ]
+  }
+ ]
+}

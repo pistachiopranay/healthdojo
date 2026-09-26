@@ -1,0 +1,50 @@
+{
+ "id": "dem-L1-007",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove with visible knobs and no knob covers; burner controls are freely accessible.\",\n      \"box\": [142, 328, 257, 747]\n    },\n    {\n      \"id\": \"DEM-K02\",\n      \"severity\": \"high\",\n      \"evidence\": \"Knife block with multiple knives placed on the counter within easy reach.\",\n      \"box\": [564, 185, 629, 305]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cleaning products and bottles visible on the counter near the sink and on shelves in the adjacent room.\",\n      \"box\": [763, 207, 825, 265]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"Towels hanging on the oven handle and items on the counter may create minor clutter in the walkway.\",\n      \"box\": [142, 328, 257, 747]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove with visible knobs and no knob covers; burner controls are freely accessible.",
+   "box": [
+    142,
+    328,
+    257,
+    747
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Knife block with multiple knives placed on the counter within easy reach.",
+   "box": [
+    564,
+    185,
+    629,
+    305
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning products and bottles visible on the counter near the sink and on shelves in the adjacent room.",
+   "box": [
+    763,
+    207,
+    825,
+    265
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "Towels hanging on the oven handle and items on the counter may create minor clutter in the walkway.",
+   "box": [
+    142,
+    328,
+    257,
+    747
+   ]
+  }
+ ]
+}

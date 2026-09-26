@@ -1,0 +1,50 @@
+{
+ "id": "fal-L3-003",
+ "raw": "{\"hazards\":[{\"id\":\"KIT-01\",\"severity\":\"medium\",\"evidence\":\"Frequently used dishes and bowls are stored on high open shelves, requiring overhead reaching.\",\"box\":[0,0,310,282]},{\"id\":\"KIT-04\",\"severity\":\"high\",\"evidence\":\"A large liquid spill creates a visibly wet, slippery kitchen floor.\",\"box\":[137,668,514,949]},{\"id\":\"LIV-02\",\"severity\":\"high\",\"evidence\":\"A long electrical cord runs in multiple loops across the main walking route, obstructing a walker.\",\"box\":[350,501,699,999]},{\"id\":\"LIV-03\",\"severity\":\"high\",\"evidence\":\"The central walking path is obstructed by multiple loops of cord and the wet area, leaving an unsafe walker route.\",\"box\":[341,493,703,999]}]}",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Frequently used dishes and bowls are stored on high open shelves, requiring overhead reaching.",
+   "box": [
+    0,
+    0,
+    310,
+    282
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "A large liquid spill creates a visibly wet, slippery kitchen floor.",
+   "box": [
+    137,
+    668,
+    514,
+    949
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "A long electrical cord runs in multiple loops across the main walking route, obstructing a walker.",
+   "box": [
+    350,
+    501,
+    699,
+    999
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "The central walking path is obstructed by multiple loops of cord and the wet area, leaving an unsafe walker route.",
+   "box": [
+    341,
+    493,
+    703,
+    999
+   ]
+  }
+ ]
+}

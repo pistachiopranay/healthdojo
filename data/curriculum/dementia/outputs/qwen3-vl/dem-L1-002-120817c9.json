@@ -1,0 +1,28 @@
+{
+ "id": "dem-L1-002",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Bold black-and-white striped rug on the floor, which can be misperceived as steps or a hole by someone with dementia.\",\n      \"box\": [280, 594, 818, 999]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"Small items on the nightstand and dresser, including a lamp and what appears to be a phone or remote, which could create minor clutter in the walkway.\",\n      \"box\": [613, 427, 749, 636]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "Bold black-and-white striped rug on the floor, which can be misperceived as steps or a hole by someone with dementia.",
+   "box": [
+    280,
+    594,
+    818,
+    999
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "Small items on the nightstand and dresser, including a lamp and what appears to be a phone or remote, which could create minor clutter in the walkway.",
+   "box": [
+    613,
+    427,
+    749,
+    636
+   ]
+  }
+ ]
+}

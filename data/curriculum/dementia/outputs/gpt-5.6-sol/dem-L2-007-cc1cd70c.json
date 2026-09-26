@@ -1,0 +1,28 @@
+{
+ "id": "dem-L2-007",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-K04\",\"severity\":\"high\",\"evidence\":\"An orange medication bottle is left accessible on the countertop beside the coffee maker.\",\"box\":[218,261,238,322]},{\"id\":\"DEM-K03\",\"severity\":\"medium\",\"evidence\":\"Several cleaning-product bottles are openly accessible on a shelf in the adjoining room.\",\"box\":[767,195,833,276]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "An orange medication bottle is left accessible on the countertop beside the coffee maker.",
+   "box": [
+    218,
+    261,
+    238,
+    322
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Several cleaning-product bottles are openly accessible on a shelf in the adjoining room.",
+   "box": [
+    767,
+    195,
+    833,
+    276
+   ]
+  }
+ ]
+}

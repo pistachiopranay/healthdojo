@@ -1,0 +1,28 @@
+{
+ "id": "dem-L2-001",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"keys are visible on a small table near the door, posing a risk of wandering\",\n      \"box\": [4, 272, 94, 355]\n    },\n    {\n      \"id\": \"DEM-E02\",\n      \"severity\": \"high\",\n      \"evidence\": \"the front door is visible and appears to be unlocked, posing a risk of wandering\",\n      \"box\": [341, 0, 456, 393]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "medium",
+   "evidence": "keys are visible on a small table near the door, posing a risk of wandering",
+   "box": [
+    4,
+    272,
+    94,
+    355
+   ]
+  },
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "the front door is visible and appears to be unlocked, posing a risk of wandering",
+   "box": [
+    341,
+    0,
+    456,
+    393
+   ]
+  }
+ ]
+}

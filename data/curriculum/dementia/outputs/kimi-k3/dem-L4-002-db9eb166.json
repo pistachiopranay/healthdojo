@@ -1,0 +1,28 @@
+{
+ "id": "dem-L4-002",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-R01\",\"severity\":\"medium\",\"evidence\":\"Large full-length mirror beside the bed reflects the bed and room, which could be misperceived by someone with dementia.\",\"box\":[287,0,428,399]},{\"id\":\"DEM-R04\",\"severity\":\"high\",\"evidence\":\"Glowing electric space heater is on the rug immediately next to the bed and hanging bedding, with a cord across the floor.\",\"box\":[516,439,635,807]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "Large full-length mirror beside the bed reflects the bed and room, which could be misperceived by someone with dementia.",
+   "box": [
+    287,
+    0,
+    428,
+    399
+   ]
+  },
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "Glowing electric space heater is on the rug immediately next to the bed and hanging bedding, with a cord across the floor.",
+   "box": [
+    516,
+    439,
+    635,
+    807
+   ]
+  }
+ ]
+}

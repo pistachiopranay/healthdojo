@@ -1,0 +1,24 @@
+{
+ "id": "fal-L3-003",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"KIT-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Wet floor near the center of the kitchen, likely from a spilled liquid or cleaning activity, creating a slippery surface.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A power cord is visible on the floor, running across the walkway and potentially creating a tripping hazard.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"KIT-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Frequently used items such as dishes and pots are stored on high shelves, requiring the use of a step stool or reaching up, which could be challenging for someone using a walker.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "Wet floor near the center of the kitchen, likely from a spilled liquid or cleaning activity, creating a slippery surface.",
+   "box": null
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A power cord is visible on the floor, running across the walkway and potentially creating a tripping hazard.",
+   "box": null
+  },
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Frequently used items such as dishes and pots are stored on high shelves, requiring the use of a step stool or reaching up, which could be challenging for someone using a walker.",
+   "box": null
+  }
+ ]
+}

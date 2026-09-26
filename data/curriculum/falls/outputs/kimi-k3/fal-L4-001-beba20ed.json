@@ -1,0 +1,66 @@
+{
+ "id": "fal-L4-001",
+ "raw": "{\"hazards\": [{\"id\": \"KIT-01\", \"severity\": \"medium\", \"evidence\": \"Everyday dishes/bowls stacked on high open shelves along the upper-left wall, requiring overhead reaching.\", \"box\": [0, 0, 315, 305]}, {\"id\": \"KIT-03\", \"severity\": \"medium\", \"evidence\": \"Freestanding step stool/small ladder near the rear counter that could be used to reach high shelves.\", \"box\": [318, 338, 402, 598]}, {\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"White cord/wire trailing and looping across the kitchen floor walkway (center to lower-right).\", \"box\": [495, 575, 760, 1000]}, {\"id\": \"LIV-03\", \"severity\": \"high\", \"evidence\": \"Central walkway between counters is occupied by a large pet bed, two bowls, scattered toys/bones and a cord, narrowing the path needed for a walker.\", \"box\": [300, 610, 700, 920]}, {\"id\": \"LIV-05\", \"severity\": \"medium\", \"evidence\": \"Room is dim overall with harsh sunlight glare and deep shadows across the floor, which can obscure the cord and items underfoot.\"}, {\"id\": \"LIV-07\", \"severity\": \"high\", \"evidence\": \"Pet bed, food/water bowls and multiple dog toys/bones on the floor in the main walking area.\", \"box\": [320, 615, 675, 905]}]}",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Everyday dishes/bowls stacked on high open shelves along the upper-left wall, requiring overhead reaching.",
+   "box": [
+    0,
+    0,
+    315,
+    305
+   ]
+  },
+  {
+   "id": "KIT-03",
+   "severity": "medium",
+   "evidence": "Freestanding step stool/small ladder near the rear counter that could be used to reach high shelves.",
+   "box": [
+    318,
+    338,
+    402,
+    598
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "White cord/wire trailing and looping across the kitchen floor walkway (center to lower-right).",
+   "box": [
+    495,
+    575,
+    760,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Central walkway between counters is occupied by a large pet bed, two bowls, scattered toys/bones and a cord, narrowing the path needed for a walker.",
+   "box": [
+    300,
+    610,
+    700,
+    920
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Room is dim overall with harsh sunlight glare and deep shadows across the floor, which can obscure the cord and items underfoot."
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "Pet bed, food/water bowls and multiple dog toys/bones on the floor in the main walking area.",
+   "box": [
+    320,
+    615,
+    675,
+    905
+   ]
+  }
+ ]
+}

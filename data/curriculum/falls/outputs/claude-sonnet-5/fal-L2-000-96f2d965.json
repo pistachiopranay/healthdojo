@@ -1,0 +1,50 @@
+{
+ "id": "fal-L2-000",
+ "raw": "{\"hazards\": [{\"id\": \"BED-05\", \"severity\": \"medium\", \"evidence\": \"Furniture (dresser, chair) and narrow spacing around bed and doorway path could restrict walker clearance\", \"box\": [0, 300, 550, 850]}, {\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"Long extension cord running across the floor from an outlet near the closet to the nightstand area, directly in the walking path near the bed\", \"box\": [330, 400, 560, 520]}, {\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"Room lighting appears dim/overcast with only a small nightlight glow and lamp, could cause poor visibility at night\", \"box\": [380, 300, 460, 400]}, {\"id\": \"BED-02\", \"severity\": \"low\", \"evidence\": \"Bedside lamp present but positioned on far side of bed near chair, not clearly within easy reach from lying position\", \"box\": [900, 100, 1010, 260]}]}",
+ "hazards": [
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "Furniture (dresser, chair) and narrow spacing around bed and doorway path could restrict walker clearance",
+   "box": [
+    0,
+    300,
+    550,
+    850
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Long extension cord running across the floor from an outlet near the closet to the nightstand area, directly in the walking path near the bed",
+   "box": [
+    330,
+    400,
+    560,
+    520
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Room lighting appears dim/overcast with only a small nightlight glow and lamp, could cause poor visibility at night",
+   "box": [
+    380,
+    300,
+    460,
+    400
+   ]
+  },
+  {
+   "id": "BED-02",
+   "severity": "low",
+   "evidence": "Bedside lamp present but positioned on far side of bed near chair, not clearly within easy reach from lying position",
+   "box": [
+    900,
+    100,
+    1010,
+    260
+   ]
+  }
+ ]
+}

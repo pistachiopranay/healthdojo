@@ -1,0 +1,28 @@
+{
+ "id": "fal-L2-003",
+ "raw": "{\"hazards\": [{\"id\": \"ENT-02\", \"severity\": \"medium\", \"evidence\": \"Raised threshold at the front door.\", \"box\": [390, 575, 610, 600]}, {\"id\": \"ENT-04\", \"severity\": \"medium\", \"evidence\": \"Poor exterior lighting on the front porch.\", \"box\": [699, 88, 736, 174]}]}",
+ "hazards": [
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "Raised threshold at the front door.",
+   "box": [
+    390,
+    575,
+    610,
+    600
+   ]
+  },
+  {
+   "id": "ENT-04",
+   "severity": "medium",
+   "evidence": "Poor exterior lighting on the front porch.",
+   "box": [
+    699,
+    88,
+    736,
+    174
+   ]
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "fal-L5-000",
+ "raw": "{\"hazards\": [{\"id\": \"BATH-07\", \"severity\": \"medium\", \"evidence\": \"Loose bath mat lying on floor in front of tub/toilet area, not secured, could slip under walker or feet\", \"box\": [303, 733, 674, 850]}]}",
+ "hazards": [
+  {
+   "id": "BATH-07",
+   "severity": "medium",
+   "evidence": "Loose bath mat lying on floor in front of tub/toilet area, not secured, could slip under walker or feet",
+   "box": [
+    303,
+    733,
+    674,
+    850
+   ]
+  }
+ ]
+}

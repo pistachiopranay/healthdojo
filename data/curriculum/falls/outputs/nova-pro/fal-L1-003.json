@@ -1,0 +1,28 @@
+{
+ "id": "fal-L1-003",
+ "raw": "{\"hazards\": [{\"id\": \"ENT-02\", \"severity\": \"medium\", \"evidence\": \"Raised threshold at the front door.\", \"box\": [360, 463, 640, 490]}, {\"id\": \"ENT-03\", \"severity\": \"low\", \"evidence\": \"Uneven or damaged outdoor path.\", \"box\": [280, 620, 690, 999]}]}",
+ "hazards": [
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "Raised threshold at the front door.",
+   "box": [
+    360,
+    463,
+    640,
+    490
+   ]
+  },
+  {
+   "id": "ENT-03",
+   "severity": "low",
+   "evidence": "Uneven or damaged outdoor path.",
+   "box": [
+    280,
+    620,
+    690,
+    999
+   ]
+  }
+ ]
+}

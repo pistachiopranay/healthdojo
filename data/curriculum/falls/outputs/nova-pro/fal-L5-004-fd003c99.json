@@ -1,0 +1,39 @@
+{
+ "id": "fal-L5-004",
+ "raw": "{\"hazards\": [{\"id\": \"BATH-02\", \"severity\": \"high\", \"evidence\": \"No support at toilet\", \"box\": [517, 726, 593, 999]}, {\"id\": \"BATH-07\", \"severity\": \"high\", \"evidence\": \"Loose bath mat or rug on bathroom floor\", \"box\": [399, 821, 529, 939]}, {\"id\": \"BATH-06\", \"severity\": \"high\", \"evidence\": \"Low toilet seat\", \"box\": [517, 726, 593, 999]}]}",
+ "hazards": [
+  {
+   "id": "BATH-02",
+   "severity": "high",
+   "evidence": "No support at toilet",
+   "box": [
+    517,
+    726,
+    593,
+    999
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "high",
+   "evidence": "Loose bath mat or rug on bathroom floor",
+   "box": [
+    399,
+    821,
+    529,
+    939
+   ]
+  },
+  {
+   "id": "BATH-06",
+   "severity": "high",
+   "evidence": "Low toilet seat",
+   "box": [
+    517,
+    726,
+    593,
+    999
+   ]
+  }
+ ]
+}

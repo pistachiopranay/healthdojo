@@ -1,0 +1,39 @@
+{
+ "id": "dem-L2-003",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-B01\", \"severity\": \"medium\", \"evidence\": \"Toiletries on the sink counter are not visible, but there may be a razor or other sharp objects.\", \"box\": [690, 640, 1000, 930]},\n    {\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"The white toilet seat is on a white toilet, and the floor is also light-colored, creating a low-contrast environment.\", \"box\": [490, 590, 680, 980]},\n    {\"id\": \"DEM-B04\", \"severity\": \"high\", \"evidence\": \"A hair dryer is plugged into the wall near the sink.\", \"box\": [860, 440, 920, 640]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-B01",
+   "severity": "medium",
+   "evidence": "Toiletries on the sink counter are not visible, but there may be a razor or other sharp objects.",
+   "box": [
+    690,
+    640,
+    1000,
+    930
+   ]
+  },
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "The white toilet seat is on a white toilet, and the floor is also light-colored, creating a low-contrast environment.",
+   "box": [
+    490,
+    590,
+    680,
+    980
+   ]
+  },
+  {
+   "id": "DEM-B04",
+   "severity": "high",
+   "evidence": "A hair dryer is plugged into the wall near the sink.",
+   "box": [
+    860,
+    440,
+    920,
+    640
+   ]
+  }
+ ]
+}

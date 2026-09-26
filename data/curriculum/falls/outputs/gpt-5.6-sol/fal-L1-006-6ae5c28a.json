@@ -1,0 +1,39 @@
+{
+ "id": "fal-L1-006",
+ "raw": "{\"hazards\":[{\"id\":\"KIT-01\",\"severity\":\"medium\",\"evidence\":\"Dishware and kitchen items are stored on high open shelves, requiring overhead reaching.\",\"box\":[0,0,340,300]},{\"id\":\"KIT-02\",\"severity\":\"high\",\"evidence\":\"Cookware and pantry goods are stored directly on the floor, requiring deep bending to retrieve.\",\"box\":[105,550,410,945]},{\"id\":\"LIV-03\",\"severity\":\"high\",\"evidence\":\"Numerous pots, pans, cans, and packages clutter and narrow the walking path needed for a walker.\",\"box\":[105,550,410,945]}]}",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Dishware and kitchen items are stored on high open shelves, requiring overhead reaching.",
+   "box": [
+    0,
+    0,
+    340,
+    300
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "high",
+   "evidence": "Cookware and pantry goods are stored directly on the floor, requiring deep bending to retrieve.",
+   "box": [
+    105,
+    550,
+    410,
+    945
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Numerous pots, pans, cans, and packages clutter and narrow the walking path needed for a walker.",
+   "box": [
+    105,
+    550,
+    410,
+    945
+   ]
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "id": "fal-L2-014",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Only one handrail is present on the stairs; the other side has no handrail.\",\n      \"box\": [350, 100, 600, 800]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Poor lighting at the top of the stairs may create a visibility issue.\",\n      \"box\": [400, 50, 600, 200]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There appears to be a loose rug or mat near the couch area.\",\n      \"box\": [50, 500, 300, 700]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The lighting in the living area could be improved to reduce glare and shadows.\",\n      \"box\": [0, 0, 300, 400]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Only one handrail is present on the stairs; the other side has no handrail.",
+   "box": [
+    350,
+    100,
+    600,
+    800
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Poor lighting at the top of the stairs may create a visibility issue.",
+   "box": [
+    400,
+    50,
+    600,
+    200
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "There appears to be a loose rug or mat near the couch area.",
+   "box": [
+    50,
+    500,
+    300,
+    700
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The lighting in the living area could be improved to reduce glare and shadows.",
+   "box": [
+    0,
+    0,
+    300,
+    400
+   ]
+  }
+ ]
+}

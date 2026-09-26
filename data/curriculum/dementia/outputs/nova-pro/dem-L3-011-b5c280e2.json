@@ -1,0 +1,39 @@
+{
+ "id": "dem-L3-011",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"stove burner left on\", \"box\": [120, 320, 269, 520]}, {\"id\": \"DEM-K03\", \"severity\": \"medium\", \"evidence\": \"cleaning chemicals out and unlocked\", \"box\": [315, 245, 335, 295]}, {\"id\": \"DEM-K04\", \"severity\": \"medium\", \"evidence\": \"medication bottles left out\", \"box\": [505, 250, 595, 315]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "stove burner left on",
+   "box": [
+    120,
+    320,
+    269,
+    520
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "cleaning chemicals out and unlocked",
+   "box": [
+    315,
+    245,
+    335,
+    295
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "medication bottles left out",
+   "box": [
+    505,
+    250,
+    595,
+    315
+   ]
+  }
+ ]
+}

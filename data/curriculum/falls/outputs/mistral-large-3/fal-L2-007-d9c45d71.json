@@ -1,0 +1,39 @@
+{
+ "id": "fal-L2-007",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"Insufficient walker clearance around the bed, particularly on the side closest to the nightstand and the foot of the bed.\",\n      \"box\": [0, 300, 1000, 700]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Loose or potentially slippery rug on the floor near the doorway.\",\n      \"box\": [750, 600, 950, 750]\n    },\n    {\n      \"id\": \"BED-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Path from bed to bathroom may be dark or poorly lit during nighttime.\",\n      \"box\": [700, 100, 1000, 500]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BED-05",
+   "severity": "high",
+   "evidence": "Insufficient walker clearance around the bed, particularly on the side closest to the nightstand and the foot of the bed.",
+   "box": [
+    0,
+    300,
+    1000,
+    700
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Loose or potentially slippery rug on the floor near the doorway.",
+   "box": [
+    750,
+    600,
+    950,
+    750
+   ]
+  },
+  {
+   "id": "BED-03",
+   "severity": "medium",
+   "evidence": "Path from bed to bathroom may be dark or poorly lit during nighttime.",
+   "box": [
+    700,
+    100,
+    1000,
+    500
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "dem-L4-004",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove with freely usable knobs and potential for burners to be left on\",\n      \"box\": [350, 350, 650, 500]\n    },\n    {\n      \"id\": \"DEM-K04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Medication bottles visible on the countertop near the back wall\",\n      \"box\": [600, 200, 800, 300]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"Clutter on the countertop including various items that could obstruct walkways if on the floor\",\n      \"box\": [200, 200, 900, 350]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove with freely usable knobs and potential for burners to be left on",
+   "box": [
+    350,
+    350,
+    650,
+    500
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Medication bottles visible on the countertop near the back wall",
+   "box": [
+    600,
+    200,
+    800,
+    300
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "Clutter on the countertop including various items that could obstruct walkways if on the floor",
+   "box": [
+    200,
+    200,
+    900,
+    350
+   ]
+  }
+ ]
+}

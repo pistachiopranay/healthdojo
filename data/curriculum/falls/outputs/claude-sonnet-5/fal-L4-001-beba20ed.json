@@ -1,0 +1,83 @@
+{
+ "id": "fal-L4-001",
+ "raw": "{\"hazards\": [{\"id\": \"KIT-01\", \"severity\": \"medium\", \"evidence\": \"Dishes and glassware stored on high open shelving above counter, requiring reaching/stretching\", \"box\": [0, 0, 300, 250]}, {\"id\": \"KIT-02\", \"severity\": \"medium\", \"evidence\": \"Baskets and items stored in low open cabinets under counter, requiring bending\", \"box\": [0, 480, 330, 700]}, {\"id\": \"KIT-03\", \"severity\": \"high\", \"evidence\": \"White step stool/ladder positioned near counter, unstable aid for reaching\", \"box\": [415, 290, 500, 460]}, {\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"Long white cord/hose snaking across the kitchen floor from wall to center of room, clear tripping hazard\", \"box\": [640, 470, 970, 730]}, {\"id\": \"LIV-07\", \"severity\": \"high\", \"evidence\": \"Pet bed, food/water bowls, and multiple chew toys scattered across the walking path in the middle of the kitchen floor\", \"box\": [420, 540, 870, 780]}, {\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"Paper bag, bucket, and step ladder cluttering the floor path near the window area\", \"box\": [390, 400, 560, 570]}, {\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"Dim, low-light interior with strong shadows across the walking path, reducing visibility of floor hazards\", \"box\": [0, 0, 1280, 852]}]}",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Dishes and glassware stored on high open shelving above counter, requiring reaching/stretching",
+   "box": [
+    0,
+    0,
+    300,
+    250
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Baskets and items stored in low open cabinets under counter, requiring bending",
+   "box": [
+    0,
+    480,
+    330,
+    700
+   ]
+  },
+  {
+   "id": "KIT-03",
+   "severity": "high",
+   "evidence": "White step stool/ladder positioned near counter, unstable aid for reaching",
+   "box": [
+    415,
+    290,
+    500,
+    460
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Long white cord/hose snaking across the kitchen floor from wall to center of room, clear tripping hazard",
+   "box": [
+    640,
+    470,
+    970,
+    730
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "Pet bed, food/water bowls, and multiple chew toys scattered across the walking path in the middle of the kitchen floor",
+   "box": [
+    420,
+    540,
+    870,
+    780
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Paper bag, bucket, and step ladder cluttering the floor path near the window area",
+   "box": [
+    390,
+    400,
+    560,
+    570
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Dim, low-light interior with strong shadows across the walking path, reducing visibility of floor hazards",
+   "box": [
+    0,
+    0,
+    1280,
+    852
+   ]
+  }
+ ]
+}

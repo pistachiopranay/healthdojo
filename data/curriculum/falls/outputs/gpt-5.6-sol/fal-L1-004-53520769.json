@@ -1,0 +1,17 @@
+{
+ "id": "fal-L1-004",
+ "raw": "{\"hazards\":[{\"id\":\"STAIR-03\",\"severity\":\"high\",\"evidence\":\"Coiled extension cords, a power strip, and loose cable are lying across multiple stair treads, creating trip hazards.\",\"box\":[378,583,674,793]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Coiled extension cords, a power strip, and loose cable are lying across multiple stair treads, creating trip hazards.",
+   "box": [
+    378,
+    583,
+    674,
+    793
+   ]
+  }
+ ]
+}

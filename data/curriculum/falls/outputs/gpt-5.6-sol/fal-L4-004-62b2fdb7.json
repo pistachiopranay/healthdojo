@@ -1,0 +1,55 @@
+{
+ "id": "fal-L4-004",
+ "raw": "{\"hazards\":[{\"id\":\"LIV-01\",\"severity\":\"high\",\"evidence\":\"Large throw rug lies in the main walking area with a prominently curled-up corner that could catch a walker or foot.\",\"box\":[306,555,752,835]},{\"id\":\"LIV-02\",\"severity\":\"high\",\"evidence\":\"A black electrical cord runs from the television cabinet across the floor toward the doorway/walking route.\",\"box\":[775,608,899,907]},{\"id\":\"LIV-03\",\"severity\":\"high\",\"evidence\":\"The central walker route is obstructed and narrowed by a footstool, pet bed, toys, and the curled rug.\",\"box\":[383,431,733,665]},{\"id\":\"LIV-05\",\"severity\":\"medium\",\"evidence\":\"The room is dimly lit, reducing visibility of floor hazards and obstacles.\"},{\"id\":\"LIV-07\",\"severity\":\"high\",\"evidence\":\"A pet bed and several pet toys are scattered underfoot in the central walking area.\",\"box\":[548,518,714,662]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Large throw rug lies in the main walking area with a prominently curled-up corner that could catch a walker or foot.",
+   "box": [
+    306,
+    555,
+    752,
+    835
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "A black electrical cord runs from the television cabinet across the floor toward the doorway/walking route.",
+   "box": [
+    775,
+    608,
+    899,
+    907
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "The central walker route is obstructed and narrowed by a footstool, pet bed, toys, and the curled rug.",
+   "box": [
+    383,
+    431,
+    733,
+    665
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "The room is dimly lit, reducing visibility of floor hazards and obstacles."
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "A pet bed and several pet toys are scattered underfoot in the central walking area.",
+   "box": [
+    548,
+    518,
+    714,
+    662
+   ]
+  }
+ ]
+}

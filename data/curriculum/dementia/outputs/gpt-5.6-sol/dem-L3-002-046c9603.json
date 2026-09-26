@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-002",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-E02\",\"severity\":\"high\",\"evidence\":\"The front door is left open, providing direct access outside and creating a wandering risk.\",\"box\":[328,0,399,376]},{\"id\":\"DEM-E03\",\"severity\":\"high\",\"evidence\":\"Boxes, stacks of papers, and several pairs of shoes are piled in the central walking path, creating a trip hazard.\",\"box\":[468,372,731,663]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "The front door is left open, providing direct access outside and creating a wandering risk.",
+   "box": [
+    328,
+    0,
+    399,
+    376
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "high",
+   "evidence": "Boxes, stacks of papers, and several pairs of shoes are piled in the central walking path, creating a trip hazard.",
+   "box": [
+    468,
+    372,
+    731,
+    663
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "fal-L4-011",
+ "raw": "{\"hazards\": [\n  {\"id\": \"STAIR-01\", \"severity\": \"high\", \"evidence\": \"Handrail is only on one side of the stairs\", \"box\": [650, 0, 880, 450]},\n  {\"id\": \"STAIR-03\", \"severity\": \"high\", \"evidence\": \"Shoe and towels are on the stairs\", \"box\": [300, 0, 800, 980]},\n  {\"id\": \"STAIR-04\", \"severity\": \"medium\", \"evidence\": \"Only one light is visible and it is not directly over the stairs\", \"box\": [650, 0, 880, 450]}\n]}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Handrail is only on one side of the stairs",
+   "box": [
+    650,
+    0,
+    880,
+    450
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Shoe and towels are on the stairs",
+   "box": [
+    300,
+    0,
+    800,
+    980
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Only one light is visible and it is not directly over the stairs",
+   "box": [
+    650,
+    0,
+    880,
+    450
+   ]
+  }
+ ]
+}

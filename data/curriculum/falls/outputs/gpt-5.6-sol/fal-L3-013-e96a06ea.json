@@ -1,0 +1,44 @@
+{
+ "id": "fal-L3-013",
+ "raw": "{\"hazards\":[{\"id\":\"LIV-01\",\"severity\":\"high\",\"evidence\":\"A large unsecured rug has exposed edges in the walking area and can catch walker legs or feet.\",\"box\":[10,738,579,952]},{\"id\":\"LIV-02\",\"severity\":\"high\",\"evidence\":\"A long cord is coiled and stretched across the rug and main floor walkway.\",\"box\":[289,716,737,998]},{\"id\":\"LIV-03\",\"severity\":\"medium\",\"evidence\":\"Shoes and folded linens are on the floor beside the doorway, narrowing the walker path.\",\"box\":[596,683,807,757]},{\"id\":\"LIV-05\",\"severity\":\"medium\",\"evidence\":\"Strong direct sunlight creates glare and sharply contrasting shadows across the floor and doorway.\"}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "A large unsecured rug has exposed edges in the walking area and can catch walker legs or feet.",
+   "box": [
+    10,
+    738,
+    579,
+    952
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "A long cord is coiled and stretched across the rug and main floor walkway.",
+   "box": [
+    289,
+    716,
+    737,
+    998
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Shoes and folded linens are on the floor beside the doorway, narrowing the walker path.",
+   "box": [
+    596,
+    683,
+    807,
+    757
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Strong direct sunlight creates glare and sharply contrasting shadows across the floor and doorway."
+  }
+ ]
+}

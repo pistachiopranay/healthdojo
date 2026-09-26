@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-007",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R02\", \"severity\": \"medium\", \"evidence\": \"Large bold black-and-white chevron high-contrast rug on the bedroom floor, which a person with dementia may misperceive as holes, steps, or a barrier, increasing fall/hesitation risk.\", \"box\": [132, 528, 643, 1000]}, {\"id\": \"DEM-R04\", \"severity\": \"high\", \"evidence\": \"Electric space heater is switched on (glowing orange) at the foot/side of the bed, directly beside draped bedding/comforter that hangs down to it, creating a fire and burn risk.\", \"box\": [618, 679, 731, 973]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "Large bold black-and-white chevron high-contrast rug on the bedroom floor, which a person with dementia may misperceive as holes, steps, or a barrier, increasing fall/hesitation risk.",
+   "box": [
+    132,
+    528,
+    643,
+    1000
+   ]
+  },
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "Electric space heater is switched on (glowing orange) at the foot/side of the bed, directly beside draped bedding/comforter that hangs down to it, creating a fire and burn risk.",
+   "box": [
+    618,
+    679,
+    731,
+    973
+   ]
+  }
+ ]
+}

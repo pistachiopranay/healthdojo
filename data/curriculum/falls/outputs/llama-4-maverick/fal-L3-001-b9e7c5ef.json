@@ -1,0 +1,72 @@
+{
+ "id": "fal-L3-001",
+ "raw": "{\"hazards\": [\n  {\"id\": \"LIV-04\", \"severity\": \"medium\", \"evidence\": \"A dark-colored couch is visible, which may be low or soft seating.\", \"box\": [0, 640, 176, 1000]},\n  {\"id\": \"STAIR-05\", \"severity\": \"high\", \"evidence\": \"The stair carpeting appears to be loose or not tightly secured.\", \"box\": [273, 228, 670, 987]},\n  {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"A blanket is thrown over the couch, potentially creating a tripping hazard if it falls on the floor.\", \"box\": [0, 640, 176, 1000]},\n  {\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"The lighting in the hallway and stairs is adequate, but the living room lamp is the only visible light source.\", \"box\": [0, 0, 1000, 1000]},\n  {\"id\": \"LIV-06\", \"severity\": \"medium\", \"evidence\": \"There is a slight change in flooring between the hallway and the kitchen.\", \"box\": [810, 777, 1000, 1000]},\n  {\"id\": \"KIT-01\", \"severity\": \"low\", \"evidence\": \"Cabinets are visible in the kitchen, potentially storing items out of easy reach.\", \"box\": [810, 377, 1000, 1000]}\n]}",
+ "hazards": [
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "A dark-colored couch is visible, which may be low or soft seating.",
+   "box": [
+    0,
+    640,
+    176,
+    1000
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "The stair carpeting appears to be loose or not tightly secured.",
+   "box": [
+    273,
+    228,
+    670,
+    987
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A blanket is thrown over the couch, potentially creating a tripping hazard if it falls on the floor.",
+   "box": [
+    0,
+    640,
+    176,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The lighting in the hallway and stairs is adequate, but the living room lamp is the only visible light source.",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "There is a slight change in flooring between the hallway and the kitchen.",
+   "box": [
+    810,
+    777,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "KIT-01",
+   "severity": "low",
+   "evidence": "Cabinets are visible in the kitchen, potentially storing items out of easy reach.",
+   "box": [
+    810,
+    377,
+    1000,
+    1000
+   ]
+  }
+ ]
+}

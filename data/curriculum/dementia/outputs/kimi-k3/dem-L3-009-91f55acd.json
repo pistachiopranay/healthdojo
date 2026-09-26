@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-009",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E01\", \"severity\": \"high\", \"evidence\": \"Keys with a black car key fob/remote hanging on a wall hook in the entry near the front door.\", \"box\": [668, 213, 711, 353]}, {\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"Cardboard boxes stacked with newspapers/magazines and multiple shoes scattered on the floor in the hallway walkway in front of the door.\", \"box\": [315, 537, 627, 700]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "Keys with a black car key fob/remote hanging on a wall hook in the entry near the front door.",
+   "box": [
+    668,
+    213,
+    711,
+    353
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Cardboard boxes stacked with newspapers/magazines and multiple shoes scattered on the floor in the hallway walkway in front of the door.",
+   "box": [
+    315,
+    537,
+    627,
+    700
+   ]
+  }
+ ]
+}

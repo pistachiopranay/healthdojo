@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-010",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove burner is shown with a visible blue flame, and the knobs are freely accessible.\",\n      \"box\": [40, 238, 271, 528]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cleaning chemicals are left out on the counter and are easily accessible.\",\n      \"box\": [510, 238, 627, 306]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner is shown with a visible blue flame, and the knobs are freely accessible.",
+   "box": [
+    40,
+    238,
+    271,
+    528
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning chemicals are left out on the counter and are easily accessible.",
+   "box": [
+    510,
+    238,
+    627,
+    306
+   ]
+  }
+ ]
+}

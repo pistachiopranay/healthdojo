@@ -1,0 +1,39 @@
+{
+ "id": "dem-L3-005",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-B02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"White toilet seat blends with white toilet and light-colored floor, reducing visual contrast and increasing risk of misperception or misstep for someone with dementia.\",\n      \"box\": [515, 666, 717, 830]\n    },\n    {\n      \"id\": \"DEM-B03\",\n      \"severity\": \"low\",\n      \"evidence\": \"Dark bath mat on light tile floor creates high contrast that may be misperceived as a hole or step, potentially causing hesitation or tripping.\",\n      \"box\": [284, 770, 525, 999]\n    },\n    {\n      \"id\": \"DEM-B04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Plugged-in hair dryer left on the sink counter poses a burn or electrocution risk if used unsupervised or near water.\",\n      \"box\": [784, 620, 929, 720]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White toilet seat blends with white toilet and light-colored floor, reducing visual contrast and increasing risk of misperception or misstep for someone with dementia.",
+   "box": [
+    515,
+    666,
+    717,
+    830
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "low",
+   "evidence": "Dark bath mat on light tile floor creates high contrast that may be misperceived as a hole or step, potentially causing hesitation or tripping.",
+   "box": [
+    284,
+    770,
+    525,
+    999
+   ]
+  },
+  {
+   "id": "DEM-B04",
+   "severity": "medium",
+   "evidence": "Plugged-in hair dryer left on the sink counter poses a burn or electrocution risk if used unsupervised or near water.",
+   "box": [
+    784,
+    620,
+    929,
+    720
+   ]
+  }
+ ]
+}

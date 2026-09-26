@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-006",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"Stove burner left on, knobs freely usable\", \"box\": [40, 243, 232, 368]}, {\"id\": \"DEM-K04\", \"severity\": \"medium\", \"evidence\": \"Medication bottles left out\", \"box\": [539, 201, 631, 314]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner left on, knobs freely usable",
+   "box": [
+    40,
+    243,
+    232,
+    368
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Medication bottles left out",
+   "box": [
+    539,
+    201,
+    631,
+    314
+   ]
+  }
+ ]
+}

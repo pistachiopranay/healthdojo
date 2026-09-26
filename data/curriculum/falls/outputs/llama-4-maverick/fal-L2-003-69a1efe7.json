@@ -1,0 +1,28 @@
+{
+ "id": "fal-L2-003",
+ "raw": "{\"hazards\": [\n  {\"id\": \"ENT-01\", \"severity\": \"high\", \"evidence\": \"The stairs leading to the front door have a handrail on one side only\", \"box\": [250, 350, 750, 750]},\n  {\"id\": \"ENT-04\", \"severity\": \"medium\", \"evidence\": \"The exterior lighting is dim, making it difficult to see the stairs and path\", \"box\": [0, 0, 1000, 1000]}\n]}",
+ "hazards": [
+  {
+   "id": "ENT-01",
+   "severity": "high",
+   "evidence": "The stairs leading to the front door have a handrail on one side only",
+   "box": [
+    250,
+    350,
+    750,
+    750
+   ]
+  },
+  {
+   "id": "ENT-04",
+   "severity": "medium",
+   "evidence": "The exterior lighting is dim, making it difficult to see the stairs and path",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  }
+ ]
+}

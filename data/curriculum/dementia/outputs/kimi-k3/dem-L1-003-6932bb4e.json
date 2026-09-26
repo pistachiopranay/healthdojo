@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-003",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K04\", \"severity\": \"high\", \"evidence\": \"Several amber prescription medication bottles with white caps and a multicolored day-of-week pill organizer are sitting out on the kitchen counter next to the coffee maker, within easy reach.\", \"box\": [686, 319, 816, 385]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Several amber prescription medication bottles with white caps and a multicolored day-of-week pill organizer are sitting out on the kitchen counter next to the coffee maker, within easy reach.",
+   "box": [
+    686,
+    319,
+    816,
+    385
+   ]
+  }
+ ]
+}

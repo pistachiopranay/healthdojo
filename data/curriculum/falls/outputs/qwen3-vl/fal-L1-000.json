@@ -1,0 +1,39 @@
+{
+ "id": "fal-L1-000",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"BATH-07\",\n      \"severity\": \"low\",\n      \"evidence\": \"A white bath mat is hanging over the edge of the tub and touching the floor, which could become loose or slip when stepped on.\",\n      \"box\": [145, 0, 255, 868]\n    },\n    {\n      \"id\": \"BATH-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The tub has a high step-over, and although a shower chair is present, it is not positioned as a transfer aid at the tub edge; the dog is occupying the tub, indicating the chair is not being used for transfer.\",\n      \"box\": [145, 490, 679, 890]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A small dog is lying inside the bathtub, which is an unexpected obstacle and could cause a fall if the person steps into the tub without noticing.\",\n      \"box\": [245, 609, 408, 683]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "BATH-07",
+   "severity": "low",
+   "evidence": "A white bath mat is hanging over the edge of the tub and touching the floor, which could become loose or slip when stepped on.",
+   "box": [
+    145,
+    0,
+    255,
+    868
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "medium",
+   "evidence": "The tub has a high step-over, and although a shower chair is present, it is not positioned as a transfer aid at the tub edge; the dog is occupying the tub, indicating the chair is not being used for transfer.",
+   "box": [
+    145,
+    490,
+    679,
+    890
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "A small dog is lying inside the bathtub, which is an unexpected obstacle and could cause a fall if the person steps into the tub without noticing.",
+   "box": [
+    245,
+    609,
+    408,
+    683
+   ]
+  }
+ ]
+}

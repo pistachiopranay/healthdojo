@@ -1,0 +1,28 @@
+{
+ "id": "dem-L2-005",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Large mirror visible on the wall facing the bed, which may cause confusion or misperception for a person with dementia.\",\n      \"box\": [700, 100, 900, 300]\n    },\n    {\n      \"id\": \"DEM-R02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Bold high-contrast patterned bedding and pillows, which might be confusing or overstimulating.\",\n      \"box\": [300, 300, 900, 600]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "Large mirror visible on the wall facing the bed, which may cause confusion or misperception for a person with dementia.",
+   "box": [
+    700,
+    100,
+    900,
+    300
+   ]
+  },
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "Bold high-contrast patterned bedding and pillows, which might be confusing or overstimulating.",
+   "box": [
+    300,
+    300,
+    900,
+    600
+   ]
+  }
+ ]
+}

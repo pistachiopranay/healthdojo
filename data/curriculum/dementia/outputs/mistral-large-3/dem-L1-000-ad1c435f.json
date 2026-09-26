@@ -1,0 +1,28 @@
+{
+ "id": "dem-L1-000",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove knobs are freely accessible and there is no evidence of safety covers or automatic shut-off mechanisms.\",\n      \"box\": [350, 350, 500, 400]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Potential clutter on the countertop near the sink and dishes on open shelves could pose a risk if they obstruct walkways or are misperceived.\",\n      \"box\": [600, 200, 900, 500]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove knobs are freely accessible and there is no evidence of safety covers or automatic shut-off mechanisms.",
+   "box": [
+    350,
+    350,
+    500,
+    400
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Potential clutter on the countertop near the sink and dishes on open shelves could pose a risk if they obstruct walkways or are misperceived.",
+   "box": [
+    600,
+    200,
+    900,
+    500
+   ]
+  }
+ ]
+}

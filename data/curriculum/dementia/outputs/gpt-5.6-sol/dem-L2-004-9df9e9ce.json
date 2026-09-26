@@ -1,0 +1,28 @@
+{
+ "id": "dem-L2-004",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-K02\",\"severity\":\"high\",\"evidence\":\"Two large knives are standing exposed on the counter beside the coffee maker.\",\"box\":[181,140,244,284]},{\"id\":\"DEM-K03\",\"severity\":\"high\",\"evidence\":\"Several cleaning-product bottles are openly accessible on a shelf in the adjoining room.\",\"box\":[762,205,827,269]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Two large knives are standing exposed on the counter beside the coffee maker.",
+   "box": [
+    181,
+    140,
+    244,
+    284
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "Several cleaning-product bottles are openly accessible on a shelf in the adjoining room.",
+   "box": [
+    762,
+    205,
+    827,
+    269
+   ]
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "id": "fal-L3-008",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"A loose, partially rolled-up area rug is lying on the carpeted floor in the middle of the room, creating a tripping hazard for someone using a walker.\",\n      \"box\": [368, 562, 667, 755]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"A long yellow extension cord snakes across the floor from the TV console area toward the center of the room, crossing the main walking path.\",\n      \"box\": [180, 520, 718, 999]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The arrangement of furniture (sofa, armchairs, side tables, TV console) creates a somewhat cluttered and narrowed walking path, especially around the rug and cord area, which could impede safe walker navigation.\",\n      \"box\": [0, 0, 1000, 999]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"While there is ambient lighting, the room has multiple light sources (lamps, ceiling lights) that appear to create some glare on surfaces and potentially uneven illumination, which could affect depth perception for someone recovering from surgery.\",\n      \"box\": [0, 0, 1000, 999]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "A loose, partially rolled-up area rug is lying on the carpeted floor in the middle of the room, creating a tripping hazard for someone using a walker.",
+   "box": [
+    368,
+    562,
+    667,
+    755
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "A long yellow extension cord snakes across the floor from the TV console area toward the center of the room, crossing the main walking path.",
+   "box": [
+    180,
+    520,
+    718,
+    999
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The arrangement of furniture (sofa, armchairs, side tables, TV console) creates a somewhat cluttered and narrowed walking path, especially around the rug and cord area, which could impede safe walker navigation.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "While there is ambient lighting, the room has multiple light sources (lamps, ceiling lights) that appear to create some glare on surfaces and potentially uneven illumination, which could affect depth perception for someone recovering from surgery.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  }
+ ]
+}

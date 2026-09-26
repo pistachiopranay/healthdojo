@@ -1,0 +1,38 @@
+{
+ "id": "fal-L1-005",
+ "raw": "{\"hazards\": [{\"id\": \"BATH-05\", \"severity\": \"high\", \"evidence\": \"High tub step-over without transfer aid\", \"box\": [203, 623, 692, 1000]}, {\"id\": \"BATH-06\", \"severity\": \"high\", \"box\": [649, 523, 978, 1000]}, {\"id\": \"BATH-07\", \"severity\": \"high\", \"evidence\": \"Loose bath mat or rug on bathroom floor\", \"box\": [203, 748, 425, 895]}]}",
+ "hazards": [
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "High tub step-over without transfer aid",
+   "box": [
+    203,
+    623,
+    692,
+    1000
+   ]
+  },
+  {
+   "id": "BATH-06",
+   "severity": "high",
+   "box": [
+    649,
+    523,
+    978,
+    1000
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "high",
+   "evidence": "Loose bath mat or rug on bathroom floor",
+   "box": [
+    203,
+    748,
+    425,
+    895
+   ]
+  }
+ ]
+}

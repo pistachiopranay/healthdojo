@@ -1,0 +1,39 @@
+{
+ "id": "dem-L1-000",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove with visible knobs and no knob covers; burner area is accessible and could be turned on accidentally.\",\n      \"box\": [143, 326, 257, 747]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cleaning chemicals visible on the counter near the sink, within easy reach and not locked away.\",\n      \"box\": [507, 215, 532, 250]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"Towels hanging on the oven handle and items on the counter may create minor clutter in the walkway.\",\n      \"box\": [143, 326, 257, 747]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove with visible knobs and no knob covers; burner area is accessible and could be turned on accidentally.",
+   "box": [
+    143,
+    326,
+    257,
+    747
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning chemicals visible on the counter near the sink, within easy reach and not locked away.",
+   "box": [
+    507,
+    215,
+    532,
+    250
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "Towels hanging on the oven handle and items on the counter may create minor clutter in the walkway.",
+   "box": [
+    143,
+    326,
+    257,
+    747
+   ]
+  }
+ ]
+}

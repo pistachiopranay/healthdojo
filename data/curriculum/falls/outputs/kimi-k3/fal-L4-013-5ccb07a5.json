@@ -1,0 +1,66 @@
+{
+ "id": "fal-L4-013",
+ "raw": "{\"hazards\": [{\"id\": \"KIT-01\", \"severity\": \"medium\", \"evidence\": \"Everyday dishware (stacked plates/bowls, glasses) is kept in an upper glass-front wall cabinet, requiring overhead reaching while using a walker.\", \"box\": [742, 220, 861, 388]}, {\"id\": \"KIT-04\", \"severity\": \"medium\", \"evidence\": \"Hard kitchen floor in front of the sink/stove is smooth and highly reflective with wet-looking specular patches, indicating a slick surface for a walker.\", \"box\": [400, 560, 1136, 706]}, {\"id\": \"LIV-03\", \"severity\": \"high\", \"evidence\": \"A freestanding wooden chair sits in the center of the kitchen walkway and the dining set crowds the left side, narrowing/obstructing the walker path between the counter and stove.\", \"box\": [557, 414, 725, 662]}, {\"id\": \"LIV-04\", \"severity\": \"medium\", \"evidence\": \"The available chair is an armless wooden side chair (no armrests), making sit-to-stand difficult after hip/knee replacement; dining chairs on the left also appear armless.\", \"box\": [557, 414, 725, 662]}, {\"id\": \"LIV-05\", \"severity\": \"medium\", \"evidence\": \"Room is dim overall (single small pendant, dark foreground/left side) with glare reflected off the glossy floor, reducing visibility of obstacles and floor edges.\"}, {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"A round pet bed and a pet bowl/mat sit on the floor in the kitchen walkway, creating underfoot tripping hazards for someone using a walker.\", \"box\": [336, 599, 525, 671]}]}",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Everyday dishware (stacked plates/bowls, glasses) is kept in an upper glass-front wall cabinet, requiring overhead reaching while using a walker.",
+   "box": [
+    742,
+    220,
+    861,
+    388
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "medium",
+   "evidence": "Hard kitchen floor in front of the sink/stove is smooth and highly reflective with wet-looking specular patches, indicating a slick surface for a walker.",
+   "box": [
+    400,
+    560,
+    1136,
+    706
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "A freestanding wooden chair sits in the center of the kitchen walkway and the dining set crowds the left side, narrowing/obstructing the walker path between the counter and stove.",
+   "box": [
+    557,
+    414,
+    725,
+    662
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "The available chair is an armless wooden side chair (no armrests), making sit-to-stand difficult after hip/knee replacement; dining chairs on the left also appear armless.",
+   "box": [
+    557,
+    414,
+    725,
+    662
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Room is dim overall (single small pendant, dark foreground/left side) with glare reflected off the glossy floor, reducing visibility of obstacles and floor edges."
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "A round pet bed and a pet bowl/mat sit on the floor in the kitchen walkway, creating underfoot tripping hazards for someone using a walker.",
+   "box": [
+    336,
+    599,
+    525,
+    671
+   ]
+  }
+ ]
+}

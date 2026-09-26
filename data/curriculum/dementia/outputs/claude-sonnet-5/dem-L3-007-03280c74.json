@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-007",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R02\", \"severity\": \"medium\", \"evidence\": \"High-contrast black and white chevron patterned rug on the floor, which can be visually confusing or perceived as a hazard/hole by someone with dementia\", \"box\": [148, 452, 780, 850]}, {\"id\": \"DEM-R04\", \"severity\": \"high\", \"evidence\": \"Electric space heater with visible glowing heating elements placed directly next to the bed and bedding, creating fire risk\", \"box\": [820, 578, 951, 810]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "High-contrast black and white chevron patterned rug on the floor, which can be visually confusing or perceived as a hazard/hole by someone with dementia",
+   "box": [
+    148,
+    452,
+    780,
+    850
+   ]
+  },
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "Electric space heater with visible glowing heating elements placed directly next to the bed and bedding, creating fire risk",
+   "box": [
+    820,
+    578,
+    951,
+    810
+   ]
+  }
+ ]
+}

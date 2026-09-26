@@ -1,0 +1,28 @@
+{
+ "id": "dem-L2-007",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K04\", \"severity\": \"medium\", \"evidence\": \"Orange prescription medication bottle left out on kitchen counter near coffee makers\", \"box\": [263, 216, 300, 250]}, {\"id\": \"DEM-K03\", \"severity\": \"medium\", \"evidence\": \"Cleaning/soap bottles left out and accessible on counter near sink\", \"box\": [400, 195, 430, 240]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Orange prescription medication bottle left out on kitchen counter near coffee makers",
+   "box": [
+    263,
+    216,
+    300,
+    250
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning/soap bottles left out and accessible on counter near sink",
+   "box": [
+    400,
+    195,
+    430,
+    240
+   ]
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "dem-L2-005",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R01\", \"severity\": \"medium\", \"evidence\": \"A large mirror mounted on the door reflects the bed directly, which could cause confusion or fear in a person with dementia.\", \"box\": [136, 0, 305, 400]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "A large mirror mounted on the door reflects the bed directly, which could cause confusion or fear in a person with dementia.",
+   "box": [
+    136,
+    0,
+    305,
+    400
+   ]
+  }
+ ]
+}

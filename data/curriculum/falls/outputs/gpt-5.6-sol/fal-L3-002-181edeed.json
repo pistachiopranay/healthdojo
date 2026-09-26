@@ -1,0 +1,28 @@
+{
+ "id": "fal-L3-002",
+ "raw": "{\"hazards\":[{\"id\":\"STAIR-03\",\"severity\":\"high\",\"evidence\":\"A cord runs diagonally across multiple stair treads, creating a trip and walker-entanglement hazard.\",\"box\":[308,375,754,938]},{\"id\":\"STAIR-05\",\"severity\":\"high\",\"evidence\":\"The stair carpet is extensively torn, frayed, and loose across several steps, leaving unsafe and poorly defined footing.\",\"box\":[306,407,790,785]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "A cord runs diagonally across multiple stair treads, creating a trip and walker-entanglement hazard.",
+   "box": [
+    308,
+    375,
+    754,
+    938
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "The stair carpet is extensively torn, frayed, and loose across several steps, leaving unsafe and poorly defined footing.",
+   "box": [
+    306,
+    407,
+    790,
+    785
+   ]
+  }
+ ]
+}

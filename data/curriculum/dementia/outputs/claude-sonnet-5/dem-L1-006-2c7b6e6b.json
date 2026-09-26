@@ -1,0 +1,28 @@
+{
+ "id": "dem-L1-006",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"White raised toilet seat attachment on white toilet bowl, creating low visual contrast that could make it hard for someone with dementia to perceive the seat edge\", \"box\": [657, 470, 918, 730]}, {\"id\": \"DEM-B03\", \"severity\": \"low\", \"evidence\": \"Dark/black bath mat placed on light-colored tile floor, creating a high-contrast object on the floor that could be misperceived as a hole or step\", \"box\": [298, 728, 693, 852]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White raised toilet seat attachment on white toilet bowl, creating low visual contrast that could make it hard for someone with dementia to perceive the seat edge",
+   "box": [
+    657,
+    470,
+    918,
+    730
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "low",
+   "evidence": "Dark/black bath mat placed on light-colored tile floor, creating a high-contrast object on the floor that could be misperceived as a hole or step",
+   "box": [
+    298,
+    728,
+    693,
+    852
+   ]
+  }
+ ]
+}

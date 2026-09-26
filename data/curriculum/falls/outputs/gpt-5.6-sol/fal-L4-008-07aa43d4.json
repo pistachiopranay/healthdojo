@@ -1,0 +1,44 @@
+{
+ "id": "fal-L4-008",
+ "raw": "{\"hazards\":[{\"id\":\"LIV-01\",\"severity\":\"high\",\"evidence\":\"Loose throw rug lies across the main walking area and can catch a walker or foot.\",\"box\":[226,819,669,986]},{\"id\":\"LIV-02\",\"severity\":\"high\",\"evidence\":\"Electrical cord runs loosely across the floor and into the walking path.\",\"box\":[30,868,302,999]},{\"id\":\"LIV-03\",\"severity\":\"medium\",\"evidence\":\"Shoes and a stool obstruct and narrow the available walker path.\",\"box\":[55,586,755,903]},{\"id\":\"LIV-05\",\"severity\":\"medium\",\"evidence\":\"The room and walking surface are dimly illuminated, with only a small lamp providing light.\"}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose throw rug lies across the main walking area and can catch a walker or foot.",
+   "box": [
+    226,
+    819,
+    669,
+    986
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Electrical cord runs loosely across the floor and into the walking path.",
+   "box": [
+    30,
+    868,
+    302,
+    999
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Shoes and a stool obstruct and narrow the available walker path.",
+   "box": [
+    55,
+    586,
+    755,
+    903
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "The room and walking surface are dimly illuminated, with only a small lamp providing light."
+  }
+ ]
+}

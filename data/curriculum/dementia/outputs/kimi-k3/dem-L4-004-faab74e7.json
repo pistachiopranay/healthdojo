@@ -1,0 +1,39 @@
+{
+ "id": "dem-L4-004",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-K01\",\"severity\":\"high\",\"evidence\":\"Gas burner on the white range appears lit (blue flame on the rear-right burner) and the control knobs on the front of the stove are exposed/freely usable.\",\"box\":[469,318,615,576]},{\"id\":\"DEM-K04\",\"severity\":\"high\",\"evidence\":\"A colorful multi-compartment pill organizer and several prescription-style bottles are lined up on the countertop within easy reach.\",\"box\":[502,240,648,315]},{\"id\":\"DEM-K03\",\"severity\":\"medium\",\"evidence\":\"Bottles consistent with cleaning/dish chemicals (handled white jug and a yellow bottle by the faucet) are sitting out unlocked on the counter next to the sink.\",\"box\":[263,232,333,313]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Gas burner on the white range appears lit (blue flame on the rear-right burner) and the control knobs on the front of the stove are exposed/freely usable.",
+   "box": [
+    469,
+    318,
+    615,
+    576
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "A colorful multi-compartment pill organizer and several prescription-style bottles are lined up on the countertop within easy reach.",
+   "box": [
+    502,
+    240,
+    648,
+    315
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Bottles consistent with cleaning/dish chemicals (handled white jug and a yellow bottle by the faucet) are sitting out unlocked on the counter next to the sink.",
+   "box": [
+    263,
+    232,
+    333,
+    313
+   ]
+  }
+ ]
+}

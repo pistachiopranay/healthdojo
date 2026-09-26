@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-002",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E02\", \"severity\": \"high\", \"evidence\": \"The front entry door and the glass/storm door are open, giving direct unsupervised access to the outside porch/deck (wandering/elopement risk).\", \"box\": [326, 0, 448, 413]}, {\"id\": \"DEM-E03\", \"severity\": \"high\", \"evidence\": \"Piles of newspapers/magazines, cardboard boxes, and several pairs of shoes/boots are stacked in the central walkway between the entry and seating areas, creating a trip hazard.\", \"box\": [464, 377, 729, 669]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "The front entry door and the glass/storm door are open, giving direct unsupervised access to the outside porch/deck (wandering/elopement risk).",
+   "box": [
+    326,
+    0,
+    448,
+    413
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "high",
+   "evidence": "Piles of newspapers/magazines, cardboard boxes, and several pairs of shoes/boots are stacked in the central walkway between the entry and seating areas, creating a trip hazard.",
+   "box": [
+    464,
+    377,
+    729,
+    669
+   ]
+  }
+ ]
+}

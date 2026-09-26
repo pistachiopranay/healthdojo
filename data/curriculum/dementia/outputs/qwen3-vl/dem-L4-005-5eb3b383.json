@@ -1,0 +1,39 @@
+{
+ "id": "dem-L4-005",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove burner is visibly lit with a blue flame, and stove knobs are accessible and not covered or locked.\",\n      \"box\": [34, 44, 287, 308]\n    },\n    {\n      \"id\": \"DEM-K02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A knife block with multiple knives is sitting on the kitchen counter, within easy reach.\",\n      \"box\": [650, 203, 707, 315]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cleaning chemicals or soap bottles are visible on the sink counter, not stored in a locked cabinet.\",\n      \"box\": [453, 239, 479, 303]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner is visibly lit with a blue flame, and stove knobs are accessible and not covered or locked.",
+   "box": [
+    34,
+    44,
+    287,
+    308
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "medium",
+   "evidence": "A knife block with multiple knives is sitting on the kitchen counter, within easy reach.",
+   "box": [
+    650,
+    203,
+    707,
+    315
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning chemicals or soap bottles are visible on the sink counter, not stored in a locked cabinet.",
+   "box": [
+    453,
+    239,
+    479,
+    303
+   ]
+  }
+ ]
+}

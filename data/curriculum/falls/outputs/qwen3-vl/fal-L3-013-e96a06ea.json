@@ -1,0 +1,50 @@
+{
+ "id": "fal-L3-013",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A large area rug is placed on the wooden floor, with its edges potentially creating a tripping hazard for someone using a walker.\",\n      \"box\": [10, 738, 576, 950]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"A coiled rope or cord lies across the floor, directly in the path between the rug and the doorway, posing a significant tripping hazard for a walker user.\",\n      \"box\": [298, 738, 680, 999]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Folded towels and shoes are placed on the floor near the doorway, narrowing the walking path and creating potential obstacles for a walker.\",\n      \"box\": [596, 666, 798, 753]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Bright sunlight creates strong glare and high-contrast shadows on the floor and walls, which can impair depth perception and increase fall risk for older adults.\",\n      \"box\": [0, 0, 1000, 999]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A large area rug is placed on the wooden floor, with its edges potentially creating a tripping hazard for someone using a walker.",
+   "box": [
+    10,
+    738,
+    576,
+    950
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "A coiled rope or cord lies across the floor, directly in the path between the rug and the doorway, posing a significant tripping hazard for a walker user.",
+   "box": [
+    298,
+    738,
+    680,
+    999
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Folded towels and shoes are placed on the floor near the doorway, narrowing the walking path and creating potential obstacles for a walker.",
+   "box": [
+    596,
+    666,
+    798,
+    753
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Bright sunlight creates strong glare and high-contrast shadows on the floor and walls, which can impair depth perception and increase fall risk for older adults.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  }
+ ]
+}

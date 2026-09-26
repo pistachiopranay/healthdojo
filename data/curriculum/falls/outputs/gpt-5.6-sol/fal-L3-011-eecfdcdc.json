@@ -1,0 +1,39 @@
+{
+ "id": "fal-L3-011",
+ "raw": "{\"hazards\":[{\"id\":\"STAIR-02\",\"severity\":\"high\",\"evidence\":\"The right-side handrail is split into two short sections with a large gap, preventing continuous support on the staircase.\",\"box\":[548,46,753,835]},{\"id\":\"STAIR-03\",\"severity\":\"high\",\"evidence\":\"Multiple loose cords are tangled across several lower stair treads.\",\"box\":[298,625,661,995]},{\"id\":\"LIV-02\",\"severity\":\"high\",\"evidence\":\"Loose cords extend from the living-room seating area into the walking route at the base of the stairs.\",\"box\":[113,615,434,998]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-02",
+   "severity": "high",
+   "evidence": "The right-side handrail is split into two short sections with a large gap, preventing continuous support on the staircase.",
+   "box": [
+    548,
+    46,
+    753,
+    835
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Multiple loose cords are tangled across several lower stair treads.",
+   "box": [
+    298,
+    625,
+    661,
+    995
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Loose cords extend from the living-room seating area into the walking route at the base of the stairs.",
+   "box": [
+    113,
+    615,
+    434,
+    998
+   ]
+  }
+ ]
+}

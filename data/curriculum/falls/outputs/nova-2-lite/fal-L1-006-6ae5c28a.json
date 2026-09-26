@@ -1,0 +1,30 @@
+{
+ "id": "fal-L1-006",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"KIT-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Dishes and cookware are stored on high shelves, requiring the user to reach or climb to access them.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"KIT-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Frequently used pots and pans are stored on the floor, which could be a tripping hazard.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The walking path is narrowed by the open shelving unit on the left and the counter on the right, limiting space for a walker.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There is a step-down between the kitchen and dining area that is not marked, posing a fall risk.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Dishes and cookware are stored on high shelves, requiring the user to reach or climb to access them.",
+   "box": null
+  },
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Frequently used pots and pans are stored on the floor, which could be a tripping hazard.",
+   "box": null
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The walking path is narrowed by the open shelving unit on the left and the counter on the right, limiting space for a walker.",
+   "box": null
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "There is a step-down between the kitchen and dining area that is not marked, posing a fall risk.",
+   "box": null
+  }
+ ]
+}

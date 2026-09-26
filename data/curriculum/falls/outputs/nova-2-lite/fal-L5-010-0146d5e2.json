@@ -1,0 +1,24 @@
+{
+ "id": "fal-L5-010",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"While the stairs have lighting strips, the overall lighting on the stairs appears to be insufficient for safe navigation, especially for someone with reduced vision post-surgery.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The walkway from the living area to the stairs appears to be somewhat narrow, which could pose a challenge for someone using a walker.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The lighting in the living area and kitchen appears adequate, but there is a potential for glare or poor lighting in certain areas, which could affect visibility.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "While the stairs have lighting strips, the overall lighting on the stairs appears to be insufficient for safe navigation, especially for someone with reduced vision post-surgery.",
+   "box": null
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The walkway from the living area to the stairs appears to be somewhat narrow, which could pose a challenge for someone using a walker.",
+   "box": null
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The lighting in the living area and kitchen appears adequate, but there is a potential for glare or poor lighting in certain areas, which could affect visibility.",
+   "box": null
+  }
+ ]
+}

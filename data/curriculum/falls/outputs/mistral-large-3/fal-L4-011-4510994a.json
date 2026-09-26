@@ -1,0 +1,38 @@
+{
+ "id": "fal-L4-011",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Missing handrail or rail on one side only; stairs have no handrail on the left side for support.\",\n      \"box\": [100, 200, 500, 800]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Poor stair lighting; the stairwell is dimly lit, increasing fall risk.\",\n      \"box\": [0, 0, 1000, 1000]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"evidence\": \"Undefined step edges; the edges of the carpeted steps are not clearly marked.\",\n      \"box\": [150, 300, 450, 700]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Missing handrail or rail on one side only; stairs have no handrail on the left side for support.",
+   "box": [
+    100,
+    200,
+    500,
+    800
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "high",
+   "evidence": "Poor stair lighting; the stairwell is dimly lit, increasing fall risk.",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "evidence": "Undefined step edges; the edges of the carpeted steps are not clearly marked.",
+   "box": [
+    150,
+    300,
+    450,
+    700
+   ]
+  }
+ ]
+}

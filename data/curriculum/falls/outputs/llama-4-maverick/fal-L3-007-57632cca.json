@@ -1,0 +1,50 @@
+{
+ "id": "fal-L3-007",
+ "raw": "{\"hazards\": [\n  {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"dog food and toys on the floor\", \"box\": [420, 760, 670, 830]},\n  {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"black mat on the floor\", \"box\": [500, 840, 1000, 960]},\n  {\"id\": \"KIT-02\", \"severity\": \"low\", \"evidence\": \"pots and pans stored in a low cabinet\", \"box\": [470, 580, 630, 750]},\n  {\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"glare from overhead light\", \"box\": [480, 0, 580, 320]}\n]}",
+ "hazards": [
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "dog food and toys on the floor",
+   "box": [
+    420,
+    760,
+    670,
+    830
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "black mat on the floor",
+   "box": [
+    500,
+    840,
+    1000,
+    960
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "low",
+   "evidence": "pots and pans stored in a low cabinet",
+   "box": [
+    470,
+    580,
+    630,
+    750
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "glare from overhead light",
+   "box": [
+    480,
+    0,
+    580,
+    320
+   ]
+  }
+ ]
+}

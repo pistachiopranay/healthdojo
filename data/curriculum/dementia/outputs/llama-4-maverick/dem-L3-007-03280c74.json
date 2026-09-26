@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-007",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R02\", \"severity\": \"medium\", \"evidence\": \"A black and white chevron-patterned rug is on the floor.\", \"box\": [120, 560, 640, 990]}, {\"id\": \"DEM-R04\", \"severity\": \"high\", \"evidence\": \"A space heater is placed next to the bed.\", \"box\": [610, 690, 720, 950]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "A black and white chevron-patterned rug is on the floor.",
+   "box": [
+    120,
+    560,
+    640,
+    990
+   ]
+  },
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "A space heater is placed next to the bed.",
+   "box": [
+    610,
+    690,
+    720,
+    950
+   ]
+  }
+ ]
+}

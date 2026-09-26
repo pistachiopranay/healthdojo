@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-001",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E01\", \"severity\": \"high\", \"evidence\": \"Keys with a black key fob are hanging on a wall hook immediately beside the front door, giving easy access to leave/drive.\", \"box\": [571, 322, 599, 439]}, {\"id\": \"DEM-E03\", \"severity\": \"high\", \"evidence\": \"Stacks of loose newspapers, piled cardboard boxes, and scattered boots/shoes clutter the hallway walkway in front of the entry door, creating trip/slip hazards and obstructing the path.\", \"box\": [336, 519, 728, 946]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "Keys with a black key fob are hanging on a wall hook immediately beside the front door, giving easy access to leave/drive.",
+   "box": [
+    571,
+    322,
+    599,
+    439
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "high",
+   "evidence": "Stacks of loose newspapers, piled cardboard boxes, and scattered boots/shoes clutter the hallway walkway in front of the entry door, creating trip/slip hazards and obstructing the path.",
+   "box": [
+    336,
+    519,
+    728,
+    946
+   ]
+  }
+ ]
+}

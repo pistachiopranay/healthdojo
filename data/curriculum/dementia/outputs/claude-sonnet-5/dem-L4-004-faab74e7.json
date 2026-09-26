@@ -1,0 +1,39 @@
+{
+ "id": "dem-L4-004",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K04\", \"severity\": \"high\", \"evidence\": \"Multiple pill bottles and a daily pill organizer left out on the kitchen counter, easily accessible\", \"box\": [645, 195, 820, 260]}, {\"id\": \"DEM-K03\", \"severity\": \"medium\", \"evidence\": \"White jug (appears to be a cleaning/chemical bottle) sitting unlocked on the counter near the sink\", \"box\": [345, 195, 380, 255]}, {\"id\": \"DEM-K02\", \"severity\": \"medium\", \"evidence\": \"Knife block with knives visible on the counter near the refrigerator, within easy reach\", \"box\": [850, 205, 890, 255]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Multiple pill bottles and a daily pill organizer left out on the kitchen counter, easily accessible",
+   "box": [
+    645,
+    195,
+    820,
+    260
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "White jug (appears to be a cleaning/chemical bottle) sitting unlocked on the counter near the sink",
+   "box": [
+    345,
+    195,
+    380,
+    255
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "medium",
+   "evidence": "Knife block with knives visible on the counter near the refrigerator, within easy reach",
+   "box": [
+    850,
+    205,
+    890,
+    255
+   ]
+  }
+ ]
+}

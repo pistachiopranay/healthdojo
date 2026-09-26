@@ -1,0 +1,105 @@
+{
+ "id": "fal-L1-005",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BATH-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"No grab bar at tub/shower\",\n      \"box\": [200, 100, 600, 400]\n    },\n    {\n      \"id\": \"BATH-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"No support at toilet\",\n      \"box\": [700, 200, 950, 600]\n    },\n    {\n      \"id\": \"BATH-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Slippery tub/shower floor (visible smooth surface)\",\n      \"box\": [200, 100, 600, 400]\n    },\n    {\n      \"id\": \"BATH-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"High tub step-over without transfer aid\",\n      \"box\": [200, 300, 400, 500]\n    },\n    {\n      \"id\": \"BATH-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Low toilet seat\",\n      \"box\": [700, 350, 900, 550]\n    },\n    {\n      \"id\": \"BATH-07\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose bath mat or rug on bathroom floor near shower\",\n      \"box\": [150, 500, 400, 800]\n    },\n    {\n      \"id\": \"BATH-08\",\n      \"severity\": \"medium\",\n      \"evidence\": \"No shower seat or handheld shower (only a fixed showerhead)\",\n      \"box\": [400, 50, 500, 200]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose rugs and shoes/clutter on the floor near the shower entrance\",\n      \"box\": [150, 500, 450, 800]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Cluttered walking path with shoes and items on the floor\",\n      \"box\": [150, 550, 450, 800]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BATH-01",
+   "severity": "high",
+   "evidence": "No grab bar at tub/shower",
+   "box": [
+    200,
+    100,
+    600,
+    400
+   ]
+  },
+  {
+   "id": "BATH-02",
+   "severity": "high",
+   "evidence": "No support at toilet",
+   "box": [
+    700,
+    200,
+    950,
+    600
+   ]
+  },
+  {
+   "id": "BATH-04",
+   "severity": "medium",
+   "evidence": "Slippery tub/shower floor (visible smooth surface)",
+   "box": [
+    200,
+    100,
+    600,
+    400
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "High tub step-over without transfer aid",
+   "box": [
+    200,
+    300,
+    400,
+    500
+   ]
+  },
+  {
+   "id": "BATH-06",
+   "severity": "medium",
+   "evidence": "Low toilet seat",
+   "box": [
+    700,
+    350,
+    900,
+    550
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "high",
+   "evidence": "Loose bath mat or rug on bathroom floor near shower",
+   "box": [
+    150,
+    500,
+    400,
+    800
+   ]
+  },
+  {
+   "id": "BATH-08",
+   "severity": "medium",
+   "evidence": "No shower seat or handheld shower (only a fixed showerhead)",
+   "box": [
+    400,
+    50,
+    500,
+    200
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose rugs and shoes/clutter on the floor near the shower entrance",
+   "box": [
+    150,
+    500,
+    450,
+    800
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Cluttered walking path with shoes and items on the floor",
+   "box": [
+    150,
+    550,
+    450,
+    800
+   ]
+  }
+ ]
+}

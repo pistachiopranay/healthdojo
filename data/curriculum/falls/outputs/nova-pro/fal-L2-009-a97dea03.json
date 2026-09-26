@@ -1,0 +1,17 @@
+{
+ "id": "fal-L2-009",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-06\", \"severity\": \"medium\", \"evidence\": \"Broken or uneven steps\", \"box\": [337, 742, 726, 800]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-06",
+   "severity": "medium",
+   "evidence": "Broken or uneven steps",
+   "box": [
+    337,
+    742,
+    726,
+    800
+   ]
+  }
+ ]
+}

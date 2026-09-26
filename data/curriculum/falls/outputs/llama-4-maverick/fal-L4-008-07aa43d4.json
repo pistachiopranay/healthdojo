@@ -1,0 +1,45 @@
+{
+ "id": "fal-L4-008",
+ "raw": "{\"hazards\": [\n  {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"A rug is on the floor and appears to be loose or bunched up.\", \"box\": [240, 830, 670, 930]},\n  {\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"A cord is visible on the floor, running from the lamp to the left.\", \"box\": [0, 840, 270, 950]},\n  {\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"The room is dimly lit, with the only light source being a lamp on a table.\", \"box\": []},\n  {\"id\": \"KIT-03\", \"severity\": \"medium\", \"evidence\": \"A stool is being used near a table, potentially for reaching.\", \"box\": [600, 600, 750, 880]}\n]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A rug is on the floor and appears to be loose or bunched up.",
+   "box": [
+    240,
+    830,
+    670,
+    930
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A cord is visible on the floor, running from the lamp to the left.",
+   "box": [
+    0,
+    840,
+    270,
+    950
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The room is dimly lit, with the only light source being a lamp on a table.",
+   "box": []
+  },
+  {
+   "id": "KIT-03",
+   "severity": "medium",
+   "evidence": "A stool is being used near a table, potentially for reaching.",
+   "box": [
+    600,
+    600,
+    750,
+    880
+   ]
+  }
+ ]
+}

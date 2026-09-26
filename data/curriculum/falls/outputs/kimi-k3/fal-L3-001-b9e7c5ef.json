@@ -1,0 +1,17 @@
+{
+ "id": "fal-L3-001",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-05\", \"severity\": \"high\", \"evidence\": \"Stairs are covered with a busy patterned carpet runner and have no contrasting nosing, so tread/riser edges visually blend together and individual step edges are hard to distinguish (runner-style covering can also shift).\", \"box\": [305, 245, 662, 1000]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "Stairs are covered with a busy patterned carpet runner and have no contrasting nosing, so tread/riser edges visually blend together and individual step edges are hard to distinguish (runner-style covering can also shift).",
+   "box": [
+    305,
+    245,
+    662,
+    1000
+   ]
+  }
+ ]
+}

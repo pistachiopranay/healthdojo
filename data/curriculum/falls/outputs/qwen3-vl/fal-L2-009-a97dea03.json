@@ -1,0 +1,50 @@
+{
+ "id": "fal-L2-009",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Staircase has handrails on both sides, but they appear to terminate before the first and last steps, leaving the bottom and top steps without continuous handrail support for a walker user.\",\n      \"box\": [230, 134, 856, 999]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The stair treads are dark wood and risers are white, providing contrast, but the bottom step has a visible wood defect or damage that could catch a walker foot or cause tripping.\",\n      \"box\": [338, 730, 730, 935]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A dark rug is visible on the floor to the left of the staircase, partially under a piece of furniture, which could be a tripping hazard for someone using a walker.\",\n      \"box\": [0, 835, 149, 960]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The overhead light at the top of the stairs provides illumination, but the lower portion of the staircase and the adjacent living area appear dimmer, creating potential glare or shadow contrast that could affect depth perception.\",\n      \"box\": [0, 0, 1000, 999]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Staircase has handrails on both sides, but they appear to terminate before the first and last steps, leaving the bottom and top steps without continuous handrail support for a walker user.",
+   "box": [
+    230,
+    134,
+    856,
+    999
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "The stair treads are dark wood and risers are white, providing contrast, but the bottom step has a visible wood defect or damage that could catch a walker foot or cause tripping.",
+   "box": [
+    338,
+    730,
+    730,
+    935
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A dark rug is visible on the floor to the left of the staircase, partially under a piece of furniture, which could be a tripping hazard for someone using a walker.",
+   "box": [
+    0,
+    835,
+    149,
+    960
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The overhead light at the top of the stairs provides illumination, but the lower portion of the staircase and the adjacent living area appear dimmer, creating potential glare or shadow contrast that could affect depth perception.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  }
+ ]
+}

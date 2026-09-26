@@ -1,0 +1,94 @@
+{
+ "id": "fal-L2-014",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Staircase has handrails on both sides, but they appear to be mounted only on the wall side and not continuous or graspable along the full length; no visible handrail on the open side of the staircase.\",\n      \"box\": [238, 80, 758, 997]\n    },\n    {\n      \"id\": \"STAIR-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Handrails appear to be wooden and mounted to the wall, but their graspability and secure attachment are not verifiable from the image; they may be loose or not extend the full length of the stairs.\",\n      \"box\": [238, 80, 758, 997]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Lighting at the top of the stairs is present, but the lower portion of the staircase and landing area appear dimly lit, creating potential shadows or glare that could obscure step edges.\",\n      \"box\": [238, 80, 758, 997]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Step edges are painted white and contrast with the brown treads, which helps define them, but the paint may be worn or slippery; no visible carpet or runner to provide traction.\",\n      \"box\": [238, 80, 758, 997]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A white electrical cord runs along the base of the wall near the bottom of the stairs, crossing the walking path and posing a tripping hazard for someone using a walker.\",\n      \"box\": [158, 715, 245, 997]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"low\",\n      \"evidence\": \"The path to the left of the stairs is partially obstructed by a large sofa and a floor lamp, potentially narrowing the walking space for a walker.\",\n      \"box\": [0, 637, 188, 997]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The lighting in the living area is adequate, but the transition from the dimmer stairwell to the brighter kitchen may cause momentary glare or adjustment issues for someone with limited mobility.\",\n      \"box\": [0, 0, 1000, 997]\n    },\n    {\n      \"id\": \"LIV-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There is a level change between the living room and the kitchen/dining area, visible as a step-down at the doorway, which is not marked or highlighted and could be a tripping hazard.\",\n      \"box\": [812, 650, 1000, 997]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Staircase has handrails on both sides, but they appear to be mounted only on the wall side and not continuous or graspable along the full length; no visible handrail on the open side of the staircase.",
+   "box": [
+    238,
+    80,
+    758,
+    997
+   ]
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "medium",
+   "evidence": "Handrails appear to be wooden and mounted to the wall, but their graspability and secure attachment are not verifiable from the image; they may be loose or not extend the full length of the stairs.",
+   "box": [
+    238,
+    80,
+    758,
+    997
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Lighting at the top of the stairs is present, but the lower portion of the staircase and landing area appear dimly lit, creating potential shadows or glare that could obscure step edges.",
+   "box": [
+    238,
+    80,
+    758,
+    997
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "Step edges are painted white and contrast with the brown treads, which helps define them, but the paint may be worn or slippery; no visible carpet or runner to provide traction.",
+   "box": [
+    238,
+    80,
+    758,
+    997
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A white electrical cord runs along the base of the wall near the bottom of the stairs, crossing the walking path and posing a tripping hazard for someone using a walker.",
+   "box": [
+    158,
+    715,
+    245,
+    997
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "low",
+   "evidence": "The path to the left of the stairs is partially obstructed by a large sofa and a floor lamp, potentially narrowing the walking space for a walker.",
+   "box": [
+    0,
+    637,
+    188,
+    997
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The lighting in the living area is adequate, but the transition from the dimmer stairwell to the brighter kitchen may cause momentary glare or adjustment issues for someone with limited mobility.",
+   "box": [
+    0,
+    0,
+    1000,
+    997
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "There is a level change between the living room and the kitchen/dining area, visible as a step-down at the doorway, which is not marked or highlighted and could be a tripping hazard.",
+   "box": [
+    812,
+    650,
+    1000,
+    997
+   ]
+  }
+ ]
+}

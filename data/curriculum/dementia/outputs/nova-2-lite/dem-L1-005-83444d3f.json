@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-005",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Large mirror directly facing the bed could be misinterpreted by someone with dementia as a doorway or an exit.\",\n      \"box\": [341, 176, 414, 386]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "Large mirror directly facing the bed could be misinterpreted by someone with dementia as a doorway or an exit.",
+   "box": [
+    341,
+    176,
+    414,
+    386
+   ]
+  }
+ ]
+}

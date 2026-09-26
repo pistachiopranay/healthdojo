@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-001",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"Large pile of newspapers stacked on the recliner and spilling onto the floor in the main walkway path through the living room, creating a trip hazard\", \"box\": [365, 415, 715, 610]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Large pile of newspapers stacked on the recliner and spilling onto the floor in the main walkway path through the living room, creating a trip hazard",
+   "box": [
+    365,
+    415,
+    715,
+    610
+   ]
+  }
+ ]
+}

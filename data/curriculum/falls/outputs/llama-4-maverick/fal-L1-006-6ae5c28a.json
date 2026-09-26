@@ -1,0 +1,50 @@
+{
+ "id": "fal-L1-006",
+ "raw": "{\"hazards\": [\n    {\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"Cluttered floor with pots, pans, and food items\", \"box\": [100, 550, 400, 900]},\n    {\"id\": \"KIT-01\", \"severity\": \"medium\", \"evidence\": \"Dishes and glassware stored on high shelves\", \"box\": [0, 0, 300, 0.4]},\n    {\"id\": \"LIV-06\", \"severity\": \"high\", \"evidence\": \"Step-down between kitchen and dining room\", \"box\": [350, 350, 550, 600]},\n    {\"id\": \"LIV-02\", \"severity\": \"low\", \"evidence\": \"Coffee maker cord on counter\", \"box\": [650, 250, 900, 450]}\n]}",
+ "hazards": [
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Cluttered floor with pots, pans, and food items",
+   "box": [
+    100,
+    550,
+    400,
+    900
+   ]
+  },
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Dishes and glassware stored on high shelves",
+   "box": [
+    0,
+    0,
+    300,
+    0.4
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "high",
+   "evidence": "Step-down between kitchen and dining room",
+   "box": [
+    350,
+    350,
+    550,
+    600
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "low",
+   "evidence": "Coffee maker cord on counter",
+   "box": [
+    650,
+    250,
+    900,
+    450
+   ]
+  }
+ ]
+}

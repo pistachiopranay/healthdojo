@@ -1,0 +1,35 @@
+{
+ "id": "fal-L2-000",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The bed is positioned close to the wall, leaving limited space for a walker to maneuver around it.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There is a cord running across the floor near the bed, posing a tripping hazard.\",\n      \"box\": [240, 480, 480, 620]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The path from the bed to the hallway appears narrow and could be further obstructed by the bed and dresser.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The doorway to the adjacent room is narrow, which may impede the movement of a walker.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "The bed is positioned close to the wall, leaving limited space for a walker to maneuver around it.",
+   "box": null
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "There is a cord running across the floor near the bed, posing a tripping hazard.",
+   "box": [
+    240,
+    480,
+    480,
+    620
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The path from the bed to the hallway appears narrow and could be further obstructed by the bed and dresser.",
+   "box": null
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "The doorway to the adjacent room is narrow, which may impede the movement of a walker.",
+   "box": null
+  }
+ ]
+}

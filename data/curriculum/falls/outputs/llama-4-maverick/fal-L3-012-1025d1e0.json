@@ -1,0 +1,39 @@
+{
+ "id": "fal-L3-012",
+ "raw": "{\"hazards\": [\n    {\"id\": \"ENT-01\", \"severity\": \"high\", \"evidence\": \"The stairs leading to the front door have a handrail on only one side.\", \"box\": [270, 310, 700, 630]},\n    {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"A dog bed and dog bowl are on the path.\", \"box\": [340, 650, 630, 830]},\n    {\"id\": \"ENT-04\", \"severity\": \"low\", \"evidence\": \"The porch light is on, but the path to the front door is not well-lit.\", \"box\": [0, 0, 1000, 630]}\n]}",
+ "hazards": [
+  {
+   "id": "ENT-01",
+   "severity": "high",
+   "evidence": "The stairs leading to the front door have a handrail on only one side.",
+   "box": [
+    270,
+    310,
+    700,
+    630
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "A dog bed and dog bowl are on the path.",
+   "box": [
+    340,
+    650,
+    630,
+    830
+   ]
+  },
+  {
+   "id": "ENT-04",
+   "severity": "low",
+   "evidence": "The porch light is on, but the path to the front door is not well-lit.",
+   "box": [
+    0,
+    0,
+    1000,
+    630
+   ]
+  }
+ ]
+}

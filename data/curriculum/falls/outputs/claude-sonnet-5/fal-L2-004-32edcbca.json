@@ -1,0 +1,50 @@
+{
+ "id": "fal-L2-004",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"A wooden chair is placed in the middle of the kitchen floor between the stove and sink area, narrowing the walking path a walker would need to use.\", \"box\": [345, 260, 520, 545]}, {\"id\": \"KIT-01\", \"severity\": \"medium\", \"evidence\": \"Upper wall cabinets are the only storage for many kitchen items, requiring reaching overhead which is risky post-surgery.\", \"box\": [180, 0, 900, 160]}, {\"id\": \"KIT-02\", \"severity\": \"medium\", \"evidence\": \"Open shelving unit on the right holds stacked plates and bowls on very low shelves near floor level, requiring bending down to retrieve items.\", \"box\": [1030, 350, 1280, 850]}, {\"id\": \"KIT-04\", \"severity\": \"low\", \"evidence\": \"Glossy, smooth tile flooring throughout the kitchen near the sink and stove could become slippery, especially if wet, posing a fall risk for someone using a walker.\", \"box\": [0, 450, 1000, 850]}]}",
+ "hazards": [
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "A wooden chair is placed in the middle of the kitchen floor between the stove and sink area, narrowing the walking path a walker would need to use.",
+   "box": [
+    345,
+    260,
+    520,
+    545
+   ]
+  },
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Upper wall cabinets are the only storage for many kitchen items, requiring reaching overhead which is risky post-surgery.",
+   "box": [
+    180,
+    0,
+    900,
+    160
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Open shelving unit on the right holds stacked plates and bowls on very low shelves near floor level, requiring bending down to retrieve items.",
+   "box": [
+    1030,
+    350,
+    1280,
+    850
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "low",
+   "evidence": "Glossy, smooth tile flooring throughout the kitchen near the sink and stove could become slippery, especially if wet, posing a fall risk for someone using a walker.",
+   "box": [
+    0,
+    450,
+    1000,
+    850
+   ]
+  }
+ ]
+}

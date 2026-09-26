@@ -1,0 +1,39 @@
+{
+ "id": "fal-L2-014",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-02\", \"severity\": \"high\", \"evidence\": \"Handrails appear to be angled decorative rails running along the wall but do not look like graspable continuous rails mounted at consistent height; ends appear unsecured/short near bottom\", \"box\": [300, 60, 980, 830]}, {\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"Cord visible running along baseboard near bottom left of stairs across the floor path\", \"box\": [0, 620, 300, 850]}, {\"id\": \"LIV-01\", \"severity\": \"low\", \"evidence\": \"Throw pillow and loose fabric on couch arm could indicate loose textiles nearby, minor floor rug edge visible in kitchen area\", \"box\": [1080, 700, 1280, 800]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-02",
+   "severity": "high",
+   "evidence": "Handrails appear to be angled decorative rails running along the wall but do not look like graspable continuous rails mounted at consistent height; ends appear unsecured/short near bottom",
+   "box": [
+    300,
+    60,
+    980,
+    830
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Cord visible running along baseboard near bottom left of stairs across the floor path",
+   "box": [
+    0,
+    620,
+    300,
+    850
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "low",
+   "evidence": "Throw pillow and loose fabric on couch arm could indicate loose textiles nearby, minor floor rug edge visible in kitchen area",
+   "box": [
+    1080,
+    700,
+    1280,
+    800
+   ]
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+{
+ "id": "fal-L4-011",
+ "raw": "{\"hazards\":[{\"id\":\"STAIR-01\",\"severity\":\"high\",\"evidence\":\"The staircase has a handrail only on the right side; no handrail is visible on the left.\",\"box\":[240,0,875,875]},{\"id\":\"STAIR-02\",\"severity\":\"high\",\"evidence\":\"The right-hand rail ends well before the bottom of the staircase.\",\"box\":[662,0,875,274]},{\"id\":\"STAIR-03\",\"severity\":\"high\",\"evidence\":\"Shoes and a stack of folded linens are placed on the stair treads.\",\"box\":[310,333,667,541]},{\"id\":\"STAIR-04\",\"severity\":\"medium\",\"evidence\":\"The staircase is dimly lit, with substantial shadow over several steps despite a small wall light.\"},{\"id\":\"STAIR-05\",\"severity\":\"high\",\"evidence\":\"Carpet is torn and loose around a tread, creating ragged, unsecured edges.\",\"box\":[306,431,699,543]},{\"id\":\"STAIR-06\",\"severity\":\"high\",\"evidence\":\"A stair tread is damaged and uneven, with exposed wood and broken surface material.\",\"box\":[429,443,690,524]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "The staircase has a handrail only on the right side; no handrail is visible on the left.",
+   "box": [
+    240,
+    0,
+    875,
+    875
+   ]
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "high",
+   "evidence": "The right-hand rail ends well before the bottom of the staircase.",
+   "box": [
+    662,
+    0,
+    875,
+    274
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Shoes and a stack of folded linens are placed on the stair treads.",
+   "box": [
+    310,
+    333,
+    667,
+    541
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "The staircase is dimly lit, with substantial shadow over several steps despite a small wall light."
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "Carpet is torn and loose around a tread, creating ragged, unsecured edges.",
+   "box": [
+    306,
+    431,
+    699,
+    543
+   ]
+  },
+  {
+   "id": "STAIR-06",
+   "severity": "high",
+   "evidence": "A stair tread is damaged and uneven, with exposed wood and broken surface material.",
+   "box": [
+    429,
+    443,
+    690,
+    524
+   ]
+  }
+ ]
+}

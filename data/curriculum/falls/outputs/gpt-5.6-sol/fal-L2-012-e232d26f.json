@@ -1,0 +1,50 @@
+{
+ "id": "fal-L2-012",
+ "raw": "{\"hazards\":[{\"id\":\"BED-03\",\"severity\":\"medium\",\"evidence\":\"The hallway leading from the bedroom is dimly lit, creating a dark bed-to-bathroom route.\",\"box\":[90,0,240,510]},{\"id\":\"BED-04\",\"severity\":\"high\",\"evidence\":\"A stuffed toy and bowl are on the floor beside the bed where they could catch a foot or walker.\",\"box\":[310,510,430,600]},{\"id\":\"BED-05\",\"severity\":\"high\",\"evidence\":\"The space between the left side of the bed and the wall/doorway is narrow for walker access.\",\"box\":[300,195,455,565]},{\"id\":\"LIV-07\",\"severity\":\"high\",\"evidence\":\"Pet items, including a bowl and toy, are underfoot next to the bed.\",\"box\":[310,510,430,600]}]}",
+ "hazards": [
+  {
+   "id": "BED-03",
+   "severity": "medium",
+   "evidence": "The hallway leading from the bedroom is dimly lit, creating a dark bed-to-bathroom route.",
+   "box": [
+    90,
+    0,
+    240,
+    510
+   ]
+  },
+  {
+   "id": "BED-04",
+   "severity": "high",
+   "evidence": "A stuffed toy and bowl are on the floor beside the bed where they could catch a foot or walker.",
+   "box": [
+    310,
+    510,
+    430,
+    600
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "high",
+   "evidence": "The space between the left side of the bed and the wall/doorway is narrow for walker access.",
+   "box": [
+    300,
+    195,
+    455,
+    565
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "Pet items, including a bowl and toy, are underfoot next to the bed.",
+   "box": [
+    310,
+    510,
+    430,
+    600
+   ]
+  }
+ ]
+}

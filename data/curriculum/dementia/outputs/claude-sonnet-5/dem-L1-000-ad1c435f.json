@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-000",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K03\", \"severity\": \"low\", \"evidence\": \"Unlabeled bottles (possible cleaning/chemical products) left out on the kitchen counter near the sink and near the dish rack, accessible and not secured\", \"box\": [400, 205, 440, 250]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K03",
+   "severity": "low",
+   "evidence": "Unlabeled bottles (possible cleaning/chemical products) left out on the kitchen counter near the sink and near the dish rack, accessible and not secured",
+   "box": [
+    400,
+    205,
+    440,
+    250
+   ]
+  }
+ ]
+}

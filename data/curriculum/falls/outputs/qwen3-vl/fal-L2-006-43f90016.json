@@ -1,0 +1,50 @@
+{
+ "id": "fal-L2-006",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A loose, unsecured throw rug is placed in the middle of the main walking path on hardwood flooring, creating a tripping hazard for someone using a walker.\",\n      \"box\": [330, 560, 600, 698]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The blue recliner has deep, soft seating and low armrests, which may make it difficult for someone with limited mobility to stand up safely without proper support.\",\n      \"box\": [24, 280, 346, 755]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"low\",\n      \"evidence\": \"The layout includes furniture (sofa, recliner, side table, TV stand) that may narrow the walking path, potentially making it difficult for a walker to navigate without bumping into objects.\",\n      \"box\": [0, 0, 1000, 1000]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The room has mixed lighting \u2014 bright natural light from the window may cause glare on the floor or TV screen, while other areas (like near the recliner) are dimmer, creating contrast that could affect visibility for someone with limited mobility.\",\n      \"box\": [0, 0, 1000, 1000]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A loose, unsecured throw rug is placed in the middle of the main walking path on hardwood flooring, creating a tripping hazard for someone using a walker.",
+   "box": [
+    330,
+    560,
+    600,
+    698
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "The blue recliner has deep, soft seating and low armrests, which may make it difficult for someone with limited mobility to stand up safely without proper support.",
+   "box": [
+    24,
+    280,
+    346,
+    755
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "low",
+   "evidence": "The layout includes furniture (sofa, recliner, side table, TV stand) that may narrow the walking path, potentially making it difficult for a walker to navigate without bumping into objects.",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The room has mixed lighting \u2014 bright natural light from the window may cause glare on the floor or TV screen, while other areas (like near the recliner) are dimmer, creating contrast that could affect visibility for someone with limited mobility.",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  }
+ ]
+}

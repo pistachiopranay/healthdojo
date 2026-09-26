@@ -1,0 +1,17 @@
+{
+ "id": "fal-L3-001",
+ "raw": "{\"hazards\":[{\"id\":\"STAIR-02\",\"severity\":\"high\",\"evidence\":\"The handrail on the right side ends several steps above the bottom of the staircase, preventing continuous support.\",\"box\":[538,24,675,540]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-02",
+   "severity": "high",
+   "evidence": "The handrail on the right side ends several steps above the bottom of the staircase, preventing continuous support.",
+   "box": [
+    538,
+    24,
+    675,
+    540
+   ]
+  }
+ ]
+}

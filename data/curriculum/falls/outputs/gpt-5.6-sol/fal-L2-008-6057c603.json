@@ -1,0 +1,28 @@
+{
+ "id": "fal-L2-008",
+ "raw": "{\"hazards\":[{\"id\":\"LIV-01\",\"severity\":\"high\",\"evidence\":\"A loose rectangular mat lies directly in the walker path at the base of the steps.\",\"box\":[300,625,561,710]},{\"id\":\"ENT-02\",\"severity\":\"medium\",\"evidence\":\"A raised door sill is visible across the entrance and may obstruct walker wheels.\",\"box\":[378,467,648,524]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "A loose rectangular mat lies directly in the walker path at the base of the steps.",
+   "box": [
+    300,
+    625,
+    561,
+    710
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "A raised door sill is visible across the entrance and may obstruct walker wheels.",
+   "box": [
+    378,
+    467,
+    648,
+    524
+   ]
+  }
+ ]
+}

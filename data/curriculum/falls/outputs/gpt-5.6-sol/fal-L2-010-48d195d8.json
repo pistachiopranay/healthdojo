@@ -1,0 +1,28 @@
+{
+ "id": "fal-L2-010",
+ "raw": "{\"hazards\":[{\"id\":\"BATH-05\",\"severity\":\"high\",\"evidence\":\"The tub has a high sidewall that must be stepped over; the shower chair is entirely inside the tub rather than spanning the edge as a transfer bench.\",\"box\":[190,630,727,943]},{\"id\":\"BATH-06\",\"severity\":\"high\",\"evidence\":\"The toilet appears to have a standard low seat without a raised toilet-seat attachment, making transfers difficult after hip or knee surgery.\",\"box\":[628,510,932,997]}]}",
+ "hazards": [
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "The tub has a high sidewall that must be stepped over; the shower chair is entirely inside the tub rather than spanning the edge as a transfer bench.",
+   "box": [
+    190,
+    630,
+    727,
+    943
+   ]
+  },
+  {
+   "id": "BATH-06",
+   "severity": "high",
+   "evidence": "The toilet appears to have a standard low seat without a raised toilet-seat attachment, making transfers difficult after hip or knee surgery.",
+   "box": [
+    628,
+    510,
+    932,
+    997
+   ]
+  }
+ ]
+}

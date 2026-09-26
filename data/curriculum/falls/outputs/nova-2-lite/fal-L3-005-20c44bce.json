@@ -1,0 +1,12 @@
+{
+ "id": "fal-L3-005",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Pet bed and food bowl on floor near walkway\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pet bed and food bowl on floor near walkway",
+   "box": null
+  }
+ ]
+}

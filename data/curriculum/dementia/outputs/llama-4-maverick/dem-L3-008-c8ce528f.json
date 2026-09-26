@@ -1,0 +1,39 @@
+{
+ "id": "dem-L3-008",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"Stove burner is on and knobs are accessible\", \"box\": [0, 60, 0.25, 0.35]},\n    {\"id\": \"DEM-K02\", \"severity\": \"medium\", \"evidence\": \"Knives are visible in a container on the counter\", \"box\": [0.27, 0.25, 0.73, 0.35]},\n    {\"id\": \"DEM-K04\", \"severity\": \"high\", \"evidence\": \"Medication bottles are left out on a counter\", \"box\": [0.70, 0.07, 0.97, 0.30]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner is on and knobs are accessible",
+   "box": [
+    0,
+    60,
+    0.25,
+    0.35
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "medium",
+   "evidence": "Knives are visible in a container on the counter",
+   "box": [
+    0.27,
+    0.25,
+    0.73,
+    0.35
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Medication bottles are left out on a counter",
+   "box": [
+    0.7,
+    0.07,
+    0.97,
+    0.3
+   ]
+  }
+ ]
+}

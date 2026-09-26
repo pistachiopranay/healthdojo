@@ -1,0 +1,61 @@
+{
+ "id": "fal-L2-012",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"BED-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Pet toy and food bowl on floor near bed, creating tripping hazard.\",\n      \"box\": [312, 520, 420, 595]\n    },\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Limited clearance between bed and wall/dresser; walker may not fit comfortably on left side.\",\n      \"box\": [418, 300, 1000, 997]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Open doorway and furniture placement may narrow walking path for walker.\",\n      \"box\": [0, 0, 1000, 997]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Pet toy and food bowl on floor near bed and doorway, posing tripping risk.\",\n      \"box\": [312, 520, 420, 595]\n    },\n    {\n      \"id\": \"BED-03\",\n      \"severity\": \"low\",\n      \"evidence\": \"Path to bathroom appears dimly lit, though a nightlight is present; may not be sufficient for safe nighttime navigation.\",\n      \"box\": [100, 260, 245, 550]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "severity": "medium",
+   "evidence": "Pet toy and food bowl on floor near bed, creating tripping hazard.",
+   "box": [
+    312,
+    520,
+    420,
+    595
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "Limited clearance between bed and wall/dresser; walker may not fit comfortably on left side.",
+   "box": [
+    418,
+    300,
+    1000,
+    997
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Open doorway and furniture placement may narrow walking path for walker.",
+   "box": [
+    0,
+    0,
+    1000,
+    997
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pet toy and food bowl on floor near bed and doorway, posing tripping risk.",
+   "box": [
+    312,
+    520,
+    420,
+    595
+   ]
+  },
+  {
+   "id": "BED-03",
+   "severity": "low",
+   "evidence": "Path to bathroom appears dimly lit, though a nightlight is present; may not be sufficient for safe nighttime navigation.",
+   "box": [
+    100,
+    260,
+    245,
+    550
+   ]
+  }
+ ]
+}

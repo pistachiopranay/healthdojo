@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-008",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-K01\",\"severity\":\"high\",\"evidence\":\"Gas stove burner is lit with a blue flame and the stove knobs are exposed/usable.\",\"box\":[6,57,267,326]},{\"id\":\"DEM-K04\",\"severity\":\"high\",\"evidence\":\"Multiple prescription pill bottles and a weekly pill organizer are sitting out on a counter.\",\"box\":[716,59,949,295]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Gas stove burner is lit with a blue flame and the stove knobs are exposed/usable.",
+   "box": [
+    6,
+    57,
+    267,
+    326
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Multiple prescription pill bottles and a weekly pill organizer are sitting out on a counter.",
+   "box": [
+    716,
+    59,
+    949,
+    295
+   ]
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "id": "fal-L1-009",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Missing handrail on one side of the staircase; only one handrail is present.\",\n      \"box\": [200, 150, 500, 800]\n    },\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Objects (shoes) on stairs, creating a tripping hazard.\",\n      \"box\": [350, 400, 500, 550]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Undefined step edges due to similar color of stair treads and risers, making it harder to distinguish each step.\",\n      \"box\": [200, 150, 500, 800]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Potential loose rug or mat visible near the couch area, though not fully in view.\",\n      \"box\": [0, 500, 200, 700]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cluttered or narrowed walking path due to furniture placement near the staircase.\",\n      \"box\": [0, 400, 250, 700]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Missing handrail on one side of the staircase; only one handrail is present.",
+   "box": [
+    200,
+    150,
+    500,
+    800
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Objects (shoes) on stairs, creating a tripping hazard.",
+   "box": [
+    350,
+    400,
+    500,
+    550
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "Undefined step edges due to similar color of stair treads and risers, making it harder to distinguish each step.",
+   "box": [
+    200,
+    150,
+    500,
+    800
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Potential loose rug or mat visible near the couch area, though not fully in view.",
+   "box": [
+    0,
+    500,
+    200,
+    700
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Cluttered or narrowed walking path due to furniture placement near the staircase.",
+   "box": [
+    0,
+    400,
+    250,
+    700
+   ]
+  }
+ ]
+}

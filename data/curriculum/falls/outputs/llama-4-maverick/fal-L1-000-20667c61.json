@@ -1,0 +1,50 @@
+{
+ "id": "fal-L1-000",
+ "raw": "{\"hazards\": [\n  {\"id\": \"BATH-03\", \"severity\": \"high\", \"evidence\": \"Towel bar used as grab bar\", \"box\": [810, 70, 1000, 340]},\n  {\"id\": \"BATH-05\", \"severity\": \"high\", \"evidence\": \"High tub step-over without transfer aid\", \"box\": [230, 480, 680, 830]},\n  {\"id\": \"BATH-07\", \"severity\": \"medium\", \"evidence\": \"No bath mat or rug, potentially slippery floor\", \"box\": [0, 780, 560, 1000]},\n  {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"Puppy in bathtub\", \"box\": [230, 480, 680, 830]}\n]}",
+ "hazards": [
+  {
+   "id": "BATH-03",
+   "severity": "high",
+   "evidence": "Towel bar used as grab bar",
+   "box": [
+    810,
+    70,
+    1000,
+    340
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "High tub step-over without transfer aid",
+   "box": [
+    230,
+    480,
+    680,
+    830
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "medium",
+   "evidence": "No bath mat or rug, potentially slippery floor",
+   "box": [
+    0,
+    780,
+    560,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Puppy in bathtub",
+   "box": [
+    230,
+    480,
+    680,
+    830
+   ]
+  }
+ ]
+}

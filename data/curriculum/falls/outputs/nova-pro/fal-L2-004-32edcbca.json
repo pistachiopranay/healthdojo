@@ -1,0 +1,39 @@
+{
+ "id": "fal-L2-004",
+ "raw": "{\"hazards\": [{\"id\": \"KIT-01\", \"severity\": \"medium\", \"evidence\": \"Frequently used items stored high\", \"box\": [453, 0, 722, 187]}, {\"id\": \"KIT-03\", \"severity\": \"medium\", \"evidence\": \"Unstable step stool or chair used for reaching\", \"box\": [271, 312, 411, 643]}, {\"id\": \"KIT-04\", \"severity\": \"low\", \"evidence\": \"Slippery floor / loose mat at sink or stove\", \"box\": [136, 303, 256, 749]}]}",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Frequently used items stored high",
+   "box": [
+    453,
+    0,
+    722,
+    187
+   ]
+  },
+  {
+   "id": "KIT-03",
+   "severity": "medium",
+   "evidence": "Unstable step stool or chair used for reaching",
+   "box": [
+    271,
+    312,
+    411,
+    643
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "low",
+   "evidence": "Slippery floor / loose mat at sink or stove",
+   "box": [
+    136,
+    303,
+    256,
+    749
+   ]
+  }
+ ]
+}

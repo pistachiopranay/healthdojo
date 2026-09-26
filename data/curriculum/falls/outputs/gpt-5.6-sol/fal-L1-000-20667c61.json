@@ -1,0 +1,39 @@
+{
+ "id": "fal-L1-000",
+ "raw": "{\"hazards\":[{\"id\":\"BATH-04\",\"severity\":\"high\",\"evidence\":\"The tub has a smooth, bare floor with no visible nonslip mat or textured surface.\",\"box\":[220,414,680,594]},{\"id\":\"BATH-05\",\"severity\":\"high\",\"evidence\":\"The tub has a high sidewall to step over, and the shower chair is entirely inside rather than bridging the wall as a transfer bench.\",\"box\":[195,519,697,761]},{\"id\":\"LIV-07\",\"severity\":\"high\",\"evidence\":\"A dog is lying in the tub at the transfer/standing area and could get underfoot.\",\"box\":[243,513,411,582]}]}",
+ "hazards": [
+  {
+   "id": "BATH-04",
+   "severity": "high",
+   "evidence": "The tub has a smooth, bare floor with no visible nonslip mat or textured surface.",
+   "box": [
+    220,
+    414,
+    680,
+    594
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "The tub has a high sidewall to step over, and the shower chair is entirely inside rather than bridging the wall as a transfer bench.",
+   "box": [
+    195,
+    519,
+    697,
+    761
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "A dog is lying in the tub at the transfer/standing area and could get underfoot.",
+   "box": [
+    243,
+    513,
+    411,
+    582
+   ]
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "id": "fal-L1-005",
+ "raw": "{\"hazards\": [\n  {\"id\": \"BATH-04\", \"severity\": \"high\", \"evidence\": \"Tub/shower floor appears slippery and has clothing and shoes on it\", \"box\": [170, 650, 560, 830]},\n  {\"id\": \"BATH-05\", \"severity\": \"high\", \"evidence\": \"High tub step-over without transfer aid visible\", \"box\": [170, 650, 560, 830]},\n  {\"id\": \"BATH-07\", \"severity\": \"medium\", \"evidence\": \"Clothing and shoes on bathroom floor\", \"box\": [170, 650, 560, 830]},\n  {\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"Cluttered bathroom floor\", \"box\": [170, 650, 560, 830]},\n  {\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"Glare from window\", \"box\": [780, 0, 1000, 250]}\n]}",
+ "hazards": [
+  {
+   "id": "BATH-04",
+   "severity": "high",
+   "evidence": "Tub/shower floor appears slippery and has clothing and shoes on it",
+   "box": [
+    170,
+    650,
+    560,
+    830
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "High tub step-over without transfer aid visible",
+   "box": [
+    170,
+    650,
+    560,
+    830
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "medium",
+   "evidence": "Clothing and shoes on bathroom floor",
+   "box": [
+    170,
+    650,
+    560,
+    830
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Cluttered bathroom floor",
+   "box": [
+    170,
+    650,
+    560,
+    830
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Glare from window",
+   "box": [
+    780,
+    0,
+    1000,
+    250
+   ]
+  }
+ ]
+}

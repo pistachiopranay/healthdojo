@@ -1,0 +1,610 @@
+requeued 46 unverified items
+  llm 4s
+  llm 4s
+  treg-gemini 40s
+  treg-gemini 40s
+  llm 4s
+falls fal-L1-002 VERIFIED 1 hz 0 ds
+  llm 3s
+falls fal-L1-006 VERIFIED 1 hz 0 ds
+== falls L1 10 items, 10 verified, 50s, cost {'image_calls': 0, 'llm_calls': 4, 'treg_gemini_calls': 2}
+  llm 4s
+  llm 4s
+  llm 6s
+  llm 6s
+  treg-gemini 35s
+  treg-gemini 33s
+  treg-gemini 33s
+  llm 3s
+falls fal-L2-012 failed verify, rebuilding
+  llm 3s
+falls fal-L2-004 VERIFIED 1 hz 0 ds
+  llm 6s
+falls fal-L2-007 failed verify, rebuilding
+  treg-gemini 40s
+  llm 3s
+  llm 4s
+falls fal-L2-001 failed verify, rebuilding
+  llm 6s
+  llm 3s
+  treg-gemini 33s
+  treg-gemini 33s
+  treg-gemini 40s
+  llm 3s
+falls fal-L2-001 flagged 1 hz 0 ds
+  llm 3s
+falls fal-L2-012 VERIFIED 1 hz 0 ds
+  llm 7s
+falls fal-L2-007 flagged 1 hz 0 ds
+== falls L2 15 items, 13 verified, 90s, cost {'image_calls': 0, 'llm_calls': 18, 'treg_gemini_calls': 9}
+  llm 9s
+  llm 10s
+  llm 10s
+  llm 14s
+  llm 22s
+  llm 22s
+  llm 23s
+  llm 23s
+  llm 25s
+  treg-gemini 28s
+  llm 38s
+  plan incomplete, retry fal-L3-006 []
+  treg-gemini 33s
+  treg-gemini 33s
+  treg-gemini 39s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 33s
+  treg-gemini 34s
+  llm 19s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 48s
+  treg-gemini 53s
+  treg-gemini 56s
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 47s
+  treg-gemini 42s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 2 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 43s
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 67s
+  treg-gemini 53s
+  treg-gemini 67s
+  treg-gemini 52s
+retry 2 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 55s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 39s
+  treg-gemini 49s
+  llm 7s
+falls fal-L3-001 VERIFIED 2 hz 1 ds
+  llm 5s
+falls fal-L3-003 VERIFIED 2 hz 1 ds
+  treg-gemini 91s
+  treg-gemini 57s
+  llm 4s
+falls fal-L3-007 VERIFIED 2 hz 1 ds
+  llm 15s
+  treg-gemini 60s
+  treg-gemini 50s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 7s
+falls fal-L3-004 failed verify, rebuilding
+  llm 10s
+falls fal-L3-002 VERIFIED 2 hz 1 ds
+  llm 32s
+  treg-gemini 53s
+  treg-gemini 98s
+  llm 4s
+falls fal-L3-005 VERIFIED 2 hz 1 ds
+  llm 14s
+  treg-gemini 57s
+  llm 4s
+falls fal-L3-000 failed verify, rebuilding
+  treg-gemini 86s
+  llm 4s
+falls fal-L3-008 VERIFIED 2 hz 1 ds
+  llm 8s
+  treg-gemini 53s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 29s
+  treg-gemini 29s
+  llm 6s
+falls fal-L3-009 failed verify, rebuilding
+  treg-gemini 62s
+  treg-gemini 42s
+  llm 23s
+  treg-gemini 35s
+  treg-gemini 48s
+  treg-gemini 55s
+  treg-gemini 33s
+  llm 9s
+falls fal-L3-006 failed verify, rebuilding
+  treg-gemini 40s
+  treg-gemini 39s
+  treg-gemini 40s
+  treg-gemini 40s
+  treg-gemini 34s
+  llm 13s
+falls fal-L3-014 VERIFIED 2 hz 1 ds
+  llm 5s
+falls fal-L3-010 failed verify, rebuilding
+  treg-gemini 34s
+  llm 39s
+  plan incomplete, retry fal-L3-006 []
+  llm 5s
+falls fal-L3-004 flagged 2 hz 1 ds
+  treg-gemini 33s
+  llm 18s
+  treg-gemini 34s
+  llm 21s
+  llm 4s
+falls fal-L3-000 flagged 2 hz 1 ds
+  treg-gemini 35s
+  llm 4s
+falls fal-L3-009 flagged 2 hz 1 ds
+  treg-gemini 40s
+  treg-gemini 41s
+  treg-gemini 35s
+  treg-gemini 29s
+  treg-gemini 38s
+  treg-gemini 37s
+  llm 5s
+falls fal-L3-010 flagged 2 hz 1 ds
+  llm 8s
+falls fal-L3-006 VERIFIED 2 hz 1 ds
+== falls L3 15 items, 11 verified, 439s, cost {'image_calls': 0, 'llm_calls': 54, 'treg_gemini_calls': 60}
+  llm 14s
+  llm 16s
+  llm 18s
+  llm 21s
+  llm 24s
+  llm 27s
+  llm 33s
+  plan incomplete, retry fal-L4-003 []
+  llm 37s
+  plan incomplete, retry fal-L4-009 []
+  llm 38s
+  plan incomplete, retry fal-L4-002 []
+  llm 38s
+  plan incomplete, retry fal-L4-000 []
+  treg-gemini 34s
+  treg-gemini 36s
+  treg-gemini 34s
+  treg-gemini 34s
+  treg-gemini 34s
+  treg-gemini 40s
+  llm 36s
+  plan incomplete, retry fal-L4-003 []
+  llm 36s
+  plan incomplete, retry fal-L4-002 []
+  llm 39s
+  plan incomplete, retry fal-L4-009 []
+  llm 39s
+  plan incomplete, retry fal-L4-000 []
+  treg-gemini 35s
+  treg-gemini 41s
+  treg-gemini 39s
+  treg-gemini 40s
+  treg-gemini 35s
+  llm 33s
+  llm 29s
+  treg-gemini 56s
+  llm 39s
+  plan incomplete, retry fal-L4-000 []
+falls fal-L4-000 failed verify, rebuilding
+  llm 42s
+  plan incomplete, retry fal-L4-009 []
+falls fal-L4-009 failed verify, rebuilding
+  treg-gemini 31s
+  treg-gemini 38s
+  treg-gemini 39s
+  treg-gemini 36s
+  treg-gemini 35s
+  treg-gemini 36s
+  llm 36s
+  plan incomplete, retry fal-L4-000 []
+  llm 44s
+  plan incomplete, retry fal-L4-009 []
+  treg-gemini 43s
+  treg-gemini 59s
+  treg-gemini 64s
+  treg-gemini 38s
+  treg-gemini 47s
+  treg-gemini 47s
+  llm 5s
+falls fal-L4-007 VERIFIED 3 hz 1 ds
+  llm 40s
+  plan incomplete, retry fal-L4-000 []
+  treg-gemini 58s
+  llm 39s
+  plan incomplete, retry fal-L4-009 []
+  treg-gemini 34s
+  treg-gemini 64s
+  treg-gemini 35s
+  llm 6s
+falls fal-L4-001 VERIFIED 4 hz 2 ds
+  treg-gemini 45s
+  llm 38s
+  plan incomplete, retry fal-L4-010 []
+  treg-gemini 52s
+  llm 12s
+falls fal-L4-005 failed verify, rebuilding
+  treg-gemini 36s
+  treg-gemini 63s
+  treg-gemini 29s
+  llm 4s
+falls fal-L4-006 VERIFIED 3 hz 1 ds
+  llm 36s
+  plan incomplete, retry fal-L4-009 []
+falls fal-L4-009 flagged 0 hz 0 ds
+  llm 10s
+falls fal-L4-008 VERIFIED 5 hz 1 ds
+  llm 33s
+  plan incomplete, retry fal-L4-011 []
+  llm 51s
+  plan incomplete, retry fal-L4-000 []
+falls fal-L4-000 flagged 0 hz 0 ds
+  treg-gemini 47s
+  llm 38s
+  plan incomplete, retry fal-L4-010 []
+  llm 29s
+  llm 10s
+falls fal-L4-004 failed verify, rebuilding
+  treg-gemini 29s
+  treg-gemini 35s
+  llm 31s
+  llm 31s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 32s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 39s
+  plan incomplete, retry fal-L4-012 []
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 21s
+retry 2 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 2 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 26s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 3 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 3 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 2 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 2 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 37s
+retry 3 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 4 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 4 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 3 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 37s
+  treg-gemini 44s
+  llm 40s
+  plan incomplete, retry fal-L4-012 []
+  treg-gemini 49s
+  treg-gemini 36s
+  treg-gemini 45s
+  treg-gemini 62s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 60s
+  treg-gemini 39s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 37s
+  plan incomplete, retry fal-L4-012 []
+falls fal-L4-012 failed verify, rebuilding
+retry 2 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 2 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 14s
+falls fal-L4-003 failed verify, rebuilding
+  treg-gemini 90s
+  llm 19s
+falls fal-L4-002 failed verify, rebuilding
+  treg-gemini 100s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 19s
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 64s
+  treg-gemini 45s
+retry 2 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 39s
+  plan incomplete, retry fal-L4-012 []
+  treg-gemini 31s
+  llm 35s
+  plan incomplete, retry fal-L4-002 []
+  treg-gemini 54s
+  treg-gemini 53s
+  treg-gemini 32s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 35s
+  treg-gemini 38s
+  treg-gemini 30s
+  treg-gemini 35s
+  treg-gemini 58s
+  llm 40s
+  plan incomplete, retry fal-L4-012 []
+  llm 37s
+  plan incomplete, retry fal-L4-002 []
+  treg-gemini 51s
+  treg-gemini 41s
+  treg-gemini 37s
+  treg-gemini 35s
+  treg-gemini 35s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 37s
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 39s
+  plan incomplete, retry fal-L4-012 []
+falls fal-L4-012 flagged 0 hz 0 ds
+  llm 6s
+falls fal-L4-013 VERIFIED 4 hz 1 ds
+retry 2 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 40s
+  plan incomplete, retry fal-L4-002 []
+falls fal-L4-002 flagged 1 hz 0 ds
+retry 3 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 20s
+falls fal-L4-005 flagged 5 hz 1 ds
+  treg-gemini 59s
+  treg-gemini 50s
+  treg-gemini 43s
+  treg-gemini 54s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 11s
+falls fal-L4-011 VERIFIED 3 hz 2 ds
+  treg-gemini 27s
+  treg-gemini 62s
+  treg-gemini 35s
+  llm 9s
+falls fal-L4-004 VERIFIED 4 hz 2 ds
+  treg-gemini 38s
+  llm 12s
+falls fal-L4-010 failed verify, rebuilding
+  treg-gemini 34s
+  llm 8s
+falls fal-L4-014 failed verify, rebuilding
+  treg-gemini 36s
+  llm 37s
+  plan incomplete, retry fal-L4-010 []
+  llm 36s
+  plan incomplete, retry fal-L4-014 []
+  llm 15s
+  treg-gemini 34s
+  llm 5s
+falls fal-L4-003 VERIFIED 4 hz 2 ds
+  llm 40s
+  plan incomplete, retry fal-L4-010 []
+  treg-gemini 34s
+  llm 39s
+  plan incomplete, retry fal-L4-010 []
+falls fal-L4-010 flagged 1 hz 0 ds
+  treg-gemini 34s
+  treg-gemini 35s
+  treg-gemini 40s
+  treg-gemini 46s
+  llm 9s
+falls fal-L4-014 VERIFIED 4 hz 2 ds
+== falls L4 15 items, 9 verified, 811s, cost {'image_calls': 0, 'llm_calls': 118, 'treg_gemini_calls': 140}
+  llm 11s
+  llm 12s
+  llm 22s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 26s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 28s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 2 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 37s
+  plan incomplete, retry fal-L5-001 []
+retry 2 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 38s
+  plan incomplete, retry fal-L5-004 []
+  llm 39s
+  plan incomplete, retry fal-L5-009 []
+  llm 39s
+  plan incomplete, retry fal-L5-003 []
+  llm 39s
+  plan incomplete, retry fal-L5-008 []
+  treg-gemini 34s
+  treg-gemini 33s
+  llm 27s
+  treg-gemini 44s
+  llm 35s
+  plan incomplete, retry fal-L5-001 []
+  llm 39s
+  plan incomplete, retry fal-L5-004 []
+  llm 38s
+  plan incomplete, retry fal-L5-008 []
+  llm 39s
+  plan incomplete, retry fal-L5-003 []
+  treg-gemini 52s
+  treg-gemini 55s
+  treg-gemini 39s
+  treg-gemini 40s
+  treg-gemini 28s
+  treg-gemini 34s
+  llm 38s
+  plan incomplete, retry fal-L5-001 []
+falls fal-L5-001 failed verify, rebuilding
+  llm 38s
+  plan incomplete, retry fal-L5-004 []
+falls fal-L5-004 failed verify, rebuilding
+  treg-gemini 35s
+  llm 39s
+  plan incomplete, retry fal-L5-008 []
+falls fal-L5-008 failed verify, rebuilding
+  treg-gemini 34s
+  llm 40s
+  plan incomplete, retry fal-L5-003 []
+falls fal-L5-003 failed verify, rebuilding
+  treg-gemini 34s
+  treg-gemini 33s
+  treg-gemini 29s
+  llm 10s
+falls fal-L5-007 failed verify, rebuilding
+  treg-gemini 35s
+  llm 20s
+falls fal-L5-005 failed verify, rebuilding
+  llm 9s
+  llm 28s
+  llm 36s
+  plan incomplete, retry fal-L5-001 []
+  llm 7s
+  treg-gemini 34s
+  treg-gemini 35s
+  llm 3s
+falls fal-L5-002 failed verify, rebuilding
+  llm 39s
+  plan incomplete, retry fal-L5-003 []
+  llm 41s
+  plan incomplete, retry fal-L5-008 []
+  treg-gemini 34s
+  llm 11s
+  treg-gemini 29s
+  treg-gemini 30s
+  treg-gemini 41s
+  treg-gemini 28s
+  llm 35s
+  treg-gemini 37s
+  treg-gemini 35s
+  llm 39s
+  plan incomplete, retry fal-L5-008 []
+  llm 41s
+  plan incomplete, retry fal-L5-003 []
+  treg-gemini 42s
+  treg-gemini 39s
+  treg-gemini 40s
+  treg-gemini 37s
+  treg-gemini 42s
+  llm 5s
+falls fal-L5-011 VERIFIED 4 hz 1 ds
+  llm 5s
+  llm 41s
+  plan incomplete, retry fal-L5-008 []
+falls fal-L5-008 flagged 0 hz 0 ds
+  llm 40s
+  plan incomplete, retry fal-L5-003 []
+falls fal-L5-003 flagged 1 hz 0 ds
+  treg-gemini 45s
+  treg-gemini 56s
+  treg-gemini 60s
+  treg-gemini 40s
+  treg-gemini 40s
+  treg-gemini 41s
+  llm 25s
+  llm 14s
+falls fal-L5-007 flagged 0 hz 3 ds
+  treg-gemini 56s
+  treg-gemini 44s
+  treg-gemini 35s
+  llm 39s
+  plan incomplete, retry fal-L5-014 []
+  treg-gemini 43s
+  treg-gemini 45s
+  llm 11s
+falls fal-L5-009 failed verify, rebuilding
+  treg-gemini 40s
+  llm 6s
+falls fal-L5-002 flagged 0 hz 3 ds
+  llm 19s
+falls fal-L5-006 failed verify, rebuilding
+  llm 9s
+falls fal-L5-005 flagged 0 hz 3 ds
+  treg-gemini 49s
+  llm 21s
+  treg-gemini 45s
+  treg-gemini 33s
+  llm 38s
+  plan incomplete, retry fal-L5-014 []
+  treg-gemini 34s
+  llm 39s
+  plan incomplete, retry fal-L5-006 []
+  treg-gemini 34s
+  treg-gemini 33s
+  treg-gemini 33s
+  treg-gemini 33s
+  llm 4s
+falls fal-L5-012 failed verify, rebuilding
+  llm 36s
+  plan incomplete, retry fal-L5-014 []
+falls fal-L5-014 failed verify, rebuilding
+  treg-gemini 34s
+  llm 19s
+falls fal-L5-004 flagged 4 hz 1 ds
+  llm 36s
+  plan incomplete, retry fal-L5-006 []
+  treg-gemini 35s
+  llm 31s
+  treg-gemini 41s
+  treg-gemini 29s
+  llm 38s
+  plan incomplete, retry fal-L5-014 []
+  llm 24s
+  treg-gemini 35s
+  treg-gemini 34s
+  treg-gemini 34s
+  treg-gemini 35s
+  llm 39s
+  plan incomplete, retry fal-L5-014 []
+  treg-gemini 40s
+  llm 18s
+falls fal-L5-001 flagged 5 hz 2 ds
+  treg-gemini 34s
+  treg-gemini 40s
+  treg-gemini 39s
+  llm 28s
+  treg-gemini 34s
+  llm 16s
+falls fal-L5-013 failed verify, rebuilding
+  treg-gemini 33s
+  llm 6s
+falls fal-L5-012 flagged 0 hz 3 ds
+  treg-gemini 41s
+  treg-gemini 41s
+  treg-gemini 40s
+  llm 37s
+  plan incomplete, retry fal-L5-013 []
+  treg-gemini 40s
+  treg-gemini 39s
+  llm 33s
+  llm 14s
+falls fal-L5-009 flagged 5 hz 2 ds
+  treg-gemini 46s
+  treg-gemini 33s
+  treg-gemini 53s
+  treg-gemini 65s
+  treg-gemini 34s
+  llm 12s
+falls fal-L5-006 flagged 5 hz 2 ds
+  treg-gemini 28s
+  treg-gemini 46s
+  treg-gemini 29s
+  treg-gemini 34s
+  llm 6s
+falls fal-L5-014 flagged 5 hz 1 ds

@@ -1,0 +1,88 @@
+{
+ "id": "fal-L4-014",
+ "raw": "{\"hazards\":[{\"id\":\"KIT-01\",\"severity\":\"medium\",\"evidence\":\"Frequently used plates and bowls are stored on high open shelves, requiring overhead reaching.\",\"box\":[0,24,305,294]},{\"id\":\"KIT-02\",\"severity\":\"medium\",\"evidence\":\"Cookware and baskets are stored in low open shelving, requiring bending or squatting.\",\"box\":[0,538,258,858]},{\"id\":\"KIT-03\",\"severity\":\"high\",\"evidence\":\"A folding step stool is positioned in the kitchen for reaching upper storage.\",\"box\":[329,371,389,617]},{\"id\":\"KIT-04\",\"severity\":\"high\",\"evidence\":\"A loose runner lies at the sink and the adjacent wood floor visibly appears wet and reflective.\",\"box\":[580,646,781,865]},{\"id\":\"LIV-02\",\"severity\":\"high\",\"evidence\":\"A long cord or hose crosses and loops through the main walking path.\",\"box\":[280,584,551,999]},{\"id\":\"LIV-03\",\"severity\":\"medium\",\"evidence\":\"The central walker route is obstructed by a step stool, chair, bin, cord, and pet items.\",\"box\":[321,365,565,650]},{\"id\":\"LIV-05\",\"severity\":\"medium\",\"evidence\":\"The kitchen is dimly lit, reducing visibility of floor obstacles and wet areas.\"},{\"id\":\"LIV-07\",\"severity\":\"high\",\"evidence\":\"A pet bowl and toy are directly underfoot in the central walking area.\",\"box\":[463,579,560,643]}]}",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Frequently used plates and bowls are stored on high open shelves, requiring overhead reaching.",
+   "box": [
+    0,
+    24,
+    305,
+    294
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Cookware and baskets are stored in low open shelving, requiring bending or squatting.",
+   "box": [
+    0,
+    538,
+    258,
+    858
+   ]
+  },
+  {
+   "id": "KIT-03",
+   "severity": "high",
+   "evidence": "A folding step stool is positioned in the kitchen for reaching upper storage.",
+   "box": [
+    329,
+    371,
+    389,
+    617
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "A loose runner lies at the sink and the adjacent wood floor visibly appears wet and reflective.",
+   "box": [
+    580,
+    646,
+    781,
+    865
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "A long cord or hose crosses and loops through the main walking path.",
+   "box": [
+    280,
+    584,
+    551,
+    999
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The central walker route is obstructed by a step stool, chair, bin, cord, and pet items.",
+   "box": [
+    321,
+    365,
+    565,
+    650
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "The kitchen is dimly lit, reducing visibility of floor obstacles and wet areas."
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "A pet bowl and toy are directly underfoot in the central walking area.",
+   "box": [
+    463,
+    579,
+    560,
+    643
+   ]
+  }
+ ]
+}

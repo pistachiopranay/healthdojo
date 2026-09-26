@@ -1,0 +1,28 @@
+{
+ "id": "dem-L1-003",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Multiple medication bottles are visible on the kitchen counter near the sink.\",\n      \"box\": [687, 320, 743, 378]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cleaning supplies or personal care products are visible on the counter near the sink, potentially including chemicals.\",\n      \"box\": [738, 338, 815, 380]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Multiple medication bottles are visible on the kitchen counter near the sink.",
+   "box": [
+    687,
+    320,
+    743,
+    378
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning supplies or personal care products are visible on the counter near the sink, potentially including chemicals.",
+   "box": [
+    738,
+    338,
+    815,
+    380
+   ]
+  }
+ ]
+}

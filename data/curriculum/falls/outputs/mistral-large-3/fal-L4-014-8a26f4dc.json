@@ -1,0 +1,83 @@
+{
+ "id": "fal-L4-014",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"KIT-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Frequently used items (e.g., dishes, bowls) are stored in high cabinets above the countertop.\",\n      \"box\": [100, 150, 300, 250]\n    },\n    {\n      \"id\": \"KIT-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Items in lower cabinets and drawers may require bending or reaching low, which is difficult post-surgery.\",\n      \"box\": [100, 350, 300, 550]\n    },\n    {\n      \"id\": \"KIT-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"The floor appears slippery, especially near the sink area, posing a fall risk.\",\n      \"box\": [600, 300, 900, 600]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"There is a loose rug or mat on the floor near the center of the kitchen, which could cause tripping.\",\n      \"box\": [400, 550, 700, 750]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The walking path is narrowed by the placement of the chair and the loose rug.\",\n      \"box\": [400, 400, 700, 800]\n    },\n    {\n      \"id\": \"LIV-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There is a slight level change or step-down near the doorway, which is not clearly marked.\",\n      \"box\": [0, 600, 1000, 800]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Pet bowl and items are on the floor, posing a tripping hazard.\",\n      \"box\": [450, 600, 550, 650]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Frequently used items (e.g., dishes, bowls) are stored in high cabinets above the countertop.",
+   "box": [
+    100,
+    150,
+    300,
+    250
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Items in lower cabinets and drawers may require bending or reaching low, which is difficult post-surgery.",
+   "box": [
+    100,
+    350,
+    300,
+    550
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "The floor appears slippery, especially near the sink area, posing a fall risk.",
+   "box": [
+    600,
+    300,
+    900,
+    600
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "There is a loose rug or mat on the floor near the center of the kitchen, which could cause tripping.",
+   "box": [
+    400,
+    550,
+    700,
+    750
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The walking path is narrowed by the placement of the chair and the loose rug.",
+   "box": [
+    400,
+    400,
+    700,
+    800
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "There is a slight level change or step-down near the doorway, which is not clearly marked.",
+   "box": [
+    0,
+    600,
+    1000,
+    800
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pet bowl and items are on the floor, posing a tripping hazard.",
+   "box": [
+    450,
+    600,
+    550,
+    650
+   ]
+  }
+ ]
+}

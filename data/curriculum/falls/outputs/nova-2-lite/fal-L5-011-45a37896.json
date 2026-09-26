@@ -1,0 +1,29 @@
+{
+ "id": "fal-L5-011",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Missing handrail on one side of the staircase\",\n      \"box\": null\n    },\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Objects on stairs, specifically a cat\",\n      \"box\": [0, 0, 1000, 1000]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Undefined step edges and loose stair covering\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Missing handrail on one side of the staircase",
+   "box": null
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "medium",
+   "evidence": "Objects on stairs, specifically a cat",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "Undefined step edges and loose stair covering",
+   "box": null
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-003",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Car keys hanging by a hook near the front door\",\n      \"box\": [750, 250, 800, 350]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Clutter piles including shoes and boxes in the walkway\",\n      \"box\": [300, 500, 800, 750]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "Car keys hanging by a hook near the front door",
+   "box": [
+    750,
+    250,
+    800,
+    350
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Clutter piles including shoes and boxes in the walkway",
+   "box": [
+    300,
+    500,
+    800,
+    750
+   ]
+  }
+ ]
+}

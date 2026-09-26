@@ -1,0 +1,44 @@
+{
+ "id": "fal-L4-013",
+ "raw": "{\"hazards\":[{\"id\":\"KIT-01\",\"severity\":\"medium\",\"evidence\":\"Frequently used plates and bowls are stored in a high wall cabinet, requiring overhead reaching.\",\"box\":[610,260,708,465]},{\"id\":\"LIV-03\",\"severity\":\"high\",\"evidence\":\"A dining chair blocks and narrows the central kitchen walking path needed for walker use.\",\"box\":[458,495,597,800]},{\"id\":\"LIV-05\",\"severity\":\"medium\",\"evidence\":\"The kitchen and adjoining walking areas are dimly lit with deep shadows.\"},{\"id\":\"LIV-07\",\"severity\":\"high\",\"evidence\":\"A pet bed and feeding bowl sit on the floor beside the main route into the kitchen and could catch a walker or foot.\",\"box\":[275,720,432,812]}]}",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Frequently used plates and bowls are stored in a high wall cabinet, requiring overhead reaching.",
+   "box": [
+    610,
+    260,
+    708,
+    465
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "A dining chair blocks and narrows the central kitchen walking path needed for walker use.",
+   "box": [
+    458,
+    495,
+    597,
+    800
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "The kitchen and adjoining walking areas are dimly lit with deep shadows."
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "A pet bed and feeding bowl sit on the floor beside the main route into the kitchen and could catch a walker or foot.",
+   "box": [
+    275,
+    720,
+    432,
+    812
+   ]
+  }
+ ]
+}

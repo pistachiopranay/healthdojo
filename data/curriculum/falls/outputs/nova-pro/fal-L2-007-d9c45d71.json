@@ -1,0 +1,94 @@
+{
+ "id": "fal-L2-007",
+ "raw": "{\"hazards\": [{\"id\": \"BATH-07\", \"severity\": \"medium\", \"evidence\": \"loose bath mat on bathroom floor\", \"box\": [816, 499, 942, 620]}, {\"id\": \"BED-01\", \"severity\": \"medium\", \"evidence\": \"bed height may be inappropriate for safe transfers\", \"box\": [132, 286, 620, 783]}, {\"id\": \"BED-03\", \"severity\": \"low\", \"evidence\": \"dark bed-to-bathroom path\", \"box\": [799, 35, 999, 730]}, {\"id\": \"BED-04\", \"severity\": \"low\", \"evidence\": \"floor clutter around bed\", \"box\": [271, 188, 338, 403]}, {\"id\": \"BED-05\", \"severity\": \"medium\", \"evidence\": \"insufficient walker clearance around bed\", \"box\": [132, 286, 620, 783]}, {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"throw rug on walkway\", \"box\": [816, 499, 942, 620]}, {\"id\": \"LIV-03\", \"severity\": \"low\", \"evidence\": \"cluttered or narrowed walking path\", \"box\": [0, 393, 203, 562]}, {\"id\": \"LIV-06\", \"severity\": \"low\", \"evidence\": \"unmarked level change / step-down between rooms\", \"box\": [799, 35, 999, 730]}]}",
+ "hazards": [
+  {
+   "id": "BATH-07",
+   "severity": "medium",
+   "evidence": "loose bath mat on bathroom floor",
+   "box": [
+    816,
+    499,
+    942,
+    620
+   ]
+  },
+  {
+   "id": "BED-01",
+   "severity": "medium",
+   "evidence": "bed height may be inappropriate for safe transfers",
+   "box": [
+    132,
+    286,
+    620,
+    783
+   ]
+  },
+  {
+   "id": "BED-03",
+   "severity": "low",
+   "evidence": "dark bed-to-bathroom path",
+   "box": [
+    799,
+    35,
+    999,
+    730
+   ]
+  },
+  {
+   "id": "BED-04",
+   "severity": "low",
+   "evidence": "floor clutter around bed",
+   "box": [
+    271,
+    188,
+    338,
+    403
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "insufficient walker clearance around bed",
+   "box": [
+    132,
+    286,
+    620,
+    783
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "throw rug on walkway",
+   "box": [
+    816,
+    499,
+    942,
+    620
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "low",
+   "evidence": "cluttered or narrowed walking path",
+   "box": [
+    0,
+    393,
+    203,
+    562
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "low",
+   "evidence": "unmarked level change / step-down between rooms",
+   "box": [
+    799,
+    35,
+    999,
+    730
+   ]
+  }
+ ]
+}

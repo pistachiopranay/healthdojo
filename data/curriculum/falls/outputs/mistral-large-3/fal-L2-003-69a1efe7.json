@@ -1,0 +1,61 @@
+{
+ "id": "fal-L2-003",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stairs have a handrail on only one side of the staircase.\",\n      \"box\": [50, 300, 250, 600]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Poor lighting on the stairs, especially considering the time of day.\",\n      \"box\": [50, 300, 250, 600]\n    },\n    {\n      \"id\": \"ENT-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"Raised threshold or step at the entrance door.\",\n      \"box\": [300, 400, 500, 600]\n    },\n    {\n      \"id\": \"LIV-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Step-down from the entrance to the walkway outside is not clearly marked.\",\n      \"box\": [0, 550, 1000, 650]\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"Doorway may be too narrow for a walker due to the door frame and surrounding structure.\",\n      \"box\": [300, 150, 500, 600]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Stairs have a handrail on only one side of the staircase.",
+   "box": [
+    50,
+    300,
+    250,
+    600
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Poor lighting on the stairs, especially considering the time of day.",
+   "box": [
+    50,
+    300,
+    250,
+    600
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "high",
+   "evidence": "Raised threshold or step at the entrance door.",
+   "box": [
+    300,
+    400,
+    500,
+    600
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "Step-down from the entrance to the walkway outside is not clearly marked.",
+   "box": [
+    0,
+    550,
+    1000,
+    650
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "high",
+   "evidence": "Doorway may be too narrow for a walker due to the door frame and surrounding structure.",
+   "box": [
+    300,
+    150,
+    500,
+    600
+   ]
+  }
+ ]
+}

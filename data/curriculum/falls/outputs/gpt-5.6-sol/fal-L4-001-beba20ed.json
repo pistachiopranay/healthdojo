@@ -1,0 +1,71 @@
+{
+ "id": "fal-L4-001",
+ "raw": "{\"hazards\":[{\"id\":\"KIT-01\",\"severity\":\"medium\",\"evidence\":\"Cups, containers, and other kitchen items are stored on high open shelves, requiring overhead reaching.\",\"box\":[0,30,310,330]},{\"id\":\"KIT-02\",\"severity\":\"medium\",\"evidence\":\"Baskets and kitchen items are stored in low open cubbies, requiring bending or crouching.\",\"box\":[0,490,270,960]},{\"id\":\"KIT-03\",\"severity\":\"medium\",\"evidence\":\"An open folding step stool is positioned in the kitchen for reaching elevated storage.\",\"box\":[318,335,398,660]},{\"id\":\"LIV-02\",\"severity\":\"high\",\"evidence\":\"A long cord runs and loops across the floor in the main walking area.\",\"box\":[620,570,790,998]},{\"id\":\"LIV-03\",\"severity\":\"high\",\"evidence\":\"The central walker route is obstructed by a step stool, pet bed, bowls, toys, and a cord.\"},{\"id\":\"LIV-05\",\"severity\":\"medium\",\"evidence\":\"The kitchen and floor-level obstacles are poorly illuminated overall.\"},{\"id\":\"LIV-07\",\"severity\":\"high\",\"evidence\":\"A pet bed, feeding bowls, and multiple pet toys are spread across the central floor and are underfoot.\",\"box\":[325,610,675,905]}]}",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Cups, containers, and other kitchen items are stored on high open shelves, requiring overhead reaching.",
+   "box": [
+    0,
+    30,
+    310,
+    330
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Baskets and kitchen items are stored in low open cubbies, requiring bending or crouching.",
+   "box": [
+    0,
+    490,
+    270,
+    960
+   ]
+  },
+  {
+   "id": "KIT-03",
+   "severity": "medium",
+   "evidence": "An open folding step stool is positioned in the kitchen for reaching elevated storage.",
+   "box": [
+    318,
+    335,
+    398,
+    660
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "A long cord runs and loops across the floor in the main walking area.",
+   "box": [
+    620,
+    570,
+    790,
+    998
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "The central walker route is obstructed by a step stool, pet bed, bowls, toys, and a cord."
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "The kitchen and floor-level obstacles are poorly illuminated overall."
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "A pet bed, feeding bowls, and multiple pet toys are spread across the central floor and are underfoot.",
+   "box": [
+    325,
+    610,
+    675,
+    905
+   ]
+  }
+ ]
+}

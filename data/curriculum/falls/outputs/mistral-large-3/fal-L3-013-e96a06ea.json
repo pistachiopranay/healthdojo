@@ -1,0 +1,50 @@
+{
+ "id": "fal-L3-013",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose rug on the floor without a non-slip pad underneath\",\n      \"box\": [100, 700, 600, 850]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"Cords coiled on the floor, posing a tripping hazard\",\n      \"box\": [300, 750, 500, 800]\n    },\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Insufficient walker clearance around the potential bed area due to laundry and cords on the floor\",\n      \"box\": [400, 600, 900, 850]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cluttered walking path due to laundry and cords on the floor\",\n      \"box\": [400, 600, 900, 850]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose rug on the floor without a non-slip pad underneath",
+   "box": [
+    100,
+    700,
+    600,
+    850
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Cords coiled on the floor, posing a tripping hazard",
+   "box": [
+    300,
+    750,
+    500,
+    800
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "Insufficient walker clearance around the potential bed area due to laundry and cords on the floor",
+   "box": [
+    400,
+    600,
+    900,
+    850
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Cluttered walking path due to laundry and cords on the floor",
+   "box": [
+    400,
+    600,
+    900,
+    850
+   ]
+  }
+ ]
+}

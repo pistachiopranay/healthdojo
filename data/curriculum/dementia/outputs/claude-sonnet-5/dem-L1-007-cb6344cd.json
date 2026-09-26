@@ -1,0 +1,28 @@
+{
+ "id": "dem-L1-007",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K02\", \"severity\": \"high\", \"evidence\": \"Knife block with multiple knives and a knife lying loose on the counter, easily accessible\", \"box\": [648, 163, 800, 268]}, {\"id\": \"DEM-K03\", \"severity\": \"medium\", \"evidence\": \"Bottles of cleaning/dish soap products left open on the counter near the sink\", \"box\": [400, 195, 445, 250]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Knife block with multiple knives and a knife lying loose on the counter, easily accessible",
+   "box": [
+    648,
+    163,
+    800,
+    268
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Bottles of cleaning/dish soap products left open on the counter near the sink",
+   "box": [
+    400,
+    195,
+    445,
+    250
+   ]
+  }
+ ]
+}

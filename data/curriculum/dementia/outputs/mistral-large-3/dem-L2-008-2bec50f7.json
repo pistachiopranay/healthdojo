@@ -1,0 +1,39 @@
+{
+ "id": "dem-L2-008",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"While car keys are not directly visible, the front door area should be checked for easily accessible keys that could pose a wandering risk.\",\n      \"box\": [400, 200, 450, 300]\n    },\n    {\n      \"id\": \"DEM-E02\",\n      \"severity\": \"high\",\n      \"evidence\": \"The front door is ajar, which could present a wandering risk for an individual with dementia.\",\n      \"box\": [380, 150, 450, 400]\n    },\n    {\n      \"id\": \"DEM-R02\",\n      \"severity\": \"low\",\n      \"evidence\": \"The patterned throw on the sofa could potentially be confusing or misperceived by someone with dementia, though it is not a bold high-contrast pattern.\",\n      \"box\": [800, 300, 1000, 500]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "medium",
+   "evidence": "While car keys are not directly visible, the front door area should be checked for easily accessible keys that could pose a wandering risk.",
+   "box": [
+    400,
+    200,
+    450,
+    300
+   ]
+  },
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "The front door is ajar, which could present a wandering risk for an individual with dementia.",
+   "box": [
+    380,
+    150,
+    450,
+    400
+   ]
+  },
+  {
+   "id": "DEM-R02",
+   "severity": "low",
+   "evidence": "The patterned throw on the sofa could potentially be confusing or misperceived by someone with dementia, though it is not a bold high-contrast pattern.",
+   "box": [
+    800,
+    300,
+    1000,
+    500
+   ]
+  }
+ ]
+}

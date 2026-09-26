@@ -1,0 +1,28 @@
+{
+ "id": "dem-L1-007",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-K02\",\"severity\":\"high\",\"evidence\":\"Multiple knives are openly accessible in a knife block on the countertop.\",\"box\":[563,185,631,307]},{\"id\":\"DEM-K03\",\"severity\":\"high\",\"evidence\":\"Several cleaning-product bottles are visible and accessible on an open shelf in the adjoining room.\",\"box\":[765,173,836,265]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Multiple knives are openly accessible in a knife block on the countertop.",
+   "box": [
+    563,
+    185,
+    631,
+    307
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "Several cleaning-product bottles are visible and accessible on an open shelf in the adjoining room.",
+   "box": [
+    765,
+    173,
+    836,
+    265
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "fal-L1-001",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"A coiled electrical cord lies across the center of the hardwood floor, directly in a likely walking path between the seating area and the TV/entertainment center.\",\n      \"box\": [445, 523, 615, 628]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The blue recliner has very low, soft seating and appears to lack firm, sturdy armrests at a height suitable for pushing up from, which could make standing difficult for someone with a recent hip or knee replacement.\",\n      \"box\": [24, 279, 349, 755]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The room is generally well-lit, but the large window creates significant glare on the polished hardwood floor, which could reduce visibility of obstacles or changes in floor level for someone with limited mobility.\",\n      \"box\": [374, 70, 650, 429]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "A coiled electrical cord lies across the center of the hardwood floor, directly in a likely walking path between the seating area and the TV/entertainment center.",
+   "box": [
+    445,
+    523,
+    615,
+    628
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "The blue recliner has very low, soft seating and appears to lack firm, sturdy armrests at a height suitable for pushing up from, which could make standing difficult for someone with a recent hip or knee replacement.",
+   "box": [
+    24,
+    279,
+    349,
+    755
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The room is generally well-lit, but the large window creates significant glare on the polished hardwood floor, which could reduce visibility of obstacles or changes in floor level for someone with limited mobility.",
+   "box": [
+    374,
+    70,
+    650,
+    429
+   ]
+  }
+ ]
+}

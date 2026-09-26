@@ -1,0 +1,72 @@
+{
+ "id": "fal-L3-006",
+ "raw": "{\"hazards\": [\n  {\"id\": \"BATH-01\", \"severity\": \"high\", \"evidence\": \"No grab bar is visible near the tub/shower area except for a towel bar which is not designed for support.\", \"box\": [340, 0, 740, 870]},\n  {\"id\": \"BATH-03\", \"severity\": \"high\", \"evidence\": \"A towel bar is present and could be mistakenly used as a support bar.\", \"box\": [340, 0, 740, 870]},\n  {\"id\": \"BATH-04\", \"severity\": \"high\", \"evidence\": \"The tub/shower floor appears to be white and potentially slippery.\", \"box\": [340, 0, 740, 870]},\n  {\"id\": \"BATH-08\", \"severity\": \"medium\", \"evidence\": \"A shower chair is present but there is no visible handheld shower.\", \"box\": [340, 0, 740, 870]},\n  {\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"Clutter is visible on the left side of the image, including shoes and clothing.\", \"box\": [100, 600, 320, 960]},\n  {\"id\": \"LIV-07\", \"severity\": \"low\", \"evidence\": \"No pets are visible, but the clutter includes shoes which could be a tripping hazard.\", \"box\": [100, 600, 320, 960]}\n]}",
+ "hazards": [
+  {
+   "id": "BATH-01",
+   "severity": "high",
+   "evidence": "No grab bar is visible near the tub/shower area except for a towel bar which is not designed for support.",
+   "box": [
+    340,
+    0,
+    740,
+    870
+   ]
+  },
+  {
+   "id": "BATH-03",
+   "severity": "high",
+   "evidence": "A towel bar is present and could be mistakenly used as a support bar.",
+   "box": [
+    340,
+    0,
+    740,
+    870
+   ]
+  },
+  {
+   "id": "BATH-04",
+   "severity": "high",
+   "evidence": "The tub/shower floor appears to be white and potentially slippery.",
+   "box": [
+    340,
+    0,
+    740,
+    870
+   ]
+  },
+  {
+   "id": "BATH-08",
+   "severity": "medium",
+   "evidence": "A shower chair is present but there is no visible handheld shower.",
+   "box": [
+    340,
+    0,
+    740,
+    870
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Clutter is visible on the left side of the image, including shoes and clothing.",
+   "box": [
+    100,
+    600,
+    320,
+    960
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "low",
+   "evidence": "No pets are visible, but the clutter includes shoes which could be a tripping hazard.",
+   "box": [
+    100,
+    600,
+    320,
+    960
+   ]
+  }
+ ]
+}

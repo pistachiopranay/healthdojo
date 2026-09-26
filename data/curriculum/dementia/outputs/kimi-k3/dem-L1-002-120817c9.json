@@ -1,0 +1,39 @@
+{
+ "id": "dem-L1-002",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R02\", \"severity\": \"high\", \"evidence\": \"Large bold black-and-white striped high-contrast rug at the foot of the bed, easily misperceived by someone with dementia (as holes/steps) and a trip risk.\", \"box\": [281, 596, 817, 1000]}, {\"id\": \"DEM-K04\", \"severity\": \"medium\", \"evidence\": \"Small bottle (appears to be medication) left out on the nightstand next to the lamp within easy reach of the bed.\", \"box\": [668, 408, 686, 443]}, {\"id\": \"DEM-B03\", \"severity\": \"medium\", \"evidence\": \"Dark bath mat visible on the lighter bathroom floor through the doorway, a low-contrast misperception/trip hazard.\", \"box\": [828, 426, 922, 486]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "high",
+   "evidence": "Large bold black-and-white striped high-contrast rug at the foot of the bed, easily misperceived by someone with dementia (as holes/steps) and a trip risk.",
+   "box": [
+    281,
+    596,
+    817,
+    1000
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Small bottle (appears to be medication) left out on the nightstand next to the lamp within easy reach of the bed.",
+   "box": [
+    668,
+    408,
+    686,
+    443
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "medium",
+   "evidence": "Dark bath mat visible on the lighter bathroom floor through the doorway, a low-contrast misperception/trip hazard.",
+   "box": [
+    828,
+    426,
+    922,
+    486
+   ]
+  }
+ ]
+}

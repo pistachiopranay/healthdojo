@@ -1,0 +1,39 @@
+{
+ "id": "dem-L2-007",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Stove with visible knobs and no knob covers; burner controls are freely accessible.\",\n      \"box\": [142, 328, 257, 747]\n    },\n    {\n      \"id\": \"DEM-K04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Medication bottle (orange prescription bottle) sitting on the counter near the coffee maker.\",\n      \"box\": [218, 262, 240, 316]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cleaning chemicals (dish soap, possibly other cleaners) visible near the sink and on the counter.\",\n      \"box\": [316, 245, 338, 297]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "medium",
+   "evidence": "Stove with visible knobs and no knob covers; burner controls are freely accessible.",
+   "box": [
+    142,
+    328,
+    257,
+    747
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Medication bottle (orange prescription bottle) sitting on the counter near the coffee maker.",
+   "box": [
+    218,
+    262,
+    240,
+    316
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning chemicals (dish soap, possibly other cleaners) visible near the sink and on the counter.",
+   "box": [
+    316,
+    245,
+    338,
+    297
+   ]
+  }
+ ]
+}

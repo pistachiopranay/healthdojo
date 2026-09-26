@@ -1,0 +1,72 @@
+{
+ "id": "fal-L4-001",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"KIT-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Open upper shelves contain dishes and bowls placed high, requiring reaching or climbing to access.\",\n      \"box\": [0, 0, 312, 300]\n    },\n    {\n      \"id\": \"KIT-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"A step ladder is visible near the center of the kitchen, indicating potential use for reaching high shelves, which is unsafe post-surgery.\",\n      \"box\": [325, 339, 398, 580]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"A white electrical cord snakes across the kitchen floor, creating a tripping hazard for someone using a walker.\",\n      \"box\": [497, 570, 758, 999]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"The center of the kitchen floor is cluttered with a dog bed, food bowls, and toys, narrowing the walking path and obstructing walker movement.\",\n      \"box\": [320, 610, 675, 890]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The room is dimly lit with shadows and uneven lighting, especially near the back and under cabinets, which can obscure hazards.\",\n      \"box\": [0, 0, 1000, 999]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"high\",\n      \"evidence\": \"A dog bed, food bowls, chew toys, and a bone are scattered on the floor, posing a significant tripping hazard for someone using a walker.\",\n      \"box\": [320, 610, 675, 890]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Open upper shelves contain dishes and bowls placed high, requiring reaching or climbing to access.",
+   "box": [
+    0,
+    0,
+    312,
+    300
+   ]
+  },
+  {
+   "id": "KIT-03",
+   "severity": "high",
+   "evidence": "A step ladder is visible near the center of the kitchen, indicating potential use for reaching high shelves, which is unsafe post-surgery.",
+   "box": [
+    325,
+    339,
+    398,
+    580
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "A white electrical cord snakes across the kitchen floor, creating a tripping hazard for someone using a walker.",
+   "box": [
+    497,
+    570,
+    758,
+    999
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "The center of the kitchen floor is cluttered with a dog bed, food bowls, and toys, narrowing the walking path and obstructing walker movement.",
+   "box": [
+    320,
+    610,
+    675,
+    890
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "The room is dimly lit with shadows and uneven lighting, especially near the back and under cabinets, which can obscure hazards.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "A dog bed, food bowls, chew toys, and a bone are scattered on the floor, posing a significant tripping hazard for someone using a walker.",
+   "box": [
+    320,
+    610,
+    675,
+    890
+   ]
+  }
+ ]
+}

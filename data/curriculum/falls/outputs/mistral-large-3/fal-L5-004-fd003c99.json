@@ -1,0 +1,94 @@
+{
+ "id": "fal-L5-004",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BATH-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"No grab bar visible at tub/shower area\",\n      \"box\": [400, 300, 600, 700]\n    },\n    {\n      \"id\": \"BATH-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"No support (grab bar) at toilet\",\n      \"box\": [600, 400, 750, 700]\n    },\n    {\n      \"id\": \"BATH-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Potential slippery tub/shower floor due to lack of visible non-slip surface\",\n      \"box\": [400, 300, 600, 500]\n    },\n    {\n      \"id\": \"BATH-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"High tub step-over without transfer aid visible\",\n      \"box\": [400, 300, 600, 500]\n    },\n    {\n      \"id\": \"BATH-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Toilet seat appears low\",\n      \"box\": [600, 500, 750, 700]\n    },\n    {\n      \"id\": \"BATH-07\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose rug or towel on bathroom floor\",\n      \"box\": [400, 750, 700, 900]\n    },\n    {\n      \"id\": \"BATH-08\",\n      \"severity\": \"medium\",\n      \"evidence\": \"No shower seat or handheld shower visible\",\n      \"box\": [400, 300, 600, 700]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Poor lighting in the bathroom area\",\n      \"box\": [0, 0, 1000, 1000]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BATH-01",
+   "severity": "high",
+   "evidence": "No grab bar visible at tub/shower area",
+   "box": [
+    400,
+    300,
+    600,
+    700
+   ]
+  },
+  {
+   "id": "BATH-02",
+   "severity": "high",
+   "evidence": "No support (grab bar) at toilet",
+   "box": [
+    600,
+    400,
+    750,
+    700
+   ]
+  },
+  {
+   "id": "BATH-04",
+   "severity": "medium",
+   "evidence": "Potential slippery tub/shower floor due to lack of visible non-slip surface",
+   "box": [
+    400,
+    300,
+    600,
+    500
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "High tub step-over without transfer aid visible",
+   "box": [
+    400,
+    300,
+    600,
+    500
+   ]
+  },
+  {
+   "id": "BATH-06",
+   "severity": "medium",
+   "evidence": "Toilet seat appears low",
+   "box": [
+    600,
+    500,
+    750,
+    700
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "high",
+   "evidence": "Loose rug or towel on bathroom floor",
+   "box": [
+    400,
+    750,
+    700,
+    900
+   ]
+  },
+  {
+   "id": "BATH-08",
+   "severity": "medium",
+   "evidence": "No shower seat or handheld shower visible",
+   "box": [
+    400,
+    300,
+    600,
+    700
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Poor lighting in the bathroom area",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  }
+ ]
+}

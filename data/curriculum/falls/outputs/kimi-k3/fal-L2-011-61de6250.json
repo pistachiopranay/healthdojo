@@ -1,0 +1,39 @@
+{
+ "id": "fal-L2-011",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"White cord/wire snaking across the wood-floor walkway in the middle of the galley kitchen, directly in the walker path.\", \"box\": [362, 522, 527, 986]}, {\"id\": \"KIT-01\", \"severity\": \"medium\", \"evidence\": \"Everyday plates, bowls and glassware stacked on upper open shelves requiring reaching at/above shoulder height.\", \"box\": [0, 0, 345, 265]}, {\"id\": \"KIT-02\", \"severity\": \"medium\", \"evidence\": \"Frequently used bowls and stacked dishes on the lowest shelf near floor level, requiring deep bending (problematic after hip/knee replacement).\", \"box\": [0, 500, 345, 795]}]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "White cord/wire snaking across the wood-floor walkway in the middle of the galley kitchen, directly in the walker path.",
+   "box": [
+    362,
+    522,
+    527,
+    986
+   ]
+  },
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Everyday plates, bowls and glassware stacked on upper open shelves requiring reaching at/above shoulder height.",
+   "box": [
+    0,
+    0,
+    345,
+    265
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Frequently used bowls and stacked dishes on the lowest shelf near floor level, requiring deep bending (problematic after hip/knee replacement).",
+   "box": [
+    0,
+    500,
+    345,
+    795
+   ]
+  }
+ ]
+}

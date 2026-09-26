@@ -1,0 +1,50 @@
+{
+ "id": "fal-L4-007",
+ "raw": "{\"hazards\": [\n  {\"id\": \"STAIR-01\", \"severity\": \"high\", \"evidence\": \"Handrail is present on one side only\", \"box\": [650, 0, 1000, 984]},\n  {\"id\": \"STAIR-03\", \"severity\": \"high\", \"evidence\": \"Shoes and towels are on the stairs\", \"box\": [320, 0, 830, 980]},\n  {\"id\": \"STAIR-04\", \"severity\": \"medium\", \"evidence\": \"The stairs are poorly lit\", \"box\": [320, 0, 830, 980]},\n  {\"id\": \"STAIR-05\", \"severity\": \"medium\", \"evidence\": \"The carpet on the stairs appears worn and potentially loose\", \"box\": [320, 0, 830, 980]}\n]}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Handrail is present on one side only",
+   "box": [
+    650,
+    0,
+    1000,
+    984
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Shoes and towels are on the stairs",
+   "box": [
+    320,
+    0,
+    830,
+    980
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "The stairs are poorly lit",
+   "box": [
+    320,
+    0,
+    830,
+    980
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "The carpet on the stairs appears worn and potentially loose",
+   "box": [
+    320,
+    0,
+    830,
+    980
+   ]
+  }
+ ]
+}

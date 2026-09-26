@@ -1,0 +1,28 @@
+{
+ "id": "fal-L1-002",
+ "raw": "{\"hazards\":[{\"id\":\"LIV-01\",\"severity\":\"high\",\"evidence\":\"A loose throw rug beside the bed is severely buckled and curled in the walking path, creating a major trip and walker-catching hazard.\",\"box\":[433,617,744,877]},{\"id\":\"LIV-01\",\"severity\":\"medium\",\"evidence\":\"A loose runner rug lies in the path through the doorway toward the bathroom.\",\"box\":[817,459,945,628]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "A loose throw rug beside the bed is severely buckled and curled in the walking path, creating a major trip and walker-catching hazard.",
+   "box": [
+    433,
+    617,
+    744,
+    877
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A loose runner rug lies in the path through the doorway toward the bathroom.",
+   "box": [
+    817,
+    459,
+    945,
+    628
+   ]
+  }
+ ]
+}

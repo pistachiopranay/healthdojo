@@ -1,0 +1,39 @@
+{
+ "id": "fal-L2-011",
+ "raw": "{\"hazards\":[{\"id\":\"LIV-02\",\"severity\":\"high\",\"evidence\":\"A loose electrical cord runs across the main kitchen walkway, creating a trip and walker-entanglement hazard.\",\"box\":[359,487,525,831]},{\"id\":\"KIT-01\",\"severity\":\"medium\",\"evidence\":\"Plates, bowls, and glassware are stored on high open shelves, requiring overhead reaching.\",\"box\":[0,0,332,230]},{\"id\":\"KIT-02\",\"severity\":\"medium\",\"evidence\":\"Bowls and dishes are stored on the lowest open shelf near floor level, requiring deep bending.\",\"box\":[0,485,296,678]}]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "A loose electrical cord runs across the main kitchen walkway, creating a trip and walker-entanglement hazard.",
+   "box": [
+    359,
+    487,
+    525,
+    831
+   ]
+  },
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Plates, bowls, and glassware are stored on high open shelves, requiring overhead reaching.",
+   "box": [
+    0,
+    0,
+    332,
+    230
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Bowls and dishes are stored on the lowest open shelf near floor level, requiring deep bending.",
+   "box": [
+    0,
+    485,
+    296,
+    678
+   ]
+  }
+ ]
+}

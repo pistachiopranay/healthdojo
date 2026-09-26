@@ -1,0 +1,28 @@
+{
+ "id": "dem-L2-006",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-B02\",\"severity\":\"medium\",\"evidence\":\"White raised toilet seat and white toilet blend with the light tile floor, making the seat and toilet edges hard to distinguish.\",\"box\":[516,469,867,1000]},{\"id\":\"DEM-B03\",\"severity\":\"medium\",\"evidence\":\"Dark solid bath mat on the light tile floor may be misperceived as a hole or step and is a fall risk.\",\"box\":[263,839,531,1000]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White raised toilet seat and white toilet blend with the light tile floor, making the seat and toilet edges hard to distinguish.",
+   "box": [
+    516,
+    469,
+    867,
+    1000
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "medium",
+   "evidence": "Dark solid bath mat on the light tile floor may be misperceived as a hole or step and is a fall risk.",
+   "box": [
+    263,
+    839,
+    531,
+    1000
+   ]
+  }
+ ]
+}

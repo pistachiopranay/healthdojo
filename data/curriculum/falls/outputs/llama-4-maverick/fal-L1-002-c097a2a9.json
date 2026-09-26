@@ -1,0 +1,50 @@
+{
+ "id": "fal-L1-002",
+ "raw": "{\"hazards\": [\n    {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"A rug is placed on the floor near the bed, which could be a tripping hazard.\", \"box\": [440, 600, 750, 860]},\n    {\"id\": \"BED-05\", \"severity\": \"medium\", \"evidence\": \"The nightstand is close to the bed, but there is not enough space for a walker on the other side.\", \"box\": [150, 350, 610, 750]},\n    {\"id\": \"LIV-06\", \"severity\": \"medium\", \"evidence\": \"There is a step-down between the bedroom and the hallway.\", \"box\": [750, 300, 1000, 700]},\n    {\"id\": \"LIV-03\", \"severity\": \"low\", \"evidence\": \"The room has some furniture, but the path is generally clear.\", \"box\": [0, 0, 1000, 1000]}\n]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A rug is placed on the floor near the bed, which could be a tripping hazard.",
+   "box": [
+    440,
+    600,
+    750,
+    860
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "The nightstand is close to the bed, but there is not enough space for a walker on the other side.",
+   "box": [
+    150,
+    350,
+    610,
+    750
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "There is a step-down between the bedroom and the hallway.",
+   "box": [
+    750,
+    300,
+    1000,
+    700
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "low",
+   "evidence": "The room has some furniture, but the path is generally clear.",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  }
+ ]
+}

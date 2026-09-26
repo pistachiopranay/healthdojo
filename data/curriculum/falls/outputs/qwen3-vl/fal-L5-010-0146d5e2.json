@@ -1,0 +1,72 @@
+{
+ "id": "fal-L5-010",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Staircase has handrails on both sides, but they appear to be mounted only on the wall side and not continuous or graspable along the full length; also, the handrails may not extend beyond the first and last steps, which is a common hazard for walkers.\",\n      \"box\": [235, 80, 763, 997]\n    },\n    {\n      \"id\": \"STAIR-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Handrails appear to be mounted with brackets that may not provide secure, continuous grasp; also, the handrail ends are not clearly extended beyond the first and last steps, which can be unsafe for walker users.\",\n      \"box\": [235, 80, 763, 997]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Only one ceiling light is visible at the top of the stairs, which may not provide adequate illumination for the entire stairwell, especially for someone with limited mobility using a walker.\",\n      \"box\": [235, 0, 763, 997]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Step edges are painted a light color, which may help visibility, but the contrast is subtle and may not be sufficient for someone with visual impairment or post-surgery mobility issues.\",\n      \"box\": [302, 242, 662, 997]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"General lighting appears adequate, but the stairwell lighting is limited to one fixture, which may create shadows or glare for someone ascending or descending with a walker.\",\n      \"box\": [0, 0, 1000, 997]\n    },\n    {\n      \"id\": \"LIV-06\",\n      \"severity\": \"low\",\n      \"evidence\": \"There is a visible transition from the living area to the kitchen through a doorway, but no visible threshold or step-down; however, the change in flooring or elevation is not clearly marked, which could be a hazard for someone using a walker.\",\n      \"box\": [817, 228, 1000, 997]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Staircase has handrails on both sides, but they appear to be mounted only on the wall side and not continuous or graspable along the full length; also, the handrails may not extend beyond the first and last steps, which is a common hazard for walkers.",
+   "box": [
+    235,
+    80,
+    763,
+    997
+   ]
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "medium",
+   "evidence": "Handrails appear to be mounted with brackets that may not provide secure, continuous grasp; also, the handrail ends are not clearly extended beyond the first and last steps, which can be unsafe for walker users.",
+   "box": [
+    235,
+    80,
+    763,
+    997
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Only one ceiling light is visible at the top of the stairs, which may not provide adequate illumination for the entire stairwell, especially for someone with limited mobility using a walker.",
+   "box": [
+    235,
+    0,
+    763,
+    997
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "Step edges are painted a light color, which may help visibility, but the contrast is subtle and may not be sufficient for someone with visual impairment or post-surgery mobility issues.",
+   "box": [
+    302,
+    242,
+    662,
+    997
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "General lighting appears adequate, but the stairwell lighting is limited to one fixture, which may create shadows or glare for someone ascending or descending with a walker.",
+   "box": [
+    0,
+    0,
+    1000,
+    997
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "low",
+   "evidence": "There is a visible transition from the living area to the kitchen through a doorway, but no visible threshold or step-down; however, the change in flooring or elevation is not clearly marked, which could be a hazard for someone using a walker.",
+   "box": [
+    817,
+    228,
+    1000,
+    997
+   ]
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "id": "fal-L4-003",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-03\", \"severity\": \"high\", \"evidence\": \"A slipper/shoe is sitting on a stair tread partway up the flight, directly in the walking line.\", \"box\": [412, 300, 505, 360]}, {\"id\": \"STAIR-02\", \"severity\": \"high\", \"evidence\": \"Wall-mounted wooden handrail bracket(s) appear loose/pulling away from the wall (close-up inset shows the rail and bracket; a bracket on the right rail is gaping from the wall), so the rail may not be load-reliable for someone with a walker.\", \"box\": [555, 45, 700, 595]}, {\"id\": \"STAIR-04\", \"severity\": \"medium\", \"evidence\": \"Stairway is dim with shadowed treads; only a small light/switch at the top landing and no clear illumination of the lower steps.\", \"box\": [292, 240, 672, 995]}, {\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"A white cord/rope hangs down and loops across the walking area at the bottom-left of the stairs near the sofa.\", \"box\": [0, 640, 255, 915]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "A slipper/shoe is sitting on a stair tread partway up the flight, directly in the walking line.",
+   "box": [
+    412,
+    300,
+    505,
+    360
+   ]
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "high",
+   "evidence": "Wall-mounted wooden handrail bracket(s) appear loose/pulling away from the wall (close-up inset shows the rail and bracket; a bracket on the right rail is gaping from the wall), so the rail may not be load-reliable for someone with a walker.",
+   "box": [
+    555,
+    45,
+    700,
+    595
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Stairway is dim with shadowed treads; only a small light/switch at the top landing and no clear illumination of the lower steps.",
+   "box": [
+    292,
+    240,
+    672,
+    995
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A white cord/rope hangs down and loops across the walking area at the bottom-left of the stairs near the sofa.",
+   "box": [
+    0,
+    640,
+    255,
+    915
+   ]
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "id": "fal-L3-007",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose bath mat or rug on the floor in the kitchen/living area walkway.\",\n      \"box\": [350, 650, 700, 750]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"high\",\n      \"evidence\": \"Pet food and water bowls on the floor, creating a tripping hazard.\",\n      \"box\": [300, 680, 450, 750]\n    },\n    {\n      \"id\": \"KIT-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Potential slippery floor due to the absence of non-slip mats near the sink area.\",\n      \"box\": [400, 400, 600, 700]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Narrowed walking path due to placement of pet items and rug.\",\n      \"box\": [0, 650, 1000, 750]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose bath mat or rug on the floor in the kitchen/living area walkway.",
+   "box": [
+    350,
+    650,
+    700,
+    750
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "Pet food and water bowls on the floor, creating a tripping hazard.",
+   "box": [
+    300,
+    680,
+    450,
+    750
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "medium",
+   "evidence": "Potential slippery floor due to the absence of non-slip mats near the sink area.",
+   "box": [
+    400,
+    400,
+    600,
+    700
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Narrowed walking path due to placement of pet items and rug.",
+   "box": [
+    0,
+    650,
+    1000,
+    750
+   ]
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "id": "fal-L2-002",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Only one handrail is present on the stairs, missing a second handrail on the opposite side.\",\n      \"box\": [200, 150, 600, 800]\n    },\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"A pair of shoes is left on the stairs.\",\n      \"box\": [450, 550, 550, 600]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Step edges appear undefined without contrasting color or non-slip covering.\",\n      \"box\": [200, 400, 600, 800]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Potential loose rug or mat visible near the couch area, though not fully clear.\",\n      \"box\": [50, 500, 200, 650]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Low or soft seating without armrests visible in the living area.\",\n      \"box\": [50, 450, 250, 650]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Only one handrail is present on the stairs, missing a second handrail on the opposite side.",
+   "box": [
+    200,
+    150,
+    600,
+    800
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "A pair of shoes is left on the stairs.",
+   "box": [
+    450,
+    550,
+    550,
+    600
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "Step edges appear undefined without contrasting color or non-slip covering.",
+   "box": [
+    200,
+    400,
+    600,
+    800
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Potential loose rug or mat visible near the couch area, though not fully clear.",
+   "box": [
+    50,
+    500,
+    200,
+    650
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "Low or soft seating without armrests visible in the living area.",
+   "box": [
+    50,
+    450,
+    250,
+    650
+   ]
+  }
+ ]
+}

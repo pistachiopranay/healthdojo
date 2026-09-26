@@ -1,0 +1,50 @@
+{
+ "id": "fal-L3-006",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Pile of clothes, shoes, and a small wooden stool cluttering the corner, narrowing the walking path near the doorway.\",\n      \"box\": [109, 670, 352, 975]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"Strong sunlight creates high contrast and glare on the white wall and floor, which may impair depth perception for someone with limited mobility.\",\n      \"box\": [149, 0, 785, 900]\n    },\n    {\n      \"id\": \"ENT-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Visible door frame and threshold at the entrance to the room, which may present a tripping hazard or barrier for a walker.\",\n      \"box\": [78, 0, 149, 999]\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Doorway appears narrow, potentially restricting walker clearance for safe entry and exit.\",\n      \"box\": [78, 0, 149, 999]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Pile of clothes, shoes, and a small wooden stool cluttering the corner, narrowing the walking path near the doorway.",
+   "box": [
+    109,
+    670,
+    352,
+    975
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Strong sunlight creates high contrast and glare on the white wall and floor, which may impair depth perception for someone with limited mobility.",
+   "box": [
+    149,
+    0,
+    785,
+    900
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "Visible door frame and threshold at the entrance to the room, which may present a tripping hazard or barrier for a walker.",
+   "box": [
+    78,
+    0,
+    149,
+    999
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "Doorway appears narrow, potentially restricting walker clearance for safe entry and exit.",
+   "box": [
+    78,
+    0,
+    149,
+    999
+   ]
+  }
+ ]
+}

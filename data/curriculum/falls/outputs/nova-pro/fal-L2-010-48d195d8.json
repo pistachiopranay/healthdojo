@@ -1,0 +1,61 @@
+{
+ "id": "fal-L2-010",
+ "raw": "{\"hazards\": [{\"id\": \"BATH-01\", \"severity\": \"low\", \"evidence\": \"No grab bar at tub/shower\", \"box\": [166, 203, 226, 593]}, {\"id\": \"BATH-02\", \"severity\": \"low\", \"evidence\": \"No support at toilet\", \"box\": [649, 531, 979, 999]}, {\"id\": \"BATH-03\", \"severity\": \"low\", \"evidence\": \"Non-load-rated fixture positioned as support\", \"box\": [600, 611, 935, 999]}, {\"id\": \"BATH-05\", \"severity\": \"low\", \"evidence\": \"High tub step-over without transfer aid\", \"box\": [206, 646, 681, 999]}, {\"id\": \"BATH-06\", \"severity\": \"low\", \"evidence\": \"Low toilet seat\", \"box\": [649, 531, 979, 999]}]}",
+ "hazards": [
+  {
+   "id": "BATH-01",
+   "severity": "low",
+   "evidence": "No grab bar at tub/shower",
+   "box": [
+    166,
+    203,
+    226,
+    593
+   ]
+  },
+  {
+   "id": "BATH-02",
+   "severity": "low",
+   "evidence": "No support at toilet",
+   "box": [
+    649,
+    531,
+    979,
+    999
+   ]
+  },
+  {
+   "id": "BATH-03",
+   "severity": "low",
+   "evidence": "Non-load-rated fixture positioned as support",
+   "box": [
+    600,
+    611,
+    935,
+    999
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "low",
+   "evidence": "High tub step-over without transfer aid",
+   "box": [
+    206,
+    646,
+    681,
+    999
+   ]
+  },
+  {
+   "id": "BATH-06",
+   "severity": "low",
+   "evidence": "Low toilet seat",
+   "box": [
+    649,
+    531,
+    979,
+    999
+   ]
+  }
+ ]
+}

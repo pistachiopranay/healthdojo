@@ -1,0 +1,61 @@
+{
+ "id": "fal-L5-010",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Missing handrail on one side of the staircase (only one handrail present).\",\n      \"box\": [250, 100, 500, 800]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Poor stair lighting; the light source is dim and not focused on the stairs.\",\n      \"box\": [300, 50, 400, 200]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Undefined step edges; no contrasting color or marking on stair edges.\",\n      \"box\": [250, 100, 500, 800]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Poor lighting or glare in the living area adjacent to the stairs.\",\n      \"box\": [0, 100, 250, 400]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cluttered or narrowed walking path near the staircase due to furniture placement.\",\n      \"box\": [0, 200, 250, 600]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Missing handrail on one side of the staircase (only one handrail present).",
+   "box": [
+    250,
+    100,
+    500,
+    800
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Poor stair lighting; the light source is dim and not focused on the stairs.",
+   "box": [
+    300,
+    50,
+    400,
+    200
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "Undefined step edges; no contrasting color or marking on stair edges.",
+   "box": [
+    250,
+    100,
+    500,
+    800
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Poor lighting or glare in the living area adjacent to the stairs.",
+   "box": [
+    0,
+    100,
+    250,
+    400
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Cluttered or narrowed walking path near the staircase due to furniture placement.",
+   "box": [
+    0,
+    200,
+    250,
+    600
+   ]
+  }
+ ]
+}

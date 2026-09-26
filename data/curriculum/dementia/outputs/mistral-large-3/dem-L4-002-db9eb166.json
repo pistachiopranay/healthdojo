@@ -1,0 +1,17 @@
+{
+ "id": "dem-L4-002",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Space heater next to the bedding on the floor, which poses a fire risk and risk of burns.\",\n      \"box\": [600, 450, 750, 650]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "Space heater next to the bedding on the floor, which poses a fire risk and risk of burns.",
+   "box": [
+    600,
+    450,
+    750,
+    650
+   ]
+  }
+ ]
+}

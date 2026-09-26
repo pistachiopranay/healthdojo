@@ -1,0 +1,83 @@
+{
+ "id": "fal-L1-002",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"BED-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A decorative rug is lying loosely on the floor beside the bed, creating a tripping hazard for someone using a walker.\",\n      \"box\": [434, 616, 743, 876]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A loose, patterned rug is placed on the carpeted floor near the bed and nightstand, posing a tripping risk for a walker user.\",\n      \"box\": [434, 616, 743, 876]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The path from the bed to the doorway is partially obstructed by the nightstand and the loose rug, narrowing the walking space for a walker.\",\n      \"box\": [612, 430, 749, 638]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The lamp on the nightstand provides localized light, but the path to the bathroom doorway appears dimly lit, potentially creating glare or shadow issues for someone with limited mobility.\",\n      \"box\": [668, 257, 743, 450]\n    },\n    {\n      \"id\": \"LIV-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There is a visible level change at the doorway leading to the adjacent room, with no visual cue or ramp to indicate the step-down, which could cause a fall.\",\n      \"box\": [798, 487, 944, 618]\n    },\n    {\n      \"id\": \"ENT-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The doorway to the adjacent room has a visible threshold or door sill that may impede walker passage and pose a tripping hazard.\",\n      \"box\": [798, 487, 944, 618]\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The doorway to the adjacent room appears narrow, potentially restricting the turning radius or passage of a standard walker.\",\n      \"box\": [798, 487, 944, 618]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "severity": "medium",
+   "evidence": "A decorative rug is lying loosely on the floor beside the bed, creating a tripping hazard for someone using a walker.",
+   "box": [
+    434,
+    616,
+    743,
+    876
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A loose, patterned rug is placed on the carpeted floor near the bed and nightstand, posing a tripping risk for a walker user.",
+   "box": [
+    434,
+    616,
+    743,
+    876
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The path from the bed to the doorway is partially obstructed by the nightstand and the loose rug, narrowing the walking space for a walker.",
+   "box": [
+    612,
+    430,
+    749,
+    638
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The lamp on the nightstand provides localized light, but the path to the bathroom doorway appears dimly lit, potentially creating glare or shadow issues for someone with limited mobility.",
+   "box": [
+    668,
+    257,
+    743,
+    450
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "There is a visible level change at the doorway leading to the adjacent room, with no visual cue or ramp to indicate the step-down, which could cause a fall.",
+   "box": [
+    798,
+    487,
+    944,
+    618
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "The doorway to the adjacent room has a visible threshold or door sill that may impede walker passage and pose a tripping hazard.",
+   "box": [
+    798,
+    487,
+    944,
+    618
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "The doorway to the adjacent room appears narrow, potentially restricting the turning radius or passage of a standard walker.",
+   "box": [
+    798,
+    487,
+    944,
+    618
+   ]
+  }
+ ]
+}

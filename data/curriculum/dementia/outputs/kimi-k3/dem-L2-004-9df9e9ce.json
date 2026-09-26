@@ -1,0 +1,28 @@
+{
+ "id": "dem-L2-004",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K02\", \"severity\": \"high\", \"evidence\": \"Two large kitchen knives stored upright and within easy reach on the back of the counter (left of the window, by the coffee maker), with no locked storage.\", \"box\": [172, 118, 240, 260]}, {\"id\": \"DEM-K01\", \"severity\": \"medium\", \"evidence\": \"Freestanding range/oven in the open kitchen with exposed, freely usable controls and no knob covers; towels are draped over the oven door handle.\", \"box\": [168, 283, 258, 642]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Two large kitchen knives stored upright and within easy reach on the back of the counter (left of the window, by the coffee maker), with no locked storage.",
+   "box": [
+    172,
+    118,
+    240,
+    260
+   ]
+  },
+  {
+   "id": "DEM-K01",
+   "severity": "medium",
+   "evidence": "Freestanding range/oven in the open kitchen with exposed, freely usable controls and no knob covers; towels are draped over the oven door handle.",
+   "box": [
+    168,
+    283,
+    258,
+    642
+   ]
+  }
+ ]
+}

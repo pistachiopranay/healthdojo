@@ -1,0 +1,17 @@
+{
+ "id": "dem-L2-008",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E02\", \"severity\": \"high\", \"evidence\": \"The front entry door is standing open with bright daylight and greenery visible directly outside, providing an unobstructed exit/wandering route.\", \"box\": [358, 0, 446, 407]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "The front entry door is standing open with bright daylight and greenery visible directly outside, providing an unobstructed exit/wandering route.",
+   "box": [
+    358,
+    0,
+    446,
+    407
+   ]
+  }
+ ]
+}

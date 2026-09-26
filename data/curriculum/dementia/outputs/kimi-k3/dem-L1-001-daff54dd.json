@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-001",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"Large piles of newspapers/magazines stacked on the recliner seat and spilling onto the hardwood floor in the walking path, with loose papers and a shoe on the floor nearby.\", \"box\": [287, 409, 560, 620]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Large piles of newspapers/magazines stacked on the recliner seat and spilling onto the hardwood floor in the walking path, with loose papers and a shoe on the floor nearby.",
+   "box": [
+    287,
+    409,
+    560,
+    620
+   ]
+  }
+ ]
+}

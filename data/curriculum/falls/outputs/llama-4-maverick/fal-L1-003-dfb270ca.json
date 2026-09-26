@@ -1,0 +1,61 @@
+{
+ "id": "fal-L1-003",
+ "raw": "{\"hazards\": [\n  {\"id\": \"STAIR-01\", \"severity\": \"high\", \"evidence\": \"The stairs leading to the front door have a handrail on neither side.\", \"box\": [270, 310, 700, 630]},\n  {\"id\": \"STAIR-03\", \"severity\": \"high\", \"evidence\": \"There are boxes and shoes on the stairs.\", \"box\": [270, 310, 700, 630]},\n  {\"id\": \"ENT-04\", \"severity\": \"medium\", \"evidence\": \"The porch light is on, but the surrounding area is not well-lit.\", \"box\": [0, 0, 1000, 480]},\n  {\"id\": \"LIV-03\", \"severity\": \"low\", \"evidence\": \"The boxes on the stairs may be part of a cluttered path.\", \"box\": [270, 310, 700, 630]},\n  {\"id\": \"LIV-06\", \"severity\": \"medium\", \"evidence\": \"The step up to the front door is not clearly marked.\", \"box\": [270, 310, 700, 630]}\n]}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "The stairs leading to the front door have a handrail on neither side.",
+   "box": [
+    270,
+    310,
+    700,
+    630
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "There are boxes and shoes on the stairs.",
+   "box": [
+    270,
+    310,
+    700,
+    630
+   ]
+  },
+  {
+   "id": "ENT-04",
+   "severity": "medium",
+   "evidence": "The porch light is on, but the surrounding area is not well-lit.",
+   "box": [
+    0,
+    0,
+    1000,
+    480
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "low",
+   "evidence": "The boxes on the stairs may be part of a cluttered path.",
+   "box": [
+    270,
+    310,
+    700,
+    630
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "The step up to the front door is not clearly marked.",
+   "box": [
+    270,
+    310,
+    700,
+    630
+   ]
+  }
+ ]
+}

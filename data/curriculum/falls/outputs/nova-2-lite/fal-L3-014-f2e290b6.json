@@ -1,0 +1,35 @@
+{
+ "id": "fal-L3-014",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BED-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There are pet items (dog bowl, dog bed, and a bone) on the floor around the bed, creating a cluttered area that could pose a tripping hazard.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The wooden chair next to the bed may obstruct the path of a walker, limiting clearance around the bed.\",\n      \"box\": [422, 380, 633, 939]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Pet items such as a dog bowl and a dog bed are present on the floor, posing a risk of tripping, especially for someone using a walker.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The doorway appears to be narrow, which could make it difficult for someone using a walker to maneuver through comfortably.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "severity": "medium",
+   "evidence": "There are pet items (dog bowl, dog bed, and a bone) on the floor around the bed, creating a cluttered area that could pose a tripping hazard.",
+   "box": null
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "The wooden chair next to the bed may obstruct the path of a walker, limiting clearance around the bed.",
+   "box": [
+    422,
+    380,
+    633,
+    939
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pet items such as a dog bowl and a dog bed are present on the floor, posing a risk of tripping, especially for someone using a walker.",
+   "box": null
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "The doorway appears to be narrow, which could make it difficult for someone using a walker to maneuver through comfortably.",
+   "box": null
+  }
+ ]
+}

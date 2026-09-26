@@ -1,0 +1,39 @@
+{
+ "id": "fal-L5-000",
+ "raw": "{\"hazards\":[{\"id\":\"BATH-04\",\"severity\":\"medium\",\"evidence\":\"The visible tub/shower floor is smooth, with no nonslip mat or traction strips evident.\",\"box\":[239,430,699,716]},{\"id\":\"BATH-05\",\"severity\":\"high\",\"evidence\":\"The tub has a high side that must be stepped over, and no transfer bench spans the tub edge.\",\"box\":[231,536,706,738]},{\"id\":\"BATH-07\",\"severity\":\"high\",\"evidence\":\"A loose bath mat lies directly in the walking and walker approach area in front of the tub and toilet.\",\"box\":[237,713,570,929]}]}",
+ "hazards": [
+  {
+   "id": "BATH-04",
+   "severity": "medium",
+   "evidence": "The visible tub/shower floor is smooth, with no nonslip mat or traction strips evident.",
+   "box": [
+    239,
+    430,
+    699,
+    716
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "The tub has a high side that must be stepped over, and no transfer bench spans the tub edge.",
+   "box": [
+    231,
+    536,
+    706,
+    738
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "high",
+   "evidence": "A loose bath mat lies directly in the walking and walker approach area in front of the tub and toilet.",
+   "box": [
+    237,
+    713,
+    570,
+    929
+   ]
+  }
+ ]
+}

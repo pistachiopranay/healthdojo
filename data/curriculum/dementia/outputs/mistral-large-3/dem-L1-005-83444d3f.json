@@ -1,0 +1,33 @@
+{
+ "id": "dem-L1-005",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Bold high-contrast patterned rug on the floor near the bed and doorway\",\n      \"box\": [0, 750, 1000, 950]\n    },\n    {\n      \"id\": \"DEM-R01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Large mirror visible through the doorway in the adjacent bathroom\",\n      \"box\": [750, 200, 950, 500]\n    },\n    {\n      \"id\": \"DEM-B02\",\n      \"severity\": \"low\",\n      \"evidence\": \"Potential low contrast between toilet and floor in the adjacent bathroom, though not clearly visible in this image\"\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "Bold high-contrast patterned rug on the floor near the bed and doorway",
+   "box": [
+    0,
+    750,
+    1000,
+    950
+   ]
+  },
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "Large mirror visible through the doorway in the adjacent bathroom",
+   "box": [
+    750,
+    200,
+    950,
+    500
+   ]
+  },
+  {
+   "id": "DEM-B02",
+   "severity": "low",
+   "evidence": "Potential low contrast between toilet and floor in the adjacent bathroom, though not clearly visible in this image"
+  }
+ ]
+}

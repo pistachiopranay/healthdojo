@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-010",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"Stove burner shown lit with visible blue flame, knobs are standard and freely accessible/turnable\", \"box\": [51, 199, 345, 439]}, {\"id\": \"DEM-K03\", \"severity\": \"medium\", \"evidence\": \"Cleaning chemical spray bottle and other bottles left out unlocked on kitchen counter near sink\", \"box\": [635, 190, 815, 265]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner shown lit with visible blue flame, knobs are standard and freely accessible/turnable",
+   "box": [
+    51,
+    199,
+    345,
+    439
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning chemical spray bottle and other bottles left out unlocked on kitchen counter near sink",
+   "box": [
+    635,
+    190,
+    815,
+    265
+   ]
+  }
+ ]
+}

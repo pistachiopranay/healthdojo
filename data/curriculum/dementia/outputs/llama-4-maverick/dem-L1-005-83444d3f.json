@@ -1,0 +1,28 @@
+{
+ "id": "dem-L1-005",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-R01\", \"severity\": \"medium\", \"evidence\": \"Large mirror on the wall facing the bed\", \"box\": [0.345,0.162,0.389,0.373]},\n    {\"id\": \"DEM-R02\", \"severity\": \"low\", \"evidence\": \"Rug in the hallway\", \"box\": [0.810,0.166,0.936,0.625]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "Large mirror on the wall facing the bed",
+   "box": [
+    0.345,
+    0.162,
+    0.389,
+    0.373
+   ]
+  },
+  {
+   "id": "DEM-R02",
+   "severity": "low",
+   "evidence": "Rug in the hallway",
+   "box": [
+    0.81,
+    0.166,
+    0.936,
+    0.625
+   ]
+  }
+ ]
+}

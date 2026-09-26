@@ -1,0 +1,60 @@
+{
+ "id": "fal-L4-006",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Missing handrail on one side of the staircase; only one handrail is present.\",\n      \"box\": [300, 200, 500, 800]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Poor lighting on the staircase, making visibility low.\",\n      \"box\": [300, 200, 500, 800]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"evidence\": \"Stair covering appears worn and potentially loose.\",\n      \"box\": [350, 400, 450, 800]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Poor overall lighting in the visible areas, including the staircase and adjacent rooms.\",\n      \"box\": [0, 0, 1000, 1000]\n    },\n    {\n      \"id\": \"LIV-06\",\n      \"severity\": \"high\",\n      \"evidence\": \"Potential step-down or level change between the staircase area and adjacent rooms, not clearly marked.\",\n      \"box\": [0, 600, 1000, 800]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Missing handrail on one side of the staircase; only one handrail is present.",
+   "box": [
+    300,
+    200,
+    500,
+    800
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Poor lighting on the staircase, making visibility low.",
+   "box": [
+    300,
+    200,
+    500,
+    800
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "evidence": "Stair covering appears worn and potentially loose.",
+   "box": [
+    350,
+    400,
+    450,
+    800
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Poor overall lighting in the visible areas, including the staircase and adjacent rooms.",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "high",
+   "evidence": "Potential step-down or level change between the staircase area and adjacent rooms, not clearly marked.",
+   "box": [
+    0,
+    600,
+    1000,
+    800
+   ]
+  }
+ ]
+}

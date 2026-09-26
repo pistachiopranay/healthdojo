@@ -1,0 +1,61 @@
+{
+ "id": "fal-L5-001",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-03\", \"severity\": \"high\", \"evidence\": \"Pile of clothing, shoes, and bags on floor in walking path\", \"box\": [421, 655, 845, 812]}, {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"Pet bed and pet food bowl on floor along walking path\", \"box\": [0, 675, 355, 812]}, {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"Loose area rug on floor covering large portion of room, edges could catch walker or feet\", \"box\": [0, 630, 1030, 812]}, {\"id\": \"LIV-04\", \"severity\": \"low\", \"evidence\": \"Wooden chair with no armrests, unstable seating option\", \"box\": [774, 439, 887, 631]}, {\"id\": \"LIV-05\", \"severity\": \"medium\", \"evidence\": \"Dim overall lighting with only a small lamp and single hanging bulb, harsh window glare on left\", \"box\": [0, 0, 1216, 630]}]}",
+ "hazards": [
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Pile of clothing, shoes, and bags on floor in walking path",
+   "box": [
+    421,
+    655,
+    845,
+    812
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pet bed and pet food bowl on floor along walking path",
+   "box": [
+    0,
+    675,
+    355,
+    812
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Loose area rug on floor covering large portion of room, edges could catch walker or feet",
+   "box": [
+    0,
+    630,
+    1030,
+    812
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "low",
+   "evidence": "Wooden chair with no armrests, unstable seating option",
+   "box": [
+    774,
+    439,
+    887,
+    631
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Dim overall lighting with only a small lamp and single hanging bulb, harsh window glare on left",
+   "box": [
+    0,
+    0,
+    1216,
+    630
+   ]
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "id": "fal-L5-004",
+ "raw": "{\"hazards\":[{\"id\":\"BATH-07\",\"severity\":\"high\",\"evidence\":\"A loose, rumpled bath mat lies directly in the bathroom walking area in front of the sink.\",\"box\":[391,815,535,931]},{\"id\":\"LIV-03\",\"severity\":\"high\",\"evidence\":\"The route into the bathroom is narrowed by a stool, shoes, pet bowls, a toy, and a loose mat, leaving limited walker maneuvering space.\",\"box\":[329,724,603,992]},{\"id\":\"LIV-05\",\"severity\":\"medium\",\"evidence\":\"The hallway and bathroom route are very dimly lit.\"},{\"id\":\"LIV-07\",\"severity\":\"high\",\"evidence\":\"Pet bowls and a pet toy are on the floor in the walking path.\",\"box\":[329,850,416,987]},{\"id\":\"ENT-05\",\"severity\":\"medium\",\"evidence\":\"The inward-swinging doors substantially constrict the already narrow bathroom approach, potentially preventing safe walker passage.\",\"box\":[250,0,676,997]}]}",
+ "hazards": [
+  {
+   "id": "BATH-07",
+   "severity": "high",
+   "evidence": "A loose, rumpled bath mat lies directly in the bathroom walking area in front of the sink.",
+   "box": [
+    391,
+    815,
+    535,
+    931
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "The route into the bathroom is narrowed by a stool, shoes, pet bowls, a toy, and a loose mat, leaving limited walker maneuvering space.",
+   "box": [
+    329,
+    724,
+    603,
+    992
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "The hallway and bathroom route are very dimly lit."
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "Pet bowls and a pet toy are on the floor in the walking path.",
+   "box": [
+    329,
+    850,
+    416,
+    987
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "The inward-swinging doors substantially constrict the already narrow bathroom approach, potentially preventing safe walker passage.",
+   "box": [
+    250,
+    0,
+    676,
+    997
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "fal-L1-000",
+ "raw": "{\"hazards\":[{\"id\":\"BATH-04\",\"severity\":\"high\",\"evidence\":\"The tub has a smooth, bare floor with no visible nonslip mat or textured surface.\",\"box\":[220,500,682,697]},{\"id\":\"BATH-05\",\"severity\":\"high\",\"evidence\":\"The bathtub has a high side to step over, and the shower chair is fully inside rather than spanning the tub as a transfer bench.\",\"box\":[195,627,699,886]},{\"id\":\"LIV-07\",\"severity\":\"high\",\"evidence\":\"A dog is lying in the tub area where it could obstruct movement or create a trip hazard during bathing or transfers.\",\"box\":[244,607,409,687]}]}",
+ "hazards": [
+  {
+   "id": "BATH-04",
+   "severity": "high",
+   "evidence": "The tub has a smooth, bare floor with no visible nonslip mat or textured surface.",
+   "box": [
+    220,
+    500,
+    682,
+    697
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "The bathtub has a high side to step over, and the shower chair is fully inside rather than spanning the tub as a transfer bench.",
+   "box": [
+    195,
+    627,
+    699,
+    886
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "A dog is lying in the tub area where it could obstruct movement or create a trip hazard during bathing or transfers.",
+   "box": [
+    244,
+    607,
+    409,
+    687
+   ]
+  }
+ ]
+}

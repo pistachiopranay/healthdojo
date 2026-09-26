@@ -1,0 +1,28 @@
+{
+ "id": "fal-L5-001",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"Cluttered or narrowed walking path\", \"box\": [349, 779, 695, 991]}, {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"Pets and pet items underfoot\", \"box\": [1, 805, 263, 999]}]}",
+ "hazards": [
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Cluttered or narrowed walking path",
+   "box": [
+    349,
+    779,
+    695,
+    991
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pets and pet items underfoot",
+   "box": [
+    1,
+    805,
+    263,
+    999
+   ]
+  }
+ ]
+}

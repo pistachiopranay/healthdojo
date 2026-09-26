@@ -1,0 +1,11 @@
+{
+ "id": "dem-L1-004",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E02\", \"severity\": \"high\", \"evidence\": \"The front door is open, allowing the person to wander outside unsupervised.\"}]}",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "The front door is open, allowing the person to wander outside unsupervised."
+  }
+ ]
+}

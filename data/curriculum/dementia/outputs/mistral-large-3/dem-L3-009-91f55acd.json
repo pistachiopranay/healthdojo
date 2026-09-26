@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-009",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Clutter piles including shoes and boxes in the walkway near the front door, posing a tripping hazard and potential wandering risk.\",\n      \"box\": [300, 550, 700, 750]\n    },\n    {\n      \"id\": \"DEM-E01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Keys hanging by the front door, which could facilitate unsafe wandering.\",\n      \"box\": [750, 300, 780, 400]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-E03",
+   "severity": "high",
+   "evidence": "Clutter piles including shoes and boxes in the walkway near the front door, posing a tripping hazard and potential wandering risk.",
+   "box": [
+    300,
+    550,
+    700,
+    750
+   ]
+  },
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "Keys hanging by the front door, which could facilitate unsafe wandering.",
+   "box": [
+    750,
+    300,
+    780,
+    400
+   ]
+  }
+ ]
+}

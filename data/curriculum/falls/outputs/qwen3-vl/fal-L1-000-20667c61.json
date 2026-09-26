@@ -1,0 +1,50 @@
+{
+ "id": "fal-L1-000",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"BATH-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A white bath mat is hanging over the edge of the tub and touching the floor, which could slip or be tripped over.\",\n      \"box\": [148, 0, 255, 868]\n    },\n    {\n      \"id\": \"BATH-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"The tub has a high step-over and no transfer bench or other aid to assist with getting in and out safely.\",\n      \"box\": [148, 497, 679, 894]\n    },\n    {\n      \"id\": \"BATH-08\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Although a shower seat is present, the handheld shower head is mounted high and may not be easily reachable or usable without assistance.\",\n      \"box\": [579, 0, 688, 462]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"high\",\n      \"evidence\": \"A dog is lying in the bathtub, which is an unexpected obstacle and could cause a fall if the person attempts to use the tub without noticing.\",\n      \"box\": [244, 608, 410, 684]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "BATH-07",
+   "severity": "medium",
+   "evidence": "A white bath mat is hanging over the edge of the tub and touching the floor, which could slip or be tripped over.",
+   "box": [
+    148,
+    0,
+    255,
+    868
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "The tub has a high step-over and no transfer bench or other aid to assist with getting in and out safely.",
+   "box": [
+    148,
+    497,
+    679,
+    894
+   ]
+  },
+  {
+   "id": "BATH-08",
+   "severity": "medium",
+   "evidence": "Although a shower seat is present, the handheld shower head is mounted high and may not be easily reachable or usable without assistance.",
+   "box": [
+    579,
+    0,
+    688,
+    462
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "A dog is lying in the bathtub, which is an unexpected obstacle and could cause a fall if the person attempts to use the tub without noticing.",
+   "box": [
+    244,
+    608,
+    410,
+    684
+   ]
+  }
+ ]
+}

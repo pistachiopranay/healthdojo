@@ -1,0 +1,17 @@
+{
+ "id": "dem-L2-001",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E01\", \"severity\": \"medium\", \"evidence\": \"Set of keys hanging on a wall hook near the front door entryway\", \"box\": [10, 210, 100, 280]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "medium",
+   "evidence": "Set of keys hanging on a wall hook near the front door entryway",
+   "box": [
+    10,
+    210,
+    100,
+    280
+   ]
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "id": "dem-L1-006",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-B02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"White toilet seat on white toilet and floor, creating low contrast which can be confusing for someone with dementia.\",\n      \"box\": [516, 666, 720, 828]\n    },\n    {\n      \"id\": \"DEM-B03\",\n      \"severity\": \"low\",\n      \"evidence\": \"Dark bath mat on a light tiled floor, which may be misperceived as a hole or step by someone with dementia.\",\n      \"box\": [241, 853, 544, 999]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White toilet seat on white toilet and floor, creating low contrast which can be confusing for someone with dementia.",
+   "box": [
+    516,
+    666,
+    720,
+    828
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "low",
+   "evidence": "Dark bath mat on a light tiled floor, which may be misperceived as a hole or step by someone with dementia.",
+   "box": [
+    241,
+    853,
+    544,
+    999
+   ]
+  }
+ ]
+}

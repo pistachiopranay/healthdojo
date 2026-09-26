@@ -1,0 +1,28 @@
+{
+ "id": "fal-L1-004",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-03\", \"severity\": \"high\", \"evidence\": \"Two coiled yellow extension cords and a black corded device/tool sitting on the stair treads, with a loose cord end dangling down a riser \u2014 directly in the walking path of someone using a walker on the stairs.\", \"box\": [372, 496, 704, 675]}, {\"id\": \"LIV-01\", \"severity\": \"low\", \"evidence\": \"Patterned area/throw rug on the hard floor at the base of the stairs beside the upholstered chair, in the path from the staircase into the living room.\", \"box\": [0, 833, 105, 962]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Two coiled yellow extension cords and a black corded device/tool sitting on the stair treads, with a loose cord end dangling down a riser \u2014 directly in the walking path of someone using a walker on the stairs.",
+   "box": [
+    372,
+    496,
+    704,
+    675
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "low",
+   "evidence": "Patterned area/throw rug on the hard floor at the base of the stairs beside the upholstered chair, in the path from the staircase into the living room.",
+   "box": [
+    0,
+    833,
+    105,
+    962
+   ]
+  }
+ ]
+}

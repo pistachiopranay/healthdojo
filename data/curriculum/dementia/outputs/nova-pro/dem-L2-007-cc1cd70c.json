@@ -1,0 +1,17 @@
+{
+ "id": "dem-L2-007",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"Stove burner left on, knobs freely usable\", \"box\": [141, 327, 255, 747]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner left on, knobs freely usable",
+   "box": [
+    141,
+    327,
+    255,
+    747
+   ]
+  }
+ ]
+}

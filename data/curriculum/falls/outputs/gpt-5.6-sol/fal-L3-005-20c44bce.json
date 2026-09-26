@@ -1,0 +1,39 @@
+{
+ "id": "fal-L3-005",
+ "raw": "{\"hazards\":[{\"id\":\"LIV-01\",\"severity\":\"high\",\"evidence\":\"The throw rug in the center of the walking area is loose and significantly curled upward, creating a trip hazard for a walker.\",\"box\":[390,480,650,635]},{\"id\":\"LIV-03\",\"severity\":\"medium\",\"evidence\":\"A large armchair projects into the central walking area and narrows the route through the room for a walker.\",\"box\":[580,420,845,800]},{\"id\":\"LIV-07\",\"severity\":\"high\",\"evidence\":\"A pet bed, toy, and food bowl are positioned underfoot in the main floor area.\",\"box\":[40,735,390,930]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "The throw rug in the center of the walking area is loose and significantly curled upward, creating a trip hazard for a walker.",
+   "box": [
+    390,
+    480,
+    650,
+    635
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "A large armchair projects into the central walking area and narrows the route through the room for a walker.",
+   "box": [
+    580,
+    420,
+    845,
+    800
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "A pet bed, toy, and food bowl are positioned underfoot in the main floor area.",
+   "box": [
+    40,
+    735,
+    390,
+    930
+   ]
+  }
+ ]
+}

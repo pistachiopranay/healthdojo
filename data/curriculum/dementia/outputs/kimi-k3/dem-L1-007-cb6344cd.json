@@ -1,0 +1,28 @@
+{
+ "id": "dem-L1-007",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K02\", \"severity\": \"high\", \"evidence\": \"Wooden knife block with multiple knives (black handles) sitting out on the countertop to the right of the sink, within easy reach.\", \"box\": [562, 158, 632, 263]}, {\"id\": \"DEM-K01\", \"severity\": \"medium\", \"evidence\": \"Freestanding range/oven on the left side with controls within reach and towels draped over the oven door handle; cooktop area holds items/appliances, so burners can be freely activated.\", \"box\": [168, 210, 330, 642]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Wooden knife block with multiple knives (black handles) sitting out on the countertop to the right of the sink, within easy reach.",
+   "box": [
+    562,
+    158,
+    632,
+    263
+   ]
+  },
+  {
+   "id": "DEM-K01",
+   "severity": "medium",
+   "evidence": "Freestanding range/oven on the left side with controls within reach and towels draped over the oven door handle; cooktop area holds items/appliances, so burners can be freely activated.",
+   "box": [
+    168,
+    210,
+    330,
+    642
+   ]
+  }
+ ]
+}

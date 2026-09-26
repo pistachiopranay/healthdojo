@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-003",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Car keys are hanging on a hook by the front door, within easy reach, which could enable an individual with dementia to leave the home unsupervised.\",\n      \"box\": [658, 260, 693, 418]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There are multiple clutter piles in the walkway, including stacks of newspapers, cardboard boxes, and shoes, which pose a tripping hazard and may obstruct safe movement.\",\n      \"box\": [248, 618, 668, 888]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "Car keys are hanging on a hook by the front door, within easy reach, which could enable an individual with dementia to leave the home unsupervised.",
+   "box": [
+    658,
+    260,
+    693,
+    418
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "There are multiple clutter piles in the walkway, including stacks of newspapers, cardboard boxes, and shoes, which pose a tripping hazard and may obstruct safe movement.",
+   "box": [
+    248,
+    618,
+    668,
+    888
+   ]
+  }
+ ]
+}

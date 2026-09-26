@@ -1,0 +1,28 @@
+{
+ "id": "fal-L2-005",
+ "raw": "{\"hazards\":[{\"id\":\"BATH-04\",\"severity\":\"high\",\"evidence\":\"Smooth white tub/shower floor with no visible non-slip mat or full anti-slip surface; wet acrylic tub floor is slippery.\",\"box\":[220,420,858,584]},{\"id\":\"BATH-05\",\"severity\":\"high\",\"evidence\":\"Standard bathtub has a high side to step over; the seat is inside the tub rather than a transfer bench spanning the tub wall, so the user still must lift legs over the tub edge.\",\"box\":[142,425,876,764]}]}",
+ "hazards": [
+  {
+   "id": "BATH-04",
+   "severity": "high",
+   "evidence": "Smooth white tub/shower floor with no visible non-slip mat or full anti-slip surface; wet acrylic tub floor is slippery.",
+   "box": [
+    220,
+    420,
+    858,
+    584
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "Standard bathtub has a high side to step over; the seat is inside the tub rather than a transfer bench spanning the tub wall, so the user still must lift legs over the tub edge.",
+   "box": [
+    142,
+    425,
+    876,
+    764
+   ]
+  }
+ ]
+}

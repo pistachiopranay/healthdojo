@@ -1,0 +1,50 @@
+{
+ "id": "fal-L1-003",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-03\", \"severity\": \"high\", \"evidence\": \"Boxes and shoes placed directly on and around the front steps, blocking walker path\", \"box\": [378, 400, 690, 578]}, {\"id\": \"ENT-01\", \"severity\": \"medium\", \"evidence\": \"Handrails present on both sides but steps are narrow with obstructions, and only short rail sections extend partway\", \"box\": [355, 270, 880, 460]}, {\"id\": \"ENT-02\", \"severity\": \"medium\", \"evidence\": \"Multiple raised concrete steps leading to front door with no ramp or transition aid\", \"box\": [378, 400, 880, 578]}, {\"id\": \"ENT-03\", \"severity\": \"low\", \"evidence\": \"Uneven transition between concrete steps and walkway, seams visible\", \"box\": [370, 550, 900, 600]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Boxes and shoes placed directly on and around the front steps, blocking walker path",
+   "box": [
+    378,
+    400,
+    690,
+    578
+   ]
+  },
+  {
+   "id": "ENT-01",
+   "severity": "medium",
+   "evidence": "Handrails present on both sides but steps are narrow with obstructions, and only short rail sections extend partway",
+   "box": [
+    355,
+    270,
+    880,
+    460
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "Multiple raised concrete steps leading to front door with no ramp or transition aid",
+   "box": [
+    378,
+    400,
+    880,
+    578
+   ]
+  },
+  {
+   "id": "ENT-03",
+   "severity": "low",
+   "evidence": "Uneven transition between concrete steps and walkway, seams visible",
+   "box": [
+    370,
+    550,
+    900,
+    600
+   ]
+  }
+ ]
+}

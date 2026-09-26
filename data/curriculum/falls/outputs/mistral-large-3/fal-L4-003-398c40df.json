@@ -1,0 +1,71 @@
+{
+ "id": "fal-L4-003",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Missing handrail on one side of the staircase; only one handrail is present.\",\n      \"box\": [200, 150, 500, 600]\n    },\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Object (towel) placed on the stairs.\",\n      \"box\": [350, 350, 450, 400]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Poor lighting on the staircase, making visibility low.\",\n      \"box\": [200, 100, 500, 600]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"evidence\": \"Yellow tape suggests undefined step edges, though not fully confirmed as loose.\",\n      \"box\": [250, 400, 500, 600]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Loose rug visible at the bottom of the stairs.\",\n      \"box\": [100, 600, 300, 700]\n    },\n    {\n      \"id\": \"BED-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Dark path from the living area to the staircase, indicating poor lighting.\",\n      \"box\": [0, 300, 200, 700]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Missing handrail on one side of the staircase; only one handrail is present.",
+   "box": [
+    200,
+    150,
+    500,
+    600
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Object (towel) placed on the stairs.",
+   "box": [
+    350,
+    350,
+    450,
+    400
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Poor lighting on the staircase, making visibility low.",
+   "box": [
+    200,
+    100,
+    500,
+    600
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "evidence": "Yellow tape suggests undefined step edges, though not fully confirmed as loose.",
+   "box": [
+    250,
+    400,
+    500,
+    600
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Loose rug visible at the bottom of the stairs.",
+   "box": [
+    100,
+    600,
+    300,
+    700
+   ]
+  },
+  {
+   "id": "BED-03",
+   "severity": "medium",
+   "evidence": "Dark path from the living area to the staircase, indicating poor lighting.",
+   "box": [
+    0,
+    300,
+    200,
+    700
+   ]
+  }
+ ]
+}

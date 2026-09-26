@@ -1,0 +1,39 @@
+{
+ "id": "fal-L3-011",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-03\", \"severity\": \"high\", \"evidence\": \"Tangled beige/white cord lying across the lower stair treads at the base of the staircase, directly in the walking path of someone using a walker.\", \"box\": [296, 684, 738, 997]}, {\"id\": \"STAIR-02\", \"severity\": \"high\", \"evidence\": \"Right-side lower wooden handrail is detached/loose with its bottom bracket pulled away from the wall and dangling; right wall rail is also short/non-continuous (gap between lower and upper sections), and the left rail bottom end appears pulled away from the wall.\", \"box\": [646, 414, 748, 710]}, {\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"Loose cord/wire runs from the left wall switch area down alongside the stair rail and across the base-of-stairs walkway toward the couch.\", \"box\": [120, 502, 402, 995]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Tangled beige/white cord lying across the lower stair treads at the base of the staircase, directly in the walking path of someone using a walker.",
+   "box": [
+    296,
+    684,
+    738,
+    997
+   ]
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "high",
+   "evidence": "Right-side lower wooden handrail is detached/loose with its bottom bracket pulled away from the wall and dangling; right wall rail is also short/non-continuous (gap between lower and upper sections), and the left rail bottom end appears pulled away from the wall.",
+   "box": [
+    646,
+    414,
+    748,
+    710
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Loose cord/wire runs from the left wall switch area down alongside the stair rail and across the base-of-stairs walkway toward the couch.",
+   "box": [
+    120,
+    502,
+    402,
+    995
+   ]
+  }
+ ]
+}

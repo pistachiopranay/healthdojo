@@ -1,0 +1,17 @@
+{
+ "id": "dem-L2-003",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-B02\",\"severity\":\"medium\",\"evidence\":\"The white toilet seat and white toilet blend together against the light-colored floor, providing low visual contrast.\",\"box\":[514,548,718,999]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "The white toilet seat and white toilet blend together against the light-colored floor, providing low visual contrast.",
+   "box": [
+    514,
+    548,
+    718,
+    999
+   ]
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-007",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Bold black-and-white zigzag patterned rug on the floor, which can be misperceived as a hole or obstacle by someone with dementia.\",\n      \"box\": [132, 528, 636, 999]\n    },\n    {\n      \"id\": \"DEM-R04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Space heater placed directly next to the bed with bedding hanging close, posing a fire hazard.\",\n      \"box\": [620, 677, 728, 971]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "Bold black-and-white zigzag patterned rug on the floor, which can be misperceived as a hole or obstacle by someone with dementia.",
+   "box": [
+    132,
+    528,
+    636,
+    999
+   ]
+  },
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "Space heater placed directly next to the bed with bedding hanging close, posing a fire hazard.",
+   "box": [
+    620,
+    677,
+    728,
+    971
+   ]
+  }
+ ]
+}

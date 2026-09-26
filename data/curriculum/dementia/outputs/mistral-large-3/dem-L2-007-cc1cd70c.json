@@ -1,0 +1,28 @@
+{
+ "id": "dem-L2-007",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove knobs are freely accessible and usable, posing a risk of the stove being turned on accidentally.\",\n      \"box\": [350, 300, 550, 400]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Potential clutter on countertops near the stove and sink area could create confusion or hazards.\",\n      \"box\": [200, 250, 600, 400]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove knobs are freely accessible and usable, posing a risk of the stove being turned on accidentally.",
+   "box": [
+    350,
+    300,
+    550,
+    400
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Potential clutter on countertops near the stove and sink area could create confusion or hazards.",
+   "box": [
+    200,
+    250,
+    600,
+    400
+   ]
+  }
+ ]
+}

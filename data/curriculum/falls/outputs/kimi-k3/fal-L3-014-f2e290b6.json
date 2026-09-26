@@ -1,0 +1,72 @@
+{
+ "id": "fal-L3-014",
+ "raw": "{\"hazards\": [{\"id\": \"BED-04\", \"severity\": \"high\", \"evidence\": \"Pet bed, food bowl, and a bone/toy on the carpet plus a wooden chair sitting right at the bedside create clutter around the bed.\", \"box\": [302, 386, 649, 927]}, {\"id\": \"BED-05\", \"severity\": \"high\", \"evidence\": \"A wooden chair is placed in the narrow gap alongside the bed, blocking the space a walker would need to pass/transfer.\", \"box\": [419, 384, 648, 926]}, {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"A loose mat/throw rug over the carpet at the foot/side of the bed, partially under the chair legs, in the walking area.\", \"box\": [399, 712, 806, 997]}, {\"id\": \"LIV-03\", \"severity\": \"high\", \"evidence\": \"Chair and pet items sit in the path between the doorway and the bed, narrowing the walker route.\", \"box\": [302, 384, 649, 927]}, {\"id\": \"LIV-04\", \"severity\": \"medium\", \"evidence\": \"Wooden side chair with no armrests (harder to sit/stand after hip/knee replacement) placed in the room.\", \"box\": [420, 385, 647, 925]}, {\"id\": \"LIV-07\", \"severity\": \"high\", \"evidence\": \"Pet items underfoot: dog bed, filled food bowl, and a chew bone/toy on the floor beside the bed.\", \"box\": [302, 489, 463, 689]}]}",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "severity": "high",
+   "evidence": "Pet bed, food bowl, and a bone/toy on the carpet plus a wooden chair sitting right at the bedside create clutter around the bed.",
+   "box": [
+    302,
+    386,
+    649,
+    927
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "high",
+   "evidence": "A wooden chair is placed in the narrow gap alongside the bed, blocking the space a walker would need to pass/transfer.",
+   "box": [
+    419,
+    384,
+    648,
+    926
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A loose mat/throw rug over the carpet at the foot/side of the bed, partially under the chair legs, in the walking area.",
+   "box": [
+    399,
+    712,
+    806,
+    997
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Chair and pet items sit in the path between the doorway and the bed, narrowing the walker route.",
+   "box": [
+    302,
+    384,
+    649,
+    927
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "Wooden side chair with no armrests (harder to sit/stand after hip/knee replacement) placed in the room.",
+   "box": [
+    420,
+    385,
+    647,
+    925
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "Pet items underfoot: dog bed, filled food bowl, and a chew bone/toy on the floor beside the bed.",
+   "box": [
+    302,
+    489,
+    463,
+    689
+   ]
+  }
+ ]
+}

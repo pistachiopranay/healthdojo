@@ -1,0 +1,61 @@
+{
+ "id": "fal-L4-006",
+ "raw": "{\"hazards\":[{\"id\":\"STAIR-02\",\"severity\":\"high\",\"evidence\":\"The right-hand stair rail is short and covers only the lower portion of the staircase.\",\"box\":[645,479,741,837]},{\"id\":\"STAIR-03\",\"severity\":\"high\",\"evidence\":\"Cords or wires are draped across and alongside the lower stair treads.\",\"box\":[350,568,625,1000]},{\"id\":\"STAIR-04\",\"severity\":\"medium\",\"evidence\":\"The staircase is dimly lit, with only a light visible at the upper landing.\",\"box\":[303,247,667,1000]},{\"id\":\"STAIR-05\",\"severity\":\"high\",\"evidence\":\"The busy, low-contrast stair covering obscures step edges and appears uneven or loose in places.\",\"box\":[316,250,665,1000]},{\"id\":\"LIV-02\",\"severity\":\"high\",\"evidence\":\"A cord is stretched diagonally across the open walking area beside the stairs.\",\"box\":[140,546,446,791]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-02",
+   "severity": "high",
+   "evidence": "The right-hand stair rail is short and covers only the lower portion of the staircase.",
+   "box": [
+    645,
+    479,
+    741,
+    837
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Cords or wires are draped across and alongside the lower stair treads.",
+   "box": [
+    350,
+    568,
+    625,
+    1000
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "The staircase is dimly lit, with only a light visible at the upper landing.",
+   "box": [
+    303,
+    247,
+    667,
+    1000
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "The busy, low-contrast stair covering obscures step edges and appears uneven or loose in places.",
+   "box": [
+    316,
+    250,
+    665,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "A cord is stretched diagonally across the open walking area beside the stairs.",
+   "box": [
+    140,
+    546,
+    446,
+    791
+   ]
+  }
+ ]
+}

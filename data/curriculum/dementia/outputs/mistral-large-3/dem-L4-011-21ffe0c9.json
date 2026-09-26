@@ -1,0 +1,39 @@
+{
+ "id": "dem-L4-011",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove with burners visible and knobs freely accessible, posing a risk of being turned on accidentally.\",\n      \"box\": [100, 300, 300, 450]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Multiple bottles, possibly containing cleaning chemicals or other hazardous substances, are visible on the countertop and not secured.\",\n      \"box\": [450, 200, 700, 350]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Clutter on the countertop and potential obstacles in walkways could pose a tripping hazard or confusion risk.\",\n      \"box\": [100, 200, 900, 450]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove with burners visible and knobs freely accessible, posing a risk of being turned on accidentally.",
+   "box": [
+    100,
+    300,
+    300,
+    450
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Multiple bottles, possibly containing cleaning chemicals or other hazardous substances, are visible on the countertop and not secured.",
+   "box": [
+    450,
+    200,
+    700,
+    350
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Clutter on the countertop and potential obstacles in walkways could pose a tripping hazard or confusion risk.",
+   "box": [
+    100,
+    200,
+    900,
+    450
+   ]
+  }
+ ]
+}

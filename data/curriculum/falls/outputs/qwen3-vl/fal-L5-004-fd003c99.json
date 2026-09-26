@@ -1,0 +1,72 @@
+{
+ "id": "fal-L5-004",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"BATH-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A loose bath mat is visible on the bathroom floor near the sink and stool, posing a tripping hazard.\",\n      \"box\": [394, 823, 523, 930]\n    },\n    {\n      \"id\": \"BATH-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"There is no visible grab bar or support near the toilet area (though the toilet itself is not visible, the space suggests lack of support).\",\n      \"box\": [374, 530, 586, 820]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The bathroom doorway is cluttered with a child\u2019s stool, pet bowls, and a toy, narrowing the walking path for a walker.\",\n      \"box\": [320, 725, 598, 990]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Pet bowls and a chew toy are on the floor, which could cause tripping for someone using a walker.\",\n      \"box\": [328, 850, 410, 978]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The room is dimly lit, with no visible light source turned on, creating poor visibility for safe navigation.\",\n      \"box\": [0, 0, 1000, 1000]\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The doorway appears narrow with open doors partially blocking the path, which may not allow sufficient clearance for a walker.\",\n      \"box\": [200, 0, 700, 1000]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "BATH-07",
+   "severity": "medium",
+   "evidence": "A loose bath mat is visible on the bathroom floor near the sink and stool, posing a tripping hazard.",
+   "box": [
+    394,
+    823,
+    523,
+    930
+   ]
+  },
+  {
+   "id": "BATH-02",
+   "severity": "high",
+   "evidence": "There is no visible grab bar or support near the toilet area (though the toilet itself is not visible, the space suggests lack of support).",
+   "box": [
+    374,
+    530,
+    586,
+    820
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The bathroom doorway is cluttered with a child\u2019s stool, pet bowls, and a toy, narrowing the walking path for a walker.",
+   "box": [
+    320,
+    725,
+    598,
+    990
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pet bowls and a chew toy are on the floor, which could cause tripping for someone using a walker.",
+   "box": [
+    328,
+    850,
+    410,
+    978
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "The room is dimly lit, with no visible light source turned on, creating poor visibility for safe navigation.",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "The doorway appears narrow with open doors partially blocking the path, which may not allow sufficient clearance for a walker.",
+   "box": [
+    200,
+    0,
+    700,
+    1000
+   ]
+  }
+ ]
+}

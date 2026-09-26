@@ -1,0 +1,27 @@
+{
+ "id": "fal-L2-005",
+ "raw": "{\"hazards\": [{\"id\": \"BATH-02\", \"severity\": \"high\", \"evidence\": \"No support at toilet\", \"box\": [516, 470, 863, 1000]}, {\"id\": \"BATH-03\", \"severity\": \"high\", \"box\": [319, 97, 477, 320]}]}",
+ "hazards": [
+  {
+   "id": "BATH-02",
+   "severity": "high",
+   "evidence": "No support at toilet",
+   "box": [
+    516,
+    470,
+    863,
+    1000
+   ]
+  },
+  {
+   "id": "BATH-03",
+   "severity": "high",
+   "box": [
+    319,
+    97,
+    477,
+    320
+   ]
+  }
+ ]
+}

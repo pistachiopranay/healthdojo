@@ -1,0 +1,50 @@
+{
+ "id": "fal-L2-003",
+ "raw": "{\"hazards\": [{\"id\": \"ENT-02\", \"severity\": \"medium\", \"evidence\": \"Raised exterior door sill/threshold at the base of the front door that a walker user must step/roll over.\", \"box\": [398, 560, 672, 602]}, {\"id\": \"STAIR-04\", \"severity\": \"medium\", \"evidence\": \"Scene is at dusk and the concrete step treads are in shadow; only one small wall lantern is lit to the right of the door, leaving the steps poorly illuminated.\", \"box\": [284, 539, 809, 773]}, {\"id\": \"STAIR-05\", \"severity\": \"low\", \"evidence\": \"Plain concrete steps with no contrasting nosing/edge marking, so tread edges are hard to distinguish in the dim light.\", \"box\": [309, 543, 931, 661]}, {\"id\": \"ENT-04\", \"severity\": \"medium\", \"evidence\": \"Overall exterior approach is dark (twilight) with a single porch light; the walkway and entry are largely in shadow for an arriving walker user.\", \"box\": [0, 520, 1000, 1000]}]}",
+ "hazards": [
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "Raised exterior door sill/threshold at the base of the front door that a walker user must step/roll over.",
+   "box": [
+    398,
+    560,
+    672,
+    602
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Scene is at dusk and the concrete step treads are in shadow; only one small wall lantern is lit to the right of the door, leaving the steps poorly illuminated.",
+   "box": [
+    284,
+    539,
+    809,
+    773
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "low",
+   "evidence": "Plain concrete steps with no contrasting nosing/edge marking, so tread edges are hard to distinguish in the dim light.",
+   "box": [
+    309,
+    543,
+    931,
+    661
+   ]
+  },
+  {
+   "id": "ENT-04",
+   "severity": "medium",
+   "evidence": "Overall exterior approach is dark (twilight) with a single porch light; the walkway and entry are largely in shadow for an arriving walker user.",
+   "box": [
+    0,
+    520,
+    1000,
+    1000
+   ]
+  }
+ ]
+}

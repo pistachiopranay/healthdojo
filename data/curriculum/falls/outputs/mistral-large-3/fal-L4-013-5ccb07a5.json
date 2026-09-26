@@ -1,0 +1,51 @@
+{
+ "id": "fal-L4-013",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose rug or mat on the floor near the center of the room, posing a tripping hazard.\",\n      \"box\": [350, 550, 550, 650]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Chair positioned in the middle of the walking path, narrowing the space for walker use.\",\n      \"box\": [400, 400, 600, 650]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Room appears dimly lit, which could increase the risk of falls.\",\n      \"box\": []\n    },\n    {\n      \"id\": \"KIT-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Potential slippery floor surface in the kitchen area, especially near the sink and stove.\",\n      \"box\": [600, 300, 900, 650]\n    },\n    {\n      \"id\": \"BED-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Dark path from what appears to be a dining/living area to other parts of the home, increasing fall risk.\",\n      \"box\": []\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose rug or mat on the floor near the center of the room, posing a tripping hazard.",
+   "box": [
+    350,
+    550,
+    550,
+    650
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Chair positioned in the middle of the walking path, narrowing the space for walker use.",
+   "box": [
+    400,
+    400,
+    600,
+    650
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Room appears dimly lit, which could increase the risk of falls.",
+   "box": []
+  },
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "Potential slippery floor surface in the kitchen area, especially near the sink and stove.",
+   "box": [
+    600,
+    300,
+    900,
+    650
+   ]
+  },
+  {
+   "id": "BED-03",
+   "severity": "medium",
+   "evidence": "Dark path from what appears to be a dining/living area to other parts of the home, increasing fall risk.",
+   "box": []
+  }
+ ]
+}

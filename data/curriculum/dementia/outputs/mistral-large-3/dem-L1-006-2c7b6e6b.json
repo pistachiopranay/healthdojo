@@ -1,0 +1,28 @@
+{
+ "id": "dem-L1-006",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-B02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"White toilet seat on a similarly colored toilet and floor, which reduces contrast and may make it difficult for someone with dementia to distinguish the toilet.\",\n      \"box\": [500, 400, 800, 700]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"Presence of a shower chair and grab bars may create minor clutter or obstruction concerns, though they are safety features.\",\n      \"box\": [200, 300, 500, 700]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White toilet seat on a similarly colored toilet and floor, which reduces contrast and may make it difficult for someone with dementia to distinguish the toilet.",
+   "box": [
+    500,
+    400,
+    800,
+    700
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "Presence of a shower chair and grab bars may create minor clutter or obstruction concerns, though they are safety features.",
+   "box": [
+    200,
+    300,
+    500,
+    700
+   ]
+  }
+ ]
+}

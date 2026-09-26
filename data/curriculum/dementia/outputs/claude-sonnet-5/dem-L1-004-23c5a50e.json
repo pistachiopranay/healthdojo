@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-004",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E02\", \"severity\": \"high\", \"evidence\": \"Front door is open leading directly to outside stairs and street, creating a wandering/elopement risk for a person with dementia\", \"box\": [426, 6, 578, 328]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "Front door is open leading directly to outside stairs and street, creating a wandering/elopement risk for a person with dementia",
+   "box": [
+    426,
+    6,
+    578,
+    328
+   ]
+  }
+ ]
+}

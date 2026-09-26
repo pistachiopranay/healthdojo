@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-007",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K02\",\n      \"severity\": \"high\",\n      \"evidence\": \"Knives are stored in a knife block on the counter, which could be easily accessed by someone with dementia.\",\n      \"box\": [566, 208, 635, 301]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Knives are stored in a knife block on the counter, which could be easily accessed by someone with dementia.",
+   "box": [
+    566,
+    208,
+    635,
+    301
+   ]
+  }
+ ]
+}

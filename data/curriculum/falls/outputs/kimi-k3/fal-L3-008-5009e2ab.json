@@ -1,0 +1,39 @@
+{
+ "id": "fal-L3-008",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"high\", \"evidence\": \"Small patterned throw rug sitting on top of carpet in the central walkway, with the near edge curled/folded up.\", \"box\": [369, 564, 666, 758]}, {\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"Yellow extension cord snaking across the carpeted walkway from the foreground to the rug, plus a black cable running from the rug area toward the TV/credenza.\", \"box\": [180, 584, 585, 1000]}, {\"id\": \"LIV-04\", \"severity\": \"medium\", \"evidence\": \"Low upholstered mustard accent chair with no visible armrests for push-off when standing.\", \"box\": [567, 273, 660, 398]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Small patterned throw rug sitting on top of carpet in the central walkway, with the near edge curled/folded up.",
+   "box": [
+    369,
+    564,
+    666,
+    758
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Yellow extension cord snaking across the carpeted walkway from the foreground to the rug, plus a black cable running from the rug area toward the TV/credenza.",
+   "box": [
+    180,
+    584,
+    585,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "Low upholstered mustard accent chair with no visible armrests for push-off when standing.",
+   "box": [
+    567,
+    273,
+    660,
+    398
+   ]
+  }
+ ]
+}

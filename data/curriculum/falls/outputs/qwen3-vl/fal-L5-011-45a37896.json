@@ -1,0 +1,72 @@
+{
+ "id": "fal-L5-011",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Only one handrail is visible on the right side of the staircase; no handrail is present on the left side.\",\n      \"box\": [685, 0, 910, 267]\n    },\n    {\n      \"id\": \"STAIR-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The visible handrail appears to be mounted with brackets that may not provide continuous, secure grasp; lighting is dim, making it hard to assess full condition.\",\n      \"box\": [685, 0, 910, 267]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"The staircase is dimly lit, with shadows obscuring step edges, increasing fall risk for someone using a walker.\",\n      \"box\": [270, 0, 888, 999]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The carpet on the stairs appears worn and uneven, especially on the middle steps, which may cause tripping or slipping.\",\n      \"box\": [270, 158, 825, 999]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A white cord is visible along the baseboard at the bottom left of the image, crossing the walkway near the stairs.\",\n      \"box\": [100, 860, 300, 999]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The overall lighting is dim, especially on the stairs and left side, creating shadows and reducing visibility for safe navigation.\",\n      \"box\": [0, 0, 1000, 999]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Only one handrail is visible on the right side of the staircase; no handrail is present on the left side.",
+   "box": [
+    685,
+    0,
+    910,
+    267
+   ]
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "medium",
+   "evidence": "The visible handrail appears to be mounted with brackets that may not provide continuous, secure grasp; lighting is dim, making it hard to assess full condition.",
+   "box": [
+    685,
+    0,
+    910,
+    267
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "high",
+   "evidence": "The staircase is dimly lit, with shadows obscuring step edges, increasing fall risk for someone using a walker.",
+   "box": [
+    270,
+    0,
+    888,
+    999
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "The carpet on the stairs appears worn and uneven, especially on the middle steps, which may cause tripping or slipping.",
+   "box": [
+    270,
+    158,
+    825,
+    999
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A white cord is visible along the baseboard at the bottom left of the image, crossing the walkway near the stairs.",
+   "box": [
+    100,
+    860,
+    300,
+    999
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "The overall lighting is dim, especially on the stairs and left side, creating shadows and reducing visibility for safe navigation.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  }
+ ]
+}

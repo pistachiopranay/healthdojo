@@ -1,0 +1,61 @@
+{
+ "id": "fal-L2-013",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Furniture placement (recliner, sofa, end tables, TV stand) creates a somewhat narrowed walking path, especially near the doorway and around the TV area, which may impede walker movement.\",\n      \"box\": [0, 0, 1000, 999]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The dark blue recliner and the light-colored armchair both appear to have soft, deep seats and may lack firm, stable armrests at an appropriate height for safe sit-to-stand transfers with a walker.\",\n      \"box\": [87, 258, 398, 740]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"Bright sunlight through the large windows creates glare on the polished hardwood floor, which could reduce visibility of floor texture or small obstacles for someone with limited mobility.\",\n      \"box\": [634, 0, 910, 278]\n    },\n    {\n      \"id\": \"ENT-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The white interior door has a visible threshold/sill at the bottom, which could pose a tripping hazard for someone using a walker.\",\n      \"box\": [362, 0, 447, 370]\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The doorway leading to the adjacent room appears narrow, potentially restricting the turning radius or passage of a standard walker.\",\n      \"box\": [330, 0, 458, 410]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Furniture placement (recliner, sofa, end tables, TV stand) creates a somewhat narrowed walking path, especially near the doorway and around the TV area, which may impede walker movement.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "The dark blue recliner and the light-colored armchair both appear to have soft, deep seats and may lack firm, stable armrests at an appropriate height for safe sit-to-stand transfers with a walker.",
+   "box": [
+    87,
+    258,
+    398,
+    740
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Bright sunlight through the large windows creates glare on the polished hardwood floor, which could reduce visibility of floor texture or small obstacles for someone with limited mobility.",
+   "box": [
+    634,
+    0,
+    910,
+    278
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "The white interior door has a visible threshold/sill at the bottom, which could pose a tripping hazard for someone using a walker.",
+   "box": [
+    362,
+    0,
+    447,
+    370
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "The doorway leading to the adjacent room appears narrow, potentially restricting the turning radius or passage of a standard walker.",
+   "box": [
+    330,
+    0,
+    458,
+    410
+   ]
+  }
+ ]
+}

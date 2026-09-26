@@ -1,0 +1,50 @@
+{
+ "id": "fal-L2-010",
+ "raw": "{\"hazards\": [{\"id\": \"BATH-05\", \"severity\": \"high\", \"evidence\": \"Full-height tub wall must be stepped over; the shower chair sits entirely inside the tub and there is no transfer bench bridging the rim, so a walker user after hip/knee replacement must lift a leg over the rim.\", \"box\": [180, 620, 700, 995]}, {\"id\": \"BATH-06\", \"severity\": \"high\", \"evidence\": \"Toilet has a standard/low seat (no raised seat) even though a metal safety frame is present; seat height appears too low for post-hip/knee precautions.\", \"box\": [645, 470, 980, 995]}, {\"id\": \"BATH-04\", \"severity\": \"low\", \"evidence\": \"Smooth acrylic tub floor with only partial adhesive tread strips; remaining surface is slick when wet during the stand-to-sit transfer.\", \"box\": [230, 640, 685, 745]}, {\"id\": \"LIV-02\", \"severity\": \"low\", \"evidence\": \"Black power cord from the radio on the window sill drapes down the wall right beside the toilet/safety frame where the user stands and positions a walker.\", \"box\": [1000, 330, 1035, 560]}]}",
+ "hazards": [
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "Full-height tub wall must be stepped over; the shower chair sits entirely inside the tub and there is no transfer bench bridging the rim, so a walker user after hip/knee replacement must lift a leg over the rim.",
+   "box": [
+    180,
+    620,
+    700,
+    995
+   ]
+  },
+  {
+   "id": "BATH-06",
+   "severity": "high",
+   "evidence": "Toilet has a standard/low seat (no raised seat) even though a metal safety frame is present; seat height appears too low for post-hip/knee precautions.",
+   "box": [
+    645,
+    470,
+    980,
+    995
+   ]
+  },
+  {
+   "id": "BATH-04",
+   "severity": "low",
+   "evidence": "Smooth acrylic tub floor with only partial adhesive tread strips; remaining surface is slick when wet during the stand-to-sit transfer.",
+   "box": [
+    230,
+    640,
+    685,
+    745
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "low",
+   "evidence": "Black power cord from the radio on the window sill drapes down the wall right beside the toilet/safety frame where the user stands and positions a walker.",
+   "box": [
+    1000,
+    330,
+    1035,
+    560
+   ]
+  }
+ ]
+}

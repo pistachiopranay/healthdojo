@@ -1,0 +1,28 @@
+{
+ "id": "dem-L4-002",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R01\", \"severity\": \"medium\", \"evidence\": \"Large mirror facing the bed\", \"box\": [292, 0, 423, 471]}, {\"id\": \"DEM-R04\", \"severity\": \"high\", \"evidence\": \"Space heater next to bedding\", \"box\": [515, 515, 633, 803]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "Large mirror facing the bed",
+   "box": [
+    292,
+    0,
+    423,
+    471
+   ]
+  },
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "Space heater next to bedding",
+   "box": [
+    515,
+    515,
+    633,
+    803
+   ]
+  }
+ ]
+}

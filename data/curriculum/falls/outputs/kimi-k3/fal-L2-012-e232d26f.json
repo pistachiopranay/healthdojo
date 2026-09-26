@@ -1,0 +1,94 @@
+{
+ "id": "fal-L2-012",
+ "raw": "{\"hazards\": [{\"id\": \"BED-04\", \"severity\": \"medium\", \"evidence\": \"Pet bowl and a small soft object (toy/slipper) on the carpet right beside the bed, in the area where a walker user would step/stand.\", \"box\": [312, 438, 423, 507]}, {\"id\": \"BED-05\", \"severity\": \"medium\", \"evidence\": \"Narrow gap between the side of the bed and the adjacent wall (where the outlet/night light and bowl sit) appears too tight to position and turn a walker safely at the bedside.\", \"box\": [290, 180, 560, 560]}, {\"id\": \"BED-01\", \"severity\": \"low\", \"evidence\": \"Bed looks relatively low for post hip/knee replacement transfers; mattress top appears near or below knee height, making sit-to-stand with a walker harder.\", \"box\": [418, 168, 1000, 995]}, {\"id\": \"LIV-03\", \"severity\": \"low\", \"evidence\": \"Walking route from the bed toward the doorway is narrowed by the bed on one side and the swung-open door/dresser on the other, with items on the floor.\", \"box\": [0, 330, 560, 1000]}, {\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"Only a low plug-in night light and a far bedside lamp; the bed-to-door route and far hallway are dim, which is risky for night-time walker trips.\", \"box\": [150, 0, 360, 330]}, {\"id\": \"LIV-06\", \"severity\": \"low\", \"evidence\": \"Carpeted bedroom floor meets a different floor surface at the doorway/hallway with a visible threshold edge that is not marked.\", \"box\": [120, 232, 300, 330]}, {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"Pet feeding bowl and a small pet toy/soft item left on the floor in the bedside walkway are underfoot trip hazards for a walker user.\", \"box\": [312, 437, 423, 507]}, {\"id\": \"ENT-05\", \"severity\": \"medium\", \"evidence\": \"The open bedroom door and frame leave a narrowed clear opening; a standard walker may have limited clearance passing through, especially with the door swinging into the path.\", \"box\": [0, 0, 200, 830]}]}",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "severity": "medium",
+   "evidence": "Pet bowl and a small soft object (toy/slipper) on the carpet right beside the bed, in the area where a walker user would step/stand.",
+   "box": [
+    312,
+    438,
+    423,
+    507
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "Narrow gap between the side of the bed and the adjacent wall (where the outlet/night light and bowl sit) appears too tight to position and turn a walker safely at the bedside.",
+   "box": [
+    290,
+    180,
+    560,
+    560
+   ]
+  },
+  {
+   "id": "BED-01",
+   "severity": "low",
+   "evidence": "Bed looks relatively low for post hip/knee replacement transfers; mattress top appears near or below knee height, making sit-to-stand with a walker harder.",
+   "box": [
+    418,
+    168,
+    1000,
+    995
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "low",
+   "evidence": "Walking route from the bed toward the doorway is narrowed by the bed on one side and the swung-open door/dresser on the other, with items on the floor.",
+   "box": [
+    0,
+    330,
+    560,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Only a low plug-in night light and a far bedside lamp; the bed-to-door route and far hallway are dim, which is risky for night-time walker trips.",
+   "box": [
+    150,
+    0,
+    360,
+    330
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "low",
+   "evidence": "Carpeted bedroom floor meets a different floor surface at the doorway/hallway with a visible threshold edge that is not marked.",
+   "box": [
+    120,
+    232,
+    300,
+    330
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pet feeding bowl and a small pet toy/soft item left on the floor in the bedside walkway are underfoot trip hazards for a walker user.",
+   "box": [
+    312,
+    437,
+    423,
+    507
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "The open bedroom door and frame leave a narrowed clear opening; a standard walker may have limited clearance passing through, especially with the door swinging into the path.",
+   "box": [
+    0,
+    0,
+    200,
+    830
+   ]
+  }
+ ]
+}

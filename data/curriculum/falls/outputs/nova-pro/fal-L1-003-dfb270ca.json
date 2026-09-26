@@ -1,0 +1,28 @@
+{
+ "id": "fal-L1-003",
+ "raw": "{\"hazards\": [{\"id\": \"ENT-02\", \"severity\": \"medium\", \"evidence\": \"Raised threshold at the front door.\", \"box\": [360, 463, 640, 493]}, {\"id\": \"ENT-05\", \"severity\": \"high\", \"evidence\": \"The doorway appears too narrow for a walker.\", \"box\": [360, 0, 640, 470]}]}",
+ "hazards": [
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "Raised threshold at the front door.",
+   "box": [
+    360,
+    463,
+    640,
+    493
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "high",
+   "evidence": "The doorway appears too narrow for a walker.",
+   "box": [
+    360,
+    0,
+    640,
+    470
+   ]
+  }
+ ]
+}

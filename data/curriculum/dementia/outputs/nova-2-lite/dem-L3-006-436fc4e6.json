@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-006",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Gas stove burner is on with freely accessible knobs\",\n      \"box\": [50, 154, 337, 457]\n    },\n    {\n      \"id\": \"DEM-K04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Prescription medication bottles are left out on the counter\",\n      \"box\": [540, 208, 700, 318]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Gas stove burner is on with freely accessible knobs",
+   "box": [
+    50,
+    154,
+    337,
+    457
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Prescription medication bottles are left out on the counter",
+   "box": [
+    540,
+    208,
+    700,
+    318
+   ]
+  }
+ ]
+}

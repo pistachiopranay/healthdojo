@@ -1,0 +1,50 @@
+{
+ "id": "fal-L2-000",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BED-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"The bed height appears too low, which may make it difficult for someone using a walker to sit down or stand up safely.\",\n      \"box\": [150, 400, 800, 650]\n    },\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"Insufficient walker clearance around the bed, particularly on the side near the wall and around the foot of the bed.\",\n      \"box\": [0, 300, 1000, 700]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cord from the lamp is visible on the floor, posing a tripping hazard.\",\n      \"box\": [550, 400, 700, 550]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The carpet may not be securely fastened to the floor, posing a potential tripping hazard.\",\n      \"box\": [0, 600, 1000, 800]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BED-01",
+   "severity": "high",
+   "evidence": "The bed height appears too low, which may make it difficult for someone using a walker to sit down or stand up safely.",
+   "box": [
+    150,
+    400,
+    800,
+    650
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "high",
+   "evidence": "Insufficient walker clearance around the bed, particularly on the side near the wall and around the foot of the bed.",
+   "box": [
+    0,
+    300,
+    1000,
+    700
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Cord from the lamp is visible on the floor, posing a tripping hazard.",
+   "box": [
+    550,
+    400,
+    700,
+    550
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "The carpet may not be securely fastened to the floor, posing a potential tripping hazard.",
+   "box": [
+    0,
+    600,
+    1000,
+    800
+   ]
+  }
+ ]
+}

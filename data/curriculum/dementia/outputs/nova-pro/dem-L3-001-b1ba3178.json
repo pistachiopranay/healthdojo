@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-001",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E01\", \"severity\": \"low\", \"evidence\": \"Car keys hanging by the front door\", \"box\": [572, 325, 598, 433]}, {\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"Clutter piles in the walkway\", \"box\": [341, 626, 725, 936]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "low",
+   "evidence": "Car keys hanging by the front door",
+   "box": [
+    572,
+    325,
+    598,
+    433
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Clutter piles in the walkway",
+   "box": [
+    341,
+    626,
+    725,
+    936
+   ]
+  }
+ ]
+}

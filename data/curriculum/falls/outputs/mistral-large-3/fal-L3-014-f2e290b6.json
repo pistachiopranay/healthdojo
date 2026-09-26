@@ -1,0 +1,50 @@
+{
+ "id": "fal-L3-014",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BED-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Floor clutter around bed, including a dog bed, pet bowl, and chew toy on the floor.\",\n      \"box\": [450, 550, 750, 800]\n    },\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"Insufficient walker clearance around the bed due to the dog bed and chair placement.\",\n      \"box\": [0, 500, 1000, 800]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Dog bed on the floor could act like a loose rug or mat.\",\n      \"box\": [450, 550, 650, 700]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Pet items (dog bed, bowl, and toy) underfoot.\",\n      \"box\": [450, 550, 750, 800]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "severity": "high",
+   "evidence": "Floor clutter around bed, including a dog bed, pet bowl, and chew toy on the floor.",
+   "box": [
+    450,
+    550,
+    750,
+    800
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "high",
+   "evidence": "Insufficient walker clearance around the bed due to the dog bed and chair placement.",
+   "box": [
+    0,
+    500,
+    1000,
+    800
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Dog bed on the floor could act like a loose rug or mat.",
+   "box": [
+    450,
+    550,
+    650,
+    700
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pet items (dog bed, bowl, and toy) underfoot.",
+   "box": [
+    450,
+    550,
+    750,
+    800
+   ]
+  }
+ ]
+}

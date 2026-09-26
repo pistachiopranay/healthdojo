@@ -1,0 +1,17 @@
+{
+ "id": "fal-L1-001",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"Cords or wires across walkway\", \"box\": [430, 490, 600, 600]}]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Cords or wires across walkway",
+   "box": [
+    430,
+    490,
+    600,
+    600
+   ]
+  }
+ ]
+}

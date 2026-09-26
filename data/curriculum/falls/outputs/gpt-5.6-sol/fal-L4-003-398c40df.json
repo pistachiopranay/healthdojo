@@ -1,0 +1,50 @@
+{
+ "id": "fal-L4-003",
+ "raw": "{\"hazards\":[{\"id\":\"STAIR-02\",\"severity\":\"high\",\"evidence\":\"The right-hand handrail ends well before the bottom steps and has a dangling attachment at its end.\",\"box\":[555,50,700,600]},{\"id\":\"STAIR-03\",\"severity\":\"high\",\"evidence\":\"A slipper is lying directly on a stair tread.\",\"box\":[412,300,505,365]},{\"id\":\"STAIR-05\",\"severity\":\"high\",\"evidence\":\"The enlarged view shows loose or lifted yellow stair-edge covering/nosing.\",\"box\":[358,485,605,605]},{\"id\":\"LIV-02\",\"severity\":\"high\",\"evidence\":\"A white cord runs across the floor beside the stair approach and living-room walkway.\",\"box\":[84,695,250,915]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-02",
+   "severity": "high",
+   "evidence": "The right-hand handrail ends well before the bottom steps and has a dangling attachment at its end.",
+   "box": [
+    555,
+    50,
+    700,
+    600
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "A slipper is lying directly on a stair tread.",
+   "box": [
+    412,
+    300,
+    505,
+    365
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "The enlarged view shows loose or lifted yellow stair-edge covering/nosing.",
+   "box": [
+    358,
+    485,
+    605,
+    605
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "A white cord runs across the floor beside the stair approach and living-room walkway.",
+   "box": [
+    84,
+    695,
+    250,
+    915
+   ]
+  }
+ ]
+}

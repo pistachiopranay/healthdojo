@@ -1,0 +1,28 @@
+{
+ "id": "dem-L2-008",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E02\",\n      \"severity\": \"high\",\n      \"evidence\": \"The front door is visibly open, leading directly outside, which poses a significant wandering risk for an individual with dementia.\",\n      \"box\": [362, 1, 440, 380]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"There are small decorative items (e.g., a small bowl and vase) on the side table next to the recliner, which could become tripping hazards or be misplaced.\",\n      \"box\": [0, 450, 140, 840]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "The front door is visibly open, leading directly outside, which poses a significant wandering risk for an individual with dementia.",
+   "box": [
+    362,
+    1,
+    440,
+    380
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "There are small decorative items (e.g., a small bowl and vase) on the side table next to the recliner, which could become tripping hazards or be misplaced.",
+   "box": [
+    0,
+    450,
+    140,
+    840
+   ]
+  }
+ ]
+}

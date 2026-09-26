@@ -1,0 +1,28 @@
+{
+ "id": "dem-L1-006",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"white toilet and seat on a light floor\", \"box\": [480, 540, 720, 980]},\n    {\"id\": \"DEM-B03\", \"severity\": \"medium\", \"evidence\": \"black bath mat on a light floor\", \"box\": [240, 860, 550, 1000]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "white toilet and seat on a light floor",
+   "box": [
+    480,
+    540,
+    720,
+    980
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "medium",
+   "evidence": "black bath mat on a light floor",
+   "box": [
+    240,
+    860,
+    550,
+    1000
+   ]
+  }
+ ]
+}

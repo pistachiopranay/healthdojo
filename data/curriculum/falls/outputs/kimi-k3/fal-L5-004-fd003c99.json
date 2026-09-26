@@ -1,0 +1,55 @@
+{
+ "id": "fal-L5-004",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-07\", \"severity\": \"high\", \"evidence\": \"Two pet bowls and a red bone-shaped pet toy sit on the floor in the walking path just inside the doorway, directly where a walker user would step.\", \"box\": [329, 851, 414, 986]}, {\"id\": \"BATH-07\", \"severity\": \"high\", \"evidence\": \"A loose, crumpled towel/mat lies on the bathroom floor in front of the pedestal sink, creating a slip/trip hazard on a hard floor.\", \"box\": [392, 820, 526, 934]}, {\"id\": \"LIV-03\", \"severity\": \"high\", \"evidence\": \"The path through the double doors to the sink is narrowed and cluttered by pet bowls, a towel, a toy, and a small armless stool, leaving little clear width for a walker.\", \"box\": [330, 726, 603, 995]}, {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"Loose fabric/mat items are on the floor within the doorway walkway rather than secured.\", \"box\": [395, 823, 524, 930]}, {\"id\": \"LIV-05\", \"severity\": \"medium\", \"evidence\": \"The approach and bathroom are dim with a bright frosted window behind the sink, producing low visibility and glare that can obscure the floor items.\"}]}",
+ "hazards": [
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "Two pet bowls and a red bone-shaped pet toy sit on the floor in the walking path just inside the doorway, directly where a walker user would step.",
+   "box": [
+    329,
+    851,
+    414,
+    986
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "high",
+   "evidence": "A loose, crumpled towel/mat lies on the bathroom floor in front of the pedestal sink, creating a slip/trip hazard on a hard floor.",
+   "box": [
+    392,
+    820,
+    526,
+    934
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "The path through the double doors to the sink is narrowed and cluttered by pet bowls, a towel, a toy, and a small armless stool, leaving little clear width for a walker.",
+   "box": [
+    330,
+    726,
+    603,
+    995
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Loose fabric/mat items are on the floor within the doorway walkway rather than secured.",
+   "box": [
+    395,
+    823,
+    524,
+    930
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "The approach and bathroom are dim with a bright frosted window behind the sink, producing low visibility and glare that can obscure the floor items."
+  }
+ ]
+}

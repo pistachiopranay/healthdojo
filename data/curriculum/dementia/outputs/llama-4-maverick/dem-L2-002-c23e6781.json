@@ -1,0 +1,39 @@
+{
+ "id": "dem-L2-002",
+ "raw": "{\"hazards\": [\n  {\"id\": \"DEM-R01\", \"severity\": \"medium\", \"evidence\": \"large framed picture above the bed\", \"box\": [460, 130, 550, 260]},\n  {\"id\": \"DEM-R02\", \"severity\": \"medium\", \"evidence\": \"rug with a bold pattern\", \"box\": [430, 600, 700, 900]},\n  {\"id\": \"DEM-E03\", \"severity\": \"low\", \"evidence\": \"clutter on dresser\", \"box\": [0, 520, 0.18, 0.82]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "large framed picture above the bed",
+   "box": [
+    460,
+    130,
+    550,
+    260
+   ]
+  },
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "rug with a bold pattern",
+   "box": [
+    430,
+    600,
+    700,
+    900
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "clutter on dresser",
+   "box": [
+    0,
+    520,
+    0.18,
+    0.82
+   ]
+  }
+ ]
+}

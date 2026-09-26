@@ -1,0 +1,28 @@
+{
+ "id": "fal-L3-008",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"high\", \"evidence\": \"Small decorative rug lying loose on top of carpet in main walking path, edges curled up creating trip risk\", \"box\": [473, 481, 848, 645]}, {\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"Long yellow cord/cable snaking across the floor from foreground through the rug and toward furniture, crossing the main walkway\", \"box\": [230, 460, 930, 838]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Small decorative rug lying loose on top of carpet in main walking path, edges curled up creating trip risk",
+   "box": [
+    473,
+    481,
+    848,
+    645
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Long yellow cord/cable snaking across the floor from foreground through the rug and toward furniture, crossing the main walkway",
+   "box": [
+    230,
+    460,
+    930,
+    838
+   ]
+  }
+ ]
+}

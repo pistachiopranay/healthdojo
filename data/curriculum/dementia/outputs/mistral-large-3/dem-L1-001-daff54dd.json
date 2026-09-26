@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-001",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Newspapers scattered on the floor creating clutter and potential tripping hazards in the walkway\",\n      \"box\": [350, 500, 700, 750]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Newspapers scattered on the floor creating clutter and potential tripping hazards in the walkway",
+   "box": [
+    350,
+    500,
+    700,
+    750
+   ]
+  }
+ ]
+}

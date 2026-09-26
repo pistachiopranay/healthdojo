@@ -1,0 +1,30 @@
+{
+ "id": "dem-L4-011",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove knobs are freely accessible and there is no visible safety lock or barrier to prevent accidental use.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"DEM-K04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Medication bottles are left out on the counter, posing a risk of confusion or accidental ingestion.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cleaning chemicals are visible on the counter, which could be mistaken for food or drink and ingested.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There is clutter on the counter and shelves, which could obstruct pathways and increase the risk of falls or disorientation.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove knobs are freely accessible and there is no visible safety lock or barrier to prevent accidental use.",
+   "box": null
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Medication bottles are left out on the counter, posing a risk of confusion or accidental ingestion.",
+   "box": null
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning chemicals are visible on the counter, which could be mistaken for food or drink and ingested.",
+   "box": null
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "There is clutter on the counter and shelves, which could obstruct pathways and increase the risk of falls or disorientation.",
+   "box": null
+  }
+ ]
+}

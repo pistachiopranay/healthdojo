@@ -1,0 +1,28 @@
+{
+ "id": "dem-L4-011",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K04\", \"severity\": \"high\", \"evidence\": \"Numerous orange prescription medication bottles and other pill containers left out openly on the kitchen counter, accessible and unsecured\", \"box\": [617, 183, 840, 268]}, {\"id\": \"DEM-K03\", \"severity\": \"medium\", \"evidence\": \"Spray bottle/cleaning chemical container visible on counter near sink area, unlocked and accessible\", \"box\": [575, 200, 610, 250]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Numerous orange prescription medication bottles and other pill containers left out openly on the kitchen counter, accessible and unsecured",
+   "box": [
+    617,
+    183,
+    840,
+    268
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Spray bottle/cleaning chemical container visible on counter near sink area, unlocked and accessible",
+   "box": [
+    575,
+    200,
+    610,
+    250
+   ]
+  }
+ ]
+}

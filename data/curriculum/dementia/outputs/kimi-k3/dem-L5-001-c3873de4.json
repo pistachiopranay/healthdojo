@@ -1,0 +1,39 @@
+{
+ "id": "dem-L5-001",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"Blue gas flame visible on a stove burner with front control knobs freely accessible\", \"box\": [150, 315, 250, 430]}, {\"id\": \"DEM-K02\", \"severity\": \"medium\", \"evidence\": \"Knife block with multiple knives upright on the countertop next to the refrigerator\", \"box\": [596, 190, 652, 313]}, {\"id\": \"DEM-K04\", \"severity\": \"medium\", \"evidence\": \"Small amber prescription-style bottle left out on the counter by the stove/coffee maker\", \"box\": [215, 278, 243, 333]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Blue gas flame visible on a stove burner with front control knobs freely accessible",
+   "box": [
+    150,
+    315,
+    250,
+    430
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "medium",
+   "evidence": "Knife block with multiple knives upright on the countertop next to the refrigerator",
+   "box": [
+    596,
+    190,
+    652,
+    313
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Small amber prescription-style bottle left out on the counter by the stove/coffee maker",
+   "box": [
+    215,
+    278,
+    243,
+    333
+   ]
+  }
+ ]
+}

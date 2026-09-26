@@ -1,0 +1,61 @@
+{
+ "id": "fal-L4-014",
+ "raw": "{\"hazards\": [\n  {\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"A long cord is visible on the floor\", \"box\": [350, 600, 540, 1000]},\n  {\"id\": \"LIV-07\", \"severity\": \"low\", \"evidence\": \"A dog bowl and dog toy are on the floor\", \"box\": [350, 600, 540, 1000]},\n  {\"id\": \"KIT-03\", \"severity\": \"high\", \"evidence\": \"A wooden step stool is leaning against the counter\", \"box\": [330, 350, 400, 650]},\n  {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"A loose mat is on the floor near the sink\", \"box\": [600, 650, 800, 900]},\n  {\"id\": \"KIT-04\", \"severity\": \"high\", \"evidence\": \"The floor is wet and slippery near the sink\", \"box\": [350, 600, 540, 1000]}\n]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A long cord is visible on the floor",
+   "box": [
+    350,
+    600,
+    540,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "low",
+   "evidence": "A dog bowl and dog toy are on the floor",
+   "box": [
+    350,
+    600,
+    540,
+    1000
+   ]
+  },
+  {
+   "id": "KIT-03",
+   "severity": "high",
+   "evidence": "A wooden step stool is leaning against the counter",
+   "box": [
+    330,
+    350,
+    400,
+    650
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A loose mat is on the floor near the sink",
+   "box": [
+    600,
+    650,
+    800,
+    900
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "The floor is wet and slippery near the sink",
+   "box": [
+    350,
+    600,
+    540,
+    1000
+   ]
+  }
+ ]
+}

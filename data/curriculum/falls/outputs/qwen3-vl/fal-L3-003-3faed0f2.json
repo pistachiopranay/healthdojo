@@ -1,0 +1,50 @@
+{
+ "id": "fal-L3-003",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"KIT-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Large puddle of water on hardwood floor near stove and sink area, creating a significant slip hazard.\",\n      \"box\": [168, 738, 507, 938]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"Long white electrical cord snaking across the kitchen floor, creating a tripping hazard for someone using a walker.\",\n      \"box\": [347, 555, 630, 999]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The cord and puddle together narrow the walking path, especially in the central area of the kitchen where a walker would need to pass.\",\n      \"box\": [168, 555, 630, 999]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"Bright sunlight streaming through windows creates glare on the floor and countertops, which could impair visibility for someone with reduced mobility or vision.\",\n      \"box\": [0, 0, 1000, 999]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "Large puddle of water on hardwood floor near stove and sink area, creating a significant slip hazard.",
+   "box": [
+    168,
+    738,
+    507,
+    938
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Long white electrical cord snaking across the kitchen floor, creating a tripping hazard for someone using a walker.",
+   "box": [
+    347,
+    555,
+    630,
+    999
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The cord and puddle together narrow the walking path, especially in the central area of the kitchen where a walker would need to pass.",
+   "box": [
+    168,
+    555,
+    630,
+    999
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Bright sunlight streaming through windows creates glare on the floor and countertops, which could impair visibility for someone with reduced mobility or vision.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  }
+ ]
+}

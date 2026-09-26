@@ -1,0 +1,17 @@
+{
+ "id": "fal-L3-006",
+ "raw": "{\"hazards\": [{\"id\": \"BATH-01\", \"severity\": \"high\", \"evidence\": \"No grab bar at tub/shower\", \"box\": [518, 485, 770, 522]}]}",
+ "hazards": [
+  {
+   "id": "BATH-01",
+   "severity": "high",
+   "evidence": "No grab bar at tub/shower",
+   "box": [
+    518,
+    485,
+    770,
+    522
+   ]
+  }
+ ]
+}

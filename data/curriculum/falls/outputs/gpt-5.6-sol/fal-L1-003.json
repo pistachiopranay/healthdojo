@@ -1,0 +1,28 @@
+{
+ "id": "fal-L1-003",
+ "raw": "{\"hazards\":[{\"id\":\"STAIR-03\",\"severity\":\"high\",\"evidence\":\"Multiple boxes and a pair of shoes obstruct the steps and reduce space for walker placement.\",\"box\":[294,472,530,681]},{\"id\":\"ENT-02\",\"severity\":\"medium\",\"evidence\":\"A raised door sill is visible across the entrance doorway.\",\"box\":[380,469,640,493]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Multiple boxes and a pair of shoes obstruct the steps and reduce space for walker placement.",
+   "box": [
+    294,
+    472,
+    530,
+    681
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "A raised door sill is visible across the entrance doorway.",
+   "box": [
+    380,
+    469,
+    640,
+    493
+   ]
+  }
+ ]
+}

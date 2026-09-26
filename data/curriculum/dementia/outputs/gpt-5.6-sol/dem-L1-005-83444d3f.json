@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-005",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-R01\",\"severity\":\"medium\",\"evidence\":\"A large full-length mirror directly faces the bed and may cause confusing reflections or misperceptions.\",\"box\":[342,175,419,409]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "A large full-length mirror directly faces the bed and may cause confusing reflections or misperceptions.",
+   "box": [
+    342,
+    175,
+    419,
+    409
+   ]
+  }
+ ]
+}

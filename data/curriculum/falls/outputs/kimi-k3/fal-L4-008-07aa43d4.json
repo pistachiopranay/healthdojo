@@ -1,0 +1,44 @@
+{
+ "id": "fal-L4-008",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"high\", \"evidence\": \"Loose, wrinkled throw rug lying on the wood floor in the main walking area, with bunched/curled sections that can catch a walker or foot.\", \"box\": [230, 820, 665, 988]}, {\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"White cord/cable running and looping across the floor near the rug and shoes, crossing the walkway.\", \"box\": [25, 845, 305, 950]}, {\"id\": \"KIT-03\", \"severity\": \"medium\", \"evidence\": \"Wooden step ladder/stool standing in the room by the side table and window, positioned for reaching and sitting within the walking path.\", \"box\": [585, 598, 755, 905]}, {\"id\": \"LIV-05\", \"severity\": \"medium\", \"evidence\": \"Overall dim ambient lighting with a single small lamp and strong bright window contrast, leaving deep shadows across the floor and walkway.\"}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose, wrinkled throw rug lying on the wood floor in the main walking area, with bunched/curled sections that can catch a walker or foot.",
+   "box": [
+    230,
+    820,
+    665,
+    988
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "White cord/cable running and looping across the floor near the rug and shoes, crossing the walkway.",
+   "box": [
+    25,
+    845,
+    305,
+    950
+   ]
+  },
+  {
+   "id": "KIT-03",
+   "severity": "medium",
+   "evidence": "Wooden step ladder/stool standing in the room by the side table and window, positioned for reaching and sitting within the walking path.",
+   "box": [
+    585,
+    598,
+    755,
+    905
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Overall dim ambient lighting with a single small lamp and strong bright window contrast, leaving deep shadows across the floor and walkway."
+  }
+ ]
+}

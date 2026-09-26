@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-004",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E02\", \"severity\": \"high\", \"evidence\": \"The front entry door is standing open with the storm/exterior doorway exposed, giving direct unsupervised access to the outside (visible porch railing, lawn, and street) \u2014 a wandering/elopement risk.\", \"box\": [328, 12, 443, 388]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "The front entry door is standing open with the storm/exterior doorway exposed, giving direct unsupervised access to the outside (visible porch railing, lawn, and street) \u2014 a wandering/elopement risk.",
+   "box": [
+    328,
+    12,
+    443,
+    388
+   ]
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "id": "dem-L5-003",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K02\",\n      \"severity\": \"high\",\n      \"evidence\": \"Knives are placed on the counter in an accessible location, posing a risk if the individual with dementia attempts to use them unsupervised.\",\n      \"box\": [510, 229, 548, 289]\n    },\n    {\n      \"id\": \"DEM-K04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Medication bottles are left out on the counter, which could be mistaken for food or other items, leading to accidental ingestion or misuse.\",\n      \"box\": [548, 250, 660, 311]\n    },\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"The stove knobs are freely accessible and there is no visible safety lock, posing a risk of accidental burns or fires if the individual with dementia turns on the stove.\",\n      \"box\": [136, 331, 250, 386]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cleaning chemicals are visible on the counter, which could be mistaken for food or drink, leading to accidental poisoning.\",\n      \"box\": [450, 231, 480, 300]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Knives are placed on the counter in an accessible location, posing a risk if the individual with dementia attempts to use them unsupervised.",
+   "box": [
+    510,
+    229,
+    548,
+    289
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Medication bottles are left out on the counter, which could be mistaken for food or other items, leading to accidental ingestion or misuse.",
+   "box": [
+    548,
+    250,
+    660,
+    311
+   ]
+  },
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "The stove knobs are freely accessible and there is no visible safety lock, posing a risk of accidental burns or fires if the individual with dementia turns on the stove.",
+   "box": [
+    136,
+    331,
+    250,
+    386
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning chemicals are visible on the counter, which could be mistaken for food or drink, leading to accidental poisoning.",
+   "box": [
+    450,
+    231,
+    480,
+    300
+   ]
+  }
+ ]
+}

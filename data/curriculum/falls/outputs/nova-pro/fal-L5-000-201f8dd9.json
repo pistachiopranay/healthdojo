@@ -1,0 +1,50 @@
+{
+ "id": "fal-L5-000",
+ "raw": "{\"hazards\": [{\"id\": \"BATH-02\", \"severity\": \"high\", \"evidence\": \"No support at toilet\", \"box\": [517, 546, 724, 1000]}, {\"id\": \"BATH-03\", \"severity\": \"high\", \"evidence\": \"Non-load-rated fixture positioned as support\", \"box\": [643, 0, 702, 451]}, {\"id\": \"BATH-07\", \"severity\": \"medium\", \"evidence\": \"Loose bath mat or rug on bathroom floor\", \"box\": [234, 845, 543, 1000]}, {\"id\": \"BATH-08\", \"severity\": \"high\", \"evidence\": \"No shower seat or handheld shower\", \"box\": [211, 345, 418, 677]}]}",
+ "hazards": [
+  {
+   "id": "BATH-02",
+   "severity": "high",
+   "evidence": "No support at toilet",
+   "box": [
+    517,
+    546,
+    724,
+    1000
+   ]
+  },
+  {
+   "id": "BATH-03",
+   "severity": "high",
+   "evidence": "Non-load-rated fixture positioned as support",
+   "box": [
+    643,
+    0,
+    702,
+    451
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "medium",
+   "evidence": "Loose bath mat or rug on bathroom floor",
+   "box": [
+    234,
+    845,
+    543,
+    1000
+   ]
+  },
+  {
+   "id": "BATH-08",
+   "severity": "high",
+   "evidence": "No shower seat or handheld shower",
+   "box": [
+    211,
+    345,
+    418,
+    677
+   ]
+  }
+ ]
+}

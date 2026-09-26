@@ -1,0 +1,28 @@
+{
+ "id": "dem-L1-005",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A large full-length mirror is mounted on the wall facing the bed, which may cause confusion or distress for someone with dementia who may not recognize their own reflection.\",\n      \"box\": [338, 175, 417, 395]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"There is a small decorative item (blue bowl) and a doily on the edge of the dresser in the foreground, which could be knocked over or become a tripping hazard if the person wanders close.\",\n      \"box\": [0, 524, 204, 999]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "A large full-length mirror is mounted on the wall facing the bed, which may cause confusion or distress for someone with dementia who may not recognize their own reflection.",
+   "box": [
+    338,
+    175,
+    417,
+    395
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "There is a small decorative item (blue bowl) and a doily on the edge of the dresser in the foreground, which could be knocked over or become a tripping hazard if the person wanders close.",
+   "box": [
+    0,
+    524,
+    204,
+    999
+   ]
+  }
+ ]
+}

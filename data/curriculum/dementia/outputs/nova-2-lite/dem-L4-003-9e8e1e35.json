@@ -1,0 +1,29 @@
+{
+ "id": "dem-L4-003",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Car keys are hanging on the wall near the front door, posing a risk of the person with dementia wandering outside unsupervised.\",\n      \"box\": [630, 108, 700, 208]\n    },\n    {\n      \"id\": \"DEM-E02\",\n      \"severity\": \"high\",\n      \"evidence\": \"The front door is left open to the outside, which can allow the person with dementia to wander out unsupervised.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There are piles of newspapers and other clutter in the walkway, which can obstruct movement and cause tripping or disorientation.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "Car keys are hanging on the wall near the front door, posing a risk of the person with dementia wandering outside unsupervised.",
+   "box": [
+    630,
+    108,
+    700,
+    208
+   ]
+  },
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "The front door is left open to the outside, which can allow the person with dementia to wander out unsupervised.",
+   "box": null
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "There are piles of newspapers and other clutter in the walkway, which can obstruct movement and cause tripping or disorientation.",
+   "box": null
+  }
+ ]
+}

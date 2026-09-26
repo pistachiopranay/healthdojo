@@ -1,0 +1,83 @@
+{
+ "id": "fal-L5-004",
+ "raw": "{\"hazards\": [{\"id\": \"BATH-02\", \"severity\": \"high\", \"evidence\": \"Toilet area not visible but sink is pedestal style without grab bars near it, no support structure visible at toilet/bath area\", \"box\": [420, 400, 720, 690]}, {\"id\": \"BATH-03\", \"severity\": \"high\", \"evidence\": \"Pedestal sink (non-load-rated fixture) could be mistakenly used as support while walking, unstable for weight-bearing\", \"box\": [500, 440, 660, 660]}, {\"id\": \"BATH-07\", \"severity\": \"medium\", \"evidence\": \"Loose bath mat/towel on floor near sink area, potential slip/trip hazard\", \"box\": [420, 690, 620, 780]}, {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"Pet bowls and a pet toy (bone) on the floor in the walking path\", \"box\": [400, 700, 690, 820]}, {\"id\": \"LIV-05\", \"severity\": \"medium\", \"evidence\": \"Dim hallway lighting with high contrast from window light, creating glare and low visibility along the path\", \"box\": [0, 0, 1216, 819]}, {\"id\": \"ENT-05\", \"severity\": \"low\", \"evidence\": \"Narrow doorway with two swinging doors partially open, could restrict walker clearance\", \"box\": [280, 0, 900, 700]}, {\"id\": \"KIT-03\", \"severity\": \"medium\", \"evidence\": \"Small stool/step visible near sink area, could be unstable if used for support or reaching\", \"box\": [630, 600, 720, 700]}]}",
+ "hazards": [
+  {
+   "id": "BATH-02",
+   "severity": "high",
+   "evidence": "Toilet area not visible but sink is pedestal style without grab bars near it, no support structure visible at toilet/bath area",
+   "box": [
+    420,
+    400,
+    720,
+    690
+   ]
+  },
+  {
+   "id": "BATH-03",
+   "severity": "high",
+   "evidence": "Pedestal sink (non-load-rated fixture) could be mistakenly used as support while walking, unstable for weight-bearing",
+   "box": [
+    500,
+    440,
+    660,
+    660
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "medium",
+   "evidence": "Loose bath mat/towel on floor near sink area, potential slip/trip hazard",
+   "box": [
+    420,
+    690,
+    620,
+    780
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pet bowls and a pet toy (bone) on the floor in the walking path",
+   "box": [
+    400,
+    700,
+    690,
+    820
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Dim hallway lighting with high contrast from window light, creating glare and low visibility along the path",
+   "box": [
+    0,
+    0,
+    1216,
+    819
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "low",
+   "evidence": "Narrow doorway with two swinging doors partially open, could restrict walker clearance",
+   "box": [
+    280,
+    0,
+    900,
+    700
+   ]
+  },
+  {
+   "id": "KIT-03",
+   "severity": "medium",
+   "evidence": "Small stool/step visible near sink area, could be unstable if used for support or reaching",
+   "box": [
+    630,
+    600,
+    720,
+    700
+   ]
+  }
+ ]
+}

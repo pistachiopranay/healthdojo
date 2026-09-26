@@ -1,0 +1,28 @@
+{
+ "id": "dem-L2-003",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-B02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"White toilet seat on a similarly colored toilet and floor, which may cause low contrast and difficulty in perception for someone with dementia.\",\n      \"box\": [600, 400, 850, 700]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Cleaning supplies or similar items could be stored in the cabinet under the sink, which appears to be unlocked and accessible.\",\n      \"box\": [800, 500, 950, 750]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White toilet seat on a similarly colored toilet and floor, which may cause low contrast and difficulty in perception for someone with dementia.",
+   "box": [
+    600,
+    400,
+    850,
+    700
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "Cleaning supplies or similar items could be stored in the cabinet under the sink, which appears to be unlocked and accessible.",
+   "box": [
+    800,
+    500,
+    950,
+    750
+   ]
+  }
+ ]
+}

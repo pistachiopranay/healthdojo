@@ -1,0 +1,61 @@
+{
+ "id": "fal-L4-003",
+ "raw": "{\"hazards\": [\n  {\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"white cord on the left side of the image\", \"box\": [0, 0, 250, 1080]},\n  {\"id\": \"STAIR-01\", \"severity\": \"high\", \"evidence\": \"handrail is only on one side of the stairs\", \"box\": [250, 0, 750, 1080]},\n  {\"id\": \"STAIR-03\", \"severity\": \"high\", \"evidence\": \"slipper on the stairs\", \"box\": [250, 0, 750, 1080]},\n  {\"id\": \"STAIR-04\", \"severity\": \"medium\", \"evidence\": \"only one light on the stairs\", \"box\": [250, 0, 750, 1080]},\n  {\"id\": \"LIV-05\", \"severity\": \"medium\", \"evidence\": \"dim lighting in the hallway and living room\", \"box\": [0, 0, 1000, 1080]}\n]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "white cord on the left side of the image",
+   "box": [
+    0,
+    0,
+    250,
+    1080
+   ]
+  },
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "handrail is only on one side of the stairs",
+   "box": [
+    250,
+    0,
+    750,
+    1080
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "slipper on the stairs",
+   "box": [
+    250,
+    0,
+    750,
+    1080
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "only one light on the stairs",
+   "box": [
+    250,
+    0,
+    750,
+    1080
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "dim lighting in the hallway and living room",
+   "box": [
+    0,
+    0,
+    1000,
+    1080
+   ]
+  }
+ ]
+}

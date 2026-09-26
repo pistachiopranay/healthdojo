@@ -1,0 +1,39 @@
+{
+ "id": "dem-L5-001",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove knobs are freely accessible and visible, posing a risk of the stove being turned on accidentally.\",\n      \"box\": [100, 300, 400, 400]\n    },\n    {\n      \"id\": \"DEM-K02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Knives or sharp objects appear to be on the magnetic strip above the countertop.\",\n      \"box\": [400, 200, 550, 250]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Clutter on the countertop near the stove and sink could pose a tripping or confusion hazard.\",\n      \"box\": [50, 200, 600, 400]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove knobs are freely accessible and visible, posing a risk of the stove being turned on accidentally.",
+   "box": [
+    100,
+    300,
+    400,
+    400
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "medium",
+   "evidence": "Knives or sharp objects appear to be on the magnetic strip above the countertop.",
+   "box": [
+    400,
+    200,
+    550,
+    250
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Clutter on the countertop near the stove and sink could pose a tripping or confusion hazard.",
+   "box": [
+    50,
+    200,
+    600,
+    400
+   ]
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "id": "fal-L2-005",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BATH-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"No grab bar at tub/shower\",\n      \"box\": [300, 100, 700, 400]\n    },\n    {\n      \"id\": \"BATH-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"No support at toilet (only a raised toilet seat with side arms, no proper grab bars)\",\n      \"box\": [500, 300, 800, 700]\n    },\n    {\n      \"id\": \"BATH-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Slippery tub/shower floor (no visible non-slip surface)\",\n      \"box\": [300, 100, 700, 400]\n    },\n    {\n      \"id\": \"BATH-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"High tub step-over without transfer aid\",\n      \"box\": [300, 300, 700, 450]\n    },\n    {\n      \"id\": \"BATH-08\",\n      \"severity\": \"medium\",\n      \"evidence\": \"No shower seat or handheld shower visible\",\n      \"box\": [300, 100, 700, 400]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BATH-01",
+   "severity": "high",
+   "evidence": "No grab bar at tub/shower",
+   "box": [
+    300,
+    100,
+    700,
+    400
+   ]
+  },
+  {
+   "id": "BATH-02",
+   "severity": "high",
+   "evidence": "No support at toilet (only a raised toilet seat with side arms, no proper grab bars)",
+   "box": [
+    500,
+    300,
+    800,
+    700
+   ]
+  },
+  {
+   "id": "BATH-04",
+   "severity": "medium",
+   "evidence": "Slippery tub/shower floor (no visible non-slip surface)",
+   "box": [
+    300,
+    100,
+    700,
+    400
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "High tub step-over without transfer aid",
+   "box": [
+    300,
+    300,
+    700,
+    450
+   ]
+  },
+  {
+   "id": "BATH-08",
+   "severity": "medium",
+   "evidence": "No shower seat or handheld shower visible",
+   "box": [
+    300,
+    100,
+    700,
+    400
+   ]
+  }
+ ]
+}

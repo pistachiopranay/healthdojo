@@ -1,0 +1,17 @@
+{
+ "id": "fal-L1-001",
+ "raw": "{\"hazards\":[{\"id\":\"LIV-02\",\"severity\":\"high\",\"evidence\":\"A long coiled cord lies across the central walking path and could catch a walker or cause tripping.\",\"box\":[446,525,617,637]}]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "A long coiled cord lies across the central walking path and could catch a walker or cause tripping.",
+   "box": [
+    446,
+    525,
+    617,
+    637
+   ]
+  }
+ ]
+}

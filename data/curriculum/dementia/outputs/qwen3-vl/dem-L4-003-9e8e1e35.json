@@ -1,0 +1,39 @@
+{
+ "id": "dem-L4-003",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Car keys are hanging on a hook by the front door, within easy reach, which could enable an individual with dementia to leave unsupervised.\",\n      \"box\": [640, 111, 688, 200]\n    },\n    {\n      \"id\": \"DEM-E02\",\n      \"severity\": \"high\",\n      \"evidence\": \"The front door is open, providing direct and unobstructed access to the outside, posing a significant wandering risk for someone with dementia.\",\n      \"box\": [500, 0, 630, 495]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There are multiple stacks of newspapers and cardboard boxes on the floor, creating tripping hazards and obstructing the walkway.\",\n      \"box\": [437, 488, 692, 735]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "Car keys are hanging on a hook by the front door, within easy reach, which could enable an individual with dementia to leave unsupervised.",
+   "box": [
+    640,
+    111,
+    688,
+    200
+   ]
+  },
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "The front door is open, providing direct and unobstructed access to the outside, posing a significant wandering risk for someone with dementia.",
+   "box": [
+    500,
+    0,
+    630,
+    495
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "There are multiple stacks of newspapers and cardboard boxes on the floor, creating tripping hazards and obstructing the walkway.",
+   "box": [
+    437,
+    488,
+    692,
+    735
+   ]
+  }
+ ]
+}

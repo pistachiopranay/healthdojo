@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-003",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E01\", \"severity\": \"medium\", \"evidence\": \"Car keys hanging on hook by the front door, easily accessible for someone who might wander outside\", \"box\": [796, 218, 838, 344]}, {\"id\": \"DEM-E03\", \"severity\": \"high\", \"evidence\": \"Large pile of newspapers, boxes, and shoes blocking the walkway directly in front of the exit door, creating a trip/fall hazard\", \"box\": [305, 515, 812, 731]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "medium",
+   "evidence": "Car keys hanging on hook by the front door, easily accessible for someone who might wander outside",
+   "box": [
+    796,
+    218,
+    838,
+    344
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "high",
+   "evidence": "Large pile of newspapers, boxes, and shoes blocking the walkway directly in front of the exit door, creating a trip/fall hazard",
+   "box": [
+    305,
+    515,
+    812,
+    731
+   ]
+  }
+ ]
+}

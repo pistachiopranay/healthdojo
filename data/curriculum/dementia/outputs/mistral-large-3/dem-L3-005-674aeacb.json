@@ -1,0 +1,39 @@
+{
+ "id": "dem-L3-005",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-B02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"White toilet seat on similarly colored floor and wall, creating low contrast which can be confusing for individuals with dementia.\",\n      \"box\": [600, 300, 850, 700]\n    },\n    {\n      \"id\": \"DEM-B03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Dark bath mat on a light floor, which might be misperceived or cause confusion.\",\n      \"box\": [300, 700, 600, 850]\n    },\n    {\n      \"id\": \"DEM-B04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Plugged-in hair dryer near the sink, posing a risk of water contact and electric shock.\",\n      \"box\": [850, 450, 1000, 650]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White toilet seat on similarly colored floor and wall, creating low contrast which can be confusing for individuals with dementia.",
+   "box": [
+    600,
+    300,
+    850,
+    700
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "medium",
+   "evidence": "Dark bath mat on a light floor, which might be misperceived or cause confusion.",
+   "box": [
+    300,
+    700,
+    600,
+    850
+   ]
+  },
+  {
+   "id": "DEM-B04",
+   "severity": "high",
+   "evidence": "Plugged-in hair dryer near the sink, posing a risk of water contact and electric shock.",
+   "box": [
+    850,
+    450,
+    1000,
+    650
+   ]
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "id": "fal-L1-005",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"BATH-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"The bathtub has a high step-over and no transfer bench or other aid to assist with getting in and out safely.\",\n      \"box\": [150, 677, 695, 999]\n    },\n    {\n      \"id\": \"BATH-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Clothing, shoes, and papers are piled on the floor inside the tub, creating a tripping hazard.\",\n      \"box\": [208, 745, 426, 890]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A black cord from the radio on the windowsill runs down and across the floor near the toilet, posing a tripping hazard.\",\n      \"box\": [850, 355, 999, 999]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The walker is positioned close to the toilet and tub, and clutter (shoes, clothes) is inside the tub, narrowing the walking path and reducing maneuverability for a walker user.\",\n      \"box\": [150, 677, 999, 999]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "The bathtub has a high step-over and no transfer bench or other aid to assist with getting in and out safely.",
+   "box": [
+    150,
+    677,
+    695,
+    999
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "medium",
+   "evidence": "Clothing, shoes, and papers are piled on the floor inside the tub, creating a tripping hazard.",
+   "box": [
+    208,
+    745,
+    426,
+    890
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A black cord from the radio on the windowsill runs down and across the floor near the toilet, posing a tripping hazard.",
+   "box": [
+    850,
+    355,
+    999,
+    999
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The walker is positioned close to the toilet and tub, and clutter (shoes, clothes) is inside the tub, narrowing the walking path and reducing maneuverability for a walker user.",
+   "box": [
+    150,
+    677,
+    999,
+    999
+   ]
+  }
+ ]
+}

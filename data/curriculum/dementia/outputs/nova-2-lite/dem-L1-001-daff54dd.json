@@ -1,0 +1,12 @@
+{
+ "id": "dem-L1-001",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A large pile of newspapers and magazines is blocking the walkway near the recliner chair, creating a tripping hazard and potential obstruction for someone with dementia who may have reduced spatial awareness.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "A large pile of newspapers and magazines is blocking the walkway near the recliner chair, creating a tripping hazard and potential obstruction for someone with dementia who may have reduced spatial awareness.",
+   "box": null
+  }
+ ]
+}

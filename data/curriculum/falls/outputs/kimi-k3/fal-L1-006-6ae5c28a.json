@@ -1,0 +1,39 @@
+{
+ "id": "fal-L1-006",
+ "raw": "{\"hazards\": [{\"id\": \"KIT-02\", \"severity\": \"high\", \"evidence\": \"Frequently used cookware, canned goods and food packages are stored on the floor/lowest shelf, requiring deep bending (unsafe after hip/knee replacement).\", \"box\": [104, 553, 413, 955]}, {\"id\": \"LIV-03\", \"severity\": \"high\", \"evidence\": \"Pots, pans, cast-iron skillet and piles of cans/food sit on the floor along the left side, narrowing and cluttering the main walkway a walker must use between the shelves and counter.\", \"box\": [109, 688, 404, 954]}, {\"id\": \"KIT-01\", \"severity\": \"medium\", \"evidence\": \"Everyday dishes, bowls and glassware are stacked on the upper open shelves above shoulder height, requiring overhead reaching.\", \"box\": [0, 0, 344, 291]}]}",
+ "hazards": [
+  {
+   "id": "KIT-02",
+   "severity": "high",
+   "evidence": "Frequently used cookware, canned goods and food packages are stored on the floor/lowest shelf, requiring deep bending (unsafe after hip/knee replacement).",
+   "box": [
+    104,
+    553,
+    413,
+    955
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Pots, pans, cast-iron skillet and piles of cans/food sit on the floor along the left side, narrowing and cluttering the main walkway a walker must use between the shelves and counter.",
+   "box": [
+    109,
+    688,
+    404,
+    954
+   ]
+  },
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Everyday dishes, bowls and glassware are stacked on the upper open shelves above shoulder height, requiring overhead reaching.",
+   "box": [
+    0,
+    0,
+    344,
+    291
+   ]
+  }
+ ]
+}

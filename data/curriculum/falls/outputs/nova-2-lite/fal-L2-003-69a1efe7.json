@@ -1,0 +1,18 @@
+{
+ "id": "fal-L2-003",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"ENT-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Exterior steps without handrail on one side\",\n      \"box\": null\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Doorway may be too narrow for walker\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "ENT-01",
+   "severity": "medium",
+   "evidence": "Exterior steps without handrail on one side",
+   "box": null
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "Doorway may be too narrow for walker",
+   "box": null
+  }
+ ]
+}

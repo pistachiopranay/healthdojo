@@ -1,0 +1,28 @@
+{
+ "id": "fal-L2-013",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"Hardwood flooring throughout the living area has a high-gloss finish that creates visible glare/reflections, which can reduce traction visibility and increase slip risk, especially with a walker.\", \"box\": [0, 300, 1000, 850]}, {\"id\": \"ENT-02\", \"severity\": \"medium\", \"evidence\": \"The exterior front door appears to have a raised sill/threshold typical of exterior doors, which could pose a trip hazard or difficulty for walker wheels.\", \"box\": [480, 250, 570, 300]}]}",
+ "hazards": [
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Hardwood flooring throughout the living area has a high-gloss finish that creates visible glare/reflections, which can reduce traction visibility and increase slip risk, especially with a walker.",
+   "box": [
+    0,
+    300,
+    1000,
+    850
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "The exterior front door appears to have a raised sill/threshold typical of exterior doors, which could pose a trip hazard or difficulty for walker wheels.",
+   "box": [
+    480,
+    250,
+    570,
+    300
+   ]
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "id": "fal-L1-004",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"There are coiled cables and a power tool placed on the stairs, creating a tripping hazard.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "There are coiled cables and a power tool placed on the stairs, creating a tripping hazard.",
+   "box": null
+  }
+ ]
+}

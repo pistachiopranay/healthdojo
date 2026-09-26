@@ -1,0 +1,61 @@
+{
+ "id": "fal-L3-007",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-07\", \"severity\": \"high\", \"evidence\": \"Pet food bowl filled with kibble and a rope chew toy sitting on the floor in the middle of the kitchen walkway, directly in a walker's path.\", \"box\": [415, 769, 672, 846]}, {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"Large dark loose mat/rug with a raised edge lying on the floor in the foreground walkway; edges can catch a walker or foot.\", \"box\": [510, 857, 1000, 986]}, {\"id\": \"KIT-02\", \"severity\": \"medium\", \"evidence\": \"Pots and pans stored low in the under-sink base cabinet (doors open), requiring deep bending to retrieve everyday cookware.\", \"box\": [473, 607, 662, 770]}, {\"id\": \"KIT-01\", \"severity\": \"low\", \"evidence\": \"Everyday dishes/bowls kept in high wall cabinets (including the glass-front cabinet) above the counter, requiring overhead reaching while on a walker.\", \"box\": [462, 220, 872, 390]}, {\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"Bare bright pendant bulb at eye line toward the kitchen plus strong window backlight creates glare and high contrast with the dim foreground.\", \"box\": [642, 109, 690, 253]}]}",
+ "hazards": [
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "Pet food bowl filled with kibble and a rope chew toy sitting on the floor in the middle of the kitchen walkway, directly in a walker's path.",
+   "box": [
+    415,
+    769,
+    672,
+    846
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Large dark loose mat/rug with a raised edge lying on the floor in the foreground walkway; edges can catch a walker or foot.",
+   "box": [
+    510,
+    857,
+    1000,
+    986
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Pots and pans stored low in the under-sink base cabinet (doors open), requiring deep bending to retrieve everyday cookware.",
+   "box": [
+    473,
+    607,
+    662,
+    770
+   ]
+  },
+  {
+   "id": "KIT-01",
+   "severity": "low",
+   "evidence": "Everyday dishes/bowls kept in high wall cabinets (including the glass-front cabinet) above the counter, requiring overhead reaching while on a walker.",
+   "box": [
+    462,
+    220,
+    872,
+    390
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Bare bright pendant bulb at eye line toward the kitchen plus strong window backlight creates glare and high contrast with the dim foreground.",
+   "box": [
+    642,
+    109,
+    690,
+    253
+   ]
+  }
+ ]
+}

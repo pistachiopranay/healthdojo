@@ -1,0 +1,23 @@
+{
+ "id": "dem-L1-002",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Bold high-contrast patterned rug on the floor near the bed\",\n      \"box\": [250, 700, 750, 950]\n    },\n    {\n      \"id\": \"DEM-R01\",\n      \"severity\": \"low\",\n      \"evidence\": \"No large mirror directly facing the bed is visible, but mirrors elsewhere in the room could be a potential concern if misperceived\",\n      \"box\": []\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "Bold high-contrast patterned rug on the floor near the bed",
+   "box": [
+    250,
+    700,
+    750,
+    950
+   ]
+  },
+  {
+   "id": "DEM-R01",
+   "severity": "low",
+   "evidence": "No large mirror directly facing the bed is visible, but mirrors elsewhere in the room could be a potential concern if misperceived",
+   "box": []
+  }
+ ]
+}

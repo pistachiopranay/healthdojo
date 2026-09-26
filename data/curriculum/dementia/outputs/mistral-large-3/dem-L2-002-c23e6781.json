@@ -1,0 +1,28 @@
+{
+ "id": "dem-L2-002",
+ "raw": "```json\n{\n    \"hazards\": [\n        {\n            \"id\": \"DEM-R02\",\n            \"severity\": \"medium\",\n            \"evidence\": \"Bold high-contrast patterned rug near the foot of the bed\",\n            \"box\": [350, 650, 800, 900]\n        },\n        {\n            \"id\": \"DEM-E03\",\n            \"severity\": \"low\",\n            \"evidence\": \"Potential clutter risk due to visible dresser and items on surfaces, though not explicitly cluttered in walkways\",\n            \"box\": [0, 400, 200, 700]\n        }\n    ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "Bold high-contrast patterned rug near the foot of the bed",
+   "box": [
+    350,
+    650,
+    800,
+    900
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "Potential clutter risk due to visible dresser and items on surfaces, though not explicitly cluttered in walkways",
+   "box": [
+    0,
+    400,
+    200,
+    700
+   ]
+  }
+ ]
+}

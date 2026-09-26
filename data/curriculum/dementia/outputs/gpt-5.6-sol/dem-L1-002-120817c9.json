@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-002",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-R02\",\"severity\":\"medium\",\"evidence\":\"Large bold black-and-white striped rug beside the bed may be misperceived as steps, gaps, or obstacles.\",\"box\":[280,585,820,999]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "Large bold black-and-white striped rug beside the bed may be misperceived as steps, gaps, or obstacles.",
+   "box": [
+    280,
+    585,
+    820,
+    999
+   ]
+  }
+ ]
+}

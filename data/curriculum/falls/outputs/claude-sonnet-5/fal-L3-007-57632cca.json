@@ -1,0 +1,83 @@
+{
+ "id": "fal-L3-007",
+ "raw": "{\"hazards\": [{\"id\": \"KIT-01\", \"severity\": \"medium\", \"evidence\": \"Dishes and cups stored in upper glass cabinet, requiring reaching overhead\", \"box\": [762, 224, 869, 371]}, {\"id\": \"KIT-02\", \"severity\": \"medium\", \"evidence\": \"Pots and pans stored in low cabinet under sink, requiring bending down\", \"box\": [583, 512, 780, 630]}, {\"id\": \"LIV-01\", \"severity\": \"high\", \"evidence\": \"Dark loose floor mat on tile floor in walking path\", \"box\": [617, 715, 1216, 818]}, {\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"Dining chairs positioned close together narrowing the walkway on left side\", \"box\": [0, 155, 351, 710]}, {\"id\": \"LIV-07\", \"severity\": \"high\", \"evidence\": \"Pet food/water bowl and pet toy (rope) left in middle of kitchen floor walkway\", \"box\": [514, 655, 800, 700]}, {\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"Single overhead pendant light creating uneven lighting with darker areas near entry\", \"box\": [0, 0, 1216, 818]}, {\"id\": \"ENT-05\", \"severity\": \"medium\", \"evidence\": \"Narrow doorway visible on left leading to hallway, may restrict walker passage\", \"box\": [345, 137, 435, 630]}]}",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Dishes and cups stored in upper glass cabinet, requiring reaching overhead",
+   "box": [
+    762,
+    224,
+    869,
+    371
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Pots and pans stored in low cabinet under sink, requiring bending down",
+   "box": [
+    583,
+    512,
+    780,
+    630
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Dark loose floor mat on tile floor in walking path",
+   "box": [
+    617,
+    715,
+    1216,
+    818
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Dining chairs positioned close together narrowing the walkway on left side",
+   "box": [
+    0,
+    155,
+    351,
+    710
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "Pet food/water bowl and pet toy (rope) left in middle of kitchen floor walkway",
+   "box": [
+    514,
+    655,
+    800,
+    700
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Single overhead pendant light creating uneven lighting with darker areas near entry",
+   "box": [
+    0,
+    0,
+    1216,
+    818
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "Narrow doorway visible on left leading to hallway, may restrict walker passage",
+   "box": [
+    345,
+    137,
+    435,
+    630
+   ]
+  }
+ ]
+}

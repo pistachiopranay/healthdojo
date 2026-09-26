@@ -1,0 +1,17 @@
+{
+ "id": "dem-L2-003",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-B02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The toilet seat and bowl are both white, blending with the white toilet tank and light-colored floor tiles, reducing visual contrast and potentially making it hard for someone with dementia to perceive the toilet\u2019s location or edges.\",\n      \"box\": [515, 666, 719, 997]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "The toilet seat and bowl are both white, blending with the white toilet tank and light-colored floor tiles, reducing visual contrast and potentially making it hard for someone with dementia to perceive the toilet\u2019s location or edges.",
+   "box": [
+    515,
+    666,
+    719,
+    997
+   ]
+  }
+ ]
+}

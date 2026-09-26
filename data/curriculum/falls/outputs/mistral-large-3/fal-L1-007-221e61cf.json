@@ -1,0 +1,50 @@
+{
+ "id": "fal-L1-007",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BED-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Floor clutter around bed including a bag, shoes, and other items on the floor near the foot of the bed.\",\n      \"box\": [600, 600, 900, 850]\n    },\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"Insufficient walker clearance around the bed due to floor clutter and furniture placement.\",\n      \"box\": [0, 500, 1000, 900]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Potential loose rug or uneven carpet edge near the bed area, though not fully visible, poses a tripping risk.\",\n      \"box\": [0, 750, 1000, 950]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Cluttered walking path due to items on the floor near the bed.\",\n      \"box\": [600, 600, 900, 850]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "severity": "high",
+   "evidence": "Floor clutter around bed including a bag, shoes, and other items on the floor near the foot of the bed.",
+   "box": [
+    600,
+    600,
+    900,
+    850
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "high",
+   "evidence": "Insufficient walker clearance around the bed due to floor clutter and furniture placement.",
+   "box": [
+    0,
+    500,
+    1000,
+    900
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Potential loose rug or uneven carpet edge near the bed area, though not fully visible, poses a tripping risk.",
+   "box": [
+    0,
+    750,
+    1000,
+    950
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Cluttered walking path due to items on the floor near the bed.",
+   "box": [
+    600,
+    600,
+    900,
+    850
+   ]
+  }
+ ]
+}

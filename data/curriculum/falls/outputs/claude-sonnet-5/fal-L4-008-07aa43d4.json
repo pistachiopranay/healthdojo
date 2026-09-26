@@ -1,0 +1,61 @@
+{
+ "id": "fal-L4-008",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"high\", \"evidence\": \"Loose area rug on wood floor in main walking path, edges curled up, tripping hazard for walker use\", \"box\": [284, 685, 810, 810]}, {\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"Electrical cord running across the floor and under/along the rug into the walking path\", \"box\": [0, 715, 350, 760]}, {\"id\": \"KIT-03\", \"severity\": \"medium\", \"evidence\": \"Wooden step stool placed in room, unstable furniture that could be misused for support or reaching\", \"box\": [700, 495, 905, 745]}, {\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"Shoes left on floor near doorway, creating a small clutter/tripping hazard in the walking path\", \"box\": [95, 685, 195, 725]}, {\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"Room is dimly lit overall with only a small lamp providing light, increasing risk of missteps\", \"box\": [0, 0, 1216, 819]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose area rug on wood floor in main walking path, edges curled up, tripping hazard for walker use",
+   "box": [
+    284,
+    685,
+    810,
+    810
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Electrical cord running across the floor and under/along the rug into the walking path",
+   "box": [
+    0,
+    715,
+    350,
+    760
+   ]
+  },
+  {
+   "id": "KIT-03",
+   "severity": "medium",
+   "evidence": "Wooden step stool placed in room, unstable furniture that could be misused for support or reaching",
+   "box": [
+    700,
+    495,
+    905,
+    745
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Shoes left on floor near doorway, creating a small clutter/tripping hazard in the walking path",
+   "box": [
+    95,
+    685,
+    195,
+    725
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Room is dimly lit overall with only a small lamp providing light, increasing risk of missteps",
+   "box": [
+    0,
+    0,
+    1216,
+    819
+   ]
+  }
+ ]
+}

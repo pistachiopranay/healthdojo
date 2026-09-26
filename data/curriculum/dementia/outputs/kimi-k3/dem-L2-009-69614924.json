@@ -1,0 +1,17 @@
+{
+ "id": "dem-L2-009",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K04\", \"severity\": \"medium\", \"evidence\": \"Small bottle (appears to be medication) left out on the wooden nightstand next to the lit lamp, within easy reach of the bed.\", \"box\": [664, 405, 685, 444]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Small bottle (appears to be medication) left out on the wooden nightstand next to the lit lamp, within easy reach of the bed.",
+   "box": [
+    664,
+    405,
+    685,
+    444
+   ]
+  }
+ ]
+}

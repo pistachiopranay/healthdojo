@@ -1,0 +1,39 @@
+{
+ "id": "dem-L5-005",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Stove with visible knobs and no knob covers; oven door handle accessible, posing risk of accidental activation or burns.\",\n      \"box\": [138, 330, 253, 747]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cleaning chemicals or soap dispensers visible near sink; no visible locking or storage out of reach.\",\n      \"box\": [316, 245, 340, 303]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"Towels hanging on oven handle and items on counter may create minor clutter; not blocking path but could be snagged or pulled.\",\n      \"box\": [170, 345, 257, 538]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "medium",
+   "evidence": "Stove with visible knobs and no knob covers; oven door handle accessible, posing risk of accidental activation or burns.",
+   "box": [
+    138,
+    330,
+    253,
+    747
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning chemicals or soap dispensers visible near sink; no visible locking or storage out of reach.",
+   "box": [
+    316,
+    245,
+    340,
+    303
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "Towels hanging on oven handle and items on counter may create minor clutter; not blocking path but could be snagged or pulled.",
+   "box": [
+    170,
+    345,
+    257,
+    538
+   ]
+  }
+ ]
+}

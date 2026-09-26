@@ -1,0 +1,61 @@
+{
+ "id": "fal-L3-012",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"ENT-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Exterior steps leading to the front door have handrails on both sides, but they appear to be decorative or not fully graspable (thin metal bars), which may not provide adequate support for someone using a walker.\",\n      \"box\": [278, 312, 695, 636]\n    },\n    {\n      \"id\": \"ENT-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The concrete walkway has visible seams and slight unevenness, which could pose a tripping hazard for someone using a walker.\",\n      \"box\": [117, 620, 745, 999]\n    },\n    {\n      \"id\": \"ENT-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Although there is a porch light, the pathway leading to the steps is not well illuminated, creating shadows and potential glare that could obscure hazards at dusk or night.\",\n      \"box\": [0, 0, 1000, 999]\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The front door appears to have a standard width, but the presence of the dog bed and bowl on the walkway directly in front of the steps may narrow the effective clearance for a walker approaching the door.\",\n      \"box\": [370, 0, 648, 480]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"high\",\n      \"evidence\": \"A dog bed and a metal food bowl are placed directly on the walkway leading to the front door, creating tripping hazards for someone using a walker.\",\n      \"box\": [333, 656, 624, 826]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "ENT-01",
+   "severity": "high",
+   "evidence": "Exterior steps leading to the front door have handrails on both sides, but they appear to be decorative or not fully graspable (thin metal bars), which may not provide adequate support for someone using a walker.",
+   "box": [
+    278,
+    312,
+    695,
+    636
+   ]
+  },
+  {
+   "id": "ENT-03",
+   "severity": "medium",
+   "evidence": "The concrete walkway has visible seams and slight unevenness, which could pose a tripping hazard for someone using a walker.",
+   "box": [
+    117,
+    620,
+    745,
+    999
+   ]
+  },
+  {
+   "id": "ENT-04",
+   "severity": "medium",
+   "evidence": "Although there is a porch light, the pathway leading to the steps is not well illuminated, creating shadows and potential glare that could obscure hazards at dusk or night.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "The front door appears to have a standard width, but the presence of the dog bed and bowl on the walkway directly in front of the steps may narrow the effective clearance for a walker approaching the door.",
+   "box": [
+    370,
+    0,
+    648,
+    480
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "A dog bed and a metal food bowl are placed directly on the walkway leading to the front door, creating tripping hazards for someone using a walker.",
+   "box": [
+    333,
+    656,
+    624,
+    826
+   ]
+  }
+ ]
+}

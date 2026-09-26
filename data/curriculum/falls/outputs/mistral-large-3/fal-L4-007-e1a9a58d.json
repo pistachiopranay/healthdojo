@@ -1,0 +1,61 @@
+{
+ "id": "fal-L4-007",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Missing handrail on one side of the staircase\",\n      \"box\": [100, 100, 500, 900]\n    },\n    {\n      \"id\": \"STAIR-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"No visible graspable handrail on either side of the staircase\",\n      \"box\": [100, 100, 500, 900]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Poor lighting on the staircase, making visibility low\",\n      \"box\": [100, 100, 500, 900]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"Undefined step edges, no clear marking or contrasting edge on steps\",\n      \"box\": [200, 300, 450, 700]\n    },\n    {\n      \"id\": \"STAIR-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Visible wear and unevenness on some steps\",\n      \"box\": [200, 400, 450, 600]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Missing handrail on one side of the staircase",
+   "box": [
+    100,
+    100,
+    500,
+    900
+   ]
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "high",
+   "evidence": "No visible graspable handrail on either side of the staircase",
+   "box": [
+    100,
+    100,
+    500,
+    900
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Poor lighting on the staircase, making visibility low",
+   "box": [
+    100,
+    100,
+    500,
+    900
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "Undefined step edges, no clear marking or contrasting edge on steps",
+   "box": [
+    200,
+    300,
+    450,
+    700
+   ]
+  },
+  {
+   "id": "STAIR-06",
+   "severity": "medium",
+   "evidence": "Visible wear and unevenness on some steps",
+   "box": [
+    200,
+    400,
+    450,
+    600
+   ]
+  }
+ ]
+}

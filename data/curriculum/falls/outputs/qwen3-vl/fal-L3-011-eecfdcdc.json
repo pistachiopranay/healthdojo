@@ -1,0 +1,50 @@
+{
+ "id": "fal-L3-011",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Staircase has handrails on both sides, but the right-hand rail is mounted only on the wall and does not extend the full length of the stairs; it terminates abruptly mid-stair, leaving the upper portion without continuous support.\",\n      \"box\": [550, 47, 740, 830]\n    },\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"A coiled electrical cord is lying across multiple steps, creating a tripping hazard for someone using a walker.\",\n      \"box\": [298, 798, 578, 990]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"An electrical cord runs along the left side of the staircase and across the floor near the living room, posing a tripping hazard.\",\n      \"box\": [119, 620, 328, 990]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The wall-mounted light fixture provides some illumination, but the upper portion of the staircase and landing appear dimly lit, potentially creating shadows or glare that could impair visibility for someone with limited mobility.\",\n      \"box\": [400, 0, 680, 250]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Staircase has handrails on both sides, but the right-hand rail is mounted only on the wall and does not extend the full length of the stairs; it terminates abruptly mid-stair, leaving the upper portion without continuous support.",
+   "box": [
+    550,
+    47,
+    740,
+    830
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "A coiled electrical cord is lying across multiple steps, creating a tripping hazard for someone using a walker.",
+   "box": [
+    298,
+    798,
+    578,
+    990
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "An electrical cord runs along the left side of the staircase and across the floor near the living room, posing a tripping hazard.",
+   "box": [
+    119,
+    620,
+    328,
+    990
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The wall-mounted light fixture provides some illumination, but the upper portion of the staircase and landing appear dimly lit, potentially creating shadows or glare that could impair visibility for someone with limited mobility.",
+   "box": [
+    400,
+    0,
+    680,
+    250
+   ]
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "id": "fal-L4-011",
+ "raw": "{\"hazards\":[{\"id\":\"STAIR-01\",\"severity\":\"medium\",\"evidence\":\"Wooden handrail is present only on the right wall; the left side of the staircase has no rail.\",\"box\":[845,0,1088,322]},{\"id\":\"STAIR-03\",\"severity\":\"high\",\"evidence\":\"Multiple items on the treads: athletic shoes, a stack of folded towels/linens, and cardboard/paper left on steps.\",\"box\":[386,334,868,555]},{\"id\":\"STAIR-04\",\"severity\":\"medium\",\"evidence\":\"Stairwell is dim with only one small wall sconce; large areas (especially lower/left) are in deep shadow, reducing visibility for a walker user.\",\"box\":[869,262,961,369]},{\"id\":\"STAIR-02\",\"severity\":\"medium\",\"evidence\":\"Right-side handrail appears to terminate in a rounded wall return partway up the flight and does not continue to the lower steps near the camera.\",\"box\":[842,0,1088,322]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "medium",
+   "evidence": "Wooden handrail is present only on the right wall; the left side of the staircase has no rail.",
+   "box": [
+    845,
+    0,
+    1088,
+    322
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Multiple items on the treads: athletic shoes, a stack of folded towels/linens, and cardboard/paper left on steps.",
+   "box": [
+    386,
+    334,
+    868,
+    555
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Stairwell is dim with only one small wall sconce; large areas (especially lower/left) are in deep shadow, reducing visibility for a walker user.",
+   "box": [
+    869,
+    262,
+    961,
+    369
+   ]
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "medium",
+   "evidence": "Right-side handrail appears to terminate in a rounded wall return partway up the flight and does not continue to the lower steps near the camera.",
+   "box": [
+    842,
+    0,
+    1088,
+    322
+   ]
+  }
+ ]
+}

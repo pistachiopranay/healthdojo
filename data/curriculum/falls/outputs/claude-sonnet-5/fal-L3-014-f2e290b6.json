@@ -1,0 +1,72 @@
+{
+ "id": "fal-L3-014",
+ "raw": "{\"hazards\": [{\"id\": \"BED-04\", \"severity\": \"high\", \"evidence\": \"Pet bed, chew bone, and food bowl on floor near bed path, plus wooden chair positioned right next to bed\", \"box\": [390, 420, 830, 720]}, {\"id\": \"BED-05\", \"severity\": \"high\", \"evidence\": \"Wooden chair placed directly against bed reduces walker clearance space around bed\", \"box\": [559, 330, 830, 715]}, {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"Pet bed, chew bone, and food bowl on floor in walking path near bed\", \"box\": [390, 420, 555, 575]}, {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"Small area rug under chair on carpet, loose and could shift/bunch under walker\", \"box\": [510, 700, 1000, 850]}, {\"id\": \"BED-02\", \"severity\": \"low\", \"evidence\": \"Lamp is on far nightstand, not easily reachable from near side of bed\", \"box\": [925, 110, 1010, 270]}, {\"id\": \"LIV-03\", \"severity\": \"low\", \"evidence\": \"Extra wooden chair placed in bedroom near walkway narrows path around bed\", \"box\": [559, 330, 830, 715]}]}",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "severity": "high",
+   "evidence": "Pet bed, chew bone, and food bowl on floor near bed path, plus wooden chair positioned right next to bed",
+   "box": [
+    390,
+    420,
+    830,
+    720
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "high",
+   "evidence": "Wooden chair placed directly against bed reduces walker clearance space around bed",
+   "box": [
+    559,
+    330,
+    830,
+    715
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pet bed, chew bone, and food bowl on floor in walking path near bed",
+   "box": [
+    390,
+    420,
+    555,
+    575
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Small area rug under chair on carpet, loose and could shift/bunch under walker",
+   "box": [
+    510,
+    700,
+    1000,
+    850
+   ]
+  },
+  {
+   "id": "BED-02",
+   "severity": "low",
+   "evidence": "Lamp is on far nightstand, not easily reachable from near side of bed",
+   "box": [
+    925,
+    110,
+    1010,
+    270
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "low",
+   "evidence": "Extra wooden chair placed in bedroom near walkway narrows path around bed",
+   "box": [
+    559,
+    330,
+    830,
+    715
+   ]
+  }
+ ]
+}

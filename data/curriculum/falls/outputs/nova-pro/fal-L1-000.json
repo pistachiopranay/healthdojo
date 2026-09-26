@@ -1,0 +1,83 @@
+{
+ "id": "fal-L1-000",
+ "raw": "{\"hazards\": [{\"id\": \"BATH-01\", \"severity\": \"high\", \"evidence\": \"No grab bar at tub/shower\", \"box\": [175, 0, 700, 888]}, {\"id\": \"BATH-02\", \"severity\": \"high\", \"evidence\": \"No support at toilet\", \"box\": [515, 469, 863, 1000]}, {\"id\": \"BATH-03\", \"severity\": \"high\", \"evidence\": \"Non-load-rated fixture positioned as support\", \"box\": [522, 546, 710, 1000]}, {\"id\": \"BATH-04\", \"severity\": \"high\", \"evidence\": \"Slippery tub/shower floor\", \"box\": [175, 0, 700, 888]}, {\"id\": \"BATH-05\", \"severity\": \"high\", \"evidence\": \"High tub step-over without transfer aid\", \"box\": [175, 0, 700, 888]}, {\"id\": \"BATH-06\", \"severity\": \"high\", \"evidence\": \"Low toilet seat\", \"box\": [515, 469, 863, 1000]}, {\"id\": \"BATH-08\", \"severity\": \"high\", \"evidence\": \"No shower seat or handheld shower\", \"box\": [175, 0, 700, 888]}]}",
+ "hazards": [
+  {
+   "id": "BATH-01",
+   "severity": "high",
+   "evidence": "No grab bar at tub/shower",
+   "box": [
+    175,
+    0,
+    700,
+    888
+   ]
+  },
+  {
+   "id": "BATH-02",
+   "severity": "high",
+   "evidence": "No support at toilet",
+   "box": [
+    515,
+    469,
+    863,
+    1000
+   ]
+  },
+  {
+   "id": "BATH-03",
+   "severity": "high",
+   "evidence": "Non-load-rated fixture positioned as support",
+   "box": [
+    522,
+    546,
+    710,
+    1000
+   ]
+  },
+  {
+   "id": "BATH-04",
+   "severity": "high",
+   "evidence": "Slippery tub/shower floor",
+   "box": [
+    175,
+    0,
+    700,
+    888
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "High tub step-over without transfer aid",
+   "box": [
+    175,
+    0,
+    700,
+    888
+   ]
+  },
+  {
+   "id": "BATH-06",
+   "severity": "high",
+   "evidence": "Low toilet seat",
+   "box": [
+    515,
+    469,
+    863,
+    1000
+   ]
+  },
+  {
+   "id": "BATH-08",
+   "severity": "high",
+   "evidence": "No shower seat or handheld shower",
+   "box": [
+    175,
+    0,
+    700,
+    888
+   ]
+  }
+ ]
+}

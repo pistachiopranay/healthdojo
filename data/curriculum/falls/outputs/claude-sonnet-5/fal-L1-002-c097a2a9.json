@@ -1,0 +1,17 @@
+{
+ "id": "fal-L1-002",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"Loose decorative area rug lying unattached on the carpeted floor at the foot of the bed, creating a trip hazard for a walker user\", \"box\": [558, 528, 951, 745]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Loose decorative area rug lying unattached on the carpeted floor at the foot of the bed, creating a trip hazard for a walker user",
+   "box": [
+    558,
+    528,
+    951,
+    745
+   ]
+  }
+ ]
+}

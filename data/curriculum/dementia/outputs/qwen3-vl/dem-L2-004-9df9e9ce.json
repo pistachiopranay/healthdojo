@@ -1,0 +1,50 @@
+{
+ "id": "dem-L2-004",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Knives are visible in a knife block on the counter, within easy reach.\",\n      \"box\": [178, 138, 238, 305]\n    },\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Stove knobs are visible and accessible; no indication they are locked or covered.\",\n      \"box\": [144, 328, 257, 747]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"low\",\n      \"evidence\": \"Cleaning chemicals or bottles are visible on the counter near the sink and on the shelf in the adjacent room.\",\n      \"box\": [319, 245, 339, 297]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"Open shelving with stacked dishes and bowls may create visual clutter and risk of items falling if bumped.\",\n      \"box\": [788, 0, 1000, 1000]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-K02",
+   "severity": "medium",
+   "evidence": "Knives are visible in a knife block on the counter, within easy reach.",
+   "box": [
+    178,
+    138,
+    238,
+    305
+   ]
+  },
+  {
+   "id": "DEM-K01",
+   "severity": "medium",
+   "evidence": "Stove knobs are visible and accessible; no indication they are locked or covered.",
+   "box": [
+    144,
+    328,
+    257,
+    747
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "low",
+   "evidence": "Cleaning chemicals or bottles are visible on the counter near the sink and on the shelf in the adjacent room.",
+   "box": [
+    319,
+    245,
+    339,
+    297
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "Open shelving with stacked dishes and bowls may create visual clutter and risk of items falling if bumped.",
+   "box": [
+    788,
+    0,
+    1000,
+    1000
+   ]
+  }
+ ]
+}

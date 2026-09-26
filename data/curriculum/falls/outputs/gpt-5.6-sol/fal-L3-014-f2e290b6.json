@@ -1,0 +1,72 @@
+{
+ "id": "fal-L3-014",
+ "raw": "{\"hazards\":[{\"id\":\"BED-03\",\"severity\":\"medium\",\"evidence\":\"The hallway forming the bed-to-bathroom route is dimly lit.\",\"box\":[83,36,286,565]},{\"id\":\"BED-04\",\"severity\":\"high\",\"evidence\":\"A chair, pet bed, bowl, and toy clutter the floor beside and at the foot of the bed.\",\"box\":[301,377,651,928]},{\"id\":\"BED-05\",\"severity\":\"high\",\"evidence\":\"The chair and pet items substantially reduce walker clearance around the bed.\",\"box\":[301,377,651,928]},{\"id\":\"LIV-01\",\"severity\":\"medium\",\"evidence\":\"A loose area rug with a visible raised edge lies in the walking area at the foot of the bed.\",\"box\":[399,733,997,999]},{\"id\":\"LIV-03\",\"severity\":\"high\",\"evidence\":\"The route around the bed is narrowed by a wooden chair and pet supplies.\",\"box\":[301,377,651,928]},{\"id\":\"LIV-07\",\"severity\":\"high\",\"evidence\":\"A pet bed, food bowl, and toy are directly in the walking path beside the bed.\",\"box\":[303,493,462,665]}]}",
+ "hazards": [
+  {
+   "id": "BED-03",
+   "severity": "medium",
+   "evidence": "The hallway forming the bed-to-bathroom route is dimly lit.",
+   "box": [
+    83,
+    36,
+    286,
+    565
+   ]
+  },
+  {
+   "id": "BED-04",
+   "severity": "high",
+   "evidence": "A chair, pet bed, bowl, and toy clutter the floor beside and at the foot of the bed.",
+   "box": [
+    301,
+    377,
+    651,
+    928
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "high",
+   "evidence": "The chair and pet items substantially reduce walker clearance around the bed.",
+   "box": [
+    301,
+    377,
+    651,
+    928
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A loose area rug with a visible raised edge lies in the walking area at the foot of the bed.",
+   "box": [
+    399,
+    733,
+    997,
+    999
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "The route around the bed is narrowed by a wooden chair and pet supplies.",
+   "box": [
+    301,
+    377,
+    651,
+    928
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "A pet bed, food bowl, and toy are directly in the walking path beside the bed.",
+   "box": [
+    303,
+    493,
+    462,
+    665
+   ]
+  }
+ ]
+}

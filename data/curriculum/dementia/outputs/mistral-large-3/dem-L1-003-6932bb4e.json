@@ -1,0 +1,34 @@
+{
+ "id": "dem-L1-003",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove knobs are freely accessible and usable, posing a risk of the stove being turned on accidentally.\",\n      \"box\": [850, 300, 950, 400]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The walkway through the kitchen area appears clear, but the adjoining dining area shows chairs that might cause minor obstruction if not navigated carefully.\",\n      \"box\": [400, 200, 700, 500]\n    },\n    {\n      \"id\": \"DEM-E01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Though not directly visible, if car keys are typically hung by the door, they could be accessible near the doorway shown in the background.\",\n      \"box\": []\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove knobs are freely accessible and usable, posing a risk of the stove being turned on accidentally.",
+   "box": [
+    850,
+    300,
+    950,
+    400
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "The walkway through the kitchen area appears clear, but the adjoining dining area shows chairs that might cause minor obstruction if not navigated carefully.",
+   "box": [
+    400,
+    200,
+    700,
+    500
+   ]
+  },
+  {
+   "id": "DEM-E01",
+   "severity": "medium",
+   "evidence": "Though not directly visible, if car keys are typically hung by the door, they could be accessible near the doorway shown in the background.",
+   "box": []
+  }
+ ]
+}

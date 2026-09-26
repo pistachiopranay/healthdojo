@@ -1,0 +1,83 @@
+{
+ "id": "fal-L4-006",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Handrail is present on the left side of the stairs but missing on the right side, leaving one side without support for a walker user.\",\n      \"box\": [645, 477, 740, 837]\n    },\n    {\n      \"id\": \"STAIR-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The right-side handrail appears to be a loose wooden pole, not securely mounted or continuous, making it unreliable for support.\",\n      \"box\": [645, 477, 740, 837]\n    },\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"White tape or debris is visible on multiple stair treads, creating tripping hazards for someone using a walker.\",\n      \"box\": [300, 245, 668, 999]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Only one small ceiling light is visible at the top of the stairs, providing inadequate illumination for safe navigation, especially at night.\",\n      \"box\": [460, 0, 505, 58]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"The stair carpet appears worn and bunched, with undefined edges and possible loose sections, increasing fall risk.\",\n      \"box\": [300, 245, 668, 999]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A black electrical cord runs diagonally across the floor from the left wall toward the stairs, creating a tripping hazard.\",\n      \"box\": [1, 437, 475, 999]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The overall lighting is dim, with shadows and low contrast, which can impair depth perception and increase fall risk.\",\n      \"box\": [0, 0, 1000, 999]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Handrail is present on the left side of the stairs but missing on the right side, leaving one side without support for a walker user.",
+   "box": [
+    645,
+    477,
+    740,
+    837
+   ]
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "medium",
+   "evidence": "The right-side handrail appears to be a loose wooden pole, not securely mounted or continuous, making it unreliable for support.",
+   "box": [
+    645,
+    477,
+    740,
+    837
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "White tape or debris is visible on multiple stair treads, creating tripping hazards for someone using a walker.",
+   "box": [
+    300,
+    245,
+    668,
+    999
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Only one small ceiling light is visible at the top of the stairs, providing inadequate illumination for safe navigation, especially at night.",
+   "box": [
+    460,
+    0,
+    505,
+    58
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "The stair carpet appears worn and bunched, with undefined edges and possible loose sections, increasing fall risk.",
+   "box": [
+    300,
+    245,
+    668,
+    999
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A black electrical cord runs diagonally across the floor from the left wall toward the stairs, creating a tripping hazard.",
+   "box": [
+    1,
+    437,
+    475,
+    999
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The overall lighting is dim, with shadows and low contrast, which can impair depth perception and increase fall risk.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "id": "fal-L3-011",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Only one handrail is present on the right side of the staircase, missing handrail on the left side.\",\n      \"box\": [300, 150, 600, 800]\n    },\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Electrical cords are visible running across the staircase.\",\n      \"box\": [400, 600, 500, 700]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Lighting at the top of the stairs appears dim, potentially poor stair lighting.\",\n      \"box\": [400, 50, 600, 200]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Electrical cords are visible running across the living area floor.\",\n      \"box\": [100, 650, 300, 750]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The walking path near the staircase and living area appears potentially cluttered with cords.\",\n      \"box\": [100, 600, 500, 800]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Only one handrail is present on the right side of the staircase, missing handrail on the left side.",
+   "box": [
+    300,
+    150,
+    600,
+    800
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Electrical cords are visible running across the staircase.",
+   "box": [
+    400,
+    600,
+    500,
+    700
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Lighting at the top of the stairs appears dim, potentially poor stair lighting.",
+   "box": [
+    400,
+    50,
+    600,
+    200
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Electrical cords are visible running across the living area floor.",
+   "box": [
+    100,
+    650,
+    300,
+    750
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The walking path near the staircase and living area appears potentially cluttered with cords.",
+   "box": [
+    100,
+    600,
+    500,
+    800
+   ]
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "id": "dem-L2-004",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove knobs are freely accessible and usable, posing a risk of the stove being accidentally turned on.\",\n      \"box\": [350, 300, 550, 400]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Potential clutter risk with multiple items on the countertop and open shelves, which might obstruct walkways if items fall.\",\n      \"box\": [600, 200, 900, 600]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove knobs are freely accessible and usable, posing a risk of the stove being accidentally turned on.",
+   "box": [
+    350,
+    300,
+    550,
+    400
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Potential clutter risk with multiple items on the countertop and open shelves, which might obstruct walkways if items fall.",
+   "box": [
+    600,
+    200,
+    900,
+    600
+   ]
+  }
+ ]
+}

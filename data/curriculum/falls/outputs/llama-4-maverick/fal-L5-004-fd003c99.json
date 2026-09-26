@@ -1,0 +1,39 @@
+{
+ "id": "fal-L5-004",
+ "raw": "{\"hazards\": [\n  {\"id\": \"BATH-02\", \"severity\": \"high\", \"evidence\": \"No support at toilet\", \"box\": [450, 700, 550, 900]},\n  {\"id\": \"BATH-07\", \"severity\": \"medium\", \"evidence\": \"Loose bath mat or rug on bathroom floor\", \"box\": [350, 750, 600, 950]},\n  {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"Pets and pet items underfoot\", \"box\": [350, 750, 600, 950]}\n]}",
+ "hazards": [
+  {
+   "id": "BATH-02",
+   "severity": "high",
+   "evidence": "No support at toilet",
+   "box": [
+    450,
+    700,
+    550,
+    900
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "medium",
+   "evidence": "Loose bath mat or rug on bathroom floor",
+   "box": [
+    350,
+    750,
+    600,
+    950
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pets and pet items underfoot",
+   "box": [
+    350,
+    750,
+    600,
+    950
+   ]
+  }
+ ]
+}

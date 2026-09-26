@@ -1,0 +1,28 @@
+{
+ "id": "fal-L3-011",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-02\", \"severity\": \"medium\", \"evidence\": \"Handrail on the right side of the stairs appears to be loose or not graspable.\", \"box\": [646, 479, 740, 833]}, {\"id\": \"STAIR-03\", \"severity\": \"medium\", \"evidence\": \"Hose or cord on the stairs.\", \"box\": [299, 799, 575, 990]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-02",
+   "severity": "medium",
+   "evidence": "Handrail on the right side of the stairs appears to be loose or not graspable.",
+   "box": [
+    646,
+    479,
+    740,
+    833
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "medium",
+   "evidence": "Hose or cord on the stairs.",
+   "box": [
+    299,
+    799,
+    575,
+    990
+   ]
+  }
+ ]
+}

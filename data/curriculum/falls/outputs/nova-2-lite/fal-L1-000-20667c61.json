@@ -1,0 +1,40 @@
+{
+ "id": "fal-L1-000",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BATH-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The toilet seat is low, which may be difficult for an older adult to use, especially after hip or knee replacement surgery.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"BATH-07\",\n      \"severity\": \"low\",\n      \"evidence\": \"The dog in the bathtub could pose a slip hazard or distraction, especially if the older adult is using a walker.\",\n      \"box\": [244, 560, 412, 686]\n    },\n    {\n      \"id\": \"BATH-08\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There is no shower seat or handheld shower visible, which could make bathing difficult and increase the risk of falls.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"low\",\n      \"evidence\": \"The presence of a pet in the bathroom could create a hazard, especially if the older adult is using a walker and the dog moves unexpectedly.\",\n      \"box\": [244, 560, 412, 686]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BATH-06",
+   "severity": "medium",
+   "evidence": "The toilet seat is low, which may be difficult for an older adult to use, especially after hip or knee replacement surgery.",
+   "box": null
+  },
+  {
+   "id": "BATH-07",
+   "severity": "low",
+   "evidence": "The dog in the bathtub could pose a slip hazard or distraction, especially if the older adult is using a walker.",
+   "box": [
+    244,
+    560,
+    412,
+    686
+   ]
+  },
+  {
+   "id": "BATH-08",
+   "severity": "medium",
+   "evidence": "There is no shower seat or handheld shower visible, which could make bathing difficult and increase the risk of falls.",
+   "box": null
+  },
+  {
+   "id": "LIV-07",
+   "severity": "low",
+   "evidence": "The presence of a pet in the bathroom could create a hazard, especially if the older adult is using a walker and the dog moves unexpectedly.",
+   "box": [
+    244,
+    560,
+    412,
+    686
+   ]
+  }
+ ]
+}

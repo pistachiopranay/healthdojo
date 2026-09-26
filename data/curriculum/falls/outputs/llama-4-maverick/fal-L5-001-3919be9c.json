@@ -1,0 +1,45 @@
+{
+ "id": "fal-L5-001",
+ "raw": "{\"hazards\": [\n    {\"id\": \"LIV-01\", \"severity\": \"high\", \"evidence\": \"loose rug on floor\", \"box\": [250, 780, 700, 1000]},\n    {\"id\": \"LIV-03\", \"severity\": \"high\", \"evidence\": \"cluttered walking path\", \"box\": [250, 780, 700, 1000]},\n    {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"dog bed on floor\", \"box\": [30, 780, 230, 1000]},\n    {\"id\": \"LIV-05\", \"severity\": \"medium\", \"evidence\": \"poor lighting in room\", \"box\": []}\n]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "loose rug on floor",
+   "box": [
+    250,
+    780,
+    700,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "cluttered walking path",
+   "box": [
+    250,
+    780,
+    700,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "dog bed on floor",
+   "box": [
+    30,
+    780,
+    230,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "poor lighting in room",
+   "box": []
+  }
+ ]
+}

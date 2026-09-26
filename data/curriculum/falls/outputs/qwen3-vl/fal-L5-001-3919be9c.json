@@ -1,0 +1,61 @@
+{
+ "id": "fal-L5-001",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A large area rug is on the floor with clothes and bags piled on it, creating a tripping hazard.\",\n      \"box\": [145, 778, 888, 999]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Clothing, a bag, and shoes are piled in the center of the room, obstructing the walking path.\",\n      \"box\": [347, 784, 695, 984]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The room is dimly lit with only one small lamp and ambient window light, creating shadows and poor visibility.\",\n      \"box\": [0, 0, 1000, 999]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A pet bed and a pet bowl are on the floor near the left wall, which could be tripped over.\",\n      \"box\": [40, 801, 295, 984]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"low\",\n      \"evidence\": \"A wooden chair with no armrests is placed against the wall, which may be difficult for someone with limited mobility to use safely.\",\n      \"box\": [630, 524, 733, 784]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A large area rug is on the floor with clothes and bags piled on it, creating a tripping hazard.",
+   "box": [
+    145,
+    778,
+    888,
+    999
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Clothing, a bag, and shoes are piled in the center of the room, obstructing the walking path.",
+   "box": [
+    347,
+    784,
+    695,
+    984
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "The room is dimly lit with only one small lamp and ambient window light, creating shadows and poor visibility.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "A pet bed and a pet bowl are on the floor near the left wall, which could be tripped over.",
+   "box": [
+    40,
+    801,
+    295,
+    984
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "low",
+   "evidence": "A wooden chair with no armrests is placed against the wall, which may be difficult for someone with limited mobility to use safely.",
+   "box": [
+    630,
+    524,
+    733,
+    784
+   ]
+  }
+ ]
+}

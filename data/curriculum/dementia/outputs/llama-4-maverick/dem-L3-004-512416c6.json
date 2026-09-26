@@ -1,0 +1,33 @@
+{
+ "id": "dem-L3-004",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"Stove burner is on, and knobs are accessible\", \"box\": [0.013, 0.026, 0.230, 0.230]},\n    {\"id\": \"DEM-K02\", \"severity\": \"high\", \"evidence\": \"Knives are on the counter in a knife block\", \"box\": [0.490,0.198,0.558,0.296]},\n    {\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"The floor has old linoleum tiles that are buckling and could be a tripping hazard\"}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner is on, and knobs are accessible",
+   "box": [
+    0.013,
+    0.026,
+    0.23,
+    0.23
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Knives are on the counter in a knife block",
+   "box": [
+    0.49,
+    0.198,
+    0.558,
+    0.296
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "The floor has old linoleum tiles that are buckling and could be a tripping hazard"
+  }
+ ]
+}

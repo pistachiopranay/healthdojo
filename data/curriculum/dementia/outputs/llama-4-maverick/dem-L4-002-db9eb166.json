@@ -1,0 +1,39 @@
+{
+ "id": "dem-L4-002",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R01\", \"severity\": \"medium\", \"evidence\": \"Large mirror on the wall facing the bed\", \"box\": [0.271, 0.000, 0.412, 0.452]}, {\"id\": \"DEM-R02\", \"severity\": \"low\", \"evidence\": \"A rug with a pattern is present on the floor\", \"box\": [0.242,0.551,0.699,0.937]}, {\"id\": \"DEM-R04\", \"severity\": \"high\", \"evidence\": \"A space heater is placed next to the bed\", \"box\": [0.522,0.528,0.627,0.812]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "Large mirror on the wall facing the bed",
+   "box": [
+    0.271,
+    0.0,
+    0.412,
+    0.452
+   ]
+  },
+  {
+   "id": "DEM-R02",
+   "severity": "low",
+   "evidence": "A rug with a pattern is present on the floor",
+   "box": [
+    0.242,
+    0.551,
+    0.699,
+    0.937
+   ]
+  },
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "A space heater is placed next to the bed",
+   "box": [
+    0.522,
+    0.528,
+    0.627,
+    0.812
+   ]
+  }
+ ]
+}

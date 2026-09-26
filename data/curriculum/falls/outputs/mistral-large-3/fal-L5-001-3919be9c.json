@@ -1,0 +1,67 @@
+{
+ "id": "fal-L5-001",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose rugs and clothing scattered on the floor, posing a tripping hazard.\",\n      \"box\": [100, 600, 700, 800]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Cluttered walking path with items on the floor, narrowing the space for walker use.\",\n      \"box\": [100, 500, 800, 800]\n    },\n    {\n      \"id\": \"BED-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Floor clutter around what appears to be a sleeping area.\",\n      \"box\": [100, 600, 700, 800]\n    },\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Insufficient walker clearance due to clutter and furniture arrangement.\",\n      \"box\": [0, 500, 1000, 800]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Poor lighting in the room, increasing the risk of falls.\",\n      \"box\": [0, 0, 1000, 800]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Potential for pets and pet items underfoot, though not directly visible in this image.\",\n      \"box\": []\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose rugs and clothing scattered on the floor, posing a tripping hazard.",
+   "box": [
+    100,
+    600,
+    700,
+    800
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Cluttered walking path with items on the floor, narrowing the space for walker use.",
+   "box": [
+    100,
+    500,
+    800,
+    800
+   ]
+  },
+  {
+   "id": "BED-04",
+   "severity": "high",
+   "evidence": "Floor clutter around what appears to be a sleeping area.",
+   "box": [
+    100,
+    600,
+    700,
+    800
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "Insufficient walker clearance due to clutter and furniture arrangement.",
+   "box": [
+    0,
+    500,
+    1000,
+    800
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Poor lighting in the room, increasing the risk of falls.",
+   "box": [
+    0,
+    0,
+    1000,
+    800
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Potential for pets and pet items underfoot, though not directly visible in this image.",
+   "box": []
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "fal-L3-008",
+ "raw": "{\"hazards\": [\n    {\"id\": \"LIV-01\", \"severity\": \"high\", \"evidence\": \"A yellow and blue rug is partially rolled up on the floor, creating a tripping hazard.\", \"box\": [350, 550, 680, 750]},\n    {\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"A yellow cord is visible on the floor, running from the rolled-up rug towards the bottom left of the image.\", \"box\": [200, 580, 500, 1000]},\n    {\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"A black cord is visible on the floor, running from the TV stand towards the rolled-up rug.\", \"box\": [530, 500, 700, 580]}\n]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "A yellow and blue rug is partially rolled up on the floor, creating a tripping hazard.",
+   "box": [
+    350,
+    550,
+    680,
+    750
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "A yellow cord is visible on the floor, running from the rolled-up rug towards the bottom left of the image.",
+   "box": [
+    200,
+    580,
+    500,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "A black cord is visible on the floor, running from the TV stand towards the rolled-up rug.",
+   "box": [
+    530,
+    500,
+    700,
+    580
+   ]
+  }
+ ]
+}

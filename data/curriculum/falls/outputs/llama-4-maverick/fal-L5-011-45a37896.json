@@ -1,0 +1,61 @@
+{
+ "id": "fal-L5-011",
+ "raw": "{\"hazards\": [\n  {\"id\": \"STAIR-01\", \"severity\": \"high\", \"evidence\": \"Missing handrail on one side of the stairs\", \"box\": [0.000, 0.000, 0.300, 0.800]},\n  {\"id\": \"STAIR-05\", \"severity\": \"high\", \"evidence\": \"Undefined step edges and loose stair covering\", \"box\": [0.270, 0.160, 0.820, 0.980]},\n  {\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"Cords or wires across walkway at the bottom of the stairs\", \"box\": [0.000, 0.800, 0.300, 1.000]},\n  {\"id\": \"STAIR-02\", \"severity\": \"medium\", \"evidence\": \"Handrail appears to be loose or not graspable\", \"box\": [0.720, 0.000, 1.000, 0.270]},\n  {\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"Poor lighting on the stairs and surrounding area\", \"box\": [0.270, 0.160, 0.820, 0.980]}\n]}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Missing handrail on one side of the stairs",
+   "box": [
+    0.0,
+    0.0,
+    0.3,
+    0.8
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "Undefined step edges and loose stair covering",
+   "box": [
+    0.27,
+    0.16,
+    0.82,
+    0.98
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Cords or wires across walkway at the bottom of the stairs",
+   "box": [
+    0.0,
+    0.8,
+    0.3,
+    1.0
+   ]
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "medium",
+   "evidence": "Handrail appears to be loose or not graspable",
+   "box": [
+    0.72,
+    0.0,
+    1.0,
+    0.27
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Poor lighting on the stairs and surrounding area",
+   "box": [
+    0.27,
+    0.16,
+    0.82,
+    0.98
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "dem-L3-008",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-K01\",\"severity\":\"high\",\"evidence\":\"A gas stove burner is visibly lit, and the front control knobs are freely accessible.\",\"box\":[21,60,266,326]},{\"id\":\"DEM-K02\",\"severity\":\"high\",\"evidence\":\"Several exposed sharp knives are stored upright in an accessible holder on the counter.\",\"box\":[665,220,705,318]},{\"id\":\"DEM-K04\",\"severity\":\"high\",\"evidence\":\"Multiple medication bottles and a filled pill organizer are left out and accessible.\",\"box\":[720,62,950,294]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "A gas stove burner is visibly lit, and the front control knobs are freely accessible.",
+   "box": [
+    21,
+    60,
+    266,
+    326
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Several exposed sharp knives are stored upright in an accessible holder on the counter.",
+   "box": [
+    665,
+    220,
+    705,
+    318
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Multiple medication bottles and a filled pill organizer are left out and accessible.",
+   "box": [
+    720,
+    62,
+    950,
+    294
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "fal-L2-011",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A white electrical cord runs across the floor in the center of the walkway from the kitchen toward the dining room, creating a tripping hazard for someone using a walker.\",\n      \"box\": [364, 608, 525, 980]\n    },\n    {\n      \"id\": \"KIT-01\",\n      \"severity\": \"low\",\n      \"evidence\": \"Open wooden shelves on the left hold dishes and glassware, some of which are placed high and may be difficult or unsafe for someone with limited mobility to reach without a step stool.\",\n      \"box\": [0, 0, 348, 880]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"low\",\n      \"evidence\": \"The open shelving unit on the left and the refrigerator on the right narrow the walking path, potentially making it difficult for a walker to pass comfortably, especially when turning.\",\n      \"box\": [0, 0, 1000, 999]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A white electrical cord runs across the floor in the center of the walkway from the kitchen toward the dining room, creating a tripping hazard for someone using a walker.",
+   "box": [
+    364,
+    608,
+    525,
+    980
+   ]
+  },
+  {
+   "id": "KIT-01",
+   "severity": "low",
+   "evidence": "Open wooden shelves on the left hold dishes and glassware, some of which are placed high and may be difficult or unsafe for someone with limited mobility to reach without a step stool.",
+   "box": [
+    0,
+    0,
+    348,
+    880
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "low",
+   "evidence": "The open shelving unit on the left and the refrigerator on the right narrow the walking path, potentially making it difficult for a walker to pass comfortably, especially when turning.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  }
+ ]
+}

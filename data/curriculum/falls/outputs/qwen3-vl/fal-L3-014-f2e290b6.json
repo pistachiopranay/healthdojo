@@ -1,0 +1,61 @@
+{
+ "id": "fal-L3-014",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"BED-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Dog bed, food bowl, and chew toy on floor near bed, creating tripping hazards.\",\n      \"box\": [310, 495, 462, 685]\n    },\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"Wooden chair placed directly beside bed, blocking walker access; narrow clearance between bed and dresser on left.\",\n      \"box\": [420, 385, 646, 923]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Narrow hallway visible through open door; furniture placement and pet items reduce clear walking path.\",\n      \"box\": [100, 267, 300, 997]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Dog bed, food bowl, and chew toy on floor, posing tripping risk for walker user.\",\n      \"box\": [305, 495, 462, 685]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"Room is generally dim; only one small wall plug-in nightlight and one table lamp provide illumination.\",\n      \"box\": [0, 0, 1000, 997]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "severity": "medium",
+   "evidence": "Dog bed, food bowl, and chew toy on floor near bed, creating tripping hazards.",
+   "box": [
+    310,
+    495,
+    462,
+    685
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "high",
+   "evidence": "Wooden chair placed directly beside bed, blocking walker access; narrow clearance between bed and dresser on left.",
+   "box": [
+    420,
+    385,
+    646,
+    923
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Narrow hallway visible through open door; furniture placement and pet items reduce clear walking path.",
+   "box": [
+    100,
+    267,
+    300,
+    997
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Dog bed, food bowl, and chew toy on floor, posing tripping risk for walker user.",
+   "box": [
+    305,
+    495,
+    462,
+    685
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Room is generally dim; only one small wall plug-in nightlight and one table lamp provide illumination.",
+   "box": [
+    0,
+    0,
+    1000,
+    997
+   ]
+  }
+ ]
+}

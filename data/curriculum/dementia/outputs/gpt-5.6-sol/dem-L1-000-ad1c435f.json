@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-000",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-K03\",\"severity\":\"medium\",\"evidence\":\"Dishwashing/cleaning liquid is left accessible on the counter beside the sink.\",\"box\":[315,235,340,303]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Dishwashing/cleaning liquid is left accessible on the counter beside the sink.",
+   "box": [
+    315,
+    235,
+    340,
+    303
+   ]
+  }
+ ]
+}

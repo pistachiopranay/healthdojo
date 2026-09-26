@@ -1,0 +1,72 @@
+{
+ "id": "fal-L4-003",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Handrails are present on both sides of the staircase, but they appear to be mounted on the wall and may not be continuous or graspable along the full length; also, the inset image shows a step with a yellow edge that may not be part of a continuous handrail system.\",\n      \"box\": [230, 80, 694, 828]\n    },\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"A slipper is placed on one of the upper steps, creating a tripping hazard for someone using a walker.\",\n      \"box\": [412, 300, 505, 356]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The stairwell is dimly lit, with only one small ceiling light visible at the top, which may not provide adequate illumination for safe navigation, especially for someone with limited mobility.\",\n      \"box\": [400, 0, 580, 245]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The steps have yellow edging, which may help define edges, but the inset image shows a step with a wooden tread and yellow edge that appears to be a separate piece \u2014 potentially loose or not securely attached, creating an undefined or unstable edge.\",\n      \"box\": [356, 360, 648, 678]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A white electrical cord runs along the base of the wall near the staircase, crossing the walking path and posing a tripping hazard.\",\n      \"box\": [100, 640, 230, 910]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The overall lighting in the stairwell and adjacent areas is dim, which may cause difficulty seeing steps or obstacles clearly.\",\n      \"box\": [0, 0, 1000, 1000]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Handrails are present on both sides of the staircase, but they appear to be mounted on the wall and may not be continuous or graspable along the full length; also, the inset image shows a step with a yellow edge that may not be part of a continuous handrail system.",
+   "box": [
+    230,
+    80,
+    694,
+    828
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "A slipper is placed on one of the upper steps, creating a tripping hazard for someone using a walker.",
+   "box": [
+    412,
+    300,
+    505,
+    356
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "The stairwell is dimly lit, with only one small ceiling light visible at the top, which may not provide adequate illumination for safe navigation, especially for someone with limited mobility.",
+   "box": [
+    400,
+    0,
+    580,
+    245
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "The steps have yellow edging, which may help define edges, but the inset image shows a step with a wooden tread and yellow edge that appears to be a separate piece \u2014 potentially loose or not securely attached, creating an undefined or unstable edge.",
+   "box": [
+    356,
+    360,
+    648,
+    678
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A white electrical cord runs along the base of the wall near the staircase, crossing the walking path and posing a tripping hazard.",
+   "box": [
+    100,
+    640,
+    230,
+    910
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The overall lighting in the stairwell and adjacent areas is dim, which may cause difficulty seeing steps or obstacles clearly.",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  }
+ ]
+}

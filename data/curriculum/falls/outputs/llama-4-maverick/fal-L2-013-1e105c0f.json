@@ -1,0 +1,17 @@
+{
+ "id": "fal-L2-013",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-04\", \"severity\": \"medium\", \"evidence\": \"The beige chair in the foreground has low seating.\", \"box\": [0.680, 0.413, 1.000, 0.978]}]}",
+ "hazards": [
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "The beige chair in the foreground has low seating.",
+   "box": [
+    0.68,
+    0.413,
+    1.0,
+    0.978
+   ]
+  }
+ ]
+}

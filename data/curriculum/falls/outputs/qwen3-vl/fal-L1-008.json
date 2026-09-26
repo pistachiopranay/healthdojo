@@ -1,0 +1,50 @@
+{
+ "id": "fal-L1-008",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Black power cord lying across the hardwood floor near the recliner, creating a tripping hazard for someone using a walker.\",\n      \"box\": [392, 555, 455, 592]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Furniture placement (recliner, side tables, sofa) creates a somewhat narrowed walking path, which may be difficult to navigate with a walker.\",\n      \"box\": [0, 0, 1000, 999]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"low\",\n      \"evidence\": \"The dark blue recliner and light beige armchair both have armrests, but the recliner\u2019s deep seat and soft cushioning may make it difficult for someone with limited mobility to stand up without assistance.\",\n      \"box\": [89, 259, 396, 740]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"Natural light from windows creates glare on the polished hardwood floor, which may be disorienting or cause missteps for someone with reduced vision or mobility.\",\n      \"box\": [636, 0, 868, 270]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Black power cord lying across the hardwood floor near the recliner, creating a tripping hazard for someone using a walker.",
+   "box": [
+    392,
+    555,
+    455,
+    592
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Furniture placement (recliner, side tables, sofa) creates a somewhat narrowed walking path, which may be difficult to navigate with a walker.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "low",
+   "evidence": "The dark blue recliner and light beige armchair both have armrests, but the recliner\u2019s deep seat and soft cushioning may make it difficult for someone with limited mobility to stand up without assistance.",
+   "box": [
+    89,
+    259,
+    396,
+    740
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Natural light from windows creates glare on the polished hardwood floor, which may be disorienting or cause missteps for someone with reduced vision or mobility.",
+   "box": [
+    636,
+    0,
+    868,
+    270
+   ]
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "id": "fal-L1-008",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"No visible rugs, but the floor appears highly polished and could be slippery when walked on with a walker.\",\n      \"box\": [0, 400, 1000, 800]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"The blue recliner and beige sofa do not have visible armrests that could assist in standing up or sitting down.\",\n      \"box\": [50, 450, 400, 700]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"The beige sofa lacks armrests that could assist in standing up or sitting down.\",\n      \"box\": [700, 400, 1000, 650]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Electrical cord visible near the blue recliner, posing a tripping hazard.\",\n      \"box\": [300, 600, 400, 650]\n    },\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The space around the furniture appears limited for walker clearance, especially near the blue recliner and side tables.\",\n      \"box\": [0, 400, 1000, 800]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "No visible rugs, but the floor appears highly polished and could be slippery when walked on with a walker.",
+   "box": [
+    0,
+    400,
+    1000,
+    800
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "high",
+   "evidence": "The blue recliner and beige sofa do not have visible armrests that could assist in standing up or sitting down.",
+   "box": [
+    50,
+    450,
+    400,
+    700
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "high",
+   "evidence": "The beige sofa lacks armrests that could assist in standing up or sitting down.",
+   "box": [
+    700,
+    400,
+    1000,
+    650
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Electrical cord visible near the blue recliner, posing a tripping hazard.",
+   "box": [
+    300,
+    600,
+    400,
+    650
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "The space around the furniture appears limited for walker clearance, especially near the blue recliner and side tables.",
+   "box": [
+    0,
+    400,
+    1000,
+    800
+   ]
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "dem-L2-005",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A large mirror is mounted on the closet door, directly facing the bed, which may cause confusion or distress for someone with dementia who may not recognize their reflection.\",\n      \"box\": [107, 0, 240, 420]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "A large mirror is mounted on the closet door, directly facing the bed, which may cause confusion or distress for someone with dementia who may not recognize their reflection.",
+   "box": [
+    107,
+    0,
+    240,
+    420
+   ]
+  }
+ ]
+}

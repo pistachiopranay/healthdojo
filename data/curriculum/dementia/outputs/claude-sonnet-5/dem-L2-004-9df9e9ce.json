@@ -1,0 +1,39 @@
+{
+ "id": "dem-L2-004",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K02\", \"severity\": \"high\", \"evidence\": \"Two knives stored upright/exposed on the counter near the window, easily accessible\", \"box\": [232, 105, 295, 200]}, {\"id\": \"DEM-K03\", \"severity\": \"medium\", \"evidence\": \"Spray bottle and cleaning product left out on the counter next to the sink\", \"box\": [400, 205, 430, 248]}, {\"id\": \"DEM-K03\", \"severity\": \"medium\", \"evidence\": \"Multiple bottles (likely cleaning supplies) left out on counter near dishwasher/dining area, unlocked and accessible\", \"box\": [975, 178, 1055, 228]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Two knives stored upright/exposed on the counter near the window, easily accessible",
+   "box": [
+    232,
+    105,
+    295,
+    200
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Spray bottle and cleaning product left out on the counter next to the sink",
+   "box": [
+    400,
+    205,
+    430,
+    248
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Multiple bottles (likely cleaning supplies) left out on counter near dishwasher/dining area, unlocked and accessible",
+   "box": [
+    975,
+    178,
+    1055,
+    228
+   ]
+  }
+ ]
+}

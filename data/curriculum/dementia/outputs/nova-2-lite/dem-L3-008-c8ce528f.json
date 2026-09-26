@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-008",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove burner is left on with a visible blue flame, and knobs are freely usable.\",\n      \"box\": [0, 0, 269, 271]\n    },\n    {\n      \"id\": \"DEM-K04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Medication bottles are left out on the counter in the top right inset image.\",\n      \"box\": [731, 75, 948, 293]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner is left on with a visible blue flame, and knobs are freely usable.",
+   "box": [
+    0,
+    0,
+    269,
+    271
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Medication bottles are left out on the counter in the top right inset image.",
+   "box": [
+    731,
+    75,
+    948,
+    293
+   ]
+  }
+ ]
+}

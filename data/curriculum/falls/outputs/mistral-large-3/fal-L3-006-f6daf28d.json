@@ -1,0 +1,61 @@
+{
+ "id": "fal-L3-006",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BATH-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"No grab bar at tub/shower\",\n      \"box\": [400, 200, 800, 350]\n    },\n    {\n      \"id\": \"BATH-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"No support at toilet\",\n      \"box\": [700, 350, 900, 600]\n    },\n    {\n      \"id\": \"BATH-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Low toilet seat visible\",\n      \"box\": [700, 450, 900, 600]\n    },\n    {\n      \"id\": \"BATH-07\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose bath mat or rug piled on the floor\",\n      \"box\": [100, 500, 400, 800]\n    },\n    {\n      \"id\": \"BATH-08\",\n      \"severity\": \"medium\",\n      \"evidence\": \"No shower seat or handheld shower visible\",\n      \"box\": [400, 100, 800, 400]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BATH-01",
+   "severity": "high",
+   "evidence": "No grab bar at tub/shower",
+   "box": [
+    400,
+    200,
+    800,
+    350
+   ]
+  },
+  {
+   "id": "BATH-02",
+   "severity": "high",
+   "evidence": "No support at toilet",
+   "box": [
+    700,
+    350,
+    900,
+    600
+   ]
+  },
+  {
+   "id": "BATH-06",
+   "severity": "medium",
+   "evidence": "Low toilet seat visible",
+   "box": [
+    700,
+    450,
+    900,
+    600
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "high",
+   "evidence": "Loose bath mat or rug piled on the floor",
+   "box": [
+    100,
+    500,
+    400,
+    800
+   ]
+  },
+  {
+   "id": "BATH-08",
+   "severity": "medium",
+   "evidence": "No shower seat or handheld shower visible",
+   "box": [
+    400,
+    100,
+    800,
+    400
+   ]
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "dem-L2-001",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E01\", \"severity\": \"medium\", \"evidence\": \"Small wooden key rack with several keys hanging in plain, easy reach on the left side of the living room (by the end table/recliner), giving a person with dementia ready access to keys and a possible exit/driving prompt.\", \"box\": [0, 269, 95, 336]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "medium",
+   "evidence": "Small wooden key rack with several keys hanging in plain, easy reach on the left side of the living room (by the end table/recliner), giving a person with dementia ready access to keys and a possible exit/driving prompt.",
+   "box": [
+    0,
+    269,
+    95,
+    336
+   ]
+  }
+ ]
+}

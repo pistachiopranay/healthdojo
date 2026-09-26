@@ -1,0 +1,61 @@
+{
+ "id": "fal-L5-011",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-01\", \"severity\": \"high\", \"evidence\": \"Handrail visible only on the right wall side; left side of staircase has no rail, just a wall/molding\", \"box\": [330, 0, 420, 700]}, {\"id\": \"STAIR-02\", \"severity\": \"medium\", \"evidence\": \"Handrail on right appears short, mounted low, and separate from a continuous run up the full staircase\", \"box\": [835, 0, 1120, 260]}, {\"id\": \"STAIR-03\", \"severity\": \"medium\", \"evidence\": \"Cord/wire draped across lower steps near the bottom of the staircase\", \"box\": [300, 720, 420, 800]}, {\"id\": \"STAIR-04\", \"severity\": \"medium\", \"evidence\": \"Staircase is dimly lit, especially the upper treads, making edges hard to see\", \"box\": [380, 0, 900, 300]}, {\"id\": \"STAIR-05\", \"severity\": \"high\", \"evidence\": \"Carpet on stairs appears loosely bunched/rippled, obscuring step edges and creating trip risk\", \"box\": [450, 260, 800, 620]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Handrail visible only on the right wall side; left side of staircase has no rail, just a wall/molding",
+   "box": [
+    330,
+    0,
+    420,
+    700
+   ]
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "medium",
+   "evidence": "Handrail on right appears short, mounted low, and separate from a continuous run up the full staircase",
+   "box": [
+    835,
+    0,
+    1120,
+    260
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "medium",
+   "evidence": "Cord/wire draped across lower steps near the bottom of the staircase",
+   "box": [
+    300,
+    720,
+    420,
+    800
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Staircase is dimly lit, especially the upper treads, making edges hard to see",
+   "box": [
+    380,
+    0,
+    900,
+    300
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "Carpet on stairs appears loosely bunched/rippled, obscuring step edges and creating trip risk",
+   "box": [
+    450,
+    260,
+    800,
+    620
+   ]
+  }
+ ]
+}

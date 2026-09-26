@@ -1,0 +1,28 @@
+{
+ "id": "fal-L3-001",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-05\", \"severity\": \"medium\", \"evidence\": \"Patterned carpet runner on stairs makes it difficult to distinguish individual step edges, especially with busy floral pattern camouflaging the step nosing\", \"box\": [430, 200, 800, 850]}, {\"id\": \"LIV-04\", \"severity\": \"low\", \"evidence\": \"Low, soft upholstered sofa/loveseat visible in left room with no visible armrests for pushing up from\", \"box\": [0, 540, 240, 850]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "Patterned carpet runner on stairs makes it difficult to distinguish individual step edges, especially with busy floral pattern camouflaging the step nosing",
+   "box": [
+    430,
+    200,
+    800,
+    850
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "low",
+   "evidence": "Low, soft upholstered sofa/loveseat visible in left room with no visible armrests for pushing up from",
+   "box": [
+    0,
+    540,
+    240,
+    850
+   ]
+  }
+ ]
+}

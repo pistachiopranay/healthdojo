@@ -1,0 +1,28 @@
+{
+ "id": "dem-L2-001",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-E01\", \"severity\": \"high\", \"evidence\": \"Car keys hanging by the front door\", \"box\": [0.024, 0.272, 0.086, 0.340]},\n    {\"id\": \"DEM-E02\", \"severity\": \"high\", \"evidence\": \"Front door is closed but unlocked\", \"box\": [0.366, 0.000, 0.466, 0.386]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "Car keys hanging by the front door",
+   "box": [
+    0.024,
+    0.272,
+    0.086,
+    0.34
+   ]
+  },
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "Front door is closed but unlocked",
+   "box": [
+    0.366,
+    0.0,
+    0.466,
+    0.386
+   ]
+  }
+ ]
+}

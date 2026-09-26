@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-001",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Car keys are hanging on a hook by the front door, within easy reach, which could enable an individual with dementia to leave unsupervised.\",\n      \"box\": [570, 324, 597, 434]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Multiple cardboard boxes, stacks of newspapers, and shoes are piled in the hallway, creating tripping hazards and obstructing the walkway.\",\n      \"box\": [334, 624, 725, 945]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "Car keys are hanging on a hook by the front door, within easy reach, which could enable an individual with dementia to leave unsupervised.",
+   "box": [
+    570,
+    324,
+    597,
+    434
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Multiple cardboard boxes, stacks of newspapers, and shoes are piled in the hallway, creating tripping hazards and obstructing the walkway.",
+   "box": [
+    334,
+    624,
+    725,
+    945
+   ]
+  }
+ ]
+}

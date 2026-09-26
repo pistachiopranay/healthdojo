@@ -1,0 +1,39 @@
+{
+ "id": "fal-L1-001",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose or unsecured rug-like coil on the floor in the walking path\",\n      \"box\": [450, 550, 650, 650]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"Cord across the walkway from the wall to the TV stand\",\n      \"box\": [400, 600, 800, 650]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Recliner chair without visible armrests for support when sitting or standing\",\n      \"box\": [50, 300, 400, 700]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose or unsecured rug-like coil on the floor in the walking path",
+   "box": [
+    450,
+    550,
+    650,
+    650
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Cord across the walkway from the wall to the TV stand",
+   "box": [
+    400,
+    600,
+    800,
+    650
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "Recliner chair without visible armrests for support when sitting or standing",
+   "box": [
+    50,
+    300,
+    400,
+    700
+   ]
+  }
+ ]
+}

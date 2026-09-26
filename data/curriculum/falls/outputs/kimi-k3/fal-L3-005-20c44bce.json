@@ -1,0 +1,28 @@
+{
+ "id": "fal-L3-005",
+ "raw": "{\"hazards\":[{\"id\":\"LIV-01\",\"severity\":\"high\",\"evidence\":\"Loose patterned area rug in the central walkway is rippled/bunched with lifted, curled edges on top of the carpet, which can catch a walker foot or trip the user.\",\"box\":[393,483,642,613]},{\"id\":\"LIV-07\",\"severity\":\"medium\",\"evidence\":\"Pet items underfoot in the walking area: a soft dog bed with a rope toy and a metal food bowl sitting on the carpet in the foreground path.\",\"box\":[42,733,364,930]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose patterned area rug in the central walkway is rippled/bunched with lifted, curled edges on top of the carpet, which can catch a walker foot or trip the user.",
+   "box": [
+    393,
+    483,
+    642,
+    613
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pet items underfoot in the walking area: a soft dog bed with a rope toy and a metal food bowl sitting on the carpet in the foreground path.",
+   "box": [
+    42,
+    733,
+    364,
+    930
+   ]
+  }
+ ]
+}

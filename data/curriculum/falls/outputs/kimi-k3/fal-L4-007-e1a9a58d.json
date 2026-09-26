@@ -1,0 +1,50 @@
+{
+ "id": "fal-L4-007",
+ "raw": "{\"hazards\":[{\"id\":\"STAIR-01\",\"severity\":\"high\",\"evidence\":\"Wooden handrail is present only on the right side of the staircase; no handrail on the left side.\",\"box\":[273,0,917,1000]},{\"id\":\"STAIR-03\",\"severity\":\"high\",\"evidence\":\"Objects on the steps: a stack of folded clothes/towels on a mid stair and footwear on a lower step.\",\"box\":[340,515,755,790]},{\"id\":\"STAIR-04\",\"severity\":\"high\",\"evidence\":\"Stairway is dim and shadowy; treads are poorly illuminated despite a small wall light.\",\"box\":[273,0,1000,1000]},{\"id\":\"STAIR-05\",\"severity\":\"high\",\"evidence\":\"Carpeted steps have no contrasting nosing and the tread/riser edges visually blend together, making step edges hard to distinguish.\",\"box\":[333,164,963,1000]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Wooden handrail is present only on the right side of the staircase; no handrail on the left side.",
+   "box": [
+    273,
+    0,
+    917,
+    1000
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Objects on the steps: a stack of folded clothes/towels on a mid stair and footwear on a lower step.",
+   "box": [
+    340,
+    515,
+    755,
+    790
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "high",
+   "evidence": "Stairway is dim and shadowy; treads are poorly illuminated despite a small wall light.",
+   "box": [
+    273,
+    0,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "Carpeted steps have no contrasting nosing and the tread/riser edges visually blend together, making step edges hard to distinguish.",
+   "box": [
+    333,
+    164,
+    963,
+    1000
+   ]
+  }
+ ]
+}

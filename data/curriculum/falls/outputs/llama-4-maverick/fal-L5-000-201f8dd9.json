@@ -1,0 +1,17 @@
+{
+ "id": "fal-L5-000",
+ "raw": "{\"hazards\": [{\"id\": \"BATH-07\", \"severity\": \"medium\", \"evidence\": \"Loose bath mat on bathroom floor\", \"box\": [230, 840, 550, 1000]}]}",
+ "hazards": [
+  {
+   "id": "BATH-07",
+   "severity": "medium",
+   "evidence": "Loose bath mat on bathroom floor",
+   "box": [
+    230,
+    840,
+    550,
+    1000
+   ]
+  }
+ ]
+}

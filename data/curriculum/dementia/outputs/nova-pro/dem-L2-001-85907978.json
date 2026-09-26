@@ -1,0 +1,17 @@
+{
+ "id": "dem-L2-001",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E01\", \"severity\": \"medium\", \"evidence\": \"Car keys hanging by the front door\", \"box\": [5, 271, 79, 331]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "medium",
+   "evidence": "Car keys hanging by the front door",
+   "box": [
+    5,
+    271,
+    79,
+    331
+   ]
+  }
+ ]
+}

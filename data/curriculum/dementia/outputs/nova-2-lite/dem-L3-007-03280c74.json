@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-007",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The bold black and white zigzag patterned rug could be misinterpreted by someone with dementia as a step or obstacle, increasing fall risk.\",\n      \"box\": [149, 540, 655, 1000]\n    },\n    {\n      \"id\": \"DEM-R04\",\n      \"severity\": \"high\",\n      \"evidence\": \"The space heater is placed close to the bed, posing a burn or fire hazard if the person with dementia touches it or pulls bedding near it.\",\n      \"box\": [626, 676, 750, 980]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "The bold black and white zigzag patterned rug could be misinterpreted by someone with dementia as a step or obstacle, increasing fall risk.",
+   "box": [
+    149,
+    540,
+    655,
+    1000
+   ]
+  },
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "The space heater is placed close to the bed, posing a burn or fire hazard if the person with dementia touches it or pulls bedding near it.",
+   "box": [
+    626,
+    676,
+    750,
+    980
+   ]
+  }
+ ]
+}

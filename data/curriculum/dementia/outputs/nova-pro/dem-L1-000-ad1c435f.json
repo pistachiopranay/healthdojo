@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-000",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K03\", \"severity\": \"high\", \"evidence\": \"cleaning chemicals on the counter\", \"box\": [318, 246, 336, 292]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "cleaning chemicals on the counter",
+   "box": [
+    318,
+    246,
+    336,
+    292
+   ]
+  }
+ ]
+}

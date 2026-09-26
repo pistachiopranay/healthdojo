@@ -1,0 +1,17 @@
+{
+ "id": "fal-L2-009",
+ "raw": "{\"hazards\":[{\"id\":\"STAIR-06\",\"severity\":\"high\",\"evidence\":\"A stair tread has a visibly broken/chipped front edge, creating an uneven surface and trip hazard.\",\"box\":[567,742,648,789]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-06",
+   "severity": "high",
+   "evidence": "A stair tread has a visibly broken/chipped front edge, creating an uneven surface and trip hazard.",
+   "box": [
+    567,
+    742,
+    648,
+    789
+   ]
+  }
+ ]
+}

@@ -1,0 +1,33 @@
+{
+ "id": "fal-L3-006",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"Multiple pairs of shoes/sandals and a pile of folded linens/clothes stacked on and around a small wooden stool on the floor at the lower-left, narrowing and cluttering the path a walker user would take through the room.\", \"box\": [108, 558, 356, 823]}, {\"id\": \"BATH-08\", \"severity\": \"low\", \"evidence\": \"A shower seat is present, but no handheld showerhead, hose, or shower controls are visible within reach of the seated bather for safe seated rinsing.\", \"box\": [585, 498, 770, 982]}, {\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"Strong direct sunlight creates a bright glare patch with adjacent deep shadow across the wall and floor, producing high contrast that can obscure floor-level obstacles for an older adult.\"}]}",
+ "hazards": [
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Multiple pairs of shoes/sandals and a pile of folded linens/clothes stacked on and around a small wooden stool on the floor at the lower-left, narrowing and cluttering the path a walker user would take through the room.",
+   "box": [
+    108,
+    558,
+    356,
+    823
+   ]
+  },
+  {
+   "id": "BATH-08",
+   "severity": "low",
+   "evidence": "A shower seat is present, but no handheld showerhead, hose, or shower controls are visible within reach of the seated bather for safe seated rinsing.",
+   "box": [
+    585,
+    498,
+    770,
+    982
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Strong direct sunlight creates a bright glare patch with adjacent deep shadow across the wall and floor, producing high contrast that can obscure floor-level obstacles for an older adult."
+  }
+ ]
+}

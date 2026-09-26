@@ -1,0 +1,23 @@
+{
+ "id": "dem-L5-005",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove knobs are freely accessible and usable, posing a risk of the stove being turned on accidentally or left on.\",\n      \"box\": [300, 250, 500, 350]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The kitchen floor appears clear, but the adjacent area visible through the doorway shows potential clutter that could obstruct walkways.\",\n      \"box\": []\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove knobs are freely accessible and usable, posing a risk of the stove being turned on accidentally or left on.",
+   "box": [
+    300,
+    250,
+    500,
+    350
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "The kitchen floor appears clear, but the adjacent area visible through the doorway shows potential clutter that could obstruct walkways.",
+   "box": []
+  }
+ ]
+}

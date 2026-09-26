@@ -1,0 +1,50 @@
+{
+ "id": "fal-L4-001",
+ "raw": "{\"hazards\": [\n    {\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"Cords and wires across the floor\", \"box\": [350, 600, 700, 900]},\n    {\"id\": \"LIV-07\", \"severity\": \"high\", \"evidence\": \"Dog bed and dog bowls on the floor\", \"box\": [350, 600, 700, 900]},\n    {\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"Cluttered floor around dog bed and bowls\", \"box\": [350, 600, 700, 900]},\n    {\"id\": \"KIT-02\", \"severity\": \"low\", \"evidence\": \"Dog bowls on the floor\", \"box\": [350, 600, 700, 900]}\n]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Cords and wires across the floor",
+   "box": [
+    350,
+    600,
+    700,
+    900
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "Dog bed and dog bowls on the floor",
+   "box": [
+    350,
+    600,
+    700,
+    900
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Cluttered floor around dog bed and bowls",
+   "box": [
+    350,
+    600,
+    700,
+    900
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "low",
+   "evidence": "Dog bowls on the floor",
+   "box": [
+    350,
+    600,
+    700,
+    900
+   ]
+  }
+ ]
+}

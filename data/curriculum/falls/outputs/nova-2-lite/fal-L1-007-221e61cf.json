@@ -1,0 +1,24 @@
+{
+ "id": "fal-L1-007",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BED-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There are shoes, a bag, and other items on the floor around the bed, creating a cluttered area that could pose a tripping hazard.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The bed is positioned close to the wall, and there are items on the floor around it, which may limit the space needed for a walker to maneuver safely.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There is a visible step-down between the bedroom and the adjacent hallway, which could be a tripping hazard if not clearly marked or level.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "severity": "medium",
+   "evidence": "There are shoes, a bag, and other items on the floor around the bed, creating a cluttered area that could pose a tripping hazard.",
+   "box": null
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "The bed is positioned close to the wall, and there are items on the floor around it, which may limit the space needed for a walker to maneuver safely.",
+   "box": null
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "There is a visible step-down between the bedroom and the adjacent hallway, which could be a tripping hazard if not clearly marked or level.",
+   "box": null
+  }
+ ]
+}

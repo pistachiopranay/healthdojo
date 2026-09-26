@@ -1,0 +1,51 @@
+{
+ "id": "fal-L4-014",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"KIT-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Dishes and bowls are stored on high shelves, making them difficult to reach without assistance.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"KIT-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A wooden step stool is positioned near the counter, which could be unstable for an older adult to use.\",\n      \"box\": [331, 383, 393, 606]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A power cord is visible on the floor, creating a tripping hazard in the walkway.\",\n      \"box\": [389, 640, 555, 998]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A pet bowl and water dish are on the floor, posing a risk of tripping or interference with the walker.\",\n      \"box\": [510, 583, 559, 616]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"low\",\n      \"evidence\": \"The walkway appears somewhat narrowed by the placement of items and furniture, which could impede the use of a walker.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Dishes and bowls are stored on high shelves, making them difficult to reach without assistance.",
+   "box": null
+  },
+  {
+   "id": "KIT-03",
+   "severity": "medium",
+   "evidence": "A wooden step stool is positioned near the counter, which could be unstable for an older adult to use.",
+   "box": [
+    331,
+    383,
+    393,
+    606
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A power cord is visible on the floor, creating a tripping hazard in the walkway.",
+   "box": [
+    389,
+    640,
+    555,
+    998
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "A pet bowl and water dish are on the floor, posing a risk of tripping or interference with the walker.",
+   "box": [
+    510,
+    583,
+    559,
+    616
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "low",
+   "evidence": "The walkway appears somewhat narrowed by the placement of items and furniture, which could impede the use of a walker.",
+   "box": null
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "id": "fal-L1-004",
+ "raw": "{\"hazards\": [\n  {\"id\": \"STAIR-03\", \"severity\": \"high\", \"evidence\": \"Two yellow extension cords and a black power strip on the stairs\", \"box\": [340, 600, 660, 850]},\n  {\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"Yellow extension cords running down the stairs\", \"box\": [340, 600, 660, 850]},\n  {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"A rug on the floor at the bottom of the stairs\", \"box\": [0, 800, 140, 1000]},\n  {\"id\": \"LIV-04\", \"severity\": \"medium\", \"evidence\": \"A low, soft ottoman with a red blanket\", \"box\": [50, 640, 140, 900]},\n  {\"id\": \"STAIR-01\", \"severity\": \"low\", \"evidence\": \"Handrail is present on both sides of the stairs but the image does not show if it is continuous to the top or bottom\", \"box\": [230, 100, 830, 980]}\n]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Two yellow extension cords and a black power strip on the stairs",
+   "box": [
+    340,
+    600,
+    660,
+    850
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Yellow extension cords running down the stairs",
+   "box": [
+    340,
+    600,
+    660,
+    850
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A rug on the floor at the bottom of the stairs",
+   "box": [
+    0,
+    800,
+    140,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "A low, soft ottoman with a red blanket",
+   "box": [
+    50,
+    640,
+    140,
+    900
+   ]
+  },
+  {
+   "id": "STAIR-01",
+   "severity": "low",
+   "evidence": "Handrail is present on both sides of the stairs but the image does not show if it is continuous to the top or bottom",
+   "box": [
+    230,
+    100,
+    830,
+    980
+   ]
+  }
+ ]
+}

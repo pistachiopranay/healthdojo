@@ -1,0 +1,18 @@
+{
+ "id": "fal-L4-003",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There is a pair of slippers placed on the top step of the staircase, which could pose a tripping hazard.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There is a visible cord running across the walkway near the bottom of the stairs, which could pose a tripping hazard.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "medium",
+   "evidence": "There is a pair of slippers placed on the top step of the staircase, which could pose a tripping hazard.",
+   "box": null
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "There is a visible cord running across the walkway near the bottom of the stairs, which could pose a tripping hazard.",
+   "box": null
+  }
+ ]
+}

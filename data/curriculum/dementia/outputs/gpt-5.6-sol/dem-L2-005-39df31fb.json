@@ -1,0 +1,17 @@
+{
+ "id": "dem-L2-005",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-R01\",\"severity\":\"medium\",\"evidence\":\"A large full-length mirror on the door directly faces and reflects the bed.\",\"box\":[123,0,237,423]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "A large full-length mirror on the door directly faces and reflects the bed.",
+   "box": [
+    123,
+    0,
+    237,
+    423
+   ]
+  }
+ ]
+}

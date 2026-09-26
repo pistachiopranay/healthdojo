@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-002",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E02\", \"severity\": \"high\", \"evidence\": \"Front door is open to the outside, showing stairs and exterior, creating a wandering/elopement risk\", \"box\": [402, 20, 561, 320]}, {\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"Piles of boxes, newspapers, and shoes on the floor in the main walking path between chairs\", \"box\": [598, 328, 928, 565]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "Front door is open to the outside, showing stairs and exterior, creating a wandering/elopement risk",
+   "box": [
+    402,
+    20,
+    561,
+    320
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Piles of boxes, newspapers, and shoes on the floor in the main walking path between chairs",
+   "box": [
+    598,
+    328,
+    928,
+    565
+   ]
+  }
+ ]
+}

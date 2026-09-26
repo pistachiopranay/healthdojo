@@ -1,0 +1,50 @@
+{
+ "id": "fal-L3-008",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose rug on the floor without non-slip backing or securing\",\n      \"box\": [300, 550, 700, 700]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"Cords extending across the walkway from the lamp and other devices\",\n      \"box\": [200, 650, 1000, 750]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Low or soft seating without armrests visible on the yellow chair\",\n      \"box\": [650, 350, 850, 550]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Potential poor lighting or glare due to limited visible light sources and shadows\",\n      \"box\": [0, 0, 1000, 400]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose rug on the floor without non-slip backing or securing",
+   "box": [
+    300,
+    550,
+    700,
+    700
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Cords extending across the walkway from the lamp and other devices",
+   "box": [
+    200,
+    650,
+    1000,
+    750
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "Low or soft seating without armrests visible on the yellow chair",
+   "box": [
+    650,
+    350,
+    850,
+    550
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Potential poor lighting or glare due to limited visible light sources and shadows",
+   "box": [
+    0,
+    0,
+    1000,
+    400
+   ]
+  }
+ ]
+}

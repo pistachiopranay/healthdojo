@@ -1,0 +1,17 @@
+{
+ "id": "fal-L3-013",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"A long cord is coiled on the floor and extends across the room.\", \"box\": [300, 720, 650, 880]}]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A long cord is coiled on the floor and extends across the room.",
+   "box": [
+    300,
+    720,
+    650,
+    880
+   ]
+  }
+ ]
+}

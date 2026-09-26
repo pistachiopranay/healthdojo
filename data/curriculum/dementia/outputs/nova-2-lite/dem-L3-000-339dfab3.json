@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-000",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove burner is shown with a visible blue flame, indicating it is on. The knobs are freely usable, posing a risk if the person with dementia accidentally turns it on or leaves it on.\",\n      \"box\": [35, 60, 333, 331]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cleaning chemicals (e.g., a bottle of Ajax cleaner) are left out on the counter and are easily accessible. These could be mistaken for drinks or food, leading to accidental ingestion.\",\n      \"box\": [510, 231, 580, 312]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner is shown with a visible blue flame, indicating it is on. The knobs are freely usable, posing a risk if the person with dementia accidentally turns it on or leaves it on.",
+   "box": [
+    35,
+    60,
+    333,
+    331
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning chemicals (e.g., a bottle of Ajax cleaner) are left out on the counter and are easily accessible. These could be mistaken for drinks or food, leading to accidental ingestion.",
+   "box": [
+    510,
+    231,
+    580,
+    312
+   ]
+  }
+ ]
+}

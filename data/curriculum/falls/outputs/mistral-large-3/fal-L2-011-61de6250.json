@@ -1,0 +1,72 @@
+{
+ "id": "fal-L2-011",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"KIT-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Frequently used items (dishes, cups, bowls) are stored on high shelves above counter height.\",\n      \"box\": [50, 100, 250, 300]\n    },\n    {\n      \"id\": \"KIT-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Some dishes and bowls are stored in lower cabinets, but accessing them may require bending, which could be difficult post-surgery.\",\n      \"box\": [50, 350, 200, 500]\n    },\n    {\n      \"id\": \"KIT-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"The floor appears to be hardwood, which can be slippery, especially without a rug or mat near the sink area.\",\n      \"box\": [300, 400, 800, 700]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There is no visible rug, but the transition between rooms and the hardwood floor itself could pose a slipping hazard.\",\n      \"box\": [0, 600, 1000, 800]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"An electrical cord is visible on the floor, posing a tripping hazard.\",\n      \"box\": [600, 650, 800, 700]\n    },\n    {\n      \"id\": \"LIV-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There appears to be a slight level change or step-down between the kitchen and adjacent room, which is not clearly marked.\",\n      \"box\": [400, 300, 600, 600]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "high",
+   "evidence": "Frequently used items (dishes, cups, bowls) are stored on high shelves above counter height.",
+   "box": [
+    50,
+    100,
+    250,
+    300
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Some dishes and bowls are stored in lower cabinets, but accessing them may require bending, which could be difficult post-surgery.",
+   "box": [
+    50,
+    350,
+    200,
+    500
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "The floor appears to be hardwood, which can be slippery, especially without a rug or mat near the sink area.",
+   "box": [
+    300,
+    400,
+    800,
+    700
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "There is no visible rug, but the transition between rooms and the hardwood floor itself could pose a slipping hazard.",
+   "box": [
+    0,
+    600,
+    1000,
+    800
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "An electrical cord is visible on the floor, posing a tripping hazard.",
+   "box": [
+    600,
+    650,
+    800,
+    700
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "There appears to be a slight level change or step-down between the kitchen and adjacent room, which is not clearly marked.",
+   "box": [
+    400,
+    300,
+    600,
+    600
+   ]
+  }
+ ]
+}

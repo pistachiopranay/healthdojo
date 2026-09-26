@@ -1,0 +1,30 @@
+{
+ "id": "fal-L5-004",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Pet bowls and a towel on the floor near the sink\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Narrowed walking path due to the placement of the sink and the open door\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"Poor lighting in the bathroom, making it difficult to see obstacles\",\n      \"box\": null\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"Doorway appears to be narrow, potentially limiting walker access\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pet bowls and a towel on the floor near the sink",
+   "box": null
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Narrowed walking path due to the placement of the sink and the open door",
+   "box": null
+  },
+  {
+   "id": "LIV-05",
+   "severity": "high",
+   "evidence": "Poor lighting in the bathroom, making it difficult to see obstacles",
+   "box": null
+  },
+  {
+   "id": "ENT-05",
+   "severity": "high",
+   "evidence": "Doorway appears to be narrow, potentially limiting walker access",
+   "box": null
+  }
+ ]
+}

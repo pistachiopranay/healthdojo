@@ -1,0 +1,39 @@
+{
+ "id": "fal-L1-002",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"high\", \"evidence\": \"Loose area rug on the carpet at the foot/right side of the bed is wrinkled and bunched up with curled edges, sitting in the walking path between the bed and the doorway \u2014 a trip/catch hazard for a walker.\", \"box\": [434, 617, 743, 877]}, {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"Loose rug/runner on the floor in the hallway just through the bedroom doorway (on the route toward the bathroom), not secured to the floor.\", \"box\": [817, 496, 941, 619]}, {\"id\": \"BED-05\", \"severity\": \"medium\", \"evidence\": \"Walker access to the bed is compromised on the right side: the nightstand sits tight against the bed and the bunched rug occupies the foot/right-side approach, leaving no clear, flat walker-width path to the bedside.\", \"box\": [600, 260, 760, 650]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose area rug on the carpet at the foot/right side of the bed is wrinkled and bunched up with curled edges, sitting in the walking path between the bed and the doorway \u2014 a trip/catch hazard for a walker.",
+   "box": [
+    434,
+    617,
+    743,
+    877
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Loose rug/runner on the floor in the hallway just through the bedroom doorway (on the route toward the bathroom), not secured to the floor.",
+   "box": [
+    817,
+    496,
+    941,
+    619
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "Walker access to the bed is compromised on the right side: the nightstand sits tight against the bed and the bunched rug occupies the foot/right-side approach, leaving no clear, flat walker-width path to the bedside.",
+   "box": [
+    600,
+    260,
+    760,
+    650
+   ]
+  }
+ ]
+}

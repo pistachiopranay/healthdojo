@@ -1,0 +1,39 @@
+{
+ "id": "fal-L2-007",
+ "raw": "{\"hazards\": [{\"id\": \"BED-05\", \"severity\": \"medium\", \"evidence\": \"A wooden chair and corner curio cabinet are positioned close to the bed, narrowing the walking space around the bed for walker use\", \"box\": [280, 180, 430, 460]}, {\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"A cedar chest with a basket and plant, plus a chair, crowd the walkway between the bed and the door, reducing clear path width\", \"box\": [0, 280, 260, 480]}, {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"A loose runner rug is visible on the floor in the hallway/bathroom path visible through the open doorway\", \"box\": [1050, 440, 1210, 525]}]}",
+ "hazards": [
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "A wooden chair and corner curio cabinet are positioned close to the bed, narrowing the walking space around the bed for walker use",
+   "box": [
+    280,
+    180,
+    430,
+    460
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "A cedar chest with a basket and plant, plus a chair, crowd the walkway between the bed and the door, reducing clear path width",
+   "box": [
+    0,
+    280,
+    260,
+    480
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A loose runner rug is visible on the floor in the hallway/bathroom path visible through the open doorway",
+   "box": [
+    1050,
+    440,
+    1210,
+    525
+   ]
+  }
+ ]
+}

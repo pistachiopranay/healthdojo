@@ -1,0 +1,23 @@
+{
+ "id": "dem-L4-002",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Large mirror facing the bed can be confusing for someone with dementia, potentially leading to disorientation or falls.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"DEM-R04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Space heater next to bedding poses a burn risk and could be misinterpreted or accidentally turned on by someone with dementia.\",\n      \"box\": [518, 510, 640, 807]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "Large mirror facing the bed can be confusing for someone with dementia, potentially leading to disorientation or falls.",
+   "box": null
+  },
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "Space heater next to bedding poses a burn risk and could be misinterpreted or accidentally turned on by someone with dementia.",
+   "box": [
+    518,
+    510,
+    640,
+    807
+   ]
+  }
+ ]
+}

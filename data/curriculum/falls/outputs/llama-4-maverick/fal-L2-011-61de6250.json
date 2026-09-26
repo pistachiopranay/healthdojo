@@ -1,0 +1,28 @@
+{
+ "id": "fal-L2-011",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"A white cord is visible on the floor, potentially causing a tripping hazard for someone using a walker.\", \"box\": [250, 600, 500, 950]}, {\"id\": \"KIT-01\", \"severity\": \"medium\", \"evidence\": \"Some dishes and glassware are stored on high shelves.\", \"box\": [0, 0, 0.31, 0.87]}]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A white cord is visible on the floor, potentially causing a tripping hazard for someone using a walker.",
+   "box": [
+    250,
+    600,
+    500,
+    950
+   ]
+  },
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Some dishes and glassware are stored on high shelves.",
+   "box": [
+    0,
+    0,
+    0.31,
+    0.87
+   ]
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "id": "fal-L1-004",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Two coiled yellow extension cords and a power tool are placed on the stairs, creating tripping hazards.\",\n      \"box\": [382, 579, 675, 770]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The stairwell is lit by a single ceiling light at the top, creating shadows on the steps and potentially reducing visibility for someone ascending or descending.\",\n      \"box\": [487, 0, 551, 75]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"Extension cords are draped across the stairs and potentially onto the landing, creating a tripping hazard for someone using a walker.\",\n      \"box\": [382, 579, 675, 770]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The presence of cords and tools on the stairs narrows the usable walking path, which is especially dangerous for someone using a walker.\",\n      \"box\": [382, 579, 675, 770]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The single overhead light may create glare or insufficient illumination on the steps, especially for someone with reduced vision post-surgery.\",\n      \"box\": [487, 0, 551, 75]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Two coiled yellow extension cords and a power tool are placed on the stairs, creating tripping hazards.",
+   "box": [
+    382,
+    579,
+    675,
+    770
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "The stairwell is lit by a single ceiling light at the top, creating shadows on the steps and potentially reducing visibility for someone ascending or descending.",
+   "box": [
+    487,
+    0,
+    551,
+    75
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Extension cords are draped across the stairs and potentially onto the landing, creating a tripping hazard for someone using a walker.",
+   "box": [
+    382,
+    579,
+    675,
+    770
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The presence of cords and tools on the stairs narrows the usable walking path, which is especially dangerous for someone using a walker.",
+   "box": [
+    382,
+    579,
+    675,
+    770
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The single overhead light may create glare or insufficient illumination on the steps, especially for someone with reduced vision post-surgery.",
+   "box": [
+    487,
+    0,
+    551,
+    75
+   ]
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "id": "fal-L3-013",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"Throw rug on walkway\", \"box\": [15, 738, 576, 953]}, {\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"Cords or wires across walkway\", \"box\": [299, 732, 670, 999]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Throw rug on walkway",
+   "box": [
+    15,
+    738,
+    576,
+    953
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Cords or wires across walkway",
+   "box": [
+    299,
+    732,
+    670,
+    999
+   ]
+  }
+ ]
+}

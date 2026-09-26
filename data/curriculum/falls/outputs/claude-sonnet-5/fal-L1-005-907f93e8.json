@@ -1,0 +1,50 @@
+{
+ "id": "fal-L1-005",
+ "raw": "{\"hazards\": [{\"id\": \"BATH-05\", \"severity\": \"high\", \"evidence\": \"High tub wall/step-over visible at front of tub, no visible transfer bench spanning the tub edge\", \"box\": [500, 620, 830, 830]}, {\"id\": \"LIV-03\", \"severity\": \"high\", \"evidence\": \"Clothes, shoes, newspapers, and small items cluttering the floor at the tub entrance, narrowing the walking path for a walker\", \"box\": [230, 660, 520, 820]}, {\"id\": \"BATH-04\", \"severity\": \"medium\", \"evidence\": \"Smooth glossy tub/shower floor with no visible non-slip mat\", \"box\": [250, 500, 700, 650]}, {\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"Radio power cord running across the windowsill and down toward the floor near the toilet area\", \"box\": [1000, 250, 1200, 450]}]}",
+ "hazards": [
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "High tub wall/step-over visible at front of tub, no visible transfer bench spanning the tub edge",
+   "box": [
+    500,
+    620,
+    830,
+    830
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Clothes, shoes, newspapers, and small items cluttering the floor at the tub entrance, narrowing the walking path for a walker",
+   "box": [
+    230,
+    660,
+    520,
+    820
+   ]
+  },
+  {
+   "id": "BATH-04",
+   "severity": "medium",
+   "evidence": "Smooth glossy tub/shower floor with no visible non-slip mat",
+   "box": [
+    250,
+    500,
+    700,
+    650
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Radio power cord running across the windowsill and down toward the floor near the toilet area",
+   "box": [
+    1000,
+    250,
+    1200,
+    450
+   ]
+  }
+ ]
+}

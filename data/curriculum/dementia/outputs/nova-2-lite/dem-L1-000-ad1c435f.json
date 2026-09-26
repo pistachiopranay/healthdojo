@@ -1,0 +1,12 @@
+{
+ "id": "dem-L1-000",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove knobs are freely accessible and there is no visible safety lock or cover to prevent accidental activation.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove knobs are freely accessible and there is no visible safety lock or cover to prevent accidental activation.",
+   "box": null
+  }
+ ]
+}

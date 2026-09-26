@@ -1,0 +1,39 @@
+{
+ "id": "dem-L4-011",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-K01\",\"severity\":\"high\",\"evidence\":\"Stove is accessible with cookware on the cooktop and freely usable front controls; the burner area appears active.\",\"box\":[137,319,250,754]},{\"id\":\"DEM-K02\",\"severity\":\"high\",\"evidence\":\"A knife block or holder with exposed knife handles is on the back counter.\",\"box\":[658,225,710,320]},{\"id\":\"DEM-K04\",\"severity\":\"high\",\"evidence\":\"Multiple medication bottles and containers are left openly accessible on the back counter.\",\"box\":[485,214,653,326]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove is accessible with cookware on the cooktop and freely usable front controls; the burner area appears active.",
+   "box": [
+    137,
+    319,
+    250,
+    754
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "A knife block or holder with exposed knife handles is on the back counter.",
+   "box": [
+    658,
+    225,
+    710,
+    320
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Multiple medication bottles and containers are left openly accessible on the back counter.",
+   "box": [
+    485,
+    214,
+    653,
+    326
+   ]
+  }
+ ]
+}

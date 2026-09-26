@@ -1,0 +1,39 @@
+{
+ "id": "fal-L2-008",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"ENT-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Exterior steps without handrail on one side\",\n      \"box\": [0, 0, 1000, 1000]\n    },\n    {\n      \"id\": \"ENT-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Raised threshold or door sill\",\n      \"box\": [0, 0, 1000, 1000]\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Doorway too narrow for walker\",\n      \"box\": [0, 0, 1000, 1000]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "ENT-01",
+   "severity": "medium",
+   "evidence": "Exterior steps without handrail on one side",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "Raised threshold or door sill",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "Doorway too narrow for walker",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  }
+ ]
+}

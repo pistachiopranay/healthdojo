@@ -1,0 +1,50 @@
+{
+ "id": "fal-L2-011",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"White cord/wire running across the floor path from near the doorway to the kitchen area, a trip hazard for someone using a walker\", \"box\": [468, 490, 660, 835]}, {\"id\": \"KIT-01\", \"severity\": \"medium\", \"evidence\": \"Dishes, glasses, and mugs stored on high open shelving requiring reaching overhead\", \"box\": [0, 0, 440, 260]}, {\"id\": \"KIT-02\", \"severity\": \"medium\", \"evidence\": \"Bowls and dishes stored on very low shelf near floor level, requiring bending down\", \"box\": [0, 440, 300, 700]}, {\"id\": \"LIV-06\", \"severity\": \"medium\", \"evidence\": \"Transition/threshold between hardwood floor and adjoining room flooring visible in the hallway, could be an unmarked level change\", \"box\": [500, 500, 700, 540]}]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "White cord/wire running across the floor path from near the doorway to the kitchen area, a trip hazard for someone using a walker",
+   "box": [
+    468,
+    490,
+    660,
+    835
+   ]
+  },
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Dishes, glasses, and mugs stored on high open shelving requiring reaching overhead",
+   "box": [
+    0,
+    0,
+    440,
+    260
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Bowls and dishes stored on very low shelf near floor level, requiring bending down",
+   "box": [
+    0,
+    440,
+    300,
+    700
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "Transition/threshold between hardwood floor and adjoining room flooring visible in the hallway, could be an unmarked level change",
+   "box": [
+    500,
+    500,
+    700,
+    540
+   ]
+  }
+ ]
+}

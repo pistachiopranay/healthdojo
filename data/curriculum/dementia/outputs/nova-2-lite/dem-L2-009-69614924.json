@@ -1,0 +1,12 @@
+{
+ "id": "dem-L2-009",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The patterned rug in front of the bed could be misperceived by someone with dementia, potentially leading to tripping or disorientation.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "The patterned rug in front of the bed could be misperceived by someone with dementia, potentially leading to tripping or disorientation.",
+   "box": null
+  }
+ ]
+}

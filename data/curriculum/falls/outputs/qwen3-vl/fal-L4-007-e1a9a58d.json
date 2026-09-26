@@ -1,0 +1,39 @@
+{
+ "id": "fal-L4-007",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Clothes and shoes are placed on the stairs, creating tripping hazards.\",\n      \"box\": [314, 510, 750, 770]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The stairwell is dimly lit, with only one small wall sconce providing limited illumination, increasing fall risk.\",\n      \"box\": [0, 0, 1000, 1000]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The carpeted stairs have indistinct step edges due to shadows and uniform color, making it hard to perceive step boundaries.\",\n      \"box\": [288, 158, 828, 1000]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Clothes and shoes are placed on the stairs, creating tripping hazards.",
+   "box": [
+    314,
+    510,
+    750,
+    770
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "The stairwell is dimly lit, with only one small wall sconce providing limited illumination, increasing fall risk.",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "The carpeted stairs have indistinct step edges due to shadows and uniform color, making it hard to perceive step boundaries.",
+   "box": [
+    288,
+    158,
+    828,
+    1000
+   ]
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-004",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-E02\",\"severity\":\"high\",\"evidence\":\"The front door is left open, providing direct access to the outside and creating a wandering risk.\",\"box\":[329,0,451,316]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "The front door is left open, providing direct access to the outside and creating a wandering risk.",
+   "box": [
+    329,
+    0,
+    451,
+    316
+   ]
+  }
+ ]
+}

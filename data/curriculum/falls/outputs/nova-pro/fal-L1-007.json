@@ -1,0 +1,17 @@
+{
+ "id": "fal-L1-007",
+ "raw": "{\"hazards\": [{\"id\": \"BED-04\", \"severity\": \"medium\", \"evidence\": \"shoes and bag on floor\", \"box\": [413, 610, 692, 825]}]}",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "severity": "medium",
+   "evidence": "shoes and bag on floor",
+   "box": [
+    413,
+    610,
+    692,
+    825
+   ]
+  }
+ ]
+}

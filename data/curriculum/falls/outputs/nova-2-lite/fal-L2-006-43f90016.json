@@ -1,0 +1,28 @@
+{
+ "id": "fal-L2-006",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Throw rug / loose mat on walkway\",\n      \"box\": [334, 560, 601, 699]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Low or soft seating without armrests\",\n      \"box\": [25, 283, 347, 757]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Throw rug / loose mat on walkway",
+   "box": [
+    334,
+    560,
+    601,
+    699
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "Low or soft seating without armrests",
+   "box": [
+    25,
+    283,
+    347,
+    757
+   ]
+  }
+ ]
+}

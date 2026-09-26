@@ -1,0 +1,50 @@
+{
+ "id": "fal-L2-008",
+ "raw": "{\"hazards\": [\n  {\"id\": \"ENT-01\", \"severity\": \"high\", \"evidence\": \"The stairs leading to the front door do not have a handrail on one side.\", \"box\": [0.290,0.303,0.706,0.618]},\n  {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"A loose mat is present at the entrance.\", \"box\": [0.290,0.303,0.706,0.618]},\n  {\"id\": \"ENT-04\", \"severity\": \"low\", \"evidence\": \"The exterior lighting appears to be inadequate or not turned on, but one light is visible.\", \"box\": [0.000,0.000,1.000,0.512]},\n  {\"id\": \"ENT-03\", \"severity\": \"medium\", \"evidence\": \"The outdoor path appears uneven or damaged.\", \"box\": [0.000,0.000,1.000,1.000]}\n]}",
+ "hazards": [
+  {
+   "id": "ENT-01",
+   "severity": "high",
+   "evidence": "The stairs leading to the front door do not have a handrail on one side.",
+   "box": [
+    0.29,
+    0.303,
+    0.706,
+    0.618
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A loose mat is present at the entrance.",
+   "box": [
+    0.29,
+    0.303,
+    0.706,
+    0.618
+   ]
+  },
+  {
+   "id": "ENT-04",
+   "severity": "low",
+   "evidence": "The exterior lighting appears to be inadequate or not turned on, but one light is visible.",
+   "box": [
+    0.0,
+    0.0,
+    1.0,
+    0.512
+   ]
+  },
+  {
+   "id": "ENT-03",
+   "severity": "medium",
+   "evidence": "The outdoor path appears uneven or damaged.",
+   "box": [
+    0.0,
+    0.0,
+    1.0,
+    1.0
+   ]
+  }
+ ]
+}

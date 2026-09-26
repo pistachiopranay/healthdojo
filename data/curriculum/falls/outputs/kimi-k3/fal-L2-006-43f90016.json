@@ -1,0 +1,17 @@
+{
+ "id": "fal-L2-006",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"high\", \"evidence\": \"Loose beige throw rug in the central walkway with a curled/folded front edge, creating a trip and walker-catch hazard on the hardwood floor.\", \"box\": [331, 478, 600, 700]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose beige throw rug in the central walkway with a curled/folded front edge, creating a trip and walker-catch hazard on the hardwood floor.",
+   "box": [
+    331,
+    478,
+    600,
+    700
+   ]
+  }
+ ]
+}

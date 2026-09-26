@@ -1,0 +1,17 @@
+{
+ "id": "fal-L1-009",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-03\", \"severity\": \"high\", \"evidence\": \"Multiple shoes (tan pair, black footwear, single brown shoe) left sitting on a stair tread partway up the staircase, creating a trip hazard on the steps.\", \"box\": [366, 572, 598, 678]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Multiple shoes (tan pair, black footwear, single brown shoe) left sitting on a stair tread partway up the staircase, creating a trip hazard on the steps.",
+   "box": [
+    366,
+    572,
+    598,
+    678
+   ]
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "dem-L2-003",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"Raised white toilet seat riser attached to a white toilet, both against light-colored surroundings, creating low visual contrast that could make it hard for someone with dementia to perceive the seat boundary\", \"box\": [655, 470, 915, 750]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "Raised white toilet seat riser attached to a white toilet, both against light-colored surroundings, creating low visual contrast that could make it hard for someone with dementia to perceive the seat boundary",
+   "box": [
+    655,
+    470,
+    915,
+    750
+   ]
+  }
+ ]
+}

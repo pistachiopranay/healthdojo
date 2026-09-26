@@ -1,0 +1,33 @@
+{
+ "id": "fal-L2-006",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose rug on the floor in the walking path\",\n      \"box\": [350, 550, 700, 650]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Low or soft seating (recliner and sofa) without clear armrest support for standing up\",\n      \"box\": [50, 300, 400, 600]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"Potential glare from the windows, though current lighting seems adequate\"\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose rug on the floor in the walking path",
+   "box": [
+    350,
+    550,
+    700,
+    650
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "Low or soft seating (recliner and sofa) without clear armrest support for standing up",
+   "box": [
+    50,
+    300,
+    400,
+    600
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Potential glare from the windows, though current lighting seems adequate"
+  }
+ ]
+}

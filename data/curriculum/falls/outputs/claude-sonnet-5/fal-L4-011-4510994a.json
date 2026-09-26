@@ -1,0 +1,50 @@
+{
+ "id": "fal-L4-011",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-03\", \"severity\": \"high\", \"evidence\": \"Shoes and a folded stack of towels/linens placed directly on stair treads, creating tripping obstacles on the staircase\", \"box\": [400, 330, 850, 545]}, {\"id\": \"STAIR-01\", \"severity\": \"high\", \"evidence\": \"Handrail only present on right side wall; left side of staircase has no handrail at all\", \"box\": [0, 0, 400, 800]}, {\"id\": \"STAIR-05\", \"severity\": \"medium\", \"evidence\": \"Carpet edge appears worn/frayed near the object pile area, step edges not clearly defined by contrast strips in that section\", \"box\": [400, 420, 870, 545]}, {\"id\": \"STAIR-04\", \"severity\": \"low\", \"evidence\": \"Single wall sconce provides limited lighting; upper portion of stairs is dim compared to lit area near sconce\", \"box\": [850, 250, 1000, 400]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Shoes and a folded stack of towels/linens placed directly on stair treads, creating tripping obstacles on the staircase",
+   "box": [
+    400,
+    330,
+    850,
+    545
+   ]
+  },
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Handrail only present on right side wall; left side of staircase has no handrail at all",
+   "box": [
+    0,
+    0,
+    400,
+    800
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "Carpet edge appears worn/frayed near the object pile area, step edges not clearly defined by contrast strips in that section",
+   "box": [
+    400,
+    420,
+    870,
+    545
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "low",
+   "evidence": "Single wall sconce provides limited lighting; upper portion of stairs is dim compared to lit area near sconce",
+   "box": [
+    850,
+    250,
+    1000,
+    400
+   ]
+  }
+ ]
+}

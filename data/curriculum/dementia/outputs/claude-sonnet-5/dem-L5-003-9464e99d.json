@@ -1,0 +1,39 @@
+{
+ "id": "dem-L5-003",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K02\", \"severity\": \"high\", \"evidence\": \"Knife block with multiple knives visible on counter near sink\", \"box\": [636, 178, 700, 245]}, {\"id\": \"DEM-K03\", \"severity\": \"high\", \"evidence\": \"Cleaning chemical bottle (jug) on counter next to sink, unlocked and accessible\", \"box\": [572, 200, 613, 250]}, {\"id\": \"DEM-K04\", \"severity\": \"high\", \"evidence\": \"Multiple medication/pill bottles left out on kitchen counter\", \"box\": [700, 210, 830, 250]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Knife block with multiple knives visible on counter near sink",
+   "box": [
+    636,
+    178,
+    700,
+    245
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "Cleaning chemical bottle (jug) on counter next to sink, unlocked and accessible",
+   "box": [
+    572,
+    200,
+    613,
+    250
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Multiple medication/pill bottles left out on kitchen counter",
+   "box": [
+    700,
+    210,
+    830,
+    250
+   ]
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-003",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-K04\",\"severity\":\"high\",\"evidence\":\"Several medication bottles and a pill organizer are left out on the kitchen counter.\",\"box\":[681,321,776,389]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Several medication bottles and a pill organizer are left out on the kitchen counter.",
+   "box": [
+    681,
+    321,
+    776,
+    389
+   ]
+  }
+ ]
+}

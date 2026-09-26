@@ -1,0 +1,45 @@
+{
+ "id": "fal-L3-005",
+ "raw": "{\"hazards\": [\n    {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"A loose mat is visible on the floor.\", \"box\": [380, 470, 650, 580]},\n    {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"A dog bed and dog food bowl are on the floor.\", \"box\": [50, 740, 230, 880]},\n    {\"id\": \"LIV-04\", \"severity\": \"low\", \"evidence\": \"The teal armchair has low and soft seating.\", \"box\": [20, 290, 330, 720]},\n    {\"id\": \"LIV-03\", \"severity\": \"low\", \"evidence\": \"The room has some furniture and decor, but the path is generally clear.\", \"box\": []}\n]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A loose mat is visible on the floor.",
+   "box": [
+    380,
+    470,
+    650,
+    580
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "A dog bed and dog food bowl are on the floor.",
+   "box": [
+    50,
+    740,
+    230,
+    880
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "low",
+   "evidence": "The teal armchair has low and soft seating.",
+   "box": [
+    20,
+    290,
+    330,
+    720
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "low",
+   "evidence": "The room has some furniture and decor, but the path is generally clear.",
+   "box": []
+  }
+ ]
+}

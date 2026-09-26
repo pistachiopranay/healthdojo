@@ -1,0 +1,28 @@
+{
+ "id": "fal-L1-004",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-03\", \"severity\": \"high\", \"evidence\": \"Coiled extension cords and power tool sitting directly on stair treads\", \"box\": [470, 495, 800, 665]}, {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"Loose throw rug visible on floor in living room area at base of stairs\", \"box\": [0, 760, 200, 838]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Coiled extension cords and power tool sitting directly on stair treads",
+   "box": [
+    470,
+    495,
+    800,
+    665
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Loose throw rug visible on floor in living room area at base of stairs",
+   "box": [
+    0,
+    760,
+    200,
+    838
+   ]
+  }
+ ]
+}

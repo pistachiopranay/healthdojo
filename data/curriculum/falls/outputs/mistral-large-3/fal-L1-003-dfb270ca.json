@@ -1,0 +1,72 @@
+{
+ "id": "fal-L1-003",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Missing handrail on one side of the stairs (only one handrail visible)\",\n      \"box\": [150, 200, 300, 450]\n    },\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Objects (boxes) on the stairs, obstructing safe passage\",\n      \"box\": [300, 350, 500, 550]\n    },\n    {\n      \"id\": \"ENT-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Raised threshold or door sill at the entrance\",\n      \"box\": [400, 450, 600, 500]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Cluttered walking path with boxes and shoes on the entryway floor\",\n      \"box\": [300, 500, 700, 700]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Potential tripping hazard from shoes left on the walkway\",\n      \"box\": [550, 550, 650, 650]\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Doorway may be too narrow for a walker due to placement of boxes and shoes\",\n      \"box\": [400, 300, 600, 700]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Missing handrail on one side of the stairs (only one handrail visible)",
+   "box": [
+    150,
+    200,
+    300,
+    450
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Objects (boxes) on the stairs, obstructing safe passage",
+   "box": [
+    300,
+    350,
+    500,
+    550
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "Raised threshold or door sill at the entrance",
+   "box": [
+    400,
+    450,
+    600,
+    500
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Cluttered walking path with boxes and shoes on the entryway floor",
+   "box": [
+    300,
+    500,
+    700,
+    700
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Potential tripping hazard from shoes left on the walkway",
+   "box": [
+    550,
+    550,
+    650,
+    650
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "Doorway may be too narrow for a walker due to placement of boxes and shoes",
+   "box": [
+    400,
+    300,
+    600,
+    700
+   ]
+  }
+ ]
+}

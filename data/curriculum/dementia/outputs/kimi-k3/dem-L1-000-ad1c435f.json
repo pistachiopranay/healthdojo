@@ -1,0 +1,28 @@
+{
+ "id": "dem-L1-000",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"Black electric range is fully accessible with exposed control knobs (no knob covers or stove lock); towels are draped over the oven door within reach of the cooktop, creating burn/fire risk for someone with dementia.\", \"box\": [146, 292, 260, 752]}, {\"id\": \"DEM-K03\", \"severity\": \"low\", \"evidence\": \"Pump/soap bottles and other small toiletry/cleaning-type bottles are left out on the counter by the sink and on the rear counter; base cabinets show no visible safety locks.\", \"box\": [314, 242, 344, 299]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Black electric range is fully accessible with exposed control knobs (no knob covers or stove lock); towels are draped over the oven door within reach of the cooktop, creating burn/fire risk for someone with dementia.",
+   "box": [
+    146,
+    292,
+    260,
+    752
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "low",
+   "evidence": "Pump/soap bottles and other small toiletry/cleaning-type bottles are left out on the counter by the sink and on the rear counter; base cabinets show no visible safety locks.",
+   "box": [
+    314,
+    242,
+    344,
+    299
+   ]
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+{
+ "id": "fal-L2-011",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"KIT-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Dishes and glassware are stored on high shelves, requiring the use of a step stool or reaching which could be unsafe for someone with limited mobility.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A cord is visible on the floor leading from the kitchen to the dining area, posing a tripping hazard.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The walkway between the kitchen and dining area is relatively narrow, which could be problematic for someone using a walker.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-06\",\n      \"severity\": \"low\",\n      \"evidence\": \"There is a slight step-down between the kitchen and dining area that is not clearly marked, which could be a tripping hazard.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The doorway between the kitchen and dining area appears to be narrow, which could make it difficult to maneuver a walker through comfortably.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Dishes and glassware are stored on high shelves, requiring the use of a step stool or reaching which could be unsafe for someone with limited mobility.",
+   "box": null
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A cord is visible on the floor leading from the kitchen to the dining area, posing a tripping hazard.",
+   "box": null
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The walkway between the kitchen and dining area is relatively narrow, which could be problematic for someone using a walker.",
+   "box": null
+  },
+  {
+   "id": "LIV-06",
+   "severity": "low",
+   "evidence": "There is a slight step-down between the kitchen and dining area that is not clearly marked, which could be a tripping hazard.",
+   "box": null
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "The doorway between the kitchen and dining area appears to be narrow, which could make it difficult to maneuver a walker through comfortably.",
+   "box": null
+  }
+ ]
+}

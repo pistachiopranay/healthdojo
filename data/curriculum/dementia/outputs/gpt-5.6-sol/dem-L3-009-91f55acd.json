@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-009",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-E01\",\"severity\":\"high\",\"evidence\":\"Car keys are hanging openly on a hook beside the front door.\",\"box\":[690,257,742,426]},{\"id\":\"DEM-E03\",\"severity\":\"high\",\"evidence\":\"Boxes, shoes, papers, and fabric clutter the walkway directly in front of the entry door.\",\"box\":[322,645,658,853]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "Car keys are hanging openly on a hook beside the front door.",
+   "box": [
+    690,
+    257,
+    742,
+    426
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "high",
+   "evidence": "Boxes, shoes, papers, and fabric clutter the walkway directly in front of the entry door.",
+   "box": [
+    322,
+    645,
+    658,
+    853
+   ]
+  }
+ ]
+}

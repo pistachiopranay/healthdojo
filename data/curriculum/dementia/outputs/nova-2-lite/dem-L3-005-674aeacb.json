@@ -1,0 +1,34 @@
+{
+ "id": "dem-L3-005",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-B02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"White toilet seat and white toilet on a light-colored floor create low contrast, making it difficult for someone with dementia to perceive the toilet clearly.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"DEM-B03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A dark bath mat on a light floor can be a tripping hazard and may be difficult for someone with dementia to see, increasing the risk of falls.\",\n      \"box\": [307, 770, 540, 999]\n    },\n    {\n      \"id\": \"DEM-B04\",\n      \"severity\": \"high\",\n      \"evidence\": \"A plugged-in hair dryer is placed near the sink, posing a risk of electrical shock or burns if it is accidentally turned on or dropped into water.\",\n      \"box\": [725, 640, 935, 725]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White toilet seat and white toilet on a light-colored floor create low contrast, making it difficult for someone with dementia to perceive the toilet clearly.",
+   "box": null
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "medium",
+   "evidence": "A dark bath mat on a light floor can be a tripping hazard and may be difficult for someone with dementia to see, increasing the risk of falls.",
+   "box": [
+    307,
+    770,
+    540,
+    999
+   ]
+  },
+  {
+   "id": "DEM-B04",
+   "severity": "high",
+   "evidence": "A plugged-in hair dryer is placed near the sink, posing a risk of electrical shock or burns if it is accidentally turned on or dropped into water.",
+   "box": [
+    725,
+    640,
+    935,
+    725
+   ]
+  }
+ ]
+}

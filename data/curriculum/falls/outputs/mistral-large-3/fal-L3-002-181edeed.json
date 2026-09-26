@@ -1,0 +1,39 @@
+{
+ "id": "fal-L3-002",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Missing handrail or rail on one side only. The staircase has a handrail only on the right side when descending.\",\n      \"box\": [0, 0, 1000, 1000]\n    },\n    {\n      \"id\": \"STAIR-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The visible handrail appears secure but only extends along one side of the staircase.\",\n      \"box\": [800, 0, 950, 600]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"Undefined step edges due to the carpet pattern and potential wear, making edges less distinct.\",\n      \"box\": [300, 200, 900, 800]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Missing handrail or rail on one side only. The staircase has a handrail only on the right side when descending.",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "medium",
+   "evidence": "The visible handrail appears secure but only extends along one side of the staircase.",
+   "box": [
+    800,
+    0,
+    950,
+    600
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "Undefined step edges due to the carpet pattern and potential wear, making edges less distinct.",
+   "box": [
+    300,
+    200,
+    900,
+    800
+   ]
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+{
+ "id": "fal-L1-000",
+ "raw": "{\"hazards\": [{\"id\": \"BATH-01\", \"severity\": \"medium\", \"evidence\": \"No grab bar at tub/shower\", \"box\": [319, 96, 477, 322]}, {\"id\": \"BATH-02\", \"severity\": \"medium\", \"evidence\": \"No support at toilet\", \"box\": [516, 545, 711, 1000]}, {\"id\": \"BATH-03\", \"severity\": \"medium\", \"evidence\": \"Non-load-rated fixture positioned as support\", \"box\": [645, 0, 693, 453]}, {\"id\": \"BATH-04\", \"severity\": \"medium\", \"evidence\": \"Slippery tub/shower floor\", \"box\": [176, 460, 731, 889]}, {\"id\": \"BATH-05\", \"severity\": \"medium\", \"evidence\": \"High tub step-over without transfer aid\", \"box\": [176, 460, 731, 889]}, {\"id\": \"BATH-06\", \"severity\": \"medium\", \"evidence\": \"Low toilet seat\", \"box\": [516, 545, 711, 1000]}, {\"id\": \"BATH-08\", \"severity\": \"medium\", \"evidence\": \"No shower seat or handheld shower\", \"box\": [176, 460, 731, 889]}]}",
+ "hazards": [
+  {
+   "id": "BATH-01",
+   "severity": "medium",
+   "evidence": "No grab bar at tub/shower",
+   "box": [
+    319,
+    96,
+    477,
+    322
+   ]
+  },
+  {
+   "id": "BATH-02",
+   "severity": "medium",
+   "evidence": "No support at toilet",
+   "box": [
+    516,
+    545,
+    711,
+    1000
+   ]
+  },
+  {
+   "id": "BATH-03",
+   "severity": "medium",
+   "evidence": "Non-load-rated fixture positioned as support",
+   "box": [
+    645,
+    0,
+    693,
+    453
+   ]
+  },
+  {
+   "id": "BATH-04",
+   "severity": "medium",
+   "evidence": "Slippery tub/shower floor",
+   "box": [
+    176,
+    460,
+    731,
+    889
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "medium",
+   "evidence": "High tub step-over without transfer aid",
+   "box": [
+    176,
+    460,
+    731,
+    889
+   ]
+  },
+  {
+   "id": "BATH-06",
+   "severity": "medium",
+   "evidence": "Low toilet seat",
+   "box": [
+    516,
+    545,
+    711,
+    1000
+   ]
+  },
+  {
+   "id": "BATH-08",
+   "severity": "medium",
+   "evidence": "No shower seat or handheld shower",
+   "box": [
+    176,
+    460,
+    731,
+    889
+   ]
+  }
+ ]
+}

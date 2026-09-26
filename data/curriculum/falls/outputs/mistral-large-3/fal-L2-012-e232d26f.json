@@ -1,0 +1,50 @@
+{
+ "id": "fal-L2-012",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BED-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"The bed height appears inappropriate for someone using a walker after hip or knee replacement surgery, as it may be too low or too high for safe transfer.\",\n      \"box\": [150, 300, 900, 600]\n    },\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"Insufficient walker clearance around the bed, especially on the side closest to the wall and near the foot of the bed.\",\n      \"box\": [100, 250, 950, 700]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There appears to be a loose rug or mat near the foot of the bed, which could pose a tripping hazard.\",\n      \"box\": [600, 600, 800, 700]\n    },\n    {\n      \"id\": \"BED-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The path from the bed to the bathroom may be dimly lit, increasing the risk of falls during nighttime navigation.\",\n      \"box\": [0, 200, 1000, 400]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BED-01",
+   "severity": "high",
+   "evidence": "The bed height appears inappropriate for someone using a walker after hip or knee replacement surgery, as it may be too low or too high for safe transfer.",
+   "box": [
+    150,
+    300,
+    900,
+    600
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "high",
+   "evidence": "Insufficient walker clearance around the bed, especially on the side closest to the wall and near the foot of the bed.",
+   "box": [
+    100,
+    250,
+    950,
+    700
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "There appears to be a loose rug or mat near the foot of the bed, which could pose a tripping hazard.",
+   "box": [
+    600,
+    600,
+    800,
+    700
+   ]
+  },
+  {
+   "id": "BED-03",
+   "severity": "medium",
+   "evidence": "The path from the bed to the bathroom may be dimly lit, increasing the risk of falls during nighttime navigation.",
+   "box": [
+    0,
+    200,
+    1000,
+    400
+   ]
+  }
+ ]
+}

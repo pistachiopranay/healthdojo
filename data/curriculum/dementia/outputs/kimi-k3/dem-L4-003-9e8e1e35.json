@@ -1,0 +1,39 @@
+{
+ "id": "dem-L4-003",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E01\", \"severity\": \"high\", \"evidence\": \"Keys hanging on a wall hook right beside the front door (within the red marked area), giving easy access to leave/drive.\", \"box\": [637, 98, 705, 216]}, {\"id\": \"DEM-E02\", \"severity\": \"high\", \"evidence\": \"Wooden front door is standing open with daylight and the outdoors visible, creating an unattended exit/wandering route.\", \"box\": [496, 0, 638, 506]}, {\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"Multiple stacks of newspapers, cardboard boxes and pairs of shoes piled in the central floor walkway between the chairs and door.\", \"box\": [433, 487, 718, 740]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "Keys hanging on a wall hook right beside the front door (within the red marked area), giving easy access to leave/drive.",
+   "box": [
+    637,
+    98,
+    705,
+    216
+   ]
+  },
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "Wooden front door is standing open with daylight and the outdoors visible, creating an unattended exit/wandering route.",
+   "box": [
+    496,
+    0,
+    638,
+    506
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Multiple stacks of newspapers, cardboard boxes and pairs of shoes piled in the central floor walkway between the chairs and door.",
+   "box": [
+    433,
+    487,
+    718,
+    740
+   ]
+  }
+ ]
+}

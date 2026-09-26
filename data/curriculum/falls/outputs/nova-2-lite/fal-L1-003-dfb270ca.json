@@ -1,0 +1,24 @@
+{
+ "id": "fal-L1-003",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"ENT-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Exterior steps without handrail on one side\",\n      \"box\": null\n    },\n    {\n      \"id\": \"ENT-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Raised threshold or door sill\",\n      \"box\": null\n    },\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Objects on stairs (cardboard boxes and shoes)\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "ENT-01",
+   "severity": "medium",
+   "evidence": "Exterior steps without handrail on one side",
+   "box": null
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "Raised threshold or door sill",
+   "box": null
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "medium",
+   "evidence": "Objects on stairs (cardboard boxes and shoes)",
+   "box": null
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+ "id": "fal-L2-010",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BATH-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"No grab bar at tub/shower\",\n      \"box\": [200, 150, 600, 400]\n    },\n    {\n      \"id\": \"BATH-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"No support at toilet\",\n      \"box\": [650, 300, 900, 650]\n    },\n    {\n      \"id\": \"BATH-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Slippery tub/shower floor (no visible non-slip mat or surface)\",\n      \"box\": [200, 150, 600, 400]\n    },\n    {\n      \"id\": \"BATH-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"High tub step-over without transfer aid\",\n      \"box\": [200, 300, 600, 450]\n    },\n    {\n      \"id\": \"BATH-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Toilet seat appears low for post-surgery use\",\n      \"box\": [650, 450, 850, 650]\n    },\n    {\n      \"id\": \"BATH-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Loose bath mat or rug hanging near tub\",\n      \"box\": [0, 100, 200, 600]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BATH-01",
+   "severity": "high",
+   "evidence": "No grab bar at tub/shower",
+   "box": [
+    200,
+    150,
+    600,
+    400
+   ]
+  },
+  {
+   "id": "BATH-02",
+   "severity": "high",
+   "evidence": "No support at toilet",
+   "box": [
+    650,
+    300,
+    900,
+    650
+   ]
+  },
+  {
+   "id": "BATH-04",
+   "severity": "medium",
+   "evidence": "Slippery tub/shower floor (no visible non-slip mat or surface)",
+   "box": [
+    200,
+    150,
+    600,
+    400
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "High tub step-over without transfer aid",
+   "box": [
+    200,
+    300,
+    600,
+    450
+   ]
+  },
+  {
+   "id": "BATH-06",
+   "severity": "medium",
+   "evidence": "Toilet seat appears low for post-surgery use",
+   "box": [
+    650,
+    450,
+    850,
+    650
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "medium",
+   "evidence": "Loose bath mat or rug hanging near tub",
+   "box": [
+    0,
+    100,
+    200,
+    600
+   ]
+  }
+ ]
+}

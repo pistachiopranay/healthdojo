@@ -1,0 +1,28 @@
+{
+ "id": "dem-L4-002",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-R01\",\"severity\":\"medium\",\"evidence\":\"A large full-length mirror directly faces and reflects the bed.\",\"box\":[295,0,421,469]},{\"id\":\"DEM-R04\",\"severity\":\"high\",\"evidence\":\"An operating space heater is positioned immediately beside the bed and hanging bedding.\",\"box\":[521,518,628,804]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "A large full-length mirror directly faces and reflects the bed.",
+   "box": [
+    295,
+    0,
+    421,
+    469
+   ]
+  },
+  {
+   "id": "DEM-R04",
+   "severity": "high",
+   "evidence": "An operating space heater is positioned immediately beside the bed and hanging bedding.",
+   "box": [
+    521,
+    518,
+    628,
+    804
+   ]
+  }
+ ]
+}

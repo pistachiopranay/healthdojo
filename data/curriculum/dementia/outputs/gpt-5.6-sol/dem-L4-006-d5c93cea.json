@@ -1,0 +1,50 @@
+{
+ "id": "dem-L4-006",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-K01\",\"severity\":\"high\",\"evidence\":\"A gas stove burner is visibly lit, and the stove control knobs are freely accessible.\",\"box\":[25,29,339,306]},{\"id\":\"DEM-K02\",\"severity\":\"high\",\"evidence\":\"Multiple knives are exposed in a knife block on the countertop.\",\"box\":[663,220,704,305]},{\"id\":\"DEM-K03\",\"severity\":\"high\",\"evidence\":\"Cleaning chemical bottles are left out on the countertop beside the sink.\",\"box\":[448,234,481,304]},{\"id\":\"DEM-K04\",\"severity\":\"high\",\"evidence\":\"Several medication bottles are left openly accessible on the countertop.\",\"box\":[500,231,575,307]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "A gas stove burner is visibly lit, and the stove control knobs are freely accessible.",
+   "box": [
+    25,
+    29,
+    339,
+    306
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Multiple knives are exposed in a knife block on the countertop.",
+   "box": [
+    663,
+    220,
+    704,
+    305
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "Cleaning chemical bottles are left out on the countertop beside the sink.",
+   "box": [
+    448,
+    234,
+    481,
+    304
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Several medication bottles are left openly accessible on the countertop.",
+   "box": [
+    500,
+    231,
+    575,
+    307
+   ]
+  }
+ ]
+}

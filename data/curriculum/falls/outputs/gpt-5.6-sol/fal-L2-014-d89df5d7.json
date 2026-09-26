@@ -1,0 +1,28 @@
+{
+ "id": "fal-L2-014",
+ "raw": "{\"hazards\":[{\"id\":\"STAIR-02\",\"severity\":\"high\",\"evidence\":\"The left-hand stair rail ends before reaching the bottom steps, leaving part of the flight without continuous support.\",\"box\":[238,80,416,833]},{\"id\":\"LIV-02\",\"severity\":\"medium\",\"evidence\":\"A loose white cord hangs from the sofa and extends down into the walking area beside the stairs.\",\"box\":[139,686,199,998]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-02",
+   "severity": "high",
+   "evidence": "The left-hand stair rail ends before reaching the bottom steps, leaving part of the flight without continuous support.",
+   "box": [
+    238,
+    80,
+    416,
+    833
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A loose white cord hangs from the sofa and extends down into the walking area beside the stairs.",
+   "box": [
+    139,
+    686,
+    199,
+    998
+   ]
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "id": "dem-L4-006",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove burners are freely accessible and could be left on by someone with dementia\",\n      \"box\": null\n    },\n    {\n      \"id\": \"DEM-K04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Medication bottles are left out on the counter, posing a risk of misuse or accidental ingestion\",\n      \"box\": [499, 254, 665, 314]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burners are freely accessible and could be left on by someone with dementia",
+   "box": null
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Medication bottles are left out on the counter, posing a risk of misuse or accidental ingestion",
+   "box": [
+    499,
+    254,
+    665,
+    314
+   ]
+  }
+ ]
+}

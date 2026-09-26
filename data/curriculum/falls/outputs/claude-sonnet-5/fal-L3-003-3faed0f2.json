@@ -1,0 +1,39 @@
+{
+ "id": "fal-L3-003",
+ "raw": "{\"hazards\": [{\"id\": \"KIT-04\", \"severity\": \"high\", \"evidence\": \"Large liquid spill puddle on hardwood floor in the walking path between counters\", \"box\": [130, 590, 620, 790]}, {\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"Long electrical cord/cable snaking across the floor through the main walkway\", \"box\": [420, 460, 920, 780]}, {\"id\": \"KIT-01\", \"severity\": \"medium\", \"evidence\": \"Plates and bowls stored on high open shelving requiring reaching up\", \"box\": [0, 20, 300, 230]}]}",
+ "hazards": [
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "Large liquid spill puddle on hardwood floor in the walking path between counters",
+   "box": [
+    130,
+    590,
+    620,
+    790
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Long electrical cord/cable snaking across the floor through the main walkway",
+   "box": [
+    420,
+    460,
+    920,
+    780
+   ]
+  },
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Plates and bowls stored on high open shelving requiring reaching up",
+   "box": [
+    0,
+    20,
+    300,
+    230
+   ]
+  }
+ ]
+}

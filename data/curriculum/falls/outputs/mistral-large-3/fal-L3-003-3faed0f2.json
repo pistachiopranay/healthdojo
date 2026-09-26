@@ -1,0 +1,72 @@
+{
+ "id": "fal-L3-003",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"KIT-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Frequently used items like dishes and bowls are stored on high shelves.\",\n      \"box\": [50, 100, 250, 250]\n    },\n    {\n      \"id\": \"KIT-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Items stored in lower cabinets may require bending down, which is a hazard post-surgery.\",\n      \"box\": [50, 350, 200, 600]\n    },\n    {\n      \"id\": \"KIT-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"The floor appears wet and slippery near the sink area.\",\n      \"box\": [600, 400, 900, 700]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"There is evidence of a loose rug or mat debris on the floor.\",\n      \"box\": [300, 600, 800, 900]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"Cords are trailing across the walkway.\",\n      \"box\": [600, 600, 900, 800]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"The walking path is cluttered with debris and cords.\",\n      \"box\": [300, 500, 900, 900]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "high",
+   "evidence": "Frequently used items like dishes and bowls are stored on high shelves.",
+   "box": [
+    50,
+    100,
+    250,
+    250
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Items stored in lower cabinets may require bending down, which is a hazard post-surgery.",
+   "box": [
+    50,
+    350,
+    200,
+    600
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "The floor appears wet and slippery near the sink area.",
+   "box": [
+    600,
+    400,
+    900,
+    700
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "There is evidence of a loose rug or mat debris on the floor.",
+   "box": [
+    300,
+    600,
+    800,
+    900
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Cords are trailing across the walkway.",
+   "box": [
+    600,
+    600,
+    900,
+    800
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "The walking path is cluttered with debris and cords.",
+   "box": [
+    300,
+    500,
+    900,
+    900
+   ]
+  }
+ ]
+}

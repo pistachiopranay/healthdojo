@@ -1,0 +1,61 @@
+{
+ "id": "fal-L3-003",
+ "raw": "{\"hazards\":[{\"id\":\"LIV-02\",\"severity\":\"high\",\"evidence\":\"Long white cord snaking across the wooden floor walkway from the right counter/dishwasher area into the foreground, directly in the walker path.\",\"box\":[348,447,688,998]},{\"id\":\"KIT-04\",\"severity\":\"high\",\"evidence\":\"Wet spill/puddle with scattered debris on the wood floor in front of the left counter/stove run, creating a slippery surface.\",\"box\":[171,620,508,803]},{\"id\":\"KIT-01\",\"severity\":\"medium\",\"evidence\":\"Stacks of frequently used plates, bowls, and dishes stored on high open wall shelves on the left, requiring overhead reaching.\",\"box\":[0,0,318,302]},{\"id\":\"KIT-02\",\"severity\":\"medium\",\"evidence\":\"Baskets and items stored on the lowest open shelf at floor level under the left counter, requiring deep bending to retrieve.\",\"box\":[8,512,255,798]},{\"id\":\"LIV-05\",\"severity\":\"low\",\"evidence\":\"Strong direct sunlight streaming across the floor creating a bright glare patch and high contrast on the walking surface near the spill.\",\"box\":[228,558,604,800]}]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Long white cord snaking across the wooden floor walkway from the right counter/dishwasher area into the foreground, directly in the walker path.",
+   "box": [
+    348,
+    447,
+    688,
+    998
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "Wet spill/puddle with scattered debris on the wood floor in front of the left counter/stove run, creating a slippery surface.",
+   "box": [
+    171,
+    620,
+    508,
+    803
+   ]
+  },
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Stacks of frequently used plates, bowls, and dishes stored on high open wall shelves on the left, requiring overhead reaching.",
+   "box": [
+    0,
+    0,
+    318,
+    302
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Baskets and items stored on the lowest open shelf at floor level under the left counter, requiring deep bending to retrieve.",
+   "box": [
+    8,
+    512,
+    255,
+    798
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Strong direct sunlight streaming across the floor creating a bright glare patch and high contrast on the walking surface near the spill.",
+   "box": [
+    228,
+    558,
+    604,
+    800
+   ]
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "id": "fal-L4-011",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Folded towels and a pair of shoes are placed on the stairs, creating tripping hazards.\",\n      \"box\": [320, 398, 715, 648]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The carpet on the stairs appears worn and uneven, especially near the step with the shoes and towels, which may cause slipping or catching.\",\n      \"box\": [280, 155, 818, 999]\n    },\n    {\n      \"id\": \"STAIR-06\",\n      \"severity\": \"high\",\n      \"evidence\": \"One step appears broken or damaged, with exposed wood and a gap where the carpet is torn, posing a significant fall risk.\",\n      \"box\": [318, 520, 715, 648]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The stairwell is dimly lit, with only one small wall sconce providing limited illumination, which may impair visibility of step edges.\",\n      \"box\": [280, 0, 880, 999]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Folded towels and a pair of shoes are placed on the stairs, creating tripping hazards.",
+   "box": [
+    320,
+    398,
+    715,
+    648
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "The carpet on the stairs appears worn and uneven, especially near the step with the shoes and towels, which may cause slipping or catching.",
+   "box": [
+    280,
+    155,
+    818,
+    999
+   ]
+  },
+  {
+   "id": "STAIR-06",
+   "severity": "high",
+   "evidence": "One step appears broken or damaged, with exposed wood and a gap where the carpet is torn, posing a significant fall risk.",
+   "box": [
+    318,
+    520,
+    715,
+    648
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "The stairwell is dimly lit, with only one small wall sconce providing limited illumination, which may impair visibility of step edges.",
+   "box": [
+    280,
+    0,
+    880,
+    999
+   ]
+  }
+ ]
+}

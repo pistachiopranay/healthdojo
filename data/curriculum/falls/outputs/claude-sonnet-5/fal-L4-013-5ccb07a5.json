@@ -1,0 +1,61 @@
+{
+ "id": "fal-L4-013",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"A wooden chair is pulled out and positioned in the middle of the kitchen floor, narrowing the walking path a walker would need to use\", \"box\": [557, 415, 725, 655]}, {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"Pet bed and food/water bowls are placed on the floor near the doorway, creating a tripping hazard underfoot\", \"box\": [353, 598, 524, 668]}, {\"id\": \"KIT-01\", \"severity\": \"low\", \"evidence\": \"Plates and bowls stored in upper glass-front cabinets requiring reaching overhead\", \"box\": [753, 220, 856, 380]}, {\"id\": \"LIV-05\", \"severity\": \"high\", \"evidence\": \"Overall room is very dimly lit with only a single small pendant light, creating poor visibility for navigation\", \"box\": [0, 0, 1216, 819]}, {\"id\": \"KIT-04\", \"severity\": \"medium\", \"evidence\": \"Reflective sheen on the floor near the chair suggests a wet or slippery surface in the kitchen area\", \"box\": [560, 660, 800, 710]}]}",
+ "hazards": [
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "A wooden chair is pulled out and positioned in the middle of the kitchen floor, narrowing the walking path a walker would need to use",
+   "box": [
+    557,
+    415,
+    725,
+    655
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pet bed and food/water bowls are placed on the floor near the doorway, creating a tripping hazard underfoot",
+   "box": [
+    353,
+    598,
+    524,
+    668
+   ]
+  },
+  {
+   "id": "KIT-01",
+   "severity": "low",
+   "evidence": "Plates and bowls stored in upper glass-front cabinets requiring reaching overhead",
+   "box": [
+    753,
+    220,
+    856,
+    380
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "high",
+   "evidence": "Overall room is very dimly lit with only a single small pendant light, creating poor visibility for navigation",
+   "box": [
+    0,
+    0,
+    1216,
+    819
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "medium",
+   "evidence": "Reflective sheen on the floor near the chair suggests a wet or slippery surface in the kitchen area",
+   "box": [
+    560,
+    660,
+    800,
+    710
+   ]
+  }
+ ]
+}

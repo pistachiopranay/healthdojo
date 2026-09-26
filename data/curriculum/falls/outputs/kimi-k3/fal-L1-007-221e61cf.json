@@ -1,0 +1,50 @@
+{
+ "id": "fal-L1-007",
+ "raw": "{\"hazards\": [{\"id\": \"BED-04\", \"severity\": \"high\", \"evidence\": \"Shoes, a brown leather duffel/handbag, and additional footwear are on the carpet at the side of the bed, directly in the transfer/walker path.\", \"box\": [412, 608, 697, 828]}, {\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"The bag and shoes sit in the open floor area between the doorway and the bed, narrowing the clear walking path a walker user would take through the room.\", \"box\": [410, 600, 760, 840]}, {\"id\": \"BED-02\", \"severity\": \"medium\", \"evidence\": \"The only bedside lamp is on the far side of the bed by the window; the near side of the bed (the side with floor space to stand with a walker) has no reachable light, and the only other light is a low night-light by the door.\", \"box\": [700, 108, 1000, 340]}, {\"id\": \"BED-01\", \"severity\": \"low\", \"evidence\": \"The bedspread/quilt and bed skirt hang down to the floor along the side of the bed, which can catch walker legs or feet during transfers.\", \"box\": [420, 300, 1000, 995]}]}",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "severity": "high",
+   "evidence": "Shoes, a brown leather duffel/handbag, and additional footwear are on the carpet at the side of the bed, directly in the transfer/walker path.",
+   "box": [
+    412,
+    608,
+    697,
+    828
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The bag and shoes sit in the open floor area between the doorway and the bed, narrowing the clear walking path a walker user would take through the room.",
+   "box": [
+    410,
+    600,
+    760,
+    840
+   ]
+  },
+  {
+   "id": "BED-02",
+   "severity": "medium",
+   "evidence": "The only bedside lamp is on the far side of the bed by the window; the near side of the bed (the side with floor space to stand with a walker) has no reachable light, and the only other light is a low night-light by the door.",
+   "box": [
+    700,
+    108,
+    1000,
+    340
+   ]
+  },
+  {
+   "id": "BED-01",
+   "severity": "low",
+   "evidence": "The bedspread/quilt and bed skirt hang down to the floor along the side of the bed, which can catch walker legs or feet during transfers.",
+   "box": [
+    420,
+    300,
+    1000,
+    995
+   ]
+  }
+ ]
+}

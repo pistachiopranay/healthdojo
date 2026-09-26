@@ -1,0 +1,28 @@
+{
+ "id": "fal-L3-012",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-07\", \"severity\": \"high\", \"evidence\": \"A soft dog bed containing a large bone/toy and a separate metal pet bowl sit directly on the front concrete walkway in the approach to the steps, creating hard and soft trip obstacles underfoot for a walker user.\", \"box\": [326, 556, 802, 705]}, {\"id\": \"ENT-02\", \"severity\": \"medium\", \"evidence\": \"A raised wooden/brass door sill/threshold is visible at the base of the front door, which a walker or foot must clear when entering after surgery.\", \"box\": [464, 398, 840, 442]}]}",
+ "hazards": [
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "A soft dog bed containing a large bone/toy and a separate metal pet bowl sit directly on the front concrete walkway in the approach to the steps, creating hard and soft trip obstacles underfoot for a walker user.",
+   "box": [
+    326,
+    556,
+    802,
+    705
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "A raised wooden/brass door sill/threshold is visible at the base of the front door, which a walker or foot must clear when entering after surgery.",
+   "box": [
+    464,
+    398,
+    840,
+    442
+   ]
+  }
+ ]
+}

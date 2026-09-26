@@ -1,0 +1,17 @@
+{
+ "id": "fal-L3-012",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-07\", \"severity\": \"high\", \"evidence\": \"A dog bed with a chew toy and a metal food bowl are placed directly in the center of the concrete walkway leading to the front door, creating a tripping obstruction for someone using a walker\", \"box\": [420, 570, 800, 710]}]}",
+ "hazards": [
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "A dog bed with a chew toy and a metal food bowl are placed directly in the center of the concrete walkway leading to the front door, creating a tripping obstruction for someone using a walker",
+   "box": [
+    420,
+    570,
+    800,
+    710
+   ]
+  }
+ ]
+}

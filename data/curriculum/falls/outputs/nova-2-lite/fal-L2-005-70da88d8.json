@@ -1,0 +1,12 @@
+{
+ "id": "fal-L2-005",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BATH-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The toilet seat is low, which may pose a challenge for an older adult to sit down and stand up, especially after hip or knee replacement surgery.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BATH-06",
+   "severity": "medium",
+   "evidence": "The toilet seat is low, which may pose a challenge for an older adult to sit down and stand up, especially after hip or knee replacement surgery.",
+   "box": null
+  }
+ ]
+}

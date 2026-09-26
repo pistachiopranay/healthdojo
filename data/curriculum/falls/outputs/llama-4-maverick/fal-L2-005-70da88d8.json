@@ -1,0 +1,34 @@
+{
+ "id": "fal-L2-005",
+ "raw": "{\"hazards\": [\n    {\"id\": \"BATH-06\", \"severity\": \"medium\", \"evidence\": \"Toilet seat appears low\", \"box\": [506, 595, 694, 967]},\n    {\"id\": \"BATH-07\", \"severity\": \"low\", \"evidence\": \"No bath mat or rug visible, but floor is tiled and may be slippery when wet\", \"box\": [0, 777, 573, 1000]},\n    {\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"Bathroom appears dimly lit\", \"box\": []}\n]}",
+ "hazards": [
+  {
+   "id": "BATH-06",
+   "severity": "medium",
+   "evidence": "Toilet seat appears low",
+   "box": [
+    506,
+    595,
+    694,
+    967
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "low",
+   "evidence": "No bath mat or rug visible, but floor is tiled and may be slippery when wet",
+   "box": [
+    0,
+    777,
+    573,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Bathroom appears dimly lit",
+   "box": []
+  }
+ ]
+}

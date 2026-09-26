@@ -1,0 +1,61 @@
+{
+ "id": "fal-L2-008",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"ENT-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Exterior steps leading to the front door have handrails on both sides, but they appear to be short, ending before the bottom step, and may not provide continuous support for a walker user.\",\n      \"box\": [280, 310, 688, 638]\n    },\n    {\n      \"id\": \"ENT-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The front door has a visible threshold that may be raised, posing a tripping hazard for someone using a walker.\",\n      \"box\": [370, 0, 644, 478]\n    },\n    {\n      \"id\": \"ENT-03\",\n      \"severity\": \"low\",\n      \"evidence\": \"The concrete walkway appears even, but the transition from the walkway to the steps and the presence of landscaping near the path may create uneven surfaces or narrow the walking area slightly.\",\n      \"box\": [124, 620, 738, 999]\n    },\n    {\n      \"id\": \"ENT-04\",\n      \"severity\": \"low\",\n      \"evidence\": \"The exterior light is on, but it only illuminates the immediate area around the door, leaving the walkway and steps partially in shadow, which could be hazardous at night.\",\n      \"box\": [275, 0, 320, 112]\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The front door appears to be a standard width, but without knowing the exact dimensions, it may be borderline for walker clearance, especially if the user needs to turn or maneuver.\",\n      \"box\": [370, 0, 644, 478]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "ENT-01",
+   "severity": "medium",
+   "evidence": "Exterior steps leading to the front door have handrails on both sides, but they appear to be short, ending before the bottom step, and may not provide continuous support for a walker user.",
+   "box": [
+    280,
+    310,
+    688,
+    638
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "The front door has a visible threshold that may be raised, posing a tripping hazard for someone using a walker.",
+   "box": [
+    370,
+    0,
+    644,
+    478
+   ]
+  },
+  {
+   "id": "ENT-03",
+   "severity": "low",
+   "evidence": "The concrete walkway appears even, but the transition from the walkway to the steps and the presence of landscaping near the path may create uneven surfaces or narrow the walking area slightly.",
+   "box": [
+    124,
+    620,
+    738,
+    999
+   ]
+  },
+  {
+   "id": "ENT-04",
+   "severity": "low",
+   "evidence": "The exterior light is on, but it only illuminates the immediate area around the door, leaving the walkway and steps partially in shadow, which could be hazardous at night.",
+   "box": [
+    275,
+    0,
+    320,
+    112
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "low",
+   "evidence": "The front door appears to be a standard width, but without knowing the exact dimensions, it may be borderline for walker clearance, especially if the user needs to turn or maneuver.",
+   "box": [
+    370,
+    0,
+    644,
+    478
+   ]
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "id": "fal-L1-007",
+ "raw": "{\"hazards\": [{\"id\": \"BED-04\", \"severity\": \"high\", \"evidence\": \"Cluttered floor around bed with shoes and bags\", \"box\": [400, 600, 700, 800]}, {\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"Cluttered floor around bed\", \"box\": [400, 600, 700, 800]}]}",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "severity": "high",
+   "evidence": "Cluttered floor around bed with shoes and bags",
+   "box": [
+    400,
+    600,
+    700,
+    800
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Cluttered floor around bed",
+   "box": [
+    400,
+    600,
+    700,
+    800
+   ]
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "id": "fal-L2-009",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"rug on floor\", \"box\": [0, 0, 152, 1000]}, {\"id\": \"STAIR-04\", \"severity\": \"medium\", \"evidence\": \"single light at top of stairs\", \"box\": [261, 0, 739, 0]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "rug on floor",
+   "box": [
+    0,
+    0,
+    152,
+    1000
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "single light at top of stairs",
+   "box": [
+    261,
+    0,
+    739,
+    0
+   ]
+  }
+ ]
+}

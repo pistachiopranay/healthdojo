@@ -1,0 +1,50 @@
+{
+ "id": "fal-L2-000",
+ "raw": "{\"hazards\": [\n    {\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"White cords on the floor\", \"box\": [230, 480, 440, 580]},\n    {\"id\": \"BED-02\", \"severity\": \"low\", \"evidence\": \"Lamp is on the other side of the bed\", \"box\": [700, 100, 800, 320]},\n    {\"id\": \"BED-05\", \"severity\": \"low\", \"evidence\": \"Bed is pushed against the wall, limiting walker clearance on one side\", \"box\": [420, 190, 1000, 980]},\n    {\"id\": \"LIV-06\", \"severity\": \"medium\", \"evidence\": \"Step down between hallway and bedroom\", \"box\": [100, 270, 230, 400]}\n]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "White cords on the floor",
+   "box": [
+    230,
+    480,
+    440,
+    580
+   ]
+  },
+  {
+   "id": "BED-02",
+   "severity": "low",
+   "evidence": "Lamp is on the other side of the bed",
+   "box": [
+    700,
+    100,
+    800,
+    320
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "low",
+   "evidence": "Bed is pushed against the wall, limiting walker clearance on one side",
+   "box": [
+    420,
+    190,
+    1000,
+    980
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "Step down between hallway and bedroom",
+   "box": [
+    100,
+    270,
+    230,
+    400
+   ]
+  }
+ ]
+}

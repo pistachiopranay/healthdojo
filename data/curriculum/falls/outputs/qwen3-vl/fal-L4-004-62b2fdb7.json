@@ -1,0 +1,72 @@
+{
+ "id": "fal-L4-004",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Large area rug with curled edge in center of room, creating tripping hazard for walker user.\",\n      \"box\": [305, 555, 750, 832]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Black electrical cord running across floor from TV console toward doorway, across likely walking path.\",\n      \"box\": [750, 555, 890, 800]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Furniture placement (sofa, armchairs, ottoman, TV console) creates narrow pathways; walker may not fit through easily.\",\n      \"box\": [0, 0, 1000, 1000]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Yellow armchair and matching ottoman appear low and soft; may be difficult to rise from without armrests or proper height.\",\n      \"box\": [570, 320, 665, 463]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Room is dimly lit with multiple lamps; shadows and low ambient light may cause glare or obscure hazards.\",\n      \"box\": [0, 0, 1000, 1000]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Dog bed and scattered dog toys on floor in center of room, posing tripping hazard for walker user.\",\n      \"box\": [568, 518, 713, 620]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Large area rug with curled edge in center of room, creating tripping hazard for walker user.",
+   "box": [
+    305,
+    555,
+    750,
+    832
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Black electrical cord running across floor from TV console toward doorway, across likely walking path.",
+   "box": [
+    750,
+    555,
+    890,
+    800
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Furniture placement (sofa, armchairs, ottoman, TV console) creates narrow pathways; walker may not fit through easily.",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "Yellow armchair and matching ottoman appear low and soft; may be difficult to rise from without armrests or proper height.",
+   "box": [
+    570,
+    320,
+    665,
+    463
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Room is dimly lit with multiple lamps; shadows and low ambient light may cause glare or obscure hazards.",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Dog bed and scattered dog toys on floor in center of room, posing tripping hazard for walker user.",
+   "box": [
+    568,
+    518,
+    713,
+    620
+   ]
+  }
+ ]
+}

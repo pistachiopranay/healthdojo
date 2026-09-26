@@ -1,0 +1,50 @@
+{
+ "id": "fal-L4-014",
+ "raw": "{\"hazards\": [{\"id\": \"KIT-01\", \"severity\": \"medium\", \"evidence\": \"Plates and bowls stored on high shelves\", \"box\": [0, 0, 310, 300]}, {\"id\": \"KIT-04\", \"severity\": \"high\", \"evidence\": \"Slippery floor and loose mat at sink\", \"box\": [585, 650, 792, 868]}, {\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"Cords or wires across walkway\", \"box\": [318, 609, 530, 999]}, {\"id\": \"LIV-07\", \"severity\": \"low\", \"evidence\": \"Pets and pet items underfoot\", \"box\": [499, 583, 561, 632]}]}",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Plates and bowls stored on high shelves",
+   "box": [
+    0,
+    0,
+    310,
+    300
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "Slippery floor and loose mat at sink",
+   "box": [
+    585,
+    650,
+    792,
+    868
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Cords or wires across walkway",
+   "box": [
+    318,
+    609,
+    530,
+    999
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "low",
+   "evidence": "Pets and pet items underfoot",
+   "box": [
+    499,
+    583,
+    561,
+    632
+   ]
+  }
+ ]
+}

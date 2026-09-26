@@ -1,0 +1,50 @@
+{
+ "id": "fal-L1-005",
+ "raw": "{\"hazards\":[{\"id\":\"BATH-04\",\"severity\":\"high\",\"evidence\":\"The tub has a smooth-looking floor with no visible nonslip mat or traction strips.\",\"box\":[145,525,625,850]},{\"id\":\"BATH-05\",\"severity\":\"high\",\"evidence\":\"The bathtub has a high side to step over, and the shower chair does not extend across the rim as a transfer bench.\",\"box\":[135,635,625,850]},{\"id\":\"BATH-06\",\"severity\":\"medium\",\"evidence\":\"The toilet appears to have a standard low seat without a visible raised-seat attachment.\",\"box\":[650,500,900,900]},{\"id\":\"LIV-03\",\"severity\":\"high\",\"evidence\":\"Shoes, clothing, papers, and small loose objects clutter the tub floor and obstruct safe shower access.\",\"box\":[210,695,450,845]}]}",
+ "hazards": [
+  {
+   "id": "BATH-04",
+   "severity": "high",
+   "evidence": "The tub has a smooth-looking floor with no visible nonslip mat or traction strips.",
+   "box": [
+    145,
+    525,
+    625,
+    850
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "The bathtub has a high side to step over, and the shower chair does not extend across the rim as a transfer bench.",
+   "box": [
+    135,
+    635,
+    625,
+    850
+   ]
+  },
+  {
+   "id": "BATH-06",
+   "severity": "medium",
+   "evidence": "The toilet appears to have a standard low seat without a visible raised-seat attachment.",
+   "box": [
+    650,
+    500,
+    900,
+    900
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Shoes, clothing, papers, and small loose objects clutter the tub floor and obstruct safe shower access.",
+   "box": [
+    210,
+    695,
+    450,
+    845
+   ]
+  }
+ ]
+}

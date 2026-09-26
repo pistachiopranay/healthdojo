@@ -1,0 +1,39 @@
+{
+ "id": "fal-L3-014",
+ "raw": "{\"hazards\": [{\"id\": \"BED-04\", \"severity\": \"low\", \"evidence\": \"Dog bed, dog food bowl, and toy on floor\", \"box\": [308, 493, 462, 628]}, {\"id\": \"BED-05\", \"severity\": \"medium\", \"evidence\": \"Insufficient clearance for walker around bed\", \"box\": [418, 195, 999, 999]}, {\"id\": \"LIV-07\", \"severity\": \"low\", \"evidence\": \"Pets and pet items underfoot\", \"box\": [308, 493, 462, 628]}]}",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "severity": "low",
+   "evidence": "Dog bed, dog food bowl, and toy on floor",
+   "box": [
+    308,
+    493,
+    462,
+    628
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "Insufficient clearance for walker around bed",
+   "box": [
+    418,
+    195,
+    999,
+    999
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "low",
+   "evidence": "Pets and pet items underfoot",
+   "box": [
+    308,
+    493,
+    462,
+    628
+   ]
+  }
+ ]
+}

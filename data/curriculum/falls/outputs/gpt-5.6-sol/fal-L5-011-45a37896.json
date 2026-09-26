@@ -1,0 +1,55 @@
+{
+ "id": "fal-L5-011",
+ "raw": "{\"hazards\":[{\"id\":\"STAIR-01\",\"severity\":\"high\",\"evidence\":\"The staircase has a handrail on only the right side; no handrail is visible along the left side.\",\"box\":[250,0,390,930]},{\"id\":\"STAIR-02\",\"severity\":\"high\",\"evidence\":\"The visible right-hand rail ends well above the lower stairs and does not provide continuous support for the full flight.\",\"box\":[670,0,900,270]},{\"id\":\"STAIR-04\",\"severity\":\"high\",\"evidence\":\"The stairway is dimly lit, with the lower stairs and landing in heavy shadow.\"},{\"id\":\"STAIR-05\",\"severity\":\"high\",\"evidence\":\"The carpeted stair edges have poor visual contrast, and the covering appears uneven or rumpled on several middle steps.\",\"box\":[300,180,780,790]},{\"id\":\"LIV-02\",\"severity\":\"high\",\"evidence\":\"A cord runs across the walking area at the foot of the stairs.\",\"box\":[0,865,400,995]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "The staircase has a handrail on only the right side; no handrail is visible along the left side.",
+   "box": [
+    250,
+    0,
+    390,
+    930
+   ]
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "high",
+   "evidence": "The visible right-hand rail ends well above the lower stairs and does not provide continuous support for the full flight.",
+   "box": [
+    670,
+    0,
+    900,
+    270
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "high",
+   "evidence": "The stairway is dimly lit, with the lower stairs and landing in heavy shadow."
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "The carpeted stair edges have poor visual contrast, and the covering appears uneven or rumpled on several middle steps.",
+   "box": [
+    300,
+    180,
+    780,
+    790
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "A cord runs across the walking area at the foot of the stairs.",
+   "box": [
+    0,
+    865,
+    400,
+    995
+   ]
+  }
+ ]
+}

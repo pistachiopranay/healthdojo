@@ -1,0 +1,28 @@
+{
+ "id": "dem-L1-004",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E02\",\n      \"severity\": \"high\",\n      \"evidence\": \"The front door is visibly open, leading directly outside, which poses a significant wandering risk for an individual with dementia.\",\n      \"box\": [330, 0, 445, 388]\n    },\n    {\n      \"id\": \"DEM-E01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Car keys are not visible, but the open front door creates an environment where keys could be easily accessed or carried out, increasing risk of unsupervised driving or wandering.\",\n      \"box\": [330, 0, 445, 388]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "The front door is visibly open, leading directly outside, which poses a significant wandering risk for an individual with dementia.",
+   "box": [
+    330,
+    0,
+    445,
+    388
+   ]
+  },
+  {
+   "id": "DEM-E01",
+   "severity": "medium",
+   "evidence": "Car keys are not visible, but the open front door creates an environment where keys could be easily accessed or carried out, increasing risk of unsupervised driving or wandering.",
+   "box": [
+    330,
+    0,
+    445,
+    388
+   ]
+  }
+ ]
+}

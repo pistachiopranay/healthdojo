@@ -1,0 +1,17 @@
+{
+ "id": "dem-L2-009",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-B03\",\"severity\":\"medium\",\"evidence\":\"A dark rectangular bath mat lies on the lighter-colored floor in the bathroom doorway, creating a contrast that may be misperceived as a hole or obstacle.\",\"box\":[814,493,947,642]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B03",
+   "severity": "medium",
+   "evidence": "A dark rectangular bath mat lies on the lighter-colored floor in the bathroom doorway, creating a contrast that may be misperceived as a hole or obstacle.",
+   "box": [
+    814,
+    493,
+    947,
+    642
+   ]
+  }
+ ]
+}

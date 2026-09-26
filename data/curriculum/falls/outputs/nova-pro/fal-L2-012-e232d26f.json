@@ -1,0 +1,39 @@
+{
+ "id": "fal-L2-012",
+ "raw": "{\"hazards\": [{\"id\": \"BED-03\", \"severity\": \"medium\", \"evidence\": \"dark path from bed to bathroom\", \"box\": [119, 269, 232, 376]}, {\"id\": \"BED-04\", \"severity\": \"low\", \"evidence\": \"dog toy on floor\", \"box\": [313, 523, 381, 595]}, {\"id\": \"BED-05\", \"severity\": \"medium\", \"evidence\": \"insufficient clearance for walker around bed\", \"box\": [417, 196, 1000, 999]}]}",
+ "hazards": [
+  {
+   "id": "BED-03",
+   "severity": "medium",
+   "evidence": "dark path from bed to bathroom",
+   "box": [
+    119,
+    269,
+    232,
+    376
+   ]
+  },
+  {
+   "id": "BED-04",
+   "severity": "low",
+   "evidence": "dog toy on floor",
+   "box": [
+    313,
+    523,
+    381,
+    595
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "insufficient clearance for walker around bed",
+   "box": [
+    417,
+    196,
+    1000,
+    999
+   ]
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "id": "fal-L1-007",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"BED-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Shoes and a large brown bag are piled on the floor directly beside the bed, creating a tripping hazard for someone using a walker.\",\n      \"box\": [412, 612, 693, 826]\n    },\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The bed is positioned close to the wall and the dresser, leaving limited space for a walker to maneuver around the foot and side of the bed. The clutter further reduces clearance.\",\n      \"box\": [412, 197, 1000, 997]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The open doorway and hallway are partially obstructed by the dresser and the open door, narrowing the walking path for a walker.\",\n      \"box\": [0, 0, 298, 997]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The room is generally dimly lit, relying on a single lamp and ambient light from a window. The hallway beyond the bedroom is darker, which could increase fall risk at night.\",\n      \"box\": [0, 0, 1000, 997]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "severity": "medium",
+   "evidence": "Shoes and a large brown bag are piled on the floor directly beside the bed, creating a tripping hazard for someone using a walker.",
+   "box": [
+    412,
+    612,
+    693,
+    826
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "The bed is positioned close to the wall and the dresser, leaving limited space for a walker to maneuver around the foot and side of the bed. The clutter further reduces clearance.",
+   "box": [
+    412,
+    197,
+    1000,
+    997
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The open doorway and hallway are partially obstructed by the dresser and the open door, narrowing the walking path for a walker.",
+   "box": [
+    0,
+    0,
+    298,
+    997
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The room is generally dimly lit, relying on a single lamp and ambient light from a window. The hallway beyond the bedroom is darker, which could increase fall risk at night.",
+   "box": [
+    0,
+    0,
+    1000,
+    997
+   ]
+  }
+ ]
+}

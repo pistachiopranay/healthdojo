@@ -1,0 +1,39 @@
+{
+ "id": "fal-L1-004",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Two coiled yellow extension cords and a power tool are lying on the stairs, creating tripping hazards.\",\n      \"box\": [378, 578, 675, 788]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Extension cords are draped across the stair treads, which could snag a walker or foot.\",\n      \"box\": [378, 578, 675, 788]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"low\",\n      \"evidence\": \"Only one ceiling light illuminates the stairwell, creating shadows and potentially inadequate lighting for safe navigation.\",\n      \"box\": [450, 0, 588, 320]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Two coiled yellow extension cords and a power tool are lying on the stairs, creating tripping hazards.",
+   "box": [
+    378,
+    578,
+    675,
+    788
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Extension cords are draped across the stair treads, which could snag a walker or foot.",
+   "box": [
+    378,
+    578,
+    675,
+    788
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "low",
+   "evidence": "Only one ceiling light illuminates the stairwell, creating shadows and potentially inadequate lighting for safe navigation.",
+   "box": [
+    450,
+    0,
+    588,
+    320
+   ]
+  }
+ ]
+}

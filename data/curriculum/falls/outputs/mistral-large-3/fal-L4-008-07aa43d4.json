@@ -1,0 +1,51 @@
+{
+ "id": "fal-L4-008",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose or unsecured rug on the floor\",\n      \"box\": [150, 700, 600, 850]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"Cord or wire across part of the walkway\",\n      \"box\": [100, 650, 250, 700]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Poor lighting in the room, creating shadows and dim areas\",\n      \"box\": []\n    },\n    {\n      \"id\": \"BED-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Dark path from bed to bathroom, increasing fall risk at night\",\n      \"box\": []\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Doorway may be too narrow for a walker if it's the primary entrance/exit\",\n      \"box\": [0, 300, 100, 750]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose or unsecured rug on the floor",
+   "box": [
+    150,
+    700,
+    600,
+    850
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Cord or wire across part of the walkway",
+   "box": [
+    100,
+    650,
+    250,
+    700
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Poor lighting in the room, creating shadows and dim areas",
+   "box": []
+  },
+  {
+   "id": "BED-03",
+   "severity": "high",
+   "evidence": "Dark path from bed to bathroom, increasing fall risk at night",
+   "box": []
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "Doorway may be too narrow for a walker if it's the primary entrance/exit",
+   "box": [
+    0,
+    300,
+    100,
+    750
+   ]
+  }
+ ]
+}

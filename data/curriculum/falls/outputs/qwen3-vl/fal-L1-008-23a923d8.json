@@ -1,0 +1,72 @@
+{
+ "id": "fal-L1-008",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Black electrical cord lying across the hardwood floor near the recliner, creating a tripping hazard for someone using a walker.\",\n      \"box\": [393, 555, 456, 595]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Furniture placement (recliner, sofa, end tables) creates a somewhat narrowed walking path, which may be difficult to navigate with a walker.\",\n      \"box\": [0, 0, 1000, 999]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"low\",\n      \"evidence\": \"The dark blue recliner and light beige armchair appear to have adequate armrests, but the depth and softness of the cushions may make standing up difficult without proper technique or support.\",\n      \"box\": [90, 259, 396, 740]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"Natural light from windows is good, but the lampshades may create glare or uneven lighting, especially if the older adult is moving from bright to dim areas.\",\n      \"box\": [0, 0, 1000, 999]\n    },\n    {\n      \"id\": \"ENT-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The white door leading to another room has a visible threshold/sill that could catch a walker wheel or foot, posing a tripping hazard.\",\n      \"box\": [366, 0, 444, 370]\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The doorway to the adjacent room appears narrow, potentially making it difficult for a walker to pass through without scraping or getting stuck.\",\n      \"box\": [366, 0, 444, 370]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Black electrical cord lying across the hardwood floor near the recliner, creating a tripping hazard for someone using a walker.",
+   "box": [
+    393,
+    555,
+    456,
+    595
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Furniture placement (recliner, sofa, end tables) creates a somewhat narrowed walking path, which may be difficult to navigate with a walker.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "low",
+   "evidence": "The dark blue recliner and light beige armchair appear to have adequate armrests, but the depth and softness of the cushions may make standing up difficult without proper technique or support.",
+   "box": [
+    90,
+    259,
+    396,
+    740
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Natural light from windows is good, but the lampshades may create glare or uneven lighting, especially if the older adult is moving from bright to dim areas.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "The white door leading to another room has a visible threshold/sill that could catch a walker wheel or foot, posing a tripping hazard.",
+   "box": [
+    366,
+    0,
+    444,
+    370
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "The doorway to the adjacent room appears narrow, potentially making it difficult for a walker to pass through without scraping or getting stuck.",
+   "box": [
+    366,
+    0,
+    444,
+    370
+   ]
+  }
+ ]
+}

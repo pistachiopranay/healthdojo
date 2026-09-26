@@ -1,0 +1,61 @@
+{
+ "id": "fal-L3-002",
+ "raw": "{\"hazards\": [\n  {\"id\": \"STAIR-01\", \"severity\": \"high\", \"evidence\": \"No handrail on the right side of the stairs at the bottom\", \"box\": [600, 0, 1000, 1000]},\n  {\"id\": \"STAIR-02\", \"severity\": \"low\", \"evidence\": \"Handrail on the left side appears to be secure and graspable\", \"box\": [0, 0, 300, 1000]},\n  {\"id\": \"STAIR-05\", \"severity\": \"high\", \"evidence\": \"Carpet on stairs is loose and undefined step edges are visible\", \"box\": [250, 150, 800, 1000]},\n  {\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"A cord is visible on the stairs\", \"box\": [250, 150, 800, 1000]},\n  {\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"The stairs are lit from above, but the lighting is uneven\", \"box\": [250, 150, 800, 1000]}\n]}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "No handrail on the right side of the stairs at the bottom",
+   "box": [
+    600,
+    0,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "low",
+   "evidence": "Handrail on the left side appears to be secure and graspable",
+   "box": [
+    0,
+    0,
+    300,
+    1000
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "Carpet on stairs is loose and undefined step edges are visible",
+   "box": [
+    250,
+    150,
+    800,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A cord is visible on the stairs",
+   "box": [
+    250,
+    150,
+    800,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The stairs are lit from above, but the lighting is uneven",
+   "box": [
+    250,
+    150,
+    800,
+    1000
+   ]
+  }
+ ]
+}

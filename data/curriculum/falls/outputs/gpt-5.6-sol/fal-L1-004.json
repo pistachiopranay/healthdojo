@@ -1,0 +1,28 @@
+{
+ "id": "fal-L1-004",
+ "raw": "{\"hazards\":[{\"id\":\"STAIR-03\",\"severity\":\"high\",\"evidence\":\"Coiled extension cords and a power strip are lying on multiple stair treads.\",\"box\":[382,582,656,790]},{\"id\":\"LIV-02\",\"severity\":\"high\",\"evidence\":\"Electrical cords run across the stair walking path, creating a trip and walker-entanglement hazard.\",\"box\":[384,586,654,787]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Coiled extension cords and a power strip are lying on multiple stair treads.",
+   "box": [
+    382,
+    582,
+    656,
+    790
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Electrical cords run across the stair walking path, creating a trip and walker-entanglement hazard.",
+   "box": [
+    384,
+    586,
+    654,
+    787
+   ]
+  }
+ ]
+}

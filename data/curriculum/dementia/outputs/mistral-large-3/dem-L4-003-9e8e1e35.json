@@ -1,0 +1,39 @@
+{
+ "id": "dem-L4-003",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Newspapers and clutter scattered on the floor, creating tripping hazards and obstructing walkways\",\n      \"box\": [400, 500, 800, 700]\n    },\n    {\n      \"id\": \"DEM-R02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Potential bold-patterned or high-contrast items (newspapers) on the floor may cause confusion or misperception\",\n      \"box\": [400, 550, 750, 700]\n    },\n    {\n      \"id\": \"DEM-E01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Visible door with a keyhole that could imply access to car keys or similar items near an exit\",\n      \"box\": [550, 200, 600, 400]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-E03",
+   "severity": "high",
+   "evidence": "Newspapers and clutter scattered on the floor, creating tripping hazards and obstructing walkways",
+   "box": [
+    400,
+    500,
+    800,
+    700
+   ]
+  },
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "Potential bold-patterned or high-contrast items (newspapers) on the floor may cause confusion or misperception",
+   "box": [
+    400,
+    550,
+    750,
+    700
+   ]
+  },
+  {
+   "id": "DEM-E01",
+   "severity": "medium",
+   "evidence": "Visible door with a keyhole that could imply access to car keys or similar items near an exit",
+   "box": [
+    550,
+    200,
+    600,
+    400
+   ]
+  }
+ ]
+}

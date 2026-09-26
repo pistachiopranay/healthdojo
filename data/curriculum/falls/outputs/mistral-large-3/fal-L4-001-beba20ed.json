@@ -1,0 +1,61 @@
+{
+ "id": "fal-L4-001",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BATH-07\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose bath mat or rug on the kitchen floor\",\n      \"box\": [300, 600, 700, 800]\n    },\n    {\n      \"id\": \"KIT-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Slippery or uneven-looking floor with loose items (rug and objects) that could cause slipping\",\n      \"box\": [0, 500, 1000, 800]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose rug on the floor in the walking path\",\n      \"box\": [300, 600, 700, 800]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Cluttered walking path with items scattered on the floor\",\n      \"box\": [300, 500, 800, 800]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Poor lighting and shadows in the kitchen area\",\n      \"box\": [0, 0, 1000, 800]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BATH-07",
+   "severity": "high",
+   "evidence": "Loose bath mat or rug on the kitchen floor",
+   "box": [
+    300,
+    600,
+    700,
+    800
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "Slippery or uneven-looking floor with loose items (rug and objects) that could cause slipping",
+   "box": [
+    0,
+    500,
+    1000,
+    800
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose rug on the floor in the walking path",
+   "box": [
+    300,
+    600,
+    700,
+    800
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Cluttered walking path with items scattered on the floor",
+   "box": [
+    300,
+    500,
+    800,
+    800
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Poor lighting and shadows in the kitchen area",
+   "box": [
+    0,
+    0,
+    1000,
+    800
+   ]
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+ "id": "fal-L5-011",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-01\", \"severity\": \"high\", \"evidence\": \"Wooden handrail is mounted only on the right wall; the left side of the staircase has no rail, so support is available on one side only.\", \"box\": [300, 70, 840, 1000]}, {\"id\": \"STAIR-02\", \"severity\": \"medium\", \"evidence\": \"The wall-mounted wooden rail on the right appears to run only the upper portion of the flight and does not continue to the lowest steps; continuity/grasp along the full run is limited.\", \"box\": [830, 0, 1120, 270]}, {\"id\": \"STAIR-04\", \"severity\": \"high\", \"evidence\": \"Stairwell is dim and unevenly lit; the lower steps and left side are in deep shadow with no visible dedicated stair light.\"}, {\"id\": \"STAIR-05\", \"severity\": \"high\", \"evidence\": \"Patterned/worn carpet runner with no contrasting nosing makes tread edges blend together, and the covering looks loose/uneven on the mid-flight treads.\", \"box\": [300, 180, 800, 920]}, {\"id\": \"LIV-02\", \"severity\": \"low\", \"evidence\": \"A light-colored cord/wire runs along the floor at the lower-left base of the stairs, across the approach path.\", \"box\": [0, 720, 330, 830]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Wooden handrail is mounted only on the right wall; the left side of the staircase has no rail, so support is available on one side only.",
+   "box": [
+    300,
+    70,
+    840,
+    1000
+   ]
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "medium",
+   "evidence": "The wall-mounted wooden rail on the right appears to run only the upper portion of the flight and does not continue to the lowest steps; continuity/grasp along the full run is limited.",
+   "box": [
+    830,
+    0,
+    1120,
+    270
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "high",
+   "evidence": "Stairwell is dim and unevenly lit; the lower steps and left side are in deep shadow with no visible dedicated stair light."
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "Patterned/worn carpet runner with no contrasting nosing makes tread edges blend together, and the covering looks loose/uneven on the mid-flight treads.",
+   "box": [
+    300,
+    180,
+    800,
+    920
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "low",
+   "evidence": "A light-colored cord/wire runs along the floor at the lower-left base of the stairs, across the approach path.",
+   "box": [
+    0,
+    720,
+    330,
+    830
+   ]
+  }
+ ]
+}

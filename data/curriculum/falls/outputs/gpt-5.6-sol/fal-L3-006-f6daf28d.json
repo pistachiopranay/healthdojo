@@ -1,0 +1,17 @@
+{
+ "id": "fal-L3-006",
+ "raw": "{\"hazards\":[{\"id\":\"LIV-03\",\"severity\":\"high\",\"evidence\":\"Shoes, clothing, and a small stool clutter and narrow the floor path needed for walker access.\",\"box\":[108,665,351,972]}]}",
+ "hazards": [
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Shoes, clothing, and a small stool clutter and narrow the floor path needed for walker access.",
+   "box": [
+    108,
+    665,
+    351,
+    972
+   ]
+  }
+ ]
+}

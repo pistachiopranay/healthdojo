@@ -1,0 +1,17 @@
+{
+ "id": "fal-L2-006",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"high\", \"evidence\": \"Loose area rug lying on the wood floor walkway between seating area and TV, could slip or catch walker/feet\", \"box\": [425, 478, 767, 597]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose area rug lying on the wood floor walkway between seating area and TV, could slip or catch walker/feet",
+   "box": [
+    425,
+    478,
+    767,
+    597
+   ]
+  }
+ ]
+}

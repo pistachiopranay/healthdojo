@@ -1,0 +1,61 @@
+{
+ "id": "fal-L2-007",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The bed is positioned close to the nightstand and the wall, leaving limited space for a walker to maneuver around the foot and sides of the bed.\",\n      \"box\": [133, 285, 620, 780]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A loose area rug is visible in the hallway beyond the bedroom doorway, which could cause tripping for someone using a walker.\",\n      \"box\": [815, 490, 943, 617]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"low\",\n      \"evidence\": \"The path from the bed to the doorway is partially obstructed by furniture (nightstand, chest, bookshelf), potentially narrowing the walking path for a walker.\",\n      \"box\": [133, 285, 749, 780]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The lamp on the nightstand provides localized light, but the path to the bathroom and the far side of the room appear dimly lit, creating potential glare or shadow hazards.\",\n      \"box\": [668, 256, 743, 448]\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The doorway leading to the hallway appears narrow, and with the door swing, may not provide sufficient clearance for a walker to pass through easily.\",\n      \"box\": [798, 37, 1000, 730]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "The bed is positioned close to the nightstand and the wall, leaving limited space for a walker to maneuver around the foot and sides of the bed.",
+   "box": [
+    133,
+    285,
+    620,
+    780
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A loose area rug is visible in the hallway beyond the bedroom doorway, which could cause tripping for someone using a walker.",
+   "box": [
+    815,
+    490,
+    943,
+    617
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "low",
+   "evidence": "The path from the bed to the doorway is partially obstructed by furniture (nightstand, chest, bookshelf), potentially narrowing the walking path for a walker.",
+   "box": [
+    133,
+    285,
+    749,
+    780
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The lamp on the nightstand provides localized light, but the path to the bathroom and the far side of the room appear dimly lit, creating potential glare or shadow hazards.",
+   "box": [
+    668,
+    256,
+    743,
+    448
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "The doorway leading to the hallway appears narrow, and with the door swing, may not provide sufficient clearance for a walker to pass through easily.",
+   "box": [
+    798,
+    37,
+    1000,
+    730
+   ]
+  }
+ ]
+}

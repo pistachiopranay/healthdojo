@@ -1,0 +1,61 @@
+{
+ "id": "fal-L5-001",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-03\", \"severity\": \"high\", \"evidence\": \"Large pile of clothes/blankets plus shoes and bags sitting in the main walking area; a walker cannot pass through the center of the room.\", \"box\": [338, 642, 706, 998]}, {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"Round pet bed, pet bowl and a bone/toy on the floor in the foreground walkway.\", \"box\": [36, 664, 296, 824]}, {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"Large loose area rug/mat over the wood floor in the main path, with its edge and piled items creating a trip catch for a walker.\", \"box\": [132, 628, 1000, 1000]}, {\"id\": \"LIV-05\", \"severity\": \"high\", \"evidence\": \"Room is dim (ceiling pendant off, only one small table lamp) while strong sunlight through the right doorway creates glare and deep shadows that hide floor edges and clutter.\", \"box\": [748, 140, 1000, 852]}, {\"id\": \"LIV-06\", \"severity\": \"medium\", \"evidence\": \"Unmarked threshold/level change at the right-hand doorway, hard to see because of the bright glare across the floor.\", \"box\": [880, 128, 1000, 720]}]}",
+ "hazards": [
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Large pile of clothes/blankets plus shoes and bags sitting in the main walking area; a walker cannot pass through the center of the room.",
+   "box": [
+    338,
+    642,
+    706,
+    998
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Round pet bed, pet bowl and a bone/toy on the floor in the foreground walkway.",
+   "box": [
+    36,
+    664,
+    296,
+    824
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Large loose area rug/mat over the wood floor in the main path, with its edge and piled items creating a trip catch for a walker.",
+   "box": [
+    132,
+    628,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "high",
+   "evidence": "Room is dim (ceiling pendant off, only one small table lamp) while strong sunlight through the right doorway creates glare and deep shadows that hide floor edges and clutter.",
+   "box": [
+    748,
+    140,
+    1000,
+    852
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "Unmarked threshold/level change at the right-hand doorway, hard to see because of the bright glare across the floor.",
+   "box": [
+    880,
+    128,
+    1000,
+    720
+   ]
+  }
+ ]
+}

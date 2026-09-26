@@ -1,0 +1,39 @@
+{
+ "id": "fal-L4-013",
+ "raw": "{\"hazards\": [{\"id\": \"KIT-01\", \"severity\": \"medium\", \"evidence\": \"Frequently used items stored high\", \"box\": [611, 263, 708, 468]}, {\"id\": \"KIT-04\", \"severity\": \"medium\", \"evidence\": \"Slippery floor / loose mat at sink or stove\", \"box\": [277, 766, 351, 810]}, {\"id\": \"LIV-07\", \"severity\": \"low\", \"evidence\": \"Pets and pet items underfoot\", \"box\": [281, 721, 433, 800]}]}",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Frequently used items stored high",
+   "box": [
+    611,
+    263,
+    708,
+    468
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "medium",
+   "evidence": "Slippery floor / loose mat at sink or stove",
+   "box": [
+    277,
+    766,
+    351,
+    810
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "low",
+   "evidence": "Pets and pet items underfoot",
+   "box": [
+    281,
+    721,
+    433,
+    800
+   ]
+  }
+ ]
+}

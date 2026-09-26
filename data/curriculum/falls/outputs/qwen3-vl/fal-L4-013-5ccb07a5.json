@@ -1,0 +1,61 @@
+{
+ "id": "fal-L4-013",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"KIT-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Wet or reflective patch on kitchen floor near sink, indicating potential slip hazard.\",\n      \"box\": [440, 780, 650, 840]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Dining chairs and a pet bed partially block the walkway from the kitchen into the adjacent room, narrowing the path for a walker.\",\n      \"box\": [0, 215, 288, 850]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"Overall dim lighting with shadows and glare from the single pendant light, reducing visibility for safe navigation.\",\n      \"box\": [0, 0, 1000, 1000]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Pet bed and food/water bowls on floor near kitchen entrance, posing tripping hazard for walker user.\",\n      \"box\": [278, 715, 432, 800]\n    },\n    {\n      \"id\": \"LIV-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Threshold between kitchen and adjacent room is visible and may create an unmarked level change.\",\n      \"box\": [270, 770, 750, 800]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "KIT-04",
+   "severity": "medium",
+   "evidence": "Wet or reflective patch on kitchen floor near sink, indicating potential slip hazard.",
+   "box": [
+    440,
+    780,
+    650,
+    840
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Dining chairs and a pet bed partially block the walkway from the kitchen into the adjacent room, narrowing the path for a walker.",
+   "box": [
+    0,
+    215,
+    288,
+    850
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "high",
+   "evidence": "Overall dim lighting with shadows and glare from the single pendant light, reducing visibility for safe navigation.",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pet bed and food/water bowls on floor near kitchen entrance, posing tripping hazard for walker user.",
+   "box": [
+    278,
+    715,
+    432,
+    800
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "Threshold between kitchen and adjacent room is visible and may create an unmarked level change.",
+   "box": [
+    270,
+    770,
+    750,
+    800
+   ]
+  }
+ ]
+}

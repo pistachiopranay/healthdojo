@@ -1,0 +1,28 @@
+{
+ "id": "dem-L2-009",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A patterned area rug with a border is placed on the carpeted floor, which may be misperceived as a step or hole by someone with dementia.\",\n      \"box\": [405, 598, 764, 965]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"A small decorative item (blue bowl) and lace doily are on the edge of the dresser, which could be knocked over or misinterpreted, creating minor clutter risk.\",\n      \"box\": [0, 524, 203, 999]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "A patterned area rug with a border is placed on the carpeted floor, which may be misperceived as a step or hole by someone with dementia.",
+   "box": [
+    405,
+    598,
+    764,
+    965
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "A small decorative item (blue bowl) and lace doily are on the edge of the dresser, which could be knocked over or misinterpreted, creating minor clutter risk.",
+   "box": [
+    0,
+    524,
+    203,
+    999
+   ]
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "id": "fal-L4-006",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The handrail appears to be made of wood and may not be graspable or securely attached, posing a risk for someone using a walker.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"There is a visible cord running across the walkway near the stairs, which could pose a tripping hazard for someone using a walker.\",\n      \"box\": [0, 0, 1000, 1000]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-02",
+   "severity": "medium",
+   "evidence": "The handrail appears to be made of wood and may not be graspable or securely attached, posing a risk for someone using a walker.",
+   "box": null
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "There is a visible cord running across the walkway near the stairs, which could pose a tripping hazard for someone using a walker.",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  }
+ ]
+}

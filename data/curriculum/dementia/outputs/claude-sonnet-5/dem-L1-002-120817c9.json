@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-002",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R02\", \"severity\": \"medium\", \"evidence\": \"Bold black and white striped high-contrast area rug on floor in front of bed, which could be misperceived as a hazard or trip risk by someone with dementia\", \"box\": [359, 508, 1046, 852]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "Bold black and white striped high-contrast area rug on floor in front of bed, which could be misperceived as a hazard or trip risk by someone with dementia",
+   "box": [
+    359,
+    508,
+    1046,
+    852
+   ]
+  }
+ ]
+}

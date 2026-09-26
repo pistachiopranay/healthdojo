@@ -1,0 +1,39 @@
+{
+ "id": "dem-L3-006",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove burner knobs are freely usable and accessible, posing a risk of the stove being turned on accidentally.\",\n      \"box\": [100, 250, 400, 400]\n    },\n    {\n      \"id\": \"DEM-K04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Several medication bottles are visible and left out on the countertop.\",\n      \"box\": [500, 200, 700, 300]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"There are some items on the countertop that could contribute to clutter if not managed.\",\n      \"box\": [400, 150, 800, 350]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner knobs are freely usable and accessible, posing a risk of the stove being turned on accidentally.",
+   "box": [
+    100,
+    250,
+    400,
+    400
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Several medication bottles are visible and left out on the countertop.",
+   "box": [
+    500,
+    200,
+    700,
+    300
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "There are some items on the countertop that could contribute to clutter if not managed.",
+   "box": [
+    400,
+    150,
+    800,
+    350
+   ]
+  }
+ ]
+}

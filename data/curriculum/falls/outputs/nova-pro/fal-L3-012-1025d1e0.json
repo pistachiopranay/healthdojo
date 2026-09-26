@@ -1,0 +1,39 @@
+{
+ "id": "fal-L3-012",
+ "raw": "{\"hazards\": [{\"id\": \"ENT-02\", \"severity\": \"medium\", \"evidence\": \"Raised threshold at the front door.\", \"box\": [302, 480, 697, 520]}, {\"id\": \"ENT-05\", \"severity\": \"high\", \"evidence\": \"The doorway appears too narrow for a walker.\", \"box\": [370, 0, 630, 480]}, {\"id\": \"LIV-07\", \"severity\": \"low\", \"evidence\": \"Pet items (dog bed and bowl) are on the walkway.\", \"box\": [332, 652, 623, 828]}]}",
+ "hazards": [
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "Raised threshold at the front door.",
+   "box": [
+    302,
+    480,
+    697,
+    520
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "high",
+   "evidence": "The doorway appears too narrow for a walker.",
+   "box": [
+    370,
+    0,
+    630,
+    480
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "low",
+   "evidence": "Pet items (dog bed and bowl) are on the walkway.",
+   "box": [
+    332,
+    652,
+    623,
+    828
+   ]
+  }
+ ]
+}

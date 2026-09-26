@@ -1,0 +1,28 @@
+{
+ "id": "fal-L2-004",
+ "raw": "{\"hazards\":[{\"id\":\"KIT-03\",\"severity\":\"high\",\"evidence\":\"A wooden chair is positioned directly beneath the upper cabinets and could be used for reaching, which is unsafe after surgery.\",\"box\":[269,312,412,643]},{\"id\":\"KIT-02\",\"severity\":\"medium\",\"evidence\":\"Frequently used dishes and bowls are stored on low open shelves, requiring bending or squatting.\",\"box\":[806,590,999,997]}]}",
+ "hazards": [
+  {
+   "id": "KIT-03",
+   "severity": "high",
+   "evidence": "A wooden chair is positioned directly beneath the upper cabinets and could be used for reaching, which is unsafe after surgery.",
+   "box": [
+    269,
+    312,
+    412,
+    643
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Frequently used dishes and bowls are stored on low open shelves, requiring bending or squatting.",
+   "box": [
+    806,
+    590,
+    999,
+    997
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "dem-L2-007",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"Stove with knobs\", \"box\": [0.138, 0.288,0.251,0.737]},\n    {\"id\": \"DEM-K03\", \"severity\": \"high\", \"evidence\": \"Dish soap by the sink\", \"box\": [0.307,0.000,0.725,0.566]},\n    {\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"Dishes on the shelves\", \"box\": [0.785,0.000,1.000,0.984]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove with knobs",
+   "box": [
+    0.138,
+    0.288,
+    0.251,
+    0.737
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "Dish soap by the sink",
+   "box": [
+    0.307,
+    0.0,
+    0.725,
+    0.566
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Dishes on the shelves",
+   "box": [
+    0.785,
+    0.0,
+    1.0,
+    0.984
+   ]
+  }
+ ]
+}

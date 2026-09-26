@@ -1,0 +1,39 @@
+{
+ "id": "fal-L5-000",
+ "raw": "{\"hazards\": [{\"id\": \"BATH-04\", \"severity\": \"medium\", \"evidence\": \"Smooth tub floor with no visible non-slip mat or decals where the user must stand during transfers (tub floor partly occupied by the chair/stool).\", \"box\": [220, 400, 690, 760]}, {\"id\": \"BATH-05\", \"severity\": \"high\", \"evidence\": \"Full-height tub apron must be stepped over to reach the shower chair and stool, both of which sit entirely inside the tub; no transfer bench bridges the tub edge (only grab bars to hold).\", \"box\": [200, 300, 700, 800]}, {\"id\": \"BATH-07\", \"severity\": \"medium\", \"evidence\": \"Light-colored bath mat lying loose on the tile floor in the walker path in front of the tub/toilet; can slide or catch walker tips/feet.\", \"box\": [232, 838, 691, 997]}]}",
+ "hazards": [
+  {
+   "id": "BATH-04",
+   "severity": "medium",
+   "evidence": "Smooth tub floor with no visible non-slip mat or decals where the user must stand during transfers (tub floor partly occupied by the chair/stool).",
+   "box": [
+    220,
+    400,
+    690,
+    760
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "Full-height tub apron must be stepped over to reach the shower chair and stool, both of which sit entirely inside the tub; no transfer bench bridges the tub edge (only grab bars to hold).",
+   "box": [
+    200,
+    300,
+    700,
+    800
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "medium",
+   "evidence": "Light-colored bath mat lying loose on the tile floor in the walker path in front of the tub/toilet; can slide or catch walker tips/feet.",
+   "box": [
+    232,
+    838,
+    691,
+    997
+   ]
+  }
+ ]
+}

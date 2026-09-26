@@ -1,0 +1,28 @@
+{
+ "id": "fal-L5-010",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-01\", \"severity\": \"high\", \"evidence\": \"Missing handrail on one side of the staircase.\", \"box\": [235, 79, 421, 833]}, {\"id\": \"STAIR-04\", \"severity\": \"medium\", \"evidence\": \"Poor stair lighting, only the edges are illuminated.\", \"box\": [300, 243, 661, 998]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Missing handrail on one side of the staircase.",
+   "box": [
+    235,
+    79,
+    421,
+    833
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Poor stair lighting, only the edges are illuminated.",
+   "box": [
+    300,
+    243,
+    661,
+    998
+   ]
+  }
+ ]
+}

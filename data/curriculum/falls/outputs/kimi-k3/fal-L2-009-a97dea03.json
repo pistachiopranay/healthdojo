@@ -1,0 +1,39 @@
+{
+ "id": "fal-L2-009",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-03\", \"severity\": \"high\", \"evidence\": \"Small object/debris (tan item) resting on a stair tread\", \"box\": [690, 638, 815, 672]}, {\"id\": \"STAIR-06\", \"severity\": \"high\", \"evidence\": \"Damaged/chipped wooden tread and worn nosing on the second step from the bottom, creating an uneven step edge\", \"box\": [430, 622, 900, 672]}, {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"Loose area/throw rug on the living-room walkway beside the chair and plant\", \"box\": [0, 830, 120, 968]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Small object/debris (tan item) resting on a stair tread",
+   "box": [
+    690,
+    638,
+    815,
+    672
+   ]
+  },
+  {
+   "id": "STAIR-06",
+   "severity": "high",
+   "evidence": "Damaged/chipped wooden tread and worn nosing on the second step from the bottom, creating an uneven step edge",
+   "box": [
+    430,
+    622,
+    900,
+    672
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Loose area/throw rug on the living-room walkway beside the chair and plant",
+   "box": [
+    0,
+    830,
+    120,
+    968
+   ]
+  }
+ ]
+}

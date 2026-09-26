@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-006",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"Gas stove burner is on with a visible blue flame, and the range control knobs on the front panel are exposed and freely usable.\", \"box\": [43, 146, 339, 456]}, {\"id\": \"DEM-K04\", \"severity\": \"high\", \"evidence\": \"Multiple orange prescription medication bottles and a pill organizer are left out on the kitchen counter beside the sink.\", \"box\": [536, 197, 690, 337]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Gas stove burner is on with a visible blue flame, and the range control knobs on the front panel are exposed and freely usable.",
+   "box": [
+    43,
+    146,
+    339,
+    456
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Multiple orange prescription medication bottles and a pill organizer are left out on the kitchen counter beside the sink.",
+   "box": [
+    536,
+    197,
+    690,
+    337
+   ]
+  }
+ ]
+}

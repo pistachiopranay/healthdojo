@@ -1,0 +1,39 @@
+{
+ "id": "fal-L2-007",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"high\", \"evidence\": \"Loose area rugs/runners on the floor in the walkway through the doorway on the route from the bed toward the bathroom; unsecured edges could catch a walker or foot.\", \"box\": [815, 424, 944, 618]}, {\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"Walking path beside/around the bed is narrowed by furniture: wooden chair in the corner and a storage chest/bench sit close to the bed on the window side, limiting the route a walker user would take around the bed.\", \"box\": [3, 281, 292, 477]}, {\"id\": \"BED-05\", \"severity\": \"medium\", \"evidence\": \"Clear floor space alongside the bed is tight for a walker: the nightstand sits immediately next to the bed on the bathroom side and the chair/chest crowd the opposite side, leaving limited width to maneuver or transfer with a walker.\", \"box\": [570, 242, 956, 668]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose area rugs/runners on the floor in the walkway through the doorway on the route from the bed toward the bathroom; unsecured edges could catch a walker or foot.",
+   "box": [
+    815,
+    424,
+    944,
+    618
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Walking path beside/around the bed is narrowed by furniture: wooden chair in the corner and a storage chest/bench sit close to the bed on the window side, limiting the route a walker user would take around the bed.",
+   "box": [
+    3,
+    281,
+    292,
+    477
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "Clear floor space alongside the bed is tight for a walker: the nightstand sits immediately next to the bed on the bathroom side and the chair/chest crowd the opposite side, leaving limited width to maneuver or transfer with a walker.",
+   "box": [
+    570,
+    242,
+    956,
+    668
+   ]
+  }
+ ]
+}

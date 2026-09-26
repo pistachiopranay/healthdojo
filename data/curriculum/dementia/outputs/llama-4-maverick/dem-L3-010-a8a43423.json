@@ -1,0 +1,39 @@
+{
+ "id": "dem-L3-010",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"Stove burner is on and knobs are freely usable\", \"box\": [0, 0, 268, 0.497]},\n    {\"id\": \"DEM-K03\", \"severity\": \"high\", \"evidence\": \"Cleaning chemicals are out and unlocked on the counter\", \"box\": [270, 0.242, 0.726, 0.512]},\n    {\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"Clutter is visible on the countertop\", \"box\": [270, 0.242, 0.726, 0.512]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner is on and knobs are freely usable",
+   "box": [
+    0,
+    0,
+    268,
+    0.497
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "Cleaning chemicals are out and unlocked on the counter",
+   "box": [
+    270,
+    0.242,
+    0.726,
+    0.512
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Clutter is visible on the countertop",
+   "box": [
+    270,
+    0.242,
+    0.726,
+    0.512
+   ]
+  }
+ ]
+}

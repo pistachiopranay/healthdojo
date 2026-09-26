@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-003",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K04\", \"severity\": \"medium\", \"evidence\": \"Medication bottles left out on the counter.\", \"box\": [691, 326, 742, 380]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Medication bottles left out on the counter.",
+   "box": [
+    691,
+    326,
+    742,
+    380
+   ]
+  }
+ ]
+}

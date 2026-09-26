@@ -1,0 +1,61 @@
+{
+ "id": "fal-L2-003",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"ENT-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Exterior steps leading to the front door have handrails on both sides, but the handrails appear to be decorative and may not be securely mounted or graspable for support. The top step is flush with the porch, and the handrails do not extend beyond the top and bottom steps, which is a safety concern for someone using a walker.\",\n      \"box\": [283, 368, 750, 833]\n    },\n    {\n      \"id\": \"ENT-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There is a visible threshold or door sill at the entrance, which could pose a tripping hazard for someone using a walker, especially if they are not fully mobile or have limited balance.\",\n      \"box\": [390, 567, 688, 600]\n    },\n    {\n      \"id\": \"ENT-03\",\n      \"severity\": \"low\",\n      \"evidence\": \"The concrete walkway leading to the steps appears even, but there are rocks and plants bordering the path that could narrow the walking area or create uneven surfaces if the walker veers slightly off the path.\",\n      \"box\": [228, 770, 767, 999]\n    },\n    {\n      \"id\": \"ENT-04\",\n      \"severity\": \"low\",\n      \"evidence\": \"The porch light is on, providing some illumination, but the surrounding area (walkway and steps) is dimly lit, which could make it difficult to see potential hazards at dusk or night.\",\n      \"box\": [0, 0, 1000, 999]\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The front door appears to be a standard width, but with the door frame and sidelights, the clear opening may be narrow for a walker, especially if the user needs to turn or maneuver.\",\n      \"box\": [390, 68, 688, 598]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "ENT-01",
+   "severity": "high",
+   "evidence": "Exterior steps leading to the front door have handrails on both sides, but the handrails appear to be decorative and may not be securely mounted or graspable for support. The top step is flush with the porch, and the handrails do not extend beyond the top and bottom steps, which is a safety concern for someone using a walker.",
+   "box": [
+    283,
+    368,
+    750,
+    833
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "There is a visible threshold or door sill at the entrance, which could pose a tripping hazard for someone using a walker, especially if they are not fully mobile or have limited balance.",
+   "box": [
+    390,
+    567,
+    688,
+    600
+   ]
+  },
+  {
+   "id": "ENT-03",
+   "severity": "low",
+   "evidence": "The concrete walkway leading to the steps appears even, but there are rocks and plants bordering the path that could narrow the walking area or create uneven surfaces if the walker veers slightly off the path.",
+   "box": [
+    228,
+    770,
+    767,
+    999
+   ]
+  },
+  {
+   "id": "ENT-04",
+   "severity": "low",
+   "evidence": "The porch light is on, providing some illumination, but the surrounding area (walkway and steps) is dimly lit, which could make it difficult to see potential hazards at dusk or night.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "The front door appears to be a standard width, but with the door frame and sidelights, the clear opening may be narrow for a walker, especially if the user needs to turn or maneuver.",
+   "box": [
+    390,
+    68,
+    688,
+    598
+   ]
+  }
+ ]
+}

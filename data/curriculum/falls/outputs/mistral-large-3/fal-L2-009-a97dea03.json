@@ -1,0 +1,49 @@
+{
+ "id": "fal-L2-009",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Missing handrail on one side of the staircase; only one handrail is present.\",\n      \"box\": [100, 200, 300, 800]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Poor stair lighting; the area at the top of the stairs is dimly lit.\",\n      \"box\": [400, 100, 600, 400]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"evidence\": \"Undefined step edges; step edges are not clearly marked or contrasted.\",\n      \"box\": [200, 400, 800, 800]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Poor lighting or glare visible in the adjacent living area.\",\n      \"box\": [0, 100, 200, 400]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Missing handrail on one side of the staircase; only one handrail is present.",
+   "box": [
+    100,
+    200,
+    300,
+    800
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Poor stair lighting; the area at the top of the stairs is dimly lit.",
+   "box": [
+    400,
+    100,
+    600,
+    400
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "evidence": "Undefined step edges; step edges are not clearly marked or contrasted.",
+   "box": [
+    200,
+    400,
+    800,
+    800
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Poor lighting or glare visible in the adjacent living area.",
+   "box": [
+    0,
+    100,
+    200,
+    400
+   ]
+  }
+ ]
+}

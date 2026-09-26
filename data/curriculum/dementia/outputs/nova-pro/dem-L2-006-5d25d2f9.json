@@ -1,0 +1,17 @@
+{
+ "id": "dem-L2-006",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B02\", \"severity\": \"low\", \"evidence\": \"white toilet seat on white toilet and floor (low contrast)\", \"box\": [516, 662, 719, 804]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "low",
+   "evidence": "white toilet seat on white toilet and floor (low contrast)",
+   "box": [
+    516,
+    662,
+    719,
+    804
+   ]
+  }
+ ]
+}

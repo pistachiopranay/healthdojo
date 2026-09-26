@@ -1,0 +1,61 @@
+{
+ "id": "fal-L2-013",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"No visible throw rugs, but the room has multiple loose or potentially unsecured mats near seating areas that could pose a tripping hazard for someone using a walker.\",\n      \"box\": [0, 600, 1000, 900]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The walking path is somewhat cluttered due to furniture placement, which narrows the space available for a walker.\",\n      \"box\": [200, 400, 800, 800]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"The blue recliner and beige sofa appear to be low or soft seating without prominent armrests, making it difficult for someone recovering from surgery to stand up.\",\n      \"box\": [0, 500, 300, 800]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The lighting seems adequate, but glare from the windows could be an issue if not managed properly.\",\n      \"box\": [600, 100, 1000, 400]\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The doorway visible in the background may be too narrow for a walker if it is less than 32 inches wide.\",\n      \"box\": [350, 200, 450, 500]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "No visible throw rugs, but the room has multiple loose or potentially unsecured mats near seating areas that could pose a tripping hazard for someone using a walker.",
+   "box": [
+    0,
+    600,
+    1000,
+    900
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The walking path is somewhat cluttered due to furniture placement, which narrows the space available for a walker.",
+   "box": [
+    200,
+    400,
+    800,
+    800
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "high",
+   "evidence": "The blue recliner and beige sofa appear to be low or soft seating without prominent armrests, making it difficult for someone recovering from surgery to stand up.",
+   "box": [
+    0,
+    500,
+    300,
+    800
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The lighting seems adequate, but glare from the windows could be an issue if not managed properly.",
+   "box": [
+    600,
+    100,
+    1000,
+    400
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "The doorway visible in the background may be too narrow for a walker if it is less than 32 inches wide.",
+   "box": [
+    350,
+    200,
+    450,
+    500
+   ]
+  }
+ ]
+}

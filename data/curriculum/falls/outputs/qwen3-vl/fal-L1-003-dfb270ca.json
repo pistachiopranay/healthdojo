@@ -1,0 +1,61 @@
+{
+ "id": "fal-L1-003",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"ENT-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Exterior steps leading to the front door have handrails on both sides, but they appear to be short and not extending the full length of the stairs, which may not provide adequate support for someone using a walker.\",\n      \"box\": [283, 314, 687, 640]\n    },\n    {\n      \"id\": \"ENT-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The concrete walkway leading to the steps appears uneven in places, especially near the edges where it meets the grass and garden beds, which could pose a tripping hazard for someone using a walker.\",\n      \"box\": [124, 630, 737, 999]\n    },\n    {\n      \"id\": \"ENT-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Although there is a porch light, it only illuminates a small area near the door. The walkway and steps are not fully lit, creating shadows and potential visibility issues for someone navigating at dusk or night.\",\n      \"box\": [0, 0, 1000, 999]\n    },\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"There are multiple cardboard boxes and a pair of shoes placed directly on the bottom step, obstructing the path and creating a tripping hazard for someone using a walker.\",\n      \"box\": [283, 467, 687, 640]\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The front door appears to be a standard width, but with the presence of boxes and shoes on the step, the effective clearance for a walker entering or exiting may be reduced, especially if the door swings inward.\",\n      \"box\": [374, 0, 642, 477]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "ENT-01",
+   "severity": "high",
+   "evidence": "Exterior steps leading to the front door have handrails on both sides, but they appear to be short and not extending the full length of the stairs, which may not provide adequate support for someone using a walker.",
+   "box": [
+    283,
+    314,
+    687,
+    640
+   ]
+  },
+  {
+   "id": "ENT-03",
+   "severity": "medium",
+   "evidence": "The concrete walkway leading to the steps appears uneven in places, especially near the edges where it meets the grass and garden beds, which could pose a tripping hazard for someone using a walker.",
+   "box": [
+    124,
+    630,
+    737,
+    999
+   ]
+  },
+  {
+   "id": "ENT-04",
+   "severity": "medium",
+   "evidence": "Although there is a porch light, it only illuminates a small area near the door. The walkway and steps are not fully lit, creating shadows and potential visibility issues for someone navigating at dusk or night.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "There are multiple cardboard boxes and a pair of shoes placed directly on the bottom step, obstructing the path and creating a tripping hazard for someone using a walker.",
+   "box": [
+    283,
+    467,
+    687,
+    640
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "The front door appears to be a standard width, but with the presence of boxes and shoes on the step, the effective clearance for a walker entering or exiting may be reduced, especially if the door swings inward.",
+   "box": [
+    374,
+    0,
+    642,
+    477
+   ]
+  }
+ ]
+}

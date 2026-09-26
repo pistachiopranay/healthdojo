@@ -1,0 +1,44 @@
+{
+ "id": "fal-L5-001",
+ "raw": "{\"hazards\":[{\"id\":\"LIV-01\",\"severity\":\"high\",\"evidence\":\"A large loose area rug with exposed edges lies across the main walking area.\",\"box\":[258,763,858,999]},{\"id\":\"LIV-03\",\"severity\":\"high\",\"evidence\":\"Clothing, shoes, and bags clutter and obstruct the center walking path needed for a walker.\",\"box\":[340,776,704,999]},{\"id\":\"LIV-05\",\"severity\":\"medium\",\"evidence\":\"The room is dimly lit, with substantial shadow across the floor and walking path.\"},{\"id\":\"LIV-07\",\"severity\":\"high\",\"evidence\":\"Pet beds, bowls, and pet items are positioned underfoot along the walking area.\",\"box\":[50,788,281,995]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "A large loose area rug with exposed edges lies across the main walking area.",
+   "box": [
+    258,
+    763,
+    858,
+    999
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Clothing, shoes, and bags clutter and obstruct the center walking path needed for a walker.",
+   "box": [
+    340,
+    776,
+    704,
+    999
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "The room is dimly lit, with substantial shadow across the floor and walking path."
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "Pet beds, bowls, and pet items are positioned underfoot along the walking area.",
+   "box": [
+    50,
+    788,
+    281,
+    995
+   ]
+  }
+ ]
+}

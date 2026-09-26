@@ -1,0 +1,39 @@
+{
+ "id": "dem-L3-008",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove burner with freely usable knobs visible, potential risk of being left on.\",\n      \"box\": [50, 200, 300, 450]\n    },\n    {\n      \"id\": \"DEM-K04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Medication bottles left out on the countertop.\",\n      \"box\": [750, 100, 900, 200]\n    },\n    {\n      \"id\": \"DEM-R02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Bold patterned stove cover that could be misperceived.\",\n      \"box\": [50, 100, 300, 250]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner with freely usable knobs visible, potential risk of being left on.",
+   "box": [
+    50,
+    200,
+    300,
+    450
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Medication bottles left out on the countertop.",
+   "box": [
+    750,
+    100,
+    900,
+    200
+   ]
+  },
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "Bold patterned stove cover that could be misperceived.",
+   "box": [
+    50,
+    100,
+    300,
+    250
+   ]
+  }
+ ]
+}

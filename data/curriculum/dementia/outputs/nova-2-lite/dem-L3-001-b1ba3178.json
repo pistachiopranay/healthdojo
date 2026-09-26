@@ -1,0 +1,18 @@
+{
+ "id": "dem-L3-001",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Car keys are hanging by the front door, posing a risk of the person with dementia wandering outside.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There are piles of newspapers and boxes in the walkway, which could obstruct movement and cause tripping or disorientation.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "medium",
+   "evidence": "Car keys are hanging by the front door, posing a risk of the person with dementia wandering outside.",
+   "box": null
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "There are piles of newspapers and boxes in the walkway, which could obstruct movement and cause tripping or disorientation.",
+   "box": null
+  }
+ ]
+}

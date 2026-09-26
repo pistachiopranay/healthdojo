@@ -1,0 +1,17 @@
+{
+ "id": "fal-L2-003",
+ "raw": "{\"hazards\": [{\"id\": \"ENT-04\", \"severity\": \"medium\", \"evidence\": \"Dim lighting with only a single wall sconce illuminating the entry; steps and pathway are shadowed and hard to see clearly\", \"box\": [0, 0, 1280, 852]}]}",
+ "hazards": [
+  {
+   "id": "ENT-04",
+   "severity": "medium",
+   "evidence": "Dim lighting with only a single wall sconce illuminating the entry; steps and pathway are shadowed and hard to see clearly",
+   "box": [
+    0,
+    0,
+    1280,
+    852
+   ]
+  }
+ ]
+}

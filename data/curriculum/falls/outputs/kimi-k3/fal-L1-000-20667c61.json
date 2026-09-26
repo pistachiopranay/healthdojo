@@ -1,0 +1,39 @@
+{
+ "id": "fal-L1-000",
+ "raw": "{\"hazards\": [{\"id\": \"BATH-05\", \"severity\": \"high\", \"evidence\": \"Standard-height tub wall must be stepped over; the white shower chair sits entirely inside the tub (all legs in the basin) rather than straddling the edge as a transfer bench, so a walker user after hip/knee replacement still has to lift a leg over the ~15-inch tub apron to get in.\", \"box\": [218, 296, 691, 895]}, {\"id\": \"BATH-04\", \"severity\": \"medium\", \"evidence\": \"Smooth acrylic tub/shower floor with no visible non-slip mat or adhesive treads; surface becomes slippery when wet.\", \"box\": [222, 417, 688, 606]}, {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"Large dog lying in the bathtub in a small bathroom; pet occupying the tub and likely to move around the walker user's feet in a confined space.\", \"box\": [245, 518, 408, 584]}]}",
+ "hazards": [
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "Standard-height tub wall must be stepped over; the white shower chair sits entirely inside the tub (all legs in the basin) rather than straddling the edge as a transfer bench, so a walker user after hip/knee replacement still has to lift a leg over the ~15-inch tub apron to get in.",
+   "box": [
+    218,
+    296,
+    691,
+    895
+   ]
+  },
+  {
+   "id": "BATH-04",
+   "severity": "medium",
+   "evidence": "Smooth acrylic tub/shower floor with no visible non-slip mat or adhesive treads; surface becomes slippery when wet.",
+   "box": [
+    222,
+    417,
+    688,
+    606
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Large dog lying in the bathtub in a small bathroom; pet occupying the tub and likely to move around the walker user's feet in a confined space.",
+   "box": [
+    245,
+    518,
+    408,
+    584
+   ]
+  }
+ ]
+}

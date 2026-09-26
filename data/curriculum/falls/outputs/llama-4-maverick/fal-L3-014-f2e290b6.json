@@ -1,0 +1,94 @@
+{
+ "id": "fal-L3-014",
+ "raw": "{\"hazards\": [\n    {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"dog bed and dog bowl on floor\", \"box\": [290, 490, 440, 690]},\n    {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"small rug next to bed\", \"box\": [380, 780, 750, 1000]},\n    {\"id\": \"BED-04\", \"severity\": \"medium\", \"evidence\": \"dog bed and dog bowl on floor\", \"box\": [290, 490, 440, 690]},\n    {\"id\": \"BED-05\", \"severity\": \"medium\", \"evidence\": \"chair next to bed\", \"box\": [420, 360, 640, 930]},\n    {\"id\": \"LIV-03\", \"severity\": \"low\", \"evidence\": \"chair next to bed\", \"box\": [420, 360, 640, 930]},\n    {\"id\": \"LIV-03\", \"severity\": \"low\", \"evidence\": \"dog bed and dog bowl on floor\", \"box\": [290, 490, 440, 690]},\n    {\"id\": \"BED-02\", \"severity\": \"low\", \"evidence\": \"lamp on bedside table\", \"box\": [720, 100, 800, 330]},\n    {\"id\": \"LIV-06\", \"severity\": \"low\", \"evidence\": \"doorway threshold\", \"box\": [0, 0, 100, 450]}\n]}",
+ "hazards": [
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "dog bed and dog bowl on floor",
+   "box": [
+    290,
+    490,
+    440,
+    690
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "small rug next to bed",
+   "box": [
+    380,
+    780,
+    750,
+    1000
+   ]
+  },
+  {
+   "id": "BED-04",
+   "severity": "medium",
+   "evidence": "dog bed and dog bowl on floor",
+   "box": [
+    290,
+    490,
+    440,
+    690
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "chair next to bed",
+   "box": [
+    420,
+    360,
+    640,
+    930
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "low",
+   "evidence": "chair next to bed",
+   "box": [
+    420,
+    360,
+    640,
+    930
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "low",
+   "evidence": "dog bed and dog bowl on floor",
+   "box": [
+    290,
+    490,
+    440,
+    690
+   ]
+  },
+  {
+   "id": "BED-02",
+   "severity": "low",
+   "evidence": "lamp on bedside table",
+   "box": [
+    720,
+    100,
+    800,
+    330
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "low",
+   "evidence": "doorway threshold",
+   "box": [
+    0,
+    0,
+    100,
+    450
+   ]
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "dem-L3-011",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove burner knobs are freely accessible and usable without safety locks.\",\n      \"box\": [200, 350, 400, 500]\n    },\n    {\n      \"id\": \"DEM-K02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Wooden utensils that could be mistaken for safe items, though no sharp knives visibly out on the counter.\",\n      \"box\": [550, 250, 650, 350]\n    },\n    {\n      \"id\": \"DEM-K04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Medication bottles are left out on the countertop.\",\n      \"box\": [650, 250, 800, 350]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"Minor clutter on the countertop, though walkways appear clear.\"\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner knobs are freely accessible and usable without safety locks.",
+   "box": [
+    200,
+    350,
+    400,
+    500
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "medium",
+   "evidence": "Wooden utensils that could be mistaken for safe items, though no sharp knives visibly out on the counter.",
+   "box": [
+    550,
+    250,
+    650,
+    350
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Medication bottles are left out on the countertop.",
+   "box": [
+    650,
+    250,
+    800,
+    350
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "Minor clutter on the countertop, though walkways appear clear."
+  }
+ ]
+}

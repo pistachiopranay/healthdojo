@@ -1,0 +1,61 @@
+{
+ "id": "fal-L4-008",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"Throw rug on walkway\", \"box\": [229, 820, 665, 986]}, {\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"Cords or wires across walkway\", \"box\": [25, 848, 302, 941]}, {\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"Cluttered or narrowed walking path\", \"box\": [590, 599, 746, 901]}, {\"id\": \"LIV-05\", \"severity\": \"medium\", \"evidence\": \"Poor lighting or glare\", \"box\": [666, 416, 728, 573]}, {\"id\": \"ENT-05\", \"severity\": \"high\", \"evidence\": \"Doorway too narrow for walker\", \"box\": [170, 145, 339, 813]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Throw rug on walkway",
+   "box": [
+    229,
+    820,
+    665,
+    986
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Cords or wires across walkway",
+   "box": [
+    25,
+    848,
+    302,
+    941
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Cluttered or narrowed walking path",
+   "box": [
+    590,
+    599,
+    746,
+    901
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Poor lighting or glare",
+   "box": [
+    666,
+    416,
+    728,
+    573
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "high",
+   "evidence": "Doorway too narrow for walker",
+   "box": [
+    170,
+    145,
+    339,
+    813
+   ]
+  }
+ ]
+}

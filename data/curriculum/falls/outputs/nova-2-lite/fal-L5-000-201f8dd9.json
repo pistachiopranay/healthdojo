@@ -1,0 +1,30 @@
+{
+ "id": "fal-L5-000",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BATH-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The tub/shower floor appears to be a standard non-textured surface, which can be slippery, especially when wet.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"BATH-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"The tub has a high step-over edge without a transfer aid, making it difficult and risky for an older adult to safely get in and out, especially with a walker.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"BATH-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The toilet seat is standard height, which may be considered low for some older adults, potentially requiring them to bend more than necessary.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"BATH-07\",\n      \"severity\": \"low\",\n      \"evidence\": \"There is a bath mat in front of the tub, which could become loose or slippery if not properly secured.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BATH-04",
+   "severity": "medium",
+   "evidence": "The tub/shower floor appears to be a standard non-textured surface, which can be slippery, especially when wet.",
+   "box": null
+  },
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "The tub has a high step-over edge without a transfer aid, making it difficult and risky for an older adult to safely get in and out, especially with a walker.",
+   "box": null
+  },
+  {
+   "id": "BATH-06",
+   "severity": "medium",
+   "evidence": "The toilet seat is standard height, which may be considered low for some older adults, potentially requiring them to bend more than necessary.",
+   "box": null
+  },
+  {
+   "id": "BATH-07",
+   "severity": "low",
+   "evidence": "There is a bath mat in front of the tub, which could become loose or slippery if not properly secured.",
+   "box": null
+  }
+ ]
+}

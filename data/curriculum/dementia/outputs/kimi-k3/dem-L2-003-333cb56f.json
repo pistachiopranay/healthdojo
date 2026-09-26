@@ -1,0 +1,17 @@
+{
+ "id": "dem-L2-003",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"White raised toilet seat/safety frame on a white toilet against light tile flooring, creating low contrast that can be misperceived.\", \"box\": [515, 565, 720, 1000]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White raised toilet seat/safety frame on a white toilet against light tile flooring, creating low contrast that can be misperceived.",
+   "box": [
+    515,
+    565,
+    720,
+    1000
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "fal-L4-013",
+ "raw": "{\"hazards\": [\n  {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"dog bed and food bowl on the floor\", \"box\": [290, 690, 450, 810]},\n  {\"id\": \"KIT-03\", \"severity\": \"high\", \"evidence\": \"a chair is being used potentially as a step stool\", \"box\": [440, 490, 590, 800]},\n  {\"id\": \"LIV-05\", \"severity\": \"high\", \"evidence\": \"the kitchen is poorly lit\", \"box\": [0, 0, 1000, 1000]}\n]}",
+ "hazards": [
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "dog bed and food bowl on the floor",
+   "box": [
+    290,
+    690,
+    450,
+    810
+   ]
+  },
+  {
+   "id": "KIT-03",
+   "severity": "high",
+   "evidence": "a chair is being used potentially as a step stool",
+   "box": [
+    440,
+    490,
+    590,
+    800
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "high",
+   "evidence": "the kitchen is poorly lit",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  }
+ ]
+}

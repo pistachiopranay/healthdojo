@@ -1,0 +1,50 @@
+{
+ "id": "dem-L5-003",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove burners are visible and appear to be lit or recently used; knobs are freely accessible without locks.\",\n      \"box\": [135, 320, 253, 750]\n    },\n    {\n      \"id\": \"DEM-K02\",\n      \"severity\": \"high\",\n      \"evidence\": \"Multiple knives are stored in an open knife block on the counter, easily accessible.\",\n      \"box\": [503, 208, 550, 295]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cleaning chemical bottle (white with red label) is visible on the counter near the sink, unlocked and accessible.\",\n      \"box\": [450, 233, 478, 300]\n    },\n    {\n      \"id\": \"DEM-K04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Multiple medication bottles are left out on the counter, unsecured and easily reachable.\",\n      \"box\": [545, 250, 662, 317]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burners are visible and appear to be lit or recently used; knobs are freely accessible without locks.",
+   "box": [
+    135,
+    320,
+    253,
+    750
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Multiple knives are stored in an open knife block on the counter, easily accessible.",
+   "box": [
+    503,
+    208,
+    550,
+    295
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning chemical bottle (white with red label) is visible on the counter near the sink, unlocked and accessible.",
+   "box": [
+    450,
+    233,
+    478,
+    300
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Multiple medication bottles are left out on the counter, unsecured and easily reachable.",
+   "box": [
+    545,
+    250,
+    662,
+    317
+   ]
+  }
+ ]
+}

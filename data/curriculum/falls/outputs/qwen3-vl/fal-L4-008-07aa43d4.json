@@ -1,0 +1,61 @@
+{
+ "id": "fal-L4-008",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A loose, rumpled area rug is lying on the wooden floor in the center of the room, creating a tripping hazard for someone using a walker.\",\n      \"box\": [230, 820, 663, 984]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"A white electrical cord runs across the floor from the lamp, creating a significant tripping hazard for someone using a walker.\",\n      \"box\": [26, 848, 283, 940]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The wooden step stool is placed in the path between the door and the window, narrowing the walking path and potentially obstructing a walker.\",\n      \"box\": [583, 598, 749, 898]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The room is dimly lit, with only one small lamp providing localized light, creating shadows and poor visibility that increase fall risk.\",\n      \"box\": [0, 0, 1000, 1000]\n    },\n    {\n      \"id\": \"KIT-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"A wooden step stool is positioned near the lamp and window, indicating it may be used for reaching; it is unstable and not designed for safe use by someone with limited mobility.\",\n      \"box\": [583, 598, 749, 898]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A loose, rumpled area rug is lying on the wooden floor in the center of the room, creating a tripping hazard for someone using a walker.",
+   "box": [
+    230,
+    820,
+    663,
+    984
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "A white electrical cord runs across the floor from the lamp, creating a significant tripping hazard for someone using a walker.",
+   "box": [
+    26,
+    848,
+    283,
+    940
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The wooden step stool is placed in the path between the door and the window, narrowing the walking path and potentially obstructing a walker.",
+   "box": [
+    583,
+    598,
+    749,
+    898
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "The room is dimly lit, with only one small lamp providing localized light, creating shadows and poor visibility that increase fall risk.",
+   "box": [
+    0,
+    0,
+    1000,
+    1000
+   ]
+  },
+  {
+   "id": "KIT-03",
+   "severity": "high",
+   "evidence": "A wooden step stool is positioned near the lamp and window, indicating it may be used for reaching; it is unstable and not designed for safe use by someone with limited mobility.",
+   "box": [
+    583,
+    598,
+    749,
+    898
+   ]
+  }
+ ]
+}

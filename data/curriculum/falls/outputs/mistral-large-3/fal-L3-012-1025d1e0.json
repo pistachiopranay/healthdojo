@@ -1,0 +1,61 @@
+{
+ "id": "fal-L3-012",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"ENT-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Exterior steps without a handrail on both sides (only one side has a rail).\",\n      \"box\": [200, 400, 400, 600]\n    },\n    {\n      \"id\": \"ENT-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Raised threshold or door sill at the entrance.\",\n      \"box\": [350, 550, 550, 600]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Loose or unsecured pet bed on the walkway, which could shift underfoot.\",\n      \"box\": [200, 700, 500, 850]\n    },\n    {\n      \"id\": \"LIV-06\",\n      \"severity\": \"high\",\n      \"evidence\": \"Unmarked level change/step-down from the door entrance to the exterior walkway.\",\n      \"box\": [100, 550, 600, 850]\n    },\n    {\n      \"id\": \"ENT-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Exterior lighting may be insufficient (only one light visible near the door).\",\n      \"box\": [150, 100, 250, 300]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "ENT-01",
+   "severity": "high",
+   "evidence": "Exterior steps without a handrail on both sides (only one side has a rail).",
+   "box": [
+    200,
+    400,
+    400,
+    600
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "Raised threshold or door sill at the entrance.",
+   "box": [
+    350,
+    550,
+    550,
+    600
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Loose or unsecured pet bed on the walkway, which could shift underfoot.",
+   "box": [
+    200,
+    700,
+    500,
+    850
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "high",
+   "evidence": "Unmarked level change/step-down from the door entrance to the exterior walkway.",
+   "box": [
+    100,
+    550,
+    600,
+    850
+   ]
+  },
+  {
+   "id": "ENT-04",
+   "severity": "medium",
+   "evidence": "Exterior lighting may be insufficient (only one light visible near the door).",
+   "box": [
+    150,
+    100,
+    250,
+    300
+   ]
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "id": "fal-L1-000",
+ "raw": "{\"hazards\": [{\"id\": \"BATH-05\", \"severity\": \"high\", \"evidence\": \"Tub has a high wall/step-over with no visible transfer bench in use position for entry (bench positioned inside tub, not bridging tub wall)\", \"box\": [170, 300, 650, 750]}, {\"id\": \"BATH-06\", \"severity\": \"medium\", \"evidence\": \"Raised toilet seat is present but appears removable/aftermarket, and a walker-style toilet frame is unstable-looking, suggesting base toilet height is low without permanent support\", \"box\": [660, 460, 900, 850]}, {\"id\": \"BATH-07\", \"severity\": \"medium\", \"evidence\": \"Shower curtain liner bunched on floor near tub, could be a trip hazard\", \"box\": [130, 400, 300, 750]}, {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"Dog sitting inside the bathtub, pets underfoot creating fall risk near tub area\", \"box\": [320, 520, 520, 620]}, {\"id\": \"BATH-04\", \"severity\": \"low\", \"evidence\": \"Tub/shower floor is smooth white material with no visible non-slip mat or texture\", \"box\": [280, 550, 650, 700]}]}",
+ "hazards": [
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "Tub has a high wall/step-over with no visible transfer bench in use position for entry (bench positioned inside tub, not bridging tub wall)",
+   "box": [
+    170,
+    300,
+    650,
+    750
+   ]
+  },
+  {
+   "id": "BATH-06",
+   "severity": "medium",
+   "evidence": "Raised toilet seat is present but appears removable/aftermarket, and a walker-style toilet frame is unstable-looking, suggesting base toilet height is low without permanent support",
+   "box": [
+    660,
+    460,
+    900,
+    850
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "medium",
+   "evidence": "Shower curtain liner bunched on floor near tub, could be a trip hazard",
+   "box": [
+    130,
+    400,
+    300,
+    750
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Dog sitting inside the bathtub, pets underfoot creating fall risk near tub area",
+   "box": [
+    320,
+    520,
+    520,
+    620
+   ]
+  },
+  {
+   "id": "BATH-04",
+   "severity": "low",
+   "evidence": "Tub/shower floor is smooth white material with no visible non-slip mat or texture",
+   "box": [
+    280,
+    550,
+    650,
+    700
+   ]
+  }
+ ]
+}

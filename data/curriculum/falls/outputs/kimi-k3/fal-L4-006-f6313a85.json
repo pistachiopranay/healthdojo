@@ -1,0 +1,61 @@
+{
+ "id": "fal-L4-006",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-02\", \"severity\": \"high\", \"evidence\": \"Right-side stair handrail is short (spans only a few lower/mid steps) and does not run the full length of the staircase; left rail also appears to terminate before the bottom step, so a walker user lacks continuous graspable support.\", \"box\": [236, 74, 741, 837]}, {\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"Black cord/wire runs from the living-room/lamp area across the base of the staircase and the walking path, draping onto the lower step \u2014 directly in the route a walker would take.\", \"box\": [0, 454, 468, 995]}, {\"id\": \"STAIR-05\", \"severity\": \"high\", \"evidence\": \"Busy patterned carpet runner with no contrasting nosing makes step edges hard to distinguish, and several tread edges/sides show frayed or lifted carpet (light patches), creating a catch point for a walker or foot.\", \"box\": [302, 244, 662, 998]}, {\"id\": \"STAIR-04\", \"severity\": \"medium\", \"evidence\": \"Stair treads are in shadow despite the single landing sconce; the lower and mid flight is dim, which combined with the patterned carpet obscures step definition.\", \"box\": [299, 0, 674, 995]}, {\"id\": \"LIV-04\", \"severity\": \"medium\", \"evidence\": \"Soft upholstered sofa with a throw in the living area beside the stairs; seating appears low/soft for safe sit-to-stand after hip/knee replacement.\", \"box\": [0, 638, 184, 998]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-02",
+   "severity": "high",
+   "evidence": "Right-side stair handrail is short (spans only a few lower/mid steps) and does not run the full length of the staircase; left rail also appears to terminate before the bottom step, so a walker user lacks continuous graspable support.",
+   "box": [
+    236,
+    74,
+    741,
+    837
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Black cord/wire runs from the living-room/lamp area across the base of the staircase and the walking path, draping onto the lower step \u2014 directly in the route a walker would take.",
+   "box": [
+    0,
+    454,
+    468,
+    995
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "Busy patterned carpet runner with no contrasting nosing makes step edges hard to distinguish, and several tread edges/sides show frayed or lifted carpet (light patches), creating a catch point for a walker or foot.",
+   "box": [
+    302,
+    244,
+    662,
+    998
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Stair treads are in shadow despite the single landing sconce; the lower and mid flight is dim, which combined with the patterned carpet obscures step definition.",
+   "box": [
+    299,
+    0,
+    674,
+    995
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "Soft upholstered sofa with a throw in the living area beside the stairs; seating appears low/soft for safe sit-to-stand after hip/knee replacement.",
+   "box": [
+    0,
+    638,
+    184,
+    998
+   ]
+  }
+ ]
+}

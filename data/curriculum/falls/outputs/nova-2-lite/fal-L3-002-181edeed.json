@@ -1,0 +1,28 @@
+{
+ "id": "fal-L3-002",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"A loose wire is draped across the stairs, posing a tripping hazard.\",\n      \"box\": [307, 354, 699, 997]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"The stair covering appears worn and loose in several areas, which could create an undefined edge or trip hazard.\",\n      \"box\": [307, 154, 699, 997]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "A loose wire is draped across the stairs, posing a tripping hazard.",
+   "box": [
+    307,
+    354,
+    699,
+    997
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "The stair covering appears worn and loose in several areas, which could create an undefined edge or trip hazard.",
+   "box": [
+    307,
+    154,
+    699,
+    997
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "dem-L4-003",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E01\", \"severity\": \"high\", \"evidence\": \"Keys hanging on hook near front door, highlighted in red box, easily accessible for wandering\", \"box\": [822, 88, 878, 178]}, {\"id\": \"DEM-E02\", \"severity\": \"high\", \"evidence\": \"Front door standing open with glass storm door also open, direct access to outside\", \"box\": [637, 0, 806, 420]}, {\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"Stacks of newspapers, cardboard boxes, and shoes piled in the middle of the walkway/floor space\", \"box\": [558, 415, 915, 625]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "Keys hanging on hook near front door, highlighted in red box, easily accessible for wandering",
+   "box": [
+    822,
+    88,
+    878,
+    178
+   ]
+  },
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "Front door standing open with glass storm door also open, direct access to outside",
+   "box": [
+    637,
+    0,
+    806,
+    420
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Stacks of newspapers, cardboard boxes, and shoes piled in the middle of the walkway/floor space",
+   "box": [
+    558,
+    415,
+    915,
+    625
+   ]
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "fal-L5-010",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-02\", \"severity\": \"medium\", \"evidence\": \"Left wooden handrail terminates in a rounded end cap several treads above the bottom of the flight, leaving the lowest ~2 steps without a graspable rail on that side; the right rail extends closer to the bottom. For a walker user, the rail also does not continue past the bottom nosing.\", \"box\": [236, 74, 424, 707]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-02",
+   "severity": "medium",
+   "evidence": "Left wooden handrail terminates in a rounded end cap several treads above the bottom of the flight, leaving the lowest ~2 steps without a graspable rail on that side; the right rail extends closer to the bottom. For a walker user, the rail also does not continue past the bottom nosing.",
+   "box": [
+    236,
+    74,
+    424,
+    707
+   ]
+  }
+ ]
+}

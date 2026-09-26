@@ -1,0 +1,50 @@
+{
+ "id": "dem-L5-003",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-K01\",\"severity\":\"medium\",\"evidence\":\"Gas/electric stove on the left has cookware sitting on the burners and exposed front control knobs with no knob covers, so burners can be turned on freely.\",\"box\":[134,323,257,560]},{\"id\":\"DEM-K02\",\"severity\":\"high\",\"evidence\":\"Knife block with multiple knives standing out on the countertop within easy reach.\",\"box\":[506,209,548,303]},{\"id\":\"DEM-K04\",\"severity\":\"high\",\"evidence\":\"Several pill/medication bottles and a blue-and-white compartment pill organizer left out on the counter next to the knives.\",\"box\":[539,246,663,322]},{\"id\":\"DEM-K03\",\"severity\":\"medium\",\"evidence\":\"Bottled product (appears to be a cleaning/soap chemical) sitting out by the sink, unlocked and within reach.\",\"box\":[446,230,481,302]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "medium",
+   "evidence": "Gas/electric stove on the left has cookware sitting on the burners and exposed front control knobs with no knob covers, so burners can be turned on freely.",
+   "box": [
+    134,
+    323,
+    257,
+    560
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Knife block with multiple knives standing out on the countertop within easy reach.",
+   "box": [
+    506,
+    209,
+    548,
+    303
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Several pill/medication bottles and a blue-and-white compartment pill organizer left out on the counter next to the knives.",
+   "box": [
+    539,
+    246,
+    663,
+    322
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Bottled product (appears to be a cleaning/soap chemical) sitting out by the sink, unlocked and within reach.",
+   "box": [
+    446,
+    230,
+    481,
+    302
+   ]
+  }
+ ]
+}

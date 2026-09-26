@@ -1,0 +1,88 @@
+{
+ "id": "fal-L4-014",
+ "raw": "{\"hazards\":[{\"id\":\"KIT-01\",\"severity\":\"medium\",\"evidence\":\"Plates, bowls, and kitchen items are stored on high open shelves above the left counter, requiring reaching.\",\"box\":[0,0,313,304]},{\"id\":\"KIT-02\",\"severity\":\"medium\",\"evidence\":\"Baskets/bowls and kitchen items are on floor-level open shelves under the left counter, requiring bending.\",\"box\":[0,500,331,987]},{\"id\":\"KIT-03\",\"severity\":\"high\",\"evidence\":\"A freestanding wooden step stool is stored by the wall and appears available for reaching high shelves.\",\"box\":[321,371,397,626]},{\"id\":\"KIT-04\",\"severity\":\"high\",\"evidence\":\"Loose floor mat in the sink area plus shiny reflective wood flooring create a slip/trip risk for a walker.\",\"box\":[583,650,790,867]},{\"id\":\"LIV-01\",\"severity\":\"high\",\"evidence\":\"A loose mat/throw rug lies in the main kitchen walkway in front of the right cabinets/sink.\",\"box\":[583,650,790,867]},{\"id\":\"LIV-02\",\"severity\":\"high\",\"evidence\":\"A light-colored cord or hose snakes across the wooden floor through the walking path.\",\"box\":[318,605,535,1000]},{\"id\":\"LIV-05\",\"severity\":\"medium\",\"evidence\":\"Dim warm ambient lighting combined with bright window sunlight/glare reflecting off the floor can obscure the cord, rug edges, and floor changes.\"},{\"id\":\"LIV-07\",\"severity\":\"medium\",\"evidence\":\"A pet bowl and small toy/bone are on the floor in the walking area near the table.\",\"box\":[465,581,561,641]}]}",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Plates, bowls, and kitchen items are stored on high open shelves above the left counter, requiring reaching.",
+   "box": [
+    0,
+    0,
+    313,
+    304
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Baskets/bowls and kitchen items are on floor-level open shelves under the left counter, requiring bending.",
+   "box": [
+    0,
+    500,
+    331,
+    987
+   ]
+  },
+  {
+   "id": "KIT-03",
+   "severity": "high",
+   "evidence": "A freestanding wooden step stool is stored by the wall and appears available for reaching high shelves.",
+   "box": [
+    321,
+    371,
+    397,
+    626
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "Loose floor mat in the sink area plus shiny reflective wood flooring create a slip/trip risk for a walker.",
+   "box": [
+    583,
+    650,
+    790,
+    867
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "A loose mat/throw rug lies in the main kitchen walkway in front of the right cabinets/sink.",
+   "box": [
+    583,
+    650,
+    790,
+    867
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "A light-colored cord or hose snakes across the wooden floor through the walking path.",
+   "box": [
+    318,
+    605,
+    535,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Dim warm ambient lighting combined with bright window sunlight/glare reflecting off the floor can obscure the cord, rug edges, and floor changes."
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "A pet bowl and small toy/bone are on the floor in the walking area near the table.",
+   "box": [
+    465,
+    581,
+    561,
+    641
+   ]
+  }
+ ]
+}

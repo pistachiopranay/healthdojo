@@ -1,0 +1,55 @@
+{
+ "id": "fal-L4-007",
+ "raw": "{\"hazards\":[{\"id\":\"STAIR-01\",\"severity\":\"high\",\"evidence\":\"The staircase has a handrail on only the right side; no handrail is visible on the left.\",\"box\":[269,0,922,998]},{\"id\":\"STAIR-02\",\"severity\":\"high\",\"evidence\":\"The right-hand handrail stops well before the bottom of the staircase and does not cover the full flight.\",\"box\":[651,0,921,376]},{\"id\":\"STAIR-03\",\"severity\":\"high\",\"evidence\":\"Shoes and a stack of folded items are placed on separate stair treads, obstructing the route.\",\"box\":[346,514,731,790]},{\"id\":\"STAIR-04\",\"severity\":\"medium\",\"evidence\":\"The staircase is dimly lit with heavy shadows across multiple steps.\"},{\"id\":\"STAIR-05\",\"severity\":\"medium\",\"evidence\":\"The carpeted step edges have little visual contrast and are difficult to distinguish in the dim lighting.\",\"box\":[294,155,833,998]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "The staircase has a handrail on only the right side; no handrail is visible on the left.",
+   "box": [
+    269,
+    0,
+    922,
+    998
+   ]
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "high",
+   "evidence": "The right-hand handrail stops well before the bottom of the staircase and does not cover the full flight.",
+   "box": [
+    651,
+    0,
+    921,
+    376
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Shoes and a stack of folded items are placed on separate stair treads, obstructing the route.",
+   "box": [
+    346,
+    514,
+    731,
+    790
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "The staircase is dimly lit with heavy shadows across multiple steps."
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "The carpeted step edges have little visual contrast and are difficult to distinguish in the dim lighting.",
+   "box": [
+    294,
+    155,
+    833,
+    998
+   ]
+  }
+ ]
+}

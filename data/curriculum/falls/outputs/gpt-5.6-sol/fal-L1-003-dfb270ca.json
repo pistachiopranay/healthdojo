@@ -1,0 +1,39 @@
+{
+ "id": "fal-L1-003",
+ "raw": "{\"hazards\":[{\"id\":\"STAIR-03\",\"severity\":\"high\",\"evidence\":\"Multiple packages and a pair of shoes obstruct the lower steps and walker approach.\",\"box\":[294,472,530,680]},{\"id\":\"STAIR-05\",\"severity\":\"medium\",\"evidence\":\"The gray concrete step edges have little visual contrast, making the level changes difficult to distinguish.\",\"box\":[286,473,681,679]},{\"id\":\"ENT-02\",\"severity\":\"medium\",\"evidence\":\"A raised door sill is visible across the entrance doorway.\",\"box\":[379,469,638,493]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Multiple packages and a pair of shoes obstruct the lower steps and walker approach.",
+   "box": [
+    294,
+    472,
+    530,
+    680
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "The gray concrete step edges have little visual contrast, making the level changes difficult to distinguish.",
+   "box": [
+    286,
+    473,
+    681,
+    679
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "A raised door sill is visible across the entrance doorway.",
+   "box": [
+    379,
+    469,
+    638,
+    493
+   ]
+  }
+ ]
+}

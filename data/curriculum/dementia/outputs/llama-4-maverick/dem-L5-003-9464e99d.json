@@ -1,0 +1,50 @@
+{
+ "id": "dem-L5-003",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"stove with knobs\", \"box\": [130, 310, 250, 710]},\n    {\"id\": \"DEM-K02\", \"severity\": \"high\", \"evidence\": \"knife block on the counter\", \"box\": [450, 200, 740, 380]},\n    {\"id\": \"DEM-K03\", \"severity\": \"high\", \"evidence\": \"cleaning supplies under the sink\", \"box\": [450, 200, 740, 380]},\n    {\"id\": \"DEM-K04\", \"severity\": \"high\", \"evidence\": \"medication bottles on the counter\", \"box\": [450, 200, 740, 380]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "stove with knobs",
+   "box": [
+    130,
+    310,
+    250,
+    710
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "knife block on the counter",
+   "box": [
+    450,
+    200,
+    740,
+    380
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "cleaning supplies under the sink",
+   "box": [
+    450,
+    200,
+    740,
+    380
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "medication bottles on the counter",
+   "box": [
+    450,
+    200,
+    740,
+    380
+   ]
+  }
+ ]
+}

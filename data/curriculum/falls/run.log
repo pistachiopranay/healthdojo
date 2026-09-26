@@ -1,0 +1,148 @@
+== falls L1 10 items, 8 verified, 0s, cost {'image_calls': 0, 'llm_calls': 0}
+  llm 3s
+  llm 4s
+  llm 4s
+  llm 5s
+  llm 7s
+  llm 13s
+  treg-gemini 33s
+  treg-gemini 34s
+  treg-gemini 34s
+  treg-gemini 33s
+  llm 3s
+falls fal-L2-014 VERIFIED 1 hz 0 ds
+  llm 3s
+falls fal-L2-009 VERIFIED 1 hz 0 ds
+  llm 5s
+falls fal-L2-012 flagged 1 hz 0 ds
+  llm 5s
+falls fal-L2-010 VERIFIED 1 hz 0 ds
+  treg-gemini 64s
+  llm 3s
+falls fal-L2-011 VERIFIED 1 hz 0 ds
+  treg-gemini 65s
+  llm 3s
+falls fal-L2-013 VERIFIED 1 hz 0 ds
+== falls L2 15 items, 11 verified, 82s, cost {'image_calls': 0, 'llm_calls': 12, 'treg_gemini_calls': 6}
+  llm 11s
+  llm 12s
+  llm 14s
+  llm 16s
+  llm 16s
+  llm 19s
+  llm 24s
+falls fal-L3-014 flagged 0 hz 0 ds
+  treg-gemini 27s
+  treg-gemini 28s
+  treg-gemini 33s
+  treg-gemini 33s
+  treg gemini failed, falling back: treg task failed: {'code': 80007, 'message': 'reference image returned status 404', 'request_id': 'req_eb99f0a2-4c86-42e1-b04b-d7336fbbb4cf'}
+  treg gemini failed, falling back: treg task failed: {'code': 80007, 'message': 'reference image returned status 404', 'request_id': 'req_351e71bc-0aaf-4a10-826f-ab05563d452c'}
+  img stable-image-inpaint-v1: 17s
+  img stable-image-inpaint-v1: 17s
+  treg-gemini 39s
+  treg-gemini 34s
+  treg-gemini 43s
+  treg-gemini 41s
+  treg-gemini 48s
+  treg-gemini 49s
+  treg-gemini 35s
+  treg-gemini 37s
+  llm 5s
+falls fal-L3-011 VERIFIED 2 hz 1 ds
+  llm 5s
+falls fal-L3-013 VERIFIED 2 hz 1 ds
+  treg-gemini 61s
+  treg-gemini 61s
+  llm 3s
+falls fal-L3-010 flagged 2 hz 1 ds
+  llm 4s
+falls fal-L3-012 VERIFIED 2 hz 1 ds
+  treg-gemini 37s
+  treg-gemini 42s
+  llm 7s
+falls fal-L3-009 flagged 2 hz 1 ds
+  llm 4s
+falls fal-L3-008 flagged 2 hz 1 ds
+== falls L3 15 items, 3 verified, 162s, cost {'image_calls': 2, 'llm_calls': 25, 'treg_gemini_calls': 22}
+  llm 26s
+falls fal-L4-000 flagged 0 hz 0 ds
+  llm 26s
+falls fal-L4-010 flagged 1 hz 0 ds
+  llm 26s
+falls fal-L4-008 flagged 1 hz 0 ds
+  llm 26s
+falls fal-L4-013 flagged 1 hz 0 ds
+  llm 27s
+falls fal-L4-011 flagged 0 hz 0 ds
+  llm 27s
+falls fal-L4-002 flagged 1 hz 0 ds
+  llm 28s
+falls fal-L4-009 flagged 0 hz 0 ds
+  llm 28s
+falls fal-L4-012 flagged 0 hz 0 ds
+  llm 25s
+falls fal-L4-014 ERR 0 Expecting ',' delimiter: line 4 column 295 (char 908)
+  llm 26s
+falls fal-L4-014 flagged 1 hz 0 ds
+== falls L4 15 items, 0 verified, 77s, cost {'image_calls': 2, 'llm_calls': 35, 'treg_gemini_calls': 22}
+  llm 15s
+  llm 16s
+  llm 17s
+  llm 19s
+  llm 26s
+falls fal-L5-003 flagged 1 hz 0 ds
+  llm 27s
+falls fal-L5-001 flagged 1 hz 0 ds
+  llm 27s
+falls fal-L5-006 flagged 1 hz 0 ds
+  llm 27s
+falls fal-L5-004 flagged 0 hz 0 ds
+  treg-gemini 33s
+  treg-gemini 32s
+  llm 23s
+falls fal-L5-011 ERR 0 Expecting ',' delimiter: line 2 column 275 (char 286)
+  treg-gemini 33s
+  llm 28s
+falls fal-L5-008 flagged 0 hz 0 ds
+  llm 28s
+falls fal-L5-009 flagged 1 hz 0 ds
+  llm 29s
+falls fal-L5-010 ERR 0 Expecting ',' delimiter: line 1 column 478 (char 477)
+  treg-gemini 39s
+  llm 4s
+  llm 18s
+  llm 27s
+falls fal-L5-011 flagged 0 hz 0 ds
+  llm 24s
+falls fal-L5-013 flagged 1 hz 0 ds
+  treg-gemini 33s
+  treg-gemini 33s
+  treg-gemini 33s
+  treg-gemini 45s
+  llm 25s
+falls fal-L5-014 flagged 1 hz 0 ds
+  treg-gemini 44s
+  treg-gemini 37s
+  treg-gemini 43s
+  treg-gemini 72s
+  llm 11s
+falls fal-L5-007 flagged 0 hz 3 ds
+  llm 4s
+falls fal-L5-005 flagged 0 hz 3 ds
+  treg-gemini 62s
+  treg-gemini 58s
+  llm 4s
+falls fal-L5-002 flagged 0 hz 3 ds
+  treg-gemini 42s
+  treg-gemini 33s
+  llm 13s
+falls fal-L5-000 VERIFIED 0 hz 3 ds
+  treg-gemini 33s
+  treg-gemini 34s
+  llm 3s
+falls fal-L5-010 VERIFIED 0 hz 3 ds
+  llm 4s
+falls fal-L5-012 flagged 0 hz 3 ds
+== falls L5 15 items, 2 verified, 202s, cost {'image_calls': 2, 'llm_calls': 58, 'treg_gemini_calls': 40}
+DONE falls {'image_calls': 2, 'llm_calls': 58, 'treg_gemini_calls': 40}

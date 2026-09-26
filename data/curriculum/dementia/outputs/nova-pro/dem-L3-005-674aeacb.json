@@ -1,0 +1,37 @@
+{
+ "id": "dem-L3-005",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B02\", \"severity\": \"low\", \"evidence\": \"white toilet seat on white toilet and floor (low contrast)\", \"box\": [516, 667, 741, 999]}, {\"id\": \"DEM-B03\", \"severity\": \"low\", \"evidence\": \"dark bath mat on a light floor\", \"box\": [284, 768, 521, 999]}, {\"id\": \"DEM-B04\", \"box\": [782, 622, 932, 724]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "low",
+   "evidence": "white toilet seat on white toilet and floor (low contrast)",
+   "box": [
+    516,
+    667,
+    741,
+    999
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "low",
+   "evidence": "dark bath mat on a light floor",
+   "box": [
+    284,
+    768,
+    521,
+    999
+   ]
+  },
+  {
+   "id": "DEM-B04",
+   "box": [
+    782,
+    622,
+    932,
+    724
+   ]
+  }
+ ]
+}

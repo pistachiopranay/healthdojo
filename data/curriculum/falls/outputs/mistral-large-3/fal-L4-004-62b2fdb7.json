@@ -1,0 +1,61 @@
+{
+ "id": "fal-L4-004",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose rug on the floor in the center of the living area\",\n      \"box\": [350, 500, 700, 700]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Low or soft seating (green armchairs) without clear armrest support for standing up\",\n      \"box\": [50, 350, 400, 600]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Room appears dimly lit, which could contribute to poor visibility\",\n      \"box\": [0, 0, 1000, 800]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Pet bed and items on the floor, posing a tripping hazard\",\n      \"box\": [500, 550, 700, 650]\n    },\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Insufficient walker clearance around furniture, particularly near the sofas and chairs\",\n      \"box\": [0, 300, 1000, 700]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose rug on the floor in the center of the living area",
+   "box": [
+    350,
+    500,
+    700,
+    700
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "high",
+   "evidence": "Low or soft seating (green armchairs) without clear armrest support for standing up",
+   "box": [
+    50,
+    350,
+    400,
+    600
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Room appears dimly lit, which could contribute to poor visibility",
+   "box": [
+    0,
+    0,
+    1000,
+    800
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pet bed and items on the floor, posing a tripping hazard",
+   "box": [
+    500,
+    550,
+    700,
+    650
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "Insufficient walker clearance around furniture, particularly near the sofas and chairs",
+   "box": [
+    0,
+    300,
+    1000,
+    700
+   ]
+  }
+ ]
+}

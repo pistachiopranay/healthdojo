@@ -1,0 +1,50 @@
+{
+ "id": "dem-L4-006",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"Stove burner left on, knobs freely usable\", \"box\": [23, 28, 341, 298]}, {\"id\": \"DEM-K02\", \"severity\": \"medium\", \"evidence\": \"Knives and sharps out on the counter\", \"box\": [670, 225, 699, 306]}, {\"id\": \"DEM-K03\", \"severity\": \"medium\", \"evidence\": \"Cleaning chemicals out and unlocked\", \"box\": [451, 238, 475, 300]}, {\"id\": \"DEM-K04\", \"severity\": \"medium\", \"evidence\": \"Medication bottles left out\", \"box\": [502, 237, 568, 303]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner left on, knobs freely usable",
+   "box": [
+    23,
+    28,
+    341,
+    298
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "medium",
+   "evidence": "Knives and sharps out on the counter",
+   "box": [
+    670,
+    225,
+    699,
+    306
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning chemicals out and unlocked",
+   "box": [
+    451,
+    238,
+    475,
+    300
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Medication bottles left out",
+   "box": [
+    502,
+    237,
+    568,
+    303
+   ]
+  }
+ ]
+}

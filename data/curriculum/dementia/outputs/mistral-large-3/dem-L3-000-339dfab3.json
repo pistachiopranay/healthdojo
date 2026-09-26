@@ -1,0 +1,39 @@
+{
+ "id": "dem-L3-000",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove burner is visible with flame on, and knobs are freely accessible.\",\n      \"box\": [150, 200, 400, 350]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Cleaning chemicals are visible and unlocked on the countertop.\",\n      \"box\": [500, 250, 650, 350]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Clutter, including bottles and containers, is present on the countertop which could obstruct walkways if items fall.\",\n      \"box\": [400, 200, 700, 350]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner is visible with flame on, and knobs are freely accessible.",
+   "box": [
+    150,
+    200,
+    400,
+    350
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "Cleaning chemicals are visible and unlocked on the countertop.",
+   "box": [
+    500,
+    250,
+    650,
+    350
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Clutter, including bottles and containers, is present on the countertop which could obstruct walkways if items fall.",
+   "box": [
+    400,
+    200,
+    700,
+    350
+   ]
+  }
+ ]
+}

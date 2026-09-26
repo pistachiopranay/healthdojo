@@ -1,0 +1,34 @@
+{
+ "id": "dem-L2-001",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Car keys are not visibly present, but if they are near the front door (not clearly visible), this would be a hazard.\",\n      \"box\": []\n    },\n    {\n      \"id\": \"DEM-E02\",\n      \"evidence\": \"Front door is closed.\",\n      \"box\": [450, 150, 500, 350]\n    },\n    {\n      \"id\": \"DEM-R02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"No bold high-contrast patterned rug visible.\",\n      \"box\": []\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"No clutter piles visible in the walkway.\",\n      \"box\": []\n    }\n  ]\n}\n```\nGiven the visible content in the image, there are no immediate hazards specific to dementia identified from the provided checklist. The room appears generally safe. If there are concerns not visible in the image (e.g., items behind closed doors or cabinets), a physical inspection would be necessary.",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "high",
+   "evidence": "Car keys are not visibly present, but if they are near the front door (not clearly visible), this would be a hazard.",
+   "box": []
+  },
+  {
+   "id": "DEM-E02",
+   "evidence": "Front door is closed.",
+   "box": [
+    450,
+    150,
+    500,
+    350
+   ]
+  },
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "No bold high-contrast patterned rug visible.",
+   "box": []
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "No clutter piles visible in the walkway.",
+   "box": []
+  }
+ ]
+}

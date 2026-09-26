@@ -1,0 +1,17 @@
+{
+ "id": "fal-L3-001",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-05\", \"severity\": \"medium\", \"evidence\": \"Undefined step edges / loose stair covering\", \"box\": [300, 246, 638, 999]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "Undefined step edges / loose stair covering",
+   "box": [
+    300,
+    246,
+    638,
+    999
+   ]
+  }
+ ]
+}

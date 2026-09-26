@@ -1,0 +1,50 @@
+{
+ "id": "fal-L1-004",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Missing handrail on one side of the staircase; only one handrail is present.\",\n      \"box\": [300, 100, 700, 900]\n    },\n    {\n      \"id\": \"STAIR-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Extension cord and other objects placed on the stairs.\",\n      \"box\": [400, 500, 600, 700]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Lighting at the top of the stairs is present but may not be sufficient for safe navigation.\",\n      \"box\": [500, 0, 600, 200]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Stair edges appear undefined due to uniform color and lack of contrasting edge markers.\",\n      \"box\": [300, 400, 700, 900]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Missing handrail on one side of the staircase; only one handrail is present.",
+   "box": [
+    300,
+    100,
+    700,
+    900
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Extension cord and other objects placed on the stairs.",
+   "box": [
+    400,
+    500,
+    600,
+    700
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Lighting at the top of the stairs is present but may not be sufficient for safe navigation.",
+   "box": [
+    500,
+    0,
+    600,
+    200
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "Stair edges appear undefined due to uniform color and lack of contrasting edge markers.",
+   "box": [
+    300,
+    400,
+    700,
+    900
+   ]
+  }
+ ]
+}

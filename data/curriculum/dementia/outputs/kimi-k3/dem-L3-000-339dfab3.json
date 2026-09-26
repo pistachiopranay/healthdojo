@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-000",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"Gas stove burner is lit with a visible blue flame and the control knobs are exposed/freely usable with no locks or covers.\", \"box\": [34, 49, 334, 288]}, {\"id\": \"DEM-K03\", \"severity\": \"medium\", \"evidence\": \"Cleaning chemicals (disinfectant/cleaner bottle, spray bottle, and a tub of wipes) are sitting out unlocked on the counter next to the sink within easy reach.\", \"box\": [655, 189, 823, 270]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Gas stove burner is lit with a visible blue flame and the control knobs are exposed/freely usable with no locks or covers.",
+   "box": [
+    34,
+    49,
+    334,
+    288
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning chemicals (disinfectant/cleaner bottle, spray bottle, and a tub of wipes) are sitting out unlocked on the counter next to the sink within easy reach.",
+   "box": [
+    655,
+    189,
+    823,
+    270
+   ]
+  }
+ ]
+}

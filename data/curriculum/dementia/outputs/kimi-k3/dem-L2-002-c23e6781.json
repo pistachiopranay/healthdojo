@@ -1,0 +1,28 @@
+{
+ "id": "dem-L2-002",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K04\", \"severity\": \"medium\", \"evidence\": \"Small bottle (appears to be medication) left out on the nightstand next to the lamp, within easy reach of the bed.\", \"box\": [612, 429, 749, 638]}, {\"id\": \"DEM-R02\", \"severity\": \"low\", \"evidence\": \"Area rug with a strong geometric bordered pattern beside the bed/walkway that could be misperceived as an edge, step, or hole.\", \"box\": [427, 611, 737, 935]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Small bottle (appears to be medication) left out on the nightstand next to the lamp, within easy reach of the bed.",
+   "box": [
+    612,
+    429,
+    749,
+    638
+   ]
+  },
+  {
+   "id": "DEM-R02",
+   "severity": "low",
+   "evidence": "Area rug with a strong geometric bordered pattern beside the bed/walkway that could be misperceived as an edge, step, or hole.",
+   "box": [
+    427,
+    611,
+    737,
+    935
+   ]
+  }
+ ]
+}

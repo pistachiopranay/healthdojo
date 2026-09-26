@@ -1,0 +1,17 @@
+{
+ "id": "dem-L2-005",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R01\", \"severity\": \"medium\", \"evidence\": \"Large mirror facing the bed\", \"box\": [101, 0, 245, 423]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "Large mirror facing the bed",
+   "box": [
+    101,
+    0,
+    245,
+    423
+   ]
+  }
+ ]
+}

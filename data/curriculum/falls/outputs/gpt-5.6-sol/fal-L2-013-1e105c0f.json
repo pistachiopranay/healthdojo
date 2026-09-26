@@ -1,0 +1,28 @@
+{
+ "id": "fal-L2-013",
+ "raw": "{\"hazards\":[{\"id\":\"ENT-02\",\"severity\":\"medium\",\"evidence\":\"A raised wooden threshold is visible across the bottom of the entry doorway and could catch a walker.\",\"box\":[369,354,440,385]},{\"id\":\"LIV-05\",\"severity\":\"low\",\"evidence\":\"Strong daylight from the windows creates bright glare and reflections on the wood floor.\",\"box\":[600,0,899,691]}]}",
+ "hazards": [
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "A raised wooden threshold is visible across the bottom of the entry doorway and could catch a walker.",
+   "box": [
+    369,
+    354,
+    440,
+    385
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Strong daylight from the windows creates bright glare and reflections on the wood floor.",
+   "box": [
+    600,
+    0,
+    899,
+    691
+   ]
+  }
+ ]
+}

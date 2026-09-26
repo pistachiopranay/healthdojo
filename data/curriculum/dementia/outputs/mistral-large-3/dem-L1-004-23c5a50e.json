@@ -1,0 +1,33 @@
+{
+ "id": "dem-L1-004",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E02\",\n      \"severity\": \"high\",\n      \"evidence\": \"Front door is left open to the outside, visible through the doorway.\",\n      \"box\": [400, 150, 500, 400]\n    },\n    {\n      \"id\": \"DEM-R02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Blue cushion on the dark blue recliner and patterned throw on the sofa could be perceived as bold high-contrast patterns.\",\n      \"box\": [100, 400, 300, 650]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"Potential clutter in terms of multiple pieces of furniture, though walkways appear mostly clear.\"\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "Front door is left open to the outside, visible through the doorway.",
+   "box": [
+    400,
+    150,
+    500,
+    400
+   ]
+  },
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "Blue cushion on the dark blue recliner and patterned throw on the sofa could be perceived as bold high-contrast patterns.",
+   "box": [
+    100,
+    400,
+    300,
+    650
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "Potential clutter in terms of multiple pieces of furniture, though walkways appear mostly clear."
+  }
+ ]
+}

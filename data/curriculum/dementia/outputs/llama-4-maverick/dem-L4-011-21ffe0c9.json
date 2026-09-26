@@ -1,0 +1,39 @@
+{
+ "id": "dem-L4-011",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"stove with knobs\", \"box\": [150, 300, 260, 640]},\n    {\"id\": \"DEM-K04\", \"severity\": \"high\", \"evidence\": \"medication bottles on the counter\", \"box\": [270, 200, 720, 320]},\n    {\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"clutter on the counter\", \"box\": [270, 200, 720, 320]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "stove with knobs",
+   "box": [
+    150,
+    300,
+    260,
+    640
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "medication bottles on the counter",
+   "box": [
+    270,
+    200,
+    720,
+    320
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "clutter on the counter",
+   "box": [
+    270,
+    200,
+    720,
+    320
+   ]
+  }
+ ]
+}

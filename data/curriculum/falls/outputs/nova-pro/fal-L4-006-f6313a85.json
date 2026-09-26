@@ -1,0 +1,50 @@
+{
+ "id": "fal-L4-006",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-01\", \"severity\": \"high\", \"evidence\": \"Missing handrail on one side of the staircase.\", \"box\": [235, 82, 419, 830]}, {\"id\": \"STAIR-02\", \"severity\": \"medium\", \"evidence\": \"Handrail on the left side appears loose or not graspable.\", \"box\": [235, 82, 419, 830]}, {\"id\": \"STAIR-03\", \"severity\": \"medium\", \"evidence\": \"Objects (wires) on the stairs.\", \"box\": [168, 500, 353, 765]}, {\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"Cords or wires across the walkway.\", \"box\": [168, 500, 353, 765]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Missing handrail on one side of the staircase.",
+   "box": [
+    235,
+    82,
+    419,
+    830
+   ]
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "medium",
+   "evidence": "Handrail on the left side appears loose or not graspable.",
+   "box": [
+    235,
+    82,
+    419,
+    830
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "medium",
+   "evidence": "Objects (wires) on the stairs.",
+   "box": [
+    168,
+    500,
+    353,
+    765
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Cords or wires across the walkway.",
+   "box": [
+    168,
+    500,
+    353,
+    765
+   ]
+  }
+ ]
+}

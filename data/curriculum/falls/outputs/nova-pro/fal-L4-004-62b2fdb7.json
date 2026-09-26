@@ -1,0 +1,61 @@
+{
+ "id": "fal-L4-004",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"Throw rug on walkway\", \"box\": [305, 552, 749, 836]}, {\"id\": \"LIV-02\", \"severity\": \"low\", \"evidence\": \"Cords or wires across walkway\", \"box\": [790, 643, 880, 863]}, {\"id\": \"LIV-03\", \"severity\": \"low\", \"evidence\": \"Cluttered or narrowed walking path\", \"box\": [383, 413, 482, 550]}, {\"id\": \"LIV-04\", \"severity\": \"low\", \"evidence\": \"Low or soft seating without armrests\", \"box\": [570, 319, 665, 462]}, {\"id\": \"LIV-07\", \"severity\": \"low\", \"evidence\": \"Pets and pet items underfoot\", \"box\": [568, 519, 711, 621]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Throw rug on walkway",
+   "box": [
+    305,
+    552,
+    749,
+    836
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "low",
+   "evidence": "Cords or wires across walkway",
+   "box": [
+    790,
+    643,
+    880,
+    863
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "low",
+   "evidence": "Cluttered or narrowed walking path",
+   "box": [
+    383,
+    413,
+    482,
+    550
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "low",
+   "evidence": "Low or soft seating without armrests",
+   "box": [
+    570,
+    319,
+    665,
+    462
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "low",
+   "evidence": "Pets and pet items underfoot",
+   "box": [
+    568,
+    519,
+    711,
+    621
+   ]
+  }
+ ]
+}

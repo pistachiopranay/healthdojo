@@ -1,0 +1,17 @@
+{
+ "id": "fal-L2-008",
+ "raw": "{\"hazards\": [{\"id\": \"ENT-02\", \"severity\": \"medium\", \"evidence\": \"Raised threshold at the front door.\", \"box\": [309, 482, 690, 530]}]}",
+ "hazards": [
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "Raised threshold at the front door.",
+   "box": [
+    309,
+    482,
+    690,
+    530
+   ]
+  }
+ ]
+}

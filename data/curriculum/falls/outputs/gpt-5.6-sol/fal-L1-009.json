@@ -1,0 +1,17 @@
+{
+ "id": "fal-L1-009",
+ "raw": "{\"hazards\":[{\"id\":\"STAIR-03\",\"severity\":\"high\",\"evidence\":\"Three pairs of shoes are placed on a stair tread, creating a major trip obstruction.\",\"box\":[370,574,598,677]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Three pairs of shoes are placed on a stair tread, creating a major trip obstruction.",
+   "box": [
+    370,
+    574,
+    598,
+    677
+   ]
+  }
+ ]
+}

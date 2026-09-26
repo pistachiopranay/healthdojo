@@ -1,0 +1,39 @@
+{
+ "id": "fal-L3-002",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-05\", \"severity\": \"high\", \"evidence\": \"Carpet on stairs is torn, frayed, and bunched up creating undefined/loose edges on multiple steps\", \"box\": [370, 130, 900, 650]}, {\"id\": \"STAIR-03\", \"severity\": \"high\", \"evidence\": \"A cable/wire runs diagonally across multiple stair treads, creating a trip hazard\", \"box\": [370, 300, 970, 830]}, {\"id\": \"STAIR-06\", \"severity\": \"medium\", \"evidence\": \"Carpet damage obscures step edges making steps appear uneven or hard to distinguish\", \"box\": [400, 350, 880, 620]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "Carpet on stairs is torn, frayed, and bunched up creating undefined/loose edges on multiple steps",
+   "box": [
+    370,
+    130,
+    900,
+    650
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "A cable/wire runs diagonally across multiple stair treads, creating a trip hazard",
+   "box": [
+    370,
+    300,
+    970,
+    830
+   ]
+  },
+  {
+   "id": "STAIR-06",
+   "severity": "medium",
+   "evidence": "Carpet damage obscures step edges making steps appear uneven or hard to distinguish",
+   "box": [
+    400,
+    350,
+    880,
+    620
+   ]
+  }
+ ]
+}

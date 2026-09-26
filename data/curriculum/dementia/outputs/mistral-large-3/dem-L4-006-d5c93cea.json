@@ -1,0 +1,39 @@
+{
+ "id": "dem-L4-006",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove burner is visibly on, and knobs are freely accessible.\",\n      \"box\": [50, 150, 300, 300]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cleaning chemicals or similar items are visible on the countertop in bottles.\",\n      \"box\": [450, 200, 600, 280]\n    },\n    {\n      \"id\": \"DEM-K04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Medication bottles are left out on the countertop.\",\n      \"box\": [450, 200, 650, 280]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner is visibly on, and knobs are freely accessible.",
+   "box": [
+    50,
+    150,
+    300,
+    300
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning chemicals or similar items are visible on the countertop in bottles.",
+   "box": [
+    450,
+    200,
+    600,
+    280
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Medication bottles are left out on the countertop.",
+   "box": [
+    450,
+    200,
+    650,
+    280
+   ]
+  }
+ ]
+}

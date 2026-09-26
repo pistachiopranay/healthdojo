@@ -1,0 +1,17 @@
+{
+ "id": "fal-L2-002",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-03\", \"severity\": \"medium\", \"evidence\": \"shoes on the stairs\", \"box\": [436, 586, 555, 641]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "medium",
+   "evidence": "shoes on the stairs",
+   "box": [
+    436,
+    586,
+    555,
+    641
+   ]
+  }
+ ]
+}

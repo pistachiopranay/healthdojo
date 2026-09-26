@@ -1,0 +1,39 @@
+{
+ "id": "dem-L3-011",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"Stove burner is on and knobs are visible and accessible\", \"box\": [130, 290, 270, 630]},\n    {\"id\": \"DEM-K04\", \"severity\": \"high\", \"evidence\": \"Medication bottles are left out on the counter\", \"box\": [290, 240, 700, 360]},\n    {\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"Clutter is visible on the countertop and shelves\", \"box\": [290, 240, 700, 360]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner is on and knobs are visible and accessible",
+   "box": [
+    130,
+    290,
+    270,
+    630
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Medication bottles are left out on the counter",
+   "box": [
+    290,
+    240,
+    700,
+    360
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Clutter is visible on the countertop and shelves",
+   "box": [
+    290,
+    240,
+    700,
+    360
+   ]
+  }
+ ]
+}

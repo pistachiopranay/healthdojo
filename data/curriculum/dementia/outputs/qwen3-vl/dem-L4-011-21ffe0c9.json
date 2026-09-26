@@ -1,0 +1,50 @@
+{
+ "id": "dem-L4-011",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove with visible knobs and burner area; no indication of knob covers or stove lock; burner may be left on accidentally.\",\n      \"box\": [138, 310, 255, 750]\n    },\n    {\n      \"id\": \"DEM-K04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Multiple medication bottles clearly visible and accessible on the kitchen counter near the sink.\",\n      \"box\": [484, 212, 658, 314]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cleaning supplies or chemical containers appear to be on the counter near the sink, not stored in a locked cabinet.\",\n      \"box\": [444, 230, 484, 300]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Counter cluttered with bottles and containers; potential tripping or confusion hazard in walkway area.\",\n      \"box\": [280, 208, 720, 320]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove with visible knobs and burner area; no indication of knob covers or stove lock; burner may be left on accidentally.",
+   "box": [
+    138,
+    310,
+    255,
+    750
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Multiple medication bottles clearly visible and accessible on the kitchen counter near the sink.",
+   "box": [
+    484,
+    212,
+    658,
+    314
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "medium",
+   "evidence": "Cleaning supplies or chemical containers appear to be on the counter near the sink, not stored in a locked cabinet.",
+   "box": [
+    444,
+    230,
+    484,
+    300
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Counter cluttered with bottles and containers; potential tripping or confusion hazard in walkway area.",
+   "box": [
+    280,
+    208,
+    720,
+    320
+   ]
+  }
+ ]
+}

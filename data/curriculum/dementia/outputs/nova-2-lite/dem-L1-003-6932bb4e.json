@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-003",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Medication bottles are left out on the counter near the sink\",\n      \"box\": [688, 331, 750, 380]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Medication bottles are left out on the counter near the sink",
+   "box": [
+    688,
+    331,
+    750,
+    380
+   ]
+  }
+ ]
+}

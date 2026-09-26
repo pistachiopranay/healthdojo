@@ -1,0 +1,61 @@
+{
+ "id": "fal-L3-005",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose rug on the floor in the center of the living room\",\n      \"box\": [350, 500, 650, 650]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Soft seating (teal sofa and yellow armchair) without clear armrest support for standing/sitting assistance\",\n      \"box\": [50, 350, 500, 600]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Pet bed and food bowl on the floor, posing a tripping hazard\",\n      \"box\": [50, 700, 250, 900]\n    },\n    {\n      \"id\": \"BED-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Insufficient walker clearance around furniture, narrow pathways between sofa, chair, and desk\",\n      \"box\": [0, 400, 1000, 800]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cluttered walking path due to placement of pet items and furniture arrangement\",\n      \"box\": [0, 400, 1000, 900]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose rug on the floor in the center of the living room",
+   "box": [
+    350,
+    500,
+    650,
+    650
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "high",
+   "evidence": "Soft seating (teal sofa and yellow armchair) without clear armrest support for standing/sitting assistance",
+   "box": [
+    50,
+    350,
+    500,
+    600
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "Pet bed and food bowl on the floor, posing a tripping hazard",
+   "box": [
+    50,
+    700,
+    250,
+    900
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "Insufficient walker clearance around furniture, narrow pathways between sofa, chair, and desk",
+   "box": [
+    0,
+    400,
+    1000,
+    800
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Cluttered walking path due to placement of pet items and furniture arrangement",
+   "box": [
+    0,
+    400,
+    1000,
+    900
+   ]
+  }
+ ]
+}

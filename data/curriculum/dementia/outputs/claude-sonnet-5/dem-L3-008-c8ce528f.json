@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-008",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K01\", \"severity\": \"high\", \"evidence\": \"Inset shows a gas stove burner lit with a visible blue flame, and the knobs are freely accessible on the front of the stove\", \"box\": [30, 50, 340, 270]}, {\"id\": \"DEM-K04\", \"severity\": \"high\", \"evidence\": \"Inset shows multiple open medication/prescription bottles and a pill organizer left out on a counter/table\", \"box\": [925, 50, 1215, 260]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Inset shows a gas stove burner lit with a visible blue flame, and the knobs are freely accessible on the front of the stove",
+   "box": [
+    30,
+    50,
+    340,
+    270
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "high",
+   "evidence": "Inset shows multiple open medication/prescription bottles and a pill organizer left out on a counter/table",
+   "box": [
+    925,
+    50,
+    1215,
+    260
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "fal-L3-003",
+ "raw": "{\"hazards\": [{\"id\": \"KIT-01\", \"severity\": \"medium\", \"evidence\": \"Frequently used items stored high\", \"box\": [0, 0, 319, 292]}, {\"id\": \"KIT-04\", \"severity\": \"high\", \"evidence\": \"Slippery floor at sink\", \"box\": [162, 706, 504, 933]}, {\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"Cords or wires across walkway\", \"box\": [349, 543, 681, 1000]}]}",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Frequently used items stored high",
+   "box": [
+    0,
+    0,
+    319,
+    292
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "Slippery floor at sink",
+   "box": [
+    162,
+    706,
+    504,
+    933
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Cords or wires across walkway",
+   "box": [
+    349,
+    543,
+    681,
+    1000
+   ]
+  }
+ ]
+}

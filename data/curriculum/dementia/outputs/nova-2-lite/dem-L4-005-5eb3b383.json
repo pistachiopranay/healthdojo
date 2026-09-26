@@ -1,0 +1,23 @@
+{
+ "id": "dem-L4-005",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove burners are freely accessible and knobs are easily operable, posing a risk of accidental activation or leaving burners on.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"DEM-K02\",\n      \"severity\": \"high\",\n      \"evidence\": \"Knives are stored in a knife block on the counter, which is easily accessible and could be misused or misperceived by someone with dementia.\",\n      \"box\": [650, 229, 705, 314]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burners are freely accessible and knobs are easily operable, posing a risk of accidental activation or leaving burners on.",
+   "box": null
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "Knives are stored in a knife block on the counter, which is easily accessible and could be misused or misperceived by someone with dementia.",
+   "box": [
+    650,
+    229,
+    705,
+    314
+   ]
+  }
+ ]
+}

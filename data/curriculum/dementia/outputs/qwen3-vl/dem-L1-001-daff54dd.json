@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-001",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Large pile of newspapers and papers on the floor next to the blue armchair, obstructing the walkway.\",\n      \"box\": [288, 477, 558, 695]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Large pile of newspapers and papers on the floor next to the blue armchair, obstructing the walkway.",
+   "box": [
+    288,
+    477,
+    558,
+    695
+   ]
+  }
+ ]
+}

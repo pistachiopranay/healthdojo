@@ -1,0 +1,39 @@
+{
+ "id": "fal-L2-000",
+ "raw": "{\"hazards\": [{\"id\": \"BED-02\", \"severity\": \"low\", \"evidence\": \"No reachable bedside light\", \"box\": [706, 129, 779, 308]}, {\"id\": \"BED-03\", \"severity\": \"low\", \"evidence\": \"Dark bed-to-bathroom path\", \"box\": [119, 269, 235, 400]}, {\"id\": \"LIV-02\", \"severity\": \"low\", \"evidence\": \"Cords or wires across walkway\", \"box\": [242, 473, 462, 625]}]}",
+ "hazards": [
+  {
+   "id": "BED-02",
+   "severity": "low",
+   "evidence": "No reachable bedside light",
+   "box": [
+    706,
+    129,
+    779,
+    308
+   ]
+  },
+  {
+   "id": "BED-03",
+   "severity": "low",
+   "evidence": "Dark bed-to-bathroom path",
+   "box": [
+    119,
+    269,
+    235,
+    400
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "low",
+   "evidence": "Cords or wires across walkway",
+   "box": [
+    242,
+    473,
+    462,
+    625
+   ]
+  }
+ ]
+}

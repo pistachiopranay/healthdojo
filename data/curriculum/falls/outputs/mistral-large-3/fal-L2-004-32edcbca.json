@@ -1,0 +1,61 @@
+{
+ "id": "fal-L2-004",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"KIT-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Frequently used items (dishes, bowls) are stored on high shelves in the cabinets.\",\n      \"box\": [800, 150, 1000, 400]\n    },\n    {\n      \"id\": \"KIT-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Frequently used items (pots and pans) are stored in low cabinets and drawers.\",\n      \"box\": [200, 450, 800, 700]\n    },\n    {\n      \"id\": \"KIT-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Slippery floor surface visible in the kitchen area, which could pose a fall risk.\",\n      \"box\": [0, 550, 1000, 800]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The rug or mat near the refrigerator appears loose and could be a tripping hazard.\",\n      \"box\": [0, 500, 200, 700]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The walking path is narrowed by the chair positioned in the middle of the kitchen.\",\n      \"box\": [300, 300, 500, 600]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "high",
+   "evidence": "Frequently used items (dishes, bowls) are stored on high shelves in the cabinets.",
+   "box": [
+    800,
+    150,
+    1000,
+    400
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Frequently used items (pots and pans) are stored in low cabinets and drawers.",
+   "box": [
+    200,
+    450,
+    800,
+    700
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "Slippery floor surface visible in the kitchen area, which could pose a fall risk.",
+   "box": [
+    0,
+    550,
+    1000,
+    800
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "The rug or mat near the refrigerator appears loose and could be a tripping hazard.",
+   "box": [
+    0,
+    500,
+    200,
+    700
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The walking path is narrowed by the chair positioned in the middle of the kitchen.",
+   "box": [
+    300,
+    300,
+    500,
+    600
+   ]
+  }
+ ]
+}

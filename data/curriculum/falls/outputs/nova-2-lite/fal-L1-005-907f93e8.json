@@ -1,0 +1,30 @@
+{
+ "id": "fal-L1-005",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"BATH-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"The tub has a high step-over without a transfer aid, posing a risk for someone using a walker.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"BATH-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The toilet seat appears to be low, which could make it difficult for an older adult to sit and stand safely.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"BATH-08\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There is no shower seat or handheld shower, increasing the risk of falls while bathing.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The floor around the tub is cluttered with shoes, clothes, and other items, narrowing the walking path and increasing the risk of tripping.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "The tub has a high step-over without a transfer aid, posing a risk for someone using a walker.",
+   "box": null
+  },
+  {
+   "id": "BATH-06",
+   "severity": "medium",
+   "evidence": "The toilet seat appears to be low, which could make it difficult for an older adult to sit and stand safely.",
+   "box": null
+  },
+  {
+   "id": "BATH-08",
+   "severity": "medium",
+   "evidence": "There is no shower seat or handheld shower, increasing the risk of falls while bathing.",
+   "box": null
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The floor around the tub is cluttered with shoes, clothes, and other items, narrowing the walking path and increasing the risk of tripping.",
+   "box": null
+  }
+ ]
+}

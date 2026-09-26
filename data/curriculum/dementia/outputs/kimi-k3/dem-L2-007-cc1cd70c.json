@@ -1,0 +1,28 @@
+{
+ "id": "dem-L2-007",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-K04\", \"severity\": \"medium\", \"evidence\": \"Orange prescription-style medication bottle with a white cap sitting out on the kitchen counter to the left of the sink, within easy reach.\", \"box\": [215, 260, 243, 322]}, {\"id\": \"DEM-K01\", \"severity\": \"medium\", \"evidence\": \"Black freestanding range is fully accessible with no knob covers or locks; oven/cooktop controls are freely usable and dish towels are draped over the oven door handle next to the burners.\", \"box\": [145, 320, 258, 752]}]}",
+ "hazards": [
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Orange prescription-style medication bottle with a white cap sitting out on the kitchen counter to the left of the sink, within easy reach.",
+   "box": [
+    215,
+    260,
+    243,
+    322
+   ]
+  },
+  {
+   "id": "DEM-K01",
+   "severity": "medium",
+   "evidence": "Black freestanding range is fully accessible with no knob covers or locks; oven/cooktop controls are freely usable and dish towels are draped over the oven door handle next to the burners.",
+   "box": [
+    145,
+    320,
+    258,
+    752
+   ]
+  }
+ ]
+}

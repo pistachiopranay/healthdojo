@@ -1,0 +1,33 @@
+{
+ "id": "fal-L1-007",
+ "raw": "{\"hazards\":[{\"id\":\"BED-03\",\"severity\":\"medium\",\"evidence\":\"The hallway forming the bed-to-bathroom route is dim, with only a small plug-in nightlight visible.\",\"box\":[104,0,304,476]},{\"id\":\"BED-04\",\"severity\":\"high\",\"evidence\":\"Shoes and a large bag are on the floor directly beside and near the foot of the bed, creating trip hazards.\",\"box\":[408,612,702,828]},{\"id\":\"BED-05\",\"severity\":\"high\",\"evidence\":\"The route along the left side of the bed is narrow, and floor clutter further obstructs space needed to maneuver a walker.\"}]}",
+ "hazards": [
+  {
+   "id": "BED-03",
+   "severity": "medium",
+   "evidence": "The hallway forming the bed-to-bathroom route is dim, with only a small plug-in nightlight visible.",
+   "box": [
+    104,
+    0,
+    304,
+    476
+   ]
+  },
+  {
+   "id": "BED-04",
+   "severity": "high",
+   "evidence": "Shoes and a large bag are on the floor directly beside and near the foot of the bed, creating trip hazards.",
+   "box": [
+    408,
+    612,
+    702,
+    828
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "high",
+   "evidence": "The route along the left side of the bed is narrow, and floor clutter further obstructs space needed to maneuver a walker."
+  }
+ ]
+}

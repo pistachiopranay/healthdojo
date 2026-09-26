@@ -1,0 +1,61 @@
+{
+ "id": "fal-L2-004",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"KIT-03\",\n      \"severity\": \"high\",\n      \"evidence\": \"A wooden chair is placed in front of the sink, likely used for reaching or as a makeshift step stool, which is unstable and unsafe for someone using a walker.\",\n      \"box\": [270, 315, 412, 641]\n    },\n    {\n      \"id\": \"KIT-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The kitchen floor is shiny and appears to be a smooth vinyl or linoleum surface, which can be slippery, especially if wet from the sink or dishwasher.\",\n      \"box\": [95, 550, 803, 997]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The wooden chair in front of the sink and the open shelving unit on the right narrow the walking path, potentially obstructing walker movement.\",\n      \"box\": [270, 315, 412, 641]\n    },\n    {\n      \"id\": \"LIV-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There is a visible step-down or level change between the kitchen and the adjacent room (visible through the doorway on the right), which is not marked and could be a tripping hazard.\",\n      \"box\": [720, 500, 815, 690]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The window above the sink creates bright glare on the countertop and floor, which could impair visibility for someone with limited mobility.\",\n      \"box\": [270, 0, 458, 230]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "KIT-03",
+   "severity": "high",
+   "evidence": "A wooden chair is placed in front of the sink, likely used for reaching or as a makeshift step stool, which is unstable and unsafe for someone using a walker.",
+   "box": [
+    270,
+    315,
+    412,
+    641
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "medium",
+   "evidence": "The kitchen floor is shiny and appears to be a smooth vinyl or linoleum surface, which can be slippery, especially if wet from the sink or dishwasher.",
+   "box": [
+    95,
+    550,
+    803,
+    997
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The wooden chair in front of the sink and the open shelving unit on the right narrow the walking path, potentially obstructing walker movement.",
+   "box": [
+    270,
+    315,
+    412,
+    641
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "There is a visible step-down or level change between the kitchen and the adjacent room (visible through the doorway on the right), which is not marked and could be a tripping hazard.",
+   "box": [
+    720,
+    500,
+    815,
+    690
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The window above the sink creates bright glare on the countertop and floor, which could impair visibility for someone with limited mobility.",
+   "box": [
+    270,
+    0,
+    458,
+    230
+   ]
+  }
+ ]
+}

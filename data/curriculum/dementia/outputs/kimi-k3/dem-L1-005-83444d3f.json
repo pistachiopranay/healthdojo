@@ -1,0 +1,39 @@
+{
+ "id": "dem-L1-005",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R01\", \"severity\": \"medium\", \"evidence\": \"Full-length mirror leaning in the corner, angled so it faces the bed (reflection can be misperceived as another person).\", \"box\": [339, 175, 418, 394]}, {\"id\": \"DEM-B03\", \"severity\": \"medium\", \"evidence\": \"Dark gray mat/rug lying on the lighter hard flooring in the bathroom/hall area visible through the doorway (can be misread as a hole/step).\", \"box\": [814, 494, 944, 622]}, {\"id\": \"DEM-K04\", \"severity\": \"medium\", \"evidence\": \"Small bottle (likely medication) left out on the nightstand next to the lamp, within easy reach of the bed.\", \"box\": [660, 406, 682, 446]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "Full-length mirror leaning in the corner, angled so it faces the bed (reflection can be misperceived as another person).",
+   "box": [
+    339,
+    175,
+    418,
+    394
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "medium",
+   "evidence": "Dark gray mat/rug lying on the lighter hard flooring in the bathroom/hall area visible through the doorway (can be misread as a hole/step).",
+   "box": [
+    814,
+    494,
+    944,
+    622
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Small bottle (likely medication) left out on the nightstand next to the lamp, within easy reach of the bed.",
+   "box": [
+    660,
+    406,
+    682,
+    446
+   ]
+  }
+ ]
+}

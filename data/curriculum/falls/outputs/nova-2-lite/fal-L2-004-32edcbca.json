@@ -1,0 +1,36 @@
+{
+ "id": "fal-L2-004",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"KIT-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Dishes and bowls are stored on high shelves, requiring the use of a step stool or chair to reach, which could be unstable for an older adult using a walker.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"KIT-02\",\n      \"severity\": \"low\",\n      \"evidence\": \"Some frequently used items like the coffee maker and toaster are stored at a low level, which is generally safe but should be assessed for accessibility with a walker.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"low\",\n      \"evidence\": \"The walking path between the kitchen and the adjacent room appears narrow and could be further narrowed by the walker, especially near the doorway.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There is a step-down between the kitchen and the adjacent room that is not marked, posing a risk of tripping for an older adult using a walker.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The doorway to the adjacent room appears to be narrow, which could restrict the movement of a walker.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Dishes and bowls are stored on high shelves, requiring the use of a step stool or chair to reach, which could be unstable for an older adult using a walker.",
+   "box": null
+  },
+  {
+   "id": "KIT-02",
+   "severity": "low",
+   "evidence": "Some frequently used items like the coffee maker and toaster are stored at a low level, which is generally safe but should be assessed for accessibility with a walker.",
+   "box": null
+  },
+  {
+   "id": "LIV-03",
+   "severity": "low",
+   "evidence": "The walking path between the kitchen and the adjacent room appears narrow and could be further narrowed by the walker, especially near the doorway.",
+   "box": null
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "There is a step-down between the kitchen and the adjacent room that is not marked, posing a risk of tripping for an older adult using a walker.",
+   "box": null
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "The doorway to the adjacent room appears to be narrow, which could restrict the movement of a walker.",
+   "box": null
+  }
+ ]
+}

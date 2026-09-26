@@ -1,0 +1,55 @@
+{
+ "id": "fal-L4-004",
+ "raw": "{\"hazards\":[{\"id\":\"LIV-01\",\"severity\":\"high\",\"evidence\":\"Large patterned throw rug over carpet in the main walking area, with the near/right edge curled or folded up.\",\"box\":[309,557,749,831]},{\"id\":\"LIV-02\",\"severity\":\"medium\",\"evidence\":\"Black cord trails from the TV/lamp console area down across the carpet along the right-side walkway.\",\"box\":[783,499,893,900]},{\"id\":\"LIV-03\",\"severity\":\"medium\",\"evidence\":\"Central walking space is interrupted by the rug, footstool/ottoman, pet bed and toys, narrowing a clear walker path between seating and the right-side doorway/console.\",\"box\":[305,356,959,831]},{\"id\":\"LIV-05\",\"severity\":\"medium\",\"evidence\":\"Room appears dim overall with shadowed floor areas; task lighting near seating/walkways looks limited.\"},{\"id\":\"LIV-07\",\"severity\":\"high\",\"evidence\":\"Pet bed and scattered pet toys sit on the central rug/walkway where a walker user would step or roll.\",\"box\":[550,520,713,660]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Large patterned throw rug over carpet in the main walking area, with the near/right edge curled or folded up.",
+   "box": [
+    309,
+    557,
+    749,
+    831
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Black cord trails from the TV/lamp console area down across the carpet along the right-side walkway.",
+   "box": [
+    783,
+    499,
+    893,
+    900
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Central walking space is interrupted by the rug, footstool/ottoman, pet bed and toys, narrowing a clear walker path between seating and the right-side doorway/console.",
+   "box": [
+    305,
+    356,
+    959,
+    831
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Room appears dim overall with shadowed floor areas; task lighting near seating/walkways looks limited."
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "Pet bed and scattered pet toys sit on the central rug/walkway where a walker user would step or roll.",
+   "box": [
+    550,
+    520,
+    713,
+    660
+   ]
+  }
+ ]
+}

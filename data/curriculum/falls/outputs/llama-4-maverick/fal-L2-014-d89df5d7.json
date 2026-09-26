@@ -1,0 +1,89 @@
+{
+ "id": "fal-L2-014",
+ "raw": "{\"hazards\": [\n  {\"id\": \"LIV-02\", \"severity\": \"medium\", \"evidence\": \"White cord running down the wall and across the floor\", \"box\": [0, 0, 203, 1000]},\n  {\"id\": \"STAIR-01\", \"severity\": \"high\", \"evidence\": \"Staircase has handrails on both sides, so no hazard\", \"box\": []},\n  {\"id\": \"STAIR-02\", \"severity\": \"low\", \"evidence\": \"Handrails appear to be secure and graspable\", \"box\": [242, 0, 758, 1000]},\n  {\"id\": \"STAIR-03\", \"severity\": \"low\", \"evidence\": \"No objects on the stairs\", \"box\": [242, 0, 758, 1000]},\n  {\"id\": \"STAIR-04\", \"severity\": \"low\", \"evidence\": \"Staircase is well-lit\", \"box\": [242, 0, 758, 1000]},\n  {\"id\": \"STAIR-05\", \"severity\": \"low\", \"evidence\": \"Step edges are defined\", \"box\": [242, 0, 758, 1000]},\n  {\"id\": \"STAIR-06\", \"severity\": \"low\", \"evidence\": \"Steps appear to be even and not broken\", \"box\": [242, 0, 758, 1000]},\n  {\"id\": \"LIV-06\", \"severity\": \"medium\", \"evidence\": \"Undefined step between living room and kitchen\", \"box\": [797, 0, 1000, 1000]}\n]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "White cord running down the wall and across the floor",
+   "box": [
+    0,
+    0,
+    203,
+    1000
+   ]
+  },
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Staircase has handrails on both sides, so no hazard",
+   "box": []
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "low",
+   "evidence": "Handrails appear to be secure and graspable",
+   "box": [
+    242,
+    0,
+    758,
+    1000
+   ]
+  },
+  {
+   "id": "STAIR-03",
+   "severity": "low",
+   "evidence": "No objects on the stairs",
+   "box": [
+    242,
+    0,
+    758,
+    1000
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "low",
+   "evidence": "Staircase is well-lit",
+   "box": [
+    242,
+    0,
+    758,
+    1000
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "low",
+   "evidence": "Step edges are defined",
+   "box": [
+    242,
+    0,
+    758,
+    1000
+   ]
+  },
+  {
+   "id": "STAIR-06",
+   "severity": "low",
+   "evidence": "Steps appear to be even and not broken",
+   "box": [
+    242,
+    0,
+    758,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "Undefined step between living room and kitchen",
+   "box": [
+    797,
+    0,
+    1000,
+    1000
+   ]
+  }
+ ]
+}

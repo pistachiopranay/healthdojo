@@ -1,0 +1,56 @@
+{
+ "id": "fal-L2-010",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"BATH-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The tub floor has a textured, ribbed surface, but it is not covered with a non-slip mat, and the surface may still be slippery when wet.\",\n      \"box\": [208, 680, 610, 820]\n    },\n    {\n      \"id\": \"BATH-05\",\n      \"severity\": \"high\",\n      \"evidence\": \"The tub has a high step-over edge, and although a shower chair is present, there is no transfer bench or sliding board to assist with safe entry/exit for someone using a walker post-surgery.\",\n      \"box\": [208, 650, 610, 999]\n    },\n    {\n      \"id\": \"BATH-07\",\n      \"severity\": \"low\",\n      \"evidence\": \"There is no visible bath mat or rug on the bathroom floor, so this hazard is not present. (Note: This is a negative finding \u2014 no hazard here.)\",\n      \"box\": []\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A black power cord runs from the radio on the windowsill down to the floor, crossing the path near the toilet and potentially creating a tripping hazard for someone using a walker.\",\n      \"box\": [850, 350, 880, 540]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The walker is positioned very close to the toilet and tub, and the space between the toilet and vanity appears narrow, potentially limiting safe maneuvering for a walker user.\",\n      \"box\": [590, 600, 940, 999]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "BATH-04",
+   "severity": "medium",
+   "evidence": "The tub floor has a textured, ribbed surface, but it is not covered with a non-slip mat, and the surface may still be slippery when wet.",
+   "box": [
+    208,
+    680,
+    610,
+    820
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "The tub has a high step-over edge, and although a shower chair is present, there is no transfer bench or sliding board to assist with safe entry/exit for someone using a walker post-surgery.",
+   "box": [
+    208,
+    650,
+    610,
+    999
+   ]
+  },
+  {
+   "id": "BATH-07",
+   "severity": "low",
+   "evidence": "There is no visible bath mat or rug on the bathroom floor, so this hazard is not present. (Note: This is a negative finding \u2014 no hazard here.)",
+   "box": []
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A black power cord runs from the radio on the windowsill down to the floor, crossing the path near the toilet and potentially creating a tripping hazard for someone using a walker.",
+   "box": [
+    850,
+    350,
+    880,
+    540
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The walker is positioned very close to the toilet and tub, and the space between the toilet and vanity appears narrow, potentially limiting safe maneuvering for a walker user.",
+   "box": [
+    590,
+    600,
+    940,
+    999
+   ]
+  }
+ ]
+}

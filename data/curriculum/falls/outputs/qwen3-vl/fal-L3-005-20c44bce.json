@@ -1,0 +1,61 @@
+{
+ "id": "fal-L3-005",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A patterned throw rug is placed in the middle of the room on the carpet, creating a tripping hazard for someone using a walker.\",\n      \"box\": [391, 483, 645, 609]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The arrangement of furniture (sofa, armchairs, side tables) creates a narrow and cluttered walking path, which may impede safe navigation with a walker.\",\n      \"box\": [10, 280, 840, 795]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The yellow armchair and the beige armchair have low, soft seating and may lack sturdy armrests for safe standing and sitting, which is critical post-surgery.\",\n      \"box\": [578, 422, 840, 795]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A pet bed and food bowl are placed on the floor in the walking path, posing a tripping hazard for someone using a walker.\",\n      \"box\": [43, 735, 362, 927]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"While there are multiple light sources, the room has shadows and uneven lighting, which could create glare or obscure hazards for someone with limited mobility.\",\n      \"box\": [0, 0, 1000, 999]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A patterned throw rug is placed in the middle of the room on the carpet, creating a tripping hazard for someone using a walker.",
+   "box": [
+    391,
+    483,
+    645,
+    609
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The arrangement of furniture (sofa, armchairs, side tables) creates a narrow and cluttered walking path, which may impede safe navigation with a walker.",
+   "box": [
+    10,
+    280,
+    840,
+    795
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "The yellow armchair and the beige armchair have low, soft seating and may lack sturdy armrests for safe standing and sitting, which is critical post-surgery.",
+   "box": [
+    578,
+    422,
+    840,
+    795
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "A pet bed and food bowl are placed on the floor in the walking path, posing a tripping hazard for someone using a walker.",
+   "box": [
+    43,
+    735,
+    362,
+    927
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "While there are multiple light sources, the room has shadows and uneven lighting, which could create glare or obscure hazards for someone with limited mobility.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  }
+ ]
+}

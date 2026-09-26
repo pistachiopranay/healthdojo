@@ -1,0 +1,61 @@
+{
+ "id": "fal-L3-005",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-01\", \"severity\": \"high\", \"evidence\": \"Patterned throw rug lying loosely on carpet in the main walking path between seating areas\", \"box\": [500, 415, 820, 520]}, {\"id\": \"LIV-07\", \"severity\": \"high\", \"evidence\": \"Pet bed and metal food/water bowl placed directly in the walkway, tripping hazard\", \"box\": [55, 630, 470, 800]}, {\"id\": \"LIV-04\", \"severity\": \"medium\", \"evidence\": \"Low tufted teal sofa/chairs with minimal armrest support, difficult to rise from after hip/knee surgery\", \"box\": [15, 245, 495, 640]}, {\"id\": \"LIV-03\", \"severity\": \"medium\", \"evidence\": \"Narrow path between furniture pieces and small end tables cluttering walking route\", \"box\": [230, 330, 500, 400]}, {\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"Dim ambient lighting with only lamps and recessed lights, potential glare from window at night\", \"box\": [0, 0, 1000, 300]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Patterned throw rug lying loosely on carpet in the main walking path between seating areas",
+   "box": [
+    500,
+    415,
+    820,
+    520
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "Pet bed and metal food/water bowl placed directly in the walkway, tripping hazard",
+   "box": [
+    55,
+    630,
+    470,
+    800
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "Low tufted teal sofa/chairs with minimal armrest support, difficult to rise from after hip/knee surgery",
+   "box": [
+    15,
+    245,
+    495,
+    640
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Narrow path between furniture pieces and small end tables cluttering walking route",
+   "box": [
+    230,
+    330,
+    500,
+    400
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Dim ambient lighting with only lamps and recessed lights, potential glare from window at night",
+   "box": [
+    0,
+    0,
+    1000,
+    300
+   ]
+  }
+ ]
+}

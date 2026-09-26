@@ -1,0 +1,12 @@
+{
+ "id": "dem-L1-002",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The black and white striped rug creates a bold high-contrast pattern that could be misinterpreted by someone with dementia, potentially leading to tripping or disorientation.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "The black and white striped rug creates a bold high-contrast pattern that could be misinterpreted by someone with dementia, potentially leading to tripping or disorientation.",
+   "box": null
+  }
+ ]
+}

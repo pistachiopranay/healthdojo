@@ -1,0 +1,39 @@
+{
+ "id": "dem-L3-005",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-B02\",\"severity\":\"medium\",\"evidence\":\"The white toilet seat and white toilet blend into each other and the light-colored floor, providing low visual contrast.\",\"box\":[510,555,727,973]},{\"id\":\"DEM-B03\",\"severity\":\"medium\",\"evidence\":\"A solid dark bath mat sharply contrasts with the light floor and may be misperceived as a hole or obstacle.\",\"box\":[282,765,522,999]},{\"id\":\"DEM-B04\",\"severity\":\"high\",\"evidence\":\"A hair dryer is plugged into the wall outlet and resting directly beside the sink.\",\"box\":[706,496,950,757]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "The white toilet seat and white toilet blend into each other and the light-colored floor, providing low visual contrast.",
+   "box": [
+    510,
+    555,
+    727,
+    973
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "medium",
+   "evidence": "A solid dark bath mat sharply contrasts with the light floor and may be misperceived as a hole or obstacle.",
+   "box": [
+    282,
+    765,
+    522,
+    999
+   ]
+  },
+  {
+   "id": "DEM-B04",
+   "severity": "high",
+   "evidence": "A hair dryer is plugged into the wall outlet and resting directly beside the sink.",
+   "box": [
+    706,
+    496,
+    950,
+    757
+   ]
+  }
+ ]
+}

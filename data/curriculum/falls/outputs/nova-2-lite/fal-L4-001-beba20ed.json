@@ -1,0 +1,30 @@
+{
+ "id": "fal-L4-001",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"high\",\n      \"evidence\": \"Pet food bowls, a pet bed, and a small dog are on the floor, creating a tripping hazard.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A cord is visible on the floor near the pet items, posing a tripping risk.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The floor is cluttered with pet items and a cord, narrowing the walking path.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"KIT-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Frequently used items like pots and pans are stored on low cabinets and counters, which could be difficult to reach safely with a walker.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "Pet food bowls, a pet bed, and a small dog are on the floor, creating a tripping hazard.",
+   "box": null
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A cord is visible on the floor near the pet items, posing a tripping risk.",
+   "box": null
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The floor is cluttered with pet items and a cord, narrowing the walking path.",
+   "box": null
+  },
+  {
+   "id": "KIT-02",
+   "severity": "medium",
+   "evidence": "Frequently used items like pots and pans are stored on low cabinets and counters, which could be difficult to reach safely with a walker.",
+   "box": null
+  }
+ ]
+}

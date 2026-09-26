@@ -1,0 +1,39 @@
+{
+ "id": "fal-L3-012",
+ "raw": "{\"hazards\":[{\"id\":\"LIV-07\",\"severity\":\"high\",\"evidence\":\"A pet bed, toys, and water bowl are directly in the walking path to the entrance.\",\"box\":[332,660,622,825]},{\"id\":\"LIV-03\",\"severity\":\"high\",\"evidence\":\"The pet bed and bowl obstruct and substantially narrow the walker route.\",\"box\":[332,660,622,825]},{\"id\":\"ENT-02\",\"severity\":\"medium\",\"evidence\":\"A raised door sill is visible across the entrance doorway.\",\"box\":[363,476,655,517]}]}",
+ "hazards": [
+  {
+   "id": "LIV-07",
+   "severity": "high",
+   "evidence": "A pet bed, toys, and water bowl are directly in the walking path to the entrance.",
+   "box": [
+    332,
+    660,
+    622,
+    825
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "The pet bed and bowl obstruct and substantially narrow the walker route.",
+   "box": [
+    332,
+    660,
+    622,
+    825
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "A raised door sill is visible across the entrance doorway.",
+   "box": [
+    363,
+    476,
+    655,
+    517
+   ]
+  }
+ ]
+}

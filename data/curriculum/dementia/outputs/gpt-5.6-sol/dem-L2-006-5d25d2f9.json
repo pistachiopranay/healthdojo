@@ -1,0 +1,28 @@
+{
+ "id": "dem-L2-006",
+ "raw": "{\"hazards\":[{\"id\":\"DEM-B02\",\"severity\":\"medium\",\"evidence\":\"White raised toilet seat blends into the white toilet and light-colored floor, providing poor visual contrast.\",\"box\":[515,548,721,999]},{\"id\":\"DEM-B03\",\"severity\":\"medium\",\"evidence\":\"Dark gray bath mat contrasts sharply with the light tile floor and may be misperceived as a hole or obstacle.\",\"box\":[265,841,530,999]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White raised toilet seat blends into the white toilet and light-colored floor, providing poor visual contrast.",
+   "box": [
+    515,
+    548,
+    721,
+    999
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "medium",
+   "evidence": "Dark gray bath mat contrasts sharply with the light tile floor and may be misperceived as a hole or obstacle.",
+   "box": [
+    265,
+    841,
+    530,
+    999
+   ]
+  }
+ ]
+}

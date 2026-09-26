@@ -1,0 +1,17 @@
+{
+ "id": "dem-L3-002",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"Clutter of boxes and shoes in the walkway\", \"box\": [465, 375, 730, 668]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Clutter of boxes and shoes in the walkway",
+   "box": [
+    465,
+    375,
+    730,
+    668
+   ]
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+{
+ "id": "fal-L3-001",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Only one handrail is present on the staircase, missing a second handrail on the opposite side.\",\n      \"box\": [300, 100, 500, 800]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Lighting on the staircase appears dim, which could be a hazard.\",\n      \"box\": [300, 100, 500, 800]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"evidence\": \"Stair covering appears loose or undefined at the edges.\",\n      \"severity\": \"medium\",\n      \"box\": [350, 300, 450, 800]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Loose or patterned rug at the bottom of the stairs could be a tripping hazard.\",\n      \"box\": [200, 750, 400, 900]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The walking path near the staircase appears somewhat cluttered with furniture.\",\n      \"box\": [0, 600, 300, 900]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Only one handrail is present on the staircase, missing a second handrail on the opposite side.",
+   "box": [
+    300,
+    100,
+    500,
+    800
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Lighting on the staircase appears dim, which could be a hazard.",
+   "box": [
+    300,
+    100,
+    500,
+    800
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "evidence": "Stair covering appears loose or undefined at the edges.",
+   "severity": "medium",
+   "box": [
+    350,
+    300,
+    450,
+    800
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose or patterned rug at the bottom of the stairs could be a tripping hazard.",
+   "box": [
+    200,
+    750,
+    400,
+    900
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The walking path near the staircase appears somewhat cluttered with furniture.",
+   "box": [
+    0,
+    600,
+    300,
+    900
+   ]
+  }
+ ]
+}

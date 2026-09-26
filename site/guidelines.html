@@ -248,13 +248,13 @@ html{scroll-padding-top:110px}
   <div class="soon" id="soon"></div>
 </main>
 <script>
-const D={"cards":[{"bench":"falls","title":"Post-op fall prevention","publisher":"CDC STEADI","guideline":"Check for Safety: A Home Fall Prevention Checklist for Older Adults (STEADI)","rubric":35,"images":39,"levels":5,"worlds":8,"status":"live","cover":"curriculum/falls/thumb/fal-L4-007.jpg"},{"bench":"dementia","title":"Dementia home safety","publisher":"Alzheimer's Association / NIA","guideline":"Home Safety Checklist for Alzheimer's Disease and Dementia; Alzheimer's Caregiving: Home Safety Tips","rubric":14,"images":23,"levels":5,"worlds":3,"status":"live","cover":"curriculum/dementia/thumb/dem-L3-005.jpg"}],"coming":[["Pressure injury prevention","NPIAP / EPUAP"],["Medication safety at home","AHRQ / ISMP"],["Pediatric home injury","AAP TIPP"],["Smoke & CO alarm placement","NFPA 72"]]};
+const D={"cards":[{"bench":"falls","title":"Post-op fall prevention","publisher":"CDC STEADI","guideline":"Check for Safety: A Home Fall Prevention Checklist for Older Adults (STEADI)","rubric":35,"images":69,"levels":5,"worlds":8,"status":"live","cover":"curriculum/falls/thumb/fal-L5-014.jpg"},{"bench":"dementia","title":"Dementia home safety","publisher":"Alzheimer's Association / NIA","guideline":"Home Safety Checklist for Alzheimer's Disease and Dementia; Alzheimer's Caregiving: Home Safety Tips","rubric":14,"images":54,"levels":5,"worlds":3,"status":"live","cover":"curriculum/dementia/thumb/dem-L5-011.jpg"}],"coming":[["Pressure injury prevention","NPIAP / EPUAP"],["Medication safety at home","AHRQ / ISMP"],["Pediatric home injury","AAP TIPP"],["Smoke & CO alarm placement","NFPA 72"]]};
 const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const chip=s=>s==="live"?'<span class="chipk ck-live">Simulator live</span>':'<span class="chipk ck-gen">Generating</span>';
 document.getElementById("grid").innerHTML=D.cards.map(c=>`<a class="gc rise" href="guideline-${c.bench}.html">
   <div class="cov ${c.cover?"":"empty"}">${c.cover?`<img src="${esc(c.cover)}" alt="">`:"synthetic homes generating…"}${chip(c.status)}</div>
   <div class="body"><div class="pub">${esc(c.publisher)}</div><h3>${esc(c.title)}</h3><div class="gname">${esc(c.guideline||"")}</div>
-  <div class="stats"><div><b>${c.rubric}</b><span>rubric rows</span></div><div><b>${c.images||"—"}</b><span>labeled images</span></div><div><b>${c.levels||"—"}</b><span>levels</span></div><div><b>${c.worlds||"—"}</b><span>3D worlds</span></div></div>
+  <div class="stats"><div><b>${c.rubric}</b><span>rubric rows</span></div><div><b>${c.images||"n/a"}</b><span>labeled images</span></div><div><b>${c.levels||"n/a"}</b><span>levels</span></div><div><b>${c.worlds||"n/a"}</b><span>3D worlds</span></div></div>
   <div class="go">Open the simulator →</div></div></a>`).join("");
 document.getElementById("soon").innerHTML=D.coming.map(([t,p])=>`<div class="sc"><span class="chipk ck-next">Next</span><h4>${esc(t)}</h4><div class="pub">${esc(p)}</div></div>`).join("");
 </script>

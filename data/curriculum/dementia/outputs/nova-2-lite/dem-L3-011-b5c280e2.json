@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-011",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove burner is on and knobs are freely usable, posing a burn risk if the person with dementia accidentally turns it on or leaves it on.\",\n      \"box\": [125, 323, 269, 527]\n    },\n    {\n      \"id\": \"DEM-K04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Medication bottles are left out on the counter, which could be mistaken for food or other items, leading to accidental ingestion or misuse.\",\n      \"box\": [459, 254, 655, 307]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove burner is on and knobs are freely usable, posing a burn risk if the person with dementia accidentally turns it on or leaves it on.",
+   "box": [
+    125,
+    323,
+    269,
+    527
+   ]
+  },
+  {
+   "id": "DEM-K04",
+   "severity": "medium",
+   "evidence": "Medication bottles are left out on the counter, which could be mistaken for food or other items, leading to accidental ingestion or misuse.",
+   "box": [
+    459,
+    254,
+    655,
+    307
+   ]
+  }
+ ]
+}

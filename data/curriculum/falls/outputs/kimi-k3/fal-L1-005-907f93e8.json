@@ -1,0 +1,39 @@
+{
+ "id": "fal-L1-005",
+ "raw": "{\"hazards\":[{\"id\":\"BATH-05\",\"severity\":\"high\",\"evidence\":\"Standard-height tub wall must be stepped over to reach the shower chair, which sits fully inside the tub; no transfer bench straddles the tub edge. Shoes, clothing and newspapers are also piled on the tub floor/edge at the entry point.\",\"box\":[205,612,703,903]},{\"id\":\"BATH-04\",\"severity\":\"medium\",\"evidence\":\"Smooth white fiberglass tub/shower floor with no visible non-slip mat or adhesive treads; surface is slippery when wet.\",\"box\":[184,362,693,892]},{\"id\":\"BATH-06\",\"severity\":\"medium\",\"evidence\":\"Regular-height toilet seat with the lid up; no raised/elevated toilet seat is installed (only a stand-alone safety frame), so seat height is likely too low for post hip/knee replacement precautions.\",\"box\":[647,487,975,995]}]}",
+ "hazards": [
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "Standard-height tub wall must be stepped over to reach the shower chair, which sits fully inside the tub; no transfer bench straddles the tub edge. Shoes, clothing and newspapers are also piled on the tub floor/edge at the entry point.",
+   "box": [
+    205,
+    612,
+    703,
+    903
+   ]
+  },
+  {
+   "id": "BATH-04",
+   "severity": "medium",
+   "evidence": "Smooth white fiberglass tub/shower floor with no visible non-slip mat or adhesive treads; surface is slippery when wet.",
+   "box": [
+    184,
+    362,
+    693,
+    892
+   ]
+  },
+  {
+   "id": "BATH-06",
+   "severity": "medium",
+   "evidence": "Regular-height toilet seat with the lid up; no raised/elevated toilet seat is installed (only a stand-alone safety frame), so seat height is likely too low for post hip/knee replacement precautions.",
+   "box": [
+    647,
+    487,
+    975,
+    995
+   ]
+  }
+ ]
+}

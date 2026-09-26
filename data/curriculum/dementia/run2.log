@@ -1,0 +1,463 @@
+requeued 39 unverified items
+  llm 4s
+  llm 4s
+  llm 7s
+  llm 9s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 2 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 33s
+  treg-gemini 34s
+  llm 3s
+dementia dem-L1-004 VERIFIED 1 hz 0 ds
+  llm 7s
+dementia dem-L1-002 VERIFIED 1 hz 0 ds
+  treg-gemini 40s
+  treg-gemini 41s
+  llm 3s
+dementia dem-L1-005 VERIFIED 1 hz 0 ds
+  llm 6s
+dementia dem-L1-003 VERIFIED 1 hz 0 ds
+== dementia L1 8 items, 8 verified, 53s, cost {'image_calls': 0, 'llm_calls': 8, 'treg_gemini_calls': 4}
+  llm 3s
+  llm 5s
+  llm 5s
+  llm 6s
+  llm 14s
+  treg-gemini 28s
+  llm 3s
+dementia dem-L2-000 failed verify, rebuilding
+  treg-gemini 34s
+  llm 3s
+  treg-gemini 34s
+  treg-gemini 34s
+  llm 4s
+dementia dem-L2-007 failed verify, rebuilding
+  llm 3s
+dementia dem-L2-006 failed verify, rebuilding
+  llm 3s
+dementia dem-L2-005 VERIFIED 1 hz 0 ds
+  llm 4s
+  llm 4s
+  treg-gemini 51s
+  llm 6s
+dementia dem-L2-002 failed verify, rebuilding
+  treg-gemini 33s
+  treg-gemini 28s
+  llm 3s
+dementia dem-L2-000 flagged 1 hz 0 ds
+  llm 4s
+  llm 4s
+dementia dem-L2-006 flagged 1 hz 0 ds
+  treg-gemini 33s
+  llm 3s
+dementia dem-L2-007 VERIFIED 1 hz 0 ds
+  treg-gemini 34s
+  llm 3s
+dementia dem-L2-002 flagged 1 hz 0 ds
+== dementia L2 10 items, 7 verified, 115s, cost {'image_calls': 0, 'llm_calls': 26, 'treg_gemini_calls': 13}
+  llm 9s
+  llm 15s
+  llm 17s
+  llm 17s
+  llm 23s
+  llm 27s
+  llm 39s
+  plan incomplete, retry dem-L3-008 []
+  llm 40s
+  plan incomplete, retry dem-L3-006 []
+  treg-gemini 33s
+  treg-gemini 33s
+  treg-gemini 33s
+  treg-gemini 34s
+  treg-gemini 52s
+  llm 37s
+  llm 40s
+  plan incomplete, retry dem-L3-008 []
+  treg-gemini 55s
+  treg-gemini 41s
+  treg-gemini 36s
+  llm 21s
+  treg-gemini 59s
+  treg-gemini 35s
+  treg-gemini 63s
+  treg-gemini 47s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 62s
+  treg-gemini 67s
+  treg-gemini 68s
+  llm 6s
+dementia dem-L3-002 failed verify, rebuilding
+  treg-gemini 58s
+  llm 5s
+dementia dem-L3-000 failed verify, rebuilding
+  llm 8s
+  treg-gemini 66s
+  llm 25s
+  treg-gemini 76s
+  treg-gemini 73s
+  llm 4s
+dementia dem-L3-001 VERIFIED 2 hz 1 ds
+  llm 4s
+dementia dem-L3-004 VERIFIED 2 hz 1 ds
+  treg-gemini 69s
+  llm 5s
+dementia dem-L3-003 VERIFIED 2 hz 1 ds
+  treg-gemini 73s
+  treg-gemini 61s
+  llm 3s
+dementia dem-L3-005 VERIFIED 2 hz 1 ds
+  treg-gemini 56s
+  treg-gemini 48s
+  llm 4s
+dementia dem-L3-006 VERIFIED 2 hz 1 ds
+  treg-gemini 33s
+  treg-gemini 34s
+  treg-gemini 73s
+  llm 4s
+dementia dem-L3-008 VERIFIED 2 hz 1 ds
+  treg-gemini 34s
+  treg-gemini 33s
+  llm 5s
+dementia dem-L3-002 VERIFIED 2 hz 1 ds
+  treg-gemini 29s
+  llm 4s
+dementia dem-L3-000 VERIFIED 2 hz 1 ds
+== dementia L3 12 items, 12 verified, 324s, cost {'image_calls': 0, 'llm_calls': 49, 'treg_gemini_calls': 43}
+  llm 20s
+  llm 21s
+  llm 25s
+  llm 38s
+  plan incomplete, retry dem-L4-008 []
+  llm 38s
+  plan incomplete, retry dem-L4-005 []
+  llm 40s
+  plan incomplete, retry dem-L4-004 []
+  llm 41s
+  plan incomplete, retry dem-L4-006 []
+  llm 41s
+  plan incomplete, retry dem-L4-001 []
+  treg-gemini 35s
+  treg-gemini 36s
+  treg-gemini 44s
+  llm 36s
+  plan incomplete, retry dem-L4-008 []
+  llm 37s
+  plan incomplete, retry dem-L4-005 []
+  llm 35s
+  plan incomplete, retry dem-L4-006 []
+  llm 38s
+  llm 40s
+  plan incomplete, retry dem-L4-001 []
+  llm 16s
+  treg-gemini 30s
+  treg-gemini 31s
+  treg-gemini 38s
+  llm 28s
+  llm 41s
+  plan incomplete, retry dem-L4-006 []
+dementia dem-L4-006 failed verify, rebuilding
+  treg-gemini 30s
+  llm 39s
+  plan incomplete, retry dem-L4-001 []
+dementia dem-L4-001 failed verify, rebuilding
+  treg-gemini 39s
+  treg-gemini 34s
+  treg-gemini 54s
+  llm 4s
+dementia dem-L4-003 VERIFIED 3 hz 0 ds
+  treg-gemini 58s
+  llm 39s
+  plan incomplete, retry dem-L4-006 []
+  llm 39s
+  plan incomplete, retry dem-L4-001 []
+  treg-gemini 32s
+  treg-gemini 42s
+  llm 32s
+  llm 6s
+dementia dem-L4-000 failed verify, rebuilding
+  treg-gemini 67s
+  llm 39s
+  plan incomplete, retry dem-L4-006 []
+  treg-gemini 42s
+  treg-gemini 64s
+  treg-gemini 34s
+  llm 40s
+  plan incomplete, retry dem-L4-001 []
+  llm 38s
+  plan incomplete, retry dem-L4-000 []
+  llm 11s
+dementia dem-L4-007 failed verify, rebuilding
+  treg-gemini 45s
+  llm 17s
+  llm 33s
+  treg-gemini 32s
+  treg-gemini 32s
+  treg-gemini 62s
+  llm 4s
+dementia dem-L4-008 failed verify, rebuilding
+  llm 39s
+  plan incomplete, retry dem-L4-001 []
+dementia dem-L4-001 flagged 0 hz 0 ds
+  treg-gemini 31s
+  llm 37s
+  plan incomplete, retry dem-L4-007 []
+  llm 12s
+  llm 22s
+  treg-gemini 31s
+  treg-gemini 42s
+  treg-gemini 37s
+  llm 5s
+dementia dem-L4-004 VERIFIED 4 hz 0 ds
+  treg-gemini 45s
+  llm 41s
+  plan incomplete, retry dem-L4-007 []
+  treg-gemini 47s
+  treg-gemini 42s
+  llm 11s
+dementia dem-L4-009 failed verify, rebuilding
+  treg-gemini 45s
+  treg-gemini 50s
+  llm 40s
+  plan incomplete, retry dem-L4-011 []
+  llm 16s
+  llm 40s
+  plan incomplete, retry dem-L4-007 []
+dementia dem-L4-007 flagged 0 hz 0 ds
+  treg-gemini 51s
+  treg-gemini 42s
+  treg-gemini 73s
+  llm 18s
+dementia dem-L4-005 failed verify, rebuilding
+  treg-gemini 46s
+  llm 36s
+  treg-gemini 54s
+  treg-gemini 36s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 67s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 2 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 38s
+  plan incomplete, retry dem-L4-005 []
+  treg-gemini 47s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 2 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 27s
+  treg-gemini 38s
+  treg-gemini 71s
+  llm 4s
+dementia dem-L4-006 flagged 4 hz 0 ds
+  treg-gemini 51s
+  treg-gemini 80s
+  llm 6s
+dementia dem-L4-010 failed verify, rebuilding
+  treg-gemini 77s
+  treg-gemini 65s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 39s
+  llm 7s
+dementia dem-L4-000 flagged 4 hz 0 ds
+  treg-gemini 39s
+  llm 39s
+  plan incomplete, retry dem-L4-010 []
+  treg-gemini 34s
+  treg-gemini 30s
+  treg-gemini 57s
+  llm 4s
+dementia dem-L4-008 flagged 4 hz 0 ds
+  llm 6s
+dementia dem-L4-009 flagged 3 hz 0 ds
+  treg-gemini 30s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 35s
+  plan incomplete, retry dem-L4-010 []
+  treg-gemini 34s
+  treg-gemini 36s
+  llm 7s
+dementia dem-L4-011 failed verify, rebuilding
+  llm 37s
+  plan incomplete, retry dem-L4-010 []
+dementia dem-L4-010 flagged 0 hz 0 ds
+  treg-gemini 41s
+  llm 4s
+dementia dem-L4-005 flagged 4 hz 0 ds
+  llm 32s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 37s
+  treg-gemini 34s
+  treg-gemini 39s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  treg-gemini 38s
+  llm 7s
+dementia dem-L4-011 flagged 4 hz 0 ds
+== dementia L4 12 items, 3 verified, 720s, cost {'image_calls': 0, 'llm_calls': 104, 'treg_gemini_calls': 100}
+  llm 5s
+  llm 8s
+  llm 9s
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 0 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+retry 1 treg submit: {'error': {'code': 50002, 'message': 'Too many concurrent tasks. Max 10 in flight per user.', 'request_id':
+  llm 36s
+  plan incomplete, retry dem-L5-001 []
+  llm 39s
+  plan incomplete, retry dem-L5-003 []
+  llm 39s
+  plan incomplete, retry dem-L5-006 []
+  llm 39s
+  plan incomplete, retry dem-L5-008 []
+  llm 40s
+  plan incomplete, retry dem-L5-004 []
+  treg-gemini 31s
+  treg-gemini 34s
+  treg-gemini 47s
+  llm 17s
+  llm 34s
+  plan incomplete, retry dem-L5-001 []
+  treg-gemini 33s
+  treg-gemini 35s
+  llm 38s
+  plan incomplete, retry dem-L5-008 []
+  llm 40s
+  plan incomplete, retry dem-L5-006 []
+  llm 40s
+  plan incomplete, retry dem-L5-004 []
+  treg-gemini 28s
+  treg-gemini 40s
+  llm 29s
+  treg-gemini 34s
+  treg-gemini 35s
+  llm 40s
+  plan incomplete, retry dem-L5-001 []
+dementia dem-L5-001 failed verify, rebuilding
+  llm 3s
+dementia dem-L5-000 failed verify, rebuilding
+  llm 36s
+  plan incomplete, retry dem-L5-008 []
+dementia dem-L5-008 failed verify, rebuilding
+  treg-gemini 34s
+  llm 8s
+dementia dem-L5-002 failed verify, rebuilding
+  llm 38s
+  llm 11s
+  llm 9s
+  treg-gemini 34s
+  llm 18s
+dementia dem-L5-007 failed verify, rebuilding
+  llm 7s
+  treg-gemini 36s
+  llm 37s
+  plan incomplete, retry dem-L5-001 []
+  treg-gemini 34s
+  llm 41s
+  plan incomplete, retry dem-L5-008 []
+  treg-gemini 33s
+  llm 14s
+  treg-gemini 36s
+  treg-gemini 48s
+  treg-gemini 36s
+  llm 39s
+  plan incomplete, retry dem-L5-008 []
+  treg-gemini 45s
+  treg-gemini 63s
+  treg-gemini 53s
+  treg-gemini 68s
+  llm 40s
+  plan incomplete, retry dem-L5-008 []
+dementia dem-L5-008 flagged 0 hz 0 ds
+  treg-gemini 74s
+  treg-gemini 64s
+  treg-gemini 67s
+  llm 16s
+dementia dem-L5-003 VERIFIED 4 hz 0 ds
+  treg-gemini 66s
+  llm 10s
+  treg-gemini 55s
+  llm 37s
+  plan incomplete, retry dem-L5-009 []
+  treg-gemini 63s
+  treg-gemini 57s
+  llm 8s
+dementia dem-L5-000 flagged 0 hz 3 ds
+  treg-gemini 50s
+  treg-gemini 61s
+  treg-gemini 36s
+  llm 4s
+dementia dem-L5-002 flagged 0 hz 3 ds
+  llm 4s
+dementia dem-L5-004 failed verify, rebuilding
+  llm 10s
+dementia dem-L5-007 flagged 0 hz 3 ds
+  llm 38s
+  plan incomplete, retry dem-L5-009 []
+  treg-gemini 47s
+  llm 43s
+  plan incomplete, retry dem-L5-011 []
+  treg-gemini 60s
+  treg-gemini 63s
+  llm 4s
+dementia dem-L5-006 failed verify, rebuilding
+  llm 39s
+  plan incomplete, retry dem-L5-004 []
+  llm 37s
+  plan incomplete, retry dem-L5-009 []
+dementia dem-L5-009 failed verify, rebuilding
+  treg-gemini 34s
+  treg-gemini 34s
+  llm 35s
+  plan incomplete, retry dem-L5-006 []
+  llm 40s
+  plan incomplete, retry dem-L5-011 []
+  llm 40s
+  plan incomplete, retry dem-L5-004 []
+  llm 37s
+  plan incomplete, retry dem-L5-009 []
+  treg-gemini 34s
+  llm 18s
+dementia dem-L5-001 flagged 4 hz 0 ds
+  llm 5s
+dementia dem-L5-010 failed verify, rebuilding
+  llm 11s
+  llm 25s
+  llm 38s
+  plan incomplete, retry dem-L5-006 []
+  llm 38s
+  plan incomplete, retry dem-L5-011 []
+dementia dem-L5-011 failed verify, rebuilding
+  llm 42s
+  plan incomplete, retry dem-L5-004 []
+dementia dem-L5-004 flagged 0 hz 0 ds
+  treg-gemini 34s
+  treg-gemini 33s
+  llm 37s
+  plan incomplete, retry dem-L5-006 []
+dementia dem-L5-006 flagged 0 hz 0 ds
+  llm 41s
+  plan incomplete, retry dem-L5-011 []
+  treg-gemini 34s
+  treg-gemini 33s
+  llm 38s
+  plan incomplete, retry dem-L5-011 []
+  treg-gemini 34s
+  llm 5s
+dementia dem-L5-010 flagged 0 hz 3 ds
+  treg-gemini 34s
+  llm 38s
+  plan incomplete, retry dem-L5-011 []
+dementia dem-L5-011 flagged 0 hz 0 ds
+  treg-gemini 29s
+  llm 14s
+dementia dem-L5-009 flagged 4 hz 0 ds
+== dementia L5 12 items, 2 verified, 551s, cost {'image_calls': 0, 'llm_calls': 161, 'treg_gemini_calls': 144}
+DONE dementia {'image_calls': 0, 'llm_calls': 161, 'treg_gemini_calls': 144}

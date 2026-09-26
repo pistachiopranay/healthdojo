@@ -1,0 +1,39 @@
+{
+ "id": "fal-L2-007",
+ "raw": "{\"hazards\": [\n    {\"id\": \"LIV-01\", \"severity\": \"medium\", \"evidence\": \"throw rug in hallway\", \"box\": [810, 440, 930, 600]},\n    {\"id\": \"LIV-06\", \"severity\": \"medium\", \"evidence\": \"level change between rooms\", \"box\": [810, 440, 930, 600]},\n    {\"id\": \"BED-05\", \"severity\": \"medium\", \"evidence\": \"nightstand too close to bed\", \"box\": [610, 380, 740, 640]}\n]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "throw rug in hallway",
+   "box": [
+    810,
+    440,
+    930,
+    600
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "level change between rooms",
+   "box": [
+    810,
+    440,
+    930,
+    600
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "nightstand too close to bed",
+   "box": [
+    610,
+    380,
+    740,
+    640
+   ]
+  }
+ ]
+}

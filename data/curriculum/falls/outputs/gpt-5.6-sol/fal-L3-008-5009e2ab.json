@@ -1,0 +1,39 @@
+{
+ "id": "fal-L3-008",
+ "raw": "{\"hazards\":[{\"id\":\"LIV-01\",\"severity\":\"high\",\"evidence\":\"A loose throw rug is bunched and curled up in the central walking path.\",\"box\":[368,563,684,770]},{\"id\":\"LIV-02\",\"severity\":\"high\",\"evidence\":\"Multiple electrical cords run across the open floor and central walkway.\",\"box\":[174,497,847,999]},{\"id\":\"LIV-03\",\"severity\":\"high\",\"evidence\":\"The main walker route through the room is obstructed by the bunched rug and crossing cords.\",\"box\":[174,497,847,999]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "A loose throw rug is bunched and curled up in the central walking path.",
+   "box": [
+    368,
+    563,
+    684,
+    770
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Multiple electrical cords run across the open floor and central walkway.",
+   "box": [
+    174,
+    497,
+    847,
+    999
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "The main walker route through the room is obstructed by the bunched rug and crossing cords.",
+   "box": [
+    174,
+    497,
+    847,
+    999
+   ]
+  }
+ ]
+}

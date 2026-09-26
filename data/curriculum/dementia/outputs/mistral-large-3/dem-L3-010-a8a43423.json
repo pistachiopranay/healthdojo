@@ -1,0 +1,39 @@
+{
+ "id": "dem-L3-010",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Stove knobs are freely accessible and usable, posing a risk of the stove being accidentally turned on.\",\n      \"box\": [120, 300, 350, 450]\n    },\n    {\n      \"id\": \"DEM-K03\",\n      \"severity\": \"high\",\n      \"evidence\": \"Cleaning chemicals (spray bottles) are out on the counter and not locked away.\",\n      \"box\": [450, 200, 550, 300]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Clutter on the countertop near the sink and stove may pose a tripping or confusion hazard.\",\n      \"box\": [400, 150, 650, 350]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Stove knobs are freely accessible and usable, posing a risk of the stove being accidentally turned on.",
+   "box": [
+    120,
+    300,
+    350,
+    450
+   ]
+  },
+  {
+   "id": "DEM-K03",
+   "severity": "high",
+   "evidence": "Cleaning chemicals (spray bottles) are out on the counter and not locked away.",
+   "box": [
+    450,
+    200,
+    550,
+    300
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Clutter on the countertop near the sink and stove may pose a tripping or confusion hazard.",
+   "box": [
+    400,
+    150,
+    650,
+    350
+   ]
+  }
+ ]
+}

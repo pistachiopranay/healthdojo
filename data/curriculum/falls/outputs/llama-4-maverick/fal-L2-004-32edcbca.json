@@ -1,0 +1,28 @@
+{
+ "id": "fal-L2-004",
+ "raw": "{\"hazards\": [\n    {\"id\": \"KIT-03\", \"severity\": \"high\", \"evidence\": \"A wooden chair is being used near the sink, potentially as a makeshift step stool.\", \"box\": [270, 275, 410, 610]},\n    {\"id\": \"LIV-06\", \"severity\": \"medium\", \"evidence\": \"There is a visible threshold or step-down between the kitchen and the adjacent room.\", \"box\": [690, 290, 800, 560]}\n]}",
+ "hazards": [
+  {
+   "id": "KIT-03",
+   "severity": "high",
+   "evidence": "A wooden chair is being used near the sink, potentially as a makeshift step stool.",
+   "box": [
+    270,
+    275,
+    410,
+    610
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "There is a visible threshold or step-down between the kitchen and the adjacent room.",
+   "box": [
+    690,
+    290,
+    800,
+    560
+   ]
+  }
+ ]
+}

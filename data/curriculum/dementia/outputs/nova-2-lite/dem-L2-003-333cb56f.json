@@ -1,0 +1,12 @@
+{
+ "id": "dem-L2-003",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-B02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The white toilet seat blends with the white toilet and floor, creating low contrast that could confuse someone with dementia.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "The white toilet seat blends with the white toilet and floor, creating low contrast that could confuse someone with dementia.",
+   "box": null
+  }
+ ]
+}

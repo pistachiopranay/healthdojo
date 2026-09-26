@@ -1,0 +1,28 @@
+{
+ "id": "dem-L3-004",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-K01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Gas stove burner is shown in the inset image with a visible blue flame, indicating it is turned on. The stove knobs are freely accessible.\",\n      \"box\": [12, 23, 254, 260]\n    },\n    {\n      \"id\": \"DEM-K02\",\n      \"severity\": \"high\",\n      \"evidence\": \"A knife block with several knives is placed on the counter, within easy reach.\",\n      \"box\": [508, 244, 570, 312]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-K01",
+   "severity": "high",
+   "evidence": "Gas stove burner is shown in the inset image with a visible blue flame, indicating it is turned on. The stove knobs are freely accessible.",
+   "box": [
+    12,
+    23,
+    254,
+    260
+   ]
+  },
+  {
+   "id": "DEM-K02",
+   "severity": "high",
+   "evidence": "A knife block with several knives is placed on the counter, within easy reach.",
+   "box": [
+    508,
+    244,
+    570,
+    312
+   ]
+  }
+ ]
+}

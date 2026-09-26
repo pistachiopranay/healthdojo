@@ -1,0 +1,18 @@
+{
+ "id": "dem-L3-002",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E02\",\n      \"severity\": \"high\",\n      \"evidence\": \"Front door is left open to the outside, posing a wandering risk for someone with dementia.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There are piles of newspapers, boxes, and shoes in the middle of the walkway, creating a tripping hazard and potential confusion for someone with dementia.\",\n      \"box\": null\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "DEM-E02",
+   "severity": "high",
+   "evidence": "Front door is left open to the outside, posing a wandering risk for someone with dementia.",
+   "box": null
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "There are piles of newspapers, boxes, and shoes in the middle of the walkway, creating a tripping hazard and potential confusion for someone with dementia.",
+   "box": null
+  }
+ ]
+}

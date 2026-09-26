@@ -1,0 +1,28 @@
+{
+ "id": "fal-L1-003",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-03\", \"severity\": \"high\", \"evidence\": \"Pair of work boots sitting in the center of the concrete walkway directly at the base of the entry steps, plus stacked cardboard boxes on the left side of the step landing, narrowing/obstructing the walker approach to the door.\", \"box\": [292, 462, 535, 585]}, {\"id\": \"ENT-02\", \"severity\": \"medium\", \"evidence\": \"Raised door sill/threshold and a loose-appearing mat strip at the front door that a walker or post-surgical patient could catch on when entering.\", \"box\": [470, 398, 828, 420]}]}",
+ "hazards": [
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Pair of work boots sitting in the center of the concrete walkway directly at the base of the entry steps, plus stacked cardboard boxes on the left side of the step landing, narrowing/obstructing the walker approach to the door.",
+   "box": [
+    292,
+    462,
+    535,
+    585
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "Raised door sill/threshold and a loose-appearing mat strip at the front door that a walker or post-surgical patient could catch on when entering.",
+   "box": [
+    470,
+    398,
+    828,
+    420
+   ]
+  }
+ ]
+}

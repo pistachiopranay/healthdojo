@@ -1,0 +1,28 @@
+{
+ "id": "dem-L2-009",
+ "raw": "{\"hazards\": [\n    {\"id\": \"DEM-R01\", \"severity\": \"medium\", \"evidence\": \"large framed picture above the bed\", \"box\": [0.466, 0.137, 0.556, 0.264]},\n    {\"id\": \"DEM-R02\", \"severity\": \"medium\", \"evidence\": \"rug with a bold pattern\", \"box\": [0.396,0.605,0.757,0.957]}\n]}",
+ "hazards": [
+  {
+   "id": "DEM-R01",
+   "severity": "medium",
+   "evidence": "large framed picture above the bed",
+   "box": [
+    0.466,
+    0.137,
+    0.556,
+    0.264
+   ]
+  },
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "rug with a bold pattern",
+   "box": [
+    0.396,
+    0.605,
+    0.757,
+    0.957
+   ]
+  }
+ ]
+}

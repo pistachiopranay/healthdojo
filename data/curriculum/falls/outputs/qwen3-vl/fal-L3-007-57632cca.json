@@ -1,0 +1,61 @@
+{
+ "id": "fal-L3-007",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"KIT-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A dark mat is placed on the kitchen floor near the center, which could be slippery or cause tripping, especially for someone using a walker.\",\n      \"box\": [509, 857, 1000, 984]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A dark mat is placed on the kitchen floor near the center, which could be a trip hazard for someone using a walker.\",\n      \"box\": [509, 857, 1000, 984]\n    },\n    {\n      \"id\": \"LIV-07\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A dog food bowl and a rope toy are on the floor in the center of the kitchen, posing a tripping hazard for someone using a walker.\",\n      \"box\": [415, 770, 670, 848]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The dining chairs are pulled out and partially obstruct the walkway from the kitchen into the dining area, narrowing the path for a walker.\",\n      \"box\": [0, 218, 292, 850]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The single pendant light creates a bright spot but leaves surrounding areas in shadow, potentially causing glare or poor visibility for someone with limited mobility.\",\n      \"box\": [527, 234, 570, 302]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "KIT-04",
+   "severity": "medium",
+   "evidence": "A dark mat is placed on the kitchen floor near the center, which could be slippery or cause tripping, especially for someone using a walker.",
+   "box": [
+    509,
+    857,
+    1000,
+    984
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "A dark mat is placed on the kitchen floor near the center, which could be a trip hazard for someone using a walker.",
+   "box": [
+    509,
+    857,
+    1000,
+    984
+   ]
+  },
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "A dog food bowl and a rope toy are on the floor in the center of the kitchen, posing a tripping hazard for someone using a walker.",
+   "box": [
+    415,
+    770,
+    670,
+    848
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The dining chairs are pulled out and partially obstruct the walkway from the kitchen into the dining area, narrowing the path for a walker.",
+   "box": [
+    0,
+    218,
+    292,
+    850
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The single pendant light creates a bright spot but leaves surrounding areas in shadow, potentially causing glare or poor visibility for someone with limited mobility.",
+   "box": [
+    527,
+    234,
+    570,
+    302
+   ]
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "id": "dem-L2-006",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-B02\", \"severity\": \"medium\", \"evidence\": \"White raised toilet seat on white toilet bowl, low visual contrast making it hard to distinguish seat edges\", \"box\": [660, 470, 920, 700]}, {\"id\": \"DEM-B03\", \"severity\": \"low\", \"evidence\": \"Dark gray bath mat placed on light beige tile flooring, creating a high-contrast but potentially trip-inducing or depth-perception-confusing element\", \"box\": [340, 715, 675, 825]}]}",
+ "hazards": [
+  {
+   "id": "DEM-B02",
+   "severity": "medium",
+   "evidence": "White raised toilet seat on white toilet bowl, low visual contrast making it hard to distinguish seat edges",
+   "box": [
+    660,
+    470,
+    920,
+    700
+   ]
+  },
+  {
+   "id": "DEM-B03",
+   "severity": "low",
+   "evidence": "Dark gray bath mat placed on light beige tile flooring, creating a high-contrast but potentially trip-inducing or depth-perception-confusing element",
+   "box": [
+    340,
+    715,
+    675,
+    825
+   ]
+  }
+ ]
+}

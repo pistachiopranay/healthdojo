@@ -1,0 +1,72 @@
+{
+ "id": "fal-L1-006",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"KIT-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Frequently used items (dishes, bowls, pots) are stored on high shelves and upper cabinets.\",\n      \"box\": [0, 0, 300, 250]\n    },\n    {\n      \"id\": \"KIT-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"Frequently used items (pots, pans, and food containers) are stored on the floor or low shelves, requiring bending.\",\n      \"box\": [0, 500, 400, 1000]\n    },\n    {\n      \"id\": \"KIT-04\",\n      \"severity\": \"high\",\n      \"evidence\": \"Pots and pans are placed loosely on the floor, creating a slippery or tripping hazard near the sink and stove area.\",\n      \"box\": [0, 700, 400, 1000]\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The walking path is narrowed by pots, pans, and other items placed on the floor.\",\n      \"box\": [200, 600, 600, 1000]\n    },\n    {\n      \"id\": \"LIV-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There appears to be a slight level change or step-down between the kitchen and adjacent room (dining area), which is not clearly marked.\",\n      \"box\": [400, 200, 800, 500]\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The doorway leading to the dining area may be too narrow for a walker to pass through comfortably.\",\n      \"box\": [400, 150, 500, 500]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "severity": "high",
+   "evidence": "Frequently used items (dishes, bowls, pots) are stored on high shelves and upper cabinets.",
+   "box": [
+    0,
+    0,
+    300,
+    250
+   ]
+  },
+  {
+   "id": "KIT-02",
+   "severity": "high",
+   "evidence": "Frequently used items (pots, pans, and food containers) are stored on the floor or low shelves, requiring bending.",
+   "box": [
+    0,
+    500,
+    400,
+    1000
+   ]
+  },
+  {
+   "id": "KIT-04",
+   "severity": "high",
+   "evidence": "Pots and pans are placed loosely on the floor, creating a slippery or tripping hazard near the sink and stove area.",
+   "box": [
+    0,
+    700,
+    400,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "The walking path is narrowed by pots, pans, and other items placed on the floor.",
+   "box": [
+    200,
+    600,
+    600,
+    1000
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "There appears to be a slight level change or step-down between the kitchen and adjacent room (dining area), which is not clearly marked.",
+   "box": [
+    400,
+    200,
+    800,
+    500
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "The doorway leading to the dining area may be too narrow for a walker to pass through comfortably.",
+   "box": [
+    400,
+    150,
+    500,
+    500
+   ]
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+ "id": "fal-L3-001",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"STAIR-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Staircase has handrails on both sides, but they appear to be mounted only on the wall side and not continuous or graspable along the full length; the right rail ends abruptly before the top landing, and the left rail may not extend fully to the bottom or top, reducing support during ascent/descent.\",\n      \"box\": [235, 81, 670, 999]\n    },\n    {\n      \"id\": \"STAIR-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Handrails appear to be wooden and mounted to the wall, but the right rail ends before the top step and the left rail may not extend fully to the bottom; also, the rail ends are not capped or rounded, which may make them difficult to grasp securely.\",\n      \"box\": [235, 81, 670, 999]\n    },\n    {\n      \"id\": \"STAIR-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Stair treads are covered with a patterned carpet runner that appears to be loose or not securely fastened, especially visible at the edges and between steps, which could cause tripping or slipping.\",\n      \"box\": [305, 245, 658, 999]\n    },\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"low\",\n      \"evidence\": \"A patterned throw blanket or small rug is draped over the arm of the sofa on the left, which could slide or catch on a walker if the person brushes against it.\",\n      \"box\": [10, 640, 185, 772]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"Lighting is present but appears dim and directional (wall sconce), creating shadows on the stairs and landing; insufficient ambient lighting increases fall risk, especially for someone with limited mobility.\",\n      \"box\": [0, 0, 1000, 999]\n    },\n    {\n      \"id\": \"LIV-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"There is a visible step-down or level change between the hallway/stair landing and the kitchen area on the right, with no visual cue or marking to indicate the change in elevation.\",\n      \"box\": [817, 680, 968, 999]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "Staircase has handrails on both sides, but they appear to be mounted only on the wall side and not continuous or graspable along the full length; the right rail ends abruptly before the top landing, and the left rail may not extend fully to the bottom or top, reducing support during ascent/descent.",
+   "box": [
+    235,
+    81,
+    670,
+    999
+   ]
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "medium",
+   "evidence": "Handrails appear to be wooden and mounted to the wall, but the right rail ends before the top step and the left rail may not extend fully to the bottom; also, the rail ends are not capped or rounded, which may make them difficult to grasp securely.",
+   "box": [
+    235,
+    81,
+    670,
+    999
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "Stair treads are covered with a patterned carpet runner that appears to be loose or not securely fastened, especially visible at the edges and between steps, which could cause tripping or slipping.",
+   "box": [
+    305,
+    245,
+    658,
+    999
+   ]
+  },
+  {
+   "id": "LIV-01",
+   "severity": "low",
+   "evidence": "A patterned throw blanket or small rug is draped over the arm of the sofa on the left, which could slide or catch on a walker if the person brushes against it.",
+   "box": [
+    10,
+    640,
+    185,
+    772
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Lighting is present but appears dim and directional (wall sconce), creating shadows on the stairs and landing; insufficient ambient lighting increases fall risk, especially for someone with limited mobility.",
+   "box": [
+    0,
+    0,
+    1000,
+    999
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "There is a visible step-down or level change between the hallway/stair landing and the kitchen area on the right, with no visual cue or marking to indicate the change in elevation.",
+   "box": [
+    817,
+    680,
+    968,
+    999
+   ]
+  }
+ ]
+}

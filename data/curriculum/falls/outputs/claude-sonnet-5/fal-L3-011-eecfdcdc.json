@@ -1,0 +1,50 @@
+{
+ "id": "fal-L3-011",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-03\", \"severity\": \"high\", \"evidence\": \"Loose cord/rope draped across the bottom several steps of the staircase, creating a trip/entanglement hazard, especially risky for walker use\", \"box\": [388, 550, 800, 838]}, {\"id\": \"STAIR-02\", \"severity\": \"high\", \"evidence\": \"Second handrail on right side is a short, unmounted piece of wood not attached to wall, not graspable for full stair length\", \"box\": [828, 415, 955, 705]}, {\"id\": \"STAIR-04\", \"severity\": \"low\", \"evidence\": \"Stairway lighting appears dim in lower portion of staircase compared to top landing\", \"box\": [400, 400, 800, 700]}, {\"id\": \"LIV-04\", \"severity\": \"medium\", \"evidence\": \"Low sofa/couch visible in living room area without visible sturdy armrests for support\", \"box\": [0, 540, 240, 838]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "Loose cord/rope draped across the bottom several steps of the staircase, creating a trip/entanglement hazard, especially risky for walker use",
+   "box": [
+    388,
+    550,
+    800,
+    838
+   ]
+  },
+  {
+   "id": "STAIR-02",
+   "severity": "high",
+   "evidence": "Second handrail on right side is a short, unmounted piece of wood not attached to wall, not graspable for full stair length",
+   "box": [
+    828,
+    415,
+    955,
+    705
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "low",
+   "evidence": "Stairway lighting appears dim in lower portion of staircase compared to top landing",
+   "box": [
+    400,
+    400,
+    800,
+    700
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "Low sofa/couch visible in living room area without visible sturdy armrests for support",
+   "box": [
+    0,
+    540,
+    240,
+    838
+   ]
+  }
+ ]
+}

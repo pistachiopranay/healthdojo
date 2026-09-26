@@ -1,0 +1,50 @@
+{
+ "id": "fal-L1-005",
+ "raw": "{\"hazards\":[{\"id\":\"BATH-04\",\"severity\":\"high\",\"evidence\":\"The tub/shower has a smooth floor with no visible nonslip mat or textured traction surface.\",\"box\":[177,532,724,884]},{\"id\":\"BATH-05\",\"severity\":\"high\",\"evidence\":\"The shower has a high tub wall to step over, and the seat is entirely inside rather than a transfer bench spanning the wall.\",\"box\":[407,636,735,882]},{\"id\":\"BATH-06\",\"severity\":\"medium\",\"evidence\":\"The toilet appears to be a standard low-height toilet without a raised toilet seat.\",\"box\":[630,503,916,997]},{\"id\":\"LIV-03\",\"severity\":\"high\",\"evidence\":\"Shoes, clothing, papers, and small loose objects clutter the tub access and transfer area, obstructing safe walker use.\",\"box\":[199,718,447,874]}]}",
+ "hazards": [
+  {
+   "id": "BATH-04",
+   "severity": "high",
+   "evidence": "The tub/shower has a smooth floor with no visible nonslip mat or textured traction surface.",
+   "box": [
+    177,
+    532,
+    724,
+    884
+   ]
+  },
+  {
+   "id": "BATH-05",
+   "severity": "high",
+   "evidence": "The shower has a high tub wall to step over, and the seat is entirely inside rather than a transfer bench spanning the wall.",
+   "box": [
+    407,
+    636,
+    735,
+    882
+   ]
+  },
+  {
+   "id": "BATH-06",
+   "severity": "medium",
+   "evidence": "The toilet appears to be a standard low-height toilet without a raised toilet seat.",
+   "box": [
+    630,
+    503,
+    916,
+    997
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Shoes, clothing, papers, and small loose objects clutter the tub access and transfer area, obstructing safe walker use.",
+   "box": [
+    199,
+    718,
+    447,
+    874
+   ]
+  }
+ ]
+}

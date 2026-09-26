@@ -1,0 +1,50 @@
+{
+ "id": "fal-L1-006",
+ "raw": "{\"hazards\": [{\"id\": \"KIT-02\", \"severity\": \"high\", \"evidence\": \"Pots, pans, and canned goods stored on the floor along the walking path, requiring bending down to low storage\", \"box\": [0, 590, 520, 830]}, {\"id\": \"LIV-03\", \"severity\": \"high\", \"evidence\": \"Cookware, canned goods, and boxed food items cluttering the floor path in the kitchen/hallway, narrowing the walkable area\", \"box\": [0, 480, 520, 830]}, {\"id\": \"KIT-01\", \"severity\": \"medium\", \"evidence\": \"Open shelving with dishware stacked high, some items near top of reach requiring stretching\", \"box\": [0, 0, 440, 250]}, {\"id\": \"LIV-06\", \"severity\": \"medium\", \"evidence\": \"Visible transition/threshold between kitchen and dining room flooring at doorway\", \"box\": [500, 500, 700, 540]}]}",
+ "hazards": [
+  {
+   "id": "KIT-02",
+   "severity": "high",
+   "evidence": "Pots, pans, and canned goods stored on the floor along the walking path, requiring bending down to low storage",
+   "box": [
+    0,
+    590,
+    520,
+    830
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "high",
+   "evidence": "Cookware, canned goods, and boxed food items cluttering the floor path in the kitchen/hallway, narrowing the walkable area",
+   "box": [
+    0,
+    480,
+    520,
+    830
+   ]
+  },
+  {
+   "id": "KIT-01",
+   "severity": "medium",
+   "evidence": "Open shelving with dishware stacked high, some items near top of reach requiring stretching",
+   "box": [
+    0,
+    0,
+    440,
+    250
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "Visible transition/threshold between kitchen and dining room flooring at doorway",
+   "box": [
+    500,
+    500,
+    700,
+    540
+   ]
+  }
+ ]
+}

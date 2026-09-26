@@ -1,0 +1,17 @@
+{
+ "id": "dem-L3-007",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-R02\", \"severity\": \"high\", \"evidence\": \"Bold high-contrast patterned rug\", \"box\": [135, 529, 640, 999]}]}",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "high",
+   "evidence": "Bold high-contrast patterned rug",
+   "box": [
+    135,
+    529,
+    640,
+    999
+   ]
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "id": "fal-L2-013",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-05\", \"severity\": \"medium\", \"evidence\": \"Strong sunlight through the large windows creates bright glare/reflections on the polished wood walkway, which can obscure the floor surface for a walker user.\", \"box\": [420, 0, 910, 700]}]}",
+ "hazards": [
+  {
+   "id": "LIV-05",
+   "severity": "medium",
+   "evidence": "Strong sunlight through the large windows creates bright glare/reflections on the polished wood walkway, which can obscure the floor surface for a walker user.",
+   "box": [
+    420,
+    0,
+    910,
+    700
+   ]
+  }
+ ]
+}

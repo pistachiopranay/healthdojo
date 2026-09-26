@@ -1,0 +1,28 @@
+{
+ "id": "fal-L4-011",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-03\", \"severity\": \"medium\", \"evidence\": \"Objects on stairs\", \"box\": [529, 396, 712, 538]}, {\"id\": \"STAIR-05\", \"severity\": \"medium\", \"evidence\": \"Undefined step edges / loose stair covering\", \"box\": [319, 156, 722, 653]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "medium",
+   "evidence": "Objects on stairs",
+   "box": [
+    529,
+    396,
+    712,
+    538
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "medium",
+   "evidence": "Undefined step edges / loose stair covering",
+   "box": [
+    319,
+    156,
+    722,
+    653
+   ]
+  }
+ ]
+}

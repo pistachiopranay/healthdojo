@@ -1,0 +1,39 @@
+{
+ "id": "fal-L1-001",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"high\",\n      \"evidence\": \"A coiled electrical cord lies across the center of the hardwood floor, directly in the main walking path.\",\n      \"box\": [445, 523, 614, 628]\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The blue recliner has low, soft seating and no visible sturdy armrests to push off from, making it difficult for someone with limited mobility to stand.\",\n      \"box\": [24, 280, 349, 755]\n    },\n    {\n      \"id\": \"LIV-05\",\n      \"severity\": \"low\",\n      \"evidence\": \"The lamp on the end table creates a bright glare on the floor, and the overall lighting may be insufficient in corners or during evening hours, increasing fall risk.\",\n      \"box\": [296, 222, 349, 333]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "A coiled electrical cord lies across the center of the hardwood floor, directly in the main walking path.",
+   "box": [
+    445,
+    523,
+    614,
+    628
+   ]
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "The blue recliner has low, soft seating and no visible sturdy armrests to push off from, making it difficult for someone with limited mobility to stand.",
+   "box": [
+    24,
+    280,
+    349,
+    755
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "The lamp on the end table creates a bright glare on the floor, and the overall lighting may be insufficient in corners or during evening hours, increasing fall risk.",
+   "box": [
+    296,
+    222,
+    349,
+    333
+   ]
+  }
+ ]
+}

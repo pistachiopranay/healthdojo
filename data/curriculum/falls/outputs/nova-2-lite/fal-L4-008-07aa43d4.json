@@ -1,0 +1,40 @@
+{
+ "id": "fal-L4-008",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Throw rug / loose mat on walkway\",\n      \"box\": [229, 802, 667, 984]\n    },\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cords or wires across walkway\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-03\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Cluttered or narrowed walking path\",\n      \"box\": null\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Doorway too narrow for walker\",\n      \"box\": [164, 0, 354, 828]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "medium",
+   "evidence": "Throw rug / loose mat on walkway",
+   "box": [
+    229,
+    802,
+    667,
+    984
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "Cords or wires across walkway",
+   "box": null
+  },
+  {
+   "id": "LIV-03",
+   "severity": "medium",
+   "evidence": "Cluttered or narrowed walking path",
+   "box": null
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "Doorway too narrow for walker",
+   "box": [
+    164,
+    0,
+    354,
+    828
+   ]
+  }
+ ]
+}

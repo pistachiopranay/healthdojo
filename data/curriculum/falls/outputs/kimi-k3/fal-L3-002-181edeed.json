@@ -1,0 +1,39 @@
+{
+ "id": "fal-L3-002",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-03\", \"severity\": \"high\", \"evidence\": \"A black cord/wire is lying across multiple carpeted stair treads, running diagonally down the staircase where a walker user would step.\", \"box\": [308, 305, 905, 998]}, {\"id\": \"STAIR-05\", \"severity\": \"high\", \"evidence\": \"Stair carpet is torn, frayed and lifting with loose threads on several treads; step nosings/edges are worn and poorly defined.\", \"box\": [302, 355, 800, 775]}, {\"id\": \"STAIR-04\", \"severity\": \"medium\", \"evidence\": \"Strong direct sunlight creates bright glare on the right side of the treads with deep shadow on the left, giving high-contrast uneven illumination that can obscure step edges.\", \"box\": [300, 70, 1010, 1000]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "severity": "high",
+   "evidence": "A black cord/wire is lying across multiple carpeted stair treads, running diagonally down the staircase where a walker user would step.",
+   "box": [
+    308,
+    305,
+    905,
+    998
+   ]
+  },
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "Stair carpet is torn, frayed and lifting with loose threads on several treads; step nosings/edges are worn and poorly defined.",
+   "box": [
+    302,
+    355,
+    800,
+    775
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Strong direct sunlight creates bright glare on the right side of the treads with deep shadow on the left, giving high-contrast uneven illumination that can obscure step edges.",
+   "box": [
+    300,
+    70,
+    1010,
+    1000
+   ]
+  }
+ ]
+}

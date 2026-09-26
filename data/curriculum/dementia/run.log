@@ -1,0 +1,133 @@
+  llm 4s
+  llm 4s
+  treg-gemini 32s
+  treg-gemini 34s
+  llm 3s
+dementia dem-L1-007 VERIFIED 1 hz 0 ds
+  llm 5s
+dementia dem-L1-006 VERIFIED 1 hz 0 ds
+== dementia L1 8 items, 4 verified, 45s, cost {'image_calls': 0, 'llm_calls': 4, 'treg_gemini_calls': 2}
+  llm 3s
+  llm 4s
+  treg-gemini 33s
+  treg-gemini 33s
+  llm 3s
+dementia dem-L2-009 VERIFIED 1 hz 0 ds
+  llm 4s
+dementia dem-L2-008 VERIFIED 1 hz 0 ds
+== dementia L2 10 items, 5 verified, 42s, cost {'image_calls': 0, 'llm_calls': 8, 'treg_gemini_calls': 4}
+  llm 6s
+  llm 13s
+  llm 13s
+  llm 16s
+  llm 18s
+  llm 27s
+dementia dem-L3-008 flagged 0 hz 0 ds
+  llm 29s
+dementia dem-L3-006 flagged 0 hz 0 ds
+  treg-gemini 33s
+  treg-gemini 33s
+  treg-gemini 33s
+  treg gemini failed, falling back: treg task failed: {'code': 80007, 'message': 'reference image returned status 404', 'request_id': 'req_b3240a09-8c2f-41da-a81b-41ecbee4690d'}
+  treg-gemini 33s
+  img stable-image-inpaint-v1: 27s
+  treg-gemini 28s
+  treg-gemini 39s
+  treg-gemini 33s
+  treg-gemini 45s
+  treg-gemini 33s
+  treg-gemini 35s
+  treg-gemini 35s
+  llm 4s
+dementia dem-L3-010 VERIFIED 2 hz 1 ds
+  llm 5s
+dementia dem-L3-001 flagged 2 hz 1 ds
+  treg-gemini 48s
+  llm 8s
+dementia dem-L3-007 VERIFIED 2 hz 1 ds
+  treg-gemini 50s
+  llm 4s
+dementia dem-L3-011 VERIFIED 2 hz 1 ds
+  treg-gemini 47s
+  llm 4s
+dementia dem-L3-009 VERIFIED 2 hz 1 ds
+== dementia L3 12 items, 4 verified, 162s, cost {'image_calls': 1, 'llm_calls': 20, 'treg_gemini_calls': 18}
+  llm 16s
+  llm 25s
+dementia dem-L4-001 flagged 0 hz 0 ds
+  llm 26s
+dementia dem-L4-005 flagged 0 hz 0 ds
+  llm 26s
+dementia dem-L4-006 flagged 0 hz 0 ds
+  llm 27s
+dementia dem-L4-004 flagged 0 hz 0 ds
+  llm 27s
+dementia dem-L4-003 flagged 0 hz 0 ds
+  llm 28s
+dementia dem-L4-007 flagged 0 hz 0 ds
+  llm 38s
+dementia dem-L4-000 flagged 0 hz 0 ds
+  llm 23s
+  llm 25s
+dementia dem-L4-008 flagged 0 hz 0 ds
+  llm 25s
+dementia dem-L4-010 flagged 0 hz 0 ds
+  treg-gemini 33s
+  llm 28s
+dementia dem-L4-011 flagged 0 hz 0 ds
+  treg-gemini 33s
+  treg-gemini 45s
+  treg-gemini 41s
+  treg-gemini 33s
+  llm 6s
+dementia dem-L4-002 VERIFIED 3 hz 0 ds
+  treg-gemini 33s
+  llm 5s
+dementia dem-L4-009 flagged 3 hz 0 ds
+== dementia L4 12 items, 1 verified, 167s, cost {'image_calls': 1, 'llm_calls': 34, 'treg_gemini_calls': 24}
+  llm 8s
+  llm 9s
+  llm 21s
+  llm 21s
+  llm 25s
+dementia dem-L5-006 flagged 0 hz 0 ds
+  llm 27s
+dementia dem-L5-001 flagged 0 hz 0 ds
+  llm 28s
+dementia dem-L5-004 flagged 0 hz 0 ds
+  llm 28s
+dementia dem-L5-003 flagged 0 hz 0 ds
+  llm 7s
+  treg-gemini 33s
+  treg-gemini 33s
+  llm 26s
+dementia dem-L5-008 flagged 0 hz 0 ds
+  llm 25s
+dementia dem-L5-009 flagged 0 hz 0 ds
+  treg-gemini 32s
+  treg-gemini 34s
+  llm 28s
+dementia dem-L5-011 flagged 0 hz 0 ds
+  treg-gemini 27s
+  treg-gemini 40s
+  treg-gemini 42s
+  treg-gemini 34s
+  treg-gemini 42s
+  treg-gemini 29s
+  llm 8s
+dementia dem-L5-000 flagged 0 hz 3 ds
+  treg-gemini 43s
+  treg-gemini 33s
+  llm 3s
+dementia dem-L5-002 flagged 0 hz 3 ds
+  treg-gemini 36s
+  treg-gemini 49s
+  llm 4s
+dementia dem-L5-005 VERIFIED 0 hz 3 ds
+  llm 4s
+dementia dem-L5-007 flagged 0 hz 3 ds
+  treg-gemini 33s
+  llm 21s
+dementia dem-L5-010 flagged 0 hz 3 ds
+== dementia L5 12 items, 1 verified, 175s, cost {'image_calls': 1, 'llm_calls': 51, 'treg_gemini_calls': 39}
+DONE dementia {'image_calls': 1, 'llm_calls': 51, 'treg_gemini_calls': 39}

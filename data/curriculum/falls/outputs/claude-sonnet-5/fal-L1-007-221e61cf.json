@@ -1,0 +1,17 @@
+{
+ "id": "fal-L1-007",
+ "raw": "{\"hazards\": [{\"id\": \"BED-04\", \"severity\": \"high\", \"evidence\": \"Duffel bag and multiple pairs of shoes piled on the floor at the foot of the bed, creating a tripping hazard directly in the path someone would use getting in/out of bed\", \"box\": [530, 520, 900, 720]}]}",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "severity": "high",
+   "evidence": "Duffel bag and multiple pairs of shoes piled on the floor at the foot of the bed, creating a tripping hazard directly in the path someone would use getting in/out of bed",
+   "box": [
+    530,
+    520,
+    900,
+    720
+   ]
+  }
+ ]
+}

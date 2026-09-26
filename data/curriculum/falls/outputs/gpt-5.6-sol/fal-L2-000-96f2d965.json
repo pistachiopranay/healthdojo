@@ -1,0 +1,39 @@
+{
+ "id": "fal-L2-000",
+ "raw": "{\"hazards\":[{\"id\":\"BED-04\",\"severity\":\"high\",\"evidence\":\"Electrical device and loose coiled cables clutter the floor beside the bed, obstructing walker use.\",\"box\":[238,300,448,540]},{\"id\":\"LIV-02\",\"severity\":\"high\",\"evidence\":\"Multiple loose cords cross the walking area between the bed and doorway.\",\"box\":[240,348,445,538]},{\"id\":\"BED-05\",\"severity\":\"medium\",\"evidence\":\"The approach along the left side of the bed is narrowed by the wall, floor device, and cords, limiting walker clearance.\",\"box\":[277,286,521,590]}]}",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "severity": "high",
+   "evidence": "Electrical device and loose coiled cables clutter the floor beside the bed, obstructing walker use.",
+   "box": [
+    238,
+    300,
+    448,
+    540
+   ]
+  },
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Multiple loose cords cross the walking area between the bed and doorway.",
+   "box": [
+    240,
+    348,
+    445,
+    538
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "medium",
+   "evidence": "The approach along the left side of the bed is narrowed by the wall, floor device, and cords, limiting walker clearance.",
+   "box": [
+    277,
+    286,
+    521,
+    590
+   ]
+  }
+ ]
+}

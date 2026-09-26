@@ -1,0 +1,17 @@
+{
+ "id": "fal-L5-011",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-05\", \"severity\": \"high\", \"evidence\": \"The edges of the steps are not clearly defined, and the carpet appears to be loose or uneven.\", \"box\": [275, 159, 821, 999]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-05",
+   "severity": "high",
+   "evidence": "The edges of the steps are not clearly defined, and the carpet appears to be loose or uneven.",
+   "box": [
+    275,
+    159,
+    821,
+    999
+   ]
+  }
+ ]
+}

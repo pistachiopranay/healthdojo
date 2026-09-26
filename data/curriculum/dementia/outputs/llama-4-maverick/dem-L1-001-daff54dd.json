@@ -1,0 +1,17 @@
+{
+ "id": "dem-L1-001",
+ "raw": "{\"hazards\": [{\"id\": \"DEM-E03\", \"severity\": \"medium\", \"evidence\": \"Piles of newspapers on the floor\", \"box\": [250, 460, 560, 740]}]}",
+ "hazards": [
+  {
+   "id": "DEM-E03",
+   "severity": "medium",
+   "evidence": "Piles of newspapers on the floor",
+   "box": [
+    250,
+    460,
+    560,
+    740
+   ]
+  }
+ ]
+}

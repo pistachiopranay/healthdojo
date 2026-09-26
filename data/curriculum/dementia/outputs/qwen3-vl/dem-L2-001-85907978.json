@@ -1,0 +1,17 @@
+{
+ "id": "dem-L2-001",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-E01\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Car keys are hanging on a hook on the side table next to the front door, within easy reach and visible from the entryway.\",\n      \"box\": [0, 270, 85, 337]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-E01",
+   "severity": "medium",
+   "evidence": "Car keys are hanging on a hook on the side table next to the front door, within easy reach and visible from the entryway.",
+   "box": [
+    0,
+    270,
+    85,
+    337
+   ]
+  }
+ ]
+}

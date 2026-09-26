@@ -1,0 +1,17 @@
+{
+ "id": "fal-L5-010",
+ "raw": "{\"hazards\": [{\"id\": \"STAIR-01\", \"severity\": \"high\", \"evidence\": \"The staircase is missing a handrail on one side.\", \"box\": [270, 0, 730, 990]}]}",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "The staircase is missing a handrail on one side.",
+   "box": [
+    270,
+    0,
+    730,
+    990
+   ]
+  }
+ ]
+}

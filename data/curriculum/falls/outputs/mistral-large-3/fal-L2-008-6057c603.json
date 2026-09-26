@@ -1,0 +1,61 @@
+{
+ "id": "fal-L2-008",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"ENT-01\",\n      \"severity\": \"high\",\n      \"evidence\": \"Exterior steps without a handrail on both sides (only one side has a railing).\",\n      \"box\": [250, 350, 400, 600]\n    },\n    {\n      \"id\": \"ENT-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Raised threshold or door sill at the entrance.\",\n      \"box\": [350, 400, 500, 450]\n    },\n    {\n      \"id\": \"STAIR-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Poor lighting on the steps could be a hazard, though the wall light helps.\",\n      \"box\": [200, 300, 400, 600]\n    },\n    {\n      \"id\": \"LIV-06\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Unmarked transition from grass to concrete walkway could be a tripping hazard.\",\n      \"box\": [0, 700, 1000, 900]\n    },\n    {\n      \"id\": \"ENT-05\",\n      \"severity\": \"medium\",\n      \"evidence\": \"Doorway width assessment needed for walker clearance (not fully visible but appears narrow).\",\n      \"box\": [350, 200, 500, 650]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "ENT-01",
+   "severity": "high",
+   "evidence": "Exterior steps without a handrail on both sides (only one side has a railing).",
+   "box": [
+    250,
+    350,
+    400,
+    600
+   ]
+  },
+  {
+   "id": "ENT-02",
+   "severity": "medium",
+   "evidence": "Raised threshold or door sill at the entrance.",
+   "box": [
+    350,
+    400,
+    500,
+    450
+   ]
+  },
+  {
+   "id": "STAIR-04",
+   "severity": "medium",
+   "evidence": "Poor lighting on the steps could be a hazard, though the wall light helps.",
+   "box": [
+    200,
+    300,
+    400,
+    600
+   ]
+  },
+  {
+   "id": "LIV-06",
+   "severity": "medium",
+   "evidence": "Unmarked transition from grass to concrete walkway could be a tripping hazard.",
+   "box": [
+    0,
+    700,
+    1000,
+    900
+   ]
+  },
+  {
+   "id": "ENT-05",
+   "severity": "medium",
+   "evidence": "Doorway width assessment needed for walker clearance (not fully visible but appears narrow).",
+   "box": [
+    350,
+    200,
+    500,
+    650
+   ]
+  }
+ ]
+}

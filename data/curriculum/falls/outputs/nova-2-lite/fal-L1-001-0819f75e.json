@@ -1,0 +1,23 @@
+{
+ "id": "fal-L1-001",
+ "raw": "```json\n{\n  \"hazards\": [\n    {\n      \"id\": \"LIV-02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A power cord is lying across the floor in the center of the room, creating a tripping hazard for someone using a walker.\",\n      \"box\": null\n    },\n    {\n      \"id\": \"LIV-04\",\n      \"severity\": \"medium\",\n      \"evidence\": \"The blue recliner chair has low armrests and is soft, which could make it difficult for an older adult to rise from without support.\",\n      \"box\": [25, 280, 354, 760]\n    }\n  ]\n}\n```",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "medium",
+   "evidence": "A power cord is lying across the floor in the center of the room, creating a tripping hazard for someone using a walker.",
+   "box": null
+  },
+  {
+   "id": "LIV-04",
+   "severity": "medium",
+   "evidence": "The blue recliner chair has low armrests and is soft, which could make it difficult for an older adult to rise from without support.",
+   "box": [
+    25,
+    280,
+    354,
+    760
+   ]
+  }
+ ]
+}

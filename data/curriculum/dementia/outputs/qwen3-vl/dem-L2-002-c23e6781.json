@@ -1,0 +1,39 @@
+{
+ "id": "dem-L2-002",
+ "raw": "{\n  \"hazards\": [\n    {\n      \"id\": \"DEM-R02\",\n      \"severity\": \"medium\",\n      \"evidence\": \"A rectangular rug with a dark border and patterned center is placed on the light-colored carpet, creating high contrast that may be misperceived as a step or hole by someone with dementia.\",\n      \"box\": [428, 609, 737, 935]\n    },\n    {\n      \"id\": \"DEM-R01\",\n      \"severity\": \"low\",\n      \"evidence\": \"A large mirror is visible in the adjacent room through the open doorway, potentially facing the bedroom area and causing confusion or misperception for someone with dementia.\",\n      \"box\": [800, 48, 999, 777]\n    },\n    {\n      \"id\": \"DEM-E03\",\n      \"severity\": \"low\",\n      \"evidence\": \"The open doorway and hallway beyond show a rug and furniture that may create a narrow or cluttered path, posing a minor tripping or wandering risk.\",\n      \"box\": [798, 48, 999, 777]\n    }\n  ]\n}",
+ "hazards": [
+  {
+   "id": "DEM-R02",
+   "severity": "medium",
+   "evidence": "A rectangular rug with a dark border and patterned center is placed on the light-colored carpet, creating high contrast that may be misperceived as a step or hole by someone with dementia.",
+   "box": [
+    428,
+    609,
+    737,
+    935
+   ]
+  },
+  {
+   "id": "DEM-R01",
+   "severity": "low",
+   "evidence": "A large mirror is visible in the adjacent room through the open doorway, potentially facing the bedroom area and causing confusion or misperception for someone with dementia.",
+   "box": [
+    800,
+    48,
+    999,
+    777
+   ]
+  },
+  {
+   "id": "DEM-E03",
+   "severity": "low",
+   "evidence": "The open doorway and hallway beyond show a rug and furniture that may create a narrow or cluttered path, posing a minor tripping or wandering risk.",
+   "box": [
+    798,
+    48,
+    999,
+    777
+   ]
+  }
+ ]
+}

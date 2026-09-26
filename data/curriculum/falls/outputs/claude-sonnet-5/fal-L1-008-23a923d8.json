@@ -1,0 +1,17 @@
+{
+ "id": "fal-L1-008",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"Power cord/plug lying across the floor path near the recliner, in the main walking area\", \"box\": [522, 469, 590, 497]}]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "Power cord/plug lying across the floor path near the recliner, in the main walking area",
+   "box": [
+    522,
+    469,
+    590,
+    497
+   ]
+  }
+ ]
+}

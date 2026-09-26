@@ -1,0 +1,17 @@
+{
+ "id": "fal-L2-006",
+ "raw": "{\"hazards\":[{\"id\":\"LIV-01\",\"severity\":\"high\",\"evidence\":\"Loose throw rug with curled and rippled edges lies directly in the main walking path, creating a trip hazard for a walker.\",\"box\":[332,562,601,702]}]}",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "severity": "high",
+   "evidence": "Loose throw rug with curled and rippled edges lies directly in the main walking path, creating a trip hazard for a walker.",
+   "box": [
+    332,
+    562,
+    601,
+    702
+   ]
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+ "id": "fal-L2-012",
+ "raw": "{\"hazards\": [\n    {\"id\": \"LIV-07\", \"severity\": \"medium\", \"evidence\": \"a stuffed animal and a dog bowl on the floor\", \"box\": [290, 530, 410, 600]},\n    {\"id\": \"BED-04\", \"severity\": \"medium\", \"evidence\": \"a stuffed animal and a dog bowl on the floor\", \"box\": [290, 530, 410, 600]},\n    {\"id\": \"BED-05\", \"severity\": \"low\", \"evidence\": \"bed is against the wall on one side\", \"box\": [410, 190, 1000, 930]},\n    {\"id\": \"LIV-03\", \"severity\": \"low\", \"evidence\": \"bed is against the wall on one side\", \"box\": [410, 190, 1000, 930]},\n    {\"id\": \"BED-02\", \"severity\": \"low\", \"evidence\": \"lamp is on a bedside table, but on the other side of the bed\", \"box\": [720, 100, 800, 320]},\n    {\"id\": \"STAIR-01\", \"severity\": \"high\", \"evidence\": \"no handrail visible on the left side of the stairs\", \"box\": [120, 240, 270, 420]}\n]}",
+ "hazards": [
+  {
+   "id": "LIV-07",
+   "severity": "medium",
+   "evidence": "a stuffed animal and a dog bowl on the floor",
+   "box": [
+    290,
+    530,
+    410,
+    600
+   ]
+  },
+  {
+   "id": "BED-04",
+   "severity": "medium",
+   "evidence": "a stuffed animal and a dog bowl on the floor",
+   "box": [
+    290,
+    530,
+    410,
+    600
+   ]
+  },
+  {
+   "id": "BED-05",
+   "severity": "low",
+   "evidence": "bed is against the wall on one side",
+   "box": [
+    410,
+    190,
+    1000,
+    930
+   ]
+  },
+  {
+   "id": "LIV-03",
+   "severity": "low",
+   "evidence": "bed is against the wall on one side",
+   "box": [
+    410,
+    190,
+    1000,
+    930
+   ]
+  },
+  {
+   "id": "BED-02",
+   "severity": "low",
+   "evidence": "lamp is on a bedside table, but on the other side of the bed",
+   "box": [
+    720,
+    100,
+    800,
+    320
+   ]
+  },
+  {
+   "id": "STAIR-01",
+   "severity": "high",
+   "evidence": "no handrail visible on the left side of the stairs",
+   "box": [
+    120,
+    240,
+    270,
+    420
+   ]
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "id": "fal-L2-000",
+ "raw": "{\"hazards\": [{\"id\": \"LIV-02\", \"severity\": \"high\", \"evidence\": \"White power cord and coiled cable run from a small floor device across the carpet in the bed-to-door walkway.\", \"box\": [238, 398, 466, 535]}, {\"id\": \"BED-04\", \"severity\": \"medium\", \"evidence\": \"Small electronic device with an attached light sits on the floor at the bedside egress area, with loose cables beside the bed where the user steps out.\", \"box\": [298, 382, 372, 462]}, {\"id\": \"BED-03\", \"severity\": \"medium\", \"evidence\": \"The route from the bed toward the doorway/hallway is dim compared with the window side of the room, with the hallway beyond in shadow and no visible path lighting.\", \"box\": [118, 0, 310, 362]}, {\"id\": \"LIV-05\", \"severity\": \"low\", \"evidence\": \"Strong daylight/glare from the sheer-curtained window on the right contrasts with darker areas near the door, creating uneven lighting for a walker user.\", \"box\": [898, 0, 1000, 307]}]}",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "severity": "high",
+   "evidence": "White power cord and coiled cable run from a small floor device across the carpet in the bed-to-door walkway.",
+   "box": [
+    238,
+    398,
+    466,
+    535
+   ]
+  },
+  {
+   "id": "BED-04",
+   "severity": "medium",
+   "evidence": "Small electronic device with an attached light sits on the floor at the bedside egress area, with loose cables beside the bed where the user steps out.",
+   "box": [
+    298,
+    382,
+    372,
+    462
+   ]
+  },
+  {
+   "id": "BED-03",
+   "severity": "medium",
+   "evidence": "The route from the bed toward the doorway/hallway is dim compared with the window side of the room, with the hallway beyond in shadow and no visible path lighting.",
+   "box": [
+    118,
+    0,
+    310,
+    362
+   ]
+  },
+  {
+   "id": "LIV-05",
+   "severity": "low",
+   "evidence": "Strong daylight/glare from the sheer-curtained window on the right contrasts with darker areas near the door, creating uneven lighting for a walker user.",
+   "box": [
+    898,
+    0,
+    1000,
+    307
+   ]
+  }
+ ]
+}
