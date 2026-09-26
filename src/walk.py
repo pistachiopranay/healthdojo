@@ -312,7 +312,7 @@ def build():
     worlds = json.loads((WORLDS / "worlds.json").read_text())
     out = {"worlds": {}, "runs": [], "leaderboard": [], "tol_deg": TOL, "budget": BUDGET}
     for s, w in worlds.items():
-        if not (SCENES / f"{s}.json").exists():
+        if s not in GT_REGIONS or not (SCENES / f"{s}.json").exists():
             continue  # walkthrough runs only cover HomeBench worlds with scene ground truth
         g = gt(s)
         out["worlds"][s] = {"title": w["title"], "hazard": w["hazard"], "pano": f"../data/walks/_pano/{s}.jpg", **g}
