@@ -1,0 +1,40 @@
+{
+  "world_id": "5ec894ed-14a0-4473-aa42-b534d5b0b97a",
+  "display_name": "",
+  "tags": null,
+  "assets": {
+    "mesh": {
+      "collider_mesh_url": "https://cdn.marble.worldlabs.ai/5ec894ed-14a0-4473-aa42-b534d5b0b97a/adc6538b.glb",
+      "hq_mesh_url": null,
+      "full_res_mesh_url": null
+    },
+    "imagery": {
+      "pano_url": "https://cdn.marble.worldlabs.ai/5ec894ed-14a0-4473-aa42-b534d5b0b97a/878056c0-924e-42f8-8e3c-4d46ac23c66e_panos/rgb_0.png"
+    },
+    "splats": {
+      "spz_urls": {
+        "500k": "https://cdn.marble.worldlabs.ai/5ec894ed-14a0-4473-aa42-b534d5b0b97a/0dcfd943-18cb-4f06-967b-338bc3f438a7_ceramic_500k.spz",
+        "100k": "https://cdn.marble.worldlabs.ai/5ec894ed-14a0-4473-aa42-b534d5b0b97a/3dddb854-f7ab-4eab-a2f5-5c6d4a7e49e1_dust_100k.spz",
+        "150k": "https://cdn.marble.worldlabs.ai/5ec894ed-14a0-4473-aa42-b534d5b0b97a/fccae7cd-36a5-4b1a-8ba1-e0ccde20ef73_ceramic_150k.spz",
+        "full_res": "https://cdn.marble.worldlabs.ai/5ec894ed-14a0-4473-aa42-b534d5b0b97a/e1767a60-50a9-4cc4-b4b8-c30f00527be7_ceramic.spz"
+      },
+      "semantics_metadata": {
+        "metric_scale_factor": 1.6802347,
+        "ground_plane_offset": 1.3574117
+      }
+    },
+    "thumbnail_url": "https://cdn.marble.worldlabs.ai/5ec894ed-14a0-4473-aa42-b534d5b0b97a/20b3f015-fc65-422b-b455-d6d2da1fd058_sand_mpi/thumbnail.webp",
+    "caption": "The scene is a warm and inviting living room, captured in a realistic style, evoking a comfortable and lived-in atmosphere. The overall tone is tranquil and homely, suggesting a peaceful domestic space. The room features gleaming hardwood floors that extend throughout, providing a consistent and elegant base. A soft blue recliner, with a wooden lever on its side, is positioned near a light-colored wall, creating a comfortable seating area. Adjacent to the recliner is a plush beige sofa with a tailored skirt, offering additional seating. In the center of the room, a patterned area rug with its front corner curled up defines the main walkway, adding a touch of traditional design. Across from the sofa, a television rests on a wooden cabinet, which also houses various books and decorative items. To the right of the television cabinet, an ornate wooden china cabinet displays decorative pieces behind its glass doors. A large, bright window adorned with sheer white curtains overlooks a lush outdoor scene, bathing the room in natural light. The room is arranged with furniture placed along the perimeter, leaving an open central space for easy movement. The 360 scene is faultless."
+  },
+  "created_at": null,
+  "updated_at": null,
+  "permission": {
+    "public": false,
+    "allowed_readers": [],
+    "allowed_writers": [],
+    "allow_id_access": false
+  },
+  "world_prompt": null,
+  "world_marble_url": "https://marble.worldlabs.ai/world/5ec894ed-14a0-4473-aa42-b534d5b0b97a",
+  "model": null
+}

@@ -1,0 +1,40 @@
+{
+  "world_id": "f94d9011-cd27-4f1c-9b4f-fcc89cbb1ea0",
+  "display_name": "",
+  "tags": null,
+  "assets": {
+    "mesh": {
+      "collider_mesh_url": "https://cdn.marble.worldlabs.ai/f94d9011-cd27-4f1c-9b4f-fcc89cbb1ea0/6693dfca.glb",
+      "hq_mesh_url": null,
+      "full_res_mesh_url": null
+    },
+    "imagery": {
+      "pano_url": "https://cdn.marble.worldlabs.ai/f94d9011-cd27-4f1c-9b4f-fcc89cbb1ea0/d6f943d1-bfe3-4648-8d86-76ce0e0de946_panos/rgb_0.png"
+    },
+    "splats": {
+      "spz_urls": {
+        "500k": "https://cdn.marble.worldlabs.ai/f94d9011-cd27-4f1c-9b4f-fcc89cbb1ea0/b258eda4-27ca-4f42-81f8-259d1fa314a3_ceramic_500k.spz",
+        "100k": "https://cdn.marble.worldlabs.ai/f94d9011-cd27-4f1c-9b4f-fcc89cbb1ea0/96e43111-a6e1-4811-a810-a185cc08e1da_dust_100k.spz",
+        "150k": "https://cdn.marble.worldlabs.ai/f94d9011-cd27-4f1c-9b4f-fcc89cbb1ea0/35c55c02-6e36-4b0b-a3ac-d1bf804e9d72_ceramic_150k.spz",
+        "full_res": "https://cdn.marble.worldlabs.ai/f94d9011-cd27-4f1c-9b4f-fcc89cbb1ea0/b7639cfd-1c15-493c-992e-19a3c0965e6e_ceramic.spz"
+      },
+      "semantics_metadata": {
+        "metric_scale_factor": 1.6884402,
+        "ground_plane_offset": 1.5762198
+      }
+    },
+    "thumbnail_url": "https://cdn.marble.worldlabs.ai/f94d9011-cd27-4f1c-9b4f-fcc89cbb1ea0/3cbe7263-2999-4759-8364-7dd301bbed45_sand_mpi/thumbnail.webp",
+    "caption": "The scene is a cozy living room, likely belonging to an older adult, rendered in a realistic style that evokes a sense of comfort and home. The overall tone is warm and inviting, bathed in the soft, natural light filtering in from outside. The room features a polished hardwood floor throughout, providing a consistent and elegant base for the furnishings. To the left, a dark blue recliner, accented with a single blue throw pillow, sits adjacent to a small wooden side table holding a decorative lamp. A second, light-colored recliner with wooden armrests, draped with a blue blanket, is positioned further into the room. A sofa upholstered in a light fabric, adorned with patterned throw pillows, is located against a wall, facing a television set resting on a wooden TV stand. At the back of the room, a glass-paned door stands wide open, leading to a sunny patio and garden outside, which extends to the left and right, offering views of vibrant greenery and perhaps additional outdoor seating or garden features. The living room seamlessly transitions into other areas of the house, with subtle architectural details suggesting a well-maintained and cherished home environment. The 360 scene is faultless."
+  },
+  "created_at": null,
+  "updated_at": null,
+  "permission": {
+    "public": false,
+    "allowed_readers": [],
+    "allowed_writers": [],
+    "allow_id_access": false
+  },
+  "world_prompt": null,
+  "world_marble_url": "https://marble.worldlabs.ai/world/f94d9011-cd27-4f1c-9b4f-fcc89cbb1ea0",
+  "model": null
+}

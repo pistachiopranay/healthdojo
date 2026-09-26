@@ -1,0 +1,40 @@
+{
+  "world_id": "9ccc900e-b1e1-4af1-b296-ec412d99a8a3",
+  "display_name": "",
+  "tags": null,
+  "assets": {
+    "mesh": {
+      "collider_mesh_url": "https://cdn.marble.worldlabs.ai/9ccc900e-b1e1-4af1-b296-ec412d99a8a3/cf064632.glb",
+      "hq_mesh_url": null,
+      "full_res_mesh_url": null
+    },
+    "imagery": {
+      "pano_url": "https://cdn.marble.worldlabs.ai/9ccc900e-b1e1-4af1-b296-ec412d99a8a3/63274b16-121f-44b2-800d-3f7e25df09d7_panos/rgb_0.png"
+    },
+    "splats": {
+      "spz_urls": {
+        "500k": "https://cdn.marble.worldlabs.ai/9ccc900e-b1e1-4af1-b296-ec412d99a8a3/5f8d6fe5-dec0-4be1-8840-77509aeaedf3_ceramic_500k.spz",
+        "100k": "https://cdn.marble.worldlabs.ai/9ccc900e-b1e1-4af1-b296-ec412d99a8a3/27a15d2c-af4d-4367-822e-a503bbdd914f_dust_100k.spz",
+        "150k": "https://cdn.marble.worldlabs.ai/9ccc900e-b1e1-4af1-b296-ec412d99a8a3/6ec9a678-ab83-4f94-9383-d4f63f2e32c3_ceramic_150k.spz",
+        "full_res": "https://cdn.marble.worldlabs.ai/9ccc900e-b1e1-4af1-b296-ec412d99a8a3/e96a6bf5-bff2-4334-8ecd-53a5b7f46b63_ceramic.spz"
+      },
+      "semantics_metadata": {
+        "metric_scale_factor": 2.6564193,
+        "ground_plane_offset": 1.5247017
+      }
+    },
+    "thumbnail_url": "https://cdn.marble.worldlabs.ai/9ccc900e-b1e1-4af1-b296-ec412d99a8a3/a7446e36-5988-4c94-a33b-288cc3c0c447_sand_mpi/thumbnail.webp",
+    "caption": "The scene is a realistic front entry of a stone-and-siding house, presented with a welcoming and well-maintained aesthetic. The overall tone is calm and inviting, suggesting a quiet residential setting. A concrete walkway stretches directly towards the front of the house, bordered on both sides by meticulously landscaped shrubs and flower beds. This pathway leads up to two sturdy concrete steps, providing access to the dark wooden front door. The front door is flanked by two clear sidelights, allowing light into the entryway, and a functional wall lantern illuminates the immediate area above the door, casting a warm glow on the stone facade. There are no handrails on either side of the steps, maintaining an open and uncluttered appearance. The house itself features a facade of variegated gray stone and a contrasting lighter siding material that wraps around the structure. On either side of the entryway, well-maintained green bushes and smaller plants are neatly arranged in garden beds. The concrete walkway extends into the foreground, inviting visitors towards the entrance. The 360 scene is faultless."
+  },
+  "created_at": null,
+  "updated_at": null,
+  "permission": {
+    "public": false,
+    "allowed_readers": [],
+    "allowed_writers": [],
+    "allow_id_access": false
+  },
+  "world_prompt": null,
+  "world_marble_url": "https://marble.worldlabs.ai/world/9ccc900e-b1e1-4af1-b296-ec412d99a8a3",
+  "model": null
+}

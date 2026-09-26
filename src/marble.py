@@ -62,7 +62,89 @@ SHOWCASE = [
         "text_prompt": "Carpeted bedroom of an older adult: queen bed, wooden nightstand with lamp, dresser, doorway to a hallway; "
         "clothes, blankets, a leather handbag, sneakers and an open cardboard box scattered on the floor beside the bed, blocking the path to the door.",
     },
+    # ---- 2026-09-26 batch 2: DementiaBench + falls rooms we lacked ----
+    {
+        "scene_id": "dem-bedroom-base0-DEM-R03", "bench": "dementia",
+        "title": "Handgun on the nightstand",
+        "hazard": "A handgun left in reach on the bedside nightstand",
+        "text_prompt": "Carpeted bedroom of an older adult with a queen bed, dresser, corner cabinet, window with valance, and a wooden "
+        "nightstand with a lamp; a black handgun lies on top of the nightstand beside the lamp.",
+    },
+    {
+        "scene_id": "dem-bathroom-base0-DEM-B03", "bench": "dementia",
+        "title": "Dark bath mat on a light floor",
+        "hazard": "Solid black mat on light tile that can read as a hole in the floor",
+        "text_prompt": "Bright bathroom with light beige tile floor, white tub with grab bars and a shower chair, toilet with a safety "
+        "frame, vanity sink; a solid black bath mat lies on the light floor in front of the tub and toilet.",
+    },
+    {
+        "scene_id": "dem-kitchen-base0-DEM-K04", "bench": "dementia",
+        "title": "Medication bottles left out",
+        "hazard": "Orange prescription bottles and pill containers out on the kitchen counter",
+        "text_prompt": "Older American kitchen with wood cabinets, white refrigerator, black stove and dishwasher, open shelves of bowls; "
+        "orange prescription pill bottles and pill containers sit openly on the counter left of the sink.",
+    },
+    {
+        "scene_id": "dem-entry-base0-DEM-E02", "bench": "dementia",
+        "title": "Back door left open to the outside",
+        "hazard": "Glass back door standing open to the patio, an easy exit for wandering",
+        "text_prompt": "Living room of an older adult with hardwood floors, two recliners, sofa, TV stand; at the back a glass-paned "
+        "door stands wide open onto a sunny patio and garden outside.",
+    },
+    {
+        "scene_id": "kitchen-base1-KIT-04", "bench": "falls",
+        "title": "Kitchen runner with a curled corner",
+        "hazard": "Unbacked runner mat at the sink with its near corner curled up",
+        "text_prompt": "Galley kitchen of an older adult with open wood shelves of dishes, white lower cabinets, stainless fridge, "
+        "doorway to a dining room; a thin unbacked runner mat on the wood floor in front of the sink with its corner curled up.",
+    },
+    {
+        "scene_id": "living-base0-LIV-01", "bench": "falls",
+        "title": "Living room rug with a lifted edge",
+        "hazard": "Area rug in the central walkway with its front corner curled and lifted",
+        "text_prompt": "Living room of an older adult with hardwood floors, a blue recliner, beige sofa, TV on a cabinet, china cabinet "
+        "and bright window; a patterned area rug in the middle of the walkway with its front corner curled up.",
+    },
+    {
+        "scene_id": "entry-base0-ENT-01", "bench": "falls",
+        "title": "Entry steps without a handrail",
+        "hazard": "Two concrete front steps with no handrail on either side",
+        "text_prompt": "Front entry of a stone-and-siding house: a concrete walkway through shrubs and flower beds leads to two "
+        "concrete steps up to a dark wooden front door with sidelights and a wall lantern; no handrail on either side of the steps.",
+    },
+    {
+        "scene_id": "bedroom-base0-BED-01", "bench": "falls",
+        "title": "Mattress on the floor",
+        "hazard": "Bed is a mattress directly on the floor, far below knee height",
+        "text_prompt": "Simple bedroom of an older adult with green carpet, white walls, a wooden nightstand with lamp, rocking chair, "
+        "dresser and open door to a hallway; the bed is only a mattress lying directly on the floor.",
+    },
 ]
+
+
+def _meta(scene_id: str) -> dict:
+    """bench / hazard_id / hazard_name / guideline for a scene id (additive worlds.json fields)."""
+    dem = scene_id.startswith("dem-")
+    hid = scene_id.split("-base", 1)[1].split("-", 1)[1]
+    tax_p = ROOT / "data" / ("benchmarks/dementia/hazard_taxonomy.json" if dem else "hazard_taxonomy.json")
+    h = {x["id"]: x for x in json.loads(tax_p.read_text())["hazards"]}.get(hid, {})
+    if dem:
+        c = h.get("citation") or {}
+        src = c.get("source", "")
+        org = "Alzheimer's Society (UK)" if "alzheimers.org.uk" in src else "Alzheimer's Association"
+        guideline = {"org": org, "line": c.get("guideline_line"), "url": src}
+    else:
+        im = h.get("instrument_map") or {}
+        guideline = {"org": "CDC STEADI", "line": f"Check for Safety: {im.get('CDC', '')}".strip(": "),
+                     "url": "https://www.cdc.gov/steadi/pdf/STEADI-Brochure-CheckForSafety-508.pdf",
+                     "also": {k: v for k, v in im.items() if k != "CDC"}}
+    return {"bench": "dementia" if dem else "falls", "hazard_id": hid, "hazard_name": h.get("name"), "guideline": guideline}
+
+
+def _image(scene_id: str) -> Path:
+    if scene_id.startswith("dem-"):
+        return ROOT / "data" / "benchmarks" / "dementia" / "renders" / f"{scene_id}.jpg"
+    return ROOT / "data" / "renders" / f"{scene_id}.jpg"
 
 
 def _headers() -> dict:
@@ -96,11 +178,11 @@ def _save(state: dict) -> None:
 
 
 def start(scene: dict) -> dict:
-    img = ROOT / "data" / "renders" / f"{scene['scene_id']}.jpg"
+    img = _image(scene["scene_id"])
     body = {
         "display_name": f"HealthDojo - {scene['title']}",
         "model": MODEL,
-        "tags": ["homedojo", "fall-hazard"],
+        "tags": ["healthdojo", scene.get("bench", "falls")],
         "permission": {"public": True},
         "world_prompt": {
             "type": "image",
@@ -115,7 +197,7 @@ def start(scene: dict) -> dict:
     }
     r = requests.post(API + "/worlds:generate", headers=_headers(), json=body, timeout=120)
     op = _check(r)
-    return {**scene, "operation_id": op["operation_id"], "started_at": time.time(), "model": MODEL, "status": "pending"}
+    return {**scene, **_meta(scene["scene_id"]), "operation_id": op["operation_id"], "started_at": time.time(), "model": MODEL, "status": "pending"}
 
 
 def _download(url: str, dest: Path) -> str | None:
@@ -173,19 +255,128 @@ def poll_all() -> None:
             print(f"{e['scene_id']}: {e['status']} {e.get('viewer_url') or e.get('error')}")
 
 
-def generate() -> None:
+def generate(max_parallel: int = 4) -> None:
+    import threading
+
     state = _load()
-    for scene in SHOWCASE:
-        if scene["scene_id"] in state:
-            continue
-        e = start(scene)
-        state[e["scene_id"]] = e
-        _save(state)
-        print(f"started {e['scene_id']} op={e['operation_id']}")
-    poll_all()
+    lock = threading.Lock()
+    todo = [s for s in SHOWCASE if s["scene_id"] not in state]
+
+    def run(scene):
+        with lock:
+            time.sleep(1)  # stay well under the ~3 starts/min default rate limit burst
+            e = start(scene)
+            state[e["scene_id"]] = e
+            _save(state)
+        print(f"started {e['scene_id']} op={e['operation_id']}", flush=True)
+        e = poll_one(e)
+        with lock:
+            state[e["scene_id"]] = e
+            _save(state)
+        print(f"{e['scene_id']}: {e['status']} {e.get('viewer_url') or e.get('error')}", flush=True)
+
+    with ThreadPoolExecutor(max_parallel) as ex:
+        list(ex.map(run, todo))
+    backfill()
 
 
-def _data_uri(path: Path, max_px: int = 720) -> str:
+# Hand-annotated hazard centers for batch-2 worlds, same convention as walk.py GT_REGIONS:
+# (cx, cy, radius_deg, label) in pixels of a 1280x640 downscale of the world's pano (x=640 is the source-photo view).
+MARBLE_GT_REGIONS = {
+    "dem-bedroom-base0-DEM-R03": [(705, 346, 6, "handgun on the nightstand")],
+    "dem-bathroom-base0-DEM-B03": [(640, 430, 8, "dark mat in front of the tub"), (600, 565, 25, "dark mat on the light floor")],
+    "dem-kitchen-base0-DEM-K04": [(230, 368, 9, "prescription bottles on the counter"), (455, 352, 7, "pill bottles by the canisters")],
+    "dem-entry-base0-DEM-E02": [(960, 362, 22, "glass doors standing open to the patio")],
+    "kitchen-base1-KIT-04": [(690, 395, 8, "runner mat in the galley"), (1040, 522, 14, "unbacked runner at the sink")],
+    "living-base0-LIV-01": [(640, 375, 8, "area rug with a curled corner in the walkway")],
+    "entry-base0-ENT-01": [(638, 340, 6, "front steps with no handrail")],
+    "bedroom-base0-BED-01": [(705, 392, 12, "mattress directly on the floor")],
+}
+
+
+def _gt_regions() -> dict:
+    """Hand-annotated pano GT regions from src/walk.py (parsed, not imported: walk.py pulls in model clients)."""
+    import ast
+
+    src = (ROOT / "src" / "walk.py").read_text()
+    node = next(n for n in ast.parse(src).body if isinstance(n, ast.Assign) and getattr(n.targets[0], "id", "") == "GT_REGIONS")
+    return {**ast.literal_eval(node.value), **MARBLE_GT_REGIONS}
+
+
+def fit_src_hfov(scene_id: str) -> float:
+    """Marble places the source photo at pano yaw 0 but with its own FOV estimate. Fit it: render the pano
+    (gnomonic, yaw 0) at candidate hfovs and pick the best normalized cross-correlation with the source photo."""
+    import math
+
+    import numpy as np
+    from PIL import Image
+
+    src = Image.open(_image(scene_id)).convert("L")
+    w = 192
+    h = round(w * src.height / src.width)
+    a = np.asarray(src.resize((w, h)), np.float32)
+    a = (a - a.mean()) / (a.std() + 1e-6)
+    pano = np.asarray(Image.open(OUT / f"{scene_id}.pano.png").convert("L").resize((2048, 1024)), np.float32)
+    ph, pw = pano.shape
+    best = (-9.0, 75.0)
+    for hf in range(50, 131, 3):
+        f = (w / 2) / math.tan(math.radians(hf) / 2)
+        X, Y = np.meshgrid(np.arange(w) - w / 2 + 0.5, h / 2 - np.arange(h) - 0.5)
+        lon = np.arctan2(X, f)
+        lat = np.arctan2(Y, np.hypot(X, f))
+        u = ((lon / (2 * np.pi) + 0.5) * pw).astype(int) % pw
+        v = np.clip(((0.5 - lat / np.pi) * ph).astype(int), 0, ph - 1)
+        b = pano[v, u]
+        b = (b - b.mean()) / (b.std() + 1e-6)
+        score = float((a * b).mean())
+        if score > best[0]:
+            best = (score, float(hf))
+    return best[1]
+
+
+def hazard_dirs(scene_id: str) -> list[dict]:
+    """Directions (yaw right+, pitch up+, degrees; yaw 0 = source-photo view) of the seeded hazard.
+    Exact-ish for worlds with hand-annotated GT in walk.py; else projected from the scene's hazard box
+    assuming the source photo is the forward view at 75 deg hfov (approximate)."""
+    import math
+
+    gt = _gt_regions().get(scene_id)
+    if gt:
+        return [{"yaw": round((x / 1280 - 0.5) * 360, 1), "pitch": round((0.5 - y / 640) * 180, 1), "r": r,
+                 "label": lab, "approx": False} for x, y, r, lab in gt]
+    sj = (ROOT / "data" / ("benchmarks/dementia/scenes" if scene_id.startswith("dem-") else "scenes") / f"{scene_id}.json")
+    box = json.loads(sj.read_text())["hazards"][0].get("box") or [350, 550, 650, 900]
+    from PIL import Image
+
+    w, h = Image.open(_image(scene_id)).size
+    hfov = fit_src_hfov(scene_id) if (OUT / f"{scene_id}.pano.png").exists() else 75.0
+    f = (w / 2) / math.tan(math.radians(hfov) / 2)
+    cx, cy = (box[0] + box[2]) / 2000, (box[1] + box[3]) / 2000
+    x, y = (cx - 0.5) * w, (0.5 - cy) * h
+    return [{"yaw": round(math.degrees(math.atan2(x, f)), 1), "pitch": round(math.degrees(math.atan2(y, math.hypot(x, f))), 1),
+             "r": round(math.degrees(math.atan2((box[2] - box[0]) / 1000 * w / 2, f)), 1), "label": "seeded hazard (approx.)",
+             "approx": True, "src_hfov_fit": hfov}]
+
+
+def backfill() -> None:
+    """Add bench/hazard_id/hazard_name/guideline/spz/collider fields to every entry (additive, schema-compatible)."""
+    state = _load()
+    for sid, e in state.items():
+        for k, v in _meta(sid).items():
+            e.setdefault(k, v)
+        wj = OUT / f"{sid}.world.json"
+        if e.get("status") == "done" and wj.exists():
+            a = json.loads(wj.read_text()).get("assets") or {}
+            sp = a.get("splats") or {}
+            e["spz_urls"] = sp.get("spz_urls")
+            e["semantics_metadata"] = sp.get("semantics_metadata")
+            e["collider_mesh_url"] = (a.get("mesh") or {}).get("collider_mesh_url")
+            e["walk_url"] = f"world.html?id={sid}"
+            e["hazard_dirs"] = hazard_dirs(sid)
+    _save(state)
+
+
+def _data_uri(path: Path, max_px: int = 480) -> str:
     """Inline a small JPEG so site/worlds_3d.html is self-contained (no relative asset paths)."""
     import subprocess
     import tempfile
@@ -202,127 +393,120 @@ def _data_uri(path: Path, max_px: int = 720) -> str:
         return "data:image/jpeg;base64," + base64.b64encode(src.read_bytes()).decode()
 
 
-SITE_TEMPLATE = r"""<!-- HealthDojo: "Walk the home in 3D" section. Generated by src/marble.py site. Self-contained; include
-     inline inside #worlds-3d or iframe it. Marble's own viewer (marble.worldlabs.ai) sends X-Frame-Options: DENY,
-     so the in-page preview renders the world's Gaussian splat with SparkJS instead. -->
+SITE_TEMPLATE = r"""<!doctype html>
+<!-- HealthDojo: "Walk the home in 3D" section. Generated by `python src/marble.py site` (edit the template there).
+     Self-contained (images inlined): include the <section> inside #worlds-3d or iframe this file.
+     Each card opens world.html?id=<scene_id> (first-person walkable SparkJS viewer). Marble's own viewer sends
+     X-Frame-Options: DENY, so it is linked, not embedded. -->
 <meta charset="utf-8">
-<section class="hd-w3d">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<section class="hd-w3d" id="worlds-3d-section">
 <style>
-.hd-w3d{--ink:#1b1f24;--muted:#5b6470;--card:#fff;--line:#e3e6ea;--accent:#d9480f;font-family:system-ui,-apple-system,Segoe UI,sans-serif;color:var(--ink)}
-.hd-w3d h2{margin:0 0 .25rem;font-size:1.5rem}
-.hd-w3d .sub{margin:0 0 1.25rem;color:var(--muted);max-width:60ch}
-.hd-w3d .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem}
-.hd-w3d .card{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
-.hd-w3d .pair{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line)}
+.hd-w3d{--font-sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;--font-serif:"Instrument Serif",Georgia,serif;--font-mono:"IBM Plex Mono",ui-monospace,monospace;
+--green-active:#46a82c;--green-ink:#2e7a18;--lime:#d5fd51;--gold:#f6c86a;--gold-soft:#fbeed3;--gold-ink:#8a6420;--cream:#f7f2e5;--cream-strong:#efe6cf;--cream-ink:#6b6350;
+--canvas:#fcfcfa;--card:#fff;--border:#e6e6e1;--ink:#1f2123;--text-body:#3a3d3f;--text-muted:#646668;--text-faint:#8f9193;
+font-family:var(--font-sans);color:var(--ink);background:var(--canvas);padding:24px 0;-webkit-font-smoothing:antialiased}
+.hd-w3d h2{font-family:var(--font-serif);font-weight:400;font-size:40px;line-height:1.05;margin:0 0 6px}
+.hd-w3d .sub{margin:0 0 24px;color:var(--text-muted);max-width:68ch;font-size:15px;line-height:1.5}
+.hd-w3d .grp{margin:0 0 28px}
+.hd-w3d .gh{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--border);padding-bottom:8px;margin-bottom:14px}
+.hd-w3d .gh h3{font-family:var(--font-serif);font-weight:400;font-size:28px;margin:0}
+.hd-w3d .gh span{font-size:13px;color:var(--text-muted)}
+.hd-w3d .gh .n{font-family:var(--font-mono);font-size:12px;color:var(--text-faint)}
+.hd-w3d .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.hd-w3d .card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;transition:border-color .16s}
+.hd-w3d .card:hover{border-color:var(--text-faint)}
+.hd-w3d .pair{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border)}
 .hd-w3d .pair figure{margin:0;position:relative}
 .hd-w3d .pair img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
-.hd-w3d .pair figcaption{position:absolute;left:6px;bottom:6px;font-size:.7rem;background:rgba(0,0,0,.6);color:#fff;padding:2px 6px;border-radius:4px}
-.hd-w3d .body{padding:.9rem 1rem 1rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
-.hd-w3d h3{margin:0;font-size:1.05rem}
-.hd-w3d .hz{margin:0;font-size:.88rem;color:var(--muted)}
-.hd-w3d .hz b{color:var(--accent)}
-.hd-w3d .actions{display:flex;gap:.5rem;margin-top:auto;flex-wrap:wrap}
-.hd-w3d a.btn,.hd-w3d button.btn{font:inherit;font-size:.88rem;padding:.5rem .8rem;border-radius:8px;border:1px solid var(--ink);cursor:pointer;text-decoration:none}
-.hd-w3d a.btn{background:var(--ink);color:#fff}
-.hd-w3d button.btn{background:#fff;color:var(--ink)}
-.hd-w3d .viewer{position:fixed;inset:0;background:rgba(10,12,15,.92);display:none;z-index:9999;flex-direction:column}
-.hd-w3d .viewer.open{display:flex}
-.hd-w3d .vbar{display:flex;justify-content:space-between;align-items:center;color:#fff;padding:.6rem 1rem;font-size:.9rem;gap:1rem}
-.hd-w3d .vbar a{color:#ffd8a8}
-.hd-w3d .vbar button{font:inherit;background:none;border:1px solid #fff;color:#fff;border-radius:6px;padding:.25rem .7rem;cursor:pointer}
-.hd-w3d .vcanvas{flex:1;position:relative}
-.hd-w3d .vcanvas canvas{width:100%;height:100%;display:block}
-.hd-w3d .vmsg{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#ccc;pointer-events:none}
+.hd-w3d .pair figcaption{position:absolute;left:6px;bottom:6px;font-family:var(--font-mono);font-size:10px;letter-spacing:.04em;background:rgba(31,33,35,.72);color:#fcfcfa;padding:2px 6px;border-radius:4px}
+.hd-w3d .body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:8px;flex:1}
+.hd-w3d h4{margin:0;font-size:16px;font-weight:600}
+.hd-w3d .hz{margin:0;font-size:13px;color:var(--text-body);display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.hd-w3d .hid{font-family:var(--font-mono);font-size:11px;background:var(--gold-soft);color:var(--gold-ink);border:1px solid var(--gold);border-radius:999px;padding:1px 8px}
+.hd-w3d .chip{font-size:12px;background:var(--cream);color:var(--cream-ink);border:1px solid var(--cream-strong);border-radius:999px;padding:2px 10px;align-self:flex-start;text-decoration:none;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hd-w3d .chip b{font-weight:600;color:var(--ink)}
+.hd-w3d .actions{display:flex;gap:8px;margin-top:auto;flex-wrap:wrap;padding-top:4px}
+.hd-w3d .btn{font:inherit;font-size:13px;font-weight:500;padding:7px 12px;border-radius:6px;border:1px solid var(--border);background:var(--card);color:var(--ink);text-decoration:none}
+.hd-w3d .btn.primary{background:var(--lime);color:var(--green-ink);border-color:var(--green-active)}
 </style>
 <h2>Walk the home in 3D</h2>
-<p class="sub">Each labeled hazard photo from the benchmark, grown into a navigable 3D world with World Labs Marble. Step inside and look around the hazard the way an occupational therapist would on a home visit.</p>
-<div class="grid">__CARDS__</div>
-<div class="viewer" role="dialog" aria-modal="true">
-  <div class="vbar"><span class="vtitle"></span><span><a class="vfull" target="_blank" rel="noopener">Open full Marble viewer &#8599;</a> &nbsp; <button type="button" class="vclose">Close</button></span></div>
-  <div class="vcanvas"><div class="vmsg">Loading splats&hellip; drag to look around, scroll to move</div></div>
-</div>
-<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/","@sparkjsdev/spark":"https://sparkjs.dev/releases/spark/2.2.0/spark.module.js"}}</script>
-<script type="module">
-const root=document.currentScript?.closest?.('.hd-w3d')||document.querySelector('.hd-w3d');
-const V=root.querySelector('.viewer'),box=root.querySelector('.vcanvas'),msg=root.querySelector('.vmsg');
-let ctx=null;
-async function open(btn){
-  V.classList.add('open');msg.style.display='flex';msg.textContent='Loading splats… drag to look around, scroll/WASD to move';
-  root.querySelector('.vtitle').textContent=btn.dataset.title;root.querySelector('.vfull').href=btn.dataset.viewer;
-  try{
-    const THREE=await import('three');const {SparkRenderer,SplatMesh}=await import('@sparkjsdev/spark');
-    const {OrbitControls}=await import('three/addons/controls/OrbitControls.js');
-    if(!ctx){
-      const renderer=new THREE.WebGLRenderer({antialias:false});box.appendChild(renderer.domElement);
-      const scene=new THREE.Scene();const camera=new THREE.PerspectiveCamera(70,1,0.01,1000);
-      scene.add(new SparkRenderer({renderer}));
-      const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;
-      const resize=()=>{const w=box.clientWidth,h=box.clientHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();};
-      addEventListener('resize',resize);
-      renderer.setAnimationLoop(()=>{controls.update();renderer.render(scene,camera);});
-      ctx={THREE,SplatMesh,renderer,scene,camera,controls,resize,mesh:null};
-    }
-    ctx.resize();
-    if(ctx.mesh){ctx.scene.remove(ctx.mesh);ctx.mesh.dispose?.();}
-    const mesh=new ctx.SplatMesh({url:btn.dataset.spz});
-    mesh.quaternion.set(1,0,0,0); // Marble SPZ is OpenCV-frame; 180deg about X, as Marble's own viewer does
-    ctx.scene.add(mesh);ctx.mesh=mesh;
-    // Worlds are generated around the source photo's camera: start at the origin looking down -Z (the photo view).
-    ctx.camera.position.set(0,0,0.01);ctx.controls.target.set(0,0,-0.5);ctx.controls.update();
-    await mesh.initialized;msg.style.display='none';
-  }catch(e){msg.style.display='flex';msg.textContent='In-page preview unavailable ('+e.message+'). Use "Open full Marble viewer".';}
-}
-root.querySelectorAll('button[data-spz]').forEach(b=>b.addEventListener('click',()=>open(b)));
-root.querySelector('.vclose').addEventListener('click',()=>V.classList.remove('open'));
-addEventListener('keydown',e=>{if(e.key==='Escape')V.classList.remove('open');});
-</script>
+<p class="sub">Each labeled hazard photo from the benchmarks grown into a navigable 3D room with World Labs Marble. Walk in, turn around, and find the hazard the way an occupational therapist would on a home visit; toggle <b>Show hazard</b> to see where it was seeded.</p>
+__GROUPS__
 </section>
 """
 
+GROUP = """<div class="grp" id="w3d-{bench}"><div class="gh"><h3>{name}</h3><span>{guideline}</span><span class="n">{n} worlds</span></div>
+<div class="grid">{cards}</div></div>"""
+
 CARD = """
-<article class="card">
+<article class="card" data-world="{sid}">
   <div class="pair">
-    <figure><img src="{photo}" alt="Source photo: {title}" loading="lazy"><figcaption>Labeled photo</figcaption></figure>
-    <figure><img src="{thumb}" alt="Marble 3D world: {title}" loading="lazy"><figcaption>3D world</figcaption></figure>
+    <figure><img src="{photo}" alt="Source photo: {title}" loading="lazy"><figcaption>LABELED PHOTO</figcaption></figure>
+    <figure><img src="{thumb}" alt="Marble 3D world: {title}" loading="lazy"><figcaption>3D WORLD</figcaption></figure>
   </div>
   <div class="body">
-    <h3>{title}</h3>
-    <p class="hz"><b>Hazard {hid}:</b> {hazard}</p>
+    <h4>{title}</h4>
+    <p class="hz"><span class="hid">{hid}</span>{hname}</p>
+    <a class="chip" href="{gurl}" target="_blank" rel="noopener" title="{gline}"><b>{gorg}</b> {gline}</a>
     <div class="actions">
-      <a class="btn" href="{viewer}" target="_blank" rel="noopener">Open 3D walkthrough &#8599;</a>
-      {preview}
+      <a class="btn primary" href="world.html?id={sid}">Walk in 3D &rarr;</a>
+      <a class="btn" href="{viewer}" target="_blank" rel="noopener">Marble viewer &#8599;</a>
     </div>
   </div>
 </article>"""
+
+BENCHES = [("falls", "Falls", "CDC STEADI Check for Safety · HOME FAST · HSSAT"),
+           ("dementia", "DementiaBench", "Alzheimer's Association home-safety checklist · Alzheimer's Society (UK)")]
+
+
+def build_world_manifest() -> None:
+    """Inline the done worlds into site/world.html between the manifest script tags (site deploys without data/)."""
+    import re
+
+    state = _load()
+    keep = ("scene_id", "title", "hazard", "bench", "hazard_id", "hazard_name", "guideline", "world_id", "viewer_url",
+            "spz_urls", "semantics_metadata", "collider_mesh_url", "hazard_dirs")
+    showcase = {s["scene_id"]: s for s in SHOWCASE}
+    man = {sid: {k: e.get(k) for k in keep} | {"showcase": showcase.get(sid, {}).get("showcase", True)}
+           for sid, e in state.items() if e.get("status") == "done"}
+    p = ROOT / "site" / "world.html"
+    html_ = p.read_text()
+    blob = json.dumps(man, separators=(",", ":")).replace("</", "<\\/")
+    html_ = re.sub(r'(<script id="manifest" type="application/json">).*?(</script>)',
+                   lambda m: m.group(1) + blob + m.group(2), html_, flags=re.S)
+    p.write_text(html_)
+    print(f"world.html manifest: {len(man)} worlds")
 
 
 def build_site() -> Path:
     import html
 
+    esc = lambda s: html.escape(str(s or ""), quote=True)  # noqa: E731
     state = _load()
-    cards = []
-    for scene in SHOWCASE:
-        if scene.get("showcase") is False:
-            continue
-        e = state.get(scene["scene_id"])
-        if not e or e.get("status") != "done":
-            continue
-        world = json.loads((OUT / f"{e['scene_id']}.world.json").read_text())
-        spz = ((world.get("assets") or {}).get("splats") or {}).get("spz_urls") or {}
-        spz_url = spz.get("500k") or spz.get("full_res") or next(iter(spz.values()), None)
-        photo = _data_uri(ROOT / "data" / "renders" / f"{e['scene_id']}.jpg")
-        thumb_path = ROOT / e["thumbnail"] if e.get("thumbnail") else None
-        thumb = _data_uri(thumb_path) if thumb_path and thumb_path.exists() else photo
-        esc = lambda s: html.escape(str(s), quote=True)  # noqa: E731
-        preview = (
-            f'<button type="button" class="btn" data-spz="{esc(spz_url)}" data-viewer="{esc(e["viewer_url"])}" '
-            f'data-title="{esc(e["title"])}">Preview here</button>' if spz_url else ""
-        )
-        cards.append(CARD.format(photo=photo, thumb=thumb, title=esc(e["title"]), hid=esc(e["scene_id"].split("-", 2)[-1]),
-                                 hazard=esc(e["hazard"]), viewer=esc(e["viewer_url"]), preview=preview))
+    groups = []
+    for bench, name, gl in BENCHES:
+        cards = []
+        for scene in SHOWCASE:
+            if scene.get("showcase") is False:
+                continue
+            e = state.get(scene["scene_id"])
+            if not e or e.get("status") != "done" or e.get("bench", "falls") != bench:
+                continue
+            photo = _data_uri(_image(e["scene_id"]))
+            tp = ROOT / e["thumbnail"] if e.get("thumbnail") else None
+            thumb = _data_uri(tp) if tp and tp.exists() else photo
+            g = e.get("guideline") or {}
+            cards.append(CARD.format(sid=esc(e["scene_id"]), photo=photo, thumb=thumb, title=esc(e["title"]),
+                                     hid=esc(e.get("hazard_id")), hname=esc(e.get("hazard_name") or e.get("hazard")),
+                                     gurl=esc(g.get("url")), gorg=esc(g.get("org")), gline=esc(g.get("line")),
+                                     viewer=esc(e["viewer_url"])))
+        if cards:
+            groups.append(GROUP.format(bench=bench, name=name, guideline=esc(gl), n=len(cards), cards="".join(cards)))
     out = ROOT / "site" / "worlds_3d.html"
-    out.write_text(SITE_TEMPLATE.replace("__CARDS__", "".join(cards)))
-    print(f"wrote {out} with {len(cards)} worlds")
+    out.write_text(SITE_TEMPLATE.replace("__GROUPS__", "\n".join(groups)))
+    print(f"wrote {out} with {sum(g.count('<article') for g in groups)} worlds")
     return out
 
 
@@ -333,6 +517,8 @@ if __name__ == "__main__":
     elif cmd == "poll":
         poll_all()
     elif cmd == "site":
+        backfill()
+        build_world_manifest()
         build_site()
     else:
         generate()

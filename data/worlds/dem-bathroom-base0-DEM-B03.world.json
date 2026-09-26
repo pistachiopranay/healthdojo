@@ -1,0 +1,40 @@
+{
+  "world_id": "4416223b-9ba1-4ae2-90a1-c4e8678f98cb",
+  "display_name": "",
+  "tags": null,
+  "assets": {
+    "mesh": {
+      "collider_mesh_url": "https://cdn.marble.worldlabs.ai/4416223b-9ba1-4ae2-90a1-c4e8678f98cb/2ec1bf37.glb",
+      "hq_mesh_url": null,
+      "full_res_mesh_url": null
+    },
+    "imagery": {
+      "pano_url": "https://cdn.marble.worldlabs.ai/4416223b-9ba1-4ae2-90a1-c4e8678f98cb/532fe062-3eb5-41d0-9c05-e971a519cbd5_panos/rgb_0.png"
+    },
+    "splats": {
+      "spz_urls": {
+        "500k": "https://cdn.marble.worldlabs.ai/4416223b-9ba1-4ae2-90a1-c4e8678f98cb/adeb5c73-bfb0-4a5f-a792-918967c88721_ceramic_500k.spz",
+        "100k": "https://cdn.marble.worldlabs.ai/4416223b-9ba1-4ae2-90a1-c4e8678f98cb/bd433423-47f3-4831-b867-38b8c626c4ae_dust_100k.spz",
+        "150k": "https://cdn.marble.worldlabs.ai/4416223b-9ba1-4ae2-90a1-c4e8678f98cb/747a4818-6ec8-4f5c-909c-327813384876_ceramic_150k.spz",
+        "full_res": "https://cdn.marble.worldlabs.ai/4416223b-9ba1-4ae2-90a1-c4e8678f98cb/0cb3f049-aa10-429e-9456-bd9826af35a2_ceramic.spz"
+      },
+      "semantics_metadata": {
+        "metric_scale_factor": 0.5369266,
+        "ground_plane_offset": 1.6717823
+      }
+    },
+    "thumbnail_url": "https://cdn.marble.worldlabs.ai/4416223b-9ba1-4ae2-90a1-c4e8678f98cb/f9f141bb-3364-440c-ae44-b94d96d1e84e_sand_mpi/thumbnail.webp",
+    "caption": "The scene is a bright, functional bathroom, captured in a realistic style, conveying a sense of practicality and accessibility. The overall tone is clean and reassuring, emphasizing user safety and comfort. A light beige tile floor extends throughout the entire space, providing a warm and neutral base. A white tub, equipped with sturdy grab bars, is centrally located on one wall, with a white shower chair positioned within it. Adjacent to the tub, a toilet is fitted with a safety frame, ensuring secure use. A solid black bath mat is placed directly in front of the tub and toilet, contrasting sharply with the light flooring. To the right of the toilet, a vanity sink with a light countertop and wooden cabinetry is a prominent feature, indicating a complete and functional bathroom setup. The walls are painted in a light, neutral color, complementing the beige tiles and white fixtures, and enhancing the bright atmosphere. The 360 scene is faultless."
+  },
+  "created_at": null,
+  "updated_at": null,
+  "permission": {
+    "public": false,
+    "allowed_readers": [],
+    "allowed_writers": [],
+    "allow_id_access": false
+  },
+  "world_prompt": null,
+  "world_marble_url": "https://marble.worldlabs.ai/world/4416223b-9ba1-4ae2-90a1-c4e8678f98cb",
+  "model": null
+}

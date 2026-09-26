@@ -1,0 +1,40 @@
+{
+  "world_id": "209f8e27-5291-4ddc-a489-9408a72841a5",
+  "display_name": "",
+  "tags": null,
+  "assets": {
+    "mesh": {
+      "collider_mesh_url": "https://cdn.marble.worldlabs.ai/209f8e27-5291-4ddc-a489-9408a72841a5/29caefd9.glb",
+      "hq_mesh_url": null,
+      "full_res_mesh_url": null
+    },
+    "imagery": {
+      "pano_url": "https://cdn.marble.worldlabs.ai/209f8e27-5291-4ddc-a489-9408a72841a5/cee552e9-fdcd-49c2-b1b4-0b8e4f843451_panos/rgb_0.png"
+    },
+    "splats": {
+      "spz_urls": {
+        "500k": "https://cdn.marble.worldlabs.ai/209f8e27-5291-4ddc-a489-9408a72841a5/e264abe4-9a74-4d1c-b2ea-270b21483920_ceramic_500k.spz",
+        "100k": "https://cdn.marble.worldlabs.ai/209f8e27-5291-4ddc-a489-9408a72841a5/0e51aa93-3513-490d-875c-5778dfbeb91c_dust_100k.spz",
+        "150k": "https://cdn.marble.worldlabs.ai/209f8e27-5291-4ddc-a489-9408a72841a5/4c437532-c53a-42f9-a0e5-7240e7541758_ceramic_150k.spz",
+        "full_res": "https://cdn.marble.worldlabs.ai/209f8e27-5291-4ddc-a489-9408a72841a5/6482166d-6025-4cfd-a948-993123b5445e_ceramic.spz"
+      },
+      "semantics_metadata": {
+        "metric_scale_factor": 0.8462265,
+        "ground_plane_offset": 1.3458803
+      }
+    },
+    "thumbnail_url": "https://cdn.marble.worldlabs.ai/209f8e27-5291-4ddc-a489-9408a72841a5/67012159-a102-4283-a662-2799f4f06a10_sand_mpi/thumbnail.webp",
+    "caption": "The scene is a realistic depiction of a simple bedroom, exuding a serene and functional tone suitable for an older adult. The entire room, including the areas beyond the current view, features a soft green carpet and white walls, maintaining a consistent and calm aesthetic. In the center of the room, a mattress, covered with a white and blue floral quilt, rests directly on the floor. To the right of the bed, a wooden nightstand stands, supporting a lamp with a white shade and a small, decorative tissue box. Adjacent to the nightstand, a dark wooden rocking chair with a green upholstered seat offers additional seating. On the left side of the room, a wooden dresser with multiple drawers provides storage. An open white door reveals a hallway stretching into the distance, with more doors visible along its length, suggesting other rooms are accessible from this central passage. A small nightlight glows near the floor in the hallway, illuminating the path. The walls of the bedroom are unadorned, contributing to the minimalist and uncluttered atmosphere. The 360 scene is faultless."
+  },
+  "created_at": null,
+  "updated_at": null,
+  "permission": {
+    "public": false,
+    "allowed_readers": [],
+    "allowed_writers": [],
+    "allow_id_access": false
+  },
+  "world_prompt": null,
+  "world_marble_url": "https://marble.worldlabs.ai/world/209f8e27-5291-4ddc-a489-9408a72841a5",
+  "model": null
+}

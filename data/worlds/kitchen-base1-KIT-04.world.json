@@ -1,0 +1,40 @@
+{
+  "world_id": "d7acc0a4-a92d-4e85-9705-a7fd4db2e4a6",
+  "display_name": "",
+  "tags": null,
+  "assets": {
+    "mesh": {
+      "collider_mesh_url": "https://cdn.marble.worldlabs.ai/d7acc0a4-a92d-4e85-9705-a7fd4db2e4a6/d5a15eeb.glb",
+      "hq_mesh_url": null,
+      "full_res_mesh_url": null
+    },
+    "imagery": {
+      "pano_url": "https://cdn.marble.worldlabs.ai/d7acc0a4-a92d-4e85-9705-a7fd4db2e4a6/40d1b519-18a7-420a-9919-d469cad45a14_panos/rgb_0.png"
+    },
+    "splats": {
+      "spz_urls": {
+        "500k": "https://cdn.marble.worldlabs.ai/d7acc0a4-a92d-4e85-9705-a7fd4db2e4a6/9ed25b40-8227-4bd4-b4ff-8ff52e463084_ceramic_500k.spz",
+        "100k": "https://cdn.marble.worldlabs.ai/d7acc0a4-a92d-4e85-9705-a7fd4db2e4a6/ad4691a9-3d81-44de-a1cb-e2f067abc204_dust_100k.spz",
+        "150k": "https://cdn.marble.worldlabs.ai/d7acc0a4-a92d-4e85-9705-a7fd4db2e4a6/198eb812-3057-47d4-94fa-eefc0978c085_ceramic_150k.spz",
+        "full_res": "https://cdn.marble.worldlabs.ai/d7acc0a4-a92d-4e85-9705-a7fd4db2e4a6/a95424c2-71d8-4d03-875e-46285379db11_ceramic.spz"
+      },
+      "semantics_metadata": {
+        "metric_scale_factor": 1.0526503,
+        "ground_plane_offset": 1.2300498
+      }
+    },
+    "thumbnail_url": "https://cdn.marble.worldlabs.ai/d7acc0a4-a92d-4e85-9705-a7fd4db2e4a6/e7152ef9-dfc5-43a0-9616-0bcf9cebc1d0_sand_mpi/thumbnail.webp",
+    "caption": "The scene is a warm and inviting kitchen, captured in a realistic and homely style, conveying a sense of lived-in comfort. The overall tone is calm and functional, reflecting an older adult's well-maintained home. The galley kitchen features open wooden shelves displaying an assortment of dishes, plates, bowls, and glassware, all neatly organized. Below these shelves, white lower cabinets with black handles provide additional storage, contrasting with the light-colored walls. A stainless steel refrigerator stands at the end of the counter, its modern finish complementing the traditional cabinetry. In front of the sink, which is integrated into the countertop, a thin, unbacked runner mat rests on the wooden floor, with one corner visibly curled up, indicating frequent use. A doorway to the right leads into a dining room, where a wooden table with chairs is partially visible, suggesting a seamless transition between the culinary and dining spaces. The wood flooring extends from the kitchen into the dining room, unifying the two areas. The dining room itself is arranged with a classic wooden dining set, including a central table and several chairs, positioned to maximize natural light from a window in the background. The 360 scene is faultless."
+  },
+  "created_at": null,
+  "updated_at": null,
+  "permission": {
+    "public": false,
+    "allowed_readers": [],
+    "allowed_writers": [],
+    "allow_id_access": false
+  },
+  "world_prompt": null,
+  "world_marble_url": "https://marble.worldlabs.ai/world/d7acc0a4-a92d-4e85-9705-a7fd4db2e4a6",
+  "model": null
+}

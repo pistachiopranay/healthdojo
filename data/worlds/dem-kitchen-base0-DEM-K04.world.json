@@ -1,0 +1,40 @@
+{
+  "world_id": "8974c65b-dfda-41e9-94b6-7535e9a6b704",
+  "display_name": "",
+  "tags": null,
+  "assets": {
+    "mesh": {
+      "collider_mesh_url": "https://cdn.marble.worldlabs.ai/8974c65b-dfda-41e9-94b6-7535e9a6b704/1fb5c77c.glb",
+      "hq_mesh_url": null,
+      "full_res_mesh_url": null
+    },
+    "imagery": {
+      "pano_url": "https://cdn.marble.worldlabs.ai/8974c65b-dfda-41e9-94b6-7535e9a6b704/22e9c9fa-8382-4d6a-a2e9-46f90f865d1f_panos/rgb_0.png"
+    },
+    "splats": {
+      "spz_urls": {
+        "500k": "https://cdn.marble.worldlabs.ai/8974c65b-dfda-41e9-94b6-7535e9a6b704/fd860e03-dfb5-4618-8b7a-eaa5c308183a_ceramic_500k.spz",
+        "100k": "https://cdn.marble.worldlabs.ai/8974c65b-dfda-41e9-94b6-7535e9a6b704/ac2a88ab-a10e-4141-8485-c4ee2ac9f0e4_dust_100k.spz",
+        "150k": "https://cdn.marble.worldlabs.ai/8974c65b-dfda-41e9-94b6-7535e9a6b704/ce2ac510-66f5-4717-aa4f-d6bcddcf3d76_ceramic_150k.spz",
+        "full_res": "https://cdn.marble.worldlabs.ai/8974c65b-dfda-41e9-94b6-7535e9a6b704/f247e12d-1f71-4a3e-955a-4b15b9470ab8_ceramic.spz"
+      },
+      "semantics_metadata": {
+        "metric_scale_factor": 1.3363531,
+        "ground_plane_offset": 1.407965
+      }
+    },
+    "thumbnail_url": "https://cdn.marble.worldlabs.ai/8974c65b-dfda-41e9-94b6-7535e9a6b704/e5874b0e-6bb3-4efa-b2ec-cdac980e2067_sand_mpi/thumbnail.webp",
+    "caption": "The scene is a realistic depiction of an older American kitchen, characterized by a utilitarian aesthetic and a homely, lived-in tone. The kitchen features wood cabinets and a light-colored countertop that extends around the perimeter. A white refrigerator stands prominently at the left, while a black stove and dishwasher are integrated into the cabinetry. Open shelves filled with bowls are visible on the right, suggesting a practical and organized storage system. Several orange prescription pill bottles and pill containers are openly displayed on the counter to the left of the sink, indicating the daily routines of the occupants. A window above the sink allows natural light to enter, illuminating the space. The floor is covered with a patterned vinyl or linoleum, contributing to the kitchen's vintage charm. The design emphasizes functionality and comfort, typical of American homes from an earlier era. The overall layout suggests an efficient workspace for meal preparation and household activities. The 360 scene is faultless."
+  },
+  "created_at": null,
+  "updated_at": null,
+  "permission": {
+    "public": false,
+    "allowed_readers": [],
+    "allowed_writers": [],
+    "allow_id_access": false
+  },
+  "world_prompt": null,
+  "world_marble_url": "https://marble.worldlabs.ai/world/8974c65b-dfda-41e9-94b6-7535e9a6b704",
+  "model": null
+}
