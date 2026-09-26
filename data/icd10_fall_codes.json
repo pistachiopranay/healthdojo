@@ -1,0 +1,156 @@
+{
+ "note": "Approximate ICD-10-CM external-cause (W00-W19 falls) mapping per hazard: the fall mechanism the hazard most plausibly produces. Not verified by a certified coder.",
+ "codes": {
+  "W01": "Fall on same level from slipping, tripping and stumbling",
+  "W06": "Fall from bed",
+  "W07": "Fall from chair",
+  "W10.8": "Fall on and from other stairs and steps",
+  "W18.11": "Fall from or off toilet",
+  "W18.2": "Fall in (into) shower or empty bathtub",
+  "W18.3": "Other and unspecified fall on same level",
+  "W11": "Fall on and from ladder",
+  "W13": "Fall from, out of or through building or structure"
+ },
+ "map": {
+  "BATH-01": {
+   "code": "W18.2",
+   "title": "Fall in (into) shower or empty bathtub"
+  },
+  "BATH-02": {
+   "code": "W18.11",
+   "title": "Fall from or off toilet"
+  },
+  "BATH-03": {
+   "code": "W18.2",
+   "title": "Fall in (into) shower or empty bathtub"
+  },
+  "BATH-04": {
+   "code": "W18.2",
+   "title": "Fall in (into) shower or empty bathtub"
+  },
+  "BATH-05": {
+   "code": "W18.2",
+   "title": "Fall in (into) shower or empty bathtub"
+  },
+  "BATH-06": {
+   "code": "W18.11",
+   "title": "Fall from or off toilet"
+  },
+  "BATH-07": {
+   "code": "W01",
+   "title": "Fall on same level from slipping, tripping and stumbling"
+  },
+  "BATH-08": {
+   "code": "W18.2",
+   "title": "Fall in (into) shower or empty bathtub"
+  },
+  "BED-01": {
+   "code": "W06",
+   "title": "Fall from bed"
+  },
+  "BED-02": {
+   "code": "W06",
+   "title": "Fall from bed"
+  },
+  "BED-03": {
+   "code": "W01",
+   "title": "Fall on same level from slipping, tripping and stumbling"
+  },
+  "BED-04": {
+   "code": "W01",
+   "title": "Fall on same level from slipping, tripping and stumbling"
+  },
+  "BED-05": {
+   "code": "W18.3",
+   "title": "Other and unspecified fall on same level"
+  },
+  "STAIR-01": {
+   "code": "W10.8",
+   "title": "Fall on and from other stairs and steps"
+  },
+  "STAIR-02": {
+   "code": "W10.8",
+   "title": "Fall on and from other stairs and steps"
+  },
+  "STAIR-03": {
+   "code": "W10.8",
+   "title": "Fall on and from other stairs and steps"
+  },
+  "STAIR-04": {
+   "code": "W10.8",
+   "title": "Fall on and from other stairs and steps"
+  },
+  "STAIR-05": {
+   "code": "W10.8",
+   "title": "Fall on and from other stairs and steps"
+  },
+  "STAIR-06": {
+   "code": "W10.8",
+   "title": "Fall on and from other stairs and steps"
+  },
+  "KIT-01": {
+   "code": "W18.3",
+   "title": "Other and unspecified fall on same level"
+  },
+  "KIT-02": {
+   "code": "W18.3",
+   "title": "Other and unspecified fall on same level"
+  },
+  "KIT-03": {
+   "code": "W07",
+   "title": "Fall from chair"
+  },
+  "KIT-04": {
+   "code": "W01",
+   "title": "Fall on same level from slipping, tripping and stumbling"
+  },
+  "LIV-01": {
+   "code": "W01",
+   "title": "Fall on same level from slipping, tripping and stumbling"
+  },
+  "LIV-02": {
+   "code": "W01",
+   "title": "Fall on same level from slipping, tripping and stumbling"
+  },
+  "LIV-03": {
+   "code": "W01",
+   "title": "Fall on same level from slipping, tripping and stumbling"
+  },
+  "LIV-04": {
+   "code": "W07",
+   "title": "Fall from chair"
+  },
+  "LIV-05": {
+   "code": "W01",
+   "title": "Fall on same level from slipping, tripping and stumbling"
+  },
+  "LIV-06": {
+   "code": "W10.8",
+   "title": "Fall on and from other stairs and steps"
+  },
+  "LIV-07": {
+   "code": "W01",
+   "title": "Fall on same level from slipping, tripping and stumbling"
+  },
+  "ENT-01": {
+   "code": "W10.8",
+   "title": "Fall on and from other stairs and steps"
+  },
+  "ENT-02": {
+   "code": "W01",
+   "title": "Fall on same level from slipping, tripping and stumbling"
+  },
+  "ENT-03": {
+   "code": "W01",
+   "title": "Fall on same level from slipping, tripping and stumbling"
+  },
+  "ENT-04": {
+   "code": "W10.8",
+   "title": "Fall on and from other stairs and steps"
+  },
+  "ENT-05": {
+   "code": "W18.3",
+   "title": "Other and unspecified fall on same level"
+  }
+ }
+}
