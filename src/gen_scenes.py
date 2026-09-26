@@ -59,13 +59,13 @@ if __name__ == "__main__":
     scenes = plan()
     (SCENES.parent / "scene_plan.json").write_text(json.dumps(scenes, indent=1))
     bases = [s for s in scenes if s["kind"] == "base"]
-    with cf.ThreadPoolExecutor(8) as ex:
+    with cf.ThreadPoolExecutor(10) as ex:
         done = list(ex.map(lambda s: render(s, {}), bases))
     base_urls = {s["id"]: s["source_url"] for s in done}
     if only == "bases":
         sys.exit()
     edits = [s for s in scenes if s["kind"] == "edit"]
-    with cf.ThreadPoolExecutor(8) as ex:
+    with cf.ThreadPoolExecutor(10) as ex:
         for f in cf.as_completed([ex.submit(render, s, base_urls) for s in edits]):
             try: f.result()
             except Exception as e: print("FAIL", e, flush=True)

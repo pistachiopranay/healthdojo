@@ -1,0 +1,22 @@
+{
+ "id": "bathroom-base0-BATH-05",
+ "room": "bathroom",
+ "kind": "edit",
+ "base": "bathroom-base0",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: High tub step-over without transfer aid. Bathtub (or tub-shower combo) with side wall typically ~14-20 in high that must be stepped over to shower; no transfer bench or shower chair present.",
+ "hazards": [
+  {
+   "id": "BATH-05",
+   "type": "measurement"
+  }
+ ],
+ "source_url": "https://file.deepytb.com/reapi-slave2/tasks/task_01a0deeec4de74df937c1554209cdb5a/0.jpg",
+ "image": "renders/bathroom-base0-BATH-05.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": true,
+  "note": "The shower chair was removed, leaving a high tub step-over with no transfer aid, so the hazard is clearly visible. However, the toilet safety frame was also removed, which is a separate major change.",
+  "changed_frac": 0.03
+ },
+ "verified": true
+}

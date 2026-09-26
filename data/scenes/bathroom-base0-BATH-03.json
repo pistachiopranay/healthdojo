@@ -1,0 +1,28 @@
+{
+ "id": "bathroom-base0-BATH-03",
+ "room": "bathroom",
+ "kind": "edit",
+ "base": "bathroom-base0",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Non-load-rated fixture positioned as support. Towel bar, toilet-paper holder, soap dish, shower door handle, or glass door in the location a person would grab during a transfer, with no grab bar present.",
+ "hazards": [
+  {
+   "id": "BATH-03",
+   "type": "object",
+   "box": [
+    180,
+    218,
+    682,
+    570
+   ]
+  }
+ ],
+ "source_url": "https://file.deepytb.com/reapi-slave2/tasks/task_01a0deeec4a675d6b6acc8efee83e210/0.jpg",
+ "image": "renders/bathroom-base0-BATH-03.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": true,
+  "note": "The vertical grab bar at the left tub entry was replaced by a small towel bar holding a hand towel, a non-load-rated fixture where a person would grab during tub entry. Separately, the vertical grab bar on the right wall by the faucet was also removed, an additional safety-relevant change.",
+  "changed_frac": 0.0201
+ },
+ "verified": true
+}

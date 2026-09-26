@@ -1,0 +1,9 @@
+{
+ "id": "entry-base1",
+ "room": "entry",
+ "kind": "base",
+ "prompt": "Photorealistic smartphone photo taken at eye level in a modest, lived-in American home of a 70-year-old. Natural light, realistic everyday objects, no people, no text. A front entrance seen from the walkway: two concrete steps with sturdy handrails on both sides, a smooth even path, a wide front door with a flush threshold, and a bright porch light.",
+ "hazards": [],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/entry-base1.jpg",
+ "image": "renders/entry-base1.jpg"
+}

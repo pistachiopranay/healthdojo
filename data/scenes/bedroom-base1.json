@@ -1,0 +1,9 @@
+{
+ "id": "bedroom-base1",
+ "room": "bedroom",
+ "kind": "base",
+ "prompt": "Photorealistic smartphone photo taken at eye level in a modest, lived-in American home of a 70-year-old. Natural light, realistic everyday objects, no people, no text. A tidy bedroom with a bed at knee height, a nightstand with a lamp within arm's reach, a clear wide floor path around the bed, and a plug-in night light by the door.",
+ "hazards": [],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/bedroom-base1.jpg",
+ "image": "renders/bedroom-base1.jpg"
+}

@@ -1,0 +1,28 @@
+{
+ "id": "stairs-base0-STAIR-03",
+ "room": "stairs",
+ "kind": "edit",
+ "base": "stairs-base0",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Objects on stairs. Shoes, papers, laundry baskets, books or other items resting on treads.",
+ "hazards": [
+  {
+   "id": "STAIR-03",
+   "type": "object",
+   "box": [
+    332,
+    354,
+    568,
+    938
+   ]
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/stairs-base0-STAIR-03.jpg",
+ "image": "renders/stairs-base0-STAIR-03.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "Image 2 adds shoes, a folded sweater, a stack of books, papers and a laundry basket on several stair treads. The rest of the scene matches the original.",
+  "changed_frac": 0.0292
+ },
+ "verified": true
+}

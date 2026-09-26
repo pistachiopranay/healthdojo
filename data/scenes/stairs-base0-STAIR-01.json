@@ -1,0 +1,28 @@
+{
+ "id": "stairs-base0-STAIR-01",
+ "room": "stairs",
+ "kind": "edit",
+ "base": "stairs-base0",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Missing handrail or rail on one side only. Indoor staircase with no handrail, or a rail on only one side.",
+ "hazards": [
+  {
+   "id": "STAIR-01",
+   "type": "absence",
+   "box": [
+    598,
+    251,
+    750,
+    970
+   ]
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/stairs-base0-STAIR-01.jpg",
+ "image": "renders/stairs-base0-STAIR-01.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "The right-side handrail was removed, leaving a rail on the left side only. The rest of the scene is essentially unchanged apart from minor wall texture and baseboard trim differences on the right.",
+  "changed_frac": 0.027
+ },
+ "verified": true
+}

@@ -1,0 +1,9 @@
+{
+ "id": "kitchen-base1",
+ "room": "kitchen",
+ "kind": "base",
+ "prompt": "Photorealistic smartphone photo taken at eye level in a modest, lived-in American home of a 70-year-old. Natural light, realistic everyday objects, no people, no text. A kitchen with everyday dishes on counter-height shelves, a bare clean dry floor with no mats, and no step stools.",
+ "hazards": [],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/kitchen-base1.jpg",
+ "image": "renders/kitchen-base1.jpg"
+}

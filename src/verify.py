@@ -29,8 +29,8 @@ def diff_box(base, edit):
 
 def judge(base, edit, h):
     import anthropic
-    img = lambda p: {"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": base64.b64encode(p.read_bytes()).decode()}}
-    r = anthropic.Anthropic().messages.create(model=JUDGE, max_tokens=300, messages=[{"role": "user", "content": [
+    img = lambda p: {"type": "image", "source": {"type": "base64", "media_type": "image/png" if p.read_bytes()[:4] == b"\x89PNG" else "image/jpeg", "data": base64.b64encode(p.read_bytes()).decode()}}
+    r = anthropic.Anthropic().messages.create(model=JUDGE, max_tokens=1500, messages=[{"role": "user", "content": [
         img(base), img(edit), {"type": "text", "text": Q.format(name=h["name"], desc=h["visual_description"])}]}])
     t = "".join(b.text for b in r.content if b.type == "text")
     return json.loads(t[t.find("{"):t.rfind("}") + 1])
@@ -49,7 +49,7 @@ def one(p):
         v = {"hazard_visible": False, "note": f"judge error {e}"}
     s["verify"] = v | {"changed_frac": round(changed, 4)}
     s["verified"] = bool(v.get("hazard_visible"))
-    if box and s["hazards"][0]["type"] in ("object",):
+    if box and s["hazards"][0]["type"] in ("object", "absence"):
         s["hazards"][0]["box"] = box
     p.write_text(json.dumps(s, indent=1))
     print(s["id"], "VERIFIED" if s["verified"] else "REJECT", v.get("note", ""), flush=True)

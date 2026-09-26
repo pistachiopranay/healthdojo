@@ -31,7 +31,30 @@ def _treg(args):
     return json.loads(body)
 
 
+def gen_image_openai(prompt, dest, base_path=None, model="gpt-image-2"):
+    """Generate or edit via OpenAI images API; returns a local path used as the 'url' for edits."""
+    import base64, os
+    from dotenv import load_dotenv
+    from openai import OpenAI
+    load_dotenv(ROOT / ".env")
+    c = OpenAI()
+    if base_path:
+        with open(base_path, "rb") as f:
+            r = c.images.edit(model=model, image=f, prompt=prompt, size="1536x1024", quality="medium")
+    else:
+        r = c.images.generate(model=model, prompt=prompt, size="1536x1024", quality="medium")
+    pathlib.Path(dest).write_bytes(base64.b64decode(r.data[0].b64_json))
+    return str(dest)
+
+
 def gen_image(prompt, dest, image_urls=None, size="4:3", timeout=240):
+    import os
+    if os.getenv("IMAGE_BACKEND", "openai") == "openai":
+        return gen_image_openai(prompt, dest, base_path=image_urls[0] if image_urls else None)
+    return gen_image_treg(prompt, dest, image_urls, size, timeout)
+
+
+def gen_image_treg(prompt, dest, image_urls=None, size="4:3", timeout=240):
     """Generate (or edit, if image_urls) one image via Gemini 3 Pro Image on treg; save to dest."""
     req = {"model": "gemini-3-pro-image-preview", "prompt": prompt, "size": size, "resolution": "1K"}
     if image_urls:

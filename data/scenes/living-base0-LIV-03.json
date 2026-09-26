@@ -1,0 +1,28 @@
+{
+ "id": "living-base0-LIV-03",
+ "room": "living",
+ "kind": "edit",
+ "base": "living-base0",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Cluttered or narrowed walking path. Furniture, coffee tables, ottomans, boxes, or piles narrowing a route so the person must weave; items on floor.",
+ "hazards": [
+  {
+   "id": "LIV-03",
+   "type": "object",
+   "box": [
+    374,
+    602,
+    628,
+    941
+   ]
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/living-base0-LIV-03.jpg",
+ "image": "renders/living-base0-LIV-03.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "Basket, book stacks, toys, bins, and a box scattered across the main floor path create clear clutter; the rest of the room is unchanged.",
+  "changed_frac": 0.0299
+ },
+ "verified": true
+}

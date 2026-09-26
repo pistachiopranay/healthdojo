@@ -1,0 +1,28 @@
+{
+ "id": "living-base0-LIV-07",
+ "room": "living",
+ "kind": "edit",
+ "base": "living-base0",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Pets and pet items underfoot. Pet beds, bowls, toys, or the pet itself in walking routes.",
+ "hazards": [
+  {
+   "id": "LIV-07",
+   "type": "object",
+   "box": [
+    330,
+    770,
+    698,
+    957
+   ]
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/living-base0-LIV-07.jpg",
+ "image": "renders/living-base0-LIV-07.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "Pet bed, rope toy, tennis ball, and food/water bowls added in the open walkway; the rest of the room is unchanged.",
+  "changed_frac": 0.0291
+ },
+ "verified": true
+}

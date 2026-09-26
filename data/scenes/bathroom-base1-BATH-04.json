@@ -1,0 +1,28 @@
+{
+ "id": "bathroom-base1-BATH-04",
+ "room": "bathroom",
+ "kind": "edit",
+ "base": "bathroom-base1",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Slippery tub/shower floor. Glossy tub or shower base with no non-slip mat, adhesive strips, or textured surface.",
+ "hazards": [
+  {
+   "id": "BATH-04",
+   "type": "object",
+   "box": [
+    276,
+    608,
+    462,
+    677
+   ]
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/bathroom-base1-BATH-04.jpg",
+ "image": "renders/bathroom-base1-BATH-04.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "The non-slip adhesive strips on the tub floor were removed, leaving a bare glossy tub base with no mat or strips. The rest of the scene is essentially unchanged apart from minor rendering differences, such as towel texture.",
+  "changed_frac": 0.0068
+ },
+ "verified": true
+}

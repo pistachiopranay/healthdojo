@@ -1,0 +1,28 @@
+{
+ "id": "bedroom-base1-BED-02",
+ "room": "bedroom",
+ "kind": "edit",
+ "base": "bedroom-base1",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: No reachable bedside light. No lamp or switch within arm's reach of the bed; nightstand absent or bare; wall switch only at door.",
+ "hazards": [
+  {
+   "id": "BED-02",
+   "type": "absence",
+   "box": [
+    620,
+    165,
+    758,
+    490
+   ]
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/bedroom-base1-BED-02.jpg",
+ "image": "renders/bedroom-base1-BED-02.jpg",
+ "verify": {
+  "hazard_visible": false,
+  "other_major_changes": true,
+  "note": "The lamp was removed and the nightstand was replaced with a bare open side table. However, a wall switch was added right beside the headboard, which likely puts a light control within arm's reach and undermines the hazard. The added switch is itself an extra change, and the carpet texture also differs slightly.",
+  "changed_frac": 0.0295
+ },
+ "verified": false
+}

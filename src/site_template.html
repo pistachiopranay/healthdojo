@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HomeDojo · HomeBench</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F5F1E8;--card:#FFFDF8;--ink:#15201B;--ink2:#3A4540;--mute:#6E7670;--line:#E2DBCB;--line2:#EDE7DA;
+  --teal:#0E6B58;--teal2:#D6EAE2;--coral:#D5482A;--coral2:#FBE3DB;--amber:#C98A1B;--pred:#3D5AFE;--gt:#12A170;
+  --serif:"Fraunces",Georgia,serif;--sans:"Instrument Sans",-apple-system,system-ui,sans-serif;--mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.55 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1320px;margin:0 auto;padding:0 56px}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+/* nav */
+nav{position:sticky;top:0;z-index:40;background:rgba(245,241,232,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:34px;height:68px}
+.logo{font-family:var(--serif);font-weight:700;font-size:26px;letter-spacing:-.02em;text-decoration:none}
+.logo i{font-style:normal;color:var(--teal)}
+nav .links{display:flex;gap:26px;margin-left:auto;font-size:15px;font-weight:500}
+nav .links a{text-decoration:none;color:var(--ink2);padding:6px 0;border-bottom:2px solid transparent}
+nav .links a.on{color:var(--ink);border-color:var(--teal)}
+nav .links a:hover{color:var(--ink)}
+
+/* hero */
+.hero{padding:88px 0 64px;position:relative}
+.eyebrow{font-family:var(--mono);font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:600}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:92px;line-height:.98;letter-spacing:-.035em;margin:18px 0 0;max-width:13ch}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--teal)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:64px;align-items:end}
+.lede{font-size:23px;line-height:1.5;color:var(--ink2);max-width:36ch;margin:28px 0 0}
+.lede b{color:var(--ink);font-weight:600}
+.hero-fig{position:relative;border-radius:18px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(21,32,27,.45);background:#ddd}
+.hero-fig img{display:block;width:100%}
+.hero-fig figcaption{background:var(--card);padding:12px 16px;font-size:15px;display:flex;gap:12px;align-items:center}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--ink);margin-top:72px}
+.stat{padding:22px 24px 0 0}
+.stat b{display:block;font-family:var(--serif);font-weight:600;font-size:76px;line-height:1;letter-spacing:-.03em}
+.stat span{display:block;margin-top:10px;color:var(--mute);font-size:16px;max-width:22ch}
+
+/* problem */
+.problem{background:var(--ink);color:#EDE8DC;padding:72px 0}
+.problem h2{color:#fff}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:40px}
+.fact{padding:0 36px 0 0;border-left:1px solid #34413B;padding-left:28px}
+.fact:first-child{border-left:0;padding-left:0}
+.fact b{font-family:var(--serif);font-size:72px;font-weight:600;letter-spacing:-.03em;line-height:1;color:#F2B8A6;display:block}
+.fact b small{font-size:34px;color:#EDE8DC;font-weight:400}
+.fact p{margin:14px 0 0;font-size:19px;color:#C9C4B8;max-width:28ch}
+.cite{margin-top:34px;font-size:13px;color:#8E968F;font-family:var(--mono)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:56px}
+.step{border:1px solid #34413B;border-radius:14px;padding:24px 26px}
+.step i{font-style:normal;font-family:var(--mono);color:#7FC8B3;font-size:14px}
+.step h4{font-family:var(--serif);font-size:26px;font-weight:600;margin:6px 0 6px;color:#fff}
+.step p{margin:0;color:#B9B4A8;font-size:17px}
+
+/* sections */
+section.sec{padding:104px 0 24px}
+.sec-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:40px}
+h2{font-family:var(--serif);font-weight:600;font-size:58px;line-height:1.02;letter-spacing:-.03em;margin:12px 0 0}
+.sec-head p{font-size:19px;color:var(--ink2);margin:0;max-width:52ch}
+.note{font-size:15px;color:var(--mute);margin-top:16px;max-width:90ch}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px}
+
+/* leaderboard */
+table.lb{width:100%;border-collapse:collapse;font-size:18px}
+.lb th{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:600;text-align:right;padding:18px 18px;border-bottom:1px solid var(--line);cursor:pointer;user-select:none;white-space:nowrap}
+.lb th.l{text-align:left}.lb th:hover{color:var(--ink)}
+.lb th.sorted{color:var(--ink)}.lb th.sorted::after{content:" \2193";color:var(--teal)}.lb th.sorted.asc::after{content:" \2191"}
+.lb td{padding:16px 18px;border-bottom:1px solid var(--line2);text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:17px}
+.lb tr:last-child td{border-bottom:0}
+.lb td.l{text-align:left;font-family:var(--sans)}
+.lb tbody tr:hover{background:#FAF6EC}
+.lb .rk{font-family:var(--serif);font-size:24px;color:var(--mute);width:56px}
+.lb tr.top .rk{color:var(--teal);font-weight:700}
+.lb .mname{font-weight:600;font-size:20px;letter-spacing:-.01em}
+.badge{display:inline-block;font-family:var(--sans);font-size:12px;font-weight:600;letter-spacing:.02em;padding:3px 9px;border-radius:99px;margin-left:10px;vertical-align:3px}
+.b-aws{background:#FFF0D9;color:#8A5300;border:1px solid #F3D29C}
+.b-direct{background:#E9ECFF;color:#2F3FB0;border:1px solid #C9D0FF}
+.scorecell{display:flex;align-items:center;gap:14px;justify-content:flex-end}
+.sbar{width:180px;height:12px;background:var(--line2);border-radius:99px;overflow:hidden}
+.sbar i{display:block;height:100%;background:linear-gradient(90deg,#1B8A70,var(--teal));border-radius:99px}
+.scorecell b{font-size:22px;min-width:3.2ch}
+.fa-hi{color:var(--coral);font-weight:600}.dim{color:#A8ADA6}
+
+/* heatmaps */
+.money{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:44px 48px}
+.headline{font-family:var(--serif);font-size:46px;line-height:1.1;letter-spacing:-.025em;margin:6px 0 10px;max-width:24ch;font-weight:600}
+.headline em{font-style:normal;color:var(--coral)}
+.headline-sub{font-size:19px;color:var(--ink2);max-width:70ch;margin:0 0 36px}
+.hm-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:48px}
+.hm h3{font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin:0 0 14px;font-weight:600}
+table.heat{border-collapse:separate;border-spacing:4px;width:100%}
+.heat th{font-size:14px;font-weight:600;color:var(--ink2);padding:4px 6px;text-align:center;vertical-align:bottom;line-height:1.2}
+.heat th.rl{text-align:right;white-space:nowrap;font-size:16px;color:var(--ink);padding-right:10px;font-weight:500}
+.heat td.c{height:54px;border-radius:8px;text-align:center;font-family:var(--mono);font-weight:600;font-size:17px;min-width:64px;transition:transform .15s}
+.heat td.c:hover{transform:scale(1.06)}
+.heat tr.avg th.rl{font-weight:700}
+.heat tr.avg td.c{outline:2px solid var(--ink);outline-offset:-2px}
+.heat .sub{display:block;font-size:12px;color:var(--mute);font-weight:500}
+.legend{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--mute);margin-top:18px}
+.legend .ramp{width:220px;height:12px;border-radius:99px}
+.hardest{margin-top:44px}
+.hard-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:10px 36px}
+.hrow{display:grid;grid-template-columns:86px 1fr 130px 52px;gap:14px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line2);font-size:16px}
+.hrow code{font-family:var(--mono);font-size:13px;color:var(--mute)}
+.hrow .t{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--mute)}
+.mini{height:10px;background:var(--line2);border-radius:99px;overflow:hidden}.mini i{display:block;height:100%}
+
+/* scenes */
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:26px}
+.chip{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:8px 18px;font:500 16px var(--sans);cursor:pointer;color:var(--ink2)}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:22px}
+.sc{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;cursor:pointer;transition:transform .15s,box-shadow .15s}
+.sc:hover{transform:translateY(-3px);box-shadow:0 18px 36px -22px rgba(21,32,27,.5)}
+.sc .im{position:relative;aspect-ratio:3/2;background:#e8e2d4}
+.sc img{width:100%;height:100%;object-fit:cover;display:block}
+.sc .tag{position:absolute;top:12px;left:12px;background:rgba(255,253,248,.95);border-radius:99px;padding:3px 11px;font-size:13px;font-weight:600}
+.sc .tag.clean{background:var(--teal);color:#fff}
+.sc .meta{padding:14px 16px 16px}
+.sc .ttl{font-weight:600;font-size:17px;line-height:1.3}
+.sc .sub{color:var(--mute);font-size:14px;margin-top:3px;text-transform:capitalize}
+.found{display:flex;gap:3px;margin-top:12px;align-items:center}
+.found i{flex:1;height:8px;border-radius:2px;background:var(--line2)}
+.found i.y{background:var(--teal)}.found i.n{background:var(--coral)}
+.found span{font-size:13px;color:var(--mute);margin-left:8px;white-space:nowrap;font-family:var(--mono)}
+
+/* viewer */
+#viewer{position:fixed;inset:0;background:rgba(18,24,21,.8);z-index:60;display:none;padding:28px;overflow:auto}
+#viewer.open{display:block}
+.vbox{background:var(--paper);border-radius:22px;max-width:1500px;margin:0 auto;padding:30px 34px 34px;position:relative}
+.vclose{position:absolute;top:18px;right:20px;border:0;background:var(--ink);color:#fff;width:44px;height:44px;border-radius:99px;font-size:22px;cursor:pointer}
+.vtop{display:flex;align-items:flex-end;gap:28px;flex-wrap:wrap;margin-bottom:20px;padding-right:60px}
+.vtop h3{font-family:var(--serif);font-size:38px;margin:4px 0 0;letter-spacing:-.02em;font-weight:600}
+.vtop select{font:600 17px var(--sans);padding:10px 14px;border-radius:10px;border:1px solid var(--line);background:var(--card);margin-left:auto}
+.vimgs{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.vimgs.single{grid-template-columns:1fr}
+.pane .lab{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);font-weight:600;margin-bottom:8px}
+.frame{position:relative;border-radius:12px;overflow:hidden;background:#ddd}
+.frame img{display:block;width:100%}
+.bx{position:absolute;border-radius:6px;pointer-events:auto}
+.bx.gt{border:4px solid var(--gt);box-shadow:0 0 0 2px rgba(255,255,255,.7)}
+.bx.pr{border:3px dashed var(--pred)}
+.bx.pr.hit{border-color:var(--pred)}
+.bx.pr.fa{border-color:var(--coral);border-style:solid}
+.bx.pr.unk{border-color:#fff;opacity:.85}
+.bx b{position:absolute;top:-2px;left:-2px;transform:translateY(-100%);font:600 12px var(--mono);padding:2px 7px;border-radius:5px 5px 0 0;white-space:nowrap;color:#fff}
+.bx.gt b{background:var(--gt)}.bx.pr b{background:var(--pred)}.bx.pr.fa b{background:var(--coral)}.bx.pr.unk b{background:#5c625e}
+.bx.pr b{top:auto;bottom:-2px;transform:translateY(100%);border-radius:0 0 5px 5px}
+.vinfo{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:24px}
+.vinfo h4{margin:0 0 10px;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.item{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--line)}
+.mark{flex:none;font:700 12px var(--mono);padding:3px 8px;border-radius:6px;letter-spacing:.04em;margin-top:2px}
+.m-hit{background:var(--teal2);color:var(--teal)}.m-miss{background:var(--coral2);color:var(--coral)}.m-fa{background:var(--coral);color:#fff}.m-unk{background:var(--line2);color:var(--mute)}.m-gt{background:#DDF3EA;color:#0B7F57}
+.item .ev{font-size:15px;color:var(--ink2)}
+.item .nm{font-weight:600}
+.dots{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.dots span{font:500 12px var(--mono);padding:2px 8px;border-radius:99px}
+.dots .y{background:var(--teal2);color:var(--teal)}.dots .n{background:var(--coral2);color:var(--coral)}
+.legend2{display:flex;gap:18px;font-size:14px;color:var(--mute);margin-top:12px;flex-wrap:wrap}
+.legend2 i{display:inline-block;width:18px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:6px}
+
+/* placeholders */
+.ph:empty{min-height:260px;border:2px dashed var(--line);border-radius:22px;display:flex;align-items:center;justify-content:center;color:var(--mute);font-size:18px;background:repeating-linear-gradient(135deg,transparent 0 14px,rgba(226,219,203,.35) 14px 28px)}
+.ph:empty::before{content:attr(data-ph)}
+footer{padding:80px 0 60px;color:var(--mute);font-size:15px}
+footer .wrap{border-top:1px solid var(--line);padding-top:28px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+</style></head><body>
+
+<nav><div class="wrap">
+  <a class="logo" href="#top">Home<i>Dojo</i></a>
+  <div class="links">
+    <a href="#why">Why</a><a href="#leaderboard">Leaderboard</a><a href="#failures">Where models fail</a><a href="#scenes">Scenes</a><a href="#live">Check your home</a><a href="#worlds">3D</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow">HomeBench · built for HomeReady</div>
+      <h1>HomeDojo — the gym where <em>home-health AI</em> trains.</h1>
+      <p class="lede">Synthetic homes with <b>clinically grounded fall hazards</b> seeded in on purpose. The label exists before the pixels, so every answer is graded against <b>exact ground truth</b>.</p>
+    </div>
+    <figure class="hero-fig" id="heroFig"></figure>
+  </div>
+  <div class="stats" id="stats"></div>
+</div></header>
+
+<section class="problem" id="why"><div class="wrap">
+  <div class="eyebrow" style="color:#7FC8B3">The problem</div>
+  <h2 style="max-width:22ch">Patients go home on a walker. The house decides whether they fall.</h2>
+  <div class="facts">
+    <div class="fact"><b>1 <small>in</small> 3</b><p>joint-replacement patients fall within a year of surgery.</p></div>
+    <div class="fact"><b>~31<small>%</small></b><p>of falls are caused by the environment — rugs, missing grab bars, low toilets.</p></div>
+    <div class="fact"><b>26<small>%</small> <small>/</small> 38<small>%</small></b><p>fewer falls with home modification — 38% in high-risk patients (Cochrane 2023).</p></div>
+  </div>
+  <div class="cite">Home-health AI is shipping vision models into homes. Nobody can test them: real homes have no ground truth.</div>
+  <div class="steps">
+    <div class="step"><i>01 · label first</i><h4>Seed the hazard</h4><p>Pick a hazard from a 35-item clinical taxonomy (CDC STEADI, HOME FAST, SAFER-HOME).</p></div>
+    <div class="step"><i>02 · then pixels</i><h4>Render the home</h4><p>Generate a clean room, then edit in exactly one hazard. A verifier checks it's really there.</p></div>
+    <div class="step"><i>03 · grade</i><h4>Score every model</h4><p>Same image, same prompt. Hits, misses, and false alarms on hazards we <i>know</i> are absent.</p></div>
+  </div>
+</div></section>
+
+<section class="sec" id="leaderboard"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">HomeBench leaderboard</div><h2>Who can see a dangerous home?</h2></div>
+    <p>Every model sees the same scenes and the same 35-hazard checklist. Click a column to sort.</p>
+  </div>
+  <div class="card" style="overflow-x:auto"><table class="lb" id="board"></table></div>
+  <div class="note"><b>Score</b> = mean of recall and (1 − false-alarm rate). <b>Recall</b> = seeded hazards found. <b>False alarm</b> = model reports a hazard we verified is <i>not</i> in the room (e.g. "no grab bar" when there are three). <b>Precision</b> = hits ÷ (hits + verified false alarms). <b>Loc IoU</b> = box overlap on hits.</div>
+</div></section>
+
+<section class="sec" id="failures"><div class="wrap">
+  <div class="eyebrow" style="margin-bottom:14px">Where every model fails</div>
+  <div class="money">
+    <div class="headline" id="headline"></div>
+    <p class="headline-sub" id="headlineSub"></p>
+    <div class="hm-grid">
+      <div class="hm"><h3>Recall by hazard type</h3><table class="heat" id="heatType"></table></div>
+      <div class="hm"><h3>Recall by room</h3><table class="heat" id="heatRoom"></table></div>
+    </div>
+    <div class="legend"><span>0% found</span><div class="ramp" id="ramp"></div><span>100% found</span><span style="margin-left:18px">— not tested yet</span></div>
+    <div class="hardest"><div class="hm"><h3>Hardest hazards · mean recall across models</h3></div><div class="hard-list" id="hardest"></div></div>
+  </div>
+  <div class="note"><b>Object</b> = something in the way (rug, cord, clutter). <b>Absence</b> = something missing (grab bar, stair rail). <b>Measurement</b> = geometry (toilet height, doorway too narrow for a walker). <b>Lighting</b> = too dark to see the path.</div>
+</div></section>
+
+<section class="sec" id="scenes"><div class="wrap">
+  <div class="sec-head">
+    <div><div class="eyebrow">Scene explorer</div><h2>Open any room. See what each model saw.</h2></div>
+    <p>Each tile is a verified scene. The bar shows how many models found its hazard. Click to compare the clean room with the hazard edit and overlay any model's boxes.</p>
+  </div>
+  <div class="chips" id="chips"></div>
+  <div class="sgrid" id="sgrid"></div>
+</div></section>
+
+<section class="sec" id="live"><div class="wrap">
+  <div class="sec-head"><div><div class="eyebrow">Try it</div><h2>Check your own home</h2></div><p>Upload a photo of a room and get the hazard checklist a post-op patient needs.</p></div>
+  <div id="live-check" class="ph" data-ph="Live check coming online"></div>
+</div></section>
+
+<section class="sec" id="worlds"><div class="wrap">
+  <div class="sec-head"><div><div class="eyebrow">Next</div><h2>Walk the home in 3D</h2></div><p>From single photos to walkable worlds: the same seeded hazards, explored the way a patient moves through a house.</p></div>
+  <div id="worlds-3d" class="ph" data-ph="3D worlds coming online"></div>
+</div></section>
+
+<footer><div class="wrap"><span><b style="color:var(--ink)">HomeDojo</b> · HomeBench v0 · built at the Pear hackathon, 2026-09-26. Customer zero: HomeReady.</span><span>Taxonomy is original synthesis cross-walked to CDC STEADI, HOME FAST, HSSAT, SAFER-HOME; pending OT/PT review.</span></div></footer>
+
+<div id="viewer"><div class="vbox" id="vbox"></div></div>
+
+<script>
+const D=/*DATA*/null;
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pct=v=>v==null?"—":Math.round(v*100)+"%";
+const TAX=D.taxonomy||{};
+const TYPES=["object","absence","measurement","lighting"];
+const TLABEL={object:"Visible object",absence:"Missing feature",measurement:"Measurement",lighting:"Lighting"};
+const TPHRASE={object:"visible objects like rugs and cords",absence:"missing safety features like grab bars",measurement:"measurement hazards like toilet height",lighting:"lighting hazards"};
+const LB=D.leaderboard||[];
+const MODELS=LB.map(r=>r.model);
+const SCENES=(D.scenes||[]).slice().sort((a,b)=>a.room.localeCompare(b.room)||(a.kind==="base"?-1:1)-(b.kind==="base"?-1:1)||a.id.localeCompare(b.id));
+const SC=Object.fromEntries(SCENES.map(s=>[s.id,s]));
+const PRED=D.predictions||{};
+const KA=D.known_absent||{};
+const hname=id=>TAX[id]?.name||id;
+const htype=h=>h.type||TAX[h.id]?.type||"object";
+
+// color ramp: coral (0) -> sand (.5) -> teal (1)
+const STOPS=[[213,72,42],[243,226,196],[14,107,88]];
+function heat(v){
+  if(v==null) return {bg:"#EFEBE2",fg:"#A8ADA6"};
+  const t=Math.max(0,Math.min(1,v)),[a,b,u]=t<.5?[STOPS[0],STOPS[1],t/.5]:[STOPS[1],STOPS[2],(t-.5)/.5];
+  const c=a.map((x,i)=>Math.round(x+(b[i]-x)*u));
+  const lum=(.299*c[0]+.587*c[1]+.114*c[2]);
+  return {bg:`rgb(${c})`,fg:lum<150?"#fff":"#15201B"};
+}
+$("#ramp").style.background=`linear-gradient(90deg,${heat(0).bg},${heat(.25).bg},${heat(.5).bg},${heat(.75).bg},${heat(1).bg})`;
+
+// ---------- hero ----------
+(function(){
+  const edits=SCENES.filter(s=>s.kind==="edit");
+  const nHaz=edits.reduce((n,s)=>n+s.hazards.length,0);
+  const bases=SCENES.filter(s=>s.kind==="base").length;
+  const stats=[[SCENES.length,"verified scenes",`${edits.length} hazard edits + ${bases} clean rooms`],[nHaz,"seeded hazards","each with exact ground truth"],[Object.keys(TAX).length,"hazard types","in the clinical taxonomy"],[MODELS.length,"vision models","scored on the same scenes"]];
+  $("#stats").innerHTML=stats.map(([n,l,s])=>`<div class="stat"><b>${n}</b><span><b style="font:600 17px var(--sans);color:var(--ink);display:inline">${l}</b><br>${s}</span></div>`).join("");
+  const pick=edits.find(s=>s.hazards.some(h=>h.box))||edits[0]||SCENES[0];
+  if(!pick) return;
+  const h=pick.hazards.find(h=>h.box);
+  $("#heroFig").innerHTML=`<div class="frame" style="border-radius:0"><img src="${pick.img}" alt="">${h?box(h.box,"gt",h.id):""}</div>
+    <figcaption><span class="mark m-gt">SEEDED</span><span><b>${esc(hname(pick.hazards[0].id))}</b> · ${esc(pick.room)}</span></figcaption>`;
+})();
+
+function box(b,cls,label){
+  if(!Array.isArray(b)||b.length!==4||b.some(x=>typeof x!=="number")) return "";
+  let [x0,y0,x1,y1]=b.map(v=>Math.max(0,Math.min(1000,v)));
+  if(x1<x0)[x0,x1]=[x1,x0]; if(y1<y0)[y0,y1]=[y1,y0];
+  if(x1-x0<4||y1-y0<4) return "";
+  return `<div class="bx ${cls}" style="left:${x0/10}%;top:${y0/10}%;width:${(x1-x0)/10}%;height:${(y1-y0)/10}%"><b>${esc(label)}</b></div>`;
+}
+
+// ---------- leaderboard ----------
+const COLS=[
+  {k:"rank",l:"#",cls:"l",f:(r,i)=>`<span class="rk">${i+1}</span>`,nosort:1},
+  {k:"model",l:"Model",cls:"l",f:r=>{const aws=/bedrock/i.test(r.provider);return `<span class="mname">${esc(r.model)}</span><span class="badge ${aws?"b-aws":"b-direct"}">${esc(r.provider||"")}</span>`}},
+  {k:"score",l:"Score",f:r=>`<div class="scorecell"><div class="sbar"><i style="width:${(r.score||0)*100}%"></i></div><b>${(r.score??0).toFixed(2)}</b></div>`},
+  {k:"recall",l:"Recall",f:r=>pct(r.recall)},
+  {k:"precision",l:"Precision",f:r=>r.precision==null?'<span class="dim">—</span>':pct(r.precision)},
+  {k:"false_alarm",l:"False alarms",f:r=>`<span class="${r.false_alarm>=.25?"fa-hi":""}">${pct(r.false_alarm)}</span> <span class="dim" style="font-size:14px">${r.fp??""}${r.fp!=null?"/"+((r.fp||0)+(r.tn||0)):""}</span>`,asc:1},
+  {k:"loc_iou",l:"Loc IoU",f:r=>r.loc_iou==null?'<span class="dim">—</span>':r.loc_iou.toFixed(2)},
+  {k:"scenes_run",l:"Scenes",f:r=>`${r.scenes_run??"?"}<span class="dim">/${D.n_scenes_total||SCENES.length}</span>`},
+];
+let sortK="score",sortAsc=false;
+function renderBoard(){
+  const rows=LB.slice().sort((a,b)=>{let x=a[sortK],y=b[sortK];if(typeof x==="string")return sortAsc?x.localeCompare(y):y.localeCompare(x);x=x??-1;y=y??-1;return sortAsc?x-y:y-x});
+  $("#board").innerHTML=`<thead><tr>${COLS.map(c=>`<th class="${c.cls||""} ${c.k===sortK?"sorted"+(sortAsc?" asc":""):""}" data-k="${c.nosort?"":c.k}">${c.l}</th>`).join("")}</tr></thead>
+  <tbody>${rows.map((r,i)=>`<tr class="${i===0&&sortK==="score"&&!sortAsc?"top":""}">${COLS.map(c=>`<td class="${c.cls||""}">${c.f(r,i)}</td>`).join("")}</tr>`).join("")}</tbody>`;
+  document.querySelectorAll("#board th").forEach(th=>th.onclick=()=>{const k=th.dataset.k;if(!k)return;if(k===sortK)sortAsc=!sortAsc;else{sortK=k;sortAsc=!!COLS.find(c=>c.k===k).asc||k==="model"}renderBoard()});
+}
+renderBoard();
+
+// ---------- failures ----------
+const mean=a=>{a=a.filter(v=>v!=null);return a.length?a.reduce((x,y)=>x+y,0)/a.length:null};
+function heatTable(el,cols,colLabel,get,colSub){
+  const avg=cols.map(c=>mean(LB.map(r=>get(r,c))));
+  const cell=v=>{const h=heat(v);return `<td class="c" style="background:${h.bg};color:${h.fg}">${pct(v)}</td>`};
+  el.innerHTML=`<tr><th></th>${cols.map(c=>`<th>${esc(colLabel(c))}${colSub?`<span class="sub">${colSub(c)}</span>`:""}</th>`).join("")}</tr>`+
+    LB.map(r=>`<tr><th class="rl">${esc(r.model)}</th>${cols.map(c=>cell(get(r,c))).join("")}</tr>`).join("")+
+    `<tr class="avg"><th class="rl">All models</th>${avg.map(cell).join("")}</tr>`;
+  return avg;
+}
+(function(){
+  const types=TYPES.filter(t=>LB.some(r=>r.by_type?.[t]!=null));
+  const nByType=t=>SCENES.reduce((n,s)=>n+s.hazards.filter(h=>htype(h)===t).length,0);
+  const tAvg=heatTable($("#heatType"),types,t=>TLABEL[t]||t,(r,t)=>r.by_type?.[t],t=>`${nByType(t)} seeded`);
+  const rooms=[...new Set(LB.flatMap(r=>Object.keys(r.by_room||{})))].sort();
+  const rAvg=heatTable($("#heatRoom"),rooms,r=>r[0].toUpperCase()+r.slice(1),(r,c)=>r.by_room?.[c]);
+  const tv=types.map((t,i)=>[t,tAvg[i]]).filter(x=>x[1]!=null).sort((a,b)=>a[1]-b[1]);
+  const rv=rooms.map((t,i)=>[t,rAvg[i]]).filter(x=>x[1]!=null).sort((a,b)=>a[1]-b[1]);
+  if(tv.length>=2){
+    const [w,wv]=tv[0],[b,bv]=tv[tv.length-1];
+    $("#headline").innerHTML=`Models find ${pct(bv)} of ${TPHRASE[b].split(" like")[0]} — but only <em>${pct(wv)}</em> of ${TPHRASE[w].split(" like")[0]}.`;
+    const perfect=LB.filter(r=>r.by_type?.[w]===1).length;
+    $("#headlineSub").textContent=`The hardest category is ${TLABEL[w].toLowerCase()} hazards${TPHRASE[w].includes(" like")?" ("+TPHRASE[w].split(" like ")[1]+")":""}: ${perfect?perfect+" of "+LB.length+" models catch them all":"no model catches them all"}.`+(rv.length?` Weakest room: ${rv[0][0]} (${pct(rv[0][1])} recall across models).`:"");
+  }else if(tv.length){
+    $("#headline").innerHTML=`Across models, only <em>${pct(tv[0][1])}</em> of ${TLABEL[tv[0][0]].toLowerCase()} hazards are found.`;
+  }else $("#headline").textContent="Results loading…";
+  // hardest hazards
+  const hz=[...new Set(LB.flatMap(r=>Object.keys(r.by_hazard||{})))].map(h=>[h,mean(LB.map(r=>r.by_hazard?.[h]))]).sort((a,b)=>a[1]-b[1]).slice(0,10);
+  $("#hardest").innerHTML=hz.map(([h,v])=>`<div class="hrow"><code>${h}</code><div><div>${esc(hname(h))}</div><div class="t">${TLABEL[TAX[h]?.type]||""}</div></div><div class="mini"><i style="width:${Math.max(3,v*100)}%;background:${heat(v).bg}"></i></div><b class="num" style="font-size:16px;text-align:right">${pct(v)}</b></div>`).join("")||'<div class="note">No per-hazard results yet.</div>';
+})();
+
+// ---------- scenes ----------
+function modelsFound(s){
+  const gt=s.hazards.map(h=>h.id),p=PRED[s.id]||{};
+  const ms=MODELS.filter(m=>p[m]);
+  if(s.kind==="base"){ // clean room: "good" = no false alarm on known-absent hazards
+    const neg=KA[s.id]||[];
+    return ms.map(m=>!neg.some(n=>(p[m].pred||[]).includes(n)));
+  }
+  return ms.map(m=>gt.every(g=>(p[m].pred||[]).includes(g)));
+}
+let roomF="all";
+function renderScenes(){
+  const rooms=["all",...new Set(SCENES.map(s=>s.room))];
+  $("#chips").innerHTML=rooms.map(r=>`<button class="chip ${r===roomF?"on":""}" data-r="${r}">${r==="all"?"All rooms":r[0].toUpperCase()+r.slice(1)} <span class="dim">${r==="all"?SCENES.length:SCENES.filter(s=>s.room===r).length}</span></button>`).join("");
+  document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{roomF=c.dataset.r;renderScenes()});
+  $("#sgrid").innerHTML=SCENES.filter(s=>roomF==="all"||s.room===roomF).map(s=>{
+    const f=modelsFound(s),y=f.filter(Boolean).length;
+    const title=s.kind==="base"?"Clean room (control)":s.hazards.map(h=>hname(h.id)).join(" + ");
+    const tag=s.kind==="base"?`<span class="tag clean">CLEAN</span>`:`<span class="tag">${s.hazards.map(h=>h.id).join(" · ")}</span>`;
+    return `<div class="sc" data-id="${s.id}"><div class="im"><img loading="lazy" src="${s.thumb}" alt="">${tag}</div><div class="meta"><div class="ttl">${esc(title)}</div><div class="sub">${esc(s.room)} · ${s.kind==="base"?"no seeded hazard":htype(s.hazards[0]||{})}</div>
+      <div class="found">${f.length?f.map(v=>`<i class="${v?"y":"n"}"></i>`).join("")+`<span>${y}/${f.length} ${s.kind==="base"?"no false alarm":"found it"}</span>`:'<span style="margin:0">not yet scored</span>'}</div></div></div>`}).join("");
+  document.querySelectorAll(".sc").forEach(c=>c.onclick=()=>openViewer(c.dataset.id));
+}
+renderScenes();
+
+// ---------- viewer ----------
+let curModel=MODELS[0];
+function openViewer(id){
+  const s=SC[id];if(!s)return;
+  const base=s.kind==="edit"?SC[s.base]:null;
+  const p=PRED[id]||{};
+  const avail=MODELS.filter(m=>p[m]);
+  if(!avail.includes(curModel))curModel=avail[0];
+  const gt=new Set(s.hazards.map(h=>h.id));
+  const neg=new Set((KA[s.base||s.id]||[]).filter(h=>!gt.has(h)));
+  const raw=curModel?(p[curModel].raw||[]):[];
+  const cls=h=>gt.has(h.id)?"hit":neg.has(h.id)?"fa":"unk";
+  const gtBoxes=s.hazards.map(h=>box(h.box,"gt","TRUTH · "+h.id)).join("");
+  const prBoxes=raw.map(h=>box(h.box,"pr "+cls(h),(cls(h)==="hit"?"HIT ":cls(h)==="fa"?"FALSE ALARM ":"")+(h.id||"?"))).join("");
+  const title=s.kind==="base"?"Clean room · control":s.hazards.map(h=>hname(h.id)).join(" + ");
+  const predIds=new Set(raw.map(h=>h.id));
+  const gtList=s.hazards.length?s.hazards.map(h=>{
+    const found=predIds.has(h.id);
+    const who=MODELS.filter(m=>p[m]).map(m=>`<span class="${(p[m].pred||[]).includes(h.id)?"y":"n"}">${esc(m)}</span>`).join("");
+    return `<div class="item"><span class="mark ${curModel?(found?"m-hit":"m-miss"):"m-gt"}">${curModel?(found?"HIT":"MISS"):"TRUTH"}</span><div><div class="nm">${esc(h.id)} · ${esc(hname(h.id))}</div><div class="ev">${TLABEL[htype(h)]} hazard${h.box?"":" · whole-room (no box)"}${s.verify?.note?" — "+esc(s.verify.note):""}</div><div class="dots">${who}</div></div></div>`}).join("")
+    :`<div class="item"><span class="mark m-gt">CLEAN</span><div><div class="nm">No seeded hazard.</div><div class="ev">Verified absent here: ${[...neg].map(h=>esc(h)+" "+esc(hname(h))).join("; ")||"—"}</div></div></div>`;
+  const prList=raw.length?raw.map(h=>{const c=cls(h);return `<div class="item"><span class="mark ${c==="hit"?"m-hit":c==="fa"?"m-fa":"m-unk"}">${c==="hit"?"HIT":c==="fa"?"FALSE ALARM":"UNSCORED"}</span><div><div class="nm">${esc(h.id||"?")} · ${esc(hname(h.id))}${h.severity?` <span class="dim" style="font-weight:500">(${esc(h.severity)})</span>`:""}</div><div class="ev">${esc(h.evidence||"")}</div></div></div>`}).join(""):`<div class="note">${curModel?"This model reported no hazards.":"No model output for this scene yet."}</div>`;
+  $("#vbox").innerHTML=`<button class="vclose" onclick="closeViewer()">×</button>
+    <div class="vtop"><div><div class="eyebrow">${esc(s.room)} · ${esc(s.id)}</div><h3>${esc(title)}</h3></div>
+    ${avail.length?`<select id="msel">${avail.map(m=>`<option ${m===curModel?"selected":""}>${esc(m)}</option>`).join("")}</select>`:""}</div>
+    <div class="vimgs ${base?"":"single"}">
+      ${base?`<div class="pane"><div class="lab">Before · clean base room</div><div class="frame"><img src="${base.img}" alt=""></div></div>`:""}
+      <div class="pane"><div class="lab">${base?"After · hazard edit":"Scene"} ${curModel?"· "+esc(curModel)+" predictions":""}</div><div class="frame"><img src="${s.img}" alt="">${gtBoxes}${prBoxes}</div></div>
+    </div>
+    <div class="legend2"><span><i style="border:3px solid var(--gt)"></i>Ground truth</span><span><i style="border:3px dashed var(--pred)"></i>Model hit</span><span><i style="border:3px solid var(--coral)"></i>False alarm (verified absent)</span><span><i style="background:#5c625e"></i>Unscored (not in this room's verified set)</span></div>
+    <div class="vinfo"><div><h4>Ground truth</h4>${gtList}</div><div><h4>${curModel?esc(curModel)+" said":"Model output"}</h4>${prList}</div></div>`;
+  const sel=$("#msel");if(sel)sel.onchange=()=>{curModel=sel.value;openViewer(id)};
+  $("#viewer").classList.add("open");document.body.style.overflow="hidden";
+}
+function closeViewer(){$("#viewer").classList.remove("open");document.body.style.overflow=""}
+$("#viewer").onclick=e=>{if(e.target.id==="viewer")closeViewer()};
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeViewer()});
+
+if(location.hash.startsWith("#scene="))openViewer(decodeURIComponent(location.hash.slice(7)));
+// ---------- nav highlight ----------
+const links=[...document.querySelectorAll("nav .links a")];
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+e.target.id))}),{rootMargin:"-40% 0px -55% 0px"});
+["why","leaderboard","failures","scenes","live","worlds"].forEach(id=>io.observe(document.getElementById(id)));
+</script>
+</body></html>

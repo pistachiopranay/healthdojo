@@ -1,0 +1,22 @@
+{
+ "id": "living-base0-LIV-05",
+ "room": "living",
+ "kind": "edit",
+ "base": "living-base0",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Poor lighting or glare. Dim room, dark corners, bare bulbs causing glare, or strong window glare on glossy floor.",
+ "hazards": [
+  {
+   "id": "LIV-05",
+   "type": "lighting"
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/living-base0-LIV-05.jpg",
+ "image": "renders/living-base0-LIV-05.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "Image 2 has strong sunlight through the window creating bright glare on the glossy floor, and the room edges are dimmer. Furniture and layout are unchanged.",
+  "changed_frac": 0.0299
+ },
+ "verified": true
+}

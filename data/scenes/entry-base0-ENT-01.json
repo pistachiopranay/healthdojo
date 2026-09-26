@@ -1,0 +1,28 @@
+{
+ "id": "entry-base0-ENT-01",
+ "room": "entry",
+ "kind": "edit",
+ "base": "entry-base0",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Exterior steps without handrail. Porch or entry steps (one or more) without a handrail on either side.",
+ "hazards": [
+  {
+   "id": "ENT-01",
+   "type": "absence",
+   "box": [
+    292,
+    317,
+    684,
+    618
+   ]
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/entry-base0-ENT-01.jpg",
+ "image": "renders/entry-base0-ENT-01.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "Both black metal handrails were removed, leaving the two-step concrete entry with no railing on either side. The rest of the scene is essentially unchanged.",
+  "changed_frac": 0.0277
+ },
+ "verified": true
+}

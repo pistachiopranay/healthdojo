@@ -1,0 +1,28 @@
+{
+ "id": "bathroom-base1-BATH-02",
+ "room": "bathroom",
+ "kind": "edit",
+ "base": "bathroom-base1",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: No support at toilet. Toilet with no grab bar, toilet safety frame, or sturdy fixed support within reach on either side.",
+ "hazards": [
+  {
+   "id": "BATH-02",
+   "type": "absence",
+   "box": [
+    524,
+    557,
+    698,
+    973
+   ]
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/bathroom-base1-BATH-02.jpg",
+ "image": "renders/bathroom-base1-BATH-02.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "Toilet safety frame and raised seat removed; the toilet now has no grab bar or frame within reach. The tub grab bars are not reachable from the toilet. The rest of the room is unchanged.",
+  "changed_frac": 0.0297
+ },
+ "verified": true
+}

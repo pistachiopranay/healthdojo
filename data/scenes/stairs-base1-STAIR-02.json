@@ -1,0 +1,28 @@
+{
+ "id": "stairs-base1-STAIR-02",
+ "room": "stairs",
+ "kind": "edit",
+ "base": "stairs-base1",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Handrail loose, short, or not graspable. Rail that stops before top/bottom step, is wobbly or detached, is a wide flat board, or is obstructed by objects.",
+ "hazards": [
+  {
+   "id": "STAIR-02",
+   "type": "object",
+   "box": [
+    240,
+    317,
+    402,
+    814
+   ]
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/stairs-base1-STAIR-02.jpg",
+ "image": "renders/stairs-base1-STAIR-02.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "Left handrail shortened to a small stub near the bottom, so it no longer runs the length of the stair. The rest of the scene is unchanged.",
+  "changed_frac": 0.0242
+ },
+ "verified": true
+}

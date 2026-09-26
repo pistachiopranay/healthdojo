@@ -1,0 +1,28 @@
+{
+ "id": "bedroom-base1-BED-04",
+ "room": "bedroom",
+ "kind": "edit",
+ "base": "bedroom-base1",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Floor clutter around bed. Clothes, shoes, bags, boxes, or laundry on floor beside bed or in the path to the door.",
+ "hazards": [
+  {
+   "id": "BED-04",
+   "type": "object",
+   "box": [
+    402,
+    661,
+    768,
+    866
+   ]
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/bedroom-base1-BED-04.jpg",
+ "image": "renders/bedroom-base1-BED-04.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "Clothes, shoes, a bag, and a box are scattered on the floor beside the bed and in the path to the door. The rest of the room is unchanged.",
+  "changed_frac": 0.0293
+ },
+ "verified": true
+}

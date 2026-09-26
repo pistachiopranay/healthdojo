@@ -1,0 +1,28 @@
+{
+ "id": "living-base1-LIV-04",
+ "room": "living",
+ "kind": "edit",
+ "base": "living-base1",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Low or soft seating without armrests. Deep sofa, recliner, or low chair without firm arms; seat well below knee height.",
+ "hazards": [
+  {
+   "id": "LIV-04",
+   "type": "object",
+   "box": [
+    106,
+    272,
+    406,
+    653
+   ]
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/living-base1-LIV-04.jpg",
+ "image": "renders/living-base1-LIV-04.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "Dark armed recliner replaced with a low, armless tufted floor chair whose seat sits well below knee height. The rest of the room is unchanged.",
+  "changed_frac": 0.0299
+ },
+ "verified": true
+}

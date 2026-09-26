@@ -1,0 +1,22 @@
+{
+ "id": "entry-base1-ENT-02",
+ "room": "entry",
+ "kind": "edit",
+ "base": "entry-base1",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Raised threshold or door sill. Raised door sill, sliding-door track, or shower curb at a doorway that must be stepped over.",
+ "hazards": [
+  {
+   "id": "ENT-02",
+   "type": "measurement"
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/entry-base1-ENT-02.jpg",
+ "image": "renders/entry-base1-ENT-02.jpg",
+ "verify": {
+  "hazard_visible": false,
+  "other_major_changes": false,
+  "note": "The door threshold in image 2 is only slightly thicker and darker than in the original. It reads as a normal sill, not a clearly raised step-over hazard. The rest of the scene is essentially unchanged.",
+  "changed_frac": 0.0025
+ },
+ "verified": false
+}

@@ -1,0 +1,22 @@
+{
+ "id": "bedroom-base0-BED-05",
+ "room": "bedroom",
+ "kind": "edit",
+ "base": "bedroom-base0",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Insufficient walker clearance around bed. Bed pushed against wall or furniture leaving a narrow gap (less than about 30-36 in) on the exit side; no room to position a walker.",
+ "hazards": [
+  {
+   "id": "BED-05",
+   "type": "measurement"
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/bedroom-base0-BED-05.jpg",
+ "image": "renders/bedroom-base0-BED-05.jpg",
+ "verify": {
+  "hazard_visible": false,
+  "other_major_changes": true,
+  "note": "The bed was shifted left so its head sits near the doorway corner, but a wide open floor area remains between the bed and the dresser, leaving ample walker clearance. Other changes: the glowing night light was removed and the wall corner and baseboard were altered into a curved shape.",
+  "changed_frac": 0.0287
+ },
+ "verified": false
+}

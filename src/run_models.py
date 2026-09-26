@@ -3,7 +3,9 @@ import base64, json, os, re, sys, concurrent.futures as cf, pathlib
 from dotenv import load_dotenv
 from common import ROOT, DATA, SCENES, taxonomy
 
-load_dotenv(ROOT / ".env")
+load_dotenv(ROOT / ".env", override=True)
+if os.getenv("AWS_ACCESS_KEY_ID"):
+    os.environ.pop("AWS_PROFILE", None)  # event workshop account creds win
 OUT = DATA / "outputs"
 TAX = taxonomy()
 
@@ -36,7 +38,7 @@ def anthropic_call(model):
     client = anthropic.Anthropic()
     def call(img_bytes, prompt):
         r = client.messages.create(model=model, max_tokens=1500, messages=[{"role": "user", "content": [
-            {"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": base64.b64encode(img_bytes).decode()}},
+            {"type": "image", "source": {"type": "base64", "media_type": "image/png" if img_bytes[:4] == b"\x89PNG" else "image/jpeg", "data": base64.b64encode(img_bytes).decode()}},
             {"type": "text", "text": prompt}]}])
         return "".join(b.text for b in r.content if b.type == "text")
     return call
@@ -46,10 +48,16 @@ def bedrock_call(model_id):
     import boto3
     client = boto3.client("bedrock-runtime", region_name=os.getenv("AWS_REGION", "us-east-1"))
     def call(img_bytes, prompt):
-        r = client.converse(modelId=model_id, messages=[{"role": "user", "content": [
-            {"image": {"format": "jpeg", "source": {"bytes": img_bytes}}}, {"text": prompt}]}],
-            inferenceConfig={"maxTokens": 1500, "temperature": 0})
-        return r["output"]["message"]["content"][0]["text"]
+        fmt = "png" if img_bytes[:4] == b"\x89PNG" else "jpeg"
+        kw = dict(modelId=model_id, messages=[{"role": "user", "content": [
+            {"image": {"format": fmt, "source": {"bytes": img_bytes}}}, {"text": prompt}]}])
+        try:
+            r = client.converse(**kw, inferenceConfig={"maxTokens": 4000, "temperature": 0})
+        except client.exceptions.ValidationException as e:
+            if "temperature" not in str(e):
+                raise
+            r = client.converse(**kw, inferenceConfig={"maxTokens": 4000})
+        return "".join(b.get("text", "") for b in r["output"]["message"]["content"])
     return call
 
 
@@ -64,24 +72,38 @@ def openai_call(model):
     return call
 
 
-# name -> factory. Only models whose credentials are present are run.
+# name -> (factory, required env, provider). Bedrock = AWS event workshop account.
 MODELS = {
-    "claude-opus-5.5": (lambda: anthropic_call("claude-opus-5-5"), "ANTHROPIC_API_KEY"),
-    "claude-sonnet-5": (lambda: anthropic_call("claude-sonnet-5"), "ANTHROPIC_API_KEY"),
-    "claude-haiku-4.5": (lambda: anthropic_call("claude-haiku-4-5-20251001"), "ANTHROPIC_API_KEY"),
-    "nova-pro": (lambda: bedrock_call("us.amazon.nova-pro-v1:0"), "AWS_PROFILE"),
-    "nova-2-lite": (lambda: bedrock_call("us.amazon.nova-2-lite-v1:0"), "AWS_PROFILE"),
-    "llama-4-maverick": (lambda: bedrock_call("us.meta.llama4-maverick-17b-instruct-v1:0"), "AWS_PROFILE"),
-    "pixtral-large": (lambda: bedrock_call("us.mistral.pixtral-large-2502-v1:0"), "AWS_PROFILE"),
-    "qwen3-vl": (lambda: bedrock_call("qwen.qwen3-vl-235b-a22b"), "AWS_PROFILE"),
-    "mistral-large-3": (lambda: bedrock_call("mistral.mistral-large-3-675b-instruct"), "AWS_PROFILE"),
-    "gemma-3-27b": (lambda: bedrock_call("google.gemma-3-27b-it"), "AWS_PROFILE"),
-    "gpt": (lambda: openai_call(os.getenv("OPENAI_MODEL", "gpt-5")), "OPENAI_API_KEY"),
+    "claude-opus-5.5": (lambda: anthropic_call("claude-opus-5-5"), "ANTHROPIC_API_KEY", "Anthropic API"),
+    "gpt-6-luna": (lambda: bedrock_call("us.openai.gpt-6-luna"), "AWS_ACCESS_KEY_ID", "AWS Bedrock"),
+    "gpt-6-astra": (lambda: bedrock_call("us.openai.gpt-6-astra"), "AWS_ACCESS_KEY_ID", "AWS Bedrock"),
+    "gpt-5.6-sol": (lambda: bedrock_call("us.openai.gpt-5.6-sol"), "AWS_ACCESS_KEY_ID", "AWS Bedrock"),
+    "gpt-5.6-terra": (lambda: bedrock_call("us.openai.gpt-5.6-terra"), "AWS_ACCESS_KEY_ID", "AWS Bedrock"),
+    "grok-4.6": (lambda: bedrock_call("us.xai.grok-4.6"), "AWS_ACCESS_KEY_ID", "AWS Bedrock"),
+    "kimi-k3": (lambda: bedrock_call("us.moonshotai.kimi-k3"), "AWS_ACCESS_KEY_ID", "AWS Bedrock"),
+    "claude-sonnet-5": (lambda: bedrock_call("us.anthropic.claude-sonnet-5"), "AWS_ACCESS_KEY_ID", "AWS Bedrock"),
+    "claude-haiku-4.5": (lambda: bedrock_call("us.anthropic.claude-haiku-4-5-20251001-v1:0"), "AWS_ACCESS_KEY_ID", "AWS Bedrock"),
+    "nova-pro": (lambda: bedrock_call("amazon.nova-pro-v1:0"), "AWS_ACCESS_KEY_ID", "AWS Bedrock"),
+    "nova-2-lite": (lambda: bedrock_call("us.amazon.nova-2-lite-v1:0"), "AWS_ACCESS_KEY_ID", "AWS Bedrock"),
+    "llama-4-maverick": (lambda: bedrock_call("us.meta.llama4-maverick-17b-instruct-v1:0"), "AWS_ACCESS_KEY_ID", "AWS Bedrock"),
+    "qwen3-vl": (lambda: bedrock_call("qwen.qwen3-vl-235b-a22b"), "AWS_ACCESS_KEY_ID", "AWS Bedrock"),
+    "mistral-large-3": (lambda: bedrock_call("mistral.mistral-large-3-675b-instruct"), "AWS_ACCESS_KEY_ID", "AWS Bedrock"),
+    "gemma-3-27b": (lambda: bedrock_call("google.gemma-3-27b-it"), "AWS_ACCESS_KEY_ID", "AWS Bedrock"),
+    "nemotron-nano-vl": (lambda: bedrock_call("nvidia.nemotron-nano-12b-v2"), "AWS_ACCESS_KEY_ID", "AWS Bedrock"),
 }
 
 
+def small_jpeg(img_bytes, side=1280):
+    import io
+    from PIL import Image
+    im = Image.open(io.BytesIO(img_bytes)).convert("RGB")
+    im.thumbnail((side, side))
+    buf = io.BytesIO(); im.save(buf, "JPEG", quality=88)
+    return buf.getvalue()
+
+
 def run(model_name, scenes):
-    factory, env = MODELS[model_name]
+    factory, env, _ = MODELS[model_name]
     if not os.getenv(env):
         print(f"skip {model_name}: no {env}")
         return
@@ -94,7 +116,11 @@ def run(model_name, scenes):
         if f.exists():
             return
         try:
-            text = call((DATA / s["image"]).read_bytes(), prompt)
+            img = (DATA / s["image"]).read_bytes()
+            try:
+                text = call(img, prompt)
+            except Exception:
+                text = call(small_jpeg(img), prompt)  # some Bedrock models reject large/PNG payloads
             f.write_text(json.dumps({"scene": s["id"], "raw": text, "hazards": parse(text)}, indent=1))
             print(model_name, s["id"], "ok", flush=True)
         except Exception as e:

@@ -1,0 +1,28 @@
+{
+ "id": "kitchen-base0-KIT-03",
+ "room": "kitchen",
+ "kind": "edit",
+ "base": "kitchen-base0",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Unstable step stool or chair used for reaching. Step stool without handrail, folding stool, or kitchen chair positioned under upper cabinets.",
+ "hazards": [
+  {
+   "id": "KIT-03",
+   "type": "object",
+   "box": [
+    550,
+    10,
+    662,
+    549
+   ]
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/kitchen-base0-KIT-03.jpg",
+ "image": "renders/kitchen-base0-KIT-03.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "A white folding two-step stool with no handrail is placed under the upper cabinets, and an elderly woman stands on it reaching up. The added person and the opened cabinet support the hazard scene. The rest of the room is unchanged.",
+  "changed_frac": 0.0295
+ },
+ "verified": true
+}

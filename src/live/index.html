@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HomeDojo · Check your own home</title>
+<style>
+:root{--ink:#14161a;--mute:#6b7280;--line:#e6e4df;--bg:#faf9f6;--card:#fff;--acc:#1f6f5c;--high:#c2410c;--med:#b7791f;--low:#4b7a9b}
+*{box-sizing:border-box}
+body{margin:0;font:20px/1.45 -apple-system,BlinkMacSystemFont,"Inter",system-ui,sans-serif;color:var(--ink);background:var(--bg)}
+header{display:flex;align-items:center;gap:28px;padding:22px 40px;background:var(--card);border-bottom:1px solid var(--line);flex-wrap:wrap}
+header h1{margin:0;font-size:38px;letter-spacing:-.02em}
+header h1 span{color:var(--acc)}
+header p{margin:2px 0 0;color:var(--mute);font-size:19px}
+.grow{flex:1;min-width:260px}
+.ctl{display:flex;align-items:center;gap:12px;font-size:17px;color:var(--mute)}
+select{font:inherit;font-size:19px;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:#fff;color:var(--ink)}
+.qr{display:flex;align-items:center;gap:12px;font-size:15px;color:var(--mute);line-height:1.3}
+.qr img{width:150px;height:150px;background:#fff;border:1px solid var(--line);border-radius:8px}
+.qr b{color:var(--ink);font-size:17px}
+main{padding:28px 40px;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(360px,1fr);gap:28px}
+#drop{border:3px dashed #c9c6bd;border-radius:18px;background:var(--card);min-height:460px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;text-align:center;padding:30px;transition:.15s}
+#drop.over{border-color:var(--acc);background:#eef5f2}
+#drop h2{margin:0;font-size:36px;letter-spacing:-.01em}
+#drop p{margin:0;color:var(--mute)}
+.btns{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+.btn{font:inherit;font-size:22px;font-weight:600;padding:16px 28px;border-radius:14px;border:0;cursor:pointer;background:var(--acc);color:#fff}
+.btn.sec{background:#fff;color:var(--acc);border:2px solid var(--acc)}
+#stage{position:relative;display:none;border-radius:16px;overflow:hidden;background:#111}
+#stage img{display:block;width:100%;height:auto}
+#boxes{position:absolute;inset:0}
+.bx{position:absolute;border:4px solid;border-radius:6px;box-shadow:0 0 0 2px rgba(255,255,255,.55)}
+.bx i{position:absolute;left:-4px;top:-38px;font:800 22px/1 system-ui;font-style:normal;color:#fff;padding:7px 9px;border-radius:6px 6px 6px 0;white-space:nowrap}
+.bx.high{border-color:var(--high)}.bx.high i{background:var(--high)}
+.bx.medium{border-color:var(--med)}.bx.medium i{background:var(--med)}
+.bx.low{border-color:var(--low)}.bx.low i{background:var(--low)}
+.bx.in i{top:0;border-radius:0 0 6px 0;left:0}
+.bx.hl{box-shadow:0 0 0 4px #fff,0 0 30px rgba(255,255,255,.8)}
+#scan{position:absolute;inset:0;display:none;align-items:center;justify-content:center;background:rgba(10,20,18,.45);color:#fff;font-size:30px;font-weight:700;flex-direction:column;gap:8px}
+#scan small{font-size:20px;font-weight:500;opacity:.85}
+#scan:after{content:"";position:absolute;left:0;right:0;height:4px;background:#5eead4;box-shadow:0 0 24px #5eead4;animation:sweep 1.8s ease-in-out infinite}
+@keyframes sweep{0%{top:0}50%{top:calc(100% - 4px)}100%{top:0}}
+.again{margin-top:14px;display:none;gap:12px}
+aside{display:flex;flex-direction:column;gap:14px}
+.sum{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 22px}
+.sum .big{font-size:44px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.sum .meta{color:var(--mute);font-size:17px;margin-top:4px}
+.postop{background:#fff7ed;border:1px solid #fed7aa;border-radius:12px;padding:12px 16px;font-size:18px}
+.postop b{color:var(--high)}
+.hz{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;cursor:default}
+.hz:hover{border-color:var(--acc)}
+.hz .top{display:flex;align-items:center;gap:12px}
+.hz .n{font-weight:700;font-size:22px;flex:1;line-height:1.25}
+.num{width:34px;height:34px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:18px;flex:none}
+.chip{font-size:15px;font-weight:700;padding:4px 11px;border-radius:999px;color:#fff;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.high{--c:var(--high)}.medium{--c:var(--med)}.low{--c:var(--low)}
+.chip,.num{background:var(--c)}
+.chip.ghost{background:transparent;color:var(--c);border:2px solid var(--c)}
+.ev{color:var(--mute);font-size:17px;margin:8px 0 0}
+.fix{margin:10px 0 0;font-size:18px}
+.fix b{color:var(--acc)}
+.walk{font-size:16px;color:#9a3412;margin-top:6px}
+.id{font:600 14px ui-monospace,Menlo,monospace;color:var(--mute)}
+.empty{color:var(--mute);font-size:20px;padding:18px 4px}
+.err{background:#fef2f2;border:1px solid #fecaca;color:#991b1b;border-radius:12px;padding:14px 18px;font-size:18px}
+footer{padding:4px 40px 28px;color:var(--mute);font-size:14px}
+@media (max-width:900px){main{grid-template-columns:1fr;padding:16px}header{padding:16px}header h1{font-size:28px}.qr{display:none}#drop{min-height:300px}#drop h2{font-size:26px}}
+</style></head>
+<body>
+<header>
+  <div class="grow"><h1>Check <span>your own home</span></h1>
+  <p>Snap a room. HomeDojo flags fall hazards for someone coming home after hip or knee surgery.</p></div>
+  <div class="ctl">Model <select id="model"></select></div>
+  <div class="qr"><img src="/qr.svg" alt="QR code"><div><b>Try it on your phone</b><br><span id="lan">same wifi</span></div></div>
+</header>
+<main>
+  <section>
+    <div id="drop">
+      <h2>Drop a room photo here</h2>
+      <p>or take one now. Bathrooms, stairs, bedrooms, entries, kitchens.</p>
+      <div class="btns">
+        <label class="btn">Take photo<input id="cam" type="file" accept="image/*" capture="environment" hidden></label>
+        <label class="btn sec">Choose image<input id="pick" type="file" accept="image/*,.heic,.heif" hidden></label>
+      </div>
+    </div>
+    <div id="stage"><img id="photo" alt=""><div id="boxes"></div><div id="scan">Scanning for fall hazards<small id="scanmodel"></small></div></div>
+    <div class="again" id="again">
+      <label class="btn">Take another<input id="cam2" type="file" accept="image/*" capture="environment" hidden></label>
+      <label class="btn sec">Choose image<input id="pick2" type="file" accept="image/*,.heic,.heif" hidden></label>
+    </div>
+  </section>
+  <aside id="side">
+    <div class="sum"><div class="big">Ready</div><div class="meta">Model ranked best on HomeBench is selected by default.</div></div>
+  </aside>
+</main>
+<footer>Research prototype on synthetic-benchmark-selected models. Not a clinical assessment; confirm with an OT/PT. Walker modifier: hazards flagged for post-op escalation move up one severity level (max high).</footer>
+<script>
+const $=s=>document.querySelector(s), SEV=['low','medium','high'];
+let models=[],defaultModel='';
+fetch('/models').then(r=>r.json()).then(d=>{
+  models=d.models;defaultModel=d.default;
+  $('#model').innerHTML=d.models.map(m=>`<option value="${m.name}" ${m.name===d.default?'selected':''}>${m.name}${m.name===d.default?'  (best on HomeBench)':''}</option>`).join('');
+  $('#lan').textContent=d.lan_url.replace('http://','');
+});
+const drop=$('#drop');
+['dragenter','dragover'].forEach(e=>drop.addEventListener(e,ev=>{ev.preventDefault();drop.classList.add('over')}));
+['dragleave','drop'].forEach(e=>drop.addEventListener(e,ev=>{ev.preventDefault();drop.classList.remove('over')}));
+drop.addEventListener('drop',ev=>{const f=ev.dataTransfer.files[0];if(f)run(f)});
+document.addEventListener('dragover',e=>e.preventDefault());
+document.addEventListener('drop',e=>{e.preventDefault();const f=e.dataTransfer.files[0];if(f)run(f)});
+['#cam','#pick','#cam2','#pick2'].forEach(s=>$(s).addEventListener('change',e=>{const f=e.target.files[0];if(f)run(f);e.target.value=''}));
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+async function run(file){
+  const model=$('#model').value||defaultModel;
+  drop.style.display='none';$('#stage').style.display='block';$('#again').style.display='none';
+  $('#boxes').innerHTML='';
+  try{$('#photo').src=URL.createObjectURL(file)}catch(e){}
+  $('#scan').style.display='flex';$('#scanmodel').textContent=model;
+  $('#side').innerHTML=`<div class="sum"><div class="big">Scanning…</div><div class="meta">${esc(model)} is looking for fall hazards</div></div>`;
+  const t0=performance.now(), fd=new FormData();fd.append('image',file);fd.append('model',model);
+  let d;
+  try{const r=await fetch('/check',{method:'POST',body:fd});d=await r.json();if(!r.ok)throw new Error(d.error||d.detail||r.status)}
+  catch(e){$('#scan').style.display='none';$('#again').style.display='flex';$('#side').innerHTML=`<div class="err">Check failed: ${esc(e.message)}<br>Try again, or pick another model.</div>`;return}
+  const wall=((performance.now()-t0)/1000).toFixed(1);
+  $('#photo').src=d.image;$('#scan').style.display='none';$('#again').style.display='flex';
+  render(d,wall);
+}
+function render(d,wall){
+  const H=d.hazards, nHigh=H.filter(h=>h.severity_post_op==='high').length, nEsc=H.filter(h=>h.severity_post_op!==h.severity).length;
+  $('#boxes').innerHTML=H.map((h,i)=>h.box?`<div class="bx ${h.severity_post_op} ${h.box[1]<0.07?'in':''}" data-i="${i}" style="left:${h.box[0]*100}%;top:${h.box[1]*100}%;width:${(h.box[2]-h.box[0])*100}%;height:${(h.box[3]-h.box[1])*100}%"><i title="${esc(h.name)}">${i+1}</i></div>`:'').join('');
+  const head=`<div class="sum"><div class="big">${H.length} hazard${H.length===1?'':'s'}${nHigh?` · <span style="color:var(--high)">${nHigh} high</span>`:''}</div>
+    <div class="meta">${esc(d.model)} · model ${(d.latency_ms/1000).toFixed(1)}s · total ${wall}s</div></div>
+    <div class="postop"><b>Post-op modifier:</b> walker user = +1 severity on flagged hazards${nEsc?` (${nEsc} escalated below)`:''}.</div>`;
+  const list=H.length?H.map((h,i)=>`<div class="hz" data-i="${i}">
+      <div class="top"><span class="num ${h.severity_post_op}">${i+1}</span><span class="n">${esc(h.name)} <span class="id">${esc(h.id)}</span></span>
+      ${h.severity_post_op!==h.severity?`<span class="chip ghost ${h.severity}">${h.severity}</span><span style="color:var(--mute)">→</span>`:''}
+      <span class="chip ${h.severity_post_op}">${h.severity_post_op}</span></div>
+      ${h.evidence?`<div class="ev">${esc(h.evidence)}</div>`:''}
+      ${h.fix&&h.fix.length?`<div class="fix"><b>Fix:</b> ${esc(h.fix[0])}${h.fix[1]?` <span style="color:var(--mute)">· ${esc(h.fix[1])}</span>`:''}</div>`:''}
+      ${h.severity_post_op!==h.severity&&h.walker_note?`<div class="walk">Walker: ${esc(h.walker_note)}</div>`:''}
+    </div>`).join(''):`<div class="empty">No checklist hazards found in this photo.</div>`;
+  $('#side').innerHTML=head+list;
+  document.querySelectorAll('.hz').forEach(el=>{
+    const b=()=>document.querySelector(`.bx[data-i="${el.dataset.i}"]`);
+    el.onmouseenter=()=>b()?.classList.add('hl');el.onmouseleave=()=>b()?.classList.remove('hl');
+  });
+}
+</script>
+</body></html>

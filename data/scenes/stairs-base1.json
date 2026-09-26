@@ -1,0 +1,9 @@
+{
+ "id": "stairs-base1",
+ "room": "stairs",
+ "kind": "base",
+ "prompt": "Photorealistic smartphone photo taken at eye level in a modest, lived-in American home of a 70-year-old. Natural light, realistic everyday objects, no people, no text. An indoor staircase with sturdy continuous handrails on both sides, bright overhead lighting, clear high-contrast step edges, and nothing on the steps.",
+ "hazards": [],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/stairs-base1.jpg",
+ "image": "renders/stairs-base1.jpg"
+}

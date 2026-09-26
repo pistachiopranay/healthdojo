@@ -1,0 +1,22 @@
+{
+ "id": "bathroom-base1-BATH-06",
+ "room": "bathroom",
+ "kind": "edit",
+ "base": "bathroom-base1",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Low toilet seat. Standard-height toilet (about 15 in seat) with no raised seat, riser, or frame; seat noticeably below user knee height.",
+ "hazards": [
+  {
+   "id": "BATH-06",
+   "type": "measurement"
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/bathroom-base1-BATH-06.jpg",
+ "image": "renders/bathroom-base1-BATH-06.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "The raised seat and safety frame were removed, leaving a standard-height toilet with no riser or rails. Its seat sits low relative to the tub edge and vanity. The rest of the room is unchanged.",
+  "changed_frac": 0.0295
+ },
+ "verified": true
+}

@@ -1,0 +1,22 @@
+{
+ "id": "entry-base0-ENT-05",
+ "room": "entry",
+ "kind": "edit",
+ "base": "entry-base0",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Doorway too narrow for walker. Door opening (often bathroom or older interior doors, ~24-28 in) where clear width with door open is less than prescribed walker width plus hand clearance; door that cannot open fully.",
+ "hazards": [
+  {
+   "id": "ENT-05",
+   "type": "measurement"
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/entry-base0-ENT-05.jpg",
+ "image": "renders/entry-base0-ENT-05.jpg",
+ "verify": {
+  "hazard_visible": false,
+  "other_major_changes": false,
+  "note": "Front door is only slightly ajar with a sliver of interior light, and there are minor sidelight and hardware tweaks. The door still reads as a standard-width exterior door, with nothing showing it cannot open fully or that the clear width is too narrow for a walker.",
+  "changed_frac": 0.0296
+ },
+ "verified": false
+}

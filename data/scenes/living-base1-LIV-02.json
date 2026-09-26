@@ -1,0 +1,22 @@
+{
+ "id": "living-base1-LIV-02",
+ "room": "living",
+ "kind": "edit",
+ "base": "living-base1",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Cords or wires across walkway. Extension, lamp, phone, or charging cords crossing a floor path rather than routed along walls.",
+ "hazards": [
+  {
+   "id": "LIV-02",
+   "type": "object"
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/living-base1-LIV-02.jpg",
+ "image": "renders/living-base1-LIV-02.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "A dark cord runs from a wall outlet near the TV stand diagonally across the open wood floor walkway toward the bottom of the frame. The rest of the room is unchanged.",
+  "changed_frac": 0.0
+ },
+ "verified": true
+}

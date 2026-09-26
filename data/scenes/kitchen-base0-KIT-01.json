@@ -1,0 +1,28 @@
+{
+ "id": "kitchen-base0-KIT-01",
+ "room": "kitchen",
+ "kind": "edit",
+ "base": "kitchen-base0",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Frequently used items stored high. Everyday dishes, food, or cookware on upper shelves/cabinets above shoulder height; step stool nearby.",
+ "hazards": [
+  {
+   "id": "KIT-01",
+   "type": "object",
+   "box": [
+    196,
+    8,
+    800,
+    969
+   ]
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/kitchen-base0-KIT-01.jpg",
+ "image": "renders/kitchen-base0-KIT-01.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "Upper-left cabinet now open, showing everyday dishes and containers stored high above the counter. A two-step stool is on the floor nearby. No other significant changes.",
+  "changed_frac": 0.0287
+ },
+ "verified": true
+}

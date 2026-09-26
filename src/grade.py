@@ -50,9 +50,10 @@ def main():
                       "by_type": {t: rec(k) for t, k in by_type.items()},
                       "by_room": {r: rec(k) for r, k in by_room.items()},
                       "by_hazard": {h: rec(k) for h, k in by_haz.items()},
+                      "score": round((rec(c) + 1 - fa["fp"] / max(1, fa["fp"] + fa["tn"])) / 2, 3),
                       "loc_iou": round(sum(loc) / len(loc), 3) if loc else None})
-    board.sort(key=lambda r: -r["recall"])
-    res = {"leaderboard": board, "scenes": list(scenes.values()), "predictions": per_scene,
+    board.sort(key=lambda r: -r["score"])
+    res = {"leaderboard": board, "known_absent": {k: sorted(v) for k, v in known_absent.items()}, "scenes": list(scenes.values()), "predictions": per_scene,
            "taxonomy": {k: {"name": v["name"], "room": v["room"], "type": hazard_type(k)} for k, v in TAX.items()}}
     (DATA / "results.json").write_text(json.dumps(res, indent=1))
     for r in board:

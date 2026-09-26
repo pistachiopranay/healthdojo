@@ -1,0 +1,9 @@
+{
+ "id": "living-base0",
+ "room": "living",
+ "kind": "base",
+ "prompt": "Photorealistic smartphone photo taken at eye level in a modest, lived-in American home of a 70-year-old. Natural light, realistic everyday objects, no people, no text. A living room with a clear wide walkway, no rugs, all cords tucked behind furniture, a firm armchair with armrests, and bright even lighting.",
+ "hazards": [],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/living-base0.jpg",
+ "image": "renders/living-base0.jpg"
+}

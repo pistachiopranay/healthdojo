@@ -1,0 +1,28 @@
+{
+ "id": "stairs-base1-STAIR-06",
+ "room": "stairs",
+ "kind": "edit",
+ "base": "stairs-base1",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Broken or uneven steps. Cracked, missing, sloped or inconsistent-height treads/risers.",
+ "hazards": [
+  {
+   "id": "STAIR-06",
+   "type": "object",
+   "box": [
+    400,
+    322,
+    664,
+    805
+   ]
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/stairs-base1-STAIR-06.jpg",
+ "image": "renders/stairs-base1-STAIR-06.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "Second tread from the bottom has a visible jagged crack across it, and a tread near the upper middle is broken with a section missing or displaced. The rest of the scene is unchanged.",
+  "changed_frac": 0.0288
+ },
+ "verified": true
+}

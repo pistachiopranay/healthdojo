@@ -1,0 +1,28 @@
+{
+ "id": "bathroom-base1-BATH-08",
+ "room": "bathroom",
+ "kind": "edit",
+ "base": "bathroom-base1",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: No shower seat or handheld shower. Shower area with fixed overhead showerhead only and no shower chair/bench or built-in seat.",
+ "hazards": [
+  {
+   "id": "BATH-08",
+   "type": "absence",
+   "box": [
+    248,
+    26,
+    672,
+    669
+   ]
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/bathroom-base1-BATH-08.jpg",
+ "image": "renders/bathroom-base1-BATH-08.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": true,
+  "note": "The shower chair was removed and the handheld shower was replaced by a fixed overhead head, so the hazard is clear. However, the vertical grab bar and the tub's anti-slip strips were also removed, adding extra hazards.",
+  "changed_frac": 0.0293
+ },
+ "verified": true
+}

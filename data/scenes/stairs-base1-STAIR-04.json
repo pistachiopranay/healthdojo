@@ -1,0 +1,22 @@
+{
+ "id": "stairs-base1-STAIR-04",
+ "room": "stairs",
+ "kind": "edit",
+ "base": "stairs-base1",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Poor stair lighting. Stairway without overhead light, burned-out bulb, or light switch only at one end.",
+ "hazards": [
+  {
+   "id": "STAIR-04",
+   "type": "lighting"
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/stairs-base1-STAIR-04.jpg",
+ "image": "renders/stairs-base1-STAIR-04.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "The ceiling light at the top of the stairs is off. The stairway and upper hallway are noticeably dark. The room and all objects are otherwise unchanged, aside from overall dimming consistent with the lighting change.",
+  "changed_frac": 0.0295
+ },
+ "verified": true
+}

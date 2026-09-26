@@ -1,0 +1,22 @@
+{
+ "id": "bathroom-base0-BATH-01",
+ "room": "bathroom",
+ "kind": "edit",
+ "base": "bathroom-base0",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: No grab bar at tub/shower. Tub or shower enclosure with no wall-mounted, load-rated grab bar on entry wall or back wall; bare tile/surround at hand height.",
+ "hazards": [
+  {
+   "id": "BATH-01",
+   "type": "absence"
+  }
+ ],
+ "source_url": "https://file.deepytb.com/reapi-slave2/tasks/task_01a0deeec4ea73f9b23e23db04664bd8/0.jpg",
+ "image": "renders/bathroom-base0-BATH-01.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "All three grab bars (left vertical, back horizontal, right vertical) were removed, leaving a bare surround at hand height. Only the small soap-niche rod remains, which is not a load-rated grab bar. The rest of the scene is unchanged.",
+  "changed_frac": 0.0229
+ },
+ "verified": true
+}

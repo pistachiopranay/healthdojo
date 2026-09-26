@@ -1,0 +1,28 @@
+{
+ "id": "kitchen-base1-KIT-04",
+ "room": "kitchen",
+ "kind": "edit",
+ "base": "kitchen-base1",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Slippery floor / loose mat at sink or stove. Glossy floor, visible spills, or unbacked runner mat in front of sink/stove.",
+ "hazards": [
+  {
+   "id": "KIT-04",
+   "type": "object",
+   "box": [
+    456,
+    690,
+    794,
+    941
+   ]
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/kitchen-base1-KIT-04.jpg",
+ "image": "renders/kitchen-base1-KIT-04.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "An unbacked runner mat now lies in front of the sink cabinets, with its near corner visibly curled up, and the floor looks glossier. The rest of the room is unchanged.",
+  "changed_frac": 0.028
+ },
+ "verified": true
+}

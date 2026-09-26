@@ -1,0 +1,9 @@
+{
+ "id": "bathroom-base1",
+ "room": "bathroom",
+ "kind": "base",
+ "prompt": "Photorealistic smartphone photo taken at eye level in a modest, lived-in American home of a 70-year-old. Natural light, realistic everyday objects, no people, no text. A bathroom with a walk-in or tub-shower that has sturdy stainless grab bars on the wall, a shower chair and handheld shower, a raised toilet seat with a toilet safety frame, non-slip strips in the tub, and a bare dry tile floor with no mats.",
+ "hazards": [],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/bathroom-base1.jpg",
+ "image": "renders/bathroom-base1.jpg"
+}

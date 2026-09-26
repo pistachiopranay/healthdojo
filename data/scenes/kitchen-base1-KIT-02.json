@@ -1,0 +1,28 @@
+{
+ "id": "kitchen-base1-KIT-02",
+ "room": "kitchen",
+ "kind": "edit",
+ "base": "kitchen-base1",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Frequently used items stored low. Daily-use pots, pet food, or supplies in floor-level cabinets, low drawers, or on the floor.",
+ "hazards": [
+  {
+   "id": "KIT-02",
+   "type": "object",
+   "box": [
+    86,
+    546,
+    814,
+    973
+   ]
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/kitchen-base1-KIT-02.jpg",
+ "image": "renders/kitchen-base1-KIT-02.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "Pet food bin and filled pet bowls added on the floor, and a lower cabinet opened to show daily-use supplies stored at floor level, all consistent with the low-storage hazard.",
+  "changed_frac": 0.0293
+ },
+ "verified": true
+}

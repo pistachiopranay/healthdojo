@@ -1,0 +1,28 @@
+{
+ "id": "stairs-base0-STAIR-05",
+ "room": "stairs",
+ "kind": "edit",
+ "base": "stairs-base0",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Undefined step edges / loose stair covering. Patterned or same-color carpet hiding tread edges; loose, torn or worn carpet; no contrasting nosing strip.",
+ "hazards": [
+  {
+   "id": "STAIR-05",
+   "type": "object",
+   "box": [
+    336,
+    541,
+    622,
+    997
+   ]
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/stairs-base0-STAIR-05.jpg",
+ "image": "renders/stairs-base0-STAIR-05.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "The hardwood treads with white risers were replaced by same-color patterned carpet. The tread edges are hard to tell apart, and several stair nosings show visibly torn, frayed carpet. The rest of the scene is unchanged.",
+  "changed_frac": 0.0272
+ },
+ "verified": true
+}

@@ -1,0 +1,28 @@
+{
+ "id": "bathroom-base0-BATH-07",
+ "room": "bathroom",
+ "kind": "edit",
+ "base": "bathroom-base0",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Loose bath mat or rug on bathroom floor. Fabric bath mat, towel, or small rug on hard/wet floor, without rubber backing; curled or bunched edges.",
+ "hazards": [
+  {
+   "id": "BATH-07",
+   "type": "object",
+   "box": [
+    340,
+    725,
+    576,
+    954
+   ]
+  }
+ ],
+ "source_url": "https://file.deepytb.com/reapi-slave2/tasks/task_01a0deeec48e718f9c59326d436f2cc2/0.jpg",
+ "image": "renders/bathroom-base0-BATH-07.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "A blue and white fabric bath mat is draped over the tub edge onto the tile floor, bunched and curled with no visible rubber backing. The rest of the scene is unchanged.",
+  "changed_frac": 0.0291
+ },
+ "verified": true
+}

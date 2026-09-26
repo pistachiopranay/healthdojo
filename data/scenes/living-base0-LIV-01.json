@@ -1,0 +1,28 @@
+{
+ "id": "living-base0-LIV-01",
+ "room": "living",
+ "kind": "edit",
+ "base": "living-base0",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Throw rug / loose mat on walkway. Area rug, runner, or throw rug with curled or lifted edges, no visible anchoring, on a common walking route.",
+ "hazards": [
+  {
+   "id": "LIV-01",
+   "type": "object",
+   "box": [
+    418,
+    581,
+    600,
+    805
+   ]
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/living-base0-LIV-01.jpg",
+ "image": "renders/living-base0-LIV-01.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "An area rug was added in the central walkway. Its front corner is visibly curled and lifted, and there is no visible anchoring. The rest of the room appears unchanged.",
+  "changed_frac": 0.0293
+ },
+ "verified": true
+}

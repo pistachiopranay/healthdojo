@@ -1,0 +1,22 @@
+{
+ "id": "bedroom-base0-BED-01",
+ "room": "bedroom",
+ "kind": "edit",
+ "base": "bedroom-base0",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Bed height inappropriate. Mattress top well below knee height (low platform/futon, deep soft mattress) or so high that feet cannot reach floor when seated.",
+ "hazards": [
+  {
+   "id": "BED-01",
+   "type": "measurement"
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/bedroom-base0-BED-01.jpg",
+ "image": "renders/bedroom-base0-BED-01.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "The bed was replaced by a mattress lying directly on the floor, far below knee height, so the low bed height is clearly visible. The rest of the room (dresser, door, hallway, lamp, nightstand, chair, pictures) is unchanged apart from the matching quilt restyling.",
+  "changed_frac": 0.0298
+ },
+ "verified": true
+}

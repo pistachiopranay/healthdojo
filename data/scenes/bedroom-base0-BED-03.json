@@ -1,0 +1,22 @@
+{
+ "id": "bedroom-base0-BED-03",
+ "room": "bedroom",
+ "kind": "edit",
+ "base": "bedroom-base0",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Dark bed-to-bathroom path. Hallway/route from bed to toilet without nightlights or motion lighting; unlit hallway.",
+ "hazards": [
+  {
+   "id": "BED-03",
+   "type": "lighting"
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/bedroom-base0-BED-03.jpg",
+ "image": "renders/bedroom-base0-BED-03.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "Hallway leading from the bedroom is now dark and unlit, with no lighting along the route. The bedroom nightlight is still on, but the path beyond the door is dark. The overall dimming fits the lighting edit, and room contents are unchanged.",
+  "changed_frac": 0.0295
+ },
+ "verified": true
+}

@@ -1,0 +1,22 @@
+{
+ "id": "living-base1-LIV-06",
+ "room": "living",
+ "kind": "edit",
+ "base": "living-base1",
+ "prompt": "Edit this photo. Keep the room, camera angle, lighting and every other object exactly the same. Make only this one change so that it is clearly visible: introduce this fall hazard: Unmarked level change / step-down between rooms. Sunken living room, single step between rooms, or raised floor transition strip without contrast or rail.",
+ "hazards": [
+  {
+   "id": "LIV-06",
+   "type": "measurement"
+  }
+ ],
+ "source_url": "/Users/pranayatz/.buzz/REPOS/homedojo/data/renders/living-base1-LIV-06.jpg",
+ "image": "renders/living-base1-LIV-06.jpg",
+ "verify": {
+  "hazard_visible": true,
+  "other_major_changes": false,
+  "note": "Image 2 adds a single raised step spanning the floor between the recliners toward the TV area. The step uses the same wood tone with no contrast marking or rail. The rest of the room is unchanged.",
+  "changed_frac": 0.0229
+ },
+ "verified": true
+}
