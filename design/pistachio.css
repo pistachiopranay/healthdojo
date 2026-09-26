@@ -1,0 +1,35 @@
+/* Pistachio design language for static deliverables.
+   Source of truth: pistachio_harness web/src/index.css + docs/DESIGN.md (origin/main 090e4d8).
+   Fonts: <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"> */
+:root {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;   /* headings only, large sizes */
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace; /* ids, counts, scores */
+
+  --green: #5ac53a; --green-active: #46a82c; --green-soft: #eaf7e2; --green-ink: #2e7a18;
+  --lime: #d5fd51;  --lime-active: #c7ef3d;  --lime-soft: #f3fedc;
+  --gold: #f6c86a;  --gold-soft: #fbeed3;    --gold-ink: #8a6420;
+  --ember: #eb5d2a; --ember-soft: #fce7dd;   --ember-ink: #b23e14;
+  --cream: #f7f2e5; --cream-strong: #efe6cf; --cream-ink: #6b6350;
+
+  --canvas: #fcfcfa; --card: #ffffff; --surface-muted: #f5f5f2; --surface-strong: #edede9;
+  --border: #e6e6e1; --border-soft: #f0f0ec;
+  --ink: #1f2123; --text-body: #3a3d3f; --text-muted: #646668; --text-faint: #8f9193;
+
+  /* Locked meanings: lime = primary action AND the agent (lime fill, green-ink text, green-active edge);
+     green = success/pass; gold = pending/needs a human; ember = failed/destructive; cream = nav/secondary. */
+  --primary: var(--lime); --primary-foreground: var(--green-ink); --primary-border: var(--green-active);
+
+  --radius-sm: 4px; --radius-md: 6px; --radius-lg: 8px; --radius-xl: 12px; --r-pill: 999px;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 160ms; --dur-base: 240ms; --dur-slow: 400ms; --dur-wash: 600ms; --dur-loop: 1400ms;
+}
+.dark {
+  --canvas: #1f2123; --card: #2d2f31; --surface-muted: #37393b; --surface-strong: #414345;
+  --border: #414345; --border-soft: #37393b;
+  --ink: #fcfcfa; --text-body: #d4d6d8; --text-muted: #b4b6b8;
+  --cream: #2d2f31; --cream-strong: #37393b; --cream-ink: #b4b6b8;
+}
+/* Rules (docs/DESIGN.md): weights 400/500/600, no 700. Serif only for page/section titles.
+   Borders over shadows (shadow only on raised/modals). Calm static UI; spend color + motion on state change.
+   Motion: enter = 4px rise + fade (--dur-base); settle = lime-soft -> transparent wash (--dur-wash). */
