@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HealthDojo · Brief in, benchmark out</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --green: #5ac53a; --green-active: #46a82c; --green-soft: #eaf7e2; --green-ink: #2e7a18;
+  --lime: #d5fd51;  --lime-active: #c7ef3d;  --lime-soft: #f3fedc;
+  --gold: #f6c86a;  --gold-soft: #fbeed3;    --gold-ink: #8a6420;
+  --ember: #eb5d2a; --ember-soft: #fce7dd;   --ember-ink: #b23e14;
+  --cream: #f7f2e5; --cream-strong: #efe6cf; --cream-ink: #6b6350;
+  --canvas: #fcfcfa; --card-bg: #ffffff; --surface-muted: #f5f5f2; --surface-strong: #edede9;
+  --border: #e6e6e1; --border-soft: #f0f0ec;
+  --ink-c: #1f2123; --text-body: #3a3d3f; --text-muted: #646668; --text-faint: #8f9193;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  /* legacy aliases used below, mapped onto Pistachio tokens (source: design/pistachio.css) */
+  --paper:var(--canvas);--card:var(--card-bg);--ink:var(--ink-c);--ink2:var(--text-body);--mute:var(--text-muted);--line:var(--border);--line2:var(--border-soft);
+  --teal:var(--green-ink);--teal2:var(--lime-soft);--coral:var(--ember-ink);--coral2:var(--ember-soft);--amber:var(--gold-ink);--gt:var(--green);
+  --serif:var(--font-serif);--sans:var(--font-sans);--mono:var(--font-mono);
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:150px}
+body{margin:0;background:var(--paper);color:var(--ink);font:20px/1.5 var(--sans);-webkit-font-smoothing:antialiased}
+.wrap{max-width:1400px;margin:0 auto;padding:0 56px}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+nav{position:sticky;top:0;z-index:40;background:rgba(252,252,250,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:30px;height:74px}
+.logo{font-family:var(--serif);font-weight:400;font-size:32px;letter-spacing:-.02em;text-decoration:none;color:var(--ink)}
+.logo i{font-style:normal;color:var(--teal)}
+.tag{font-family:var(--mono);font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.stepper{display:flex;gap:6px;margin-left:auto}
+.stp{display:flex;align-items:center;gap:10px;padding:8px 16px;border-radius:99px;font-weight:600;font-size:16px;color:var(--mute);border:1px solid var(--line);background:var(--card)}
+.stp b{font-family:var(--mono);font-size:13px;width:24px;height:24px;border-radius:99px;display:grid;place-items:center;background:var(--line2);color:var(--ink2)}
+.stp .tm{font-family:var(--mono);font-size:13px;color:var(--mute);font-weight:400}
+.stp.on{color:var(--green-ink);border-color:var(--green-active);background:var(--lime-soft)}
+.stp.on b{background:var(--lime);color:var(--green-ink);animation:pulse 1.4s infinite}
+.stp.ok{color:var(--ink)}.stp.ok b{background:var(--green);color:#fff}
+@keyframes pulse{50%{opacity:.45}}
+.replaybtn{font:600 14px var(--sans);border:1px dashed var(--mute);background:transparent;color:var(--ink2);padding:8px 14px;border-radius:99px;cursor:pointer}
+.replaybtn:hover{border-color:var(--ink);color:var(--ink)}
+header.hero{padding:54px 0 12px}
+.eyebrow{font-family:var(--mono);font-size:14px;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:600}
+h1{font-family:var(--serif);font-weight:400;font-size:84px;line-height:1;letter-spacing:-.02em;margin:12px 0 0}
+h1 em{font-style:italic;font-weight:400;color:var(--green-ink)}
+.lede{font-size:23px;color:var(--ink2);max-width:62ch;margin:18px 0 0}
+section.stage{padding:40px 0 12px}
+.shead{display:flex;align-items:baseline;gap:18px;margin-bottom:18px}
+.shead .n{font-family:var(--mono);color:var(--teal);font-weight:600;font-size:16px}
+h2{font-family:var(--serif);font-weight:400;font-size:56px;line-height:1.05;letter-spacing:-.01em;margin:0}
+.shead .sub{color:var(--mute);font-size:18px;margin-left:auto;text-align:right}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px 34px}
+.hidden{display:none!important}
+.brief-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:34px}
+label.f{display:block;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:600;margin:0 0 8px}
+input[type=text],textarea,select{width:100%;font:20px/1.45 var(--sans);color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+textarea{font-size:16px;line-height:1.5;height:330px;resize:vertical;font-family:var(--sans)}
+.fld{margin-bottom:22px}
+.tabs{display:flex;gap:8px;margin-bottom:10px}
+.tab{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:6px 16px;font:500 15px var(--sans);cursor:pointer;color:var(--ink2)}
+.tab.on{background:var(--cream-strong);color:var(--ink);border-color:var(--cream-strong)}
+.btn{font:600 21px var(--sans);background:var(--lime);color:var(--green-ink);border:1px solid var(--green-active);border-radius:12px;padding:16px 28px;cursor:pointer;transition:background .16s}
+.btn:hover{background:var(--lime-active)}.btn:disabled{opacity:.45;cursor:default}
+.btn.human{background:var(--gold);color:var(--gold-ink);border-color:var(--gold-ink)}.btn.human:hover{background:#f0bb4f}
+.btn.ghost{background:var(--cream);color:var(--cream-ink);border:1px solid var(--cream-strong)}
+.theirs{display:inline-block;background:var(--lime);color:var(--green-ink);border:1px solid var(--green-active);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;border-radius:99px;padding:3px 10px;margin-left:8px;vertical-align:3px}
+/* rubric table */
+table.rb{width:100%;border-collapse:collapse;font-size:17px}
+.rb th{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:600;text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+.rb td{padding:12px 12px;border-bottom:1px solid var(--line2);vertical-align:top}
+.rb tr.new{animation:rowin .6s var(--ease-out)}
+@keyframes rowin{0%{opacity:0;transform:translateY(4px);background:var(--lime-soft)}40%{opacity:1;transform:none;background:var(--lime-soft)}100%{background:transparent}}
+.rb code{font-family:var(--mono);font-size:15px;font-weight:600;white-space:nowrap}
+.rb .nm{font-weight:600;font-size:18px}
+.rb .cite{font-size:14px;color:var(--ink2);font-style:italic;margin-top:4px;border-left:3px solid var(--teal2);padding-left:10px}
+.rb .pm{font-size:14px;color:var(--mute);margin-top:4px}
+.pill{display:inline-block;font-size:13px;font-weight:600;padding:3px 10px;border-radius:99px;white-space:nowrap}
+.t-object{background:#E9ECFF;color:#2F3FB0}.t-absence{background:#FBE3DB;color:#A8341B}.t-measurement{background:#FFF0D9;color:#8A5300}.t-lighting{background:#EEE6FA;color:#5B3B99}
+.s-high{color:var(--coral);font-weight:600}.s-medium{color:var(--amber);font-weight:600}.s-low{color:var(--mute);font-weight:600}
+.rb input[type=checkbox]{width:22px;height:22px;accent-color:var(--teal);cursor:pointer}
+.pick{font:600 14px var(--sans);border:1px solid var(--line);background:#fff;border-radius:99px;padding:6px 12px;cursor:pointer;white-space:nowrap}
+.pick.on{background:var(--lime);color:var(--green-ink);border-color:var(--green-active)}
+.bar{display:flex;align-items:center;gap:18px;margin-top:22px}
+.bar .grow{flex:1}
+.streaming{font-family:var(--mono);font-size:15px;color:var(--green-ink);background:var(--lime-soft);padding:4px 10px;border-radius:6px}
+.streaming::after{content:"▍";animation:pulse 1s infinite}
+/* scenes */
+.scn{animation:rowin .6s var(--ease-out);display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-bottom:26px}
+.scn .title{grid-column:1/-1;display:flex;align-items:baseline;gap:14px}
+.scn .title h3{font-family:var(--sans);font-size:26px;margin:0;font-weight:600;letter-spacing:-.02em}
+.fig{position:relative;border-radius:16px;overflow:hidden;background:#e8e2d4;aspect-ratio:3/2}
+.fig img{width:100%;height:100%;object-fit:cover;display:block}
+.fig .cap{position:absolute;left:12px;top:12px;background:rgba(255,253,248,.92);border-radius:99px;padding:5px 12px;font-size:14px;font-weight:600}
+.fig .box{position:absolute;border:4px solid var(--gt);border-radius:6px;box-shadow:0 0 0 9999px rgba(31,33,35,.28);opacity:0;transform:scale(1.25);transition:all .8s cubic-bezier(.2,.8,.2,1)}
+.fig .box.in{opacity:1;transform:none}
+.fig .box span{position:absolute;left:-4px;top:-34px;background:var(--gt);color:#fff;font:600 13px var(--mono);padding:4px 8px;border-radius:6px;white-space:nowrap}
+.fig .labelbox{position:absolute;border:3px dashed #fff;border-radius:6px;outline:2px dashed var(--gt)}
+.fig .edit{opacity:0;transition:opacity 1.2s}
+.fig .edit.in{opacity:1}
+.fig .loading{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--mono);font-size:16px;color:var(--ink2);background:linear-gradient(90deg,#e8e2d4,#f3eee3,#e8e2d4);background-size:200% 100%;animation:shim 1.4s infinite}
+@keyframes shim{to{background-position:-200% 0}}
+.motto{font-family:var(--serif);font-style:italic;font-size:30px;color:var(--green-ink)}
+.meta{font-size:15px;color:var(--mute)}
+.meta b{color:var(--ink)}
+.cached{font-size:12px;color:var(--mute);border:1px solid var(--line);border-radius:99px;padding:2px 8px;margin-left:8px}
+.log{font-family:var(--mono);font-size:14px;color:var(--ink2);line-height:1.7}
+.log .ok{color:var(--teal)}.log .bad{color:var(--coral)}
+/* score */
+table.lb{width:100%;border-collapse:collapse;font-size:20px}
+.lb th{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);font-weight:600;text-align:right;padding:12px 16px;border-bottom:1px solid var(--line)}
+.lb th.l,.lb td.l{text-align:left}
+.lb td{padding:16px;border-bottom:1px solid var(--line2);text-align:right;font-family:var(--mono)}
+.lb td.l{font-family:var(--sans);font-weight:600;font-size:22px}
+.lb tr.th{background:var(--lime-soft)}
+.lb .rk{font-family:var(--serif);font-size:26px;color:var(--mute);width:60px}
+.cell{display:inline-flex;gap:6px}
+.dot{width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font:600 15px var(--mono);color:#fff;background:#cfc8b8}
+.dot.hit{background:var(--gt)}.dot.miss{background:var(--ember)}.dot.fa{background:var(--gold)}.dot.clean{background:#9fb8ad}.dot.wait{background:var(--line);animation:pulse 1s infinite}
+.sbar{display:inline-block;width:160px;height:12px;background:var(--line2);border-radius:99px;overflow:hidden;vertical-align:middle;margin-right:12px}
+.sbar i{display:block;height:100%;background:var(--green);transition:width .8s}
+.verdict{font-family:var(--serif);font-size:44px;line-height:1.15;letter-spacing:-.01em;margin:26px 0 8px;font-weight:400}
+.verdict em{font-style:normal;color:var(--ember-ink)}
+.cta{display:inline-block;margin-top:18px;font:600 30px var(--sans);background:var(--lime);color:var(--green-ink);border:1px solid var(--green-active);text-decoration:none;padding:22px 40px;border-radius:18px;box-shadow:none}
+.cta:hover{background:var(--lime-active)}
+.legend{display:flex;gap:22px;font-size:15px;color:var(--mute);margin-top:14px;align-items:center}
+.legend .dot{width:18px;height:18px;display:inline-block;vertical-align:-3px;margin-right:6px}
+footer{padding:50px 0 60px;color:var(--mute);font-size:14px}
+.replaybadge{position:fixed;right:18px;bottom:14px;font:600 12px var(--mono);color:var(--mute);opacity:.6}
+</style></head>
+<body>
+<nav><div class="wrap">
+  <a class="logo" href="/">Health<i>Dojo</i></a><span class="tag">brief in → benchmark out</span>
+  <div class="stepper">
+    <div class="stp" id="st-brief"><b>1</b>Brief<span class="tm"></span></div>
+    <div class="stp" id="st-rubric"><b>2</b>Rubric<span class="tm"></span></div>
+    <div class="stp" id="st-scenes"><b>3</b>Scenes<span class="tm"></span></div>
+    <div class="stp" id="st-score"><b>4</b>Score<span class="tm"></span></div>
+  </div>
+  <button class="replaybtn" id="replayBtn" title="Replay the last saved run instantly">Replay last run</button>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="eyebrow">HealthDojo · eval framework for home-health AI</div>
+  <h1>Bring your guideline.<br>Get <em>a benchmark</em> of your model.</h1>
+  <p class="lede">Your use case and clinical guideline become a clinician-approved rubric, then synthetic scenes where the <b>label is written before the pixels</b>, then a report card of where your model fails.</p>
+</div></header>
+
+<!-- 1 BRIEF -->
+<section class="stage" id="s-brief"><div class="wrap">
+  <div class="shead"><span class="n">01</span><h2>The brief</h2><span class="sub">what the customer brings</span></div>
+  <form class="card" id="briefForm">
+    <div class="brief-grid">
+      <div>
+        <div class="fld"><label class="f">Customer</label><input type="text" name="customer" id="customer"></div>
+        <div class="fld"><label class="f">Use case</label><textarea name="use_case" id="use_case" style="height:110px;font-size:20px"></textarea></div>
+        <div class="fld"><label class="f">Your model</label><select name="model" id="model"></select></div>
+        <div class="meta">Compared against: <span id="refs"></span></div>
+      </div>
+      <div>
+        <label class="f">Clinical guideline</label>
+        <div class="tabs"><button type="button" class="tab on" data-t="text">Paste text</button><button type="button" class="tab" data-t="url">URL</button><button type="button" class="tab" data-t="pdf">PDF</button></div>
+        <textarea name="guideline" id="guideline"></textarea>
+        <input type="text" name="url" id="url" class="hidden" placeholder="https://… (HTML or PDF)">
+        <input type="file" name="pdf" id="pdf" accept="application/pdf" class="hidden">
+      </div>
+    </div>
+    <div class="bar"><div class="grow meta" id="briefMeta"></div><button class="btn" id="goBtn" type="submit">Compile benchmark →</button></div>
+  </form>
+</div></section>
+
+<!-- 2 RUBRIC -->
+<section class="stage hidden" id="s-rubric"><div class="wrap">
+  <div class="shead"><span class="n">02</span><h2>Rubric</h2><span class="sub">guideline → hazard rows · Claude Sonnet 5 on Bedrock</span></div>
+  <div class="card">
+    <table class="rb"><thead><tr><th style="width:44px"><input type="checkbox" id="allChk" title="approve all"></th><th>ID</th><th>Hazard</th><th>Type</th><th>Severity</th><th>Cross-walk</th><th>Render</th></tr></thead><tbody id="rbody"></tbody></table>
+    <div class="bar"><div class="grow"><span class="streaming" id="rstream">compiling rubric from guideline</span><span class="meta" id="rmeta"></span></div>
+      <button type="button" class="btn ghost" id="approveAll" disabled>Approve all</button>
+      <button type="button" class="btn human" id="approveBtn" disabled>Clinician approve → render scenes</button></div>
+  </div>
+</div></section>
+
+<!-- 3 SCENES -->
+<section class="stage hidden" id="s-scenes"><div class="wrap">
+  <div class="shead"><span class="n">03</span><h2>Scenes</h2><span class="sub motto">label written before the pixels</span></div>
+  <div id="scenes"></div>
+</div></section>
+
+<!-- 4 SCORE -->
+<section class="stage hidden" id="s-score"><div class="wrap">
+  <div class="shead"><span class="n">04</span><h2>Score</h2><span class="sub">same prompt, same scenes, every model</span></div>
+  <div class="card">
+    <table class="lb"><thead><tr><th class="l">#</th><th class="l">Model</th><th>Hazard scene</th><th>Clean control</th><th>Score</th><th>Latency</th></tr></thead><tbody id="lbody"></tbody></table>
+    <div class="legend"><span><i class="dot hit"></i>found</span><span><i class="dot miss"></i>missed</span><span><i class="dot fa"></i>false alarm on clean room</span><span><i class="dot clean"></i>correctly clear</span></div>
+  </div>
+  <div id="verdict"></div>
+  <a class="cta hidden" id="cta" href="/report/#leaderboard" target="_blank">Full report card →</a>
+  <div class="meta" id="ctaMeta" style="margin-top:10px"></div>
+</div></section>
+
+<footer><div class="wrap">HealthDojo · HomeBench is the first benchmark · rubric rows are drafts until clinician-approved · not clinically validated</div></footer>
+<div class="replaybadge hidden" id="replayBadge">replay</div>
+
+<script>
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+let RUN=null, ES=null, rows=[], picked=new Set(), approved=new Set(), theirs=null, models=[], score={}, T={};
+let mode="text";
+
+fetch("/api/sample").then(r=>r.json()).then(s=>{
+  $("#customer").value=s.customer; $("#use_case").value=s.use_case; $("#guideline").value=s.guideline;
+  $("#model").innerHTML=s.models.map(m=>`<option value="${m}" ${m==s.model?"selected":""}>${m}${m==s.model?"  (Acme Health's model)":""}</option>`).join("");
+  $("#refs").textContent=s.reference.slice(0,4).join(" · ");
+  $("#briefMeta").textContent=`Sample guideline adapted from CDC STEADI 'Check for Safety' (public domain) · ${s.guideline.length} chars`;
+});
+$$(".tab").forEach(t=>t.onclick=()=>{mode=t.dataset.t;$$(".tab").forEach(x=>x.classList.toggle("on",x==t));
+  $("#guideline").classList.toggle("hidden",mode!="text");$("#url").classList.toggle("hidden",mode!="url");$("#pdf").classList.toggle("hidden",mode!="pdf");});
+
+function stepper(stage,state,secs){const el=$("#st-"+stage);if(!el)return;el.classList.remove("on","ok");if(state)el.classList.add(state);
+  if(secs!=null)el.querySelector(".tm").textContent=secs+"s";}
+function show(id){const s=$("#s-"+id);s.classList.remove("hidden");setTimeout(()=>s.scrollIntoView({block:"start"}),60);}
+
+$("#briefForm").onsubmit=async e=>{
+  e.preventDefault(); const fd=new FormData();
+  fd.append("customer",$("#customer").value);fd.append("use_case",$("#use_case").value);fd.append("model",$("#model").value);
+  if(mode=="text")fd.append("guideline",$("#guideline").value);
+  if(mode=="url")fd.append("url",$("#url").value);
+  if(mode=="pdf"&&$("#pdf").files[0])fd.append("pdf",$("#pdf").files[0]);
+  $("#goBtn").disabled=true;$("#goBtn").textContent="Compiling…";
+  const r=await fetch("/api/brief",{method:"POST",body:fd});
+  if(!r.ok){alert((await r.json()).detail||"failed");$("#goBtn").disabled=false;$("#goBtn").textContent="Compile benchmark →";return;}
+  start((await r.json()).run_id,false);
+};
+$("#replayBtn").onclick=async()=>{
+  const r=await fetch("/api/replay",{method:"POST",body:new FormData()});
+  if(!r.ok){alert("No saved run yet");return;}
+  const d=await r.json();
+  $("#customer").value=d.brief.customer||"Acme Health";$("#use_case").value=d.brief.use_case;$("#guideline").value=d.brief.guideline;
+  const opt=[...$("#model").options].find(o=>o.value==d.brief.model); if(opt)$("#model").value=d.brief.model;
+  $("#replayBadge").classList.remove("hidden");
+  start(d.run_id,true);
+};
+
+function reset(){rows=[];picked=new Set();approved=new Set();score={};T={};$("#rbody").innerHTML="";$("#scenes").innerHTML="";$("#lbody").innerHTML="";$("#verdict").innerHTML="";
+  $("#cta").classList.add("hidden");["rubric","scenes","score"].forEach(s=>{$("#s-"+s).classList.add("hidden");stepper(s,null);$("#st-"+s+" .tm").textContent="";});}
+function start(rid,isReplay){
+  if(ES)ES.close(); reset(); RUN=rid; stepper("brief","ok");
+  ES=new EventSource(`/api/run/${rid}/events`);
+  ES.onmessage=m=>handle(JSON.parse(m.data),isReplay);
+}
+
+function handle(ev,isReplay){
+  const h=H[ev.type]; if(h)h(ev,isReplay);
+}
+const H={
+  brief(ev){theirs=ev.brief.model;$("#briefMeta").textContent=`Guideline ingested from ${ev.brief.guideline_source} · ${ev.chars} chars`;stepper("brief","ok");},
+  stage(ev){
+    if(ev.status=="start"){stepper(ev.stage,"on");show(ev.stage);
+      if(ev.stage=="score"){models=ev.models;theirs=ev.theirs;drawBoard();}}
+    else{stepper(ev.stage,"ok",ev.secs);
+      if(ev.stage=="rubric"){$("#rstream").classList.add("hidden");$("#rmeta").textContent=`${ev.n} rows in ${ev.secs}s · tick rows to approve, pick 1-2 to render`;
+        $("#approveAll").disabled=false;defaultPicks();updApprove();}}
+  },
+  rubric_row(ev){rows.push(ev.row);addRow(ev.row);},
+  await_approval(){},
+  approve(ev,isReplay){approved=new Set(ev.approved);picked=new Set(ev.picked);rows.forEach(r=>{const tr=$(`tr[data-id="${r.id}"]`);if(!tr)return;
+    tr.querySelector("input").checked=approved.has(r.id);tr.querySelector(".pick").classList.toggle("on",picked.has(r.id));});
+    $("#approveBtn").disabled=true;$("#approveAll").disabled=true;$("#approveBtn").textContent=`Approved ${ev.approved.length} rows ✓`;},
+  scene_start(ev){addScene(ev);},
+  scene_label(ev){const s=$(`#sc-${ev.row_id}`);if(!s)return;const p=ev.plan;
+    s.querySelector(".log").innerHTML+=`<div class="ok">✓ label written first (${ev.secs}s): ${p.mode=="inpaint"?"box ["+p.box.join(", ")+"]":"remove “"+esc(p.search_prompt)+"”"}</div>`;
+    if(p.mode=="inpaint")putBox(s.querySelector(".fig.b"),p.box,"label",true);},
+  scene_edit(ev){const s=$(`#sc-${ev.row_id}`);if(!s)return;
+    s.querySelector(".fig.b img").src=ev.base;
+    const f=s.querySelector(".fig.e");f.querySelector(".loading")?.remove();const img=f.querySelector("img.edit");img.classList.remove("in");img.onload=()=>img.classList.add("in");img.src=ev.edit;
+    if(ev.cached)s.querySelectorAll(".labelbox").forEach(x=>x.remove());
+    s.querySelector(".log").innerHTML+=ev.cached?`<div class="ok">✓ verified scene for this hazard loaded <span class="cached">cached</span></div>`:`<div class="ok">✓ pixels painted in ${ev.secs}s</div>`;},
+  scene_verified(ev){const sc=ev.scene,s=$(`#sc-${sc.row_id}`);if(!s)return;
+    if(sc.box)setTimeout(()=>putBox(s.querySelector(".fig.e"),sc.box,"ground truth · "+sc.row_id),500);
+    const v=sc.verified===true?'<span class="ok">✓ judge: hazard visible</span>':sc.verified===false?'<span class="bad">✗ judge: not clearly visible</span>':'judge: n/a';
+    s.querySelector(".log").innerHTML+=`<div>✓ pixel diff box · ${v}${sc.judge_note?` <span class="meta">— ${esc(sc.judge_note).slice(0,140)}</span>`:""}</div>`;},
+  scene_rejected(ev){const s=$(`#sc-${ev.row_id}`);if(!s)return;
+    s.querySelector(".log").innerHTML+=`<div class="bad">✗ judge rejected the live edit (${esc(ev.note).slice(0,110)}) → swapping in verified scene</div>`;},
+  scene_failed(ev){const s=$(`#sc-${ev.row_id}`);if(s)s.querySelector(".log").innerHTML+=`<div class="bad">✗ ${esc(ev.msg)}</div>`;},
+  score_result(ev){(score[ev.model]??={})[ev.row_id+"|"+ev.which]=ev;drawBoard();},
+  leaderboard(ev){drawBoard(ev.rows);verdict(ev.rows);},
+  error(ev){alert(ev.msg);},
+  done(ev){ES&&ES.close();$("#cta").classList.remove("hidden");},
+};
+
+function addRow(r){
+  const tr=document.createElement("tr");tr.className="new";tr.dataset.id=r.id;
+  tr.innerHTML=`<td><input type="checkbox"></td><td><code>${esc(r.id)}</code><div class="meta">${esc(r.room)}</div></td>
+   <td><div class="nm">${esc(r.name)}</div><div class="cite">“${esc(r.citation)}”${r.citation_verbatim?"":" <span class=meta>(paraphrased)</span>"}</div><div class="pm">Post-op: ${esc(r.post_op_modifier)}</div></td>
+   <td><span class="pill t-${esc(r.type)}">${esc(r.type)}</span></td><td class="s-${esc(r.severity_default)}">${esc(r.severity_default)}</td>
+   <td class="meta" style="font-size:13px" title="Instrument cross-walk via HomeBench taxonomy row ${esc(r.maps_to||"")}">${r.crosswalk&&r.crosswalk.HOMEFAST?"HOME FAST #"+r.crosswalk.HOMEFAST.join(", #"):""}${r.crosswalk&&r.crosswalk.CDC?"<br>CDC: "+esc(r.crosswalk.CDC):""}${r.maps_to?"<br><code style='font-size:12px'>≈ "+esc(r.maps_to)+"</code>":""}</td>
+   <td><button type="button" class="pick">render</button></td>`;
+  tr.querySelector("input").onchange=e=>{e.target.checked?approved.add(r.id):approved.delete(r.id);updApprove();};
+  tr.querySelector(".pick").onclick=e=>{if(picked.has(r.id))picked.delete(r.id);else{if(picked.size>=2)return;picked.add(r.id);approved.add(r.id);tr.querySelector("input").checked=true;}
+    e.target.classList.toggle("on",picked.has(r.id));updApprove();};
+  $("#rbody").appendChild(tr);
+}
+function defaultPicks(){ // demo default: one absence hazard (search-replace edit) + one object hazard (inpaint)
+  if(picked.size)return;
+  const ab=rows.find(r=>r.type=="absence"&&r.room=="bathroom"&&/grab/i.test(r.name))||rows.find(r=>r.type=="absence"&&r.cached_scene);
+  const ob=rows.find(r=>r.type=="object"&&r.room=="stairs")||rows.find(r=>r.type=="object"&&r.cached_scene);
+  [ab,ob].filter(Boolean).forEach(r=>picked.add(r.id));
+  if(!picked.size)rows.slice(0,2).forEach(r=>picked.add(r.id));
+  picked.forEach(id=>{const tr=$(`tr[data-id="${id}"]`);tr.querySelector(".pick").classList.add("on");});
+}
+function updApprove(){const b=$("#approveBtn");const ok=[...picked].every(i=>approved.has(i))&&picked.size>0&&approved.size>0;b.disabled=!ok;
+  b.textContent=`Clinician approve ${approved.size} → render ${picked.size}`;}
+$("#allChk").onchange=e=>{rows.forEach(r=>{e.target.checked?approved.add(r.id):approved.delete(r.id);$(`tr[data-id="${r.id}"] input`).checked=e.target.checked;});updApprove();};
+$("#approveAll").onclick=()=>{$("#allChk").checked=true;$("#allChk").onchange({target:$("#allChk")});};
+$("#approveBtn").onclick=async()=>{
+  const r=await fetch(`/api/run/${RUN}/approve`,{method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify({approved:[...approved],picked:[...picked]})});
+  if(!r.ok)alert((await r.json()).detail);
+};
+
+function addScene(ev){
+  const d=document.createElement("div");d.className="card scn";d.id="sc-"+ev.row_id;d.style.marginBottom="26px";
+  d.innerHTML=`<div class="title"><code class="num">${esc(ev.row_id)}</code><h3>${esc(ev.name)}</h3></div>
+   <div class="fig b"><img src="${ev.base}"><span class="cap">clean base</span></div>
+   <div class="fig e"><div class="loading">painting hazard…</div><img class="edit"><span class="cap">hazard edit</span></div>
+   <div class="log" style="grid-column:1/-1"><div>→ base: ${esc(ev.base_id)} (verified clean)</div></div>`;
+  $("#scenes").appendChild(d);
+}
+function putBox(fig,b,label,dashed){
+  const x=document.createElement("div");x.className=dashed?"labelbox":"box";
+  Object.assign(x.style,{left:b[0]/10+"%",top:b[1]/10+"%",width:(b[2]-b[0])/10+"%",height:(b[3]-b[1])/10+"%"});
+  if(!dashed){x.innerHTML=`<span>${esc(label)}</span>`;requestAnimationFrame(()=>requestAnimationFrame(()=>x.classList.add("in")));}
+  fig.appendChild(x);
+}
+function drawBoard(final){
+  const sc=[...$$("#scenes .scn")].map(e=>e.id.slice(3));
+  let list=final?final.map(r=>r.model):models; const fin=Object.fromEntries((final||[]).map(r=>[r.model,r]));
+  $("#lbody").innerHTML=list.map((m,i)=>{const s=score[m]||{},f=fin[m];
+    const cell=w=>sc.map(id=>{const r=s[id+"|"+w];if(!r)return `<i class="dot wait"></i>`;if(r.error)return `<i class="dot" title="${esc(r.error)}">!</i>`;
+      return w=="edit"?`<i class="dot ${r.hit?"hit":"miss"}" title="${id}">${r.hit?"✓":"✗"}</i>`:`<i class="dot ${r.hit?"fa":"clean"}" title="${id}">${r.hit?"!":"–"}</i>`;}).join("");
+    return `<tr class="${m==theirs?"th":""}"><td class="l rk">${f?i+1:""}</td><td class="l">${esc(m)}${m==theirs?'<span class="theirs">your model</span>':""}</td>
+     <td><span class="cell">${cell("edit")}</span></td><td><span class="cell">${cell("base")}</span></td>
+     <td>${f?`<span class="sbar"><i style="width:${f.score*100}%"></i></span>${(f.score*100).toFixed(0)}`:""}</td><td>${f?f.latency+"s":""}</td></tr>`;}).join("");
+}
+function verdict(b){
+  const me=b.find(r=>r.theirs),best=b[0],rank=b.indexOf(me)+1;
+  const missed=Object.values(score[me.model]||{}).filter(r=>r.which=="edit"&&!r.hit).map(r=>r.row_id);
+  const fa=Object.values(score[me.model]||{}).filter(r=>r.which=="base"&&r.hit).map(r=>r.row_id);
+  let s=`Your model ranked <em>#${rank} of ${b.length}</em> on the scenes compiled from your guideline.`;
+  if(missed.length)s+=` It missed <em>${missed.map(id=>{const r=rows.find(x=>x.id==id);return r?`${r.name.toLowerCase()} (${r.type})`:id;}).join(", ")}</em>.`;
+  if(fa.length)s+=` False alarm on the clean room for ${fa.join(", ")}.`;
+  if(!missed.length&&!fa.length)s+=` Clean sweep on these scenes — the full suite is where it breaks.`;
+  $("#verdict").innerHTML=`<div class="verdict">${s}</div><div class="meta">2 scenes is a smoke test. The full report card runs your model on all 35 rubric rows × 6 rooms.</div>`;
+  $("#cta").href="/report/#leaderboard"; $("#ctaMeta").textContent="HomeBench full suite · per-hazard, per-room, per-type recall and false-alarm rate";
+}
+</script>
+</body></html>

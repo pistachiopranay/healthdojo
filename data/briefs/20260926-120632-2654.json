@@ -1,0 +1,1035 @@
+{
+ "id": "20260926-120632-2654",
+ "brief": {
+  "use_case": "Assess whether a home is safe for a walker user discharged after hip replacement",
+  "customer": "Acme Health",
+  "model": "nova-2-lite",
+  "guideline": "Home Safety Check: Stairs and Bathroom\nAdapted from CDC STEADI 'Check for Safety' (public domain)\n\nSTAIRS AND STEPS\n- Nothing should be left on the steps: pick up shoes, books, bags and anything else you could trip on.\n- Any step that is broken, loose or uneven must be repaired.\n- There should be a light over the staircase, with a switch you can reach at the top and at the bottom.\n- Handrails should be firmly attached on both sides of the stairs and run the whole length of the stairway.\n- Carpet on the stairs must be tight to every step; remove it or tack it down if it is loose or torn.\n\nBATHROOM\n- The floor of the tub or shower needs a non-slip mat or adhesive safety strips.\n- Grab bars should be installed inside the tub or shower and beside the toilet to help you get in, out, up and down.\n- Small bath rugs that slide or have curled edges should be removed, or replaced with rugs that have a non-skid backing.\n- Keep a night light on so the path to the bathroom is visible at night.\n- A raised toilet seat or a toilet safety frame makes it easier to sit and stand, especially after hip surgery.",
+  "guideline_source": "text"
+ },
+ "saved": "2026-09-26 12:07:48",
+ "timings": {
+  "rubric_s": 20.9,
+  "scenes_s": 32.6,
+  "score_s": 17.8,
+  "total_s": 76.3
+ },
+ "events": [
+  {
+   "type": "brief",
+   "t": 0.0,
+   "brief": {
+    "use_case": "Assess whether a home is safe for a walker user discharged after hip replacement",
+    "customer": "Acme Health",
+    "model": "nova-2-lite",
+    "guideline": "Home Safety Check: Stairs and Bathroom\nAdapted from CDC STEADI 'Check for Safety' (public domain)\n\nSTAIRS AND STEPS\n- Nothing should be left on the steps: pick up shoes, books, bags and anything else you could trip on.\n- Any step that is broken, loose or uneven must be repaired.\n- There should be a light over the staircase, with a switch you can reach at the top and at the bottom.\n- Handrails should be firmly attached on both sides of the stairs and run the whole length of the stairway.\n- Carpet on the stairs must be tight to every step; remove it or tack it down if it is loose or torn.\n\nBATHROOM\n- The floor of the tub or shower needs a non-slip mat or adhesive safety strips.\n- Grab bars should be installed inside the tub or shower and beside the toilet to help you get in, out, up and down.\n- Small bath rugs that slide or have curled edges should be removed, or replaced with rugs that have a non-skid backing.\n- Keep a night light on so the path to the bathroom is visible at night.\n- A raised toilet seat or a toilet safety frame makes it easier to sit and stand, especially after hip surgery.",
+    "guideline_source": "text"
+   },
+   "chars": 1107
+  },
+  {
+   "type": "stage",
+   "t": 0.0,
+   "stage": "rubric",
+   "status": "start",
+   "model": "Claude Sonnet 5 (Bedrock)"
+  },
+  {
+   "type": "rubric_row",
+   "t": 7.46,
+   "row": {
+    "id": "STAIR-01",
+    "room": "stairs",
+    "type": "object",
+    "name": "Objects left on stairs",
+    "visual_description": "Shoes, books, bags, or other items resting on stair treads.",
+    "detection_cues": [
+     "small objects on treads",
+     "items stacked on steps",
+     "footwear on stairs"
+    ],
+    "recommended_fix": [
+     "Remove all objects from stairs and store elsewhere"
+    ],
+    "severity_default": "high",
+    "post_op_modifier": "A walker user cannot step around clutter and is at high risk of catastrophic fall on stairs.",
+    "citation": "Nothing should be left on the steps: pick up shoes, books, bags and anything else you could trip on.",
+    "maps_to": "STAIR-03",
+    "citation_verbatim": true,
+    "cached_scene": true,
+    "crosswalk": {
+     "HOMEFAST": [
+      1
+     ],
+     "CDC": "Stairs & Steps",
+     "HSSAT": "Stairs"
+    }
+   }
+  },
+  {
+   "type": "rubric_row",
+   "t": 9.02,
+   "row": {
+    "id": "BATH-01",
+    "room": "bathroom",
+    "type": "absence",
+    "name": "No grab bar at tub/shower",
+    "visual_description": "Tub or shower wall shows no anchored grab bar for entry, exit, up/down movement.",
+    "detection_cues": [
+     "blank tub/shower wall",
+     "no metal/plastic bar mounted",
+     "only tile or glass visible at grab height"
+    ],
+    "recommended_fix": [
+     "Install ADA-height grab bar inside tub/shower"
+    ],
+    "severity_default": "high",
+    "post_op_modifier": "Walker users after hip replacement cannot use the walker inside the tub, making a grab bar essential for safe transfers.",
+    "citation": "Grab bars should be installed inside the tub or shower and beside the toilet to help you get in, out, up and down.",
+    "maps_to": "BATH-01",
+    "citation_verbatim": true,
+    "cached_scene": true,
+    "crosswalk": {
+     "HOMEFAST": [
+      13
+     ],
+     "CDC": "Bathrooms",
+     "HSSAT": "Bathroom"
+    }
+   }
+  },
+  {
+   "type": "rubric_row",
+   "t": 9.66,
+   "row": {
+    "id": "STAIR-02",
+    "room": "stairs",
+    "type": "object",
+    "name": "Broken or uneven steps",
+    "visual_description": "Cracked, splintered, sagging, or unevenly spaced stair treads visible in the staircase.",
+    "detection_cues": [
+     "visible crack or hole in tread",
+     "step edge misaligned with others",
+     "sagging or bowed tread surface"
+    ],
+    "recommended_fix": [
+     "Repair or replace damaged steps before use"
+    ],
+    "severity_default": "high",
+    "post_op_modifier": "Uneven footing is especially dangerous for a walker user with limited hip flexion and weight-bearing restrictions.",
+    "citation": "Any step that is broken, loose or uneven must be repaired.",
+    "maps_to": "STAIR-06",
+    "citation_verbatim": true,
+    "cached_scene": true,
+    "crosswalk": {
+     "HOMEFAST": [
+      20,
+      23
+     ],
+     "CDC": "Stairs & Steps",
+     "HSSAT": "Stairs"
+    }
+   }
+  },
+  {
+   "type": "rubric_row",
+   "t": 11.14,
+   "row": {
+    "id": "BATH-02",
+    "room": "bathroom",
+    "type": "absence",
+    "name": "No support at toilet",
+    "visual_description": "Wall or floor area beside toilet shows no grab bar or toilet safety frame mounted.",
+    "detection_cues": [
+     "empty wall beside toilet",
+     "no floor-mounted frame around bowl",
+     "only toilet paper holder present"
+    ],
+    "recommended_fix": [
+     "Install grab bar or toilet safety frame beside toilet"
+    ],
+    "severity_default": "high",
+    "post_op_modifier": "Sitting/standing motions are high-risk for hip precautions; lack of support increases fall and dislocation risk.",
+    "citation": "Grab bars should be installed inside the tub or shower and beside the toilet to help you get in, out, up and down.",
+    "maps_to": "BATH-02",
+    "citation_verbatim": true,
+    "cached_scene": true,
+    "crosswalk": {
+     "HOMEFAST": [
+      10
+     ],
+     "CDC": "Bathrooms",
+     "HSSAT": "Bathroom"
+    }
+   }
+  },
+  {
+   "type": "rubric_row",
+   "t": 12.21,
+   "row": {
+    "id": "STAIR-03",
+    "room": "stairs",
+    "type": "lighting",
+    "name": "Missing or inaccessible stair lighting",
+    "visual_description": "No visible light fixture over the staircase, or light switch not visible/reachable at top or bottom of stairs.",
+    "detection_cues": [
+     "no ceiling/wall light above stairs",
+     "single switch only at one end",
+     "dim or shadowed stairwell"
+    ],
+    "recommended_fix": [
+     "Install overhead light with switches at both top and bottom"
+    ],
+    "severity_default": "medium",
+    "post_op_modifier": "Poor visibility increases misstep risk for a walker user who already has reduced balance reserve.",
+    "citation": "There should be a light over the staircase, with a switch you can reach at the top and at the bottom.",
+    "maps_to": "STAIR-04",
+    "citation_verbatim": true,
+    "cached_scene": true,
+    "crosswalk": {
+     "HOMEFAST": [
+      7
+     ],
+     "CDC": "Stairs & Steps",
+     "HSSAT": "Stairs"
+    }
+   }
+  },
+  {
+   "type": "rubric_row",
+   "t": 13.4,
+   "row": {
+    "id": "BATH-03",
+    "room": "bathroom",
+    "type": "absence",
+    "name": "Slippery tub/shower floor",
+    "visual_description": "Tub or shower floor surface appears smooth/glossy with no mat or textured strips visible.",
+    "detection_cues": [
+     "shiny wet-looking tub floor",
+     "no rubber mat texture",
+     "no adhesive strip pattern"
+    ],
+    "recommended_fix": [
+     "Add non-slip mat or adhesive safety strips to tub/shower floor"
+    ],
+    "severity_default": "high",
+    "post_op_modifier": "Reduced balance and weight-bearing restrictions after hip surgery make slick surfaces especially dangerous with a walker nearby.",
+    "citation": "The floor of the tub or shower needs a non-slip mat or adhesive safety strips.",
+    "maps_to": "BATH-04",
+    "citation_verbatim": true,
+    "cached_scene": true,
+    "crosswalk": {
+     "HOMEFAST": [
+      14
+     ],
+     "CDC": "Bathrooms",
+     "HSSAT": "Bathroom"
+    }
+   }
+  },
+  {
+   "type": "rubric_row",
+   "t": 14.37,
+   "row": {
+    "id": "STAIR-04",
+    "room": "stairs",
+    "type": "absence",
+    "name": "Handrail missing on one side of stairs",
+    "visual_description": "Only one side of the staircase has a handrail, or a rail is absent for part of the run.",
+    "detection_cues": [
+     "wall side with no rail",
+     "rail present only on one side",
+     "gap in railing along the run"
+    ],
+    "recommended_fix": [
+     "Install handrail on both sides for full length of stairway"
+    ],
+    "severity_default": "high",
+    "post_op_modifier": "A walker user relies on bilateral rail support for sit-to-stand and stair negotiation post-hip-replacement.",
+    "citation": "Handrails should be firmly attached on both sides of the stairs and run the whole length of the stairway.",
+    "maps_to": "STAIR-01",
+    "citation_verbatim": true,
+    "cached_scene": true,
+    "crosswalk": {
+     "HOMEFAST": [
+      18
+     ],
+     "CDC": "Stairs & Steps",
+     "HSSAT": "Stairs"
+    }
+   }
+  },
+  {
+   "type": "rubric_row",
+   "t": 16.24,
+   "row": {
+    "id": "BATH-04",
+    "room": "bathroom",
+    "type": "object",
+    "name": "Loose bath mat or rug on bathroom floor",
+    "visual_description": "Small bath rug on floor with visibly curled edges, no rubber backing, or lying on smooth tile without anchoring.",
+    "detection_cues": [
+     "rug corners lifted",
+     "no non-skid backing visible",
+     "rug bunched or sliding on tile"
+    ],
+    "recommended_fix": [
+     "Remove or replace with non-skid backed rug"
+    ],
+    "severity_default": "medium",
+    "post_op_modifier": "A sliding rug can catch walker feet or cause a trip during transfer to/from bathroom, high risk post-op.",
+    "citation": "Small bath rugs that slide or have curled edges should be removed, or replaced with rugs that have a non-skid backing.",
+    "maps_to": "BATH-07",
+    "citation_verbatim": true,
+    "cached_scene": true,
+    "crosswalk": {
+     "HOMEFAST": [
+      4,
+      14
+     ],
+     "CDC": "Floors",
+     "HSSAT": "Bathroom"
+    }
+   }
+  },
+  {
+   "type": "rubric_row",
+   "t": 16.56,
+   "row": {
+    "id": "STAIR-05",
+    "room": "stairs",
+    "type": "measurement",
+    "name": "Handrail loose, short, or not full length",
+    "visual_description": "Handrail appears wobbly, detached at a bracket, or terminates before reaching the top/bottom of the stairs.",
+    "detection_cues": [
+     "visible gap between rail and wall bracket",
+     "rail ends mid-staircase",
+     "rail sags or wobbles"
+    ],
+    "recommended_fix": [
+     "Firmly reattach or extend handrail to run full length of stairs"
+    ],
+    "severity_default": "high",
+    "post_op_modifier": "An unstable or short rail can fail exactly when a walker user needs support most, e.g. near top or bottom step.",
+    "citation": "Handrails should be firmly attached on both sides of the stairs and run the whole length of the stairway.",
+    "maps_to": "STAIR-02",
+    "citation_verbatim": true,
+    "cached_scene": true,
+    "crosswalk": {
+     "HOMEFAST": [
+      18,
+      19
+     ],
+     "CDC": "Stairs & Steps",
+     "HSSAT": "Stairs"
+    }
+   }
+  },
+  {
+   "type": "rubric_row",
+   "t": 18.79,
+   "row": {
+    "id": "BATH-05",
+    "room": "bathroom",
+    "type": "lighting",
+    "name": "No night light on path to bathroom",
+    "visual_description": "Hallway or bathroom entry path is dark with no visible night light or illuminated fixture.",
+    "detection_cues": [
+     "dark hallway leading to bathroom",
+     "no glow from outlet or wall light",
+     "light switch far from bed/path"
+    ],
+    "recommended_fix": [
+     "Install plug-in or motion-sensor night light along path to bathroom"
+    ],
+    "severity_default": "medium",
+    "post_op_modifier": "Nighttime walker navigation is riskier when vision is impaired, increasing fall risk after hip surgery.",
+    "citation": "Keep a night light on so the path to the bathroom is visible at night.",
+    "maps_to": "BED-03",
+    "citation_verbatim": true,
+    "cached_scene": true,
+    "crosswalk": {
+     "HOMEFAST": [
+      7,
+      15
+     ],
+     "CDC": "Bedrooms",
+     "HSSAT": "Bedroom"
+    }
+   }
+  },
+  {
+   "type": "rubric_row",
+   "t": 19.27,
+   "row": {
+    "id": "STAIR-06",
+    "room": "stairs",
+    "type": "object",
+    "name": "Loose or torn stair carpet",
+    "visual_description": "Carpet on stair treads is wrinkled, bulging, torn, or not tacked down flush to the step edge.",
+    "detection_cues": [
+     "visible carpet lip or fold at step edge",
+     "torn or frayed carpet edge",
+     "carpet not flush with nosing"
+    ],
+    "recommended_fix": [
+     "Remove loose carpet or re-tack it securely to each step"
+    ],
+    "severity_default": "medium",
+    "post_op_modifier": "A loose carpet edge can catch a walker leg or foot, causing a fall with high fracture-recurrence risk.",
+    "citation": "Carpet on the stairs must be tight to every step; remove it or tack it down if it is loose or torn.",
+    "maps_to": "STAIR-05",
+    "citation_verbatim": true,
+    "cached_scene": true,
+    "crosswalk": {
+     "HOMEFAST": [
+      21
+     ],
+     "CDC": "Stairs & Steps",
+     "HSSAT": "Stairs"
+    }
+   }
+  },
+  {
+   "type": "rubric_row",
+   "t": 20.94,
+   "row": {
+    "id": "BATH-06",
+    "room": "bathroom",
+    "type": "absence",
+    "name": "Low toilet seat without raised seat or frame",
+    "visual_description": "Standard-height toilet with no raised seat attachment or safety frame visible around it.",
+    "detection_cues": [
+     "low seat height relative to floor",
+     "no raised plastic seat add-on",
+     "no frame with armrests around bowl"
+    ],
+    "recommended_fix": [
+     "Add raised toilet seat or toilet safety frame"
+    ],
+    "severity_default": "high",
+    "post_op_modifier": "Deep hip flexion required to sit on a low seat can violate post-op hip precautions and cause dislocation risk.",
+    "citation": "A raised toilet seat or a toilet safety frame makes it easier to sit and stand, especially after hip surgery.",
+    "maps_to": "BATH-06",
+    "citation_verbatim": true,
+    "cached_scene": true,
+    "crosswalk": {
+     "HOMEFAST": [
+      10
+     ],
+     "CDC": "Bathrooms",
+     "HSSAT": "Bathroom"
+    }
+   }
+  },
+  {
+   "type": "stage",
+   "t": 20.94,
+   "stage": "rubric",
+   "status": "done",
+   "secs": 20.9,
+   "n": 12,
+   "chunks": 2,
+   "errors": []
+  },
+  {
+   "type": "await_approval",
+   "t": 20.94
+  },
+  {
+   "type": "approve",
+   "t": 25.85,
+   "approved": [
+    "STAIR-01",
+    "BATH-01",
+    "STAIR-02",
+    "BATH-02",
+    "STAIR-03",
+    "BATH-03",
+    "STAIR-04",
+    "BATH-04",
+    "STAIR-05",
+    "BATH-05",
+    "STAIR-06",
+    "BATH-06"
+   ],
+   "picked": [
+    "BATH-01",
+    "STAIR-01"
+   ]
+  },
+  {
+   "type": "stage",
+   "t": 25.85,
+   "stage": "scenes",
+   "status": "start",
+   "picked": [
+    "STAIR-01",
+    "BATH-01"
+   ]
+  },
+  {
+   "type": "scene_start",
+   "t": 25.88,
+   "row_id": "BATH-01",
+   "name": "No grab bar at tub/shower",
+   "base": "/data/renders/bathroom-base0.jpg",
+   "base_id": "bathroom-base0"
+  },
+  {
+   "type": "scene_start",
+   "t": 25.88,
+   "row_id": "STAIR-01",
+   "name": "Objects left on stairs",
+   "base": "/data/renders/stairs-base0.jpg",
+   "base_id": "stairs-base0"
+  },
+  {
+   "type": "scene_label",
+   "t": 29.23,
+   "row_id": "STAIR-01",
+   "plan": {
+    "mode": "inpaint",
+    "box": [
+     400,
+     550,
+     650,
+     650
+    ],
+    "prompt": "a pair of sneakers left resting on the lower stair tread, casting a soft shadow, matching the warm wood tone and lighting of the staircase",
+    "search_prompt": ""
+   },
+   "secs": 3.0
+  },
+  {
+   "type": "scene_label",
+   "t": 30.15,
+   "row_id": "BATH-01",
+   "plan": {
+    "mode": "search_replace",
+    "box": [
+     172,
+     160,
+     720,
+     400
+    ],
+    "prompt": "bare white fiberglass shower wall with no grab bars, smooth surface matching surrounding tub/shower enclosure",
+    "search_prompt": "stainless steel grab bars mounted on shower wall"
+   },
+   "secs": 4.0
+  },
+  {
+   "type": "scene_edit",
+   "t": 46.37,
+   "row_id": "STAIR-01",
+   "edit": "/data/briefs/20260926-120632-2654/STAIR-01.png",
+   "base": "/data/renders/stairs-base0.jpg",
+   "cached": false,
+   "secs": 20.5,
+   "backend": "Stability via Bedrock",
+   "note": null
+  },
+  {
+   "type": "scene_verified",
+   "t": 51.1,
+   "scene": {
+    "row_id": "STAIR-01",
+    "name": "Objects left on stairs",
+    "type": "object",
+    "base_id": "stairs-base0",
+    "edit": "/data/briefs/20260926-120632-2654/STAIR-01.png",
+    "base": "/data/renders/stairs-base0.jpg",
+    "cached": false,
+    "box": [
+     406,
+     581,
+     590,
+     640
+    ],
+    "label_box": [
+     400,
+     550,
+     650,
+     650
+    ],
+    "changed_frac": 0.0099,
+    "verified": true,
+    "judge_note": "A pair of shoes placed on a stair tread creates a tripping hazard.",
+    "gen_s": 20.5,
+    "verify_s": 4.7
+   }
+  },
+  {
+   "type": "scene_edit",
+   "t": 55.42,
+   "row_id": "BATH-01",
+   "edit": "/data/briefs/20260926-120632-2654/BATH-01.png",
+   "base": "/data/renders/bathroom-base0.jpg",
+   "cached": false,
+   "secs": 29.5,
+   "backend": "Stability via Bedrock",
+   "note": null
+  },
+  {
+   "type": "scene_rejected",
+   "t": 58.4,
+   "row_id": "BATH-01",
+   "rejected": "/data/briefs/20260926-120632-2654/BATH-01.png",
+   "note": "Grab bars are still present and anchored in image 2; no visible change from image 1."
+  },
+  {
+   "type": "scene_edit",
+   "t": 58.45,
+   "row_id": "BATH-01",
+   "edit": "/data/renders/bathroom-base0-BATH-01.jpg",
+   "base": "/data/renders/bathroom-base0.jpg",
+   "cached": true,
+   "secs": 32.6,
+   "backend": "cached data/scenes",
+   "note": "live edit rejected by judge"
+  },
+  {
+   "type": "scene_verified",
+   "t": 58.45,
+   "scene": {
+    "row_id": "BATH-01",
+    "name": "No grab bar at tub/shower",
+    "type": "absence",
+    "base_id": "bathroom-base0",
+    "edit": "/data/renders/bathroom-base0-BATH-01.jpg",
+    "base": "/data/renders/bathroom-base0.jpg",
+    "cached": true,
+    "box": [
+     180,
+     218,
+     680,
+     570
+    ],
+    "label_box": null,
+    "changed_frac": 0.0068,
+    "verified": true,
+    "judge_note": "All three grab bars (left vertical, back horizontal, right vertical) were removed, leaving a bare surround at hand height. Only the small soap-niche rod remains, which is not a load-rated grab bar. The rest of the scene is unchanged.",
+    "gen_s": 29.5,
+    "verify_s": 3.0
+   }
+  },
+  {
+   "type": "stage",
+   "t": 58.45,
+   "stage": "scenes",
+   "status": "done",
+   "secs": 32.6,
+   "n": 2
+  },
+  {
+   "type": "stage",
+   "t": 58.45,
+   "stage": "score",
+   "status": "start",
+   "models": [
+    "nova-2-lite",
+    "claude-sonnet-5",
+    "gpt-5.6-sol",
+    "qwen3-vl",
+    "llama-4-maverick"
+   ],
+   "theirs": "nova-2-lite"
+  },
+  {
+   "type": "score_result",
+   "t": 59.62,
+   "model": "nova-2-lite",
+   "row_id": "BATH-01",
+   "which": "base",
+   "hit": false,
+   "ids": [
+    "BATH-06"
+   ],
+   "box": null,
+   "latency": 1.2,
+   "error": null
+  },
+  {
+   "type": "score_result",
+   "t": 59.74,
+   "model": "llama-4-maverick",
+   "row_id": "BATH-01",
+   "which": "edit",
+   "hit": false,
+   "ids": [
+    "BATH-03"
+   ],
+   "box": null,
+   "latency": 1.3,
+   "error": null
+  },
+  {
+   "type": "score_result",
+   "t": 59.87,
+   "model": "llama-4-maverick",
+   "row_id": "BATH-01",
+   "which": "base",
+   "hit": false,
+   "ids": [
+    "BATH-03"
+   ],
+   "box": null,
+   "latency": 1.4,
+   "error": null
+  },
+  {
+   "type": "score_result",
+   "t": 59.87,
+   "model": "llama-4-maverick",
+   "row_id": "STAIR-01",
+   "which": "base",
+   "hit": false,
+   "ids": [
+    "STAIR-04"
+   ],
+   "box": null,
+   "latency": 1.4,
+   "error": null
+  },
+  {
+   "type": "score_result",
+   "t": 59.87,
+   "model": "llama-4-maverick",
+   "row_id": "STAIR-01",
+   "which": "edit",
+   "hit": true,
+   "ids": [
+    "STAIR-01"
+   ],
+   "box": [
+    340,
+    560,
+    640,
+    630
+   ],
+   "latency": 1.4,
+   "error": null
+  },
+  {
+   "type": "score_result",
+   "t": 60.04,
+   "model": "nova-2-lite",
+   "row_id": "STAIR-01",
+   "which": "edit",
+   "hit": true,
+   "ids": [
+    "STAIR-01"
+   ],
+   "box": null,
+   "latency": 1.6,
+   "error": null
+  },
+  {
+   "type": "score_result",
+   "t": 60.08,
+   "model": "nova-2-lite",
+   "row_id": "BATH-01",
+   "which": "edit",
+   "hit": false,
+   "ids": [
+    "BATH-03",
+    "BATH-06"
+   ],
+   "box": null,
+   "latency": 1.6,
+   "error": null
+  },
+  {
+   "type": "score_result",
+   "t": 60.18,
+   "model": "nova-2-lite",
+   "row_id": "STAIR-01",
+   "which": "base",
+   "hit": false,
+   "ids": [
+    "STAIR-04"
+   ],
+   "box": null,
+   "latency": 1.7,
+   "error": null
+  },
+  {
+   "type": "score_result",
+   "t": 61.22,
+   "model": "claude-sonnet-5",
+   "row_id": "STAIR-01",
+   "which": "base",
+   "hit": false,
+   "ids": [],
+   "box": null,
+   "latency": 2.8,
+   "error": null
+  },
+  {
+   "type": "score_result",
+   "t": 61.48,
+   "model": "claude-sonnet-5",
+   "row_id": "BATH-01",
+   "which": "base",
+   "hit": false,
+   "ids": [
+    "BATH-03"
+   ],
+   "box": null,
+   "latency": 3.0,
+   "error": null
+  },
+  {
+   "type": "score_result",
+   "t": 61.83,
+   "model": "claude-sonnet-5",
+   "row_id": "STAIR-01",
+   "which": "edit",
+   "hit": true,
+   "ids": [
+    "STAIR-01"
+   ],
+   "box": [
+    510,
+    495,
+    760,
+    545
+   ],
+   "latency": 3.4,
+   "error": null
+  },
+  {
+   "type": "score_result",
+   "t": 62.04,
+   "model": "gpt-5.6-sol",
+   "row_id": "BATH-01",
+   "which": "base",
+   "hit": false,
+   "ids": [],
+   "box": null,
+   "latency": 3.6,
+   "error": null
+  },
+  {
+   "type": "score_result",
+   "t": 64.94,
+   "model": "gpt-5.6-sol",
+   "row_id": "STAIR-01",
+   "which": "base",
+   "hit": false,
+   "ids": [
+    "STAIR-05"
+   ],
+   "box": null,
+   "latency": 6.5,
+   "error": null
+  },
+  {
+   "type": "score_result",
+   "t": 65.11,
+   "model": "qwen3-vl",
+   "row_id": "STAIR-01",
+   "which": "base",
+   "hit": false,
+   "ids": [
+    "STAIR-04",
+    "STAIR-05"
+   ],
+   "box": null,
+   "latency": 6.6,
+   "error": null
+  },
+  {
+   "type": "score_result",
+   "t": 65.94,
+   "model": "qwen3-vl",
+   "row_id": "BATH-01",
+   "which": "edit",
+   "hit": true,
+   "ids": [
+    "BATH-01",
+    "BATH-03",
+    "BATH-04",
+    "BATH-06"
+   ],
+   "box": [
+    148,
+    1,
+    738,
+    997
+   ],
+   "latency": 7.5,
+   "error": null
+  },
+  {
+   "type": "score_result",
+   "t": 66.48,
+   "model": "gpt-5.6-sol",
+   "row_id": "STAIR-01",
+   "which": "edit",
+   "hit": true,
+   "ids": [
+    "STAIR-01",
+    "STAIR-05"
+   ],
+   "box": [
+    400,
+    575,
+    592,
+    645
+   ],
+   "latency": 8.0,
+   "error": null
+  },
+  {
+   "type": "score_result",
+   "t": 66.69,
+   "model": "qwen3-vl",
+   "row_id": "STAIR-01",
+   "which": "edit",
+   "hit": true,
+   "ids": [
+    "STAIR-01",
+    "STAIR-05",
+    "STAIR-05"
+   ],
+   "box": [
+    355,
+    567,
+    612,
+    650
+   ],
+   "latency": 8.2,
+   "error": null
+  },
+  {
+   "type": "score_result",
+   "t": 67.07,
+   "model": "qwen3-vl",
+   "row_id": "BATH-01",
+   "which": "base",
+   "hit": false,
+   "ids": [
+    "BATH-03",
+    "BATH-04",
+    "BATH-05",
+    "BATH-06"
+   ],
+   "box": null,
+   "latency": 8.6,
+   "error": null
+  },
+  {
+   "type": "score_result",
+   "t": 69.01,
+   "model": "claude-sonnet-5",
+   "row_id": "BATH-01",
+   "which": "edit",
+   "hit": false,
+   "ids": [
+    "BATH-06"
+   ],
+   "box": null,
+   "latency": 10.6,
+   "error": null
+  },
+  {
+   "type": "score_result",
+   "t": 76.25,
+   "model": "gpt-5.6-sol",
+   "row_id": "BATH-01",
+   "which": "edit",
+   "hit": true,
+   "ids": [
+    "BATH-01"
+   ],
+   "box": [
+    166,
+    0,
+    718,
+    735
+   ],
+   "latency": 17.8,
+   "error": null
+  },
+  {
+   "type": "leaderboard",
+   "t": 76.25,
+   "rows": [
+    {
+     "model": "qwen3-vl",
+     "theirs": false,
+     "hits": 2,
+     "n": 2,
+     "false_alarms": 0,
+     "n_clean": 2,
+     "score": 1.0,
+     "errors": 0,
+     "latency": 8.6
+    },
+    {
+     "model": "gpt-5.6-sol",
+     "theirs": false,
+     "hits": 2,
+     "n": 2,
+     "false_alarms": 0,
+     "n_clean": 2,
+     "score": 1.0,
+     "errors": 0,
+     "latency": 17.8
+    },
+    {
+     "model": "llama-4-maverick",
+     "theirs": false,
+     "hits": 1,
+     "n": 2,
+     "false_alarms": 0,
+     "n_clean": 2,
+     "score": 0.75,
+     "errors": 0,
+     "latency": 1.4
+    },
+    {
+     "model": "nova-2-lite",
+     "theirs": true,
+     "hits": 1,
+     "n": 2,
+     "false_alarms": 0,
+     "n_clean": 2,
+     "score": 0.75,
+     "errors": 0,
+     "latency": 1.7
+    },
+    {
+     "model": "claude-sonnet-5",
+     "theirs": false,
+     "hits": 1,
+     "n": 2,
+     "false_alarms": 0,
+     "n_clean": 2,
+     "score": 0.75,
+     "errors": 0,
+     "latency": 10.6
+    }
+   ]
+  },
+  {
+   "type": "stage",
+   "t": 76.25,
+   "stage": "score",
+   "status": "done",
+   "secs": 17.8
+  },
+  {
+   "type": "done",
+   "t": 76.25,
+   "ok": true,
+   "timings": {
+    "rubric_s": 20.9,
+    "scenes_s": 32.6,
+    "score_s": 17.8,
+    "total_s": 76.3
+   }
+  }
+ ]
+}

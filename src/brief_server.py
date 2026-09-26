@@ -54,7 +54,8 @@ SAMPLE = {
     "customer": "Acme Health",
     "use_case": "Assess whether a home is safe for a walker user discharged after hip replacement",
     "model": "nova-2-lite",
-    "guideline": """Home Safety Check: Stairs and Bathroom (paraphrased from the CDC STEADI "Check for Safety" brochure)
+    "guideline": """Home Safety Check: Stairs and Bathroom
+Adapted from CDC STEADI 'Check for Safety' (public domain)
 
 STAIRS AND STEPS
 - Nothing should be left on the steps: pick up shoes, books, bags and anything else you could trip on.
@@ -164,59 +165,100 @@ def ingest(text, url, pdf_bytes):
 
 
 # ---------------------------------------------------------------- stage 2: rubric
-def rubric_prompt(brief):
-    ex = {k: TAX["BATH-03"][k] for k in ("id", "room", "name", "visual_description", "detection_cues", "severity", "post_op", "recommended_fix")}
+def rubric_prompt(brief, chunk, max_rows):
+    ex = {"id": "BATH-03", "room": "bathroom", "name": TAX["BATH-03"]["name"], "visual_description": TAX["BATH-03"]["visual_description"],
+          "detection_cues": TAX["BATH-03"]["detection_cues"][:3], "recommended_fix": TAX["BATH-03"]["recommended_fix"][:1]}
     existing = "\n".join(f"- {h['id']} ({h['room']}): {h['name']}" for h in TAX.values())
-    return f"""You are a clinical informatics engineer compiling a customer's guideline into a machine-checkable hazard rubric for a vision-model benchmark.
+    return f"""You compile a customer's clinical guideline into a machine-checkable hazard rubric for a vision-model benchmark.
 
 Customer use case: {brief['use_case']}
 
-Customer guideline:
+Guideline excerpt:
 <<<
-{brief['guideline']}
+{chunk}
 >>>
 
-Write one rubric row per distinct, VISUALLY CHECKABLE hazard the guideline implies (a camera photo of one room could show it). Aim for 8-12 rows. Skip behavioral advice that no photo can show.
-Each row follows this schema (example row from our existing rubric):
-{json.dumps(ex)}
-
-Add these fields to every row:
-- "type": one of object | absence | measurement | lighting  (object = something present that should not be; absence = required safety item missing; measurement = a dimension is wrong; lighting = too dark / no light)
-- "severity_default": low | medium | high for this use case
-- "post_op_modifier": one short sentence on how a walker user after hip replacement changes the risk
-- "citation": the guideline line that justifies the row, quoted EXACTLY as written in the guideline (verbatim substring)
-- "maps_to": the closest id from our existing rubric below, or null
-- "room": one of {ROOMS}
-Use ids of the form ROOM-NN with prefixes BATH, BED, STAIR, KIT, LIV, ENT, numbered from 01 within the prefix, in guideline order.
+Write one rubric row per distinct, VISUALLY CHECKABLE hazard in this excerpt (a photo of one room could show it); at most {max_rows} rows. Skip advice no photo can show.
+Row schema (example): {json.dumps(ex)}
+Also include in every row:
+"type": object | absence | measurement | lighting  (object = something present that should not be; absence = required safety item missing; measurement = a dimension is wrong; lighting = too dark / no light),
+"severity_default": low | medium | high for this use case,
+"post_op_modifier": one short sentence on how a walker user after hip replacement changes the risk,
+"citation": the guideline line that justifies the row, copied EXACTLY (verbatim substring, without the leading dash),
+"maps_to": closest id from the existing rubric below, or null,
+"room": one of {ROOMS}.
+Keep strings short. Use id prefixes BATH, BED, STAIR, KIT, LIV, ENT (numbers are reassigned later).
 
 Existing rubric ids:
 {existing}
 
-Output format: JSON Lines. Exactly one complete row JSON object per line, no array, no markdown fences, no commentary."""
+Output JSON Lines: exactly one complete row object per line. No array, no markdown fences, no commentary."""
+
+
+def chunks(text, n=3):
+    paras = [p for p in re.split(r"\n\s*\n", text) if p.strip()]
+    if len(paras) < 2:
+        lines = text.splitlines()
+        k = max(1, len(lines) // n + 1)
+        paras = ["\n".join(lines[i:i + k]) for i in range(0, len(lines), k)]
+    target = len(text) / n
+    out, cur = [], ""
+    for p in paras:
+        if cur and len(cur) + len(p) > target * 1.3 and len(out) < n - 1:
+            out.append(cur); cur = ""
+        cur += p + "\n\n"
+    if cur.strip():
+        out.append(cur)
+    # keep a leading title-only chunk attached to the next one
+    if len(out) > 1 and len(out[0]) < 200:
+        out[1] = out[0] + out[1]; out = out[1:]
+    return out
+
+
+_stream_client = None
+
+
+def stream_rows(run, chunk, max_rows):
+    global _stream_client
+    if _stream_client is None:
+        import boto3
+        from botocore.config import Config
+        _stream_client = boto3.client("bedrock-runtime", region_name=os.getenv("AWS_REGION", "us-east-1"),
+                                      config=Config(read_timeout=40, retries={"max_attempts": 1}, max_pool_connections=10))
+    resp = _stream_client.converse_stream(modelId=RUBRIC_MODEL, messages=[{"role": "user", "content": [{"text": rubric_prompt(run.brief, chunk, max_rows)}]}],
+                                          inferenceConfig={"maxTokens": 4000})
+    buf = ""
+    for ev in resp["stream"]:
+        d = ev.get("contentBlockDelta", {}).get("delta", {}).get("text")
+        if not d:
+            continue
+        buf += d
+        while "\n" in buf:
+            line, buf = buf.split("\n", 1)
+            add_row(run, line)
+    add_row(run, buf)
 
 
 def stage_rubric(run: Run):
-    b = run.brief
     run.emit("stage", stage="rubric", status="start", model="Claude Sonnet 5 (Bedrock)")
     t = time.time()
-    try:
-        resp = bedrock().converse_stream(modelId=RUBRIC_MODEL, messages=[{"role": "user", "content": [{"text": rubric_prompt(b)}]}],
-                                         inferenceConfig={"maxTokens": 8000})
-        buf = ""
-        for ev in resp["stream"]:
-            d = ev.get("contentBlockDelta", {}).get("delta", {}).get("text")
-            if not d:
-                continue
-            buf += d
-            while "\n" in buf:
-                line, buf = buf.split("\n", 1)
-                add_row(run, line)
-        add_row(run, buf)
-    except Exception as e:
-        run.emit("error", stage="rubric", msg=f"rubric failed: {str(e)[:200]}")
+    parts = chunks(run.brief["guideline"])
+    per = max(3, 12 // len(parts))
+    futs = [POOL.submit(stream_rows, run, c, per) for c in parts]
+    errs = []
+    for f in futs:
+        try:
+            f.result(timeout=75)
+        except Exception as e:
+            errs.append(f"{type(e).__name__}: {str(e)[:120]}")
+    if not run.rows:
+        run.emit("error", stage="rubric", msg="rubric failed: " + "; ".join(errs))
         return
     run.timings["rubric_s"] = round(time.time() - t, 1)
-    run.emit("stage", stage="rubric", status="done", secs=run.timings["rubric_s"], n=len(run.rows))
+    run.emit("stage", stage="rubric", status="done", secs=run.timings["rubric_s"], n=len(run.rows), chunks=len(parts), errors=errs)
+
+
+PREFIX = {"bathroom": "BATH", "bedroom": "BED", "stairs": "STAIR", "kitchen": "KIT", "living": "LIV", "entry": "ENT"}
 
 
 def add_row(run, line):
@@ -233,7 +275,13 @@ def add_row(run, line):
     cit = (row.get("citation") or "").strip().strip('"')
     row["citation_verbatim"] = bool(cit) and cit[:60].lower() in run.brief["guideline"].lower()
     row["cached_scene"] = bool(cached_scene(row))
-    run.rows.append(row)
+    im = (TAX.get(row["maps_to"]) or {}).get("instrument_map") or {}
+    row["crosswalk"] = {k: im[k] for k in ("HOMEFAST", "CDC", "HSSAT") if im.get(k)}
+    with _lock:
+        pre = PREFIX[row["room"]]
+        n = sum(1 for r in run.rows if r["id"].startswith(pre + "-")) + 1
+        row["id"] = f"{pre}-{n:02d}"
+        run.rows.append(row)
     run.emit("rubric_row", row=row)
 
 
@@ -249,7 +297,12 @@ def cached_scene(row):
     return None
 
 
+FLOOR_BASE = {"bathroom": "bathroom-base1"}  # widest open-floor view for object hazards
+
+
 def pick_base(row):
+    if row.get("type") == "object" and row["room"] in FLOOR_BASE:
+        return FLOOR_BASE[row["room"]]
     c = cached_scene(row)
     if c:
         return c["base"]
@@ -268,8 +321,8 @@ Decide the ground-truth label BEFORE any pixels are edited. Return ONLY JSON:
   "prompt": "<photorealistic description of what the edited region should show>",
   "search_prompt": "<existing object to replace, only for search_replace>"}}
 Rules:
-- type absence (a safety item must be missing): use "search_replace"; search_prompt = the safety item visible in the photo (e.g. "grab bar", "handrail", "night light"); prompt = what should be there instead (e.g. "bare tiled wall").
-- otherwise use "inpaint": box = a region in 0-1000 normalized image coordinates (x right, y down) that is currently EMPTY floor/step/wall where the hazard should be painted, sized realistically (roughly 15-40% of the width), not covering existing furniture or fixtures; prompt describes the hazard object in place, matching the room's lighting and perspective.
+- type absence (a safety item must be missing): use "search_replace"; search_prompt = the safety item visible in the photo in 1-3 plain words (e.g. "grab bar", "handrail", "night light"); prompt = what should be there instead (e.g. "bare tiled wall").
+- otherwise use "inpaint": box = a region in 0-1000 normalized image coordinates (x right, y down) that is currently EMPTY floor/step/wall where the hazard should be painted, sized realistically (roughly 15-40% of the width), not covering existing furniture or fixtures. Floor objects (rugs, clutter, cords) go on OPEN VISIBLE FLOOR (not inside a tub or shower, not on a fixture); items on stairs go on a visible tread; the floor is usually the lowest part of the frame, so a floor box should reach down near the bottom of the visible floor; prompt describes the hazard object in place, matching the room's lighting and perspective.
 - box for search_replace = where the item currently is."""
 
 
@@ -284,7 +337,8 @@ def stability(mode, img_png_b64, plan, size):
         ImageDraw.Draw(m).rectangle([int(x0 / 1000 * W), int(y0 / 1000 * H), int(x1 / 1000 * W), int(y1 / 1000 * H)], fill=255)
         mb = io.BytesIO(); m.save(mb, "PNG")
         body = {"image": img_png_b64, "mask": base64.b64encode(mb.getvalue()).decode(), "prompt": plan["prompt"] + ", photorealistic, same lighting",
-                "output_format": "png", "grow_mask": 8}
+                "output_format": "png", "grow_mask": 8,
+                "negative_prompt": "bathtub, clawfoot tub, furniture, toilet, sink, cabinet, text, people"}
         mid = "us.stability.stable-image-inpaint-v1:0"
     r = bedrock().invoke_model(modelId=mid, body=json.dumps(body))
     d = json.loads(r["body"].read())
@@ -295,7 +349,8 @@ def judge(base_path, edit_path, row):
     txt = converse(RUBRIC_MODEL, [
         {"image": {"format": "jpeg", "source": {"bytes": jpeg_bytes(base_path, 1024)}}},
         {"image": {"format": "jpeg", "source": {"bytes": jpeg_bytes(edit_path, 1024)}}},
-        {"text": JUDGE_Q.format(name=row["name"], desc=row.get("visual_description", ""))}], max_tokens=800)
+        {"text": JUDGE_Q.format(name=row["name"], desc=row.get("visual_description", "")) +
+         "\nBe strict: if the new object is a different kind of thing than the hazard described (e.g. furniture instead of a rug), or it is not where the hazard would realistically be, hazard_visible = false."}], max_tokens=800)
     return first_json(txt)
 
 
@@ -355,6 +410,16 @@ def stage_scene(run, row):
             v = jf.result(timeout=40)
         except Exception as e:
             v = {"hazard_visible": None, "note": f"judge error {str(e)[:80]}"}
+    if not cached and v.get("hazard_visible") is False and cached_scene(row):
+        c = cached_scene(row)
+        run.emit("scene_rejected", row_id=row["id"], rejected=edit_url, note=v.get("note", ""))
+        cached, plan = True, None
+        edit_path, base_path, base_id = DATA / c["image"], RENDERS / f"{c['base']}.jpg", c["base"]
+        edit_url = f"/data/{c['image']}"
+        box = c["hazards"][0].get("box") or diff_box(base_path, edit_path)[0]
+        v = c.get("verify", {})
+        run.emit("scene_edit", row_id=row["id"], edit=edit_url, base=f"/data/renders/{base_id}.jpg", cached=True, secs=round(time.time() - t, 1),
+                 backend="cached data/scenes", note="live edit rejected by judge")
     label_box = plan["box"] if plan and plan.get("mode") == "inpaint" else None
     gt_box = box or label_box
     scene = {"row_id": row["id"], "name": row["name"], "type": row.get("type"), "base_id": base_id,
