@@ -1,0 +1,6 @@
+.env
+.env.*
+data/renders/
+node_modules/
+.venv/
+__pycache__/
