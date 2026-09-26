@@ -27,10 +27,18 @@ CACHE = json.loads(CACHE_F.read_text()) if CACHE_F.exists() else {}
 LOCK = threading.Lock()
 _br = None
 
-# Fixed set, in play order: 8 verified edits spanning object/absence/measurement/lighting + 2 clean base rooms.
-QUIZ = ["living-base1-LIV-02", "kitchen-base0", "bathroom-base0-BATH-01", "stairs-base1-STAIR-02",
-        "bedroom-base0-BED-01", "living-base0", "bathroom-base0-BATH-03", "entry-base1-ENT-04",
-        "stairs-base1-STAIR-06", "bathroom-base1-BATH-06"]
+VERSION = "v2"
+# v2: 4 photos (the models' worst: towel-bar-as-grab-bar 1/14, broken steps 5/14, mattress-on-floor 9/14,
+# plus a clean kitchen where only 3/14 models raise no false alarm) + 1 walkable 3D world.
+QUIZ = ["kitchen-base0", "bedroom-base0-BED-01", "bathroom-base0-BATH-03", "stairs-base1-STAIR-06"]
+WORLD = "bathroom-base0-BATH-07"
+WALKS = json.loads((ROOT / "data" / "walks" / "index.json").read_text())
+_wr = {}
+for r in WALKS["runs"]:
+    if r["scene"] == WORLD:
+        _wr[r["model"]] = _wr.get(r["model"], False) or bool(r["metrics"]["found"])
+WORLD_MODELS = _wr  # model -> found the hazard while walking the world
+WORLD_INFO = WALKS["worlds"][WORLD]
 
 PLAIN = {
     "BATH-01": "No grab bar by the tub", "BATH-02": "Nothing to hold by the toilet",
@@ -72,7 +80,12 @@ for sid in QUIZ:
     ROOM_TAX[sid] = chips
     ITEMS.append({"id": sid, "room": s["room"], "image": "/" + s["image"],
                   "clean": not gt, "answer": sorted(gt), "answer_label": [PLAIN[h] for h in sorted(gt)],
-                  "hazard_type": s["hazards"][0]["type"] if gt else None})
+                  "hazard_type": s["hazards"][0]["type"] if gt else None, "kind": "photo", "seconds": 20})
+_ws = SCENES[WORLD]
+ROOM_TAX[WORLD] = [{"id": k, "label": PLAIN.get(k, v["name"]), "type": v["type"]} for k, v in TAX.items() if v["room"] == _ws["room"]]
+WORLD_ITEM = {"id": WORLD, "kind": "world", "room": _ws["room"], "seconds": 30, "src": f"/site/world.html?id={WORLD}&embed=1",
+              "image": "/" + _ws["image"], "answer": [WORLD_INFO["hazard_id"]], "answer_label": [PLAIN[WORLD_INFO["hazard_id"]]], "clean": False}
+ALL_ITEMS = ITEMS + [WORLD_ITEM]
 
 
 def norm(text):
@@ -132,6 +145,7 @@ def load_humans():
     if not RESP.exists():
         return []
     rows = [json.loads(l) for l in RESP.read_text().splitlines() if l.strip()]
+    rows = [r for r in rows if r.get("v") == VERSION]
     for r in rows:
         r["grade"] = grade(r["picks"])
     return rows
@@ -140,8 +154,8 @@ def load_humans():
 def summary():
     humans = load_humans()
     avg = lambda xs: round(sum(xs) / len(xs), 3) if xs else None
-    board = [{"name": m, "kind": "model", **{k: g[k] for k in ("score", "recall", "false_alarm")}} for m, g in MODEL_GRADES.items()]
-    board += [{"name": h["name"], "kind": "human", "id": h["id"], **{k: h["grade"][k] for k in ("score", "recall", "false_alarm")}} for h in humans]
+    board = [{"name": m, "kind": "model", "world": WORLD_MODELS.get(m), **{k: g[k] for k in ("score", "recall", "false_alarm")}} for m, g in MODEL_GRADES.items()]
+    board += [{"name": h["name"], "kind": "human", "id": h["id"], "world": h.get("world_found"), **{k: h["grade"][k] for k in ("score", "recall", "false_alarm")}} for h in humans]
     board.sort(key=lambda r: (-r["score"], -r["recall"], r["kind"] != "human"))
     best = max(MODEL_GRADES.items(), key=lambda kv: kv[1]["score"])
     per_image = []
@@ -159,7 +173,11 @@ def summary():
             "humans": {"score": stat(hg, "score"), "recall": stat(hg, "recall"), "false_alarm": stat(hg, "false_alarm")},
             "models": {"score": stat(mg, "score"), "recall": stat(mg, "recall"), "false_alarm": stat(mg, "false_alarm")},
             "best_model": {"name": best[0], **{k: best[1][k] for k in ("score", "recall", "false_alarm")}},
-            "per_image": per_image, "leaderboard": board}
+            "per_image": per_image, "leaderboard": board,
+            "world": {"id": WORLD, "title": WORLD_INFO["title"], "hazard": PLAIN[WORLD_INFO["hazard_id"]], "image": WORLD_ITEM["image"],
+                      "human_rate": avg([bool(h.get("world_found")) for h in humans]), "n_humans": len(humans),
+                      "model_rate": avg(list(WORLD_MODELS.values())), "n_models": len(WORLD_MODELS),
+                      "models": WORLD_MODELS}}
 
 
 def lan_url():
@@ -172,6 +190,7 @@ def lan_url():
 
 app = FastAPI()
 app.mount("/renders", StaticFiles(directory=ROOT / "site" / "renders"), name="renders")
+app.mount("/site", StaticFiles(directory=ROOT / "site", html=True), name="site")
 app.mount("/static", StaticFiles(directory=STATIC), name="static")
 
 
@@ -183,32 +202,95 @@ def index():
 @app.get("/api/quiz")
 def quiz():
     # answers are revealed only on the results screen, but this is a party game -- fine to ship them.
-    return {"items": ITEMS, "seconds": 20, "models": len(MODELS)}
+    return {"items": ALL_ITEMS, "seconds": 20, "models": len(MODELS)}
+
+
+BLOCK = re.compile(r"(fuck|shit|cunt|bitch|nigg|fag|dick|cock|pussy|porn|sex|rape|nazi|hitler|whore|slut|asshole|retard|kike|chink|spic|penis|vagina|boob|tits|cum\b|anal\b|trump|biden|obama|musk|putin)", re.I)
+NAME_OK = {}  # normalized name -> bool (LLM safety cache)
+RESERVED = {}  # normalized name -> ts (claimed at start, before the quiz is submitted)
+
+
+def name_key(n):
+    return re.sub(r"[\s_.\-]+", "", n.lower())
+
+
+def clean_name(n):
+    return re.sub(r"\s+", " ", str(n or "").strip())[:24]
+
+
+def name_taken(n):
+    k = name_key(n)
+    used = {name_key(h["name"]) for h in load_humans()} | {name_key(m) for m in MODELS}
+    return k in used or (k in RESERVED and time.time() - RESERVED[k] < 900)
+
+
+def name_safe(n):
+    """Fast local blocklist, then Haiku classifier (cached). Fails open to the blocklist if Bedrock errors."""
+    global _br
+    if BLOCK.search(re.sub(r"[^a-z]", "", n.lower().replace("0", "o").replace("1", "i").replace("3", "e").replace("4", "a").replace("5", "s").replace("@", "a").replace("$", "s"))) or BLOCK.search(n):
+        return False
+    k = name_key(n)
+    if k in NAME_OK:
+        return NAME_OK[k]
+    prompt = ("You moderate display names for a public leaderboard projected at a professional healthcare event. "
+              "Reject (ok=false) if the name contains or hints at: profanity (incl. leetspeak/misspellings), slurs or hate, sexual/NSFW content, "
+              "harassment or insults aimed at anyone, drugs/violence jokes, or impersonation of a real public figure / celebrity / politician "
+              "(e.g. 'Elon', 'Taylor Swift', 'Obama'). Ordinary first names and harmless nicknames are ok. When unsure, reject.\n\n"
+              f"Name: \"\"\"{n}\"\"\"\n\nReply with JSON only: {{\"ok\": true|false}}")
+    try:
+        if _br is None:
+            _br = boto3.client("bedrock-runtime", region_name=os.getenv("AWS_REGION", "us-east-1"))
+        r = _br.converse(modelId=GRADER, messages=[{"role": "user", "content": [{"text": prompt}]}], inferenceConfig={"maxTokens": 30})
+        ok = bool(json.loads(re.search(r"\{.*\}", r["output"]["message"]["content"][0]["text"], re.S).group(0)).get("ok"))
+    except Exception:
+        return True
+    NAME_OK[k] = ok
+    return ok
+
+
+@app.post("/api/name")
+async def check_name(req: Request):
+    n = clean_name((await req.json()).get("name"))
+    if len(name_key(n)) < 2:
+        return {"ok": False, "msg": "Please enter your first name"}
+    if name_taken(n):
+        return {"ok": False, "msg": "Taken, try another"}
+    if not name_safe(n):
+        return {"ok": False, "msg": "Please pick a different name"}
+    RESERVED[name_key(n)] = time.time()
+    return {"ok": True, "name": n}
 
 
 @app.post("/api/submit")
 async def submit(req: Request):
     body = await req.json()
-    name = re.sub(r"\s+", " ", str(body.get("name", "")).strip())[:24]
-    if not name:
-        raise HTTPException(400, "name required")
+    name = clean_name(body.get("name"))
+    k = name_key(name)
+    if not k or k in {name_key(h["name"]) for h in load_humans()} | {name_key(m) for m in MODELS}:
+        raise HTTPException(409, "Taken, try another")
+    if k not in RESERVED and not name_safe(name):
+        raise HTTPException(400, "Please pick a different name")
     ans = body.get("answers", {}) or {}
-    answers = {sid: {"text": str((ans.get(sid) or {}).get("text", ""))[:600], "safe": bool((ans.get(sid) or {}).get("safe"))} for sid in QUIZ}
-    with ThreadPoolExecutor(10) as ex:
-        graded = dict(zip(QUIZ, ex.map(lambda sid: {"ids": [], "why": "Tapped looks safe."} if answers[sid]["safe"] and not norm(answers[sid]["text"])
-                                       else grade_text(sid, answers[sid]["text"]), QUIZ)))
+    ids = QUIZ + [WORLD]
+    answers = {sid: {"text": str((ans.get(sid) or {}).get("text", ""))[:600], "safe": bool((ans.get(sid) or {}).get("safe"))} for sid in ids}
+    with ThreadPoolExecutor(8) as ex:
+        graded = dict(zip(ids, ex.map(lambda sid: {"ids": [], "why": "Tapped looks safe."} if answers[sid]["safe"] and not norm(answers[sid]["text"])
+                                      else grade_text(sid, answers[sid]["text"]), ids)))
     picks = {sid: graded[sid]["ids"] for sid in QUIZ}
-    row = {"id": f"{int(time.time()*1000)}", "name": name, "ts": time.strftime("%Y-%m-%dT%H:%M:%S"),
-           "answers": answers, "graded": graded, "picks": picks, "timeouts": body.get("timeouts", []), "ua": req.headers.get("user-agent", "")[:120]}
-    with RESP.open("a") as f:
+    world_found = WORLD_INFO["hazard_id"] in graded[WORLD]["ids"]
+    row = {"v": VERSION, "id": f"{int(time.time()*1000)}", "name": name, "ts": time.strftime("%Y-%m-%dT%H:%M:%S"),
+           "answers": answers, "graded": graded, "picks": picks, "world_found": world_found, "timeouts": body.get("timeouts", []), "ua": req.headers.get("user-agent", "")[:120]}
+    with LOCK, RESP.open("a") as f:
         f.write(json.dumps(row) + "\n")
+    RESERVED.pop(k, None)
     g = grade(picks); s = summary()
     rank = next(i + 1 for i, r in enumerate(s["leaderboard"]) if r.get("id") == row["id"])
     models_beaten = sum(1 for m in MODEL_GRADES.values() if g["score"] > m["score"])
     labels = {k: PLAIN.get(k, v["name"]) for k, v in TAX.items()}
     return {"id": row["id"], "grade": g, "answers": answers, "graded": graded, "labels": labels,
-            "known_absent": {sid: sorted(scene_spec(sid)[2]) for sid in QUIZ}, "rank": rank, "of": len(s["leaderboard"]), "models_beaten": models_beaten,
-            "summary": s, "items": ITEMS, "model_grades": {m: {k: v[k] for k in ("score", "recall", "false_alarm")} for m, v in MODEL_GRADES.items()}}
+            "world_found": world_found,
+            "known_absent": {**{sid: sorted(scene_spec(sid)[2]) for sid in QUIZ}, WORLD: []}, "rank": rank, "of": len(s["leaderboard"]), "models_beaten": models_beaten,
+            "summary": s, "items": ALL_ITEMS, "model_grades": {m: {k: v[k] for k in ("score", "recall", "false_alarm")} for m, v in MODEL_GRADES.items()}}
 
 
 @app.get("/api/results")

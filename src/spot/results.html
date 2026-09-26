@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Spot the hazard — results</title>
+<title>Spot the hazard: results</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/static/spot.css">
@@ -30,26 +30,32 @@ table.pi{width:100%;border-collapse:collapse;margin-top:6px}
 .b b{font-family:var(--mono);font-weight:500;font-size:16px;color:var(--ink);text-align:right}
 tr.story td{background:var(--gold-soft)}
 tr.story .lab::after{content:"models 1 of 14";font:600 11px var(--mono);text-transform:uppercase;letter-spacing:.08em;background:var(--gold);color:var(--ink);padding:2px 6px;border-radius:3px;margin-left:8px}
+.w3{display:grid;grid-template-columns:150px 1fr;gap:18px;align-items:center;margin-top:22px;padding:14px;border:1px solid var(--lime-active);background:var(--lime-soft);border-radius:10px}
+.w3 img{width:150px;height:112px;object-fit:cover;border-radius:6px;display:block}
+.w3t{font-size:20px;color:var(--ink);font-weight:500;margin:4px 0}
+.w3n{font-size:18px;color:var(--text-muted)}.w3n b{font:500 44px var(--mono);color:var(--ink);letter-spacing:-.03em;margin:0 4px}.w3n b#w-h{color:var(--green-ink)}
 .qr{text-align:center}.qr img{width:100%;max-width:280px;display:block;margin:6px auto}
 .qr .u{font:500 18px var(--mono);color:var(--ink);word-break:break-all}
 table.lb{font-size:16px}
 .side h3:first-child{margin-top:0;border-top:0;padding-top:0}
-@media (max-width:900px){.R{padding:10px}.R .top{flex-wrap:wrap;gap:4px}.panel{padding:14px}.grid{grid-template-columns:1fr}.heads b{font-size:40px}.heads span{font-size:14px}.heads small{display:none}h1{font-size:30px}.lead{font-size:14px}.pi td.th{display:none}.pi td{font-size:14px}.pi td.bars{width:52%}.b{grid-template-columns:52px 1fr 42px}.b b{font-size:13px}tr.story .lab::after{display:inline-block;margin:4px 0 0}}
+@media (max-width:900px){.R{padding:10px}.R .top{flex-wrap:wrap;gap:4px}.panel{padding:14px}.grid{grid-template-columns:1fr}.heads b{font-size:40px}.heads span{font-size:14px}.heads small{display:none}h1{font-size:30px}.lead{font-size:14px}.pi td.th{display:none}.w3{grid-template-columns:1fr}.w3 img{width:100%;height:140px}.pi td{font-size:14px}.pi td.bars{width:52%}.b{grid-template-columns:52px 1fr 42px}.b b{font-size:13px}tr.story .lab::after{display:inline-block;margin:4px 0 0}}
 </style>
 </head><body>
 <div class="R">
   <header class="top"><span class="logo">Health<b>Dojo</b></span><span class="eyebrow">Spot the hazard · humans vs models · live</span></header>
   <div class="grid">
     <section class="panel">
-      <div class="eyebrow">Same 10 images · 20 s each · <span id="n">0</span> humans vs 14 models</div>
+      <div class="eyebrow">4 photos · 20 s each + 1 walkable 3D room · <span id="n">0</span> humans vs 14 models</div>
       <h1>Humans vs models</h1>
-      <p class="lead">Score = average of hazards caught and (1 &minus; false-alarm rate) &mdash; the HomeBench metric. <b>Humans answered free-text with no checklist; models were given the 35-item checklist.</b></p>
+      <p class="lead">Score = average of hazards caught and (1 &minus; false-alarm rate). This is the HomeBench metric. <b>Humans answered free-text with no checklist; models were given the 35-item checklist.</b></p>
       <div class="heads">
-        <div class="hu"><b id="hs">—</b><span>Humans, average</span><small id="hs2"></small></div>
-        <div><b id="bs">—</b><span>Best model</span><small id="bs2"></small></div>
-        <div><b id="ms">—</b><span>Model average</span><small id="ms2"></small></div>
+        <div class="hu"><b id="hs">-</b><span>Humans, average (4 photos)</span><small id="hs2"></small></div>
+        <div><b id="bs">-</b><span>Best model (4 photos)</span><small id="bs2"></small></div>
+        <div><b id="ms">-</b><span>Model average (4 photos)</span><small id="ms2"></small></div>
       </div>
-      <h3>Per image &mdash; share who spotted the seeded hazard (clean rooms: share with no false alarm)</h3>
+      <div class="w3"><img id="w-img"><div><div class="eyebrow">Found it in 3D &middot; walk-around</div><div class="w3t" id="w-t"></div>
+        <div class="w3n">Humans <b id="w-h">-</b> <span>vs</span> models <b id="w-m">-</b></div><div class="sub" id="w-s"></div></div></div>
+      <h3>Per image: share who spotted the seeded hazard (clean rooms: share with no false alarm)</h3>
       <table class="pi" id="per"></table>
     </section>
     <aside class="side">
@@ -59,7 +65,7 @@ table.lb{font-size:16px}
   </div>
 </div>
 <script>
-const $ = s => document.querySelector(s), pct = x => x == null ? "—" : Math.round(x * 100) + "%";
+const $ = s => document.querySelector(s), pct = x => x == null ? "-" : Math.round(x * 100) + "%";
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 fetch("/api/url").then(r => r.json()).then(d => $("#url").textContent = d.url);
 const sub = g => g.recall == null ? "" : `caught ${pct(g.recall)} · false alarms ${pct(g.false_alarm)}`;
@@ -74,7 +80,10 @@ async function load() {
   $("#per").innerHTML = per.map(p => `<tr class="${p.id.includes("BATH-03") ? "story" : ""}"><td class="th"><img src="${p.image}"></td>
     <td class="lab">${p.clean ? "Clean room (no seeded hazard)" : esc(p.answer[0])}<small>${p.room} · ${p.clean ? "false-alarm check" : p.type}</small></td>
     <td class="bars">${bar("Humans", p.human_rate, "var(--green)")}${bar("Models", p.model_rate, "var(--text-faint)")}</td></tr>`).join("");
-  $("#lb").innerHTML = s.leaderboard.slice(0, 20).map((b, i) => `<tr class="${b.kind === "human" ? "h" : ""}"><td class="n">${i + 1}</td><td>${esc(b.name)}<span class="tag ${b.kind[0]}">${b.kind}</span></td><td class="r">${pct(b.score)}</td></tr>`).join("");
+  $("#lb").innerHTML = `<tr class="hd"><td></td><td>Name</td><td class="r">3D</td><td class="r">Photos</td></tr>` + s.leaderboard.slice(0, 22).map((b, i) => `<tr class="${b.kind === "human" ? "h" : ""}"><td class="n">${i + 1}</td><td>${esc(b.name)}<span class="tag ${b.kind[0]}">${b.kind}</span></td><td class="r">${b.world == null ? "–" : b.world ? "✓" : "✗"}</td><td class="r">${pct(b.score)}</td></tr>`).join("");
+  const w = s.world; $("#w-img").src = w.image; $("#w-t").textContent = `${w.title}. Hazard: ${w.hazard.toLowerCase()}`;
+  $("#w-h").textContent = pct(w.human_rate); $("#w-m").textContent = pct(w.model_rate);
+  $("#w-s").textContent = `${w.n_humans} humans (30 s, typed free text) · ${w.n_models} models walked it (8-step walkthrough) · ` + Object.entries(w.models).map(([m, f]) => `${m} ${f ? "✓" : "✗"}`).join(" · ");
 }
 load(); setInterval(load, 5000);
 </script>
