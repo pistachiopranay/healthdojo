@@ -1,0 +1,40 @@
+{
+  "world_id": "8bda35af-9227-45af-b06f-8144422cb501",
+  "display_name": "",
+  "tags": null,
+  "assets": {
+    "mesh": {
+      "collider_mesh_url": "https://cdn.marble.worldlabs.ai/8bda35af-9227-45af-b06f-8144422cb501/d8cdf59a.glb",
+      "hq_mesh_url": null,
+      "full_res_mesh_url": null
+    },
+    "imagery": {
+      "pano_url": "https://cdn.marble.worldlabs.ai/8bda35af-9227-45af-b06f-8144422cb501/da312210-d2d6-45a7-a020-5a3c2d37a511_panos/rgb_0.png"
+    },
+    "splats": {
+      "spz_urls": {
+        "500k": "https://cdn.marble.worldlabs.ai/8bda35af-9227-45af-b06f-8144422cb501/95c59aa5-69ec-4631-88b8-fcf0f02e2291_ceramic_500k.spz",
+        "100k": "https://cdn.marble.worldlabs.ai/8bda35af-9227-45af-b06f-8144422cb501/4f80add9-bfcb-4f77-afdf-c670fc8c3f96_dust_100k.spz",
+        "150k": "https://cdn.marble.worldlabs.ai/8bda35af-9227-45af-b06f-8144422cb501/ffcd7624-a933-4df9-a277-e57301229060_ceramic_150k.spz",
+        "full_res": "https://cdn.marble.worldlabs.ai/8bda35af-9227-45af-b06f-8144422cb501/4a3b325a-871d-41a4-9c3e-e26ecbb0371e_ceramic.spz"
+      },
+      "semantics_metadata": {
+        "metric_scale_factor": 1.0930107,
+        "ground_plane_offset": 1.4584482
+      }
+    },
+    "thumbnail_url": "https://cdn.marble.worldlabs.ai/8bda35af-9227-45af-b06f-8144422cb501/1f8c615c-5a6d-4eda-9087-b2a91d3a2f9d_sand_mpi/thumbnail.webp",
+    "caption": "The scene is a functional, older adult-friendly bathroom captured in a realistic style, conveying a sense of practicality and routine. The overall tone is unpretentious and lived-in, reflecting daily use and accessibility considerations. The bathroom continues to the left, revealing a simple wooden vanity with a single sink and a mirror above it, providing space for personal care items. To the right of the existing toilet, the beige tiled floor extends, leading to a closed wooden door that serves as the entrance to the bathroom. The walls throughout the room are painted a light, neutral color, maintaining a consistent aesthetic with the visible areas. The ceiling is plain and white, featuring a single, functional light fixture providing general illumination to the entire space. The shower-tub combination, equipped with grab bars and a shower chair, maintains its central role as a key feature of the bathroom, with a loose crumpled bath mat draped over its edge. The toilet with its safety frame is situated adjacent to the tub, facing the vanity. The 360 scene is faultless."
+  },
+  "created_at": null,
+  "updated_at": null,
+  "permission": {
+    "public": false,
+    "allowed_readers": [],
+    "allowed_writers": [],
+    "allow_id_access": false
+  },
+  "world_prompt": null,
+  "world_marble_url": "https://marble.worldlabs.ai/world/8bda35af-9227-45af-b06f-8144422cb501",
+  "model": null
+}

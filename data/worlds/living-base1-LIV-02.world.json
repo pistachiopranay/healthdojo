@@ -1,0 +1,40 @@
+{
+  "world_id": "1cd06510-b4d5-43f8-bbc3-f74308baa65f",
+  "display_name": "",
+  "tags": null,
+  "assets": {
+    "mesh": {
+      "collider_mesh_url": "https://cdn.marble.worldlabs.ai/1cd06510-b4d5-43f8-bbc3-f74308baa65f/cb9f2fc8.glb",
+      "hq_mesh_url": null,
+      "full_res_mesh_url": null
+    },
+    "imagery": {
+      "pano_url": "https://cdn.marble.worldlabs.ai/1cd06510-b4d5-43f8-bbc3-f74308baa65f/88aca800-13ee-4649-8a5c-caa4c37a57c7_panos/rgb_0.png"
+    },
+    "splats": {
+      "spz_urls": {
+        "500k": "https://cdn.marble.worldlabs.ai/1cd06510-b4d5-43f8-bbc3-f74308baa65f/4a7a105c-6cae-4ca4-891e-8a815d02585c_ceramic_500k.spz",
+        "100k": "https://cdn.marble.worldlabs.ai/1cd06510-b4d5-43f8-bbc3-f74308baa65f/5dc8bad7-2c8b-4d8c-9c89-fcb542efdb7e_dust_100k.spz",
+        "150k": "https://cdn.marble.worldlabs.ai/1cd06510-b4d5-43f8-bbc3-f74308baa65f/10b97dd1-f7de-4fb6-b766-1f83df8e40ad_ceramic_150k.spz",
+        "full_res": "https://cdn.marble.worldlabs.ai/1cd06510-b4d5-43f8-bbc3-f74308baa65f/1153c0e6-72f5-4141-80eb-a31c2b04d9fd_ceramic.spz"
+      },
+      "semantics_metadata": {
+        "metric_scale_factor": 2.316228,
+        "ground_plane_offset": 1.3788481
+      }
+    },
+    "thumbnail_url": "https://cdn.marble.worldlabs.ai/1cd06510-b4d5-43f8-bbc3-f74308baa65f/2a1392c0-a199-4f38-b310-3ab79e7aacf0_sand_mpi/thumbnail.webp",
+    "caption": "The scene is a bright, realistic depiction of an older adult's living room, conveying a comfortable and functional atmosphere. The overall tone is inviting and well-maintained, suggesting a cherished domestic space. The room features expansive hardwood floors with a warm, natural finish, extending uniformly across the entire space. Two recliners are strategically placed for comfort, one upholstered in a dark blue fabric and the other in a lighter beige, both offering plush seating. A sturdy sofa, also in a neutral tone, complements the recliners, providing additional seating. A television is prominently displayed on a wooden TV stand, which includes storage compartments beneath the screen. A long, black power cord stretches across the open walkway in the middle of the floor, connecting to a wall outlet and indicating the practical utility of the room's electronics. End tables, crafted from wood, are situated beside the recliners and sofa, providing convenient surfaces for lamps or personal items. A large window allows ample natural light to fill the room, highlighting the wooden frames and sheer curtains. Artwork adorns the walls, adding a touch of personal style and visual interest to the space. The 360 scene is faultless."
+  },
+  "created_at": null,
+  "updated_at": null,
+  "permission": {
+    "public": false,
+    "allowed_readers": [],
+    "allowed_writers": [],
+    "allow_id_access": false
+  },
+  "world_prompt": null,
+  "world_marble_url": "https://marble.worldlabs.ai/world/1cd06510-b4d5-43f8-bbc3-f74308baa65f",
+  "model": null
+}

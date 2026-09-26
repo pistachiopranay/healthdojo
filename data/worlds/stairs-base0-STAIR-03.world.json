@@ -1,0 +1,40 @@
+{
+  "world_id": "aff34417-db29-4e59-bfe6-2d7d8e654895",
+  "display_name": "",
+  "tags": null,
+  "assets": {
+    "mesh": {
+      "collider_mesh_url": "https://cdn.marble.worldlabs.ai/aff34417-db29-4e59-bfe6-2d7d8e654895/92beac8a.glb",
+      "hq_mesh_url": null,
+      "full_res_mesh_url": null
+    },
+    "imagery": {
+      "pano_url": "https://cdn.marble.worldlabs.ai/aff34417-db29-4e59-bfe6-2d7d8e654895/e176c361-ade5-46b9-a044-133331448f85_panos/rgb_0.png"
+    },
+    "splats": {
+      "spz_urls": {
+        "500k": "https://cdn.marble.worldlabs.ai/aff34417-db29-4e59-bfe6-2d7d8e654895/b6ab7654-7bb2-44f1-8410-b4f538557cc7_ceramic_500k.spz",
+        "100k": "https://cdn.marble.worldlabs.ai/aff34417-db29-4e59-bfe6-2d7d8e654895/3235a73b-da1b-4305-997e-077cdaf0be92_dust_100k.spz",
+        "150k": "https://cdn.marble.worldlabs.ai/aff34417-db29-4e59-bfe6-2d7d8e654895/c919b529-6085-4cf4-a7d0-5f115ce26a1b_ceramic_150k.spz",
+        "full_res": "https://cdn.marble.worldlabs.ai/aff34417-db29-4e59-bfe6-2d7d8e654895/4593f206-46c0-467a-969d-90b850f3f5b6_ceramic.spz"
+      },
+      "semantics_metadata": {
+        "metric_scale_factor": 1.6294885,
+        "ground_plane_offset": 1.4024804
+      }
+    },
+    "thumbnail_url": "https://cdn.marble.worldlabs.ai/aff34417-db29-4e59-bfe6-2d7d8e654895/4ae5295c-e2be-4ed4-a6fa-0e166e7f52bf_sand_mpi/thumbnail.webp",
+    "caption": "The scene is a realistic depiction of a lived-in American home interior, conveying a comfortable and familiar atmosphere. The overall tone is one of domesticity and everyday life, suggesting a well-used and cared-for residence. A straight wooden staircase ascends from the lower level, featuring white risers and polished wooden treads, with sturdy wooden handrails running along both sides. On the third tread from the bottom, a pair of white sneakers with white laces rests, their worn appearance hinting at frequent use. Above the sneakers, on the fifth tread, a dark green sweater is casually draped. Further up, on the seventh tread, a small stack of books with varied covers is neatly placed, and on the ninth tread, a white plastic laundry basket overflows with colorful clothes. To the left of the staircase, a cozy living room extends, characterized by a plush brown sofa with a patterned throw blanket, a lamp with a shaded base, and a dark wooden china cabinet with glass doors showcasing various items. To the right of the staircase, a functional kitchen is visible through an open doorway, revealing warm wooden cabinetry, a white refrigerator, a black coffee maker, and a dining table with wooden chairs. The walls throughout the space are painted in a light, neutral color, complementing the natural wood tones of the staircase and furniture. The floor in the kitchen area features a mottled pattern, distinct from the wooden treads of the stairs. The 360 scene is faultless."
+  },
+  "created_at": null,
+  "updated_at": null,
+  "permission": {
+    "public": false,
+    "allowed_readers": [],
+    "allowed_writers": [],
+    "allow_id_access": false
+  },
+  "world_prompt": null,
+  "world_marble_url": "https://marble.worldlabs.ai/world/aff34417-db29-4e59-bfe6-2d7d8e654895",
+  "model": null
+}

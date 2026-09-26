@@ -1,0 +1,118 @@
+{
+  "stairs-base0-STAIR-03": {
+    "scene_id": "stairs-base0-STAIR-03",
+    "title": "Cluttered staircase",
+    "hazard": "Objects on stairs: laundry basket, sweater, books and shoes left on the treads",
+    "text_prompt": "Interior of a modest lived-in American home: a straight wooden staircase with handrails on both sides, a laundry basket, a sweater, a stack of books and sneakers left on the stair treads; living room to the left, kitchen to the right.",
+    "operation_id": "040098a1-562b-46c0-b51c-e86981fda94e",
+    "started_at": 1790447381.706696,
+    "model": "marble-1.1",
+    "status": "done",
+    "world_id": "aff34417-db29-4e59-bfe6-2d7d8e654895",
+    "viewer_url": "https://marble.worldlabs.ai/world/aff34417-db29-4e59-bfe6-2d7d8e654895",
+    "caption": "The scene is a realistic depiction of a lived-in American home interior, conveying a comfortable and familiar atmosphere. The overall tone is one of domesticity and everyday life, suggesting a well-used and cared-for residence. A straight wooden staircase ascends from the lower level, featuring white risers and polished wooden treads, with sturdy wooden handrails running along both sides. On the third tread from the bottom, a pair of white sneakers with white laces rests, their worn appearance hinting at frequent use. Above the sneakers, on the fifth tread, a dark green sweater is casually draped. Further up, on the seventh tread, a small stack of books with varied covers is neatly placed, and on the ninth tread, a white plastic laundry basket overflows with colorful clothes. To the left of the staircase, a cozy living room extends, characterized by a plush brown sofa with a patterned throw blanket, a lamp with a shaded base, and a dark wooden china cabinet with glass doors showcasing various items. To the right of the staircase, a functional kitchen is visible through an open doorway, revealing warm wooden cabinetry, a white refrigerator, a black coffee maker, and a dining table with wooden chairs. The walls throughout the space are painted in a light, neutral color, complementing the natural wood tones of the staircase and furniture. The floor in the kitchen area features a mottled pattern, distinct from the wooden treads of the stairs. The 360 scene is faultless.",
+    "elapsed_s": 311,
+    "cost": {
+      "total_credits": 1580,
+      "line_items": [
+        {
+          "name": "Pano generation (image, non-pano)",
+          "credits": 80
+        },
+        {
+          "name": "World generation",
+          "credits": 1500
+        }
+      ]
+    },
+    "thumbnail": "data/worlds/stairs-base0-STAIR-03.thumb.jpg",
+    "pano": "data/worlds/stairs-base0-STAIR-03.pano.png"
+  },
+  "bathroom-base0-BATH-07": {
+    "scene_id": "bathroom-base0-BATH-07",
+    "title": "Bathroom with loose bath mat",
+    "hazard": "Loose bath mat draped over the tub edge onto a hard tile floor",
+    "text_prompt": "Small lived-in bathroom of an older adult: tub-shower with grab bars and a shower chair, toilet safety frame, a loose crumpled bath mat hanging over the tub edge onto the beige tile floor.",
+    "operation_id": "8e8bd222-1723-46da-b128-4795ff4d3571",
+    "started_at": 1790447390.449929,
+    "model": "marble-1.1",
+    "status": "done",
+    "world_id": "8bda35af-9227-45af-b06f-8144422cb501",
+    "viewer_url": "https://marble.worldlabs.ai/world/8bda35af-9227-45af-b06f-8144422cb501",
+    "caption": "The scene is a functional, older adult-friendly bathroom captured in a realistic style, conveying a sense of practicality and routine. The overall tone is unpretentious and lived-in, reflecting daily use and accessibility considerations. The bathroom continues to the left, revealing a simple wooden vanity with a single sink and a mirror above it, providing space for personal care items. To the right of the existing toilet, the beige tiled floor extends, leading to a closed wooden door that serves as the entrance to the bathroom. The walls throughout the room are painted a light, neutral color, maintaining a consistent aesthetic with the visible areas. The ceiling is plain and white, featuring a single, functional light fixture providing general illumination to the entire space. The shower-tub combination, equipped with grab bars and a shower chair, maintains its central role as a key feature of the bathroom, with a loose crumpled bath mat draped over its edge. The toilet with its safety frame is situated adjacent to the tub, facing the vanity. The 360 scene is faultless.",
+    "elapsed_s": 323,
+    "cost": {
+      "total_credits": 1580,
+      "line_items": [
+        {
+          "name": "Pano generation (image, non-pano)",
+          "credits": 80
+        },
+        {
+          "name": "World generation",
+          "credits": 1500
+        }
+      ]
+    },
+    "thumbnail": "data/worlds/bathroom-base0-BATH-07.thumb.jpg",
+    "pano": "data/worlds/bathroom-base0-BATH-07.pano.png"
+  },
+  "living-base1-LIV-02": {
+    "scene_id": "living-base1-LIV-02",
+    "title": "Living room with cord across the walkway",
+    "hazard": "Extension cord snaking across the main walking path",
+    "text_prompt": "Bright living room of an older adult with hardwood floors, two recliners, a sofa, a TV stand, and a long black power cord running from the wall outlet across the open walkway in the middle of the floor.",
+    "operation_id": "66a926e8-d183-4d36-b325-5a181e6b700f",
+    "started_at": 1790447407.9367208,
+    "model": "marble-1.1",
+    "status": "done",
+    "world_id": "1cd06510-b4d5-43f8-bbc3-f74308baa65f",
+    "viewer_url": "https://marble.worldlabs.ai/world/1cd06510-b4d5-43f8-bbc3-f74308baa65f",
+    "caption": "The scene is a bright, realistic depiction of an older adult's living room, conveying a comfortable and functional atmosphere. The overall tone is inviting and well-maintained, suggesting a cherished domestic space. The room features expansive hardwood floors with a warm, natural finish, extending uniformly across the entire space. Two recliners are strategically placed for comfort, one upholstered in a dark blue fabric and the other in a lighter beige, both offering plush seating. A sturdy sofa, also in a neutral tone, complements the recliners, providing additional seating. A television is prominently displayed on a wooden TV stand, which includes storage compartments beneath the screen. A long, black power cord stretches across the open walkway in the middle of the floor, connecting to a wall outlet and indicating the practical utility of the room's electronics. End tables, crafted from wood, are situated beside the recliners and sofa, providing convenient surfaces for lamps or personal items. A large window allows ample natural light to fill the room, highlighting the wooden frames and sheer curtains. Artwork adorns the walls, adding a touch of personal style and visual interest to the space. The 360 scene is faultless.",
+    "elapsed_s": 326,
+    "cost": {
+      "total_credits": 1580,
+      "line_items": [
+        {
+          "name": "Pano generation (image, non-pano)",
+          "credits": 80
+        },
+        {
+          "name": "World generation",
+          "credits": 1500
+        }
+      ]
+    },
+    "thumbnail": "data/worlds/living-base1-LIV-02.thumb.jpg",
+    "pano": "data/worlds/living-base1-LIV-02.pano.png"
+  },
+  "bedroom-base1-BED-04": {
+    "scene_id": "bedroom-base1-BED-04",
+    "title": "Bedroom with floor clutter",
+    "hazard": "Clothes, bag, shoes and an open box piled on the floor on the path from bed to door",
+    "text_prompt": "Carpeted bedroom of an older adult: queen bed, wooden nightstand with lamp, dresser, doorway to a hallway; clothes, blankets, a leather handbag, sneakers and an open cardboard box scattered on the floor beside the bed, blocking the path to the door.",
+    "operation_id": "f8c5d678-aa42-424a-9208-20f582aa81b1",
+    "started_at": 1790447834.823018,
+    "model": "marble-1.1",
+    "status": "done",
+    "world_id": "46adfe5f-1a57-48c9-8656-0a56c8a33008",
+    "viewer_url": "https://marble.worldlabs.ai/world/46adfe5f-1a57-48c9-8656-0a56c8a33008",
+    "caption": "The scene is a cozy and realistically rendered bedroom, conveying a lived-in and somewhat disheveled atmosphere. The overall tone suggests a moment of transition or preparation, with items casually placed throughout the space. The bedroom is dominated by a queen-sized bed, featuring a light-colored quilted comforter and soft blue pillows, positioned centrally against a light-colored wall. A wooden nightstand with two drawers stands beside the bed, supporting a warm glowing lamp and a small, clear bottle. On the opposite side of the bed, a solid wooden chest with a cushioned top serves as a bench, nestled beneath a window adorned with green valances and white blinds. A corner hutch, crafted from light wood, is positioned near the bed, displaying decorative items and adding a touch of rustic charm. A dresser, also made of wood, sits to the left of the bed, with a delicate white doily and a blue spherical object resting on its surface. Numerous items are scattered across the carpeted floor next to the bed: various articles of clothing, blankets, a brown leather handbag, a pair of gray sneakers, and an open cardboard box containing more clothes, collectively creating an obstacle to the doorway. The doorway, positioned to the right of the bed, opens into a hallway with a darker carpet, leading to another room that is partially visible, showing another window. The 360 scene is faultless.",
+    "elapsed_s": 324,
+    "cost": {
+      "total_credits": 1580,
+      "line_items": [
+        {
+          "name": "Pano generation (image, non-pano)",
+          "credits": 80
+        },
+        {
+          "name": "World generation",
+          "credits": 1500
+        }
+      ]
+    },
+    "thumbnail": "data/worlds/bedroom-base1-BED-04.thumb.jpg",
+    "pano": "data/worlds/bedroom-base1-BED-04.pano.png"
+  }
+}

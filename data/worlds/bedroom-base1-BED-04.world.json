@@ -1,0 +1,40 @@
+{
+  "world_id": "46adfe5f-1a57-48c9-8656-0a56c8a33008",
+  "display_name": "",
+  "tags": null,
+  "assets": {
+    "mesh": {
+      "collider_mesh_url": "https://cdn.marble.worldlabs.ai/46adfe5f-1a57-48c9-8656-0a56c8a33008/70cc79e0.glb",
+      "hq_mesh_url": null,
+      "full_res_mesh_url": null
+    },
+    "imagery": {
+      "pano_url": "https://cdn.marble.worldlabs.ai/46adfe5f-1a57-48c9-8656-0a56c8a33008/38d3d75c-3e2b-4c12-bf39-916bc478a554_panos/rgb_0.png"
+    },
+    "splats": {
+      "spz_urls": {
+        "500k": "https://cdn.marble.worldlabs.ai/46adfe5f-1a57-48c9-8656-0a56c8a33008/29f68fb2-c274-46f2-af25-8f1056cd43e4_ceramic_500k.spz",
+        "100k": "https://cdn.marble.worldlabs.ai/46adfe5f-1a57-48c9-8656-0a56c8a33008/1386b2f1-313a-419b-a165-54f00320cd27_dust_100k.spz",
+        "150k": "https://cdn.marble.worldlabs.ai/46adfe5f-1a57-48c9-8656-0a56c8a33008/2820583f-383e-4f5f-8a5a-c91e7010fcc4_ceramic_150k.spz",
+        "full_res": "https://cdn.marble.worldlabs.ai/46adfe5f-1a57-48c9-8656-0a56c8a33008/0d921418-3967-4826-907f-e9555fc78c0e_ceramic.spz"
+      },
+      "semantics_metadata": {
+        "metric_scale_factor": 0.62752926,
+        "ground_plane_offset": 1.4015954
+      }
+    },
+    "thumbnail_url": "https://cdn.marble.worldlabs.ai/46adfe5f-1a57-48c9-8656-0a56c8a33008/c2d3f2e4-1245-4b00-88be-8daee871f638_sand_mpi/thumbnail.webp",
+    "caption": "The scene is a cozy and realistically rendered bedroom, conveying a lived-in and somewhat disheveled atmosphere. The overall tone suggests a moment of transition or preparation, with items casually placed throughout the space. The bedroom is dominated by a queen-sized bed, featuring a light-colored quilted comforter and soft blue pillows, positioned centrally against a light-colored wall. A wooden nightstand with two drawers stands beside the bed, supporting a warm glowing lamp and a small, clear bottle. On the opposite side of the bed, a solid wooden chest with a cushioned top serves as a bench, nestled beneath a window adorned with green valances and white blinds. A corner hutch, crafted from light wood, is positioned near the bed, displaying decorative items and adding a touch of rustic charm. A dresser, also made of wood, sits to the left of the bed, with a delicate white doily and a blue spherical object resting on its surface. Numerous items are scattered across the carpeted floor next to the bed: various articles of clothing, blankets, a brown leather handbag, a pair of gray sneakers, and an open cardboard box containing more clothes, collectively creating an obstacle to the doorway. The doorway, positioned to the right of the bed, opens into a hallway with a darker carpet, leading to another room that is partially visible, showing another window. The 360 scene is faultless."
+  },
+  "created_at": null,
+  "updated_at": null,
+  "permission": {
+    "public": false,
+    "allowed_readers": [],
+    "allowed_writers": [],
+    "allow_id_access": false
+  },
+  "world_prompt": null,
+  "world_marble_url": "https://marble.worldlabs.ai/world/46adfe5f-1a57-48c9-8656-0a56c8a33008",
+  "model": null
+}
