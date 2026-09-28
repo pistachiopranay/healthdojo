@@ -63,6 +63,11 @@ const LINKS = [
 for (const f of ["world.html", "walk.html"]) {
   let html = fs.readFileSync(path.join(SITE, f), "utf8");
   for (const [re, to] of LINKS) html = html.replace(re, to);
+  if (f === "walk.html") {
+    // restyle to the v2 dark design system without touching markup or script
+    const dark = fs.readFileSync(path.join(WEB, "scripts", "legacy-dark.css"), "utf8");
+    html = html.replace("IBM+Plex+Mono:wght@400;500", "JetBrains+Mono:wght@400;500").replace("</style></head>", `${dark}</style></head>`);
+  }
   const dest = path.join(PUB, "explore", f);
   fs.mkdirSync(path.dirname(dest), { recursive: true });
   if (!fs.existsSync(dest) || fs.readFileSync(dest, "utf8") !== html) { fs.writeFileSync(dest, html); n++; }

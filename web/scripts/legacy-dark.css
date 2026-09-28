@@ -1,0 +1,48 @@
+/* v2 dark design system override for the legacy walk page (injected by copy-assets.mjs; behavior untouched) */
+:root{
+  --paper:#0a0a0b;--canvas:#0a0a0b;--card:#0f0f11;--ink:#ededee;--ink2:#a1a1aa;--mute:#8a8a93;--text-muted:#8a8a93;
+  --line:#ffffff14;--line2:#ffffff0d;--border:#ffffff14;--border-soft:#ffffff0d;
+  --teal:#d5fd51;--teal2:#d5fd5122;--coral:#f5b544;--ember-ink:#f5b544;--amber:#f5b544;--gt:#4ade80;--green-active:#d5fd51;
+  --lime-soft:#d5fd5122;--green-soft:#4ade801f;--green-ink:#0a0a0b;
+  --sans:"Inter",ui-sans-serif,system-ui,-apple-system,sans-serif;--serif:var(--sans);--mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+html,body{background:#0a0a0b;color:var(--ink);color-scheme:dark}
+::selection{background:#d5fd51;color:#0a0a0b}
+.bleed::before{display:none!important}
+.appwin,.card{background:var(--card)!important;border:1px solid var(--line)!important;box-shadow:none!important;border-radius:10px}
+.appwin .side{border-left:1px solid var(--line)!important}
+.pano{border-color:var(--line);background:#000}
+h1,h2{color:var(--ink);font-weight:600;letter-spacing:-.03em}
+h1 em{color:#d5fd51}
+.eyebrow{color:var(--mute);font-weight:500;letter-spacing:.08em}
+.chip{background:transparent;border:1px solid var(--line);color:var(--ink2)}
+.chip:hover{color:var(--ink);border-color:#ffffff24}
+.chip.on{background:#d5fd5122;color:var(--ink);border-color:#d5fd5166}
+.metric{border-bottom-color:var(--line)}
+.metric b{font-weight:500}
+.yes{color:#4ade80}.no{color:#f5b544}
+.frame{background:var(--card);border-color:var(--line)}
+.frame .n{background:#26262b;color:var(--ink)}
+.frame.hit{border:1px solid #4ade80}.frame.hit .n{background:#4ade80;color:#0a0a0b}
+.frame.miss{border:1px solid #f5b544}.frame.miss .n{background:#f5b544;color:#0a0a0b}
+.act{color:#d5fd51}.frame.miss .act{color:#f5b544}.frame.hit .act{color:#4ade80}
+.sawit{background:#f5b544;color:#0a0a0b}
+.lb th{color:var(--mute);border-bottom-color:var(--line)}
+.lb td{border-bottom-color:var(--line);color:var(--ink)}
+.lb td.l{font-weight:500}
+.lb tr:hover td{background:#ffffff05}
+.bar{background:#d5fd51;border:0}
+.matrix td.yes{color:#4ade80}.matrix td.no{color:#f5b544}
+.note{color:var(--mute)}
+/* nav: match the v2 site header */
+.hdnav{position:sticky;top:0;left:auto;right:auto;display:block;background:#0a0a0bcc;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.hdnav .pill{width:auto;max-width:1200px;margin:0 auto;height:60px;border-radius:0;background:transparent!important;border:0!important;box-shadow:none!important;backdrop-filter:none!important;padding:0 24px;gap:28px}
+.hdnav .hd-logo{color:var(--ink);font-size:16px;font-weight:600}
+.hdnav .hd-logo i{color:inherit}
+.hdnav .hd-logo .hd-mark{width:10px;height:10px;border-radius:2px;border:0;background:#d5fd51;box-shadow:0 0 14px #d5fd5188}
+.hdnav .hd-links{margin-left:0}
+.hdnav .hd-links a{color:var(--ink2);border-radius:7px;padding:7px 11px}
+.hdnav .hd-links a:hover,.hdnav .hd-links a.on{color:var(--ink);background:#ffffff0a}
+.hdnav .hd-cta{margin-left:auto;background:transparent;color:var(--ink2);border:1px solid var(--line);border-radius:8px;font-weight:500;padding:7px 12px}
+.hdnav .hd-cta:hover{background:#ffffff0a;color:var(--ink)}
+.hdnav-space{display:none}
