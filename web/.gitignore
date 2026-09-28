@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.astro/
+.wrangler/
+# copied from ../site and ../data by scripts/copy-assets.mjs
+public/renders/
+public/thumbs/
+public/videos/
+public/worlds/
+public/curriculum/
+public/data/
+public/explore/

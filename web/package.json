@@ -1,0 +1,17 @@
+{
+  "name": "healthdojo-web",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "assets": "node scripts/copy-assets.mjs",
+    "dev": "node scripts/copy-assets.mjs && astro dev",
+    "build": "node scripts/copy-assets.mjs && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.42.4",
+    "astro": "^7.3.5",
+    "starlight-theme-black": "^0.7.1"
+  }
+}

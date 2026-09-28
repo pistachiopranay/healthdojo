@@ -1,0 +1,6 @@
+{
+  // Preview-only worker for the v2 Astro site. No routes: this must not touch healthdojo.dev.
+  "name": "healthdojo-v2",
+  "compatibility_date": "2026-09-01",
+  "assets": { "directory": "./dist", "html_handling": "auto-trailing-slash" }
+}

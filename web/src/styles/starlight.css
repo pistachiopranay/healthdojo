@@ -1,0 +1,44 @@
+@import "./tokens.css";
+
+/* Unlayered, so these win over starlight-theme-black's @layer black. */
+:root, :root[data-theme="dark"] {
+  --background: #0a0a0b;
+  --foreground: #ededee;
+  --gray-2: #d4d4d8;
+  --gray-3: #a1a1aa;
+  --gray-4: #8a8a93;
+  --gray-5: #3f3f46;
+  --gray-6: #ffffff14;
+  --gray-7: #111113;
+  --gray-8: #18181b;
+  --border: #ffffff14;
+  --muted-foreground: #a1a1aa;
+  --markdown-foreground: #c8c8cf;
+  --sl-font: var(--hd-sans);
+  --sl-font-mono: var(--hd-mono);
+  --sl-color-text-accent: var(--hd-lime);
+  --sl-content-width: 66rem;
+  --selection: #d5fd51;
+  --selection-foreground: #0a0a0b;
+}
+body {
+  background:
+    radial-gradient(900px 380px at 70% -120px, #d5fd5110, transparent 70%),
+    var(--hd-bg);
+}
+.site-title::before {
+  content: ""; width: 10px; height: 10px; border-radius: 2px; background: var(--hd-lime);
+  box-shadow: 0 0 14px #d5fd5188;
+}
+.site-title { font-weight: 600 !important; letter-spacing: -0.01em; }
+header.header { border-bottom: 1px solid var(--hd-line) !important; backdrop-filter: blur(10px); background: #0a0a0bcc !important; }
+.sl-markdown-content h2 { letter-spacing: -0.02em; font-weight: 600; margin-top: 3.4rem; }
+.sl-markdown-content h3 { font-weight: 500; letter-spacing: -0.01em; }
+.sl-markdown-content a:not(.hd-btn) { color: var(--hd-lime); text-decoration-color: #d5fd5166; }
+h1#_top { letter-spacing: -0.03em; font-weight: 600; }
+.sl-markdown-content .hd-lede { font-size: 1.1rem; color: var(--hd-fg-2); max-width: 62ch; }
+aside.starlight-aside { border-radius: 8px; }
+.hmgrid { display: grid; grid-template-columns: 1fr; gap: 32px; margin-top: 16px; }
+.sl-markdown-content .hd-bench-toggle { margin: 4px 0 16px; }
+.sl-markdown-content [data-bench-panel] + [data-bench-panel] { margin-top: 0; }
+.sl-markdown-content > * + .lbwrap, .sl-markdown-content .lbwrap { margin-top: 16px; }
