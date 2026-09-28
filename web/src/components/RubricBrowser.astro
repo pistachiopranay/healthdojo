@@ -1,0 +1,87 @@
+---
+import type { Curriculum } from "../lib/data";
+interface Props { cur: Curriculum; panel: string }
+const { cur, panel } = Astro.props;
+const rows = cur.rubric;
+const rooms = [...new Set(rows.map((r: any) => r.room))] as string[];
+const host = (u: string) => { try { const h = new URL(u).hostname.replace(/^www\./, ""); return h; } catch { return u; } };
+const SRC: Record<string, string> = { "cdc.gov": "CDC STEADI", "alz.org": "Alzheimer's Association", "nia.nih.gov": "NIA", "alzheimers.org.uk": "Alzheimer's Society (UK)" };
+const srcName = (u: string) => SRC[host(u)] || host(u);
+const cap = (s: string) => s[0].toUpperCase() + s.slice(1);
+---
+<div class="rb not-content" data-bench-panel={panel}>
+  <div class="bar">
+    <div class="chips" role="group" aria-label="Filter rubric rows by room">
+      <button type="button" data-rroom="all" aria-pressed="true">All <span>{rows.length}</span></button>
+      {rooms.map(r => <button type="button" data-rroom={r} aria-pressed="false">{cap(r)} <span>{rows.filter((x: any) => x.room === r).length}</span></button>)}
+    </div>
+    <div class="src hd-num">{cur.guideline.publisher}</div>
+  </div>
+  <div class="list">
+    {rows.map((r: any) => (
+      <details data-r={r.room}>
+        <summary>
+          <code class="hd-num">{r.id}</code>
+          <span class="nm">{r.name}</span>
+          <span class="meta hd-num">{r.room} · {r.type}</span>
+          <span class="sev hd-num">{/^(low|medium|high)$/.test(String(r.severity)) ? r.severity : ""}</span>
+        </summary>
+        <div class="body">
+          <div>
+            <div class="hd-eyebrow">Source summary (paraphrased)</div>
+            <p>{r.citation?.line}</p>
+            {r.citation?.source && <a href={r.citation.source} target="_blank" rel="noopener">{srcName(r.citation.source)} ↗</a>}
+          </div>
+          <div>
+            <div class="hd-eyebrow">Why it matters for this patient</div>
+            <p>{r.modifier}</p>
+            {r.severity_detail && (
+              <dl>{Object.entries(r.severity_detail).map(([k, v]) => <><dt class="hd-num">{k}</dt><dd>{v as string}</dd></>)}</dl>
+            )}
+            {r.citation?.instruments?.HOMEFAST?.length > 0 && <p class="hd-dim small">Cross-walk: HOME FAST item {r.citation.instruments.HOMEFAST.join(", ")}</p>}
+          </div>
+        </div>
+      </details>
+    ))}
+  </div>
+</div>
+<style>
+  .rb { margin-top: 16px; }
+  .bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+  .src { font-size: 11.5px; color: var(--hd-fg-3); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chips button { font: 500 13px var(--hd-sans); color: var(--hd-fg-2); background: transparent; border: 1px solid var(--hd-line); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+  .chips button span { color: var(--hd-fg-3); font: 400 11px var(--hd-mono); margin-left: 4px; }
+  .chips button[aria-pressed="true"] { color: var(--hd-fg); border-color: #d5fd5166; background: var(--hd-lime-dim); }
+  .list { border: 1px solid var(--hd-line); border-radius: var(--hd-radius); background: var(--hd-bg-1); overflow: hidden; }
+  details { border-bottom: 1px solid var(--hd-line); }
+  details:last-child { border-bottom: 0; }
+  summary { display: grid; grid-template-columns: 84px 1fr auto 70px; gap: 14px; align-items: center; padding: 11px 16px; cursor: pointer; list-style: none; font-size: 14px; }
+  summary::-webkit-details-marker { display: none; }
+  summary:hover { background: #ffffff05; }
+  details[open] summary { background: #ffffff06; }
+  summary code { font-size: 12px; color: var(--hd-lime); background: none; padding: 0; }
+  summary .nm { color: var(--hd-fg); }
+  summary .meta { font-size: 11.5px; color: var(--hd-fg-3); }
+  summary .sev { font-size: 11px; color: var(--hd-fg-2); text-align: right; }
+  .body { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; padding: 6px 16px 18px 114px; }
+  .body p { font-size: 13.5px; line-height: 1.55; color: var(--hd-fg-2); margin: 6px 0 8px; }
+  .body a { font-size: 12.5px; color: var(--hd-lime); }
+  .body dl { display: grid; grid-template-columns: 64px 1fr; gap: 4px 10px; font-size: 12.5px; margin: 8px 0; }
+  .body dt { color: var(--hd-fg-3); font-size: 11px; }
+  .body dd { margin: 0; color: var(--hd-fg-2); }
+  .small { font-size: 12px !important; }
+  @media (max-width: 720px) {
+    summary { grid-template-columns: 70px 1fr; }
+    summary .meta, summary .sev { display: none; }
+    .body { grid-template-columns: 1fr; padding: 4px 16px 16px; }
+  }
+</style>
+<script>
+  document.querySelectorAll<HTMLElement>(".rb").forEach(rb => {
+    rb.querySelectorAll<HTMLButtonElement>("[data-rroom]").forEach(b => b.addEventListener("click", () => {
+      rb.querySelectorAll("[data-rroom]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+      rb.querySelectorAll<HTMLElement>("details").forEach(d => { d.style.display = b.dataset.rroom === "all" || d.dataset.r === b.dataset.rroom ? "" : "none"; });
+    }));
+  });
+</script>

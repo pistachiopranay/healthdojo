@@ -1,0 +1,51 @@
+---
+title: Method
+description: "HealthDojo asks a narrow question: when a vision model sees a synthetic home scene, does it identify a hazard deliberately placed there? HomeBench focuses on falls after joint replacement. DementiaBench focuses on home safety for a person living with dementia."
+tableOfContents: false
+---
+import { curriculum } from "../../lib/data";
+import BenchToggle from "../../components/BenchToggle.astro";
+import BenchScript from "../../components/BenchScript.astro";
+import Pipeline from "../../components/Pipeline.astro";
+import RubricBrowser from "../../components/RubricBrowser.astro";
+import Levels from "../../components/Levels.astro";
+import Callout from "../../components/Callout.astro";
+
+export const F = curriculum("falls");
+export const Dm = curriculum("dementia");
+
+## From guidance to a test
+
+<Pipeline />
+
+Published home-safety guidance is summarized into draft hazard rubric rows. Each row records a source reference. The displayed guidance is a summary or paraphrase unless expressly marked as a verified quotation. The rubric awaits occupational and physical therapist review.
+
+The photo benchmark starts with a synthetic room and an edit designed to add a target hazard. A vision model checks whether the target is visible; an image difference estimates its location where appropriate. Some accepted edits contain other material changes. This is an automated check, not independent human ground truth. A separate curriculum also includes stacked hazards and safe look-alikes.
+
+Models receive the scene, a patient context, and the benchmark's allowed hazard IDs. Their saved responses are scored against the seeded IDs. Recall is the share of seeded targets found in scenes that model ran. The false alarm rate counts flags on a defined set of hazard IDs expected to be absent, drawn from related scene edits; it does not count every possible incorrect prediction. The composite score averages recall with the share of those IDs left unflagged. Localization is reported separately. Read each score with its scene coverage.
+
+Explore the [results](/results/) beside the source-linked rubric and scene records. The [code and data](https://github.com/pistachiopranay/healthdojo) are open for inspection.
+
+## Rubric browser
+
+Draft rows: {F.rubric.length} for falls and {Dm.rubric.length} for dementia. Open a row for its source summary, the patient-specific rationale, and a link to its source document. No row has been marked as a verified quotation.
+
+<BenchToggle />
+
+<RubricBrowser cur={F} panel="homebench" />
+<RubricBrowser cur={Dm} panel="dementia" />
+
+## Five difficulty levels
+
+The curriculum is designed in five levels. Each card shows how many generated images passed the automated check; the harder levels have few so far.
+
+<Levels cur={F} panel="homebench" />
+<Levels cur={Dm} panel="dementia" />
+
+## Limits
+
+<Callout>
+<p class="limits-p">Scenes and walkable worlds are synthetic. Rubric rows await clinician review, and performance in real homes or patient care has not been established. Automated acceptance can miss changes beyond the target hazard. Samples are small, model coverage differs, and rankings are directional. Recorded walkthroughs use selected worlds and should be read separately from the photo leaderboard.</p>
+</Callout>
+
+<BenchScript />

@@ -1,0 +1,38 @@
+---
+// Five-step evidence chain. Used on Overview (compact) and Method.
+const { compact = false } = Astro.props;
+const steps = [
+  { k: "01", t: "Guideline", d: "Published home-safety guidance (CDC STEADI for falls; Alzheimer's Association and NIA for dementia)." },
+  { k: "02", t: "Draft rubric", d: "Guidance is summarized into hazard rows with a source reference. Clinician (OT/PT) review pending.", tag: "review pending" },
+  { k: "03", t: "Seeded synthetic scene", d: "A synthetic room is edited to add one target hazard. The label exists before the pixels." },
+  { k: "04", t: "Automated check", d: "A vision model checks the target is visible. Not independent human verification.", tag: "automated" },
+  { k: "05", t: "Scoring", d: "Models list hazard IDs. Recall on seeded IDs and false flags on prespecified absent IDs." },
+];
+---
+<ol class={`pipe not-content ${compact ? "compact" : ""}`}>
+  {steps.map((s, i) => (
+    <li>
+      <div class="k hd-num">{s.k}</div>
+      <div class="t">{s.t}{s.tag && <span class="hd-tag">{s.tag}</span>}</div>
+      <p>{s.d}</p>
+      {i < steps.length - 1 && <span class="arrow" aria-hidden="true">→</span>}
+    </li>
+  ))}
+</ol>
+<style>
+  .pipe { list-style: none; padding: 0; margin: 16px 0 0; display: grid; grid-template-columns: repeat(5, 1fr); border: 1px solid var(--hd-line); border-radius: var(--hd-radius); background: var(--hd-bg-1); }
+  .pipe li { position: relative; padding: 18px 18px 20px; border-right: 1px solid var(--hd-line); margin: 0; }
+  .pipe li:last-child { border-right: 0; }
+  .pipe .k { font-size: 11px; color: var(--hd-lime); letter-spacing: .06em; }
+  .pipe .t { font-weight: 500; font-size: 15px; color: var(--hd-fg); margin-top: 10px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .pipe .t .hd-tag { font-size: 9.5px; padding: 3px 5px; color: var(--hd-miss); border-color: #f5b54444; }
+  .pipe p { font-size: 13px; line-height: 1.5; color: var(--hd-fg-2); margin: 8px 0 0; }
+  .pipe .arrow { position: absolute; right: -9px; top: 16px; width: 18px; height: 18px; display: grid; place-items: center; font-size: 11px; color: var(--hd-fg-3); background: var(--hd-bg); border: 1px solid var(--hd-line); border-radius: 50%; z-index: 1; }
+  @media (max-width: 900px) {
+    .pipe { grid-template-columns: 1fr; }
+    .pipe li { border-right: 0; border-bottom: 1px solid var(--hd-line); display: grid; grid-template-columns: 40px 1fr; column-gap: 8px; }
+    .pipe li:last-child { border-bottom: 0; }
+    .pipe .k { grid-row: span 2; margin-top: 12px; }
+    .pipe .arrow { display: none; }
+  }
+</style>

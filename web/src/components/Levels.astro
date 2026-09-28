@@ -1,0 +1,38 @@
+---
+import type { Curriculum } from "../lib/data";
+import { levelCounts } from "../lib/data";
+interface Props { cur: Curriculum; panel: string }
+const { cur, panel } = Astro.props;
+const lv = levelCounts(cur);
+---
+<div class="lv not-content" data-bench-panel={panel}>
+  {lv.map(l => (
+    <article>
+      <div class="top"><span class="n hd-num">L{l.level}</span><span class="name">{l.name}</span></div>
+      <div class="thumbs">
+        {l.samples.slice(0, 2).map((it: any) => <img loading="lazy" src={`/curriculum/${cur.bench}/${it.thumb}`} alt={`Level ${l.level} sample, ${it.room}`} />)}
+        {l.samples.length === 0 && <div class="none">no accepted images</div>}
+      </div>
+      <p>{l.description.replace(/ADEQUACY/g, "adequacy").replace(/SAFE/g, "safe").replace(/NOT/g, "not")}</p>
+      <div class="stats hd-num">
+        <span><b>{l.verified}</b>/{l.generated} accepted</span>
+        <span><b>{l.labels}</b> labels</span>
+      </div>
+    </article>
+  ))}
+</div>
+<style>
+  .lv { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 16px; }
+  article { border: 1px solid var(--hd-line); border-radius: var(--hd-radius); background: var(--hd-bg-1); padding: 12px; display: flex; flex-direction: column; min-width: 0; }
+  .top { display: flex; align-items: baseline; gap: 8px; }
+  .n { color: var(--hd-lime); font-size: 12px; }
+  .name { font-weight: 500; font-size: 14px; }
+  .thumbs { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin: 10px 0; }
+  .thumbs img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 4px; display: block; }
+  .none { grid-column: span 2; font: 400 11px var(--hd-mono); color: var(--hd-fg-3); padding: 20px 0; text-align: center; border: 1px dashed var(--hd-line); border-radius: 4px; }
+  p { font-size: 12.5px; line-height: 1.5; color: var(--hd-fg-2); margin: 0 0 10px; flex: 1; }
+  .stats { display: flex; flex-direction: column; gap: 3px; font-size: 11px; color: var(--hd-fg-3); border-top: 1px solid var(--hd-line); padding-top: 8px; }
+  .stats b { color: var(--hd-fg); font-weight: 500; }
+  @media (max-width: 1100px) { .lv { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 520px) { .lv { grid-template-columns: 1fr; } }
+</style>
