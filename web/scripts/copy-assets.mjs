@@ -56,7 +56,7 @@ const LINKS = [
   [/\.\.\/data\/walks\//g, "/data/walks/"],
   // v2 nav labels and honest wording on the legacy walk page
   [/<div class="hd-links">[\s\S]*?<\/div>\s*<a href="[^"]*" class="hd-cta">[^<]*<\/a>/,
-    '<div class="hd-links"><a href="/">Overview</a><a href="/method/">How it works</a><a href="/explore/" class="on">Explore</a><a href="/results/">Early results</a><a href="https://github.com/pistachiopranay/healthdojo">GitHub</a></div>\n  <a href="/explore/" class="hd-cta">Back to Explore</a>'],
+    '<div class="hd-links"><a href="/">Overview</a><a href="/method/">How it works</a><a href="/explore/" class="on">Explore</a><a href="/results/">Early results</a><a href="/about/">About</a><a href="https://github.com/pistachiopranay/healthdojo">GitHub</a></div>\n  <a href="/explore/" class="hd-cta">Back to Explore</a>'],
   [/Drop the model <em>into the home\.<\/em>/, "Drop the model <em>into a synthetic room.</em>"],
   [/Each model stands inside a 360° home,/, "Each model stands inside a synthetic 360° room,"],
 ];

@@ -1,0 +1,60 @@
+---
+import Base from "../../layouts/Base.astro";
+---
+<Base title="About · HealthDojo" description="Where HealthDojo came from, who builds it, and how to get in touch." active="About">
+  <section class="head">
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hd-eyebrow lime">About</div>
+      <h1>Built in a day. Still being built.</h1>
+      <p class="lede">HealthDojo started as a one-day prototype at a healthcare AI hackathon and is now an open, early test ground for home-health AI.</p>
+    </div>
+  </section>
+
+  <section class="sec first">
+    <div class="wrap grid">
+      <article class="card">
+        <div class="hd-eyebrow">01 · Origin</div>
+        <h2>A hackathon finalist</h2>
+        <p>HealthDojo was built solo in one day at the <b>Healthcare AI Hackathon</b> hosted by <b>Pear VC</b> with <b>NEA</b> and <b>Cathay</b> on September 26, 2026, where it was selected as a <b>finalist</b>.</p>
+        <p>The question it started with: how do you test a home-health AI before anyone relies on it in a patient's home? The answer was to turn published clinical guidelines into synthetic homes with exact labels, then see what vision models catch and miss.</p>
+        <p>Since the hackathon, the site has been rebuilt and the photo benchmark has grown to more than 20 vision models across two benchmarks.</p>
+      </article>
+
+      <article class="card me">
+        <div class="hd-eyebrow">02 · Builder</div>
+        <h2>Pranay Madan</h2>
+        <p>Builder of HealthDojo. Open to conversations with clinicians, home-health teams, and AI companies who want to pressure-test models before real-home studies.</p>
+        <div class="contact">
+          <a href="mailto:madan.pranay@gmail.com"><span class="k">Email</span>madan.pranay@gmail.com</a>
+          <a href="https://www.linkedin.com/in/pranaymadan/"><span class="k">LinkedIn</span>linkedin.com/in/pranaymadan</a>
+          <a href="https://github.com/pistachiopranay/healthdojo"><span class="k">Code</span>github.com/pistachiopranay/healthdojo</a>
+        </div>
+      </article>
+    </div>
+    <div class="wrap">
+      <p class="tail">HealthDojo is a prototype. All data is synthetic, there is no patient data, and it is not clinically validated. Clinician review and real-home studies remain necessary before clinical claims. See <a href="/method/#limits">Limits</a>.</p>
+    </div>
+  </section>
+</Base>
+<style>
+  .head { position: relative; overflow: hidden; padding: 72px 0 8px; }
+  .grid-bg { position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(to right, #ffffff0c 1px, transparent 1px), linear-gradient(to bottom, #ffffff0c 1px, transparent 1px); background-size: 56px 56px; mask-image: radial-gradient(ellipse 60% 90% at 20% 0%, #000 20%, transparent 70%); -webkit-mask-image: radial-gradient(ellipse 60% 90% at 20% 0%, #000 20%, transparent 70%); }
+  .head .wrap { position: relative; }
+  h1 { font: 600 clamp(34px, 5vw, 56px)/1.05 var(--hd-sans); letter-spacing: -.04em; margin: 14px 0 0; max-width: 18ch; }
+  .lede { color: var(--hd-fg-2); font-size: 17px; max-width: 62ch; margin: 18px 0 0; }
+  .sec.first { padding-top: 64px; }
+  .grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 12px; }
+  .card { border: 1px solid var(--hd-line); border-radius: var(--hd-radius); background: var(--hd-bg-1); padding: 28px; }
+  .card h2 { font: 600 26px/1.15 var(--hd-sans); letter-spacing: -.03em; margin: 10px 0 14px; }
+  .card p { color: var(--hd-fg-2); font-size: 15px; line-height: 1.65; margin: 0 0 12px; }
+  .card p b { color: var(--hd-fg); font-weight: 500; }
+  .me { background: radial-gradient(420px 200px at 0% 0%, #d5fd510f, transparent), var(--hd-bg-1); }
+  .contact { display: flex; flex-direction: column; gap: 10px; margin-top: 18px; }
+  .contact a { display: flex; gap: 12px; align-items: baseline; color: var(--hd-lime); text-decoration: none; font-size: 14.5px; padding: 10px 12px; border: 1px solid var(--hd-line); border-radius: 8px; word-break: break-all; }
+  .contact a:hover { border-color: #d5fd5155; }
+  .k { font: 400 11.5px/1 var(--hd-mono); color: var(--hd-fg-3); text-transform: uppercase; letter-spacing: .06em; min-width: 64px; }
+  .tail { color: var(--hd-fg-2); margin-top: 28px; font-size: 15px; }
+  .tail a { color: var(--hd-lime); }
+  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+</style>

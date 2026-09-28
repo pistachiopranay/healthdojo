@@ -8,6 +8,7 @@ const NAV = [
   { label: "How it works", link: "/method/" },
   { label: "Explore", link: "/explore/" },
   { label: "Early results", link: "/results/" },
+  { label: "About", link: "/about/" },
 ];
 
 export default defineConfig({
@@ -39,6 +40,7 @@ export default defineConfig({
         { label: "Elsewhere", items: [
           { label: "Overview", link: "/" },
           { label: "Explore", link: "/explore/" },
+          { label: "About", link: "/about/" },
         ] },
       ],
       customCss: ["./src/styles/starlight.css"],
