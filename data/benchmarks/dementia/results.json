@@ -1,9 +1,9 @@
 {
  "leaderboard": [
   {
-   "model": "kimi-k3",
+   "model": "grok-4.6",
    "recall": 1.0,
-   "tp": 11,
+   "tp": 12,
    "fn": 0,
    "false_alarm": 0.0,
    "by_type": {
@@ -20,6 +20,7 @@
    "by_hazard": {
     "DEM-E01": 1.0,
     "DEM-B03": 1.0,
+    "DEM-K04": 1.0,
     "DEM-K03": 1.0,
     "DEM-B04": 1.0,
     "DEM-R01": 1.0,
@@ -31,7 +32,75 @@
     "DEM-R04": 1.0
    },
    "score": 1.0,
-   "loc_iou": 0.477
+   "loc_iou": 0.445
+  },
+  {
+   "model": "gpt-6-astra",
+   "recall": 1.0,
+   "tp": 12,
+   "fn": 0,
+   "false_alarm": 0.056,
+   "by_type": {
+    "access": 1.0,
+    "perception": 1.0,
+    "object": 1.0
+   },
+   "by_room": {
+    "entry": 1.0,
+    "bathroom": 1.0,
+    "kitchen": 1.0,
+    "bedroom": 1.0
+   },
+   "by_hazard": {
+    "DEM-E01": 1.0,
+    "DEM-B03": 1.0,
+    "DEM-K04": 1.0,
+    "DEM-K03": 1.0,
+    "DEM-B04": 1.0,
+    "DEM-R01": 1.0,
+    "DEM-K02": 1.0,
+    "DEM-R02": 1.0,
+    "DEM-E03": 1.0,
+    "DEM-B01": 1.0,
+    "DEM-E02": 1.0,
+    "DEM-R04": 1.0
+   },
+   "score": 0.972,
+   "loc_iou": 0.56
+  },
+  {
+   "model": "kimi-k3",
+   "recall": 1.0,
+   "tp": 12,
+   "fn": 0,
+   "false_alarm": 0.061,
+   "by_type": {
+    "access": 1.0,
+    "perception": 1.0,
+    "object": 1.0
+   },
+   "by_room": {
+    "entry": 1.0,
+    "bathroom": 1.0,
+    "kitchen": 1.0,
+    "bedroom": 1.0
+   },
+   "by_hazard": {
+    "DEM-E01": 1.0,
+    "DEM-B03": 1.0,
+    "DEM-K04": 1.0,
+    "DEM-K03": 1.0,
+    "DEM-B04": 1.0,
+    "DEM-R01": 1.0,
+    "DEM-K02": 1.0,
+    "DEM-R02": 1.0,
+    "DEM-E03": 1.0,
+    "DEM-B01": 1.0,
+    "DEM-E02": 1.0,
+    "DEM-R04": 1.0
+   },
+   "score": 0.97,
+   "loc_iou": 0.48
   },
   {
    "model": "claude-opus-5.5",
@@ -66,6 +135,176 @@
    },
    "score": 0.959,
    "loc_iou": 0.551
+  },
+  {
+   "model": "gemini-3.1-pro",
+   "recall": 0.917,
+   "tp": 11,
+   "fn": 1,
+   "false_alarm": 0.0,
+   "by_type": {
+    "access": 0.5,
+    "perception": 1.0,
+    "object": 1.0
+   },
+   "by_room": {
+    "entry": 0.667,
+    "bathroom": 1.0,
+    "kitchen": 1.0,
+    "bedroom": 1.0
+   },
+   "by_hazard": {
+    "DEM-E01": 1.0,
+    "DEM-B03": 1.0,
+    "DEM-K04": 1.0,
+    "DEM-K03": 1.0,
+    "DEM-B04": 1.0,
+    "DEM-R01": 1.0,
+    "DEM-K02": 1.0,
+    "DEM-R02": 1.0,
+    "DEM-E03": 1.0,
+    "DEM-B01": 1.0,
+    "DEM-E02": 0.0,
+    "DEM-R04": 1.0
+   },
+   "score": 0.959,
+   "loc_iou": 0.115
+  },
+  {
+   "model": "gemini-3.8-flash",
+   "recall": 0.917,
+   "tp": 11,
+   "fn": 1,
+   "false_alarm": 0.0,
+   "by_type": {
+    "access": 0.5,
+    "perception": 1.0,
+    "object": 1.0
+   },
+   "by_room": {
+    "entry": 0.667,
+    "bathroom": 1.0,
+    "kitchen": 1.0,
+    "bedroom": 1.0
+   },
+   "by_hazard": {
+    "DEM-E01": 1.0,
+    "DEM-B03": 1.0,
+    "DEM-K04": 1.0,
+    "DEM-K03": 1.0,
+    "DEM-B04": 1.0,
+    "DEM-R01": 1.0,
+    "DEM-K02": 1.0,
+    "DEM-R02": 1.0,
+    "DEM-E03": 1.0,
+    "DEM-B01": 1.0,
+    "DEM-E02": 0.0,
+    "DEM-R04": 1.0
+   },
+   "score": 0.959,
+   "loc_iou": 0.107
+  },
+  {
+   "model": "grok-4.7",
+   "recall": 0.917,
+   "tp": 11,
+   "fn": 1,
+   "false_alarm": 0.028,
+   "by_type": {
+    "access": 1.0,
+    "perception": 1.0,
+    "object": 0.857
+   },
+   "by_room": {
+    "entry": 1.0,
+    "bathroom": 0.667,
+    "kitchen": 1.0,
+    "bedroom": 1.0
+   },
+   "by_hazard": {
+    "DEM-E01": 1.0,
+    "DEM-B03": 1.0,
+    "DEM-K04": 1.0,
+    "DEM-K03": 1.0,
+    "DEM-B04": 1.0,
+    "DEM-R01": 1.0,
+    "DEM-K02": 1.0,
+    "DEM-R02": 1.0,
+    "DEM-E03": 1.0,
+    "DEM-B01": 0.0,
+    "DEM-E02": 1.0,
+    "DEM-R04": 1.0
+   },
+   "score": 0.945,
+   "loc_iou": 0.52
+  },
+  {
+   "model": "nova-2-lite",
+   "recall": 0.917,
+   "tp": 11,
+   "fn": 1,
+   "false_alarm": 0.028,
+   "by_type": {
+    "access": 0.5,
+    "perception": 1.0,
+    "object": 1.0
+   },
+   "by_room": {
+    "entry": 0.667,
+    "bathroom": 1.0,
+    "kitchen": 1.0,
+    "bedroom": 1.0
+   },
+   "by_hazard": {
+    "DEM-E01": 1.0,
+    "DEM-B03": 1.0,
+    "DEM-K04": 1.0,
+    "DEM-K03": 1.0,
+    "DEM-B04": 1.0,
+    "DEM-R01": 1.0,
+    "DEM-K02": 1.0,
+    "DEM-R02": 1.0,
+    "DEM-E03": 1.0,
+    "DEM-B01": 1.0,
+    "DEM-E02": 0.0,
+    "DEM-R04": 1.0
+   },
+   "score": 0.945,
+   "loc_iou": 0.475
+  },
+  {
+   "model": "gpt-6-sol",
+   "recall": 1.0,
+   "tp": 12,
+   "fn": 0,
+   "false_alarm": 0.111,
+   "by_type": {
+    "access": 1.0,
+    "perception": 1.0,
+    "object": 1.0
+   },
+   "by_room": {
+    "entry": 1.0,
+    "bathroom": 1.0,
+    "kitchen": 1.0,
+    "bedroom": 1.0
+   },
+   "by_hazard": {
+    "DEM-E01": 1.0,
+    "DEM-B03": 1.0,
+    "DEM-K04": 1.0,
+    "DEM-K03": 1.0,
+    "DEM-B04": 1.0,
+    "DEM-R01": 1.0,
+    "DEM-K02": 1.0,
+    "DEM-R02": 1.0,
+    "DEM-E03": 1.0,
+    "DEM-B01": 1.0,
+    "DEM-E02": 1.0,
+    "DEM-R04": 1.0
+   },
+   "score": 0.944,
+   "loc_iou": 0.5
   },
   {
    "model": "gpt-5.6-sol",
@@ -136,6 +375,67 @@
    "loc_iou": 0.526
   },
   {
+   "model": "glm-5v-turbo",
+   "recall": 0.917,
+   "tp": 11,
+   "fn": 1,
+   "false_alarm": 0.083,
+   "by_type": {
+    "access": 1.0,
+    "perception": 1.0,
+    "object": 0.857
+   },
+   "by_room": {
+    "entry": 1.0,
+    "bathroom": 0.667,
+    "kitchen": 1.0,
+    "bedroom": 1.0
+   },
+   "by_hazard": {
+    "DEM-E01": 1.0,
+    "DEM-B03": 1.0,
+    "DEM-K04": 1.0,
+    "DEM-K03": 1.0,
+    "DEM-B04": 1.0,
+    "DEM-R01": 1.0,
+    "DEM-K02": 1.0,
+    "DEM-R02": 1.0,
+    "DEM-E03": 1.0,
+    "DEM-B01": 0.0,
+    "DEM-E02": 1.0,
+    "DEM-R04": 1.0
+   },
+   "score": 0.917,
+   "loc_iou": 0.518
+  },
+  {
+   "model": "seed-2.1-turbo",
+   "recall": 0.833,
+   "tp": 5,
+   "fn": 1,
+   "false_alarm": 0.0,
+   "by_type": {
+    "access": 0.5,
+    "object": 1.0,
+    "perception": 1.0
+   },
+   "by_room": {
+    "entry": 0.667,
+    "kitchen": 1.0,
+    "bedroom": 1.0
+   },
+   "by_hazard": {
+    "DEM-E01": 1.0,
+    "DEM-K04": 1.0,
+    "DEM-K03": 1.0,
+    "DEM-R02": 1.0,
+    "DEM-E03": 1.0,
+    "DEM-E02": 0.0
+   },
+   "score": 0.916,
+   "loc_iou": 0.451
+  },
+  {
    "model": "claude-fable-5.1",
    "recall": 0.917,
    "tp": 11,
@@ -168,6 +468,40 @@
    },
    "score": 0.903,
    "loc_iou": 0.446
+  },
+  {
+   "model": "claude-haiku-4.5",
+   "recall": 1.0,
+   "tp": 12,
+   "fn": 0,
+   "false_alarm": 0.194,
+   "by_type": {
+    "access": 1.0,
+    "perception": 1.0,
+    "object": 1.0
+   },
+   "by_room": {
+    "entry": 1.0,
+    "bathroom": 1.0,
+    "kitchen": 1.0,
+    "bedroom": 1.0
+   },
+   "by_hazard": {
+    "DEM-E01": 1.0,
+    "DEM-B03": 1.0,
+    "DEM-K04": 1.0,
+    "DEM-K03": 1.0,
+    "DEM-B04": 1.0,
+    "DEM-R01": 1.0,
+    "DEM-K02": 1.0,
+    "DEM-R02": 1.0,
+    "DEM-E03": 1.0,
+    "DEM-B01": 1.0,
+    "DEM-E02": 1.0,
+    "DEM-R04": 1.0
+   },
+   "score": 0.903,
+   "loc_iou": 0.119
   },
   {
    "model": "claude-opus-5",
@@ -204,6 +538,40 @@
    "loc_iou": 0.175
   },
   {
+   "model": "deepseek-v4-flash-vision",
+   "recall": 0.833,
+   "tp": 10,
+   "fn": 2,
+   "false_alarm": 0.028,
+   "by_type": {
+    "access": 1.0,
+    "perception": 1.0,
+    "object": 0.714
+   },
+   "by_room": {
+    "entry": 1.0,
+    "bathroom": 0.667,
+    "kitchen": 0.667,
+    "bedroom": 1.0
+   },
+   "by_hazard": {
+    "DEM-E01": 1.0,
+    "DEM-B03": 1.0,
+    "DEM-K04": 0.0,
+    "DEM-K03": 1.0,
+    "DEM-B04": 1.0,
+    "DEM-R01": 1.0,
+    "DEM-K02": 1.0,
+    "DEM-R02": 1.0,
+    "DEM-E03": 1.0,
+    "DEM-B01": 0.0,
+    "DEM-E02": 1.0,
+    "DEM-R04": 1.0
+   },
+   "score": 0.903,
+   "loc_iou": 0.312
+  },
+  {
    "model": "claude-sonnet-5",
    "recall": 0.917,
    "tp": 11,
@@ -236,6 +604,140 @@
    },
    "score": 0.889,
    "loc_iou": 0.031
+  },
+  {
+   "model": "qwen3.8-max",
+   "recall": 0.8,
+   "tp": 8,
+   "fn": 2,
+   "false_alarm": 0.031,
+   "by_type": {
+    "access": 0.0,
+    "perception": 1.0,
+    "object": 0.833
+   },
+   "by_room": {
+    "entry": 0.5,
+    "bathroom": 0.667,
+    "kitchen": 1.0,
+    "bedroom": 1.0
+   },
+   "by_hazard": {
+    "DEM-E01": 0.0,
+    "DEM-B03": 1.0,
+    "DEM-K04": 1.0,
+    "DEM-K03": 1.0,
+    "DEM-B04": 1.0,
+    "DEM-R01": 1.0,
+    "DEM-K02": 1.0,
+    "DEM-R02": 1.0,
+    "DEM-E03": 1.0,
+    "DEM-B01": 0.0
+   },
+   "score": 0.884,
+   "loc_iou": 0.495
+  },
+  {
+   "model": "gpt-5.6-terra",
+   "recall": 0.833,
+   "tp": 10,
+   "fn": 2,
+   "false_alarm": 0.083,
+   "by_type": {
+    "access": 0.5,
+    "perception": 1.0,
+    "object": 0.857
+   },
+   "by_room": {
+    "entry": 0.667,
+    "bathroom": 0.667,
+    "kitchen": 1.0,
+    "bedroom": 1.0
+   },
+   "by_hazard": {
+    "DEM-E01": 1.0,
+    "DEM-B03": 1.0,
+    "DEM-K04": 1.0,
+    "DEM-K03": 1.0,
+    "DEM-B04": 1.0,
+    "DEM-R01": 1.0,
+    "DEM-K02": 1.0,
+    "DEM-R02": 1.0,
+    "DEM-E03": 1.0,
+    "DEM-B01": 0.0,
+    "DEM-E02": 0.0,
+    "DEM-R04": 1.0
+   },
+   "score": 0.875,
+   "loc_iou": 0.57
+  },
+  {
+   "model": "mistral-medium-3.5",
+   "recall": 0.917,
+   "tp": 11,
+   "fn": 1,
+   "false_alarm": 0.222,
+   "by_type": {
+    "access": 0.5,
+    "perception": 1.0,
+    "object": 1.0
+   },
+   "by_room": {
+    "entry": 0.667,
+    "bathroom": 1.0,
+    "kitchen": 1.0,
+    "bedroom": 1.0
+   },
+   "by_hazard": {
+    "DEM-E01": 1.0,
+    "DEM-B03": 1.0,
+    "DEM-K04": 1.0,
+    "DEM-K03": 1.0,
+    "DEM-B04": 1.0,
+    "DEM-R01": 1.0,
+    "DEM-K02": 1.0,
+    "DEM-R02": 1.0,
+    "DEM-E03": 1.0,
+    "DEM-B01": 1.0,
+    "DEM-E02": 0.0,
+    "DEM-R04": 1.0
+   },
+   "score": 0.847,
+   "loc_iou": 0.112
+  },
+  {
+   "model": "gemma-3-27b",
+   "recall": 0.917,
+   "tp": 11,
+   "fn": 1,
+   "false_alarm": 0.25,
+   "by_type": {
+    "access": 0.5,
+    "perception": 1.0,
+    "object": 1.0
+   },
+   "by_room": {
+    "entry": 0.667,
+    "bathroom": 1.0,
+    "kitchen": 1.0,
+    "bedroom": 1.0
+   },
+   "by_hazard": {
+    "DEM-E01": 1.0,
+    "DEM-B03": 1.0,
+    "DEM-K04": 1.0,
+    "DEM-K03": 1.0,
+    "DEM-B04": 1.0,
+    "DEM-R01": 1.0,
+    "DEM-K02": 1.0,
+    "DEM-R02": 1.0,
+    "DEM-E03": 1.0,
+    "DEM-B01": 1.0,
+    "DEM-E02": 0.0,
+    "DEM-R04": 1.0
+   },
+   "score": 0.834,
+   "loc_iou": 0.061
   },
   {
    "model": "llama-4-maverick",
@@ -794,6 +1296,36 @@
      }
     ]
    },
+   "claude-haiku-4.5": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat on white toilet with light-colored floor creates low contrast, making it difficult to distinguish the toilet location",
+      "box": [
+       400,
+       600,
+       600,
+       800
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "low",
+      "evidence": "Dark-colored towel (teal/gray) hanging on wooden rack on light wall, though not a bath mat on floor",
+      "box": [
+       800,
+       0,
+       1000,
+       400
+      ]
+     }
+    ]
+   },
    "claude-opus-5": {
     "pred": [
      "DEM-B02"
@@ -848,6 +1380,108 @@
      }
     ]
    },
+   "deepseek-v4-flash-vision": {
+    "pred": [
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat and toilet against light beige floor, low contrast",
+      "box": [
+       560,
+       620,
+       800,
+       1000
+      ]
+     }
+    ]
+   },
+   "gemini-3.1-pro": {
+    "pred": [
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "The toilet seat is white, the toilet is white, and the floor is a light color, which can make it difficult for someone with dementia to distinguish the toilet seat from its surroundings.",
+      "box": [
+       668,
+       516,
+       1000,
+       862
+      ]
+     }
+    ]
+   },
+   "gemini-3.8-flash": {
+    "pred": [
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "The toilet seat is white against a white toilet and light-colored floor, offering poor visual contrast for someone with visual-spatial deficits.",
+      "box": [
+       667,
+       518,
+       807,
+       715
+      ]
+     }
+    ]
+   },
+   "gemma-3-27b": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "low",
+      "evidence": "White toilet seat on a white toilet and floor creates low contrast, potentially making it difficult to discern for someone with visual impairment or dementia.",
+      "box": [
+       350,
+       500,
+       650,
+       700
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "low",
+      "evidence": "The floor is a light color and the area around the tub appears to be a darker shade, which could be misperceived as a hole or step.",
+      "box": [
+       0,
+       0,
+       1000,
+       1000
+      ]
+     }
+    ]
+   },
+   "glm-5v-turbo": {
+    "pred": [
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat on white porcelain toilet with light beige floor tiles creating low visual contrast, which can make it difficult for individuals with dementia to locate and safely use the toilet.",
+      "box": [
+       518,
+       556,
+       714,
+       998
+      ]
+     }
+    ]
+   },
    "gpt-5.6-sol": {
     "pred": [
      "DEM-B02"
@@ -862,6 +1496,96 @@
        548,
        718,
        999
+      ]
+     }
+    ]
+   },
+   "gpt-5.6-terra": {
+    "pred": [
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat blends into the white toilet and light-colored tiled floor, creating low visual contrast.",
+      "box": [
+       514,
+       679,
+       728,
+       999
+      ]
+     }
+    ]
+   },
+   "gpt-6-astra": {
+    "pred": [
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "The white toilet seat blends into the white toilet and surrounding light-colored floor, providing low visual contrast.",
+      "box": [
+       515,
+       665,
+       718,
+       999
+      ]
+     }
+    ]
+   },
+   "gpt-6-sol": {
+    "pred": [
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "The white toilet seat blends into the white toilet and light-colored floor.",
+      "box": [
+       516,
+       666,
+       712,
+       831
+      ]
+     }
+    ]
+   },
+   "grok-4.6": {
+    "pred": [
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet and seat against light beige tiled floor creating low visual contrast",
+      "box": [
+       480,
+       560,
+       730,
+       980
+      ]
+     }
+    ]
+   },
+   "grok-4.7": {
+    "pred": [
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat and white toilet against a light beige tile floor, creating low contrast that is hard to perceive",
+      "box": [
+       505,
+       640,
+       720,
+       1000
       ]
      }
     ]
@@ -926,6 +1650,37 @@
      }
     ]
    },
+   "mistral-medium-3.5": {
+    "pred": [
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat on white toilet and floor (low contrast)",
+      "box": [
+       450,
+       450,
+       650,
+       700
+      ]
+     }
+    ]
+   },
+   "nova-2-lite": {
+    "pred": [
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "The white toilet seat blends with the white toilet and floor, creating low contrast that could confuse someone with dementia.",
+      "box": null
+     }
+    ]
+   },
    "nova-pro": {
     "pred": [
      "DEM-B02"
@@ -961,6 +1716,42 @@
       ]
      }
     ]
+   },
+   "qwen3.8-max": {
+    "pred": [
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "low",
+      "evidence": "White toilet seat and bowl blend into the white tank/fixture and the light beige tile floor, giving very low contrast that a person with dementia's visuo-perceptual deficits may fail to perceive",
+      "box": [
+       516,
+       470,
+       862,
+       1000
+      ]
+     }
+    ]
+   },
+   "seed-2.1-turbo": {
+    "pred": [
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat on a white toilet, with light beige tile flooring, creating low visual contrast that may be difficult for a person with dementia to distinguish, increasing risk of falls or difficulty using the toilet.",
+      "box": [
+       515,
+       545,
+       710,
+       998
+      ]
+     }
+    ]
    }
   },
   "dem-entry-base0-DEM-E01": {
@@ -978,6 +1769,36 @@
        120,
        330,
        235
+      ]
+     }
+    ]
+   },
+   "claude-haiku-4.5": {
+    "pred": [
+     "DEM-E01",
+     "DEM-R02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E01",
+      "severity": "high",
+      "evidence": "Car keys hanging on the wall by the front door, easily accessible to someone with dementia who may attempt to drive unsupervised",
+      "box": [
+       400,
+       200,
+       500,
+       350
+      ]
+     },
+     {
+      "id": "DEM-R02",
+      "severity": "medium",
+      "evidence": "Bold high-contrast patterned pillows on the sofa that could be visually confusing or overstimulating",
+      "box": [
+       650,
+       350,
+       900,
+       550
       ]
      }
     ]
@@ -1036,6 +1857,96 @@
      }
     ]
    },
+   "deepseek-v4-flash-vision": {
+    "pred": [
+     "DEM-E01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E01",
+      "severity": "high",
+      "evidence": "Keychain with keys hanging from a wall-mounted holder next to the front door.",
+      "box": [
+       320,
+       190,
+       390,
+       350
+      ]
+     }
+    ]
+   },
+   "gemini-3.1-pro": {
+    "pred": [
+     "DEM-E01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E01",
+      "severity": "high",
+      "evidence": "Car keys are hanging on a hook right next to the front door, which could encourage wandering or unsafe driving.",
+      "box": [
+       181,
+       302,
+       354,
+       324
+      ]
+     }
+    ]
+   },
+   "gemini-3.8-flash": {
+    "pred": [
+     "DEM-E01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E01",
+      "severity": "high",
+      "evidence": "Car keys hanging on the wall right next to the entrance door, posing an unsafe driving or wandering risk for someone with dementia.",
+      "box": [
+       178,
+       301,
+       356,
+       329
+      ]
+     }
+    ]
+   },
+   "gemma-3-27b": {
+    "pred": [
+     "DEM-E01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E01",
+      "severity": "medium",
+      "evidence": "Car keys are hanging by the front door, which could encourage wandering.",
+      "box": [
+       250,
+       200,
+       350,
+       300
+      ]
+     }
+    ]
+   },
+   "glm-5v-turbo": {
+    "pred": [
+     "DEM-E01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E01",
+      "severity": "high",
+      "evidence": "Car keys hanging on a wall-mounted holder next to the entry door, posing a wandering and unsafe driving risk",
+      "box": [
+       302,
+       183,
+       326,
+       352
+      ]
+     }
+    ]
+   },
    "gpt-5.6-sol": {
     "pred": [
      "DEM-E01"
@@ -1050,6 +1961,96 @@
        181,
        329,
        330
+      ]
+     }
+    ]
+   },
+   "gpt-5.6-terra": {
+    "pred": [
+     "DEM-E01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E01",
+      "severity": "medium",
+      "evidence": "Keys are hanging on the wall immediately beside the front door, making them readily accessible.",
+      "box": [
+       300,
+       183,
+       333,
+       358
+      ]
+     }
+    ]
+   },
+   "gpt-6-astra": {
+    "pred": [
+     "DEM-E01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E01",
+      "severity": "high",
+      "evidence": "Keys and key fobs hang on the wall beside the front door, within easy reach.",
+      "box": [
+       301,
+       181,
+       327,
+       357
+      ]
+     }
+    ]
+   },
+   "gpt-6-sol": {
+    "pred": [
+     "DEM-E01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E01",
+      "severity": "high",
+      "evidence": "Car keys are hanging on a hook beside the front door.",
+      "box": [
+       304,
+       228,
+       328,
+       359
+      ]
+     }
+    ]
+   },
+   "grok-4.6": {
+    "pred": [
+     "DEM-E01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E01",
+      "severity": "high",
+      "evidence": "Keys hanging from wall-mounted keypad/lock next to the white door",
+      "box": [
+       265,
+       175,
+       325,
+       305
+      ]
+     }
+    ]
+   },
+   "grok-4.7": {
+    "pred": [
+     "DEM-E01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E01",
+      "severity": "high",
+      "evidence": "Keys hanging from a black wall-mounted lockbox beside the front door",
+      "box": [
+       296,
+       142,
+       330,
+       362
       ]
      }
     ]
@@ -1108,6 +2109,37 @@
      }
     ]
    },
+   "mistral-medium-3.5": {
+    "pred": [
+     "DEM-E01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E01",
+      "severity": "high",
+      "evidence": "Car keys hanging by the front door",
+      "box": [
+       250,
+       200,
+       280,
+       250
+      ]
+     }
+    ]
+   },
+   "nova-2-lite": {
+    "pred": [
+     "DEM-E01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E01",
+      "severity": "medium",
+      "evidence": "Car keys are hanging on a hook by the front door, posing a risk of the resident wandering outside.",
+      "box": null
+     }
+    ]
+   },
    "nova-pro": {
     "pred": [
      "DEM-E01"
@@ -1143,6 +2175,28 @@
       ]
      }
     ]
+   },
+   "qwen3.8-max": {
+    "pred": [],
+    "raw": []
+   },
+   "seed-2.1-turbo": {
+    "pred": [
+     "DEM-E01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E01",
+      "severity": "high",
+      "evidence": "Car keys (with a remote fob) are hanging on a wall-mounted key holder near the entry door, easily accessible to the person with dementia, creating a risk of unauthorized driving and wandering.",
+      "box": [
+       295,
+       140,
+       330,
+       360
+      ]
+     }
+    ]
    }
   },
   "dem-bathroom-base0-DEM-B03": {
@@ -1173,6 +2227,24 @@
        680,
        985
       ]
+     }
+    ]
+   },
+   "claude-haiku-4.5": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat on white toilet and light-colored floor creates low contrast, making it difficult to distinguish the toilet location - a significant hazard for someone with dementia who may have difficulty locating the toilet"
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "Dark black bath mat placed on light tile floor creates a high-contrast edge that could be misperceived as a drop-off or hole by someone with dementia, potentially causing them to avoid crossing it or fall"
      }
     ]
    },
@@ -1266,6 +2338,134 @@
      }
     ]
    },
+   "deepseek-v4-flash-vision": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet and raised seat blend into the light floor, making the toilet hard to locate for someone with dementia.",
+      "box": [
+       500,
+       560,
+       760,
+       930
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "Dark bath mat sits on light tile floor, creating a high-contrast dark area that may be misperceived as a hole or step.",
+      "box": [
+       350,
+       850,
+       720,
+       985
+      ]
+     }
+    ]
+   },
+   "gemini-3.1-pro": {
+    "pred": [
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "A dark bath mat is placed on a light-colored floor, which can be misperceived as a hole or step by someone with dementia.",
+      "box": [
+       856,
+       343,
+       997,
+       688
+      ]
+     }
+    ]
+   },
+   "gemini-3.8-flash": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White raised toilet seat on a white toilet and light floor provides very poor visual contrast, making it difficult for someone with dementia to locate where to sit.",
+      "box": [
+       666,
+       517,
+       906,
+       717
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "A dark black bath mat placed on a light-colored floor can be perceived as a deep hole or drop-off by individuals with dementia, causing hesitation, fear, or fall risk.",
+      "box": [
+       858,
+       344,
+       996,
+       687
+      ]
+     }
+    ]
+   },
+   "gemma-3-27b": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "The toilet seat and toilet are both white, creating low contrast which can be difficult for someone with dementia to perceive.",
+      "box": []
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "The dark bath mat is on a light-colored tile floor, creating a contrast that could be misinterpreted as a shadow or a hole.",
+      "box": []
+     }
+    ]
+   },
+   "glm-5v-turbo": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat on white toilet bowl with light-colored flooring creates low contrast, making it difficult for individuals with dementia to distinguish the toilet boundaries",
+      "box": [
+       518,
+       552,
+       712,
+       900
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "high",
+      "evidence": "Dark black bath mat placed on light tiled floor; high contrast may be misperceived as a hole or drop-off, creating a significant fall risk",
+      "box": [
+       345,
+       864,
+       686,
+       995
+      ]
+     }
+    ]
+   },
    "gpt-5.6-sol": {
     "pred": [
      "DEM-B02",
@@ -1292,6 +2492,156 @@
        854,
        686,
        995
+      ]
+     }
+    ]
+   },
+   "gpt-5.6-terra": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat and toilet blend with the surrounding light-colored bathroom surfaces, creating low visual contrast.",
+      "box": [
+       515,
+       654,
+       715,
+       927
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "Dark black bath mat contrasts sharply with the light tile floor and may be misperceived as a hole or obstacle.",
+      "box": [
+       344,
+       856,
+       704,
+       983
+      ]
+     }
+    ]
+   },
+   "gpt-6-astra": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat on a white toilet against pale floor tiles provides limited contrast.",
+      "box": [
+       513,
+       665,
+       714,
+       910
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "Dark bath mat on light floor tiles may be misperceived as a hole or obstacle.",
+      "box": [
+       344,
+       857,
+       687,
+       997
+      ]
+     }
+    ]
+   },
+   "gpt-6-sol": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "The white toilet seat blends into the white toilet and surrounding light-colored surfaces.",
+      "box": [
+       516,
+       665,
+       714,
+       823
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "A dark bath mat lies on the light-colored floor in front of the toilet.",
+      "box": [
+       344,
+       855,
+       689,
+       999
+      ]
+     }
+    ]
+   },
+   "grok-4.6": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet and seat against similarly light-colored floor tiles creating low visual contrast",
+      "box": [
+       480,
+       580,
+       740,
+       910
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "high",
+      "evidence": "Solid black bath mat placed on light tiled floor in front of toilet",
+      "box": [
+       360,
+       800,
+       710,
+       990
+      ]
+     }
+    ]
+   },
+   "grok-4.7": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat and white toilet bowl against a light floor, creating low contrast that can make the seat hard to perceive.",
+      "box": [
+       512,
+       648,
+       714,
+       910
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "high",
+      "evidence": "Solid black bath mat lying on a light beige tile floor, a dark patch that can be misread as a hole or step.",
+      "box": [
+       346,
+       858,
+       684,
+       997
       ]
      }
     ]
@@ -1356,6 +2706,56 @@
      }
     ]
    },
+   "mistral-medium-3.5": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat on white toilet and floor (low contrast)",
+      "box": [
+       450,
+       450,
+       650,
+       650
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "Dark bath mat on a light floor",
+      "box": [
+       400,
+       600,
+       600,
+       700
+      ]
+     }
+    ]
+   },
+   "nova-2-lite": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat on a white toilet and white floor creates low contrast, making it difficult for someone with dementia to perceive the boundaries between the toilet and the floor.",
+      "box": null
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "The dark bath mat on a light floor can be a tripping hazard, especially for someone with dementia who may have reduced depth perception or balance issues.",
+      "box": null
+     }
+    ]
+   },
    "nova-pro": {
     "pred": [
      "DEM-B02"
@@ -1403,6 +2803,36 @@
       ]
      }
     ]
+   },
+   "qwen3.8-max": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat and bowl blend into the white toilet body and light beige tile floor, giving very low contrast that a person with dementia may fail to perceive when locating the toilet",
+      "box": [
+       515,
+       665,
+       716,
+       906
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "Black bath mat lies on the light tile floor in front of the toilet and tub; the dark patch on a light floor can be misperceived as a hole or obstacle, increasing fall/avoidance risk",
+      "box": [
+       345,
+       858,
+       687,
+       996
+      ]
+     }
+    ]
    }
   },
   "dem-kitchen-base0-DEM-K04": {
@@ -1432,6 +2862,36 @@
        250,
        342,
        305
+      ]
+     }
+    ]
+   },
+   "claude-haiku-4.5": {
+    "pred": [
+     "DEM-K03",
+     "DEM-K04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K03",
+      "severity": "high",
+      "evidence": "Multiple orange bottles/containers visible on the counter near the sink, appearing to be cleaning supplies or chemicals that are accessible and not locked away",
+      "box": [
+       400,
+       200,
+       550,
+       280
+      ]
+     },
+     {
+      "id": "DEM-K04",
+      "severity": "high",
+      "evidence": "Orange medication or supplement bottles visible on the kitchen counter, left out and accessible",
+      "box": [
+       400,
+       200,
+       550,
+       280
       ]
      }
     ]
@@ -1538,6 +2998,153 @@
      }
     ]
    },
+   "deepseek-v4-flash-vision": {
+    "pred": [],
+    "raw": []
+   },
+   "gemini-3.1-pro": {
+    "pred": [
+     "DEM-K04",
+     "DEM-K01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K04",
+      "severity": "high",
+      "evidence": "Multiple orange medication bottles are left out on the kitchen counter next to the stove.",
+      "box": [
+       252,
+       199,
+       321,
+       245
+      ]
+     },
+     {
+      "id": "DEM-K01",
+      "severity": "high",
+      "evidence": "The stove knobs are freely usable, which poses a risk if left on or turned on accidentally.",
+      "box": [
+       331,
+       145,
+       749,
+       255
+      ]
+     }
+    ]
+   },
+   "gemini-3.8-flash": {
+    "pred": [
+     "DEM-K04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K04",
+      "severity": "high",
+      "evidence": "Multiple medication bottles left out openly on the kitchen counter",
+      "box": [
+       248,
+       198,
+       324,
+       298
+      ]
+     }
+    ]
+   },
+   "gemma-3-27b": {
+    "pred": [
+     "DEM-K02",
+     "DEM-K04",
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K02",
+      "severity": "medium",
+      "evidence": "Knives are visible in a knife block on the counter.",
+      "box": [
+       200,
+       200,
+       300,
+       350
+      ]
+     },
+     {
+      "id": "DEM-K04",
+      "severity": "medium",
+      "evidence": "Multiple medication bottles are visible on the counter near the sink.",
+      "box": [
+       350,
+       250,
+       450,
+       400
+      ]
+     },
+     {
+      "id": "DEM-E03",
+      "severity": "low",
+      "evidence": "Some clutter is present on the counter.",
+      "box": [
+       450,
+       200,
+       600,
+       350
+      ]
+     },
+     {
+      "id": "DEM-E03",
+      "severity": "low",
+      "evidence": "Clutter is present in the doorway.",
+      "box": [
+       700,
+       400,
+       850,
+       600
+      ]
+     }
+    ]
+   },
+   "glm-5v-turbo": {
+    "pred": [
+     "DEM-K04",
+     "DEM-K02",
+     "DEM-K01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K04",
+      "severity": "high",
+      "evidence": "Multiple orange prescription medication bottles left out on the kitchen counter next to the sink",
+      "box": [
+       199,
+       258,
+       299,
+       322
+      ]
+     },
+     {
+      "id": "DEM-K02",
+      "severity": "high",
+      "evidence": "Knife block containing sharp knives left out on the counter near the coffee maker",
+      "box": [
+       179,
+       212,
+       219,
+       292
+      ]
+     },
+     {
+      "id": "DEM-K01",
+      "severity": "high",
+      "evidence": "Black electric stove with control knobs freely accessible and usable without safety locks",
+      "box": [
+       146,
+       328,
+       256,
+       752
+      ]
+     }
+    ]
+   },
    "gpt-5.6-sol": {
     "pred": [
      "DEM-K02",
@@ -1576,6 +3183,234 @@
        194,
        300,
        326
+      ]
+     }
+    ]
+   },
+   "gpt-5.6-terra": {
+    "pred": [
+     "DEM-K02",
+     "DEM-K03",
+     "DEM-K04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K02",
+      "severity": "medium",
+      "evidence": "Accessible knives/sharp kitchen utensils are stored openly in a counter utensil holder.",
+      "box": [
+       113,
+       204,
+       164,
+       302
+      ]
+     },
+     {
+      "id": "DEM-K03",
+      "severity": "low",
+      "evidence": "Dish/cleaning soap bottle is left accessible beside the sink.",
+      "box": [
+       319,
+       245,
+       347,
+       298
+      ]
+     },
+     {
+      "id": "DEM-K04",
+      "severity": "high",
+      "evidence": "Multiple prescription medication bottles are left out on the kitchen counter.",
+      "box": [
+       195,
+       195,
+       305,
+       324
+      ]
+     }
+    ]
+   },
+   "gpt-6-astra": {
+    "pred": [
+     "DEM-K01",
+     "DEM-K02",
+     "DEM-K04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K01",
+      "severity": "high",
+      "evidence": "The stove has exposed controls with no visible knob guards or access barrier.",
+      "box": [
+       144,
+       328,
+       254,
+       741
+      ]
+     },
+     {
+      "id": "DEM-K02",
+      "severity": "high",
+      "evidence": "Knives and sharp kitchen tools are stored openly on the counter beside the coffee maker.",
+      "box": [
+       184,
+       207,
+       224,
+       260
+      ]
+     },
+     {
+      "id": "DEM-K04",
+      "severity": "high",
+      "evidence": "Multiple medication bottles are left out on the countertop near the stove and sink.",
+      "box": [
+       198,
+       194,
+       299,
+       323
+      ]
+     }
+    ]
+   },
+   "gpt-6-sol": {
+    "pred": [
+     "DEM-K02",
+     "DEM-K03",
+     "DEM-K04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K02",
+      "severity": "high",
+      "evidence": "Knives and other sharp utensils are accessible on the counter beside the stove.",
+      "box": [
+       175,
+       207,
+       224,
+       289
+      ]
+     },
+     {
+      "id": "DEM-K03",
+      "severity": "high",
+      "evidence": "Cleaning-product bottles are out on an accessible counter in the adjoining room.",
+      "box": [
+       762,
+       214,
+       821,
+       270
+      ]
+     },
+     {
+      "id": "DEM-K04",
+      "severity": "high",
+      "evidence": "Multiple medication bottles are left out on the kitchen counter.",
+      "box": [
+       198,
+       250,
+       299,
+       323
+      ]
+     }
+    ]
+   },
+   "grok-4.6": {
+    "pred": [
+     "DEM-K04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K04",
+      "severity": "high",
+      "evidence": "Multiple orange prescription bottles sitting openly on the kitchen counter beside the coffee maker",
+      "box": [
+       248,
+       228,
+       372,
+       298
+      ]
+     }
+    ]
+   },
+   "grok-4.7": {
+    "pred": [
+     "DEM-K04",
+     "DEM-K02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K04",
+      "severity": "high",
+      "evidence": "Several orange prescription pill bottles clustered on the kitchen counter beside the coffee maker, within easy reach",
+      "box": [
+       198,
+       248,
+       302,
+       324
+      ]
+     },
+     {
+      "id": "DEM-K02",
+      "severity": "medium",
+      "evidence": "Knife/utensil block with blades and handles sticking up on the counter next to the stove and coffee maker",
+      "box": [
+       183,
+       222,
+       238,
+       302
+      ]
+     }
+    ]
+   },
+   "kimi-k3": {
+    "pred": [
+     "DEM-K01",
+     "DEM-K02",
+     "DEM-K03",
+     "DEM-K04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K01",
+      "severity": "high",
+      "evidence": "Black electric range/oven is fully accessible with usable control knobs (no knob covers or locks); a towel hangs on the oven handle next to the cooktop.",
+      "box": [
+       145,
+       328,
+       257,
+       751
+      ]
+     },
+     {
+      "id": "DEM-K02",
+      "severity": "high",
+      "evidence": "Knives/sharps in a holder out on the countertop beside the coffee maker, within easy reach.",
+      "box": [
+       176,
+       205,
+       224,
+       287
+      ]
+     },
+     {
+      "id": "DEM-K03",
+      "severity": "medium",
+      "evidence": "Pump bottle/cleaner sitting out by the sink and under-sink cabinets are unlocked (no child/dementia locks visible).",
+      "box": [
+       316,
+       243,
+       340,
+       298
+      ]
+     },
+     {
+      "id": "DEM-K04",
+      "severity": "high",
+      "evidence": "Multiple orange prescription medication bottles and orange pill cups/containers left out on the counter next to the stove.",
+      "box": [
+       196,
+       248,
+       300,
+       324
       ]
      }
     ]
@@ -1630,6 +3465,66 @@
        0.212,
        0.298,
        0.326
+      ]
+     }
+    ]
+   },
+   "mistral-medium-3.5": {
+    "pred": [
+     "DEM-K02",
+     "DEM-K03",
+     "DEM-K04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K02",
+      "severity": "high",
+      "evidence": "Knives and sharps are visible on the counter near the stove.",
+      "box": [
+       100,
+       200,
+       150,
+       250
+      ]
+     },
+     {
+      "id": "DEM-K03",
+      "severity": "high",
+      "evidence": "Cleaning chemicals are left out on the counter.",
+      "box": [
+       200,
+       200,
+       250,
+       250
+      ]
+     },
+     {
+      "id": "DEM-K04",
+      "severity": "high",
+      "evidence": "Medication bottles are left out on the counter.",
+      "box": [
+       250,
+       200,
+       300,
+       250
+      ]
+     }
+    ]
+   },
+   "nova-2-lite": {
+    "pred": [
+     "DEM-K04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K04",
+      "severity": "medium",
+      "evidence": "Medication bottles are left out on the counter near the sink area, which could be misinterpreted or misused by someone with dementia.",
+      "box": [
+       200,
+       208,
+       250,
+       322
       ]
      }
     ]
@@ -1705,12 +3600,66 @@
       ]
      }
     ]
+   },
+   "qwen3.8-max": {
+    "pred": [
+     "DEM-K04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K04",
+      "severity": "high",
+      "evidence": "Multiple orange prescription medication vials left uncovered on the kitchen counter near the coffee maker and sink, freely accessible to a person with dementia (risk of ingestion/overdose)",
+      "box": [
+       199,
+       253,
+       298,
+       320
+      ]
+     }
+    ]
+   },
+   "seed-2.1-turbo": {
+    "pred": [
+     "DEM-K04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K04",
+      "severity": "high",
+      "evidence": "Multiple orange prescription medication bottles are left out on the kitchen counter near the stove and sink, within easy reach of the resident.",
+      "box": [
+       195,
+       250,
+       300,
+       325
+      ]
+     }
+    ]
    }
   },
   "dem-entry-base0": {
    "claude-fable-5.1": {
     "pred": [],
     "raw": []
+   },
+   "claude-haiku-4.5": {
+    "pred": [
+     "DEM-R02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R02",
+      "severity": "medium",
+      "evidence": "Bold high-contrast patterned pillows on the beige sofa on the right side of the room, which could be misperceived or cause visual confusion for someone with dementia",
+      "box": [
+       650,
+       300,
+       1000,
+       500
+      ]
+     }
+    ]
    },
    "claude-opus-5": {
     "pred": [],
@@ -1724,7 +3673,56 @@
     "pred": [],
     "raw": []
    },
+   "deepseek-v4-flash-vision": {
+    "pred": [],
+    "raw": []
+   },
+   "gemini-3.1-pro": {
+    "pred": [],
+    "raw": []
+   },
+   "gemini-3.8-flash": {
+    "pred": [],
+    "raw": []
+   },
+   "gemma-3-27b": {
+    "pred": [
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E03",
+      "severity": "low",
+      "evidence": "There is clutter on the side tables and generally throughout the room, which could be a tripping hazard or cause confusion.",
+      "box": []
+     }
+    ]
+   },
+   "glm-5v-turbo": {
+    "pred": [],
+    "raw": []
+   },
    "gpt-5.6-sol": {
+    "pred": [],
+    "raw": []
+   },
+   "gpt-5.6-terra": {
+    "pred": [],
+    "raw": []
+   },
+   "gpt-6-astra": {
+    "pred": [],
+    "raw": []
+   },
+   "gpt-6-sol": {
+    "pred": [],
+    "raw": []
+   },
+   "grok-4.6": {
+    "pred": [],
+    "raw": []
+   },
+   "grok-4.7": {
     "pred": [],
     "raw": []
    },
@@ -1741,6 +3739,23 @@
       "id": "DEM-E01",
       "severity": "high",
       "evidence": "The front door is visible and appears to be unlocked, with car keys potentially nearby, increasing the risk of the person with dementia leaving the house unsupervised."
+     }
+    ]
+   },
+   "mistral-medium-3.5": {
+    "pred": [],
+    "raw": []
+   },
+   "nova-2-lite": {
+    "pred": [
+     "DEM-E02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E02",
+      "severity": "medium",
+      "evidence": "Front door is visible and appears to be unlocked, posing a risk of wandering.",
+      "box": null
      }
     ]
    },
@@ -1765,6 +3780,14 @@
    "qwen3-vl": {
     "pred": [],
     "raw": []
+   },
+   "qwen3.8-max": {
+    "pred": [],
+    "raw": []
+   },
+   "seed-2.1-turbo": {
+    "pred": [],
+    "raw": []
    }
   },
   "dem-kitchen-base0-DEM-K03": {
@@ -1782,6 +3805,35 @@
        215,
        700,
        310
+      ]
+     }
+    ]
+   },
+   "claude-haiku-4.5": {
+    "pred": [
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K03",
+      "severity": "high",
+      "evidence": "Multiple cleaning supply bottles visible on the counter to the right of the sink, including what appears to be Fabuloso and other cleaning products that are accessible and unlocked",
+      "box": [
+       500,
+       200,
+       700,
+       350
+      ]
+     },
+     {
+      "id": "DEM-K03",
+      "severity": "high",
+      "evidence": "Blue cleaning product container (appears to be laundry detergent or similar) visible on the counter near the sink area",
+      "box": [
+       550,
+       250,
+       650,
+       320
       ]
      }
     ]
@@ -1840,6 +3892,127 @@
      }
     ]
    },
+   "deepseek-v4-flash-vision": {
+    "pred": [
+     "DEM-K01",
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K01",
+      "severity": "medium",
+      "evidence": "Black electric range with freely accessible control knobs at the front, no lock, cover, or disconnect; a person with dementia could turn on a burner.",
+      "box": [
+       165,
+       320,
+       270,
+       760
+      ]
+     },
+     {
+      "id": "DEM-K03",
+      "severity": "medium",
+      "evidence": "Multiple cleaning chemical spray bottles (white and blue/red trigger sprays) and dish soap left out openly on the counter next to the sink, unlocked and reachable.",
+      "box": [
+       575,
+       195,
+       700,
+       310
+      ]
+     }
+    ]
+   },
+   "gemini-3.1-pro": {
+    "pred": [
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K03",
+      "severity": "high",
+      "evidence": "Cleaning chemicals are sitting out on the counter next to the sink.",
+      "box": [
+       216,
+       602,
+       312,
+       690
+      ]
+     }
+    ]
+   },
+   "gemini-3.8-flash": {
+    "pred": [
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K03",
+      "severity": "high",
+      "evidence": "Multiple cleaning chemicals and spray bottles are stored openly on the countertop within easy reach.",
+      "box": [
+       214,
+       601,
+       314,
+       690
+      ]
+     }
+    ]
+   },
+   "gemma-3-27b": {
+    "pred": [
+     "DEM-K03",
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K03",
+      "severity": "medium",
+      "evidence": "Cleaning supplies are visible on the counter under the sink.",
+      "box": [
+       450,
+       300,
+       550,
+       450
+      ]
+     },
+     {
+      "id": "DEM-E03",
+      "severity": "low",
+      "evidence": "The kitchen floor has a lot of open space, which could be a tripping hazard or contribute to disorientation.",
+      "box": []
+     }
+    ]
+   },
+   "glm-5v-turbo": {
+    "pred": [
+     "DEM-K01",
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K01",
+      "severity": "high",
+      "evidence": "Black electric stove with accessible control knobs located next to the refrigerator; knobs can be easily turned by accident or left in the 'on' position, creating fire and burn risks.",
+      "box": [
+       142,
+       335,
+       256,
+       753
+      ]
+     },
+     {
+      "id": "DEM-K03",
+      "severity": "high",
+      "evidence": "Multiple cleaning chemicals including spray bottles (red and white triggers) and a blue bottle of window cleaner/left on the countertop next to the dishwasher, unsecured and within reach.",
+      "box": [
+       601,
+       212,
+       692,
+       313
+      ]
+     }
+    ]
+   },
    "gpt-5.6-sol": {
     "pred": [
      "DEM-K03"
@@ -1854,6 +4027,120 @@
        215,
        704,
        316
+      ]
+     }
+    ]
+   },
+   "gpt-5.6-terra": {
+    "pred": [
+     "DEM-K01",
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K01",
+      "severity": "medium",
+      "evidence": "Stove/range is accessible with controls available for use.",
+      "box": [
+       168,
+       332,
+       255,
+       751
+      ]
+     },
+     {
+      "id": "DEM-K03",
+      "severity": "high",
+      "evidence": "Multiple cleaning chemical spray bottles are left out on the kitchen counter.",
+      "box": [
+       600,
+       218,
+       687,
+       317
+      ]
+     }
+    ]
+   },
+   "gpt-6-astra": {
+    "pred": [
+     "DEM-K01",
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K01",
+      "severity": "high",
+      "evidence": "The stove controls are accessible, with no visible knob guards or barrier.",
+      "box": [
+       145,
+       329,
+       254,
+       745
+      ]
+     },
+     {
+      "id": "DEM-K03",
+      "severity": "high",
+      "evidence": "Multiple cleaning chemical bottles and spray cleaners are left out on the countertop beside the sink.",
+      "box": [
+       597,
+       214,
+       692,
+       315
+      ]
+     }
+    ]
+   },
+   "gpt-6-sol": {
+    "pred": [
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K03",
+      "severity": "high",
+      "evidence": "Cleaning sprays and detergent containers are left out on the kitchen counter.",
+      "box": [
+       598,
+       210,
+       692,
+       317
+      ]
+     }
+    ]
+   },
+   "grok-4.6": {
+    "pred": [
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K03",
+      "severity": "high",
+      "evidence": "Multiple spray bottles and a large detergent container sitting unlocked and accessible on the kitchen counter",
+      "box": [
+       545,
+       255,
+       715,
+       345
+      ]
+     }
+    ]
+   },
+   "grok-4.7": {
+    "pred": [
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K03",
+      "severity": "high",
+      "evidence": "Several spray bottles and a large blue detergent jug are sitting out on the counter beside the sink, unlocked and within easy reach.",
+      "box": [
+       596,
+       218,
+       693,
+       314
       ]
      }
     ]
@@ -1918,6 +4205,37 @@
      }
     ]
    },
+   "mistral-medium-3.5": {
+    "pred": [
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K03",
+      "severity": "high",
+      "evidence": "Cleaning chemicals are out and unlocked on the counter.",
+      "box": [
+       650,
+       200,
+       750,
+       300
+      ]
+     }
+    ]
+   },
+   "nova-2-lite": {
+    "pred": [
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K03",
+      "severity": "medium",
+      "evidence": "Cleaning chemicals (Spray Bottle, Mr. Muscle) are left out on the counter and unlocked, posing a risk if the person with dementia were to ingest or misuse them.",
+      "box": null
+     }
+    ]
+   },
    "nova-pro": {
     "pred": [
      "DEM-K03"
@@ -1965,6 +4283,42 @@
       ]
      }
     ]
+   },
+   "qwen3.8-max": {
+    "pred": [
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K03",
+      "severity": "high",
+      "evidence": "Multiple cleaning products (trigger-spray cleaners, detergent bottles, and a blue Finish dishwasher detergent container) are left out on the kitchen counter within easy reach, unlocked and accessible to a person with dementia, creating a poisoning/ingestion risk.",
+      "box": [
+       600,
+       210,
+       692,
+       315
+      ]
+     }
+    ]
+   },
+   "seed-2.1-turbo": {
+    "pred": [
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K03",
+      "severity": "high",
+      "evidence": "Multiple cleaning chemicals (spray cleaner bottles and a large laundry detergent container) are left out on the kitchen counter, unlocked and easily accessible",
+      "box": [
+       595,
+       220,
+       690,
+       305
+      ]
+     }
+    ]
    }
   },
   "dem-bathroom-base0-DEM-B04": {
@@ -1994,6 +4348,30 @@
        560,
        720,
        1000
+      ]
+     }
+    ]
+   },
+   "claude-haiku-4.5": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat on white toilet with light-colored floor creates low contrast, making it difficult to distinguish the toilet location"
+     },
+     {
+      "id": "DEM-B04",
+      "severity": "high",
+      "evidence": "Black hair dryer (Dysonizer) is plugged in and positioned on the counter next to the sink, creating a shock hazard near water",
+      "box": [
+       800,
+       400,
+       950,
+       550
       ]
      }
     ]
@@ -2088,6 +4466,127 @@
      }
     ]
    },
+   "deepseek-v4-flash-vision": {
+    "pred": [
+     "DEM-B04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B04",
+      "severity": "high",
+      "evidence": "A black hair dryer is resting on the sink counter, plugged into the wall outlet, creating a risk of electric shock near water for a person with dementia.",
+      "box": [
+       730,
+       390,
+       890,
+       520
+      ]
+     }
+    ]
+   },
+   "gemini-3.1-pro": {
+    "pred": [
+     "DEM-B04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B04",
+      "severity": "high",
+      "evidence": "A hair dryer is plugged in and resting on the bathroom counter right next to the sink.",
+      "box": [
+       464,
+       736,
+       762,
+       927
+      ]
+     }
+    ]
+   },
+   "gemini-3.8-flash": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat on a white toilet against light flooring provides low visual contrast, making it difficult for an individual with dementia to perceive.",
+      "box": [
+       669,
+       517,
+       856,
+       715
+      ]
+     },
+     {
+      "id": "DEM-B04",
+      "severity": "high",
+      "evidence": "Hair dryer left out right next to the bathroom sink creates an electrocution and burn hazard.",
+      "box": [
+       468,
+       735,
+       759,
+       930
+      ]
+     }
+    ]
+   },
+   "gemma-3-27b": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "The toilet seat and the porcelain of the toilet are both white, creating low contrast and potentially making it difficult for someone with visual impairment or dementia to identify the toilet seat.",
+      "box": []
+     },
+     {
+      "id": "DEM-B04",
+      "severity": "medium",
+      "evidence": "A plugged-in hair dryer is near the sink with water, posing a potential electrocution risk.",
+      "box": [
+       650,
+       300,
+       850,
+       500
+      ]
+     }
+    ]
+   },
+   "glm-5v-turbo": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat on white toilet bowl with light-colored floor tiles creating low contrast, making it difficult for someone with visual-perceptual issues to locate and use safely",
+      "box": [
+       518,
+       553,
+       716,
+       998
+      ]
+     },
+     {
+      "id": "DEM-B04",
+      "severity": "high",
+      "evidence": "Black hair dryer plugged into electrical outlet on bathroom counter next to sink, posing electrocution and burn risks if used near water or dropped",
+      "box": [
+       738,
+       466,
+       926,
+       758
+      ]
+     }
+    ]
+   },
    "gpt-5.6-sol": {
     "pred": [
      "DEM-B02",
@@ -2114,6 +4613,156 @@
        461,
        930,
        765
+      ]
+     }
+    ]
+   },
+   "gpt-5.6-terra": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat and toilet have low contrast with the surrounding light-colored bathroom surfaces.",
+      "box": [
+       512,
+       668,
+       721,
+       999
+      ]
+     },
+     {
+      "id": "DEM-B04",
+      "severity": "high",
+      "evidence": "Hair dryer with cord is placed on the counter immediately beside the sink.",
+      "box": [
+       733,
+       466,
+       927,
+       762
+      ]
+     }
+    ]
+   },
+   "gpt-6-astra": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "The white toilet seat blends into the white toilet and light-colored floor, providing little visual contrast.",
+      "box": [
+       516,
+       665,
+       717,
+       999
+      ]
+     },
+     {
+      "id": "DEM-B04",
+      "severity": "high",
+      "evidence": "A corded hair dryer sits on the narrow vanity counter immediately beside the sink, within reach of water.",
+      "box": [
+       735,
+       463,
+       932,
+       769
+      ]
+     }
+    ]
+   },
+   "gpt-6-sol": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "The white toilet seat blends into the white toilet and light-colored floor.",
+      "box": [
+       516,
+       665,
+       719,
+       907
+      ]
+     },
+     {
+      "id": "DEM-B04",
+      "severity": "high",
+      "evidence": "A corded hair dryer is resting on the counter immediately beside the sink.",
+      "box": [
+       737,
+       466,
+       929,
+       756
+      ]
+     }
+    ]
+   },
+   "grok-4.6": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet and seat against light beige tiled floor creating low visual contrast",
+      "box": [
+       480,
+       540,
+       730,
+       990
+      ]
+     },
+     {
+      "id": "DEM-B04",
+      "severity": "high",
+      "evidence": "Plugged-in black hair dryer sitting on the vanity counter beside the sink with cord visible",
+      "box": [
+       710,
+       400,
+       940,
+       680
+      ]
+     }
+    ]
+   },
+   "grok-4.7": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat and white toilet against a light beige tile floor, creating low contrast that is hard to perceive",
+      "box": [
+       508,
+       545,
+       712,
+       998
+      ]
+     },
+     {
+      "id": "DEM-B04",
+      "severity": "high",
+      "evidence": "Black hair dryer sitting on the counter beside the sink with its cord hanging down, appearing plugged in near water",
+      "box": [
+       732,
+       460,
+       925,
+       760
       ]
      }
     ]
@@ -2190,6 +4839,54 @@
      }
     ]
    },
+   "mistral-medium-3.5": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat on white toilet and floor (low contrast)",
+      "box": [
+       400,
+       450,
+       600,
+       700
+      ]
+     },
+     {
+      "id": "DEM-B04",
+      "severity": "high",
+      "evidence": "Plugged-in hair dryer by the sink",
+      "box": [
+       750,
+       350,
+       900,
+       500
+      ]
+     }
+    ]
+   },
+   "nova-2-lite": {
+    "pred": [
+     "DEM-B04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B04",
+      "severity": "high",
+      "evidence": "A plugged-in hair dryer is placed on the countertop near the sink, posing a risk of electrical shock or burns if the person with dementia were to interact with it.",
+      "box": [
+       750,
+       460,
+       940,
+       760
+      ]
+     }
+    ]
+   },
    "nova-pro": {
     "pred": [
      "DEM-B02",
@@ -2237,6 +4934,36 @@
       ]
      }
     ]
+   },
+   "qwen3.8-max": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "low",
+      "evidence": "White toilet seat and lid on a white toilet bowl set against a light beige tile floor and white tub surround, offering very little contrast for a person with visual perceptual deficits",
+      "box": [
+       404,
+       770,
+       560,
+       1000
+      ]
+     },
+     {
+      "id": "DEM-B04",
+      "severity": "high",
+      "evidence": "Black hair dryer with cord and plug resting on the vanity counter immediately beside the sink basin, within splash range of water",
+      "box": [
+       574,
+       538,
+       725,
+       880
+      ]
+     }
+    ]
    }
   },
   "dem-bedroom-base0-DEM-R01": {
@@ -2254,6 +4981,24 @@
        195,
        340,
        425
+      ]
+     }
+    ]
+   },
+   "claude-haiku-4.5": {
+    "pred": [
+     "DEM-R01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "Large wooden-framed mirror positioned on the wall facing the bed, which can cause confusion and disorientation for someone with dementia who may not recognize their reflection",
+      "box": [
+       50,
+       200,
+       350,
+       550
       ]
      }
     ]
@@ -2336,6 +5081,122 @@
      }
     ]
    },
+   "deepseek-v4-flash-vision": {
+    "pred": [
+     "DEM-R01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "Large dresser mirror facing the bed, reflecting the bed.",
+      "box": [
+       180,
+       230,
+       330,
+       420
+      ]
+     }
+    ]
+   },
+   "gemini-3.1-pro": {
+    "pred": [
+     "DEM-R01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "A large mirror is positioned facing the bed, which can cause confusion or agitation as the person may not recognize their own reflection.",
+      "box": [
+       183,
+       192,
+       336,
+       424
+      ]
+     }
+    ]
+   },
+   "gemini-3.8-flash": {
+    "pred": [
+     "DEM-R01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "Large mirror reflecting the bed can cause confusion, distress, or the perception of an intruder for a person with dementia.",
+      "box": [
+       194,
+       182,
+       423,
+       337
+      ]
+     }
+    ]
+   },
+   "gemma-3-27b": {
+    "pred": [
+     "DEM-R01",
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "Large mirror facing the bed could be misperceived as an opening or another person, causing confusion or fear.",
+      "box": []
+     },
+     {
+      "id": "DEM-E03",
+      "severity": "low",
+      "evidence": "The dresser in the foreground and the area around the bed have some items on them, creating minor clutter that could be a tripping hazard or cause confusion.",
+      "box": []
+     }
+    ]
+   },
+   "glm-5v-turbo": {
+    "pred": [
+     "DEM-R01",
+     "DEM-B03",
+     "DEM-E02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "Large dresser mirror positioned facing the bed, which can cause confusion, agitation, or fear in individuals with dementia who may not recognize their own reflection",
+      "box": [
+       182,
+       226,
+       287,
+       419
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "Dark-colored rug or bath mat placed on light flooring visible through the doorway, creating a contrast that may be misperceived as a hole, step, or obstacle, increasing fall risk",
+      "box": [
+       814,
+       492,
+       934,
+       613
+      ]
+     },
+     {
+      "id": "DEM-E02",
+      "severity": "high",
+      "evidence": "Interior door left wide open providing unsecured egress from the bedroom, creating a significant wandering risk for a person with dementia who may exit and become lost or enter unsafe areas",
+      "box": [
+       931,
+       94,
+       999,
+       779
+      ]
+     }
+    ]
+   },
    "gpt-5.6-sol": {
     "pred": [
      "DEM-R01",
@@ -2362,6 +5223,108 @@
        426,
        941,
        511
+      ]
+     }
+    ]
+   },
+   "gpt-5.6-terra": {
+    "pred": [
+     "DEM-R01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "A large full-length mirror is positioned directly facing and reflecting the bed.",
+      "box": [
+       183,
+       224,
+       296,
+       441
+      ]
+     }
+    ]
+   },
+   "gpt-6-astra": {
+    "pred": [
+     "DEM-R01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "Large floor-standing mirrors beside the bed face toward it and reflect the bed, potentially causing confusion or misidentification.",
+      "box": [
+       182,
+       191,
+       338,
+       429
+      ]
+     }
+    ]
+   },
+   "gpt-6-sol": {
+    "pred": [
+     "DEM-R01",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "A large mirror leans against the wall facing the bed.",
+      "box": [
+       182,
+       224,
+       292,
+       425
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "A dark bath mat is visible on the light-colored bathroom floor.",
+      "box": [
+       824,
+       428,
+       909,
+       493
+      ]
+     }
+    ]
+   },
+   "grok-4.6": {
+    "pred": [
+     "DEM-R01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "Large standing wooden-framed mirror positioned beside the bed and reflecting the sleeping area",
+      "box": [
+       215,
+       195,
+       365,
+       515
+      ]
+     }
+    ]
+   },
+   "grok-4.7": {
+    "pred": [
+     "DEM-R01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "Large wood-framed standing mirror beside the bed reflects the bed and room, a common source of misperception and agitation.",
+      "box": [
+       178,
+       218,
+       338,
+       412
       ]
      }
     ]
@@ -2414,6 +5377,37 @@
      }
     ]
    },
+   "mistral-medium-3.5": {
+    "pred": [
+     "DEM-R01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "Large mirror facing the bed",
+      "box": [
+       200,
+       100,
+       300,
+       300
+      ]
+     }
+    ]
+   },
+   "nova-2-lite": {
+    "pred": [
+     "DEM-R01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "Large mirror facing the bed can be a hazard for someone with dementia who may misperceive their reflection or become disoriented.",
+      "box": null
+     }
+    ]
+   },
    "nova-pro": {
     "pred": [
      "DEM-R01"
@@ -2461,6 +5455,24 @@
       ]
      }
     ]
+   },
+   "qwen3.8-max": {
+    "pred": [
+     "DEM-R01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "Large wood-framed standing/leaning mirrors on the left wall directly face and reflect the bed; a person with dementia may misperceive their own reflection as a stranger or become agitated, and the mirror reflection of the bed confirms the orientation toward the sleeping area.",
+      "box": [
+       183,
+       196,
+       335,
+       421
+      ]
+     }
+    ]
    }
   },
   "dem-kitchen-base0-DEM-K02": {
@@ -2490,6 +5502,36 @@
        248,
        528,
        312
+      ]
+     }
+    ]
+   },
+   "claude-haiku-4.5": {
+    "pred": [
+     "DEM-K02",
+     "DEM-K01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K02",
+      "severity": "high",
+      "evidence": "Knife block with multiple knives is openly accessible on the counter next to the sink, within easy reach of someone with dementia who may misuse them",
+      "box": [
+       450,
+       280,
+       550,
+       380
+      ]
+     },
+     {
+      "id": "DEM-K01",
+      "severity": "high",
+      "evidence": "Stove with freely accessible knobs is present in the kitchen. No evidence of protective covers or locks on the burner controls",
+      "box": [
+       150,
+       280,
+       280,
+       380
       ]
      }
     ]
@@ -2584,6 +5626,143 @@
      }
     ]
    },
+   "deepseek-v4-flash-vision": {
+    "pred": [
+     "DEM-K02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K02",
+      "severity": "high",
+      "evidence": "Knife block with multiple sharp knives on the counter, easily accessible",
+      "box": [
+       520,
+       330,
+       570,
+       410
+      ]
+     }
+    ]
+   },
+   "gemini-3.1-pro": {
+    "pred": [
+     "DEM-K01",
+     "DEM-K02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K01",
+      "severity": "high",
+      "evidence": "Stove knobs are accessible and could be turned on accidentally or left on.",
+      "box": [
+       332,
+       144,
+       380,
+       238
+      ]
+     },
+     {
+      "id": "DEM-K02",
+      "severity": "high",
+      "evidence": "A knife block with several knives is sitting out on the counter.",
+      "box": [
+       178,
+       471,
+       316,
+       529
+      ]
+     }
+    ]
+   },
+   "gemini-3.8-flash": {
+    "pred": [
+     "DEM-K02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K02",
+      "severity": "high",
+      "evidence": "A block containing multiple large knives is left accessible on the countertop next to the sink.",
+      "box": [
+       177,
+       469,
+       316,
+       527
+      ]
+     }
+    ]
+   },
+   "gemma-3-27b": {
+    "pred": [
+     "DEM-K02",
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K02",
+      "severity": "high",
+      "evidence": "Multiple knives are visible on a magnetic strip above the counter.",
+      "box": [
+       450,
+       300,
+       550,
+       450
+      ]
+     },
+     {
+      "id": "DEM-E03",
+      "severity": "low",
+      "evidence": "The counter is cluttered with small appliances and items, potentially creating confusion or tripping hazards.",
+      "box": [
+       100,
+       400,
+       700,
+       600
+      ]
+     },
+     {
+      "id": "DEM-E03",
+      "severity": "low",
+      "evidence": "Dishes are stacked in open shelving, creating visual clutter.",
+      "box": [
+       750,
+       100,
+       950,
+       400
+      ]
+     }
+    ]
+   },
+   "glm-5v-turbo": {
+    "pred": [
+     "DEM-K02",
+     "DEM-K01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K02",
+      "severity": "high",
+      "evidence": "Knife block containing multiple sharp knives sitting openly on the kitchen counter within easy reach",
+      "box": [
+       469,
+       179,
+       529,
+       318
+      ]
+     },
+     {
+      "id": "DEM-K01",
+      "severity": "medium",
+      "evidence": "Electric stove with control knobs fully accessible and visible, no safety covers or locks present",
+      "box": [
+       146,
+       335,
+       256,
+       749
+      ]
+     }
+    ]
+   },
    "gpt-5.6-sol": {
     "pred": [
      "DEM-K02",
@@ -2610,6 +5789,108 @@
        208,
        822,
        280
+      ]
+     }
+    ]
+   },
+   "gpt-5.6-terra": {
+    "pred": [
+     "DEM-K02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K02",
+      "severity": "high",
+      "evidence": "A knife block containing multiple accessible knives is on the kitchen counter.",
+      "box": [
+       470,
+       180,
+       530,
+       317
+      ]
+     }
+    ]
+   },
+   "gpt-6-astra": {
+    "pred": [
+     "DEM-K02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K02",
+      "severity": "high",
+      "evidence": "Several large knives are stored in an openly accessible knife block on the countertop beside the sink.",
+      "box": [
+       467,
+       175,
+       529,
+       317
+      ]
+     }
+    ]
+   },
+   "gpt-6-sol": {
+    "pred": [
+     "DEM-K02",
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K02",
+      "severity": "high",
+      "evidence": "Knives are readily accessible in a block on the counter.",
+      "box": [
+       467,
+       176,
+       526,
+       314
+      ]
+     },
+     {
+      "id": "DEM-K03",
+      "severity": "medium",
+      "evidence": "Cleaning-product bottles are visible on an open shelf through the doorway.",
+      "box": [
+       762,
+       211,
+       820,
+       270
+      ]
+     }
+    ]
+   },
+   "grok-4.6": {
+    "pred": [
+     "DEM-K02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K02",
+      "severity": "high",
+      "evidence": "Wooden knife block with multiple large knives standing upright and fully accessible on the kitchen counter beside the sink",
+      "box": [
+       478,
+       248,
+       562,
+       338
+      ]
+     }
+    ]
+   },
+   "grok-4.7": {
+    "pred": [
+     "DEM-K02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K02",
+      "severity": "high",
+      "evidence": "Wooden knife block holding several knives with black handles sits on the counter immediately right of the sink, fully accessible.",
+      "box": [
+       462,
+       176,
+       528,
+       314
       ]
      }
     ]
@@ -2686,6 +5967,54 @@
      }
     ]
    },
+   "mistral-medium-3.5": {
+    "pred": [
+     "DEM-K02",
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K02",
+      "severity": "high",
+      "evidence": "Knives are visible in a block on the counter, which can be a hazard for someone with dementia.",
+      "box": [
+       550,
+       200,
+       600,
+       250
+      ]
+     },
+     {
+      "id": "DEM-K03",
+      "severity": "medium",
+      "evidence": "Cleaning chemicals are visible on the counter near the sink, which can be unsafe if accessed improperly.",
+      "box": [
+       600,
+       200,
+       650,
+       250
+      ]
+     }
+    ]
+   },
+   "nova-2-lite": {
+    "pred": [
+     "DEM-K02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K02",
+      "severity": "high",
+      "evidence": "Knives are placed in a knife block on the counter, which could be easily accessed by someone with dementia.",
+      "box": [
+       470,
+       171,
+       532,
+       314
+      ]
+     }
+    ]
+   },
    "nova-pro": {
     "pred": [
      "DEM-K02",
@@ -2756,6 +6085,24 @@
       ]
      }
     ]
+   },
+   "qwen3.8-max": {
+    "pred": [
+     "DEM-K02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K02",
+      "severity": "high",
+      "evidence": "A countertop knife block with multiple exposed knives sits openly on the counter beside the sink, within easy reach and unsupervised access for a person with dementia",
+      "box": [
+       470,
+       177,
+       530,
+       317
+      ]
+     }
+    ]
    }
   },
   "dem-bedroom-base0-DEM-R02": {
@@ -2773,6 +6120,36 @@
        715,
        960,
        1000
+      ]
+     }
+    ]
+   },
+   "claude-haiku-4.5": {
+    "pred": [
+     "DEM-R02",
+     "DEM-R01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R02",
+      "severity": "medium",
+      "evidence": "Bold black and white geometric chevron/diamond patterned rug in the foreground. High-contrast patterns can be misperceived as obstacles or create visual confusion for individuals with dementia.",
+      "box": [
+       0,
+       650,
+       1000,
+       1000
+      ]
+     },
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "Large framed picture/mirror on the wall directly above the bed headboard. Mirrors can cause confusion and disorientation, particularly when facing the bed where the person sleeps.",
+      "box": [
+       400,
+       50,
+       700,
+       250
       ]
      }
     ]
@@ -2855,6 +6232,132 @@
      }
     ]
    },
+   "deepseek-v4-flash-vision": {
+    "pred": [
+     "DEM-K04",
+     "DEM-R02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K04",
+      "severity": "medium",
+      "evidence": "Small white bottle on nightstand, likely medication.",
+      "box": [
+       710,
+       460,
+       730,
+       490
+      ]
+     },
+     {
+      "id": "DEM-R02",
+      "severity": "medium",
+      "evidence": "Bold black-and-white geometric rug on floor.",
+      "box": [
+       180,
+       620,
+       1000,
+       1000
+      ]
+     }
+    ]
+   },
+   "gemini-3.1-pro": {
+    "pred": [
+     "DEM-R02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R02",
+      "severity": "high",
+      "evidence": "A bold, high-contrast black and white patterned rug is on the floor, which can cause visual confusion or be perceived as a hole or obstacle by someone with dementia.",
+      "box": [
+       718,
+       200,
+       1000,
+       984
+      ]
+     }
+    ]
+   },
+   "gemini-3.8-flash": {
+    "pred": [
+     "DEM-R02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R02",
+      "severity": "high",
+      "evidence": "Bold high-contrast geometric black and white patterned rug on the floor, which can be misperceived as holes, obstacles, or level changes and cause falls or freezing gait.",
+      "box": [
+       717,
+       204,
+       1000,
+       989
+      ]
+     }
+    ]
+   },
+   "gemma-3-27b": {
+    "pred": [
+     "DEM-R02",
+     "DEM-R01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R02",
+      "severity": "medium",
+      "evidence": "The rug has a bold, high-contrast geometric pattern which could be misperceived as a drop-off or obstacle, potentially leading to falls.",
+      "box": [
+       150,
+       500,
+       850,
+       800
+      ]
+     },
+     {
+      "id": "DEM-R01",
+      "severity": "low",
+      "evidence": "A large mirror is facing the bed. Individuals with dementia may misinterpret their reflection or become frightened.",
+      "box": [
+       600,
+       200,
+       900,
+       400
+      ]
+     }
+    ]
+   },
+   "glm-5v-turbo": {
+    "pred": [
+     "DEM-R02",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R02",
+      "severity": "high",
+      "evidence": "Bold black and white geometric high-contrast patterned rug on bedroom floor",
+      "box": [
+       200,
+       724,
+       984,
+       996
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "Dark bath mat on light-colored floor visible through open doorway",
+      "box": [
+       815,
+       492,
+       934,
+       612
+      ]
+     }
+    ]
+   },
    "gpt-5.6-sol": {
     "pred": [
      "DEM-R02"
@@ -2869,6 +6372,120 @@
        720,
        986,
        997
+      ]
+     }
+    ]
+   },
+   "gpt-5.6-terra": {
+    "pred": [
+     "DEM-R02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R02",
+      "severity": "medium",
+      "evidence": "Large black-and-white high-contrast geometric patterned rug on the floor, which may be misperceived as changes in level or obstacles.",
+      "box": [
+       204,
+       718,
+       979,
+       995
+      ]
+     }
+    ]
+   },
+   "gpt-6-astra": {
+    "pred": [
+     "DEM-R02",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R02",
+      "severity": "high",
+      "evidence": "Large black-and-white rug with a bold, high-contrast geometric pattern in front of the bed.",
+      "box": [
+       201,
+       718,
+       984,
+       997
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "Dark gray patterned bath mat on the lighter floor in the bathroom visible through the doorway.",
+      "box": [
+       823,
+       428,
+       909,
+       489
+      ]
+     }
+    ]
+   },
+   "gpt-6-sol": {
+    "pred": [
+     "DEM-R02",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R02",
+      "severity": "medium",
+      "evidence": "A large black-and-white rug with a bold, high-contrast geometric pattern lies beside the bed.",
+      "box": [
+       201,
+       719,
+       985,
+       999
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "A dark gray bath mat is visible on the light-colored bathroom floor through the doorway.",
+      "box": [
+       823,
+       430,
+       909,
+       500
+      ]
+     }
+    ]
+   },
+   "grok-4.6": {
+    "pred": [
+     "DEM-R02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R02",
+      "severity": "high",
+      "evidence": "Large bold black-and-white high-contrast geometric patterned area rug on the bedroom floor",
+      "box": [
+       180,
+       730,
+       990,
+       998
+      ]
+     }
+    ]
+   },
+   "grok-4.7": {
+    "pred": [
+     "DEM-R02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R02",
+      "severity": "high",
+      "evidence": "Large black-and-white geometric rug with bold interlocking shapes covers the bedroom floor in the main walking path; the extreme contrast can be misread as holes, steps, or barriers.",
+      "box": [
+       198,
+       713,
+       988,
+       1000
       ]
      }
     ]
@@ -2921,6 +6538,49 @@
      }
     ]
    },
+   "mistral-medium-3.5": {
+    "pred": [
+     "DEM-R01",
+     "DEM-R02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "Large mirror facing the bed",
+      "box": [
+       850,
+       0,
+       1000,
+       400
+      ]
+     },
+     {
+      "id": "DEM-R02",
+      "severity": "medium",
+      "evidence": "Bold high-contrast patterned rug",
+      "box": [
+       300,
+       600,
+       1000,
+       1000
+      ]
+     }
+    ]
+   },
+   "nova-2-lite": {
+    "pred": [
+     "DEM-R02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R02",
+      "severity": "medium",
+      "evidence": "The bold black and white geometric patterned rug could be misinterpreted by someone with dementia as a step or obstacle, potentially causing confusion or falls.",
+      "box": null
+     }
+    ]
+   },
    "nova-pro": {
     "pred": [
      "DEM-R02"
@@ -2956,6 +6616,42 @@
       ]
      }
     ]
+   },
+   "qwen3.8-max": {
+    "pred": [
+     "DEM-R02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R02",
+      "severity": "medium",
+      "evidence": "Large area rug at the foot of the bed with a bold black-and-white geometric pattern; such high-contrast patterns can be misperceived by a person with dementia as holes, steps, or obstacles, increasing fall risk and agitation",
+      "box": [
+       201,
+       718,
+       985,
+       997
+      ]
+     }
+    ]
+   },
+   "seed-2.1-turbo": {
+    "pred": [
+     "DEM-R02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R02",
+      "severity": "medium",
+      "evidence": "Bold black and white high-contrast geometric patterned area rug on the bedroom floor at the foot of the bed, which can be misperceived by people with dementia as holes, uneven ground, or obstacles, increasing fall and disorientation risk.",
+      "box": [
+       200,
+       715,
+       985,
+       995
+      ]
+     }
+    ]
    }
   },
   "dem-entry-base0-DEM-E03": {
@@ -2973,6 +6669,36 @@
        600,
        620,
        820
+      ]
+     }
+    ]
+   },
+   "claude-haiku-4.5": {
+    "pred": [
+     "DEM-E03",
+     "DEM-R02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E03",
+      "severity": "medium",
+      "evidence": "Newspapers and reading materials scattered on the floor in the middle of the walkway, creating a tripping hazard and clutter obstruction",
+      "box": [
+       300,
+       400,
+       600,
+       550
+      ]
+     },
+     {
+      "id": "DEM-R02",
+      "severity": "medium",
+      "evidence": "Patterned throw blanket with bold geometric circles in high contrast (dark and light) draped over the beige chair on the right side, which could be visually confusing or misperceived",
+      "box": [
+       700,
+       300,
+       1000,
+       700
       ]
      }
     ]
@@ -3031,6 +6757,96 @@
      }
     ]
    },
+   "deepseek-v4-flash-vision": {
+    "pred": [
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E03",
+      "severity": "medium",
+      "evidence": "Several loose newspapers piled/scattered on the wood floor in the open walkway between the recliner and the armchair, creating a trip hazard for someone with dementia.",
+      "box": [
+       371,
+       635,
+       618,
+       801
+      ]
+     }
+    ]
+   },
+   "gemini-3.1-pro": {
+    "pred": [
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E03",
+      "severity": "medium",
+      "evidence": "A pile of newspapers and mail is on the floor in the middle of the room, creating a tripping hazard.",
+      "box": [
+       601,
+       372,
+       815,
+       615
+      ]
+     }
+    ]
+   },
+   "gemini-3.8-flash": {
+    "pred": [
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E03",
+      "severity": "medium",
+      "evidence": "A pile of newspapers and papers is left lying directly on the floor in the central walkway, posing a significant slip and trip hazard.",
+      "box": [
+       611,
+       375,
+       818,
+       616
+      ]
+     }
+    ]
+   },
+   "gemma-3-27b": {
+    "pred": [
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E03",
+      "severity": "medium",
+      "evidence": "A pile of newspapers and papers are on the floor, creating a tripping hazard and clutter.",
+      "box": [
+       250,
+       400,
+       450,
+       600
+      ]
+     }
+    ]
+   },
+   "glm-5v-turbo": {
+    "pred": [
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E03",
+      "severity": "medium",
+      "evidence": "Pile of newspapers and loose papers on the wooden floor in the central walkway, posing a significant tripping and fall hazard.",
+      "box": [
+       372,
+       657,
+       618,
+       814
+      ]
+     }
+    ]
+   },
    "gpt-5.6-sol": {
     "pred": [
      "DEM-E03"
@@ -3045,6 +6861,96 @@
        612,
        616,
        815
+      ]
+     }
+    ]
+   },
+   "gpt-5.6-terra": {
+    "pred": [
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E03",
+      "severity": "medium",
+      "evidence": "A pile of loose newspapers is left on the floor in the main walking path, creating a clutter and trip hazard.",
+      "box": [
+       374,
+       649,
+       615,
+       817
+      ]
+     }
+    ]
+   },
+   "gpt-6-astra": {
+    "pred": [
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E03",
+      "severity": "high",
+      "evidence": "A pile of newspapers and loose papers in a small box lie on the floor in the walkway between the chairs, creating tripping hazards.",
+      "box": [
+       373,
+       599,
+       617,
+       819
+      ]
+     }
+    ]
+   },
+   "gpt-6-sol": {
+    "pred": [
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E03",
+      "severity": "medium",
+      "evidence": "Newspapers and loose papers are piled on the floor in the walking area.",
+      "box": [
+       374,
+       594,
+       618,
+       819
+      ]
+     }
+    ]
+   },
+   "grok-4.6": {
+    "pred": [
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E03",
+      "severity": "medium",
+      "evidence": "Stack of newspapers piled on the hardwood floor in the open walkway between furniture",
+      "box": [
+       340,
+       580,
+       580,
+       800
+      ]
+     }
+    ]
+   },
+   "grok-4.7": {
+    "pred": [
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E03",
+      "severity": "medium",
+      "evidence": "A loose pile of newspapers and papers is spread across the hardwood floor in the walking path between the chairs, creating a trip hazard.",
+      "box": [
+       370,
+       645,
+       620,
+       820
       ]
      }
     ]
@@ -3097,6 +7003,49 @@
      }
     ]
    },
+   "mistral-medium-3.5": {
+    "pred": [
+     "DEM-E02",
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E02",
+      "severity": "high",
+      "evidence": "Front door is visible and appears to be open, leading to the outside.",
+      "box": [
+       350,
+       100,
+       400,
+       300
+      ]
+     },
+     {
+      "id": "DEM-E03",
+      "severity": "medium",
+      "evidence": "Newspapers are scattered on the floor, creating a cluttered walkway.",
+      "box": [
+       400,
+       450,
+       600,
+       550
+      ]
+     }
+    ]
+   },
+   "nova-2-lite": {
+    "pred": [
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E03",
+      "severity": "medium",
+      "evidence": "Newspapers are piled on the floor in the walkway, creating a tripping hazard and potential clutter that could confuse an individual with dementia.",
+      "box": null
+     }
+    ]
+   },
    "nova-pro": {
     "pred": [
      "DEM-E03"
@@ -3129,6 +7078,42 @@
        645,
        617,
        818
+      ]
+     }
+    ]
+   },
+   "qwen3.8-max": {
+    "pred": [
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E03",
+      "severity": "medium",
+      "evidence": "Stack of newspapers and loose papers piled in the middle of the open floor walkway, plus a small paper/box bundle beside the recliner, creating a tripping obstacle in the main path between seating areas",
+      "box": [
+       375,
+       600,
+       616,
+       818
+      ]
+     }
+    ]
+   },
+   "seed-2.1-turbo": {
+    "pred": [
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E03",
+      "severity": "medium",
+      "evidence": "Stack of newspapers and a small box with loose papers left on the floor in the main walking path of the living room, creating walkway clutter that poses a tripping risk.",
+      "box": [
+       370,
+       600,
+       615,
+       820
       ]
      }
     ]
@@ -3173,6 +7158,48 @@
        664,
        712,
        1000
+      ]
+     }
+    ]
+   },
+   "claude-haiku-4.5": {
+    "pred": [
+     "DEM-B02",
+     "DEM-K03",
+     "DEM-B01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat on white toilet with light-colored floor creates low contrast, making it difficult to distinguish the toilet location",
+      "box": [
+       300,
+       400,
+       550,
+       650
+      ]
+     },
+     {
+      "id": "DEM-K03",
+      "severity": "high",
+      "evidence": "Multiple bottles of cleaning/personal care products (orange Cloroxclin bottles and other products) left out on the bathroom counter, accessible and unlocked",
+      "box": [
+       700,
+       300,
+       1000,
+       500
+      ]
+     },
+     {
+      "id": "DEM-B01",
+      "severity": "medium",
+      "evidence": "Multiple bottles and products (appearing to include medications/health products) left out on the sink counter near the faucet",
+      "box": [
+       700,
+       300,
+       1000,
+       500
       ]
      }
     ]
@@ -3291,6 +7318,160 @@
      }
     ]
    },
+   "deepseek-v4-flash-vision": {
+    "pred": [
+     "DEM-K04",
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K04",
+      "severity": "high",
+      "evidence": "Multiple medication bottles (orange and blue) are left out on the sink counter, accessible to the resident.",
+      "box": [
+       600,
+       430,
+       830,
+       610
+      ]
+     },
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "The white toilet seat sits on a white toilet with a light-colored floor, creating low contrast that is difficult for someone with dementia to perceive.",
+      "box": [
+       550,
+       620,
+       750,
+       850
+      ]
+     }
+    ]
+   },
+   "gemini-3.1-pro": {
+    "pred": [
+     "DEM-B01",
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B01",
+      "severity": "high",
+      "evidence": "Multiple medication bottles are left out on the bathroom counter.",
+      "box": [
+       497,
+       747,
+       708,
+       926
+      ]
+     },
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "The toilet seat is white, matching the toilet bowl and the light-colored floor, which can make it difficult to see.",
+      "box": [
+       668,
+       516,
+       1000,
+       715
+      ]
+     }
+    ]
+   },
+   "gemini-3.8-flash": {
+    "pred": [
+     "DEM-B01",
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B01",
+      "severity": "medium",
+      "evidence": "Multiple medication and topical bottles are left out accessible on the bathroom counter next to the sink.",
+      "box": [
+       493,
+       736,
+       719,
+       936
+      ]
+     },
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat on a white toilet against a light floor provides low visual contrast, making it difficult for someone with dementia to distinguish the seat.",
+      "box": [
+       549,
+       516,
+       998,
+       717
+      ]
+     }
+    ]
+   },
+   "gemma-3-27b": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B03",
+     "DEM-B01",
+     "DEM-K04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "The toilet seat and toilet are both white, creating low contrast and potentially making it difficult for someone with visual impairment or dementia to identify the toilet.",
+      "box": []
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "low",
+      "evidence": "The dark bath mat on the light floor could be a tripping hazard, especially for someone with impaired vision or balance.",
+      "box": []
+     },
+     {
+      "id": "DEM-B01",
+      "severity": "medium",
+      "evidence": "There are razors and medications visible on the sink counter, posing a risk of accidental injury or misuse.",
+      "box": []
+     },
+     {
+      "id": "DEM-K04",
+      "severity": "medium",
+      "evidence": "Medication bottles are left out on the sink counter, which could lead to confusion or accidental overdose.",
+      "box": []
+     }
+    ]
+   },
+   "glm-5v-turbo": {
+    "pred": [
+     "DEM-K04",
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K04",
+      "severity": "high",
+      "evidence": "Multiple medication bottles and supplement containers (orange and blue bottles) left unsecured on the bathroom sink counter within easy reach",
+      "box": [
+       744,
+       494,
+       928,
+       706
+      ]
+     },
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat on white porcelain toilet bowl against light cream floor tiles creates low visual contrast, making the fixture difficult to distinguish for someone with vision perception issues",
+      "box": [
+       519,
+       552,
+       718,
+       998
+      ]
+     }
+    ]
+   },
    "gpt-5.6-sol": {
     "pred": [
      "DEM-B01",
@@ -3317,6 +7498,156 @@
        652,
        718,
        999
+      ]
+     }
+    ]
+   },
+   "gpt-5.6-terra": {
+    "pred": [
+     "DEM-K04",
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K04",
+      "severity": "medium",
+      "evidence": "Multiple medication bottles and tubes are left openly accessible on the sink counter.",
+      "box": [
+       744,
+       493,
+       942,
+       708
+      ]
+     },
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "The white toilet seat blends with the white toilet and light-colored floor, creating low visual contrast.",
+      "box": [
+       510,
+       674,
+       724,
+       999
+      ]
+     }
+    ]
+   },
+   "gpt-6-astra": {
+    "pred": [
+     "DEM-K04",
+     "DEM-B01",
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K04",
+      "severity": "high",
+      "evidence": "Multiple medication bottles and tubes are left openly accessible on the sink counter and beside the toilet.",
+      "box": [
+       745,
+       492,
+       929,
+       716
+      ]
+     },
+     {
+      "id": "DEM-B01",
+      "severity": "high",
+      "evidence": "Medications are left out around the sink within easy reach.",
+      "box": [
+       745,
+       492,
+       929,
+       716
+      ]
+     },
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "The white toilet seat blends with the white toilet and pale surrounding floor, providing little visual contrast.",
+      "box": [
+       515,
+       668,
+       718,
+       999
+      ]
+     }
+    ]
+   },
+   "gpt-6-sol": {
+    "pred": [
+     "DEM-B01",
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B01",
+      "severity": "high",
+      "evidence": "Medication bottles and small personal-care items are left within reach on the sink counter.",
+      "box": [
+       740,
+       485,
+       938,
+       711
+      ]
+     },
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "The white toilet seat blends into the white toilet, making it harder to distinguish.",
+      "box": [
+       518,
+       668,
+       716,
+       829
+      ]
+     }
+    ]
+   },
+   "grok-4.6": {
+    "pred": [
+     "DEM-B01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B01",
+      "severity": "high",
+      "evidence": "Multiple bottles (including orange prescription-style containers and other personal-care/medication items) plus a small dark object consistent with a razor left unattended on the sink counter",
+      "box": [
+       710,
+       490,
+       985,
+       730
+      ]
+     }
+    ]
+   },
+   "grok-4.7": {
+    "pred": [
+     "DEM-K04",
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K04",
+      "severity": "high",
+      "evidence": "Multiple medication bottles (large white bottle with orange label, orange bottles, and small tubes) left out on the bathroom vanity counter within easy reach",
+      "box": [
+       742,
+       488,
+       948,
+       712
+      ]
+     },
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat on a white toilet set against a light beige tile floor, creating low contrast that makes the toilet hard to perceive",
+      "box": [
+       508,
+       545,
+       722,
+       1000
       ]
      }
     ]
@@ -3417,6 +7748,85 @@
      }
     ]
    },
+   "mistral-medium-3.5": {
+    "pred": [
+     "DEM-K03",
+     "DEM-B01",
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K03",
+      "severity": "high",
+      "evidence": "Cleaning chemicals are out and unlocked on the counter.",
+      "box": [
+       750,
+       350,
+       900,
+       500
+      ]
+     },
+     {
+      "id": "DEM-B01",
+      "severity": "high",
+      "evidence": "Medications and possibly a razor are left out on the sink.",
+      "box": [
+       750,
+       400,
+       950,
+       550
+      ]
+     },
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "White toilet seat on a white toilet and light-colored floor, creating low contrast.",
+      "box": [
+       400,
+       500,
+       700,
+       750
+      ]
+     }
+    ]
+   },
+   "nova-2-lite": {
+    "pred": [
+     "DEM-B02",
+     "DEM-B01",
+     "DEM-K04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B02",
+      "severity": "medium",
+      "evidence": "The white toilet seat blends with the white toilet and floor, creating low contrast that could confuse someone with dementia.",
+      "box": null
+     },
+     {
+      "id": "DEM-B01",
+      "severity": "medium",
+      "evidence": "Cleaning chemicals and other items are left out on the sink counter, posing a risk of accidental ingestion or misuse by someone with dementia.",
+      "box": [
+       700,
+       480,
+       1000,
+       999
+      ]
+     },
+     {
+      "id": "DEM-K04",
+      "severity": "medium",
+      "evidence": "Medication bottles are left out on the sink counter, which could be misinterpreted or misused by someone with dementia.",
+      "box": [
+       700,
+       480,
+       1000,
+       999
+      ]
+     }
+    ]
+   },
    "nova-pro": {
     "pred": [
      "DEM-B01"
@@ -3464,12 +7874,60 @@
       ]
      }
     ]
+   },
+   "qwen3.8-max": {
+    "pred": [
+     "DEM-B04",
+     "DEM-B02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B04",
+      "severity": "high",
+      "evidence": "Multiple prescription medication bottles and tubes (orange pill bottles, white bottle with orange label, loose ointment tubes) left out unlocked on the vanity counter within easy reach",
+      "box": [
+       745,
+       490,
+       930,
+       700
+      ]
+     },
+     {
+      "id": "DEM-B02",
+      "severity": "low",
+      "evidence": "White toilet seat on a white toilet against light beige tile floor creates very low contrast, making the toilet hard to distinguish for someone with visual-perceptual impairment",
+      "box": [
+       515,
+       660,
+       720,
+       995
+      ]
+     }
+    ]
    }
   },
   "dem-entry-base0-DEM-E02": {
    "claude-fable-5.1": {
     "pred": [],
     "raw": []
+   },
+   "claude-haiku-4.5": {
+    "pred": [
+     "DEM-E02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E02",
+      "severity": "high",
+      "evidence": "Glass door to the outside is open, visible in the background showing access to the exterior. This poses a significant wandering risk for someone with dementia.",
+      "box": [
+       400,
+       100,
+       550,
+       400
+      ]
+     }
+    ]
    },
    "claude-opus-5": {
     "pred": [
@@ -3511,6 +7969,63 @@
      }
     ]
    },
+   "deepseek-v4-flash-vision": {
+    "pred": [
+     "DEM-E02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E02",
+      "severity": "high",
+      "evidence": "A door with glass panes leading outside is slightly ajar, providing an exit path.",
+      "box": [
+       250,
+       50,
+       400,
+       450
+      ]
+     }
+    ]
+   },
+   "gemini-3.1-pro": {
+    "pred": [],
+    "raw": []
+   },
+   "gemini-3.8-flash": {
+    "pred": [],
+    "raw": []
+   },
+   "gemma-3-27b": {
+    "pred": [
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E03",
+      "severity": "low",
+      "evidence": "There is clutter in the form of side tables and items on them, potentially creating tripping hazards or confusion.",
+      "box": []
+     }
+    ]
+   },
+   "glm-5v-turbo": {
+    "pred": [
+     "DEM-E02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E02",
+      "severity": "high",
+      "evidence": "Exterior door with glass panels appears open or unsecured, providing direct access to the outdoors which poses a significant wandering risk for an individual with dementia.",
+      "box": [
+       363,
+       0,
+       452,
+       414
+      ]
+     }
+    ]
+   },
    "gpt-5.6-sol": {
     "pred": [
      "DEM-E01",
@@ -3537,6 +8052,82 @@
        0,
        453,
        420
+      ]
+     }
+    ]
+   },
+   "gpt-5.6-terra": {
+    "pred": [],
+    "raw": []
+   },
+   "gpt-6-astra": {
+    "pred": [
+     "DEM-E02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E02",
+      "severity": "high",
+      "evidence": "The main exterior door is open, leaving only a glass storm door between the room and the outdoor path.",
+      "box": [
+       329,
+       0,
+       455,
+       424
+      ]
+     }
+    ]
+   },
+   "gpt-6-sol": {
+    "pred": [
+     "DEM-E02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E02",
+      "severity": "high",
+      "evidence": "The glass-paneled entry door is open toward the room, creating a potential wandering exit.",
+      "box": [
+       328,
+       0,
+       377,
+       423
+      ]
+     }
+    ]
+   },
+   "grok-4.6": {
+    "pred": [
+     "DEM-E02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E02",
+      "severity": "high",
+      "evidence": "Glass-paned exterior door standing fully open to the garden/yard",
+      "box": [
+       310,
+       40,
+       430,
+       480
+      ]
+     }
+    ]
+   },
+   "grok-4.7": {
+    "pred": [
+     "DEM-E02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E02",
+      "severity": "high",
+      "evidence": "Wooden glass-pane front door is standing open to the outdoors, creating a wandering exit.",
+      "box": [
+       328,
+       8,
+       442,
+       418
       ]
      }
     ]
@@ -3589,6 +8180,14 @@
      }
     ]
    },
+   "mistral-medium-3.5": {
+    "pred": [],
+    "raw": []
+   },
+   "nova-2-lite": {
+    "pred": [],
+    "raw": []
+   },
    "nova-pro": {
     "pred": [
      "DEM-E01"
@@ -3636,6 +8235,10 @@
       ]
      }
     ]
+   },
+   "seed-2.1-turbo": {
+    "pred": [],
+    "raw": []
    }
   },
   "dem-kitchen-base0": {
@@ -3653,6 +8256,36 @@
        240,
        524,
        312
+      ]
+     }
+    ]
+   },
+   "claude-haiku-4.5": {
+    "pred": [
+     "DEM-K03",
+     "DEM-E01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K03",
+      "severity": "medium",
+      "evidence": "Multiple bottles and containers visible on the counter near the sink area, including what appears to be cleaning supplies and personal care items that are accessible and unlocked",
+      "box": [
+       400,
+       200,
+       700,
+       350
+      ]
+     },
+     {
+      "id": "DEM-E01",
+      "severity": "high",
+      "evidence": "Keys appear to be hanging on or near the refrigerator on the left side of the kitchen, potentially accessible to someone with dementia who may attempt to wander or drive",
+      "box": [
+       0,
+       0,
+       150,
+       200
       ]
      }
     ]
@@ -3709,6 +8342,103 @@
      }
     ]
    },
+   "deepseek-v4-flash-vision": {
+    "pred": [
+     "DEM-K01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K01",
+      "severity": "medium",
+      "evidence": "Black range with freely accessible front knobs and no lock/childproof cover; a person with dementia could turn on a burner (burn/fire risk). Burners appear off at present.",
+      "box": [
+       78,
+       290,
+       170,
+       745
+      ]
+     }
+    ]
+   },
+   "gemini-3.1-pro": {
+    "pred": [
+     "DEM-K01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K01",
+      "severity": "high",
+      "evidence": "The stove knobs are accessible and not covered, posing a risk of the stove being turned on and left unattended.",
+      "box": [
+       331,
+       144,
+       749,
+       255
+      ]
+     }
+    ]
+   },
+   "gemini-3.8-flash": {
+    "pred": [
+     "DEM-K01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K01",
+      "severity": "medium",
+      "evidence": "Stove controls and knobs are fully accessible without safety covers or shut-off locks, creating a risk of accidental activation or burns.",
+      "box": [
+       330,
+       145,
+       405,
+       244
+      ]
+     }
+    ]
+   },
+   "gemma-3-27b": {
+    "pred": [
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-E03",
+      "severity": "low",
+      "evidence": "Clutter is present in the walkway, potentially creating a tripping hazard.",
+      "box": []
+     }
+    ]
+   },
+   "glm-5v-turbo": {
+    "pred": [
+     "DEM-K01",
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K01",
+      "severity": "high",
+      "evidence": "Black electric stove with accessible control knobs located on the left side of the kitchen; knobs are within reach and not covered or locked, posing fire risk if turned on accidentally.",
+      "box": [
+       145,
+       335,
+       256,
+       750
+      ]
+     },
+     {
+      "id": "DEM-K03",
+      "severity": "medium",
+      "evidence": "Pump-style bottle (likely dish soap or cleaning liquid) placed on the countertop next to the sink, unsecured and accessible for potential ingestion or misuse.",
+      "box": [
+       323,
+       252,
+       339,
+       301
+      ]
+     }
+    ]
+   },
    "gpt-5.6-sol": {
     "pred": [
      "DEM-K03"
@@ -3726,6 +8456,80 @@
       ]
      }
     ]
+   },
+   "gpt-5.6-terra": {
+    "pred": [
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K03",
+      "severity": "low",
+      "evidence": "A bottle of cleaning/dish soap is left accessible on the counter beside the sink.",
+      "box": [
+       336,
+       247,
+       369,
+       299
+      ]
+     }
+    ]
+   },
+   "gpt-6-astra": {
+    "pred": [
+     "DEM-K01",
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K01",
+      "severity": "high",
+      "evidence": "The stove has accessible controls with no visible knob guards or safety cover.",
+      "box": [
+       174,
+       330,
+       249,
+       419
+      ]
+     },
+     {
+      "id": "DEM-K03",
+      "severity": "medium",
+      "evidence": "A cleaning-liquid bottle is left out on the counter beside the sink.",
+      "box": [
+       318,
+       244,
+       339,
+       300
+      ]
+     }
+    ]
+   },
+   "gpt-6-sol": {
+    "pred": [
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K03",
+      "severity": "high",
+      "evidence": "Several cleaning-product bottles are accessible on the counter in the adjoining room.",
+      "box": [
+       762,
+       210,
+       821,
+       269
+      ]
+     }
+    ]
+   },
+   "grok-4.6": {
+    "pred": [],
+    "raw": []
+   },
+   "grok-4.7": {
+    "pred": [],
+    "raw": []
    },
    "llama-4-maverick": {
     "pred": [
@@ -3766,6 +8570,49 @@
        0.721,
        0.358
       ]
+     }
+    ]
+   },
+   "mistral-medium-3.5": {
+    "pred": [
+     "DEM-K01",
+     "DEM-K03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K01",
+      "severity": "high",
+      "evidence": "Stove knobs are visible and accessible, which could be a hazard if the individual turns them on unintentionally.",
+      "box": [
+       100,
+       200,
+       200,
+       400
+      ]
+     },
+     {
+      "id": "DEM-K03",
+      "severity": "medium",
+      "evidence": "Cleaning chemicals are visible on the counter near the sink, which could be ingested or mishandled.",
+      "box": [
+       500,
+       150,
+       550,
+       200
+      ]
+     }
+    ]
+   },
+   "nova-2-lite": {
+    "pred": [
+     "DEM-K01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K01",
+      "severity": "high",
+      "evidence": "Stove knobs are freely accessible and there is no visible safety mechanism to prevent accidental activation.",
+      "box": null
      }
     ]
    },
@@ -3828,6 +8675,10 @@
       ]
      }
     ]
+   },
+   "qwen3.8-max": {
+    "pred": [],
+    "raw": []
    }
   },
   "dem-bedroom-base0-DEM-R04": {
@@ -3845,6 +8696,36 @@
        360,
        830,
        600
+      ]
+     }
+    ]
+   },
+   "claude-haiku-4.5": {
+    "pred": [
+     "DEM-R02",
+     "DEM-R04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R02",
+      "severity": "medium",
+      "evidence": "Orange patterned rug with bold high-contrast geometric design on the floor in front of the space heater, which can create visual confusion and disorientation for someone with dementia",
+      "box": [
+       200,
+       400,
+       600,
+       700
+      ]
+     },
+     {
+      "id": "DEM-R04",
+      "severity": "high",
+      "evidence": "Space heater with glowing orange heating element positioned directly on the carpet next to the bed, creating a fire hazard and burn risk",
+      "box": [
+       250,
+       450,
+       450,
+       650
       ]
      }
     ]
@@ -3915,6 +8796,132 @@
      }
     ]
    },
+   "deepseek-v4-flash-vision": {
+    "pred": [
+     "DEM-R04",
+     "DEM-K04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R04",
+      "severity": "high",
+      "evidence": "Plugged-in space heater switched on (glowing orange) sitting directly against the bed's skirt/bedding",
+      "box": [
+       400,
+       545,
+       490,
+       775
+      ]
+     },
+     {
+      "id": "DEM-K04",
+      "severity": "medium",
+      "evidence": "Small white bottle, likely medication, left out on the nightstand beside the lamp",
+      "box": [
+       438,
+       468,
+       458,
+       505
+      ]
+     }
+    ]
+   },
+   "gemini-3.1-pro": {
+    "pred": [
+     "DEM-R04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R04",
+      "severity": "high",
+      "evidence": "A space heater is placed very close to the bed, posing a fire risk if bedding falls on it or if it's knocked over.",
+      "box": [
+       435,
+       616,
+       768,
+       746
+      ]
+     }
+    ]
+   },
+   "gemini-3.8-flash": {
+    "pred": [
+     "DEM-R04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R04",
+      "severity": "high",
+      "evidence": "Space heater running directly adjacent to the bed and bedding, creating a significant fire and burn risk.",
+      "box": [
+       435,
+       616,
+       768,
+       747
+      ]
+     }
+    ]
+   },
+   "gemma-3-27b": {
+    "pred": [
+     "DEM-R04",
+     "DEM-R02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R04",
+      "severity": "high",
+      "evidence": "Space heater is positioned very close to the bedding, creating a significant fire risk.",
+      "box": [
+       450,
+       500,
+       650,
+       700
+      ]
+     },
+     {
+      "id": "DEM-R02",
+      "severity": "low",
+      "evidence": "The rug has a bold pattern which could cause misperception for someone with dementia.",
+      "box": [
+       0,
+       0,
+       1000,
+       1000
+      ]
+     }
+    ]
+   },
+   "glm-5v-turbo": {
+    "pred": [
+     "DEM-R04",
+     "DEM-R02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R04",
+      "severity": "high",
+      "evidence": "Infrared space heater with glowing heating elements placed immediately adjacent to the bed, creating significant fire and burn risk",
+      "box": [
+       617,
+       432,
+       743,
+       768
+      ]
+     },
+     {
+      "id": "DEM-R02",
+      "severity": "medium",
+      "evidence": "Bold orange high-contrast patterned rug on light carpet, which may be misperceived as an obstacle, hole, or object by person with dementia, causing confusion or trip hazard",
+      "box": [
+       588,
+       686,
+       833,
+       902
+      ]
+     }
+    ]
+   },
    "gpt-5.6-sol": {
     "pred": [
      "DEM-R04",
@@ -3953,6 +8960,156 @@
        423,
        948,
        515
+      ]
+     }
+    ]
+   },
+   "gpt-5.6-terra": {
+    "pred": [
+     "DEM-R04",
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R04",
+      "severity": "high",
+      "evidence": "Portable space heater is operating immediately beside the bed and bedding.",
+      "box": [
+       614,
+       433,
+       741,
+       752
+      ]
+     },
+     {
+      "id": "DEM-E03",
+      "severity": "high",
+      "evidence": "Tangled electrical cords are piled across the carpeted walking path near the heater and doorway.",
+      "box": [
+       588,
+       695,
+       758,
+       878
+      ]
+     }
+    ]
+   },
+   "gpt-6-astra": {
+    "pred": [
+     "DEM-R04",
+     "DEM-E03",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R04",
+      "severity": "high",
+      "evidence": "An operating space heater is positioned immediately beside the bed and hanging bedding.",
+      "box": [
+       615,
+       431,
+       747,
+       770
+      ]
+     },
+     {
+      "id": "DEM-E03",
+      "severity": "high",
+      "evidence": "A large tangle of cord-like material and loose electrical cords lies on the floor around the heater, obstructing the bedside walking area.",
+      "box": [
+       585,
+       592,
+       835,
+       902
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "A dark bath mat contrasts with the light bathroom floor visible through the doorway.",
+      "box": [
+       821,
+       425,
+       911,
+       490
+      ]
+     }
+    ]
+   },
+   "gpt-6-sol": {
+    "pred": [
+     "DEM-R04",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R04",
+      "severity": "high",
+      "evidence": "A space heater is positioned close to the bed and bedding, with its cord spread across the floor.",
+      "box": [
+       612,
+       432,
+       746,
+       768
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "A dark bath mat lies on the light-colored bathroom floor visible through the doorway.",
+      "box": [
+       821,
+       426,
+       916,
+       490
+      ]
+     }
+    ]
+   },
+   "grok-4.6": {
+    "pred": [
+     "DEM-R04",
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R04",
+      "severity": "high",
+      "evidence": "Space heater is on and glowing, positioned immediately beside the bed and hanging bedding",
+      "box": [
+       545,
+       515,
+       735,
+       825
+      ]
+     },
+     {
+      "id": "DEM-E03",
+      "severity": "medium",
+      "evidence": "Large tangled pile of orange cords/clutter surrounding the heater in the open floor walkway",
+      "box": [
+       475,
+       665,
+       825,
+       975
+      ]
+     }
+    ]
+   },
+   "grok-4.7": {
+    "pred": [
+     "DEM-R04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R04",
+      "severity": "high",
+      "evidence": "A glowing portable space heater is operating on the carpet immediately beside the bed and nightstand, with its cord looped around it.",
+      "box": [
+       583,
+       547,
+       838,
+       899
       ]
      }
     ]
@@ -4014,6 +9171,49 @@
        730,
        780
       ]
+     }
+    ]
+   },
+   "mistral-medium-3.5": {
+    "pred": [
+     "DEM-R01",
+     "DEM-R04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "Large mirror facing the bed",
+      "box": [
+       850,
+       0,
+       1000,
+       300
+      ]
+     },
+     {
+      "id": "DEM-R04",
+      "severity": "high",
+      "evidence": "Space heater next to bedding",
+      "box": [
+       650,
+       400,
+       800,
+       700
+      ]
+     }
+    ]
+   },
+   "nova-2-lite": {
+    "pred": [
+     "DEM-R04"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R04",
+      "severity": "high",
+      "evidence": "A space heater is placed near the bed, posing a burn or fire risk if the person with dementia touches it or pulls the cord.",
+      "box": null
      }
     ]
    },
@@ -4085,6 +9285,24 @@
      }
     ]
    },
+   "claude-haiku-4.5": {
+    "pred": [
+     "DEM-R01",
+     "DEM-R02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "Large framed picture/mirror hanging on wall directly above the bed headboard, which could be misperceived as a window or doorway by someone with dementia, or cause confusion about spatial orientation"
+     },
+     {
+      "id": "DEM-R02",
+      "severity": "low",
+      "evidence": "Patterned rug visible in the lower left corner with geometric design that could create visual confusion or be misperceived as a hazard"
+     }
+    ]
+   },
    "claude-opus-5": {
     "pred": [
      "DEM-B03",
@@ -4123,6 +9341,115 @@
     "pred": [],
     "raw": []
    },
+   "deepseek-v4-flash-vision": {
+    "pred": [
+     "DEM-K04",
+     "DEM-R02"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K04",
+      "severity": "medium",
+      "evidence": "Small white medication bottle left on the wooden nightstand next to the bed.",
+      "box": [
+       710,
+       550,
+       740,
+       600
+      ]
+     },
+     {
+      "id": "DEM-R02",
+      "severity": "medium",
+      "evidence": "Bold high-contrast patterned rug visible on the floor through the open doorway, which may be misperceived as a hole or step.",
+      "box": [
+       770,
+       700,
+       870,
+       850
+      ]
+     }
+    ]
+   },
+   "gemini-3.1-pro": {
+    "pred": [
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "A dark bath mat is visible on the light floor in the adjacent bathroom, which can be misperceived as a hole or step by someone with dementia.",
+      "box": [
+       498,
+       814,
+       618,
+       937
+      ]
+     }
+    ]
+   },
+   "gemini-3.8-flash": {
+    "pred": [],
+    "raw": []
+   },
+   "gemma-3-27b": {
+    "pred": [
+     "DEM-R01",
+     "DEM-R02",
+     "DEM-E03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "Large mirror facing the bed, which could be misperceived as an opening or another person.",
+      "box": []
+     },
+     {
+      "id": "DEM-R02",
+      "severity": "low",
+      "evidence": "The rug in the doorway has a bold pattern that could cause visual confusion.",
+      "box": []
+     },
+     {
+      "id": "DEM-E03",
+      "severity": "low",
+      "evidence": "There is a dresser in the foreground that could contribute to clutter and potential tripping hazards.",
+      "box": []
+     }
+    ]
+   },
+   "glm-5v-turbo": {
+    "pred": [
+     "DEM-K04",
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-K04",
+      "severity": "medium",
+      "evidence": "Small white bottle or container left out on the nightstand beside the bed, potentially containing medication within reach.",
+      "box": [
+       664,
+       408,
+       680,
+       448
+      ]
+     },
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "Dark-colored area rug or bath mat visible on light flooring through the open doorway, creating a contrast that may be perceived as a hole or obstacle, posing a fall risk.",
+      "box": [
+       812,
+       492,
+       936,
+       614
+      ]
+     }
+    ]
+   },
    "gpt-5.6-sol": {
     "pred": [
      "DEM-B03"
@@ -4140,6 +9467,54 @@
       ]
      }
     ]
+   },
+   "gpt-5.6-terra": {
+    "pred": [],
+    "raw": []
+   },
+   "gpt-6-astra": {
+    "pred": [
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "A dark gray bath mat contrasts with the light tile floor in the bathroom visible through the doorway.",
+      "box": [
+       823,
+       429,
+       909,
+       489
+      ]
+     }
+    ]
+   },
+   "gpt-6-sol": {
+    "pred": [
+     "DEM-B03"
+    ],
+    "raw": [
+     {
+      "id": "DEM-B03",
+      "severity": "medium",
+      "evidence": "A dark bath mat lies on the light-colored bathroom floor visible through the doorway.",
+      "box": [
+       817,
+       430,
+       906,
+       490
+      ]
+     }
+    ]
+   },
+   "grok-4.6": {
+    "pred": [],
+    "raw": []
+   },
+   "grok-4.7": {
+    "pred": [],
+    "raw": []
    },
    "kimi-k3": {
     "pred": [
@@ -4200,6 +9575,28 @@
      }
     ]
    },
+   "mistral-medium-3.5": {
+    "pred": [
+     "DEM-R01"
+    ],
+    "raw": [
+     {
+      "id": "DEM-R01",
+      "severity": "medium",
+      "evidence": "Large mirror facing the bed",
+      "box": [
+       850,
+       100,
+       1000,
+       400
+      ]
+     }
+    ]
+   },
+   "nova-2-lite": {
+    "pred": [],
+    "raw": []
+   },
    "nova-pro": {
     "pred": [
      "DEM-R01"
@@ -4219,6 +9616,10 @@
     ]
    },
    "qwen3-vl": {
+    "pred": [],
+    "raw": []
+   },
+   "qwen3.8-max": {
     "pred": [],
     "raw": []
    }

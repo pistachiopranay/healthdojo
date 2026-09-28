@@ -39,6 +39,10 @@ export const PRETTY: Record<string, string> = {
   "kimi-k3": "Kimi K3", "grok-4.6": "Grok 4.6", "nova-pro": "Nova Pro", "nova-2-lite": "Nova 2 Lite",
   "llama-4-maverick": "Llama 4 Maverick", "qwen3-vl": "Qwen3-VL", "mistral-large-3": "Mistral Large 3",
   "gemma-3-27b": "Gemma 3 27B", "nemotron-nano-vl": "Nemotron Nano VL",
+  "claude-fable-5.1": "Claude Fable 5.1", "claude-opus-5": "Claude Opus 5", "gpt-6-sol": "GPT-6 Sol",
+  "gemini-3.1-pro": "Gemini 3.1 Pro", "gemini-3.8-flash": "Gemini 3.8 Flash", "grok-4.7": "Grok 4.7",
+  "qwen3.8-max": "Qwen 3.8 Max", "glm-5v-turbo": "GLM-5V Turbo", "seed-2.1-turbo": "Seed 2.1 Turbo",
+  "mistral-medium-3.5": "Mistral Medium 3.5", "deepseek-v4-flash-vision": "DeepSeek V4 Flash Vision",
 };
 export const pn = (m: string) =>
   PRETTY[m] || m.split("-").map(w => (/^\d/.test(w) ? w : w[0].toUpperCase() + w.slice(1))).join(" ");
@@ -53,6 +57,7 @@ function providers(): Record<string, string> {
   try {
     const src = fs.readFileSync(path.join(ROOT, "src", "run_models.py"), "utf8");
     for (const m of src.matchAll(/^\s*"([\w.\-]+)":\s*\(lambda:.*"([^"]+)"\),?\s*$/gm)) out[m[1]] = m[2];
+    for (const m of src.matchAll(/^\s*"([\w.\-]+)":\s*_or\(/gm)) out[m[1]] = "OpenRouter";
   } catch { /* fall back below */ }
   return out;
 }

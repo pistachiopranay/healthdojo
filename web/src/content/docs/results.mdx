@@ -39,7 +39,7 @@ For one complete scene comparison, **{S2.filter(h => h.hit).length} of {S2.lengt
 <div data-bench-panel="dementia">
 ### DementiaBench: home safety
 
-**{B.dementia.nScenes} of {candidates("dementia")}** candidate scenes entered scoring. The {D.nRanked} ranked entries cover **{D.covText} of {B.dementia.nScenes}** scenes. {D.nPartial > 0 && <>{B.dementia.partial.map(r => `${r.name} scored ${r.score.toFixed(2)} out of 1.00 on ${r.scenes_run} of ${B.dementia.nScenes} scenes`).join("; ")}, so it is shown as partial coverage, not ranked. </>}The two benchmarks have different scenes and rubrics, so their scores should be read separately.
+**{B.dementia.nScenes} of {candidates("dementia")}** candidate scenes entered scoring. The {D.nRanked} ranked entries cover **{D.covText} of {B.dementia.nScenes}** scenes. {D.nPartial > 0 && <>{B.dementia.partial.map(r => `${r.name} scored ${r.score.toFixed(2)} out of 1.00 on ${r.scenes_run} of ${B.dementia.nScenes} scenes`).join("; ")}, so {D.nPartial === 1 ? "it is" : "they are"} shown as partial coverage, not ranked. </>}The two benchmarks have different scenes and rubrics, so their scores should be read separately.
 </div>
 
 <Leaderboard bench={B.homebench} />

@@ -75,6 +75,24 @@ def openai_call(model):
     return call
 
 
+def openrouter_call(model):
+    from openai import OpenAI
+    client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key=os.getenv("OPENROUTER_API_KEY"))
+    def call(img_bytes, prompt):
+        mime = "image/png" if img_bytes[:4] == b"\x89PNG" else "image/jpeg"
+        r = client.chat.completions.create(model=model, max_tokens=4000, temperature=0, messages=[{"role": "user", "content": [
+            {"type": "image_url", "image_url": {"url": f"data:{mime};base64," + base64.b64encode(img_bytes).decode()}},
+            {"type": "text", "text": prompt}]}])
+        if not r.choices or not (r.choices[0].message.content or "").strip():
+            raise RuntimeError(f"empty response from {model}")
+        return r.choices[0].message.content
+    return call
+
+
+def _or(model):
+    return (lambda: openrouter_call(model), "OPENROUTER_API_KEY", "OpenRouter")
+
+
 # name -> (factory, required env, provider). Bedrock = AWS event workshop account.
 MODELS = {
     "claude-opus-5.5": (lambda: anthropic_call("claude-opus-5-5"), "ANTHROPIC_API_KEY", "Anthropic API"),
@@ -93,7 +111,33 @@ MODELS = {
     "mistral-large-3": (lambda: bedrock_call("mistral.mistral-large-3-675b-instruct"), "AWS_ACCESS_KEY_ID", "AWS Bedrock"),
     "gemma-3-27b": (lambda: bedrock_call("google.gemma-3-27b-it"), "AWS_ACCESS_KEY_ID", "AWS Bedrock"),
     "nemotron-nano-vl": (lambda: bedrock_call("nvidia.nemotron-nano-12b-v2"), "AWS_ACCESS_KEY_ID", "AWS Bedrock"),
+    # added post-hackathon via OpenRouter (models not on the event's Bedrock account)
+    "claude-fable-5.1": (lambda: anthropic_call("claude-fable-5-1"), "ANTHROPIC_API_KEY", "Anthropic API"),
+    "claude-opus-5": (lambda: anthropic_call("claude-opus-5"), "ANTHROPIC_API_KEY", "Anthropic API"),
+    "gpt-6-sol": _or("openai/gpt-6-sol"),
+    "gpt-6-astra": _or("openai/gpt-6-astra"),
+    "gemini-3.1-pro": _or("google/gemini-3.1-pro-preview"),
+    "gemini-3.8-flash": _or("google/gemini-3.8-flash"),
+    "grok-4.7": _or("x-ai/grok-4.7"),
+    "qwen3.8-max": _or("qwen/qwen3.8-max-0902"),
+    "muse-spark-1.3": _or("meta/muse-spark-1.3"),
+    "glm-5v-turbo": _or("z-ai/glm-5v-turbo"),
+    "seed-2.1-turbo": _or("bytedance-seed/seed-2-1-turbo"),
+    "mistral-medium-3.5": _or("mistralai/mistral-medium-3-5"),
+    "deepseek-v4-flash-vision": _or("deepseek/deepseek-v4-flash-vision-exp"),
 }
+
+# Same model weights served via OpenRouter, used only to fill scenes the Bedrock run missed.
+OPENROUTER_FALLBACK = {
+    "claude-sonnet-5": "anthropic/claude-sonnet-5", "claude-haiku-4.5": "anthropic/claude-haiku-4.5",
+    "gpt-5.6-sol": "openai/gpt-5.6-sol", "gpt-5.6-terra": "openai/gpt-5.6-terra",
+    "grok-4.6": "x-ai/grok-4.6", "kimi-k3": "moonshotai/kimi-k3",
+    "llama-4-maverick": "meta-llama/llama-4-maverick", "qwen3-vl": "qwen/qwen3-vl-235b-a22b-instruct",
+    "gemma-3-27b": "google/gemma-3-27b-it", "nova-pro": "amazon/nova-pro-v1", "nova-2-lite": "amazon/nova-2-lite-v1",
+}
+if os.getenv("VIA_OPENROUTER"):
+    for _n, _m in OPENROUTER_FALLBACK.items():
+        MODELS[_n] = _or(_m)
 
 
 def small_jpeg(img_bytes, side=1280):
@@ -124,6 +168,8 @@ def run(model_name, scenes):
                 text = call(img, prompt)
             except Exception:
                 text = call(small_jpeg(img), prompt)  # some Bedrock models reject large/PNG payloads
+            if not (text or "").strip():
+                raise RuntimeError("empty response")  # a failed call, not "no hazards"; leave uncached so a rerun retries it
             f.write_text(json.dumps({"scene": s["id"], "raw": text, "hazards": parse(text)}, indent=1))
             print(model_name, s["id"], "ok", flush=True)
         except Exception as e:
