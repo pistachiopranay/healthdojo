@@ -33,6 +33,21 @@ import Base from "../../layouts/Base.astro";
       </article>
     </div>
     <div class="wrap">
+      <article class="card stack">
+        <div class="hd-eyebrow">03 · Stack</div>
+        <h2>What it runs on</h2>
+        <dl>
+          <div><dt>Model access</dt><dd><b>Anthropic API + OpenRouter</b>25+ vision models from Anthropic, OpenAI, Google, Meta, Qwen, Mistral, Moonshot and more, one row per model.</dd></div>
+          <div><dt>World model</dt><dd><b>World Labs Marble</b>Gaussian-splat homes with collision meshes, walkable in the browser.</dd></div>
+          <div><dt>Image generation</dt><dd><b>OpenAI GPT Image 2, Gemini 3 Pro Image, Stability AI</b>Clean rooms first, then hazards painted in one label at a time.</dd></div>
+          <div><dt>Rubric + judge</dt><dd><b>Claude Sonnet 5 and Claude Opus 5.5</b>Sonnet drafts cited rubric rows from the guideline; Opus verifies every scene before it counts. Grading against labels is deterministic, no LLM grades the answers.</dd></div>
+          <div><dt>Agent environment</dt><dd><b>Custom look-around harness</b>Models choose where to look, then flag what they find.</dd></div>
+          <div><dt>Voice</dt><dd><b>ElevenLabs</b>Narrates each walkthrough step.</dd></div>
+          <div><dt>Site + code</dt><dd><b>Astro on Cloudflare + GitHub</b>Static site; the code and benchmarks are open on GitHub.</dd></div>
+        </dl>
+      </article>
+    </div>
+    <div class="wrap">
       <p class="tail">HealthDojo is a prototype. All data is synthetic, there is no patient data, and it is not clinically validated. Clinician review and real-home studies remain necessary before clinical claims. See <a href="/method/#limits">Limits</a>.</p>
     </div>
   </section>
@@ -56,5 +71,11 @@ import Base from "../../layouts/Base.astro";
   .k { font: 400 11.5px/1 var(--hd-mono); color: var(--hd-fg-3); text-transform: uppercase; letter-spacing: .06em; min-width: 64px; }
   .tail { color: var(--hd-fg-2); margin-top: 28px; font-size: 15px; }
   .tail a { color: var(--hd-lime); }
+  .stack { margin-top: 12px; }
+  .stack dl { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 10px; margin: 6px 0 0; }
+  .stack dl > div { border: 1px solid var(--hd-line); border-radius: 8px; padding: 14px 16px; }
+  .stack dt { font: 400 11.5px/1 var(--hd-mono); color: var(--hd-fg-3); text-transform: uppercase; letter-spacing: .06em; }
+  .stack dd { margin: 10px 0 0; color: var(--hd-fg-2); font-size: 14px; line-height: 1.55; }
+  .stack dd b { display: block; color: var(--hd-fg); font-weight: 500; font-size: 15px; margin-bottom: 4px; }
   @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
 </style>
