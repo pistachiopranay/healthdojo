@@ -79,7 +79,7 @@ SHOWCASE = [
     },
     {
         "scene_id": "dem-entry-base0-DEM-E02", "bench": "dementia",
-        "title": "Back door left open to the outside",
+        "title": "Door left open to the outside",
         "hazard": "Glass back door standing open to the patio, an easy exit for wandering",
         "text_prompt": "Living room of an older adult with hardwood floors, two recliners, sofa, TV stand; at the back a glass-paned "
         "door stands wide open onto a sunny patio and garden outside.",
