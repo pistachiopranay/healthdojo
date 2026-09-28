@@ -15,14 +15,23 @@ export type Scene = {
 export type Row = {
   model: string; name: string; provider: string; score: number; recall: number; tp: number; fn: number;
   false_alarm: number; fp: number; neg: number; precision: number | null; loc_iou: number | null;
-  scenes_run: number; by_type: Record<string, number>; by_room: Record<string, number>; by_hazard: Record<string, number>;
+  scenes_run: number; coverage: number; comparable: boolean; by_type: Record<string, number>; by_room: Record<string, number>; by_hazard: Record<string, number>;
 };
 export type Bench = {
-  key: "homebench" | "dementia"; title: string; scenes: Scene[]; rows: Row[]; nScenes: number;
+  key: "homebench" | "dementia"; title: string; scenes: Scene[]; nScenes: number;
+  /** every scored model, in score order */
+  rows: Row[];
+  /** models that ran at least COVERAGE_MIN of the scenes: the only ones ranked or counted */
+  ranked: Row[];
+  /** models below COVERAGE_MIN: shown de-emphasized, "partial coverage, not comparable" */
+  partial: Row[];
   taxonomy: Record<string, { name: string; room: string; type: string }>;
   predictions: Record<string, Record<string, { pred: string[]; raw: any[] }>>;
   knownAbsent: Record<string, string[]>;
 };
+
+/** Minimum share of scored scenes a model must have run to be ranked and counted. */
+export const COVERAGE_MIN = 0.9;
 
 export const PRETTY: Record<string, string> = {
   "claude-opus-5.5": "Claude Opus 5.5", "claude-sonnet-5": "Claude Sonnet 5", "claude-haiku-4.5": "Claude Haiku 4.5",
@@ -72,10 +81,11 @@ function load(key: Bench["key"], file: string, title: string): Bench {
     return {
       model: r.model, name: pn(r.model), provider: prov(r.model), score: r.score, recall: r.recall, tp: r.tp, fn: r.fn,
       false_alarm: r.false_alarm, fp, neg: fp + tn, precision: tp + fp ? tp / (tp + fp) : null, loc_iou: r.loc_iou,
-      scenes_run: n, by_type: r.by_type || {}, by_room: r.by_room || {}, by_hazard: r.by_hazard || {},
+      scenes_run: n, coverage: n / scenes.length, comparable: n / scenes.length >= COVERAGE_MIN, by_type: r.by_type || {}, by_room: r.by_room || {}, by_hazard: r.by_hazard || {},
     };
   });
-  return { key, title, scenes, rows, nScenes: scenes.length, taxonomy: res.taxonomy, predictions: preds, knownAbsent: ka };
+  rows.sort((a, b) => b.score - a.score);
+  return { key, title, scenes, rows, ranked: rows.filter(r => r.comparable), partial: rows.filter(r => !r.comparable), nScenes: scenes.length, taxonomy: res.taxonomy, predictions: preds, knownAbsent: ka };
 }
 
 let _benches: { homebench: Bench; dementia: Bench } | null = null;
@@ -86,12 +96,12 @@ export function benches() {
   });
 }
 
-/** Per-scene hit list: which models (with output) listed every seeded hazard id. */
-export function sceneHits(b: Bench, sceneId: string) {
+/** Per-scene hit list: which ranked models (with output) listed every seeded hazard id. */
+export function sceneHits(b: Bench, sceneId: string, all = false) {
   const s = b.scenes.find(x => x.id === sceneId)!;
   const p = b.predictions[sceneId] || {};
   const gt = s.hazards.map(h => h.id);
-  return b.rows.filter(r => p[r.model]).map(r => ({
+  return (all ? b.rows : b.ranked).filter(r => p[r.model]).map(r => ({
     model: r.model, name: r.name, hit: gt.every(g => (p[r.model].pred || []).includes(g)),
     raw: p[r.model].raw || [],
   }));
@@ -104,9 +114,9 @@ export const mean = (a: (number | null | undefined)[]) => {
 
 /** Hazard ids sorted by mean recall across models (ascending), with the number of models that ran it. */
 export function hardest(b: Bench, n = 10) {
-  const ids = [...new Set(b.rows.flatMap(r => Object.keys(r.by_hazard)))];
+  const ids = [...new Set(b.ranked.flatMap(r => Object.keys(r.by_hazard)))];
   return ids.map(id => {
-    const vals = b.rows.map(r => r.by_hazard[id]).filter(v => v != null);
+    const vals = b.ranked.map(r => r.by_hazard[id]).filter(v => v != null);
     const scene = b.scenes.find(s => s.kind === "edit" && s.hazards.some(h => h.id === id));
     const hits = scene ? sceneHits(b, scene.id) : [];
     return { id, name: b.taxonomy[id]?.name || id, type: b.taxonomy[id]?.type || "object", recall: mean(vals) ?? 0,
@@ -144,4 +154,20 @@ export function worlds() {
 }
 export function walks() {
   return read("walks/index.json");
+}
+
+/** Numbers the Early results copy states, derived from data so they follow re-scoring. */
+export function headline(b: Bench) {
+  const lead = b.ranked[0];
+  const runs = [...new Set(b.ranked.map(r => r.scenes_run))].sort((x, y) => x - y);
+  return {
+    lead, runs, nRanked: b.ranked.length, nPartial: b.partial.length,
+    covText: runs.length === 1 ? `${runs[0]}` : runs.length === 2 ? `${runs[0]} or ${runs[1]}` : `${runs[0]} to ${runs[runs.length - 1]}`,
+  };
+}
+
+/** Generated candidate scene files (before the automated visibility check dropped some). */
+export function candidates(key: Bench["key"]) {
+  const dir = path.join(DATA, key === "homebench" ? "scenes" : "benchmarks/dementia/scenes");
+  return fs.readdirSync(dir).filter(f => f.endsWith(".json")).length;
 }

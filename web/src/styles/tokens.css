@@ -83,4 +83,4 @@
 .hd-bx.fa { border-color: var(--hd-miss); }
 .hd-bx.fa b { background: var(--hd-miss); }
 .hd-bx.unk { border-color: #ffffff66; border-style: dotted; }
-.hd-bx.unk b { background: #3f3f46; color: var(--hd-fg); }
+.hd-bx.unk b { background: #3f3f46; color: var(--hd-fg); top: auto; bottom: -20px; border-radius: 0 3px 3px 3px; }

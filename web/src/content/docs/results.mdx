@@ -1,9 +1,9 @@
 ---
-title: Results
-description: These are results on synthetic scenes. They reveal specific misses and disagreements; they do not measure performance in real homes. Read each model's scene coverage beside its score.
+title: "Early results: what a first run looks like"
+description: An illustrative first run of a prototype on a small synthetic sample. These are results on synthetic scenes. They reveal specific misses and disagreements; they do not measure performance in real homes. Read each model's scene coverage beside its score.
 tableOfContents: false
 ---
-import { benches, curriculum } from "../../lib/data";
+import { benches, curriculum, headline, candidates, sceneHits, COVERAGE_MIN } from "../../lib/data";
 import BenchToggle from "../../components/BenchToggle.astro";
 import BenchScript from "../../components/BenchScript.astro";
 import Leaderboard from "../../components/Leaderboard.astro";
@@ -16,6 +16,10 @@ import SceneViewer from "../../components/SceneViewer.astro";
 import Callout from "../../components/Callout.astro";
 
 export const B = benches();
+export const H = headline(B.homebench);
+export const D = headline(B.dementia);
+export const S2 = sceneHits(B.homebench, "stairs-base1-STAIR-02");
+export const pc = Math.round(COVERAGE_MIN * 100);
 
 <p class="hd-lede">The score gives equal weight to the share of seeded hazards found and the share of a defined set of hazards left unflagged. That second set is expected to be absent based on related edits of the same base room. Other predictions are not all scored as false alarms, so the number is not whole-room accuracy.</p>
 
@@ -26,16 +30,16 @@ export const B = benches();
 <div data-bench-panel="homebench">
 ### HomeBench: falls after surgery
 
-**43 of 47** candidate scenes entered scoring: edited rooms with seeded hazards and clean base rooms. The models covered **42 or 43 of those 43** scenes. Keep coverage visible when comparing ranks.
+**{B.homebench.nScenes} of {candidates("homebench")}** candidate scenes entered scoring: edited rooms with seeded hazards and clean base rooms. The {H.nRanked} ranked models covered **{H.covText} of those {B.homebench.nScenes}** scenes. {H.nPartial > 0 && <>{B.homebench.partial.map(r => r.name).join(", ")} ran fewer than {pc}% of them and {H.nPartial === 1 ? "is" : "are"} shown as partial coverage, not ranked. </>}Keep coverage visible when comparing ranks.
 
-The leading entry in this saved result set scored **0.92 out of 1.00** on **42 of 43** scenes. It found **30 of 30** seeded hazard IDs and flagged **15 of 90** prespecified absent IDs. Recall and false flags both matter.
+The leading ranked entry in this saved result set scored **{H.lead.score.toFixed(2)} out of 1.00** on **{H.lead.scenes_run} of {B.homebench.nScenes}** scenes. It found **{H.lead.tp} of {H.lead.tp + H.lead.fn}** seeded hazard IDs and flagged **{H.lead.fp} of {H.lead.neg}** prespecified absent IDs. Recall and false flags both matter.
 
-For one complete scene comparison, **8 of 14** models flagged the shortened handrail. Treat that as a result for one synthetic image, not a general detection rate.
+For one complete scene comparison, **{S2.filter(h => h.hit).length} of {S2.length}** ranked models flagged the shortened handrail. Treat that as a result for one synthetic image, not a general detection rate.
 </div>
 <div data-bench-panel="dementia">
 ### DementiaBench: home safety
 
-**16 of 17** candidate scenes entered scoring. The leading entry's **1.00 out of 1.00** score covers **14 of 16** scenes, while the other ranked entries cover **16 of 16**. The two benchmarks have different scenes and rubrics, so their scores should be read separately.
+**{B.dementia.nScenes} of {candidates("dementia")}** candidate scenes entered scoring. The {D.nRanked} ranked entries cover **{D.covText} of {B.dementia.nScenes}** scenes. {D.nPartial > 0 && <>{B.dementia.partial.map(r => `${r.name} scored ${r.score.toFixed(2)} out of 1.00 on ${r.scenes_run} of ${B.dementia.nScenes} scenes`).join("; ")}, so it is shown as partial coverage, not ranked. </>}The two benchmarks have different scenes and rubrics, so their scores should be read separately.
 </div>
 
 <Leaderboard bench={B.homebench} />
@@ -48,17 +52,13 @@ For one complete scene comparison, **8 of 14** models flagged the shortened hand
 <dt>False-flag rate</dt><dd>Flags on prespecified absent hazard IDs, out of those IDs checked in the scenes it ran.</dd>
 <dt>Precision*</dt><dd>Hits / (hits + false flags), within the scored IDs only.</dd>
 <dt>Loc IoU</dt><dd>Mean box overlap on hits, reported separately from the score.</dd>
-<dt>Scenes run</dt><dd>Scenes with a saved response for that model, out of the scored total.</dd>
+<dt>Scenes run</dt><dd>Scenes with a saved response for that model, out of the scored total. Models below {pc}% coverage are listed separately and not ranked.</dd>
 </dl>
 </Callout>
 
 ## Difficulty curve
 
-<div data-bench-panel="homebench">
-In a separate falls curriculum subset, recall at the hardest level was lower than at the easiest for **8 of 8** tested models. The hazard mix changes by level, and the sample is small. This is a pattern in this subset, not a controlled estimate of difficulty.
-</div>
-
-<DifficultyCurve cur={curriculum("falls")} panel="homebench" claim={false} />
+<DifficultyCurve cur={curriculum("falls")} panel="homebench" />
 <DifficultyCurve cur={curriculum("dementia")} panel="dementia" />
 
 ## Hardest hazards in this sample

@@ -1,9 +1,12 @@
 ---
 import type { Bench } from "../lib/data";
 import { pct, f2 } from "../lib/fmt";
+import { COVERAGE_MIN } from "../lib/data";
 interface Props { bench: Bench; limit?: number; compact?: boolean }
 const { bench, limit, compact = false } = Astro.props;
-const rows = limit ? bench.rows.slice(0, limit) : bench.rows;
+const rows = limit ? bench.ranked.slice(0, limit) : bench.ranked;
+const partial = limit ? [] : bench.partial;
+const ncol = 2 + (compact ? 4 : 6);
 const cols = compact
   ? [["score", "Score"], ["recall", "Recall"], ["false_alarm", "False flags"], ["scenes_run", "Scenes run"]]
   : [["score", "Score"], ["recall", "Recall"], ["false_alarm", "False-flag rate"], ["precision", "Precision*"], ["loc_iou", "Loc IoU"], ["scenes_run", "Scenes run"]];
@@ -22,21 +25,33 @@ const cols = compact
         <tr data-name={r.name} data-score={r.score} data-recall={r.recall} data-false_alarm={r.false_alarm}
             data-precision={r.precision ?? -1} data-loc_iou={r.loc_iou ?? -1} data-scenes_run={r.scenes_run}>
           <td class="l rk hd-num">{String(i + 1).padStart(2, "0")}</td>
-          <td class="l">
-            <span class="mname">{r.name}</span>
-            {!compact && <span class="prov">{r.provider}</span>}
-          </td>
-          <td>
-            <div class="scorecell"><div class="sbar"><i style={`width:${r.score * 100}%`}></i></div><b class="hd-num">{r.score.toFixed(2)}</b></div>
-          </td>
+          <td class="l"><span class="mname">{r.name}</span>{!compact && <span class="prov">{r.provider}</span>}</td>
+          <td><div class="scorecell"><div class="sbar"><i style={`width:${r.score * 100}%`}></i></div><b class="hd-num">{r.score.toFixed(2)}</b></div></td>
           <td class="hd-num">{pct(r.recall)} <span class="hd-dim">{r.tp}/{r.tp + r.fn}</span></td>
           <td class="hd-num"><span class={r.false_alarm >= 0.25 ? "hd-miss" : ""}>{pct(r.false_alarm)}</span> <span class="hd-dim">{r.fp}/{r.neg}</span></td>
           {!compact && <td class="hd-num">{pct(r.precision)}</td>}
           {!compact && <td class="hd-num">{f2(r.loc_iou)}</td>}
-          <td class="hd-num"><span class={r.scenes_run < bench.nScenes ? "partial" : ""}>{r.scenes_run}</span><span class="hd-dim">/{bench.nScenes}</span></td>
+          <td class="hd-num">{r.scenes_run}<span class="hd-dim">/{bench.nScenes}</span></td>
         </tr>
       ))}
     </tbody>
+    {partial.length > 0 && (
+      <tbody class="partial">
+        <tr class="sep"><td colspan={ncol}><span class="hd-tag miss">partial coverage, not comparable</span> <span class="hd-dim">Ran fewer than {Math.round(COVERAGE_MIN * 100)}% of the scored scenes. Shown for transparency, not ranked.</span></td></tr>
+        {partial.map(r => (
+          <tr>
+            <td class="l rk hd-num">–</td>
+            <td class="l"><span class="mname">{r.name}</span>{!compact && <span class="prov">{r.provider}</span>}</td>
+            <td><div class="scorecell"><div class="sbar"><i style={`width:${r.score * 100}%`}></i></div><b class="hd-num">{r.score.toFixed(2)}</b></div></td>
+            <td class="hd-num">{pct(r.recall)} <span class="hd-dim">{r.tp}/{r.tp + r.fn}</span></td>
+            <td class="hd-num">{pct(r.false_alarm)} <span class="hd-dim">{r.fp}/{r.neg}</span></td>
+            {!compact && <td class="hd-num">{pct(r.precision)}</td>}
+            {!compact && <td class="hd-num">{f2(r.loc_iou)}</td>}
+            <td class="hd-num"><span class="hd-miss">{r.scenes_run}</span><span class="hd-dim">/{bench.nScenes}</span></td>
+          </tr>
+        ))}
+      </tbody>
+    )}
   </table>
 </div>
 
@@ -63,7 +78,10 @@ const cols = compact
   .scorecell { display: inline-flex; align-items: center; gap: 10px; justify-content: flex-end; }
   .sbar { width: 90px; height: 4px; border-radius: 2px; background: #ffffff10; overflow: hidden; }
   .sbar i { display: block; height: 100%; background: var(--hd-fg-2); border-radius: 2px; }
-  .lb tbody tr:first-child .sbar i { background: var(--hd-lime); box-shadow: 0 0 10px #d5fd5199; }
+  .lb tbody.partial tr:not(.sep) { opacity: .5; }
+  .lb tbody.partial tr.sep td { text-align: left; padding: 12px 16px; background: #ffffff04; border-top: 1px solid var(--hd-line-2); font-size: 12.5px; white-space: normal; }
+  .lb tbody.partial .hd-tag { margin-right: 8px; }
+  .lb tbody:not(.partial) tr:first-child .sbar i { background: var(--hd-lime); box-shadow: 0 0 10px #d5fd5199; }
   .scorecell b { font-weight: 500; min-width: 34px; }
   @media (max-width: 640px) { .sbar { width: 44px; } .lb td, .lb th { padding: 10px 10px; } }
 </style>
@@ -74,7 +92,7 @@ const cols = compact
     tbl.querySelectorAll<HTMLTableCellElement>("th[data-k]").forEach(th => th.addEventListener("click", () => {
       const k = th.dataset.k!;
       if (k === key) asc = !asc; else { key = k; asc = k === "name" || k === "false_alarm"; }
-      const body = tbl.tBodies[0];
+      const body = tbl.tBodies[0]; // ranked rows only; partial-coverage rows stay below, unranked
       const rows = [...body.rows].sort((a, b) => {
         const x = a.dataset[key]!, y = b.dataset[key]!;
         const c = key === "name" ? x.localeCompare(y) : Number(x) - Number(y);

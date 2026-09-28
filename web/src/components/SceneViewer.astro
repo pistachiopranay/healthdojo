@@ -6,7 +6,7 @@
 </dialog>
 
 <style is:global>
-  #hd-viewer { border: 1px solid var(--hd-line-2); background: var(--hd-bg); color: var(--hd-fg); border-radius: 14px; padding: 0; width: min(1180px, calc(100vw - 24px)); max-height: calc(100vh - 32px); }
+  #hd-viewer { margin: auto; border: 1px solid var(--hd-line-2); background: var(--hd-bg); color: var(--hd-fg); border-radius: 14px; padding: 0; width: min(1180px, calc(100vw - 24px)); max-height: calc(100vh - 32px); }
   #hd-viewer::backdrop { background: #000000c0; backdrop-filter: blur(4px); }
   #hd-viewer .vbox { padding: 22px 24px 26px; position: relative; }
   #hd-viewer .vclose { position: absolute; right: 14px; top: 12px; background: none; border: 1px solid var(--hd-line); color: var(--hd-fg-2); width: 32px; height: 32px; border-radius: 8px; font-size: 18px; cursor: pointer; }
@@ -26,6 +26,7 @@
   #hd-viewer .dots { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
   #hd-viewer .dots span { font: 400 11px var(--hd-mono); padding: 3px 6px; border-radius: 4px; }
   #hd-viewer .dots .y { color: var(--hd-hit); background: var(--hd-hit-bg); }
+  #hd-viewer .dots .pc { opacity: .5; }
   #hd-viewer .dots .n { color: var(--hd-fg-3); background: #ffffff08; }
   #hd-viewer .warn { font-size: 12.5px; color: var(--hd-miss); margin-top: 6px; }
   @media (max-width: 760px) { #hd-viewer .vimgs, #hd-viewer .vinfo { grid-template-columns: 1fr; } #hd-viewer .vbox { padding: 16px; } }
@@ -65,17 +66,18 @@
     const predIds = new Set(raw.map(h => h.id));
     const gtList = s.hz.length ? s.hz.map((h: P) => {
       const found = predIds.has(h.id);
-      const who = avail.map((m: P) => `<span class="${(p[m.m].p || []).includes(h.id) ? "y" : "n"}">${esc(m.n)}</span>`).join("");
-      const nFound = avail.filter((m: P) => (p[m.m].p || []).includes(h.id)).length;
+      const who = avail.map((m: P) => `<span class="${(p[m.m].p || []).includes(h.id) ? "y" : "n"}${m.c ? "" : " pc"}" title="${m.c ? "" : "partial coverage, not comparable"}">${esc(m.n)}${m.c ? "" : "*"}</span>`).join("");
+      const ranked = avail.filter((m: P) => m.c);
+      const nFound = ranked.filter((m: P) => (p[m.m].p || []).includes(h.id)).length;
       return `<div class="item"><span class="hd-tag ${found ? "hit" : "miss"}">${found ? "HIT" : "MISS"}</span><div><div class="nm">${esc(h.id)} · ${esc(hname(h.id))}</div>
         <div class="ev">${s.note ? "Automated check: " + esc(s.note) : ""}</div>${s.omc ? `<div class="warn">The automated check also recorded another major change in this edit.</div>` : ""}
-        <div class="ev">${nFound} of ${avail.length} models with output found it.</div><div class="dots">${who}</div></div></div>`;
+        <div class="ev">${nFound} of ${ranked.length} ranked models with output found it${avail.length > ranked.length ? " (partial-coverage models listed but not counted)" : ""}.</div><div class="dots">${who}</div></div></div>`;
     }).join("") : `<div class="item"><span class="hd-tag">CLEAN</span><div><div class="nm">No seeded hazard.</div><div class="ev">Prespecified absent IDs scored here: ${[...neg].map(h => esc(h) + " " + esc(hname(h))).join("; ") || "none"}</div></div></div>`;
     const prList = raw.length ? raw.map(h => { const c = cls(h); return `<div class="item"><span class="hd-tag ${c === "hit" ? "hit" : c === "fa" ? "miss" : ""}">${c === "hit" ? "HIT" : c === "fa" ? "FALSE FLAG" : "UNSCORED"}</span><div><div class="nm">${esc(h.id)} · ${esc(hname(h.id))}${h.sev ? ` <span class="hd-dim">· ${esc(h.sev)}</span>` : ""}</div><div class="ev">${esc(h.ev)}</div></div></div>`; }).join("")
       : `<div class="item"><div class="ev">${cur ? "This model flagged nothing in this scene." : "No model output for this scene."}</div></div>`;
     vbox.innerHTML = `<button class="vclose" aria-label="Close">×</button>
       <div class="vtop"><div><div class="hd-eyebrow">${esc(s.room)} · ${esc(s.id)}</div><h3>${esc(title)}</h3></div>
-      ${avail.length ? `<label class="hd-eyebrow">Model <select id="hd-msel">${avail.map((m: P) => `<option value="${esc(m.m)}" ${m.m === cur ? "selected" : ""}>${esc(m.n)}</option>`).join("")}</select></label>` : ""}</div>
+      ${avail.length ? `<label class="hd-eyebrow">Model <select id="hd-msel">${avail.map((m: P) => `<option value="${esc(m.m)}" ${m.m === cur ? "selected" : ""}>${esc(m.n)}${m.c ? "" : " (partial coverage)"}</option>`).join("")}</select></label>` : ""}</div>
       <div class="vimgs ${base ? "" : "single"}">
         ${base ? `<div><div class="lab">Before · clean base room</div><div class="hd-frame"><img src="${base.img}" alt="Clean base room"></div></div>` : ""}
         <div><div class="lab">${base ? "After · seeded edit" : "Scene"}${cur ? " · " + esc(nameOf(cur)) : ""}</div><div class="hd-frame"><img src="${s.img}" alt="${esc(title)}">${gtBoxes}${prBoxes}</div></div>

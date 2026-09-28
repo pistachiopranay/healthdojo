@@ -12,7 +12,7 @@ const tile = (s: typeof scenes[number]) => {
   if (s.kind === "base") {
     const neg = bench.knownAbsent[s.id] || [];
     const p = bench.predictions[s.id] || {};
-    const ok = bench.rows.filter(r => p[r.model]).map(r => !neg.some(n => (p[r.model].pred || []).includes(n)));
+    const ok = bench.ranked.filter(r => p[r.model]).map(r => !neg.some(n => (p[r.model].pred || []).includes(n)));
     return { title: "Clean room (control)", sub: "no seeded hazard", ok, verb: "no false flag" };
   }
   const hits = sceneHits(bench, s.id).map(h => h.hit);
@@ -21,7 +21,7 @@ const tile = (s: typeof scenes[number]) => {
 // compact client payload
 const payload = {
   key: bench.key,
-  models: bench.rows.map(r => ({ m: r.model, n: r.name })),
+  models: bench.rows.map(r => ({ m: r.model, n: r.name, c: r.comparable })),
   tax: Object.fromEntries(Object.entries(bench.taxonomy).map(([k, v]) => [k, v.name])),
   ka: bench.knownAbsent,
   scenes: Object.fromEntries(scenes.map(s => [s.id, { id: s.id, room: s.room, kind: s.kind, base: s.base, img: s.img, hz: s.hazards, note: s.verify?.note || "", omc: !!s.verify?.other_major_changes }])),

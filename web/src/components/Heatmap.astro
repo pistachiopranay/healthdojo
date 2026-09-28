@@ -11,7 +11,8 @@ cols = by === "type" ? ORDER.filter(t => cols.includes(t)) : cols.sort();
 const label = (c: string) => (by === "type" ? TLABEL[c] || c : c[0].toUpperCase() + c.slice(1));
 const htype = (h: any) => h.type || bench.taxonomy[h.id]?.type || "object";
 const seeded = (c: string) => bench.scenes.reduce((n, s) => n + s.hazards.filter(h => (by === "type" ? htype(h) === c : s.room === c)).length, 0);
-const avg = cols.map(c => mean(bench.rows.map(r => get(r, c))));
+const avg = cols.map(c => mean(bench.ranked.map(r => get(r, c))));
+const rowsShown = [...bench.ranked, ...bench.partial];
 ---
 <figure class="hm not-content">
   <figcaption class="hd-eyebrow">{title}</figcaption>
@@ -21,16 +22,16 @@ const avg = cols.map(c => mean(bench.rows.map(r => get(r, c))));
         <tr><th></th>{cols.map(c => <th><span>{label(c)}</span><small class="hd-num">n={seeded(c)}</small></th>)}</tr>
       </thead>
       <tbody>
-        {bench.rows.map(r => (
-          <tr>
-            <th class="rl">{r.name}</th>
+        {rowsShown.map(r => (
+          <tr class={r.comparable ? "" : "partial"}>
+            <th class="rl">{r.name}{!r.comparable && <span class="pt hd-num" title="Partial coverage, not comparable"> partial</span>}</th>
             {cols.map(c => { const v = get(r, c); const h = heat(v); return (
               <td style={`background:${h.bg};color:${h.fg}`} title={`${r.name} · ${label(c)}: ${pct(v)} of seeded hazards found`} class="hd-num">{pct(v)}</td>
             ); })}
           </tr>
         ))}
         <tr class="avg">
-          <th class="rl">Mean of models</th>
+          <th class="rl">Mean of ranked models</th>
           {avg.map((v, i) => { const h = heat(v); return <td style={`background:${h.bg};color:${h.fg}`} title={`${label(cols[i])}: mean ${pct(v)}`} class="hd-num">{pct(v)}</td>; })}
         </tr>
       </tbody>
@@ -48,5 +49,7 @@ const avg = cols.map(c => mean(bench.rows.map(r => get(r, c))));
   .heat td { height: 28px; min-width: 52px; text-align: center; border-radius: 3px; font-size: 12px; cursor: default; }
   .heat tr.avg th, .heat tr.avg td { border-top: 6px solid transparent; }
   .heat tr.avg th { color: var(--hd-fg); font-weight: 500; }
+  .heat tr.partial td, .heat tr.partial th { opacity: .45; }
+  .heat .pt { font-size: 10px; color: var(--hd-miss); }
   .heat td:hover { outline: 1px solid #ffffff80; outline-offset: -1px; }
 </style>
