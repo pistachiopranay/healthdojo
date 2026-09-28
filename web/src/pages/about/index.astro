@@ -40,8 +40,6 @@ import Base from "../../layouts/Base.astro";
           <li><div class="lg"><img src="/logos/openrouter.svg" alt="OpenRouter"></div><div class="tl">Model access</div><b>OpenRouter</b><p>25+ vision models from Anthropic, OpenAI, Google, Meta, Qwen, Mistral and more, ranked on one leaderboard.</p></li>
           <li><div class="lg"><img src="/logos/worldlabs.svg" alt="World Labs"></div><div class="tl">World model</div><b>World Labs Marble</b><p>Turns each synthetic home into a walkable 3D world with collision meshes, right in the browser.</p></li>
           <li><div class="lg"><img src="/logos/openai.svg" alt="OpenAI"><img src="/logos/googlegemini.svg" alt="Google Gemini"><img class="raw" src="/logos/stability.png" alt="Stability AI"></div><div class="tl">Image generation</div><b>OpenAI, Gemini and Stability AI</b><p>Clean rooms first, then hazards painted in one label at a time.</p></li>
-          <li><div class="lg"><img src="/logos/claude.svg" alt="Claude"></div><div class="tl">Rubric + judge</div><b>Claude Sonnet 5 and Opus 5.5</b><p>Sonnet drafts cited rubric rows from the guideline; Opus verifies every scene before it counts. Scoring against labels is deterministic.</p></li>
-          <li><div class="lg"><span class="dot"></span></div><div class="tl">Agent environment</div><b>Custom look-around harness</b><p>Models choose where to look, then flag what they find.</p></li>
           <li><div class="lg"><img src="/logos/elevenlabs.svg" alt="ElevenLabs"></div><div class="tl">Voice</div><b>ElevenLabs</b><p>Narrates each walkthrough step.</p></li>
           <li><div class="lg"><img src="/logos/cloudflare.svg" alt="Cloudflare"><img src="/logos/github.svg" alt="GitHub"></div><div class="tl">Deployment</div><b>Cloudflare</b><p>Served from Cloudflare; the code and benchmarks are open on GitHub.</p></li>
         </ul>
@@ -77,7 +75,6 @@ import Base from "../../layouts/Base.astro";
   .lg { height: 26px; display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
   .lg img { height: 22px; width: auto; max-width: 110px; object-fit: contain; filter: brightness(0) invert(1); opacity: .85; }
   .lg img.raw { filter: none; opacity: 1; }
-  .dot { width: 10px; height: 10px; border-radius: 2px; background: var(--hd-lime); }
   .tl { font: 400 11.5px/1 var(--hd-mono); color: var(--hd-fg-3); text-transform: uppercase; letter-spacing: .06em; }
   .tiles b { display: block; color: var(--hd-fg); font-weight: 500; font-size: 15px; margin: 10px 0 4px; }
   .tiles p { margin: 0; color: var(--hd-fg-2); font-size: 14px; line-height: 1.55; }
