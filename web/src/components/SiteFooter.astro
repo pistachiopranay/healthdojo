@@ -1,0 +1,16 @@
+<footer class="ft">
+  <div class="in">
+    <div class="l"><span class="mark"></span><b>HealthDojo</b><span class="hd-dim">An open, synthetic benchmark prototype. Built solo at a healthcare AI hackathon (Pear VC, NEA, Cathay). All data is synthetic; no patient data.</span></div>
+    <nav><a href="/results/">Results</a><a href="/method/">Method</a><a href="/method/#limits">Limits</a><a href="/explore/">Explore</a><a href="https://github.com/pistachiopranay/healthdojo">GitHub</a></nav>
+  </div>
+</footer>
+<style>
+  .ft { border-top: 1px solid var(--hd-line); margin-top: 40px; }
+  .in { max-width: 1200px; margin: 0 auto; padding: 28px 24px 40px; display: flex; gap: 24px; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; font-size: 13px; }
+  .l { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; max-width: 720px; color: var(--hd-fg-2); line-height: 1.5; }
+  .l b { color: var(--hd-fg); font-weight: 600; }
+  .mark { width: 8px; height: 8px; border-radius: 2px; background: var(--hd-lime); display: inline-block; }
+  nav { display: flex; gap: 18px; flex-wrap: wrap; }
+  nav a { color: var(--hd-fg-2); text-decoration: none; }
+  nav a:hover { color: var(--hd-fg); }
+</style>
