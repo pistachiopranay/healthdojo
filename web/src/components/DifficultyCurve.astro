@@ -1,0 +1,73 @@
+---
+import type { Curriculum } from "../lib/data";
+import { pn } from "../lib/data";
+import { pct } from "../lib/fmt";
+interface Props { cur: Curriculum; panel?: string; claim?: boolean }
+const { cur, panel, claim = true } = Astro.props;
+const series = Object.entries(cur.curve);
+const levels = [1, 2, 3, 4, 5];
+const rec = (v: any, l: number) => { const x = v[String(l)]; return x && typeof x.recall === "number" ? x.recall : null; };
+const n = (l: number) => {
+  const xs = series.map(([, v]) => v[String(l)]).filter(Boolean);
+  return { items: Math.max(0, ...xs.map((x: any) => x.n_items || 0)), labels: Math.max(0, ...xs.map((x: any) => x.n_hazards || 0)) };
+};
+const meanOf = (v: any) => { const a = levels.map(l => rec(v, l)).filter((x): x is number => x != null); return a.reduce((s, x) => s + x, 0) / a.length; };
+const ranked = [...series].sort((a, b) => meanOf(b[1]) - meanOf(a[1]));
+const best = ranked[0][0], worst = ranked[ranked.length - 1][0];
+const both = series.filter(([, v]) => rec(v, 1) != null && rec(v, 5) != null);
+const down = both.filter(([, v]) => rec(v, 5)! < rec(v, 1)!).length;
+
+const W = 720, H = 260, L = 48, R = 150, T = 16, B = 56;
+const x = (i: number) => L + (i * (W - L - R)) / (levels.length - 1);
+const y = (v: number) => T + (1 - v) * (H - T - B);
+const pts = (v: any) => levels.map((l, i) => (rec(v, l) == null ? null : [x(i), y(rec(v, l)!), rec(v, l)!, l] as const)).filter(Boolean) as (readonly [number, number, number, number])[];
+const order = [...series].sort((a, b) => Number(a[0] === best || a[0] === worst) - Number(b[0] === best || b[0] === worst));
+// keep the two end labels from colliding
+const endY = (m: string) => { const p = pts(cur.curve[m]); return p[p.length - 1][1]; };
+let yb = endY(best), yw = endY(worst);
+if (Math.abs(yb - yw) < 16) { if (yb <= yw) yw = yb + 16; else yb = yw + 16; }
+---
+<figure class="curve not-content" data-bench-panel={panel}>
+  {claim && <p class="claim">In a separate {cur.bench} curriculum subset, recall at the hardest level was lower than at the easiest for <span class="hd-num">{down} of {both.length}</span> tested models. The hazard mix changes by level, and the sample is small.</p>}
+  <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`Recall by difficulty level for ${series.length} models`}>
+    {[0, 0.25, 0.5, 0.75, 1].map(g => (
+      <g><line x1={L} x2={W - R + 10} y1={y(g)} y2={y(g)} stroke="#ffffff12" /><text x={L - 10} y={y(g) + 4} text-anchor="end" class="ax">{g * 100}%</text></g>
+    ))}
+    {levels.map((l, i) => (
+      <g>
+        <text x={x(i)} y={H - B + 22} text-anchor="middle" class="lv">L{l}</text>
+        <text x={x(i)} y={H - B + 40} text-anchor="middle" class="ns">{n(l).items} img · {n(l).labels} lbl</text>
+      </g>
+    ))}
+    {order.map(([m, v]) => {
+      const p = pts(v); const hi = m === best || m === worst; const c = m === best ? "#d5fd51" : m === worst ? "#f5b544" : "#ffffff30";
+      return (
+        <g class={hi ? "hi" : "lo"}>
+          <polyline fill="none" stroke={c} stroke-width={hi ? 2 : 1.25} stroke-linejoin="round" points={p.map(q => `${q[0]},${q[1]}`).join(" ")}><title>{pn(m)}</title></polyline>
+          {p.map(q => <circle cx={q[0]} cy={q[1]} r={hi ? 4 : 3} fill={hi ? c : "#26262b"} stroke={hi ? "#0a0a0b" : "#ffffff40"} stroke-width="2"><title>{`${pn(m)} · L${q[3]}: ${pct(q[2])} recall`}</title></circle>)}
+          {hi && <text x={p[p.length - 1][0] + 12} y={(m === best ? yb : yw) + 4} class="end" fill={c}>{pn(m)}</text>}
+        </g>
+      );
+    })}
+  </svg>
+  <figcaption>
+    <span><i style="background:#d5fd51"></i>highest mean ({pn(best)})</span>
+    <span><i style="background:#f5b544"></i>lowest mean ({pn(worst)})</span>
+    <span><i style="background:#ffffff40"></i>{series.length - 2} other models</span>
+    <span class="hd-dim">img = verified images, lbl = seeded labels per level. Hover points for values.</span>
+  </figcaption>
+</figure>
+<style>
+  .curve { margin: 0; border: 1px solid var(--hd-line); border-radius: var(--hd-radius); background: var(--hd-bg-1); padding: 20px 20px 16px; }
+  .claim { margin: 0 0 12px; color: var(--hd-fg); font-size: 15px; max-width: 64ch; }
+  .claim .hd-num { color: var(--hd-lime); }
+  svg { display: block; width: 100%; height: auto; }
+  .ax { font: 400 11px var(--hd-mono); fill: #8a8a93; }
+  .lv { font: 500 12px var(--hd-mono); fill: #ededee; }
+  .ns { font: 400 10.5px var(--hd-mono); fill: #8a8a93; }
+  .end { font: 500 12px var(--hd-sans); }
+  circle { cursor: default; }
+  g.lo:hover polyline { stroke: #ffffffaa; }
+  figcaption { display: flex; flex-wrap: wrap; gap: 8px 18px; font: 400 12px var(--hd-sans); color: var(--hd-fg-2); margin-top: 8px; }
+  figcaption i { display: inline-block; width: 12px; height: 2px; vertical-align: middle; margin-right: 6px; }
+</style>

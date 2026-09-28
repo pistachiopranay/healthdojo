@@ -1,0 +1,52 @@
+---
+import type { Bench } from "../lib/data";
+import { mean, TLABEL } from "../lib/data";
+import { pct, heat } from "../lib/fmt";
+interface Props { bench: Bench; by: "type" | "room"; title: string }
+const { bench, by, title } = Astro.props;
+const get = (r: any, c: string) => (by === "type" ? r.by_type[c] : r.by_room[c]);
+const ORDER = ["object", "absence", "measurement", "lighting", "access", "perception"];
+let cols = [...new Set(bench.rows.flatMap(r => Object.keys(by === "type" ? r.by_type : r.by_room)))];
+cols = by === "type" ? ORDER.filter(t => cols.includes(t)) : cols.sort();
+const label = (c: string) => (by === "type" ? TLABEL[c] || c : c[0].toUpperCase() + c.slice(1));
+const htype = (h: any) => h.type || bench.taxonomy[h.id]?.type || "object";
+const seeded = (c: string) => bench.scenes.reduce((n, s) => n + s.hazards.filter(h => (by === "type" ? htype(h) === c : s.room === c)).length, 0);
+const avg = cols.map(c => mean(bench.rows.map(r => get(r, c))));
+---
+<figure class="hm not-content">
+  <figcaption class="hd-eyebrow">{title}</figcaption>
+  <div class="scroll">
+    <table class="heat">
+      <thead>
+        <tr><th></th>{cols.map(c => <th><span>{label(c)}</span><small class="hd-num">n={seeded(c)}</small></th>)}</tr>
+      </thead>
+      <tbody>
+        {bench.rows.map(r => (
+          <tr>
+            <th class="rl">{r.name}</th>
+            {cols.map(c => { const v = get(r, c); const h = heat(v); return (
+              <td style={`background:${h.bg};color:${h.fg}`} title={`${r.name} · ${label(c)}: ${pct(v)} of seeded hazards found`} class="hd-num">{pct(v)}</td>
+            ); })}
+          </tr>
+        ))}
+        <tr class="avg">
+          <th class="rl">Mean of models</th>
+          {avg.map((v, i) => { const h = heat(v); return <td style={`background:${h.bg};color:${h.fg}`} title={`${label(cols[i])}: mean ${pct(v)}`} class="hd-num">{pct(v)}</td>; })}
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</figure>
+<style>
+  .hm { margin: 0; min-width: 0; }
+  .hm figcaption { margin-bottom: 12px; }
+  .scroll { overflow-x: auto; }
+  .heat { border-collapse: separate; border-spacing: 2px; font: 400 12.5px/1 var(--hd-sans); width: 100%; }
+  .heat thead th { font: 500 11.5px/1.25 var(--hd-sans); color: var(--hd-fg-2); padding: 0 4px 8px; text-align: center; vertical-align: bottom; }
+  .heat thead th small { display: block; color: var(--hd-fg-3); font-size: 10.5px; margin-top: 3px; }
+  .heat th.rl { text-align: left; font-weight: 400; color: var(--hd-fg-2); padding-right: 12px; white-space: nowrap; font-size: 12.5px; }
+  .heat td { height: 28px; min-width: 52px; text-align: center; border-radius: 3px; font-size: 12px; cursor: default; }
+  .heat tr.avg th, .heat tr.avg td { border-top: 6px solid transparent; }
+  .heat tr.avg th { color: var(--hd-fg); font-weight: 500; }
+  .heat td:hover { outline: 1px solid #ffffff80; outline-offset: -1px; }
+</style>

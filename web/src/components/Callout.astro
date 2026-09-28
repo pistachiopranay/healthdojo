@@ -1,0 +1,23 @@
+---
+const { title } = Astro.props;
+---
+<div class="callout not-content">
+  {title && <div class="hd-eyebrow">{title}</div>}
+  <slot />
+</div>
+<style>
+  .callout { border: 1px solid var(--hd-line); border-radius: var(--hd-radius); padding: 18px 20px; margin-top: 16px; background: linear-gradient(180deg, #ffffff05, transparent); }
+  .callout :global(.defs) { display: grid; grid-template-columns: 130px 1fr; gap: 10px 18px; margin: 12px 0 0; font-size: 14px; }
+  .callout :global(dt) { font: 500 12.5px var(--hd-mono); color: var(--hd-fg); }
+  .callout :global(dd) { margin: 0; color: var(--hd-fg-2); line-height: 1.5; }
+  @media (max-width: 560px) { .callout :global(.defs) { grid-template-columns: 1fr; gap: 2px; } .callout :global(dd) { margin-bottom: 8px; } }
+</style>
+<style is:global>
+  .callout .limits { list-style: none; padding: 0; margin: 12px 0 0; display: grid; gap: 10px; }
+  .callout .limits li { font-size: 14px; color: var(--hd-fg-2); line-height: 1.5; padding-left: 18px; position: relative; margin: 0; }
+  .callout .limits li::before { content: ""; position: absolute; left: 0; top: .6em; width: 6px; height: 6px; border-radius: 1px; background: var(--hd-miss); }
+  .callout .limits b { color: var(--hd-fg); font-weight: 500; }
+</style>
+<style is:global>
+  .callout .limits-p { margin: 0; font-size: 15px; line-height: 1.65; color: var(--hd-fg); border-left: 2px solid var(--hd-miss); padding-left: 14px; }
+</style>

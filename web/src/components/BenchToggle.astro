@@ -1,0 +1,8 @@
+---
+// Switches every [data-bench-panel] on the page between HomeBench and DementiaBench.
+const { label = "Benchmark" } = Astro.props;
+---
+<div class="hd-seg hd-bench-toggle not-content" role="group" aria-label={label}>
+  <button type="button" data-set-bench="homebench" aria-pressed="true">HomeBench <span class="hd-dim">falls</span></button>
+  <button type="button" data-set-bench="dementia" aria-pressed="false">DementiaBench</button>
+</div>

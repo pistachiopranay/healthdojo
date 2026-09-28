@@ -1,0 +1,16 @@
+<style is:global>
+  html:not([data-bench="dementia"]) [data-bench-panel="dementia"],
+  html[data-bench="dementia"] [data-bench-panel="homebench"] { display: none !important; }
+  .hd-bench-toggle .hd-dim { color: inherit; opacity: .55; font-size: 12px; margin-left: 2px; }
+</style>
+<script>
+  const set = (b: string) => {
+    document.documentElement.dataset.bench = b;
+    document.querySelectorAll<HTMLButtonElement>("[data-set-bench]").forEach(x => x.setAttribute("aria-pressed", String(x.dataset.setBench === b)));
+  };
+  document.querySelectorAll<HTMLButtonElement>("[data-set-bench]").forEach(btn => btn.addEventListener("click", () => {
+    set(btn.dataset.setBench!);
+    history.replaceState(null, "", btn.dataset.setBench === "dementia" ? "#dementia" : location.pathname);
+  }));
+  set(location.hash === "#dementia" ? "dementia" : "homebench");
+</script>

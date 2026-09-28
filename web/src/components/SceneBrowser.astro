@@ -1,0 +1,72 @@
+---
+// "Open any room": thumbnail grid per benchmark + a viewer showing each model's boxes and flags.
+// Ported from site/index.html (scene explorer + viewer).
+import type { Bench } from "../lib/data";
+import { sceneHits, TLABEL } from "../lib/data";
+interface Props { bench: Bench }
+const { bench } = Astro.props;
+const scenes = bench.scenes.slice().sort((a, b) => a.room.localeCompare(b.room) || (a.kind === "base" ? -1 : 1) - (b.kind === "base" ? -1 : 1) || a.id.localeCompare(b.id));
+const rooms = [...new Set(scenes.map(s => s.room))];
+const hname = (id: string) => bench.taxonomy[id]?.name || id;
+const tile = (s: typeof scenes[number]) => {
+  if (s.kind === "base") {
+    const neg = bench.knownAbsent[s.id] || [];
+    const p = bench.predictions[s.id] || {};
+    const ok = bench.rows.filter(r => p[r.model]).map(r => !neg.some(n => (p[r.model].pred || []).includes(n)));
+    return { title: "Clean room (control)", sub: "no seeded hazard", ok, verb: "no false flag" };
+  }
+  const hits = sceneHits(bench, s.id).map(h => h.hit);
+  return { title: s.hazards.map(h => hname(h.id)).join(" + "), sub: TLABEL[s.hazards[0]?.type || bench.taxonomy[s.hazards[0]?.id]?.type || "object"] || "", ok: hits, verb: "found it" };
+};
+// compact client payload
+const payload = {
+  key: bench.key,
+  models: bench.rows.map(r => ({ m: r.model, n: r.name })),
+  tax: Object.fromEntries(Object.entries(bench.taxonomy).map(([k, v]) => [k, v.name])),
+  ka: bench.knownAbsent,
+  scenes: Object.fromEntries(scenes.map(s => [s.id, { id: s.id, room: s.room, kind: s.kind, base: s.base, img: s.img, hz: s.hazards, note: s.verify?.note || "", omc: !!s.verify?.other_major_changes }])),
+  preds: Object.fromEntries(Object.entries(bench.predictions).map(([sid, byM]) => [sid, Object.fromEntries(Object.entries(byM).map(([m, v]) => [m, { p: v.pred, r: (v.raw || []).map((h: any) => ({ id: h.id, box: h.box, ev: h.evidence, sev: h.severity })) }]))])),
+};
+---
+<div class="sb not-content" data-bench-panel={bench.key}>
+  <div class="chips" role="group" aria-label="Filter by room">
+    <button type="button" data-room="all" aria-pressed="true">All rooms <span>{scenes.length}</span></button>
+    {rooms.map(r => <button type="button" data-room={r} aria-pressed="false">{r[0].toUpperCase() + r.slice(1)} <span>{scenes.filter(s => s.room === r).length}</span></button>)}
+  </div>
+  <div class="grid">
+    {scenes.map(s => { const t = tile(s); const y = t.ok.filter(Boolean).length; return (
+      <button type="button" class="sc" data-open-scene={s.id} data-bench={bench.key} data-r={s.room}>
+        <div class="im"><img loading="lazy" src={s.thumb} alt={`${s.room}: ${t.title}`} width="640" height="480" />
+          <span class={`hd-tag ${s.kind === "base" ? "" : "lime"}`}>{s.kind === "base" ? "CLEAN" : s.hazards.map(h => h.id).join(" · ")}</span></div>
+        <div class="meta">
+          <div class="ttl">{t.title}</div>
+          <div class="sub">{s.room} · {t.sub}</div>
+          <div class="found">{t.ok.map(v => <i class={v ? "y" : "n"}></i>)}<span class="hd-num">{y}/{t.ok.length} {t.verb}</span></div>
+        </div>
+      </button>
+    ); })}
+  </div>
+  <script type="application/json" data-scene-payload={bench.key} set:html={JSON.stringify(payload)} />
+</div>
+
+<style>
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+  .chips button { font: 500 13px var(--hd-sans); color: var(--hd-fg-2); background: transparent; border: 1px solid var(--hd-line); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+  .chips button span { color: var(--hd-fg-3); font: 400 11px var(--hd-mono); margin-left: 4px; }
+  .chips button[aria-pressed="true"] { color: var(--hd-fg); border-color: #d5fd5166; background: var(--hd-lime-dim); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+  .sc { display: flex; flex-direction: column; justify-content: flex-start; text-align: left; padding: 0; margin: 0; background: var(--hd-bg-1); border: 1px solid var(--hd-line); border-radius: var(--hd-radius); overflow: hidden; cursor: pointer; color: var(--hd-fg); font: inherit; transition: border-color .15s, transform .15s; }
+  .sc:hover { border-color: #d5fd5166; }
+  .sc .im { position: relative; aspect-ratio: 4/3; background: #000; }
+  .sc img { width: 100%; height: 100%; object-fit: cover; display: block; opacity: .92; }
+  .sc .hd-tag { position: absolute; left: 8px; top: 8px; background: #0a0a0bcc; backdrop-filter: blur(6px); }
+  .sc .meta { padding: 10px 12px 12px; }
+  .sc .ttl { font-size: 13.5px; font-weight: 500; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2.6em; }
+  .sc .sub { font: 400 11.5px var(--hd-mono); color: var(--hd-fg-3); margin-top: 4px; text-transform: lowercase; }
+  .found { display: flex; align-items: center; gap: 2px; margin-top: 10px; flex-wrap: wrap; }
+  .found i { width: 7px; height: 12px; border-radius: 1.5px; }
+  .found i.y { background: var(--hd-hit); }
+  .found i.n { background: #ffffff1c; }
+  .found span { font-size: 11px; color: var(--hd-fg-2); margin-left: 8px; }
+  @media (max-width: 520px) { .grid { grid-template-columns: repeat(2, 1fr); gap: 8px; } }
+</style>

@@ -1,0 +1,33 @@
+---
+import type { Bench } from "../lib/data";
+import { hardest, TLABEL } from "../lib/data";
+import { pct } from "../lib/fmt";
+interface Props { bench: Bench; n?: number }
+const { bench, n = 8 } = Astro.props;
+const list = hardest(bench, n);
+---
+<ol class="hard not-content" data-bench-panel={bench.key}>
+  {list.map(h => (
+    <li>
+      <code class="hd-num">{h.id}</code>
+      <div class="nm"><a href={h.sceneId ? `#scene=${h.sceneId}` : undefined} data-open-scene={h.sceneId} data-bench={bench.key}>{h.name}</a><span>{TLABEL[h.type] || h.type}</span></div>
+      <div class="bar"><i style={`width:${Math.max(2, h.recall * 100)}%`}></i></div>
+      <div class="val hd-num"><b>{h.found}/{h.ran}</b><span>models found it</span></div>
+    </li>
+  ))}
+</ol>
+<style>
+  .hard { list-style: none; margin: 0; padding: 0; border: 1px solid var(--hd-line); border-radius: var(--hd-radius); background: var(--hd-bg-1); }
+  .hard li { display: grid; grid-template-columns: 78px 1fr 160px 120px; gap: 16px; align-items: center; padding: 12px 16px; border-bottom: 1px solid var(--hd-line); margin: 0; }
+  .hard li:last-child { border-bottom: 0; }
+  .hard code { font-size: 12px; color: var(--hd-fg-3); background: none; padding: 0; }
+  .hard .nm a { color: var(--hd-fg); text-decoration: none; font-size: 14px; }
+  .hard .nm a:hover { color: var(--hd-lime); }
+  .hard .nm span { display: block; font: 400 11.5px var(--hd-mono); color: var(--hd-fg-3); margin-top: 3px; }
+  .hard .bar { height: 4px; background: #ffffff10; border-radius: 2px; overflow: hidden; }
+  .hard .bar i { display: block; height: 100%; background: var(--hd-miss); border-radius: 2px; }
+  .hard .val { text-align: right; }
+  .hard .val b { font-weight: 500; font-size: 15px; }
+  .hard .val span { display: block; font-size: 11px; color: var(--hd-fg-3); }
+  @media (max-width: 640px) { .hard li { grid-template-columns: 64px 1fr 76px; } .hard .bar { display: none; } }
+</style>

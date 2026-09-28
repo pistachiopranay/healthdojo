@@ -1,0 +1,107 @@
+---
+// Modal viewer for one scene: before/after images, ground-truth box, and a chosen model's boxes + flags.
+---
+<dialog id="hd-viewer" class="not-content" aria-label="Scene viewer">
+  <div class="vbox" id="hd-vbox"></div>
+</dialog>
+
+<style is:global>
+  #hd-viewer { border: 1px solid var(--hd-line-2); background: var(--hd-bg); color: var(--hd-fg); border-radius: 14px; padding: 0; width: min(1180px, calc(100vw - 24px)); max-height: calc(100vh - 32px); }
+  #hd-viewer::backdrop { background: #000000c0; backdrop-filter: blur(4px); }
+  #hd-viewer .vbox { padding: 22px 24px 26px; position: relative; }
+  #hd-viewer .vclose { position: absolute; right: 14px; top: 12px; background: none; border: 1px solid var(--hd-line); color: var(--hd-fg-2); width: 32px; height: 32px; border-radius: 8px; font-size: 18px; cursor: pointer; }
+  #hd-viewer .vtop { display: flex; gap: 16px; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; margin: 0 44px 16px 0; }
+  #hd-viewer h3 { margin: 6px 0 0; font: 600 22px/1.2 var(--hd-sans); letter-spacing: -.02em; color: var(--hd-fg); }
+  #hd-viewer select { font: 500 13px var(--hd-sans); background: var(--hd-bg-1); color: var(--hd-fg); border: 1px solid var(--hd-line-2); border-radius: 8px; padding: 8px 10px; }
+  #hd-viewer .vimgs { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  #hd-viewer .vimgs.single { grid-template-columns: 1fr; max-width: 760px; }
+  #hd-viewer .lab { font: 500 11px var(--hd-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--hd-fg-3); margin-bottom: 8px; }
+  #hd-viewer .legend2 { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 12px; color: var(--hd-fg-2); margin: 14px 0 6px; }
+  #hd-viewer .legend2 i { display: inline-block; width: 14px; height: 10px; margin-right: 6px; vertical-align: -1px; border-radius: 2px; }
+  #hd-viewer .vinfo { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 16px; }
+  #hd-viewer h4 { font: 500 11px var(--hd-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--hd-fg-3); margin: 0 0 10px; }
+  #hd-viewer .item { display: flex; gap: 10px; padding: 10px 0; border-top: 1px solid var(--hd-line); font-size: 13.5px; }
+  #hd-viewer .item .nm { font-weight: 500; }
+  #hd-viewer .item .ev { color: var(--hd-fg-2); margin-top: 3px; line-height: 1.45; }
+  #hd-viewer .dots { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; }
+  #hd-viewer .dots span { font: 400 11px var(--hd-mono); padding: 3px 6px; border-radius: 4px; }
+  #hd-viewer .dots .y { color: var(--hd-hit); background: var(--hd-hit-bg); }
+  #hd-viewer .dots .n { color: var(--hd-fg-3); background: #ffffff08; }
+  #hd-viewer .warn { font-size: 12.5px; color: var(--hd-miss); margin-top: 6px; }
+  @media (max-width: 760px) { #hd-viewer .vimgs, #hd-viewer .vinfo { grid-template-columns: 1fr; } #hd-viewer .vbox { padding: 16px; } }
+</style>
+
+<script>
+  type P = any;
+  const payloads: Record<string, P> = {};
+  document.querySelectorAll<HTMLScriptElement>("script[data-scene-payload]").forEach(s => { payloads[s.dataset.scenePayload!] = JSON.parse(s.textContent || "{}"); });
+  const dlg = document.getElementById("hd-viewer") as HTMLDialogElement;
+  const vbox = document.getElementById("hd-vbox")!;
+  const esc = (s: unknown) => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]!));
+  function box(b: unknown, cls: string, label: string) {
+    if (!Array.isArray(b) || b.length !== 4 || b.some(x => typeof x !== "number")) return "";
+    let [x0, y0, x1, y1] = (b as number[]).map(v => Math.max(0, Math.min(1000, v)));
+    if (x1 < x0) [x0, x1] = [x1, x0]; if (y1 < y0) [y0, y1] = [y1, y0];
+    if (x1 - x0 < 4 || y1 - y0 < 4) return "";
+    return `<div class="hd-bx ${cls}" style="left:${x0 / 10}%;top:${y0 / 10}%;width:${(x1 - x0) / 10}%;height:${(y1 - y0) / 10}%"><b>${esc(label)}</b></div>`;
+  }
+  let cur: string | undefined;
+  function open(benchKey: string, id: string) {
+    const D = payloads[benchKey]; if (!D) return;
+    const s = D.scenes[id]; if (!s) return;
+    const base = s.kind === "edit" ? D.scenes[s.base] : null;
+    const p = D.preds[id] || {};
+    const avail = D.models.filter((m: P) => p[m.m]);
+    if (!avail.some((m: P) => m.m === cur)) cur = avail[0]?.m;
+    const nameOf = (m: string) => D.models.find((x: P) => x.m === m)?.n || m;
+    const hname = (h: string) => D.tax[h] || h;
+    const gt = new Set<string>(s.hz.map((h: P) => h.id));
+    const neg = new Set<string>((D.ka[s.base || s.id] || []).filter((h: string) => !gt.has(h)));
+    const raw: P[] = cur ? p[cur].r || [] : [];
+    const cls = (h: P) => (gt.has(h.id) ? "hit" : neg.has(h.id) ? "fa" : "unk");
+    const title = s.kind === "base" ? "Clean room (control)" : s.hz.map((h: P) => hname(h.id)).join(" + ");
+    const gtBoxes = s.hz.map((h: P) => box(h.box, "gt", "SEEDED " + h.id)).join("");
+    const prBoxes = raw.map(h => box(h.box, cls(h), (cls(h) === "hit" ? "HIT " : cls(h) === "fa" ? "FALSE FLAG " : "") + (h.id || "?"))).join("");
+    const predIds = new Set(raw.map(h => h.id));
+    const gtList = s.hz.length ? s.hz.map((h: P) => {
+      const found = predIds.has(h.id);
+      const who = avail.map((m: P) => `<span class="${(p[m.m].p || []).includes(h.id) ? "y" : "n"}">${esc(m.n)}</span>`).join("");
+      const nFound = avail.filter((m: P) => (p[m.m].p || []).includes(h.id)).length;
+      return `<div class="item"><span class="hd-tag ${found ? "hit" : "miss"}">${found ? "HIT" : "MISS"}</span><div><div class="nm">${esc(h.id)} · ${esc(hname(h.id))}</div>
+        <div class="ev">${s.note ? "Automated check: " + esc(s.note) : ""}</div>${s.omc ? `<div class="warn">The automated check also recorded another major change in this edit.</div>` : ""}
+        <div class="ev">${nFound} of ${avail.length} models with output found it.</div><div class="dots">${who}</div></div></div>`;
+    }).join("") : `<div class="item"><span class="hd-tag">CLEAN</span><div><div class="nm">No seeded hazard.</div><div class="ev">Prespecified absent IDs scored here: ${[...neg].map(h => esc(h) + " " + esc(hname(h))).join("; ") || "none"}</div></div></div>`;
+    const prList = raw.length ? raw.map(h => { const c = cls(h); return `<div class="item"><span class="hd-tag ${c === "hit" ? "hit" : c === "fa" ? "miss" : ""}">${c === "hit" ? "HIT" : c === "fa" ? "FALSE FLAG" : "UNSCORED"}</span><div><div class="nm">${esc(h.id)} · ${esc(hname(h.id))}${h.sev ? ` <span class="hd-dim">· ${esc(h.sev)}</span>` : ""}</div><div class="ev">${esc(h.ev)}</div></div></div>`; }).join("")
+      : `<div class="item"><div class="ev">${cur ? "This model flagged nothing in this scene." : "No model output for this scene."}</div></div>`;
+    vbox.innerHTML = `<button class="vclose" aria-label="Close">×</button>
+      <div class="vtop"><div><div class="hd-eyebrow">${esc(s.room)} · ${esc(s.id)}</div><h3>${esc(title)}</h3></div>
+      ${avail.length ? `<label class="hd-eyebrow">Model <select id="hd-msel">${avail.map((m: P) => `<option value="${esc(m.m)}" ${m.m === cur ? "selected" : ""}>${esc(m.n)}</option>`).join("")}</select></label>` : ""}</div>
+      <div class="vimgs ${base ? "" : "single"}">
+        ${base ? `<div><div class="lab">Before · clean base room</div><div class="hd-frame"><img src="${base.img}" alt="Clean base room"></div></div>` : ""}
+        <div><div class="lab">${base ? "After · seeded edit" : "Scene"}${cur ? " · " + esc(nameOf(cur)) : ""}</div><div class="hd-frame"><img src="${s.img}" alt="${esc(title)}">${gtBoxes}${prBoxes}</div></div>
+      </div>
+      <div class="legend2"><span><i style="border:2px solid var(--hd-lime)"></i>Seeded label</span><span><i style="border:2px dashed var(--hd-hit)"></i>Model hit</span><span><i style="border:2px solid var(--hd-miss)"></i>False flag (prespecified absent ID)</span><span><i style="border:2px dotted #ffffff66"></i>Unscored</span></div>
+      <div class="vinfo"><div><h4>Seeded label</h4>${gtList}</div><div><h4>${cur ? esc(nameOf(cur)) + " flagged" : "Model output"}</h4>${prList}</div></div>`;
+    vbox.querySelector(".vclose")!.addEventListener("click", () => dlg.close());
+    const sel = vbox.querySelector<HTMLSelectElement>("#hd-msel");
+    if (sel) sel.onchange = () => { cur = sel.value; open(benchKey, id); };
+    if (!dlg.open) dlg.showModal();
+  }
+  dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
+  document.addEventListener("click", e => {
+    const t = (e.target as HTMLElement).closest<HTMLElement>("[data-open-scene]");
+    if (!t || !t.dataset.openScene) return;
+    e.preventDefault();
+    open(t.dataset.bench || "homebench", t.dataset.openScene);
+  });
+  // room filter chips
+  document.querySelectorAll<HTMLElement>(".sb").forEach(sb => {
+    sb.querySelectorAll<HTMLButtonElement>("[data-room]").forEach(b => b.addEventListener("click", () => {
+      sb.querySelectorAll("[data-room]").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+      sb.querySelectorAll<HTMLElement>(".sc").forEach(c => { c.style.display = b.dataset.room === "all" || c.dataset.r === b.dataset.room ? "" : "none"; });
+    }));
+  });
+  const m = location.hash.match(/^#scene=(.+)$/);
+  if (m) { const id = decodeURIComponent(m[1]); open(id.startsWith("dem-") ? "dementia" : "homebench", id); }
+  (window as any).hdOpenScene = open;
+</script>

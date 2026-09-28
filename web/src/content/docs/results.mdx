@@ -1,0 +1,95 @@
+---
+title: Results
+description: These are results on synthetic scenes. They reveal specific misses and disagreements; they do not measure performance in real homes. Read each model's scene coverage beside its score.
+tableOfContents: false
+---
+import { benches, curriculum } from "../../lib/data";
+import BenchToggle from "../../components/BenchToggle.astro";
+import BenchScript from "../../components/BenchScript.astro";
+import Leaderboard from "../../components/Leaderboard.astro";
+import DifficultyCurve from "../../components/DifficultyCurve.astro";
+import Hardest from "../../components/Hardest.astro";
+import Heatmap from "../../components/Heatmap.astro";
+import HeatLegend from "../../components/HeatLegend.astro";
+import SceneBrowser from "../../components/SceneBrowser.astro";
+import SceneViewer from "../../components/SceneViewer.astro";
+import Callout from "../../components/Callout.astro";
+
+export const B = benches();
+
+<p class="hd-lede">The score gives equal weight to the share of seeded hazards found and the share of a defined set of hazards left unflagged. That second set is expected to be absent based on related edits of the same base room. Other predictions are not all scored as false alarms, so the number is not whole-room accuracy.</p>
+
+## Leaderboard
+
+<BenchToggle />
+
+<div data-bench-panel="homebench">
+### HomeBench: falls after surgery
+
+**43 of 47** candidate scenes entered scoring: edited rooms with seeded hazards and clean base rooms. The models covered **42 or 43 of those 43** scenes. Keep coverage visible when comparing ranks.
+
+The leading entry in this saved result set scored **0.92 out of 1.00** on **42 of 43** scenes. It found **30 of 30** seeded hazard IDs and flagged **15 of 90** prespecified absent IDs. Recall and false flags both matter.
+
+For one complete scene comparison, **8 of 14** models flagged the shortened handrail. Treat that as a result for one synthetic image, not a general detection rate.
+</div>
+<div data-bench-panel="dementia">
+### DementiaBench: home safety
+
+**16 of 17** candidate scenes entered scoring. The leading entry's **1.00 out of 1.00** score covers **14 of 16** scenes, while the other ranked entries cover **16 of 16**. The two benchmarks have different scenes and rubrics, so their scores should be read separately.
+</div>
+
+<Leaderboard bench={B.homebench} />
+<Leaderboard bench={B.dementia} />
+
+<Callout title="How to read the columns">
+<dl class="defs">
+<dt>Score</dt><dd>(recall + 1 - false-flag rate) / 2, on a 0 to 1 scale.</dd>
+<dt>Recall</dt><dd>Seeded hazard IDs the model listed, out of the seeded IDs in the scenes it ran.</dd>
+<dt>False-flag rate</dt><dd>Flags on prespecified absent hazard IDs, out of those IDs checked in the scenes it ran.</dd>
+<dt>Precision*</dt><dd>Hits / (hits + false flags), within the scored IDs only.</dd>
+<dt>Loc IoU</dt><dd>Mean box overlap on hits, reported separately from the score.</dd>
+<dt>Scenes run</dt><dd>Scenes with a saved response for that model, out of the scored total.</dd>
+</dl>
+</Callout>
+
+## Difficulty curve
+
+<div data-bench-panel="homebench">
+In a separate falls curriculum subset, recall at the hardest level was lower than at the easiest for **8 of 8** tested models. The hazard mix changes by level, and the sample is small. This is a pattern in this subset, not a controlled estimate of difficulty.
+</div>
+
+<DifficultyCurve cur={curriculum("falls")} panel="homebench" claim={false} />
+<DifficultyCurve cur={curriculum("dementia")} panel="dementia" />
+
+## Hardest hazards in this sample
+
+The hardest-hazards view shows misses in this sample, not hazards that every model always misses. Each row is one synthetic scene; click a hazard to open it.
+
+<Hardest bench={B.homebench} />
+<Hardest bench={B.dementia} />
+
+## Heatmaps
+
+Share of seeded hazards each model found, by hazard type and by room. `n` is the number of seeded hazards in the scored scenes.
+
+<div class="hmgrid not-content" data-bench-panel="homebench">
+  <Heatmap bench={B.homebench} by="type" title="Recall by hazard type" />
+  <Heatmap bench={B.homebench} by="room" title="Recall by room" />
+</div>
+<div class="hmgrid not-content" data-bench-panel="dementia">
+  <Heatmap bench={B.dementia} by="type" title="Recall by hazard type" />
+  <Heatmap bench={B.dementia} by="room" title="Recall by room" />
+</div>
+<HeatLegend />
+
+## Open any room
+
+Open a scene to inspect its seeded label, image, and saved model response. Green marks are models that found the seeded hazard; on clean rooms, models that raised no false flag.
+
+<BenchToggle />
+
+<SceneBrowser bench={B.homebench} />
+<SceneBrowser bench={B.dementia} />
+
+<SceneViewer />
+<BenchScript />

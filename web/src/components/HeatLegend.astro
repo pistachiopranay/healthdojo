@@ -1,0 +1,10 @@
+---
+import { heat } from "../lib/fmt";
+const stops = [0, .25, .5, .75, 1].map(v => heat(v).bg).join(",");
+---
+<div class="legend not-content"><span>0% found</span><i style={`background:linear-gradient(90deg,${stops})`}></i><span>100% found</span><span class="na">n/a = not tested</span></div>
+<style>
+  .legend { display: flex; align-items: center; gap: 10px; font: 400 11.5px var(--hd-mono); color: var(--hd-fg-3); margin-top: 14px; flex-wrap: wrap; }
+  .legend i { width: 160px; height: 8px; border-radius: 2px; border: 1px solid var(--hd-line); }
+  .legend .na { margin-left: 12px; }
+</style>
