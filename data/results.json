@@ -56,6 +56,54 @@
    "loc_iou": 0.283
   },
   {
+   "model": "grok-4.6",
+   "recall": 0.957,
+   "tp": 22,
+   "fn": 1,
+   "false_alarm": 0.159,
+   "by_type": {
+    "object": 0.933,
+    "lighting": 1.0,
+    "measurement": 1.0,
+    "absence": 1.0
+   },
+   "by_room": {
+    "living": 1.0,
+    "kitchen": 1.0,
+    "stairs": 0.833,
+    "bedroom": 1.0,
+    "entry": 1.0,
+    "bathroom": 1.0
+   },
+   "by_hazard": {
+    "LIV-07": 1.0,
+    "KIT-02": 1.0,
+    "LIV-02": 1.0,
+    "STAIR-03": 1.0,
+    "LIV-04": 1.0,
+    "BED-03": 1.0,
+    "KIT-01": 1.0,
+    "STAIR-05": 1.0,
+    "STAIR-06": 1.0,
+    "LIV-01": 1.0,
+    "ENT-03": 1.0,
+    "KIT-04": 1.0,
+    "KIT-03": 1.0,
+    "BED-01": 1.0,
+    "LIV-06": 1.0,
+    "ENT-01": 1.0,
+    "LIV-03": 1.0,
+    "STAIR-04": 1.0,
+    "BATH-02": 1.0,
+    "LIV-05": 1.0,
+    "STAIR-02": 0.0,
+    "STAIR-01": 1.0,
+    "BATH-04": 1.0
+   },
+   "score": 0.899,
+   "loc_iou": 0.171
+  },
+  {
    "model": "gpt-5.6-sol",
    "recall": 0.967,
    "tp": 29,
@@ -109,6 +157,62 @@
    },
    "score": 0.895,
    "loc_iou": 0.371
+  },
+  {
+   "model": "claude-fable-5.1",
+   "recall": 1.0,
+   "tp": 31,
+   "fn": 0,
+   "false_alarm": 0.226,
+   "by_type": {
+    "object": 1.0,
+    "measurement": 1.0,
+    "lighting": 1.0,
+    "absence": 1.0
+   },
+   "by_room": {
+    "living": 1.0,
+    "kitchen": 1.0,
+    "stairs": 1.0,
+    "bathroom": 1.0,
+    "bedroom": 1.0,
+    "entry": 1.0
+   },
+   "by_hazard": {
+    "LIV-07": 1.0,
+    "KIT-02": 1.0,
+    "LIV-02": 1.0,
+    "STAIR-03": 1.0,
+    "BATH-07": 1.0,
+    "BATH-06": 1.0,
+    "LIV-04": 1.0,
+    "BED-03": 1.0,
+    "KIT-01": 1.0,
+    "STAIR-05": 1.0,
+    "STAIR-06": 1.0,
+    "LIV-01": 1.0,
+    "ENT-03": 1.0,
+    "KIT-04": 1.0,
+    "BATH-01": 1.0,
+    "KIT-03": 1.0,
+    "BED-01": 1.0,
+    "LIV-06": 1.0,
+    "ENT-04": 1.0,
+    "BED-04": 1.0,
+    "ENT-01": 1.0,
+    "LIV-03": 1.0,
+    "STAIR-04": 1.0,
+    "BATH-02": 1.0,
+    "BATH-03": 1.0,
+    "LIV-05": 1.0,
+    "STAIR-02": 1.0,
+    "STAIR-01": 1.0,
+    "BATH-08": 1.0,
+    "BATH-05": 1.0,
+    "BATH-04": 1.0
+   },
+   "score": 0.887,
+   "loc_iou": 0.341
   },
   {
    "model": "gpt-5.6-terra",
@@ -221,61 +325,6 @@
    "loc_iou": 0.353
   },
   {
-   "model": "grok-4.6",
-   "recall": 0.733,
-   "tp": 22,
-   "fn": 8,
-   "false_alarm": 0.111,
-   "by_type": {
-    "object": 0.778,
-    "measurement": 0.5,
-    "lighting": 0.75,
-    "absence": 0.75
-   },
-   "by_room": {
-    "living": 1.0,
-    "kitchen": 1.0,
-    "stairs": 0.833,
-    "bathroom": 0.286,
-    "bedroom": 0.667,
-    "entry": 0.667
-   },
-   "by_hazard": {
-    "LIV-07": 1.0,
-    "KIT-02": 1.0,
-    "LIV-02": 1.0,
-    "STAIR-03": 1.0,
-    "BATH-07": 0.0,
-    "BATH-06": 0.0,
-    "LIV-04": 1.0,
-    "BED-03": 1.0,
-    "KIT-01": 1.0,
-    "STAIR-05": 1.0,
-    "STAIR-06": 1.0,
-    "LIV-01": 1.0,
-    "ENT-03": 1.0,
-    "KIT-04": 1.0,
-    "BATH-01": 0.0,
-    "KIT-03": 1.0,
-    "BED-01": 1.0,
-    "LIV-06": 1.0,
-    "ENT-04": 0.0,
-    "BED-04": 0.0,
-    "ENT-01": 1.0,
-    "LIV-03": 1.0,
-    "STAIR-04": 1.0,
-    "BATH-02": 1.0,
-    "BATH-03": 0.0,
-    "LIV-05": 1.0,
-    "STAIR-02": 0.0,
-    "STAIR-01": 1.0,
-    "BATH-05": 0.0,
-    "BATH-04": 1.0
-   },
-   "score": 0.811,
-   "loc_iou": 0.171
-  },
-  {
    "model": "claude-sonnet-5",
    "recall": 0.867,
    "tp": 26,
@@ -329,6 +378,62 @@
    },
    "score": 0.806,
    "loc_iou": 0.132
+  },
+  {
+   "model": "claude-opus-5",
+   "recall": 1.0,
+   "tp": 31,
+   "fn": 0,
+   "false_alarm": 0.398,
+   "by_type": {
+    "object": 1.0,
+    "measurement": 1.0,
+    "lighting": 1.0,
+    "absence": 1.0
+   },
+   "by_room": {
+    "living": 1.0,
+    "kitchen": 1.0,
+    "stairs": 1.0,
+    "bathroom": 1.0,
+    "bedroom": 1.0,
+    "entry": 1.0
+   },
+   "by_hazard": {
+    "LIV-07": 1.0,
+    "KIT-02": 1.0,
+    "LIV-02": 1.0,
+    "STAIR-03": 1.0,
+    "BATH-07": 1.0,
+    "BATH-06": 1.0,
+    "LIV-04": 1.0,
+    "BED-03": 1.0,
+    "KIT-01": 1.0,
+    "STAIR-05": 1.0,
+    "STAIR-06": 1.0,
+    "LIV-01": 1.0,
+    "ENT-03": 1.0,
+    "KIT-04": 1.0,
+    "BATH-01": 1.0,
+    "KIT-03": 1.0,
+    "BED-01": 1.0,
+    "LIV-06": 1.0,
+    "ENT-04": 1.0,
+    "BED-04": 1.0,
+    "ENT-01": 1.0,
+    "LIV-03": 1.0,
+    "STAIR-04": 1.0,
+    "BATH-02": 1.0,
+    "BATH-03": 1.0,
+    "LIV-05": 1.0,
+    "STAIR-02": 1.0,
+    "STAIR-01": 1.0,
+    "BATH-08": 1.0,
+    "BATH-05": 1.0,
+    "BATH-04": 1.0
+   },
+   "score": 0.801,
+   "loc_iou": 0.169
   },
   {
    "model": "llama-4-maverick",
@@ -1752,6 +1857,81 @@
  ],
  "predictions": {
   "living-base0-LIV-07": {
+   "claude-fable-5.1": {
+    "pred": [
+     "LIV-07",
+     "LIV-03",
+     "LIV-05"
+    ],
+    "raw": [
+     {
+      "id": "LIV-07",
+      "severity": "high",
+      "evidence": "Round plush dog bed placed in the middle of the main walking path across the living room floor - a trip hazard directly in a walker route",
+      "box": [
+       505,
+       745,
+       712,
+       942
+      ]
+     },
+     {
+      "id": "LIV-07",
+      "severity": "high",
+      "evidence": "Rope dog toy lying loose on the floor in the open walkway near the recliner",
+      "box": [
+       288,
+       778,
+       408,
+       888
+      ]
+     },
+     {
+      "id": "LIV-07",
+      "severity": "medium",
+      "evidence": "Tennis ball on the floor near the TV cabinet - small rolling object that can cause a slip/trip",
+      "box": [
+       728,
+       795,
+       762,
+       832
+      ]
+     },
+     {
+      "id": "LIV-07",
+      "severity": "medium",
+      "evidence": "Two pet food/water bowls on the floor beside the TV stand in the path along the media cabinet; risk of tripping or spilled water",
+      "box": [
+       672,
+       610,
+       752,
+       685
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "medium",
+      "evidence": "Dog bed, toys and bowls scattered across the open floor clutter and narrow the clear walker path between the door area, seating and TV",
+      "box": [
+       280,
+       600,
+       770,
+       945
+      ]
+     },
+     {
+      "id": "LIV-05",
+      "severity": "low",
+      "evidence": "Bright window sunlight creating strong glare/reflection on the glossy hardwood floor, which can obscure objects on the floor",
+      "box": [
+       330,
+       440,
+       1000,
+       780
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "LIV-01",
@@ -1802,6 +1982,48 @@
        550,
        500,
        650
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "LIV-07",
+     "LIV-03",
+     "LIV-04"
+    ],
+    "raw": [
+     {
+      "id": "LIV-07",
+      "severity": "high",
+      "evidence": "Pet bed, rope tug toy, tennis ball, and two dog food/water bowls are scattered directly on the main walking path across the living room floor - all trip hazards for a walker user.",
+      "box": [
+       275,
+       600,
+       760,
+       935
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "medium",
+      "evidence": "The blue recliner juts well out into the room and, combined with the pet bed, toys and bowls on the floor, narrows the clear route from the entry to the seating area below the width needed for a walker.",
+      "box": [
+       40,
+       275,
+       760,
+       935
+      ]
+     },
+     {
+      "id": "LIV-04",
+      "severity": "low",
+      "evidence": "Deep, soft upholstered sofa with low, soft cushions and skirted low seat height makes standing up difficult after hip/knee replacement.",
+      "box": [
+       150,
+       282,
+       400,
+       545
       ]
      }
     ]
@@ -2312,6 +2534,72 @@
    }
   },
   "kitchen-base1-KIT-02": {
+   "claude-fable-5.1": {
+    "pred": [
+     "LIV-07",
+     "LIV-01",
+     "LIV-03",
+     "KIT-01",
+     "KIT-02"
+    ],
+    "raw": [
+     {
+      "id": "LIV-07",
+      "severity": "high",
+      "evidence": "Two metal pet food/water bowls on a mat placed on the floor at the base of the shelving, directly beside the main walking path; a walker user could catch a wheel/leg or step on them",
+      "box": [
+       130,
+       800,
+       310,
+       960
+      ]
+     },
+     {
+      "id": "LIV-01",
+      "severity": "medium",
+      "evidence": "Loose, thin pet-bowl mat lying on the hardwood floor along the walkway with unsecured edges that can slide or curl",
+      "box": [
+       130,
+       800,
+       310,
+       960
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "medium",
+      "evidence": "Large plastic pet-food storage bin sitting on the floor against the wall and an open lower cabinet door protruding into the galley walkway, narrowing the clear path for a walker",
+      "box": [
+       220,
+       620,
+       350,
+       810
+      ]
+     },
+     {
+      "id": "KIT-01",
+      "severity": "medium",
+      "evidence": "Glasses, jars and serveware stored on the top open shelves near the ceiling, well above shoulder height, requiring reaching or a stool",
+      "box": [
+       0,
+       0,
+       330,
+       160
+      ]
+     },
+     {
+      "id": "KIT-02",
+      "severity": "medium",
+      "evidence": "Storage bins and supplies kept in the low base cabinet (door open) and dishes on the lowest open shelf, requiring bending/squatting that violates hip precautions",
+      "box": [
+       660,
+       540,
+       830,
+       870
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "KIT-01",
@@ -2350,6 +2638,72 @@
        650,
        250,
        850
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "KIT-01",
+     "KIT-02",
+     "LIV-07",
+     "LIV-01",
+     "LIV-03"
+    ],
+    "raw": [
+     {
+      "id": "KIT-01",
+      "severity": "medium",
+      "evidence": "Dishes, bowls, pitchers and glassware stored on high open shelves well above shoulder height, requiring reaching or a step stool",
+      "box": [
+       0,
+       0,
+       535,
+       300
+      ]
+     },
+     {
+      "id": "KIT-02",
+      "severity": "medium",
+      "evidence": "Storage containers, canisters and supplies kept on the floor-level shelves of the base cabinet, requiring deep bending/squatting",
+      "box": [
+       1015,
+       540,
+       1310,
+       880
+      ]
+     },
+     {
+      "id": "LIV-07",
+      "severity": "high",
+      "evidence": "Pet food and water bowls on a mat directly in the kitchen walkway, plus a large pet food storage bin against the shelving",
+      "box": [
+       205,
+       640,
+       540,
+       970
+      ]
+     },
+     {
+      "id": "LIV-01",
+      "severity": "high",
+      "evidence": "Loose fabric pet feeding mat lying on the hard floor in the main walking path \u2014 trip/slip risk for walker legs",
+      "box": [
+       210,
+       815,
+       470,
+       965
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "high",
+      "evidence": "Base cabinet door swung open into the narrow galley walkway, and pet food bin/bowls narrow the path further \u2014 not enough clear width for a walker",
+      "box": [
+       1010,
+       505,
+       1110,
+       760
       ]
      }
     ]
@@ -3140,6 +3494,24 @@
    }
   },
   "living-base1-LIV-02": {
+   "claude-fable-5.1": {
+    "pred": [
+     "LIV-02"
+    ],
+    "raw": [
+     {
+      "id": "LIV-02",
+      "severity": "high",
+      "evidence": "A black electrical cord runs from the wall outlet near the TV stand diagonally across the open hardwood floor in the main walking path between the recliners, creating a trip/entanglement hazard for walker legs.",
+      "box": [
+       480,
+       390,
+       680,
+       990
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "LIV-02",
@@ -3177,6 +3549,36 @@
        300,
        950,
        650
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "LIV-02",
+     "LIV-05"
+    ],
+    "raw": [
+     {
+      "id": "LIV-02",
+      "severity": "high",
+      "evidence": "A long black power/AV cord runs from the TV stand area diagonally across the open floor toward the seating area, crossing the main walking path where a walker would travel",
+      "box": [
+       600,
+       405,
+       1035,
+       1000
+      ]
+     },
+     {
+      "id": "LIV-05",
+      "severity": "low",
+      "evidence": "Bright unshaded window light reflects off the high-gloss laminate floor, creating glare patches that can obscure the walking surface and the cord lying on it",
+      "box": [
+       560,
+       400,
+       1200,
+       1000
       ]
      }
     ]
@@ -3539,6 +3941,48 @@
    }
   },
   "entry-base0": {
+   "claude-fable-5.1": {
+    "pred": [
+     "STAIR-02",
+     "STAIR-05",
+     "ENT-02"
+    ],
+    "raw": [
+     {
+      "id": "STAIR-02",
+      "severity": "medium",
+      "evidence": "Handrails are short: they start only at the bottom tread and end at the landing edge, not extending past the top or bottom step, so there is no rail to hold while stepping onto the walk or reaching the door with a walker",
+      "box": [
+       430,
+       320,
+       1050,
+       650
+      ]
+     },
+     {
+      "id": "STAIR-05",
+      "severity": "low",
+      "evidence": "Two uniformly gray concrete steps with no contrasting edge marking; step edges blend with the landing and walkway in low light",
+      "box": [
+       470,
+       520,
+       1040,
+       660
+      ]
+     },
+     {
+      "id": "ENT-02",
+      "severity": "low",
+      "evidence": "Raised door sill/threshold at the front door where the walker must be lifted over",
+      "box": [
+       570,
+       470,
+       1000,
+       500
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "ENT-01",
@@ -3565,6 +4009,60 @@
        0,
        1000,
        400
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "STAIR-02",
+     "STAIR-05",
+     "ENT-02",
+     "ENT-04"
+    ],
+    "raw": [
+     {
+      "id": "STAIR-02",
+      "severity": "medium",
+      "evidence": "Both railings are short \u2014 they run only alongside the two steps and stop at the top step without extending over the landing or past the bottom step, so there is nothing to grasp while stepping on or off with a walker.",
+      "box": [
+       432,
+       318,
+       1063,
+       662
+      ]
+     },
+     {
+      "id": "STAIR-05",
+      "severity": "medium",
+      "evidence": "The two concrete steps and the landing are all the same uniform gray with no contrasting nosing or edge marking, making the step edges hard to judge in low light.",
+      "box": [
+       458,
+       492,
+       1050,
+       662
+      ]
+     },
+     {
+      "id": "ENT-02",
+      "severity": "medium",
+      "evidence": "Raised door sill/threshold at the base of the entry door that a walker must be lifted over.",
+      "box": [
+       586,
+       466,
+       982,
+       500
+      ]
+     },
+     {
+      "id": "ENT-04",
+      "severity": "medium",
+      "evidence": "Dusk scene lit only by a single wall sconce set off to the left of the door; the step treads and walkway edge fall into shadow.",
+      "box": [
+       414,
+       0,
+       500,
+       120
       ]
      }
     ]
@@ -3694,10 +4192,6 @@
       ]
      }
     ]
-   },
-   "grok-4.6": {
-    "pred": [],
-    "raw": []
    },
    "kimi-k3": {
     "pred": [
@@ -3983,6 +4477,24 @@
    }
   },
   "stairs-base0-STAIR-03": {
+   "claude-fable-5.1": {
+    "pred": [
+     "STAIR-03"
+    ],
+    "raw": [
+     {
+      "id": "STAIR-03",
+      "severity": "high",
+      "evidence": "Multiple items left on the stair treads: a pair of sneakers on the bottom step, a dark sweater draped across a middle tread, a stack of books on the right side, a laundry basket full of clothes and loose papers/magazines on upper treads. These block the walking path and create trip hazards for someone using a walker or handrails.",
+      "box": [
+       330,
+       330,
+       620,
+       960
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "STAIR-03",
@@ -4009,6 +4521,48 @@
        300,
        750,
        900
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "STAIR-03",
+     "STAIR-02",
+     "STAIR-04"
+    ],
+    "raw": [
+     {
+      "id": "STAIR-03",
+      "severity": "high",
+      "evidence": "Multiple objects left on the stair treads: a laundry basket overflowing with clothes, a stack of magazines/papers, a dark green blanket draped across a step, a pile of books, and a pair of sneakers on the bottom tread \u2014 all directly in the climbing path.",
+      "box": [
+       320,
+       325,
+       630,
+       985
+      ]
+     },
+     {
+      "id": "STAIR-02",
+      "severity": "medium",
+      "evidence": "Both wall-mounted handrails stop well short of the bottom of the flight (they terminate above the last several treads), so there is nothing to grasp when starting or finishing the descent; rails are also simple wall-hugging strips with limited finger clearance.",
+      "box": [
+       235,
+       25,
+       760,
+       950
+      ]
+     },
+     {
+      "id": "STAIR-04",
+      "severity": "low",
+      "evidence": "The only light source is at the top landing; the lower treads are in shadow and there is no visible switch or fixture lighting the bottom of the stairs.",
+      "box": [
+       300,
+       600,
+       680,
+       1000
       ]
      }
     ]
@@ -4456,6 +5010,48 @@
    }
   },
   "bathroom-base0-BATH-07": {
+   "claude-fable-5.1": {
+    "pred": [
+     "BATH-07",
+     "BATH-05",
+     "BATH-06"
+    ],
+    "raw": [
+     {
+      "id": "BATH-07",
+      "severity": "high",
+      "evidence": "Bath rug draped over the tub edge and lying loose on the tile floor at the tub exit point, no visible non-slip backing; can slide or bunch under walker/feet during tub transfer",
+      "box": [
+       320,
+       670,
+       610,
+       940
+      ]
+     },
+     {
+      "id": "BATH-05",
+      "severity": "medium",
+      "evidence": "Standard-height tub wall must be stepped over; shower chair sits entirely inside the tub rather than a transfer bench spanning the rim, so the user must step over while balancing on one leg",
+      "box": [
+       165,
+       620,
+       680,
+       950
+      ]
+     },
+     {
+      "id": "BATH-06",
+      "severity": "low",
+      "evidence": "Standard-height toilet with no raised seat; safety frame present but seat height appears low for post hip/knee replacement sit-to-stand precautions",
+      "box": [
+       650,
+       520,
+       985,
+       1000
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "BATH-04",
@@ -4518,6 +5114,60 @@
        0,
        1000,
        200
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "BATH-07",
+     "BATH-05",
+     "LIV-02",
+     "LIV-03"
+    ],
+    "raw": [
+     {
+      "id": "BATH-07",
+      "severity": "high",
+      "evidence": "A loose blue-and-white bath rug/towel is draped over the tub rim and hangs onto the floor at the tub entry, creating a slip/trip point exactly where transfers occur.",
+      "box": [
+       378,
+       618,
+       722,
+       868
+      ]
+     },
+     {
+      "id": "BATH-05",
+      "severity": "medium",
+      "evidence": "The bathing unit still has a high molded rim/step-over wall at the front; a walker user must lift a leg over it, with no transfer bench spanning the wall (the shower seat sits entirely inside).",
+      "box": [
+       248,
+       555,
+       800,
+       800
+      ]
+     },
+     {
+      "id": "LIV-02",
+      "severity": "low",
+      "evidence": "The radio power cord runs from the window sill down the wall behind the toilet toward the floor, where it can catch a walker leg or foot.",
+      "box": [
+       975,
+       318,
+       1065,
+       560
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "medium",
+      "evidence": "The freestanding toilet safety frame legs and the shower seat crowd the narrow floor space between the tub and toilet, leaving limited clearance for a walker to turn.",
+      "box": [
+       700,
+       540,
+       1130,
+       890
       ]
      }
     ]
@@ -4737,10 +5387,6 @@
       ]
      }
     ]
-   },
-   "grok-4.6": {
-    "pred": [],
-    "raw": []
    },
    "kimi-k3": {
     "pred": [
@@ -5148,6 +5794,60 @@
    }
   },
   "entry-base1": {
+   "claude-fable-5.1": {
+    "pred": [
+     "LIV-01",
+     "ENT-02",
+     "STAIR-05",
+     "ENT-04"
+    ],
+    "raw": [
+     {
+      "id": "LIV-01",
+      "severity": "medium",
+      "evidence": "Loose doormat lying on the porch directly in front of the door where the walker must pass; edges can catch walker legs or feet",
+      "box": [
+       455,
+       592,
+       605,
+       615
+      ]
+     },
+     {
+      "id": "ENT-02",
+      "severity": "low",
+      "evidence": "Raised door sill/threshold at the entry door that the walker and feet must clear",
+      "box": [
+       395,
+       570,
+       660,
+       600
+      ]
+     },
+     {
+      "id": "STAIR-05",
+      "severity": "low",
+      "evidence": "Two uniform grey concrete steps with no contrast marking on the nosings; edges blend together in dusk light",
+      "box": [
+       300,
+       640,
+       800,
+       800
+      ]
+     },
+     {
+      "id": "ENT-04",
+      "severity": "low",
+      "evidence": "Single wall lantern near door; steps and walkway are in shadow at dusk with no step-level lighting",
+      "box": [
+       300,
+       640,
+       800,
+       1000
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "ENT-01",
@@ -5174,6 +5874,96 @@
        0,
        1000,
        400
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "ENT-02",
+     "LIV-01",
+     "STAIR-05",
+     "STAIR-02",
+     "STAIR-04",
+     "ENT-04",
+     "LIV-03"
+    ],
+    "raw": [
+     {
+      "id": "ENT-02",
+      "severity": "high",
+      "evidence": "Raised dark threshold/door sill at the base of the front door creates a lip the walker must be lifted over",
+      "box": [
+       612,
+       578,
+       962,
+       622
+      ]
+     },
+     {
+      "id": "LIV-01",
+      "severity": "medium",
+      "evidence": "Loose coir doormat lying on the porch directly in front of the entry door, in the walker's path",
+      "box": [
+       696,
+       606,
+       932,
+       634
+      ]
+     },
+     {
+      "id": "STAIR-05",
+      "severity": "high",
+      "evidence": "Two uniformly gray concrete entry steps with no contrasting nosing or edge marking; tread edges blend together in low light",
+      "box": [
+       462,
+       636,
+       1168,
+       810
+      ]
+     },
+     {
+      "id": "STAIR-02",
+      "severity": "medium",
+      "evidence": "Thin white metal handrails stop at the top step and do not extend onto the porch landing or past the bottom step; slim square tube is hard to grip securely",
+      "box": [
+       424,
+       372,
+       1186,
+       846
+      ]
+     },
+     {
+      "id": "STAIR-04",
+      "severity": "medium",
+      "evidence": "Only a single wall sconce by the door lights the entry; the step treads and landing edge fall into dim shadow at dusk",
+      "box": [
+       462,
+       590,
+       1180,
+       820
+      ]
+     },
+     {
+      "id": "ENT-04",
+      "severity": "medium",
+      "evidence": "Exterior approach/walkway is largely unlit at dusk, with light concentrated only near the door sconce",
+      "box": [
+       300,
+       760,
+       1200,
+       1000
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "low",
+      "evidence": "Potted plants and flower containers set on the porch on both sides of the door narrow the landing space for turning a walker",
+      "box": [
+       498,
+       432,
+       1140,
+       626
       ]
      }
     ]
@@ -5740,6 +6530,48 @@
    }
   },
   "bathroom-base1-BATH-06": {
+   "claude-fable-5.1": {
+    "pred": [
+     "BATH-02",
+     "BATH-05",
+     "BATH-06"
+    ],
+    "raw": [
+     {
+      "id": "BATH-02",
+      "severity": "medium",
+      "evidence": "Toilet has no grab bar or safety frame beside it; only a vanity on one side and open space toward the tub, so rising after joint surgery relies on pushing off the seat or vanity edge.",
+      "box": [
+       520,
+       470,
+       760,
+       1000
+      ]
+     },
+     {
+      "id": "BATH-05",
+      "severity": "medium",
+      "evidence": "Standard tub with full-height side wall must be stepped over; the shower chair is a bench inside the tub, not a transfer bench spanning the rim, so entry still requires a leg lift over the edge.",
+      "box": [
+       230,
+       480,
+       700,
+       900
+      ]
+     },
+     {
+      "id": "BATH-06",
+      "severity": "low",
+      "evidence": "Toilet appears to be standard (non-comfort) height with no raised seat, making sit-to-stand harder after hip/knee replacement.",
+      "box": [
+       520,
+       480,
+       720,
+       1000
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "BATH-05",
@@ -5790,6 +6622,60 @@
        350,
        250,
        550
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "BATH-02",
+     "BATH-06",
+     "BATH-04",
+     "BATH-05"
+    ],
+    "raw": [
+     {
+      "id": "BATH-02",
+      "severity": "high",
+      "evidence": "Toilet sits in the open next to the tub with no grab bar or toilet safety frame on either side; the nearest vertical bar is on the far tub wall, out of reach from the seat.",
+      "box": [
+       780,
+       745,
+       1095,
+       1024
+      ]
+     },
+     {
+      "id": "BATH-06",
+      "severity": "medium",
+      "evidence": "Standard-height round-bowl toilet with no raised seat or riser, making sit-to-stand difficult after hip/knee replacement.",
+      "box": [
+       790,
+       750,
+       1090,
+       1024
+      ]
+     },
+     {
+      "id": "BATH-04",
+      "severity": "medium",
+      "evidence": "Smooth white acrylic tub floor with no non-slip mat or adhesive strips visible inside the tub.",
+      "box": [
+       400,
+       540,
+       1030,
+       890
+      ]
+     },
+     {
+      "id": "BATH-05",
+      "severity": "high",
+      "evidence": "Full-height tub apron must be stepped over to reach the shower chair; the chair sits inside the tub rather than being a transfer bench spanning the rim, so the user must lift the leg over the high wall.",
+      "box": [
+       375,
+       490,
+       1050,
+       920
       ]
      }
     ]
@@ -6051,10 +6937,6 @@
       ]
      }
     ]
-   },
-   "grok-4.6": {
-    "pred": [],
-    "raw": []
    },
    "kimi-k3": {
     "pred": [
@@ -6376,6 +7258,24 @@
    }
   },
   "living-base0": {
+   "claude-fable-5.1": {
+    "pred": [
+     "LIV-05"
+    ],
+    "raw": [
+     {
+      "id": "LIV-05",
+      "severity": "low",
+      "evidence": "Strong backlight from the large window creates bright glare/reflections on the glossy laminate floor, reducing visibility of floor surface and edges for someone walking toward the window",
+      "box": [
+       380,
+       420,
+       1000,
+       780
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "LIV-04",
@@ -6414,6 +7314,36 @@
        0,
        1000,
        400
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "LIV-03",
+     "LIV-05"
+    ],
+    "raw": [
+     {
+      "id": "LIV-03",
+      "severity": "medium",
+      "evidence": "Blue recliner and sofa project well into the room, narrowing the clear path between the seating area and the TV cabinet/bookshelf on the right; the recliner's footrest/side lever also juts into the walking lane, leaving limited turning space for a walker.",
+      "box": [
+       40,
+       283,
+       540,
+       790
+      ]
+     },
+     {
+      "id": "LIV-05",
+      "severity": "medium",
+      "evidence": "Highly reflective glossy laminate floor produces strong glare/bright reflections from the bay window, which can obscure the floor surface and depth perception; the room relies on backlit window light with only a single table lamp.",
+      "box": [
+       420,
+       440,
+       1160,
+       1010
       ]
      }
     ]
@@ -6791,6 +7721,36 @@
    }
   },
   "living-base1-LIV-04": {
+   "claude-fable-5.1": {
+    "pred": [
+     "LIV-04",
+     "LIV-05"
+    ],
+    "raw": [
+     {
+      "id": "LIV-04",
+      "severity": "high",
+      "evidence": "Dark gray tufted floor-level lounge chair with no armrests, seat very low to the floor; extremely difficult to sit/stand from with a walker after hip/knee surgery",
+      "box": [
+       120,
+       365,
+       415,
+       735
+      ]
+     },
+     {
+      "id": "LIV-05",
+      "severity": "low",
+      "evidence": "Highly glossy laminate floor with strong glare/reflections from windows, which can obscure floor surface and reduce contrast",
+      "box": [
+       0,
+       400,
+       1000,
+       1000
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "LIV-04",
@@ -6829,6 +7789,36 @@
        0,
        1000,
        400
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "LIV-04",
+     "LIV-05"
+    ],
+    "raw": [
+     {
+      "id": "LIV-04",
+      "severity": "high",
+      "evidence": "Very low, soft floor cushion chair with no armrests and no back support height \u2014 nearly impossible to rise from after hip/knee replacement, and it sits directly in the room's main walking path",
+      "box": [
+       148,
+       318,
+       536,
+       623
+      ]
+     },
+     {
+      "id": "LIV-05",
+      "severity": "medium",
+      "evidence": "Highly reflective glossy wood floor with bright window light producing strong glare/reflections across the main walkway, which can obscure depth perception for a walker user",
+      "box": [
+       380,
+       350,
+       950,
+       760
       ]
      }
     ]
@@ -7226,6 +8216,36 @@
    }
   },
   "bedroom-base0-BED-03": {
+   "claude-fable-5.1": {
+    "pred": [
+     "BED-03",
+     "BED-02"
+    ],
+    "raw": [
+     {
+      "id": "BED-03",
+      "severity": "medium",
+      "evidence": "Hallway outside the bedroom door is very dark; only a small plug-in nightlight near the doorway, no visible hall lighting along the path to the bathroom",
+      "box": [
+       120,
+       0,
+       470,
+       560
+      ]
+     },
+     {
+      "id": "BED-02",
+      "severity": "low",
+      "evidence": "Only bedside lamp is on the far (window) side nightstand; the open, walker-accessible side of the bed near the door has no nightstand or reachable light or switch",
+      "box": [
+       640,
+       200,
+       1000,
+       620
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "BED-03",
@@ -7247,6 +8267,72 @@
       "id": "LIV-05",
       "severity": "medium",
       "evidence": "Overall room lighting is dim/low, particularly in the hallway area and around the bed perimeter, creating fall risk for post-surgical patient"
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "BED-03",
+     "LIV-05",
+     "BED-04",
+     "LIV-03",
+     "BED-01"
+    ],
+    "raw": [
+     {
+      "id": "BED-03",
+      "severity": "high",
+      "evidence": "The hallway leading out of the bedroom (toward the bathroom) is almost completely dark, lit only by a small plug-in nightlight near the floor by the doorway.",
+      "box": [
+       150,
+       0,
+       540,
+       560
+      ]
+     },
+     {
+      "id": "LIV-05",
+      "severity": "medium",
+      "evidence": "Overall room illumination is very dim; only a single shaded table lamp at the far head of the bed and a tiny nightlight provide light, leaving the floor area and doorway in shadow.",
+      "box": [
+       0,
+       0,
+       1000,
+       1000
+      ]
+     },
+     {
+      "id": "BED-04",
+      "severity": "low",
+      "evidence": "The quilted bedspread drapes off the foot and side of the bed and pools onto the carpet, creating a trip/catch point for a walker.",
+      "box": [
+       1050,
+       600,
+       1500,
+       1010
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "medium",
+      "evidence": "A tall wooden dresser sits immediately beside the bedroom doorway with a dark object on the floor next to it, narrowing the turning space needed to pass through the door with a walker.",
+      "box": [
+       0,
+       395,
+       200,
+       1010
+      ]
+     },
+     {
+      "id": "BED-01",
+      "severity": "low",
+      "evidence": "The mattress sits on a tall box spring/frame, making the sleeping surface high relative to the floor for safe sit-to-stand transfers after hip/knee surgery.",
+      "box": [
+       640,
+       300,
+       1500,
+       880
+      ]
      }
     ]
    },
@@ -7781,6 +8867,72 @@
    }
   },
   "kitchen-base0-KIT-01": {
+   "claude-fable-5.1": {
+    "pred": [
+     "KIT-03",
+     "LIV-03",
+     "KIT-01",
+     "KIT-02",
+     "LIV-06"
+    ],
+    "raw": [
+     {
+      "id": "KIT-03",
+      "severity": "high",
+      "evidence": "Folding two-step metal step stool sitting in the kitchen, indicating it is used to reach items in the upper cabinets; unsafe for someone using a walker after joint replacement",
+      "box": [
+       640,
+       605,
+       800,
+       980
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "medium",
+      "evidence": "Step stool left out in the middle of the open floor between the dish shelves and the sink/dishwasher run, narrowing the walker path and creating a trip obstacle",
+      "box": [
+       640,
+       605,
+       800,
+       980
+      ]
+     },
+     {
+      "id": "KIT-01",
+      "severity": "medium",
+      "evidence": "Everyday bowls, plates, and containers stored in high upper cabinet (door open) above the counter, requiring overhead reaching or the step stool",
+      "box": [
+       172,
+       0,
+       296,
+       176
+      ]
+     },
+     {
+      "id": "KIT-02",
+      "severity": "medium",
+      "evidence": "Stacks of bowls, plates, and dishes stored on very low shelves near the floor on the right-hand shelving unit, requiring bending/squatting",
+      "box": [
+       800,
+       800,
+       1000,
+       1000
+      ]
+     },
+     {
+      "id": "LIV-06",
+      "severity": "low",
+      "evidence": "Floor transition from kitchen vinyl to carpeted hallway at the doorway, possible small lip/level change not clearly marked",
+      "box": [
+       716,
+       547,
+       820,
+       625
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "KIT-03",
@@ -7819,6 +8971,60 @@
        650,
        550,
        750
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "KIT-03",
+     "LIV-03",
+     "KIT-01",
+     "KIT-02"
+    ],
+    "raw": [
+     {
+      "id": "KIT-03",
+      "severity": "high",
+      "evidence": "A lightweight folding metal step stool sits in the middle of the kitchen floor, evidently used to reach upper cabinets \u2014 unstable and a trip/fall risk for someone with a walker",
+      "box": [
+       968,
+       618,
+       1222,
+       992
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "high",
+      "evidence": "The step stool protrudes into the main walking path between the counter area and the shelving unit, narrowing the route needed for walker clearance",
+      "box": [
+       960,
+       615,
+       1235,
+       995
+      ]
+     },
+     {
+      "id": "KIT-01",
+      "severity": "medium",
+      "evidence": "Plates, bowls and storage containers stored in high open upper cabinets above the counter, requiring reaching or climbing",
+      "box": [
+       258,
+       0,
+       430,
+       185
+      ]
+     },
+     {
+      "id": "KIT-02",
+      "severity": "medium",
+      "evidence": "Stacks of plates and bowls stored on the lowest shelves near floor level on the right-hand shelving unit, requiring deep bending",
+      "box": [
+       1232,
+       820,
+       1536,
+       1024
       ]
      }
     ]
@@ -8362,6 +9568,24 @@
    }
   },
   "bathroom-base1": {
+   "claude-fable-5.1": {
+    "pred": [
+     "BATH-05"
+    ],
+    "raw": [
+     {
+      "id": "BATH-05",
+      "severity": "medium",
+      "evidence": "Standard-height tub wall must be stepped over; shower chair sits fully inside the tub rather than a transfer bench straddling the rim, so entry/exit still requires a high step-over on one leg after hip/knee surgery",
+      "box": [
+       220,
+       490,
+       800,
+       900
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "BATH-02",
@@ -8412,6 +9636,48 @@
        100,
        900,
        400
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "BATH-04",
+     "BATH-05",
+     "LIV-03"
+    ],
+    "raw": [
+     {
+      "id": "BATH-04",
+      "severity": "high",
+      "evidence": "Smooth white acrylic tub/shower floor with no non-slip mat or adhesive treads visible inside the tub",
+      "box": [
+       383,
+       500,
+       985,
+       880
+      ]
+     },
+     {
+      "id": "BATH-05",
+      "severity": "medium",
+      "evidence": "Deep tub with a high outer wall must be stepped over; the shower chair sits inside the tub rather than a transfer bench spanning the rim, so there is no seated transfer aid for a walker user",
+      "box": [
+       340,
+       470,
+       1000,
+       910
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "low",
+      "evidence": "Toilet safety frame legs and raised-seat arms project into the narrow floor space between the tub and toilet, narrowing the walker path across the room",
+      "box": [
+       790,
+       555,
+       1100,
+       1010
       ]
      }
     ]
@@ -8859,6 +10125,24 @@
    }
   },
   "stairs-base0-STAIR-05": {
+   "claude-fable-5.1": {
+    "pred": [
+     "STAIR-05"
+    ],
+    "raw": [
+     {
+      "id": "STAIR-05",
+      "severity": "high",
+      "evidence": "Stair carpet is visibly frayed and unraveling along the nosing of nearly every step; uniform beige carpet gives no visual contrast to define step edges, and loose fibers could catch a foot or walker tip.",
+      "box": [
+       320,
+       250,
+       650,
+       1000
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "STAIR-01",
@@ -8897,6 +10181,60 @@
        200,
        700,
        600
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "STAIR-05",
+     "STAIR-02",
+     "STAIR-04",
+     "LIV-04"
+    ],
+    "raw": [
+     {
+      "id": "STAIR-05",
+      "severity": "high",
+      "evidence": "Carpet runner on the stairs is loose and frayed along several nosings (visible pulled/torn fibers on steps 1, 3, 5, 7, 9); uniform beige carpet also leaves step edges undefined with no contrasting nosing strip",
+      "box": [
+       468,
+       240,
+       1000,
+       1020
+      ]
+     },
+     {
+      "id": "STAIR-02",
+      "severity": "medium",
+      "evidence": "Both wall-mounted handrails stop several steps short of the bottom (left rail ends ~step 3, right rail ends ~step 2), so there is no rail to grasp at the bottom landing or when starting the climb",
+      "box": [
+       365,
+       60,
+       1160,
+       960
+      ]
+     },
+     {
+      "id": "STAIR-04",
+      "severity": "low",
+      "evidence": "Only a single ceiling fixture at the top of the stairs; the lower treads are in shadow and there is no switch/light at the bottom landing visible near the stairs",
+      "box": [
+       470,
+       0,
+       1010,
+       1020
+      ]
+     },
+     {
+      "id": "LIV-04",
+      "severity": "low",
+      "evidence": "Deep, soft upholstered sofa in the adjacent living room with a low seat cushion, hard to rise from after hip/knee surgery",
+      "box": [
+       0,
+       645,
+       300,
+       1020
       ]
      }
     ]
@@ -9335,6 +10673,48 @@
    }
   },
   "stairs-base1-STAIR-06": {
+   "claude-fable-5.1": {
+    "pred": [
+     "STAIR-06",
+     "STAIR-05",
+     "LIV-01"
+    ],
+    "raw": [
+     {
+      "id": "STAIR-06",
+      "severity": "high",
+      "evidence": "Two stair treads have lifted, warped, or displaced sections of board (one on the lower third step, one on the seventh step), creating an uneven stepping surface and trip point mid-staircase",
+      "box": [
+       375,
+       470,
+       640,
+       812
+      ]
+     },
+     {
+      "id": "STAIR-05",
+      "severity": "medium",
+      "evidence": "Loose/separated tread boards overhang the step nosing on two steps, so the step edge is not a single defined, secure surface",
+      "box": [
+       375,
+       470,
+       640,
+       812
+      ]
+     },
+     {
+      "id": "LIV-01",
+      "severity": "low",
+      "evidence": "Throw rug on the hardwood floor in the adjacent living room walkway at bottom left, visible through the doorway",
+      "box": [
+       0,
+       835,
+       85,
+       967
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "STAIR-01",
@@ -9361,6 +10741,60 @@
        200,
        1000,
        800
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "STAIR-05",
+     "STAIR-06",
+     "STAIR-04",
+     "LIV-01"
+    ],
+    "raw": [
+     {
+      "id": "STAIR-05",
+      "severity": "high",
+      "evidence": "Loose/lifting strips of tread covering (nosing) peeling up on at least two treads mid-staircase, edges not clearly defined against the white risers",
+      "box": [
+       560,
+       470,
+       950,
+       830
+      ]
+     },
+     {
+      "id": "STAIR-06",
+      "severity": "medium",
+      "evidence": "Tread surfaces appear damaged/uneven where the wood covering has separated from the step, creating a raised lip to catch a foot or walker tip",
+      "box": [
+       620,
+       475,
+       945,
+       525
+      ]
+     },
+     {
+      "id": "STAIR-04",
+      "severity": "medium",
+      "evidence": "Only a single ceiling fixture at the top landing; lower and middle treads are in shadow with no light switch visible at the bottom of the run",
+      "box": [
+       500,
+       0,
+       1120,
+       1000
+      ]
+     },
+     {
+      "id": "LIV-01",
+      "severity": "medium",
+      "evidence": "Loose patterned area rug lying on the hard floor in the adjoining bedroom/living area at the base of the stairs",
+      "box": [
+       0,
+       845,
+       130,
+       1000
       ]
      }
     ]
@@ -9873,6 +11307,36 @@
    }
   },
   "living-base0-LIV-01": {
+   "claude-fable-5.1": {
+    "pred": [
+     "LIV-01",
+     "LIV-04"
+    ],
+    "raw": [
+     {
+      "id": "LIV-01",
+      "severity": "high",
+      "evidence": "Loose area rug in the center of the main walkway with a curled/flipped corner and fringed edges, no non-slip backing visible on a smooth hardwood floor",
+      "box": [
+       310,
+       480,
+       660,
+       780
+      ]
+     },
+     {
+      "id": "LIV-04",
+      "severity": "low",
+      "evidence": "Low, soft upholstered sofa with cushioned seat that would be difficult to rise from; recliner is soft with low padded arms",
+      "box": [
+       150,
+       275,
+       380,
+       520
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "LIV-01",
@@ -9911,6 +11375,60 @@
        400,
        700,
        600
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "LIV-01",
+     "LIV-03",
+     "LIV-04",
+     "LIV-05"
+    ],
+    "raw": [
+     {
+      "id": "LIV-01",
+      "severity": "high",
+      "evidence": "Large area rug lying loose on hardwood floor in the middle of the walking path, with a corner visibly flipped up/folded near the bottom right edge \u2014 a clear trip point for a walker.",
+      "box": [
+       488,
+       492,
+       999,
+       793
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "medium",
+      "evidence": "Walking path between the reclining chair (footrest/handle projecting into the room) and the rug/TV cabinet is narrowed; the recliner handle sticks out at shin height into the route.",
+      "box": [
+       46,
+       283,
+       540,
+       790
+      ]
+     },
+     {
+      "id": "LIV-04",
+      "severity": "medium",
+      "evidence": "Deep soft upholstered sofa with low soft cushions and the reclining chair \u2014 low, soft seating that is hard to rise from after hip/knee surgery.",
+      "box": [
+       46,
+       283,
+       596,
+       790
+      ]
+     },
+     {
+      "id": "LIV-05",
+      "severity": "low",
+      "evidence": "Bright bay window backlighting creates glare against the dim interior side of the room, and floor reflections make the walkway surface hard to read.",
+      "box": [
+       566,
+       60,
+       1005,
+       460
       ]
      }
     ]
@@ -10273,6 +11791,48 @@
    }
   },
   "entry-base0-ENT-03": {
+   "claude-fable-5.1": {
+    "pred": [
+     "ENT-03",
+     "STAIR-02",
+     "ENT-02"
+    ],
+    "raw": [
+     {
+      "id": "ENT-03",
+      "severity": "high",
+      "evidence": "Concrete walkway is cracked and heaved, with a raised/uneven slab edge creating a trip lip directly in the approach path to the steps; fallen leaves on the surface add slip risk for walker wheels/tips.",
+      "box": [
+       150,
+       620,
+       720,
+       990
+      ]
+     },
+     {
+      "id": "STAIR-02",
+      "severity": "medium",
+      "evidence": "Handrails on both sides are short: they end at the bottom step and do not extend past the first/last step onto the walkway, so no support during the transition from walkway to steps with a walker.",
+      "box": [
+       280,
+       305,
+       690,
+       645
+      ]
+     },
+     {
+      "id": "ENT-02",
+      "severity": "low",
+      "evidence": "Visible raised sill/threshold strip at the base of the front door where the walker must cross.",
+      "box": [
+       370,
+       465,
+       640,
+       495
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "ENT-01",
@@ -10311,6 +11871,60 @@
        400,
        800,
        900
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "ENT-03",
+     "ENT-02",
+     "ENT-04",
+     "STAIR-02"
+    ],
+    "raw": [
+     {
+      "id": "ENT-03",
+      "severity": "high",
+      "evidence": "Concrete walkway is badly cracked with a raised/heaved slab edge running across the path, plus wide separations and scattered wet leaves \u2014 a clear trip point for walker wheels",
+      "box": [
+       285,
+       770,
+       1075,
+       930
+      ]
+     },
+     {
+      "id": "ENT-02",
+      "severity": "medium",
+      "evidence": "Raised threshold/door sill at the front door landing that a walker must be lifted over",
+      "box": [
+       566,
+       470,
+       990,
+       515
+      ]
+     },
+     {
+      "id": "ENT-04",
+      "severity": "medium",
+      "evidence": "Only a single small sconce by the door; the steps and walkway are in dusk shadow with no path lighting, leaving the damaged pavement poorly visible",
+      "box": [
+       280,
+       500,
+       1090,
+       1000
+      ]
+     },
+     {
+      "id": "STAIR-02",
+      "severity": "low",
+      "evidence": "Short black handrails alongside the two steps that stop at the step edge and do not extend beyond the bottom tread for support onto the walkway",
+      "box": [
+       440,
+       315,
+       1055,
+       655
       ]
      }
     ]
@@ -10847,6 +12461,48 @@
    }
   },
   "kitchen-base1-KIT-04": {
+   "claude-fable-5.1": {
+    "pred": [
+     "KIT-04",
+     "KIT-01",
+     "KIT-02"
+    ],
+    "raw": [
+     {
+      "id": "KIT-04",
+      "severity": "high",
+      "evidence": "Loose woven runner mat lying on the floor directly in front of the sink cabinets, with one corner visibly curled up \u2014 trip hazard for walker wheels/feet",
+      "box": [
+       570,
+       625,
+       835,
+       980
+      ]
+     },
+     {
+      "id": "KIT-01",
+      "severity": "medium",
+      "evidence": "Glasses, jars and drinkware stored on the topmost open shelves near the ceiling, requiring overhead reaching",
+      "box": [
+       0,
+       0,
+       340,
+       150
+      ]
+     },
+     {
+      "id": "KIT-02",
+      "severity": "medium",
+      "evidence": "Everyday bowls and dishes stored on the lowest open shelf just above the baseboard, requiring bending/squatting to reach",
+      "box": [
+       0,
+       600,
+       330,
+       820
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "KIT-01",
@@ -10885,6 +12541,72 @@
        600,
        700,
        900
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "KIT-04",
+     "LIV-01",
+     "KIT-01",
+     "KIT-02",
+     "ENT-02"
+    ],
+    "raw": [
+     {
+      "id": "KIT-04",
+      "severity": "high",
+      "evidence": "Large loose woven mat on the floor running along the sink cabinets, with the near corner curled/lifted off the floor - a trip and catch point for walker legs",
+      "box": [
+       860,
+       640,
+       1340,
+       985
+      ]
+     },
+     {
+      "id": "LIV-01",
+      "severity": "high",
+      "evidence": "Unanchored area rug/runner lying in the main kitchen walkway between the refrigerator and shelving, edges not secured",
+      "box": [
+       860,
+       640,
+       1340,
+       985
+      ]
+     },
+     {
+      "id": "KIT-01",
+      "severity": "medium",
+      "evidence": "Dishes, glass pitchers, jars and serving pieces stored on high open shelves well above shoulder height, requiring reaching or a stool",
+      "box": [
+       0,
+       0,
+       530,
+       300
+      ]
+     },
+     {
+      "id": "KIT-02",
+      "severity": "medium",
+      "evidence": "Bowls, plates and large serving dishes stored on the lowest shelves near floor level, requiring deep bending while using a walker",
+      "box": [
+       0,
+       600,
+       420,
+       820
+      ]
+     },
+     {
+      "id": "ENT-02",
+      "severity": "low",
+      "evidence": "Raised floor transition strip/threshold at the doorway between kitchen and dining room",
+      "box": [
+       612,
+       592,
+       866,
+       650
       ]
      }
     ]
@@ -11468,6 +13190,72 @@
    }
   },
   "bathroom-base0-BATH-01": {
+   "claude-fable-5.1": {
+    "pred": [
+     "BATH-01",
+     "BATH-05",
+     "BATH-03",
+     "BATH-04",
+     "BATH-06"
+    ],
+    "raw": [
+     {
+      "id": "BATH-01",
+      "severity": "high",
+      "evidence": "Fiberglass tub/shower surround has no wall-mounted grab bars; only a soap-dish ledge and a handheld-shower slide bar are on the walls.",
+      "box": [
+       160,
+       20,
+       730,
+       760
+      ]
+     },
+     {
+      "id": "BATH-05",
+      "severity": "high",
+      "evidence": "Standard-height tub wall must be stepped over to reach the shower chair inside the tub; no tub transfer bench or grab bar to assist the step-in/out.",
+      "box": [
+       190,
+       660,
+       660,
+       960
+      ]
+     },
+     {
+      "id": "BATH-03",
+      "severity": "medium",
+      "evidence": "Handheld shower slide bar and molded soap ledge are the only grab points in the tub and are likely to be used for support though not load-rated; towel bar by door also at hand level.",
+      "box": [
+       583,
+       11,
+       642,
+       525
+      ]
+     },
+     {
+      "id": "BATH-04",
+      "severity": "medium",
+      "evidence": "Tub floor shows worn/discolored anti-slip strips and no non-slip mat; surface appears slick and stained.",
+      "box": [
+       233,
+       700,
+       600,
+       900
+      ]
+     },
+     {
+      "id": "BATH-06",
+      "severity": "low",
+      "evidence": "Toilet appears standard height with no raised seat or riser; safety frame present but seat height may be low for post hip/knee replacement.",
+      "box": [
+       650,
+       535,
+       975,
+       1000
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "BATH-01",
@@ -11530,6 +13318,84 @@
        250,
        750,
        420
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "BATH-01",
+     "BATH-05",
+     "BATH-03",
+     "BATH-04",
+     "LIV-02",
+     "LIV-03"
+    ],
+    "raw": [
+     {
+      "id": "BATH-01",
+      "severity": "high",
+      "evidence": "No proper grab bar at the tub entry or on the side wall for entering/exiting; only a small molded ledge/soap-holder bar on the inner wall, which is not a load-rated grab bar",
+      "box": [
+       255,
+       380,
+       890,
+       800
+      ]
+     },
+     {
+      "id": "BATH-05",
+      "severity": "high",
+      "evidence": "Tall one-piece tub surround with a high step-over wall and no transfer bench spanning the rim; the loose shower chair sits inside the tub and does not aid the step-over",
+      "box": [
+       258,
+       560,
+       800,
+       810
+      ]
+     },
+     {
+      "id": "BATH-03",
+      "severity": "medium",
+      "evidence": "Molded soap ledge/short white bar and the tub rim are the only things to grasp when stepping in; these are not load-rated supports and could be used for balance",
+      "box": [
+       400,
+       405,
+       540,
+       520
+      ]
+     },
+     {
+      "id": "BATH-04",
+      "severity": "low",
+      "evidence": "Glossy tub floor with only narrow molded tread strips and no full non-slip mat; wet residue visible in basin",
+      "box": [
+       270,
+       630,
+       730,
+       800
+      ]
+     },
+     {
+      "id": "LIV-02",
+      "severity": "low",
+      "evidence": "Radio power cord hangs from the windowsill down the wall to floor level beside the toilet, near the walking/transfer area",
+      "box": [
+       975,
+       320,
+       1060,
+       640
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "medium",
+      "evidence": "Toilet safety frame legs and shower chair project into the narrow space between tub and toilet, leaving limited clearance for a walker",
+      "box": [
+       700,
+       540,
+       1140,
+       890
       ]
      }
     ]
@@ -11755,10 +13621,6 @@
       ]
      }
     ]
-   },
-   "grok-4.6": {
-    "pred": [],
-    "raw": []
    },
    "kimi-k3": {
     "pred": [
@@ -12245,6 +14107,48 @@
    }
   },
   "bathroom-base0": {
+   "claude-fable-5.1": {
+    "pred": [
+     "BATH-05",
+     "BATH-06",
+     "LIV-03"
+    ],
+    "raw": [
+     {
+      "id": "BATH-05",
+      "severity": "medium",
+      "evidence": "Standard bathtub with a high side wall; shower chair sits entirely inside the tub and there is no transfer bench spanning the tub edge, so the user must step over the wall while weight-bearing on a new hip/knee.",
+      "box": [
+       200,
+       560,
+       740,
+       900
+      ]
+     },
+     {
+      "id": "BATH-06",
+      "severity": "low",
+      "evidence": "Toilet appears to be standard (non-comfort) height with no raised seat; the safety frame provides arm support but seat height remains low for post-hip/knee replacement sit-to-stand.",
+      "box": [
+       640,
+       470,
+       1000,
+       1000
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "low",
+      "evidence": "Narrow floor space between tub apron and toilet, with freestanding toilet safety frame legs protruding into the walking area, limiting walker clearance and creating a trip point.",
+      "box": [
+       560,
+       620,
+       1100,
+       1000
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "BATH-04",
@@ -12283,6 +14187,48 @@
        200,
        500,
        350
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "BATH-05",
+     "LIV-02",
+     "LIV-03"
+    ],
+    "raw": [
+     {
+      "id": "BATH-05",
+      "severity": "high",
+      "evidence": "Standard-height tub with a tall step-over rim; the shower chair sits inside the tub and there is no transfer bench spanning the wall, so the user must lift each leg over the high tub wall while using a walker.",
+      "box": [
+       190,
+       700,
+       680,
+       890
+      ]
+     },
+     {
+      "id": "LIV-02",
+      "severity": "medium",
+      "evidence": "Power cord from the radio on the window sill drapes down the wall and runs to the floor in the walking area beside the toilet, creating a trip/snag hazard for a walker.",
+      "box": [
+       830,
+       350,
+       895,
+       720
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "medium",
+      "evidence": "Walking path is narrowed: toilet safety frame arms project into the floor space between the tub and vanity, and a wastebasket sits at the right edge, leaving little clearance for a walker to turn.",
+      "box": [
+       575,
+       520,
+       1000,
+       1000
       ]
      }
     ]
@@ -12472,10 +14418,6 @@
       ]
      }
     ]
-   },
-   "grok-4.6": {
-    "pred": [],
-    "raw": []
    },
    "kimi-k3": {
     "pred": [
@@ -12907,6 +14849,24 @@
    }
   },
   "living-base1": {
+   "claude-fable-5.1": {
+    "pred": [
+     "ENT-02"
+    ],
+    "raw": [
+     {
+      "id": "ENT-02",
+      "severity": "low",
+      "evidence": "Exterior entry door with a visible raised sill/threshold at the floor line where a walker user would enter",
+      "box": [
+       560,
+       360,
+       685,
+       390
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "LIV-04",
@@ -12943,6 +14903,60 @@
        0,
        0,
        1000,
+       1000
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "LIV-05",
+     "ENT-02",
+     "LIV-02",
+     "LIV-03"
+    ],
+    "raw": [
+     {
+      "id": "LIV-05",
+      "severity": "medium",
+      "evidence": "Highly polished laminate/wood floor reflects bright window light, creating large glare patches across the main walking path that can obscure the floor surface for a walker user",
+      "box": [
+       180,
+       420,
+       1120,
+       1000
+      ]
+     },
+     {
+      "id": "ENT-02",
+      "severity": "medium",
+      "evidence": "Entry door opening shows a raised threshold/sill strip at the floor transition where the flooring meets the doorway, a trip point when crossing with a walker",
+      "box": [
+       548,
+       352,
+       700,
+       402
+      ]
+     },
+     {
+      "id": "LIV-02",
+      "severity": "low",
+      "evidence": "TV and sound bar on the media console have visible cables at the back/side of the stand that can drape toward the floor near the walking route",
+      "box": [
+       762,
+       230,
+       980,
+       310
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "medium",
+      "evidence": "Right side of the room is crowded: cream recliner, sofa and end table are pushed close together, narrowing the passage between the seating and leaving limited turning space for a walker",
+      "box": [
+       1075,
+       250,
+       1536,
        1000
       ]
      }
@@ -13330,6 +15344,72 @@
    }
   },
   "kitchen-base0-KIT-03": {
+   "claude-fable-5.1": {
+    "pred": [
+     "KIT-03",
+     "KIT-01",
+     "KIT-02",
+     "KIT-04",
+     "LIV-06"
+    ],
+    "raw": [
+     {
+      "id": "KIT-03",
+      "severity": "high",
+      "evidence": "Person standing on the top of a small folding two-step stool in the middle of the kitchen floor to reach the upper cabinet; not appropriate for someone post-surgery using a walker",
+      "box": [
+       510,
+       405,
+       640,
+       635
+      ]
+     },
+     {
+      "id": "KIT-01",
+      "severity": "high",
+      "evidence": "Everyday bowls, cups and dishes stored on the highest shelves of the upper cabinet, requiring overhead reaching and climbing",
+      "box": [
+       595,
+       0,
+       685,
+       190
+      ]
+     },
+     {
+      "id": "KIT-02",
+      "severity": "medium",
+      "evidence": "Stacks of plates and bowls stored on the lowest open shelves near floor level, requiring bending/stooping to retrieve",
+      "box": [
+       795,
+       760,
+       1000,
+       1000
+      ]
+     },
+     {
+      "id": "KIT-04",
+      "severity": "low",
+      "evidence": "Smooth, glossy vinyl kitchen floor with visible sheen/glare in front of sink and stove could be slippery, especially when wet",
+      "box": [
+       150,
+       560,
+       800,
+       1000
+      ]
+     },
+     {
+      "id": "LIV-06",
+      "severity": "low",
+      "evidence": "Flooring transition strip at the doorway between the vinyl kitchen floor and the carpeted adjoining room creates a small unmarked level change in the walkway",
+      "box": [
+       720,
+       585,
+       805,
+       650
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "KIT-03",
@@ -13368,6 +15448,60 @@
        400,
        1000,
        1000
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "KIT-03",
+     "KIT-01",
+     "KIT-02",
+     "KIT-04"
+    ],
+    "raw": [
+     {
+      "id": "KIT-03",
+      "severity": "high",
+      "evidence": "Woman is standing on the top of a lightweight folding step stool to reach an upper cabinet; unstable elevated surface with no handhold, unusable with a walker",
+      "box": [
+       790,
+       424,
+       975,
+       648
+      ]
+     },
+     {
+      "id": "KIT-01",
+      "severity": "high",
+      "evidence": "Bowls, plates and glassware stored on high shelves of the upper cabinet, requiring overhead reaching and climbing",
+      "box": [
+       893,
+       0,
+       1078,
+       185
+      ]
+     },
+     {
+      "id": "KIT-02",
+      "severity": "medium",
+      "evidence": "Stacked plates and bowls stored on very low open shelving near the floor, requiring deep bending/squatting",
+      "box": [
+       1232,
+       700,
+       1536,
+       1012
+      ]
+     },
+     {
+      "id": "KIT-04",
+      "severity": "medium",
+      "evidence": "Highly polished, reflective vinyl kitchen floor in the sink/stove work area could be slippery for a walker user",
+      "box": [
+       286,
+       560,
+       1180,
+       1012
       ]
      }
     ]
@@ -13900,6 +16034,36 @@
    }
   },
   "bedroom-base0-BED-01": {
+   "claude-fable-5.1": {
+    "pred": [
+     "BED-01",
+     "BED-03"
+    ],
+    "raw": [
+     {
+      "id": "BED-01",
+      "severity": "high",
+      "evidence": "Mattress sits essentially on the floor with no frame; bed surface is far below knee height, making sit-to-stand with a walker very difficult and violating post-hip/knee precautions",
+      "box": [
+       420,
+       320,
+       1000,
+       960
+      ]
+     },
+     {
+      "id": "BED-03",
+      "severity": "low",
+      "evidence": "Hallway leading out of the bedroom is dim, lit only by a small plug-in nightlight near the door; path to bathroom at night appears poorly illuminated",
+      "box": [
+       100,
+       0,
+       340,
+       600
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "BED-05",
@@ -13933,6 +16097,108 @@
       "id": "LIV-05",
       "severity": "low",
       "evidence": "The bedroom has relatively dim ambient lighting. While there is a bedside lamp, overall room lighting is subdued, which could affect visibility for someone with mobility limitations.",
+      "box": [
+       0,
+       0,
+       1000,
+       1000
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "BED-01",
+     "BED-05",
+     "BED-03",
+     "LIV-06",
+     "STAIR-01",
+     "STAIR-04",
+     "STAIR-05",
+     "LIV-05"
+    ],
+    "raw": [
+     {
+      "id": "BED-01",
+      "severity": "high",
+      "evidence": "Mattress sits very low to the floor with little or no frame height, making it hard to rise from after hip/knee surgery with a walker",
+      "box": [
+       630,
+       318,
+       1520,
+       985
+      ]
+     },
+     {
+      "id": "BED-05",
+      "severity": "medium",
+      "evidence": "Right side of bed is crowded by nightstand and rocking chair, leaving little room to maneuver a walker; bed also sits close to the left wall",
+      "box": [
+       1040,
+       200,
+       1400,
+       470
+      ]
+     },
+     {
+      "id": "BED-03",
+      "severity": "medium",
+      "evidence": "Path from bed through the doorway into the hall is dim, lit only by a small plug-in night light at the baseboard",
+      "box": [
+       160,
+       0,
+       560,
+       560
+      ]
+     },
+     {
+      "id": "LIV-06",
+      "severity": "high",
+      "evidence": "Carpeted step/level change in the hallway just outside the bedroom door, with no contrast marking at the edge",
+      "box": [
+       168,
+       255,
+       445,
+       420
+      ]
+     },
+     {
+      "id": "STAIR-01",
+      "severity": "medium",
+      "evidence": "Step(s) down in the hallway outside the bedroom have no visible handrail on either side",
+      "box": [
+       168,
+       100,
+       445,
+       420
+      ]
+     },
+     {
+      "id": "STAIR-04",
+      "severity": "medium",
+      "evidence": "Hallway step area is poorly lit, relying on a small night light",
+      "box": [
+       168,
+       230,
+       560,
+       470
+      ]
+     },
+     {
+      "id": "STAIR-05",
+      "severity": "low",
+      "evidence": "Continuous carpet over the hallway step edge makes the level change hard to see",
+      "box": [
+       168,
+       255,
+       445,
+       400
+      ]
+     },
+     {
+      "id": "LIV-05",
+      "severity": "low",
+      "evidence": "Overall room lighting is dim with the only light being a bedside lamp and window glare",
       "box": [
        0,
        0,
@@ -14451,6 +16717,24 @@
    }
   },
   "living-base1-LIV-06": {
+   "claude-fable-5.1": {
+    "pred": [
+     "LIV-06"
+    ],
+    "raw": [
+     {
+      "id": "LIV-06",
+      "severity": "high",
+      "evidence": "A single step-down runs diagonally across the room between the raised entry/TV area and the lower living room floor; both levels are the same wood color with no contrast strip or marking, making the edge easy to miss with a walker.",
+      "box": [
+       385,
+       495,
+       725,
+       655
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "LIV-04",
@@ -14500,6 +16784,48 @@
        350,
        700,
        450
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "LIV-06",
+     "LIV-04",
+     "LIV-03"
+    ],
+    "raw": [
+     {
+      "id": "LIV-06",
+      "severity": "high",
+      "evidence": "A single unmarked step-down runs across the room between the raised entry/TV area and the lower living room floor; the wood nosing is the same color as the flooring, making the level change very hard to see with a walker.",
+      "box": [
+       380,
+       396,
+       1090,
+       640
+      ]
+     },
+     {
+      "id": "LIV-04",
+      "severity": "medium",
+      "evidence": "Deep, soft upholstered seating (recliner and sofa) with low, soft cushions that are hard to rise from after hip/knee surgery; the sofa seat is low and heavily cushioned.",
+      "box": [
+       140,
+       267,
+       620,
+       760
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "medium",
+      "evidence": "End tables and chair arms crowd the path between the recliner and the step-down; the gap between the light armchair/end table on the right and the step edge narrows the walker route.",
+      "box": [
+       1000,
+       400,
+       1520,
+       1000
       ]
      }
     ]
@@ -14918,6 +17244,72 @@
    }
   },
   "entry-base1-ENT-04": {
+   "claude-fable-5.1": {
+    "pred": [
+     "ENT-04",
+     "STAIR-04",
+     "STAIR-05",
+     "ENT-02",
+     "LIV-01"
+    ],
+    "raw": [
+     {
+      "id": "ENT-04",
+      "severity": "high",
+      "evidence": "Entry is nearly dark; the wall-mounted porch light beside the door is off and no path lighting illuminates the steps or walkway",
+      "box": [
+       700,
+       55,
+       745,
+       115
+      ]
+     },
+     {
+      "id": "STAIR-04",
+      "severity": "high",
+      "evidence": "Two concrete porch steps are in deep shadow with no lighting, making step depth and edges hard to judge with a walker",
+      "box": [
+       300,
+       600,
+       800,
+       790
+      ]
+     },
+     {
+      "id": "STAIR-05",
+      "severity": "medium",
+      "evidence": "Uniform grey concrete steps with no contrast strip or edge marking; step nosings blend together in low light",
+      "box": [
+       310,
+       630,
+       790,
+       780
+      ]
+     },
+     {
+      "id": "ENT-02",
+      "severity": "low",
+      "evidence": "Raised door sill/threshold at the base of the front door that a walker must be lifted over",
+      "box": [
+       400,
+       570,
+       660,
+       595
+      ]
+     },
+     {
+      "id": "LIV-01",
+      "severity": "low",
+      "evidence": "Loose doormat lying on the porch directly in front of the door in the walker path",
+      "box": [
+       460,
+       600,
+       700,
+       625
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "ENT-01",
@@ -14956,6 +17348,60 @@
        0,
        1000,
        1000
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "ENT-04",
+     "STAIR-04",
+     "STAIR-05",
+     "ENT-02"
+    ],
+    "raw": [
+     {
+      "id": "ENT-04",
+      "severity": "high",
+      "evidence": "Entry is almost entirely dark; the wall sconce beside the door is not illuminated, leaving the porch, door area and steps in deep shadow",
+      "box": [
+       0,
+       0,
+       1000,
+       1000
+      ]
+     },
+     {
+      "id": "STAIR-04",
+      "severity": "high",
+      "evidence": "The two concrete entry steps are unlit, so tread edges blend into the shadowed walkway",
+      "box": [
+       455,
+       615,
+       1155,
+       800
+      ]
+     },
+     {
+      "id": "STAIR-05",
+      "severity": "medium",
+      "evidence": "Step nosings on the gray concrete steps have no contrasting edge marking, making the level changes hard to distinguish",
+      "box": [
+       480,
+       625,
+       1120,
+       790
+      ]
+     },
+     {
+      "id": "ENT-02",
+      "severity": "medium",
+      "evidence": "Raised sill/threshold under the front door at the porch landing that a walker must be lifted over",
+      "box": [
+       608,
+       560,
+       1005,
+       617
       ]
      }
     ]
@@ -15118,10 +17564,6 @@
       ]
      }
     ]
-   },
-   "grok-4.6": {
-    "pred": [],
-    "raw": []
    },
    "kimi-k3": {
     "pred": [
@@ -15434,6 +17876,24 @@
    }
   },
   "stairs-base1": {
+   "claude-fable-5.1": {
+    "pred": [
+     "LIV-01"
+    ],
+    "raw": [
+     {
+      "id": "LIV-01",
+      "severity": "medium",
+      "evidence": "Patterned throw rug lying on the hardwood floor of the adjacent living room near the base of the stairs, in the walking path from the stairs toward the seating area; loose rug edge visible on the floor",
+      "box": [
+       0,
+       830,
+       90,
+       1000
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "STAIR-01",
@@ -15460,6 +17920,48 @@
        400,
        1000,
        750
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "STAIR-02",
+     "STAIR-04",
+     "LIV-01"
+    ],
+    "raw": [
+     {
+      "id": "STAIR-02",
+      "severity": "high",
+      "evidence": "Both handrails terminate several steps above the bottom of the staircase (left rail ends near the 3rd/4th step, right rail also stops short), so there is no graspable rail for the first steps up or the last steps down \u2014 critical for someone using a walker.",
+      "box": [
+       360,
+       120,
+       1300,
+       900
+      ]
+     },
+     {
+      "id": "STAIR-04",
+      "severity": "low",
+      "evidence": "Single ceiling fixture at the top landing; the middle and lower treads fall into shadow with no light at the base of the stairs.",
+      "box": [
+       500,
+       0,
+       1120,
+       1010
+      ]
+     },
+     {
+      "id": "LIV-01",
+      "severity": "medium",
+      "evidence": "Loose area rug with an exposed edge on the hardwood floor in the adjoining room at the base of the stairs.",
+      "box": [
+       0,
+       855,
+       135,
+       1010
       ]
      }
     ]
@@ -15546,10 +18048,6 @@
     ]
    },
    "gpt-5.6-terra": {
-    "pred": [],
-    "raw": []
-   },
-   "grok-4.6": {
     "pred": [],
     "raw": []
    },
@@ -15834,6 +18332,48 @@
    }
   },
   "bedroom-base1-BED-04": {
+   "claude-fable-5.1": {
+    "pred": [
+     "BED-04",
+     "LIV-03",
+     "LIV-01"
+    ],
+    "raw": [
+     {
+      "id": "BED-04",
+      "severity": "high",
+      "evidence": "Multiple blankets/clothing items, shoes, a purse with strap trailing, and a cardboard box scattered on the carpet at the foot and sides of the bed, directly in the path to the bathroom",
+      "box": [
+       190,
+       610,
+       940,
+       910
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "high",
+      "evidence": "The walking route from the bed to the bedroom door/bathroom is narrowed and obstructed by piled laundry, a box, and a bag, leaving no clear walker path",
+      "box": [
+       340,
+       620,
+       940,
+       900
+      ]
+     },
+     {
+      "id": "LIV-01",
+      "severity": "medium",
+      "evidence": "Loose throw rugs/runners visible on the hallway and bathroom floor through the doorway, on the bed-to-bathroom route",
+      "box": [
+       810,
+       440,
+       940,
+       620
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "BED-04",
@@ -15872,6 +18412,72 @@
        400,
        600,
        1000
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "BED-04",
+     "LIV-03",
+     "BED-05",
+     "LIV-01",
+     "STAIR-03"
+    ],
+    "raw": [
+     {
+      "id": "BED-04",
+      "severity": "high",
+      "evidence": "Piles of blankets, towels, a leather bag, a cardboard box and a pair of shoes are scattered across the carpet directly alongside and in front of the bed, exactly where a walker would be placed when getting up.",
+      "box": [
+       180,
+       600,
+       930,
+       910
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "high",
+      "evidence": "The walking path from the bed toward the doorway is narrowed and obstructed by heaped laundry, an open box and a handbag with trailing straps.",
+      "box": [
+       230,
+       610,
+       940,
+       920
+      ]
+     },
+     {
+      "id": "BED-05",
+      "severity": "medium",
+      "evidence": "Clutter on both the foot and the side of the bed leaves less than walker-width clear space between the bed frame and the nightstand/doorway route.",
+      "box": [
+       150,
+       560,
+       800,
+       900
+      ]
+     },
+     {
+      "id": "LIV-01",
+      "severity": "medium",
+      "evidence": "Loose area rugs lie on the hard floor in the adjoining hallway/room just beyond the bedroom doorway.",
+      "box": [
+       806,
+       470,
+       940,
+       620
+      ]
+     },
+     {
+      "id": "STAIR-03",
+      "severity": "low",
+      "evidence": "Shoes and soft goods left on the floor route could easily be carried onto or block a transition; footwear sits directly in the bedside walking lane.",
+      "box": [
+       185,
+       690,
+       275,
+       770
       ]
      }
     ]
@@ -16145,10 +18751,6 @@
       ]
      }
     ]
-   },
-   "grok-4.6": {
-    "pred": [],
-    "raw": []
    },
    "kimi-k3": {
     "pred": [
@@ -16496,6 +19098,48 @@
    }
   },
   "entry-base0-ENT-01": {
+   "claude-fable-5.1": {
+    "pred": [
+     "ENT-01",
+     "ENT-02",
+     "STAIR-05"
+    ],
+    "raw": [
+     {
+      "id": "ENT-01",
+      "severity": "high",
+      "evidence": "Two concrete exterior steps leading to the front door with no handrail on either side; nothing to grip while managing a walker on steps",
+      "box": [
+       295,
+       505,
+       685,
+       640
+      ]
+     },
+     {
+      "id": "ENT-02",
+      "severity": "medium",
+      "evidence": "Raised door sill/threshold visible at the base of the front door, creating a trip lip for walker wheels and a post-surgical gait",
+      "box": [
+       365,
+       470,
+       645,
+       500
+      ]
+     },
+     {
+      "id": "STAIR-05",
+      "severity": "low",
+      "evidence": "Steps are uniform light-gray concrete with no contrasting edge marking, making step edges hard to distinguish in low light",
+      "box": [
+       295,
+       505,
+       685,
+       640
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "ENT-01",
@@ -16522,6 +19166,60 @@
        0,
        1000,
        400
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "ENT-01",
+     "ENT-02",
+     "STAIR-05",
+     "ENT-04"
+    ],
+    "raw": [
+     {
+      "id": "ENT-01",
+      "severity": "high",
+      "evidence": "Two exterior concrete steps lead up to the front door with no handrail on either side, leaving nothing to grasp while stepping up with a walker.",
+      "box": [
+       455,
+       508,
+       1055,
+       665
+      ]
+     },
+     {
+      "id": "ENT-02",
+      "severity": "medium",
+      "evidence": "Raised door sill/threshold and stone landing lip at the base of the front door must be cleared to enter.",
+      "box": [
+       560,
+       462,
+       1005,
+       512
+      ]
+     },
+     {
+      "id": "STAIR-05",
+      "severity": "medium",
+      "evidence": "Step treads, risers and top landing are all the same uniform gray concrete with no contrasting nosing, making the edges hard to distinguish, especially at dusk.",
+      "box": [
+       455,
+       508,
+       1055,
+       665
+      ]
+     },
+     {
+      "id": "ENT-04",
+      "severity": "low",
+      "evidence": "Only a single small wall lantern well to the left of the door lights the entry; the steps and walkway are in dim, shadowed light.",
+      "box": [
+       415,
+       0,
+       500,
+       120
       ]
      }
     ]
@@ -16986,6 +19684,36 @@
    }
   },
   "living-base0-LIV-03": {
+   "claude-fable-5.1": {
+    "pred": [
+     "LIV-03",
+     "LIV-05"
+    ],
+    "raw": [
+     {
+      "id": "LIV-03",
+      "severity": "high",
+      "evidence": "Main walking path between seating and TV is littered with tripping hazards: stacked books on the floor, a toy truck and small blocks, an open cardboard box with a blanket, a fabric storage bin, and a wicker basket with a blanket spilling onto the floor.",
+      "box": [
+       290,
+       455,
+       830,
+       960
+      ]
+     },
+     {
+      "id": "LIV-05",
+      "severity": "low",
+      "evidence": "Strong backlight/glare from the large uncovered bay window can reduce visibility of small floor objects in the walkway.",
+      "box": [
+       370,
+       60,
+       660,
+       440
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "LIV-03",
@@ -17036,6 +19764,59 @@
        500,
        700,
        700
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "LIV-03",
+     "LIV-01",
+     "LIV-05"
+    ],
+    "raw": [
+     {
+      "id": "LIV-03",
+      "severity": "high",
+      "evidence": "Main walking path through the living room is strewn with obstacles: stacked books on the floor, a wheeled toy and loose blocks, an open cardboard box with a blanket spilling out, a plastic storage bin and a large wicker basket \u2014 leaving no clear walker-width route between the recliner/sofa and the TV stand.",
+      "box": [
+       470,
+       460,
+       1265,
+       985
+      ]
+     },
+     {
+      "id": "LIV-01",
+      "severity": "high",
+      "evidence": "A knitted throw blanket hangs out of the wicker basket and pools loosely across the wood floor directly in the walking path; a second fringed blanket spills from the cardboard box onto the floor \u2014 both are slip/trip hazards for walker feet.",
+      "box": [
+       440,
+       715,
+       715,
+       990
+      ]
+     },
+     {
+      "id": "LIV-01",
+      "severity": "medium",
+      "evidence": "Fringed throw draped out of the cardboard box onto the floor beside the TV cabinet, loose fabric that can catch a walker leg.",
+      "box": [
+       1085,
+       610,
+       1255,
+       825
+      ]
+     },
+     {
+      "id": "LIV-05",
+      "severity": "low",
+      "evidence": "Strong backlighting/glare from the bay window and reflective glossy wood floor can obscure the low-lying floor clutter; the only lamp is on a far side table.",
+      "box": [
+       560,
+       55,
+       1010,
+       460
       ]
      }
     ]
@@ -17553,6 +20334,60 @@
    }
   },
   "stairs-base1-STAIR-04": {
+   "claude-fable-5.1": {
+    "pred": [
+     "STAIR-04",
+     "STAIR-02",
+     "STAIR-05",
+     "LIV-01"
+    ],
+    "raw": [
+     {
+      "id": "STAIR-04",
+      "severity": "medium",
+      "evidence": "Stairwell is dim with no visible switched light illuminating the treads; upper landing and hallway are dark, reducing visibility of step edges",
+      "box": [
+       330,
+       0,
+       1000,
+       960
+      ]
+     },
+     {
+      "id": "STAIR-02",
+      "severity": "medium",
+      "evidence": "Both handrails terminate several steps above the bottom tread (left rail ends around the third step) so there is no rail support for the last steps and no extension at the landing",
+      "box": [
+       230,
+       140,
+       850,
+       830
+      ]
+     },
+     {
+      "id": "STAIR-05",
+      "severity": "low",
+      "evidence": "Dark wood treads against white risers in low light; no contrasting nosing strips, edges hard to distinguish in dim conditions",
+      "box": [
+       340,
+       210,
+       730,
+       620
+      ]
+     },
+     {
+      "id": "LIV-01",
+      "severity": "low",
+      "evidence": "Patterned throw rug on hardwood floor in adjacent living room walkway at base of stairs",
+      "box": [
+       0,
+       830,
+       90,
+       1000
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "STAIR-04",
@@ -17591,6 +20426,60 @@
        100,
        700,
        900
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "STAIR-02",
+     "STAIR-04",
+     "LIV-01",
+     "LIV-05"
+    ],
+    "raw": [
+     {
+      "id": "STAIR-02",
+      "severity": "high",
+      "evidence": "Both wall-mounted rails are flat, wide trim-style boards that are hard to grip, and the left rail terminates well above the bottom steps rather than continuing to the floor level",
+      "box": [
+       370,
+       140,
+       1310,
+       950
+      ]
+     },
+     {
+      "id": "STAIR-04",
+      "severity": "high",
+      "evidence": "Stairwell is very dim; the top landing and doorway are in near darkness with no visible switched light at the bottom of the run",
+      "box": [
+       500,
+       0,
+       1100,
+       1024
+      ]
+     },
+     {
+      "id": "LIV-01",
+      "severity": "medium",
+      "evidence": "Loose area rug with an exposed edge on the hardwood floor in the adjoining room at lower left",
+      "box": [
+       0,
+       860,
+       130,
+       1024
+      ]
+     },
+     {
+      "id": "LIV-05",
+      "severity": "medium",
+      "evidence": "Overall very low light levels in the hallway and adjacent room; bright window at left creates glare contrast against the dark interior",
+      "box": [
+       0,
+       380,
+       400,
+       1024
       ]
      }
     ]
@@ -18039,6 +20928,48 @@
    }
   },
   "bathroom-base1-BATH-02": {
+   "claude-fable-5.1": {
+    "pred": [
+     "BATH-02",
+     "BATH-06",
+     "BATH-03"
+    ],
+    "raw": [
+     {
+      "id": "BATH-02",
+      "severity": "high",
+      "evidence": "Toilet has no grab bar, safety frame, or armrest support on either side; only a tub edge on one side and a vanity on the other",
+      "box": [
+       540,
+       470,
+       870,
+       990
+      ]
+     },
+     {
+      "id": "BATH-06",
+      "severity": "medium",
+      "evidence": "Standard-height toilet with no raised seat or riser, difficult for post hip/knee replacement sit-to-stand",
+      "box": [
+       540,
+       660,
+       720,
+       990
+      ]
+     },
+     {
+      "id": "BATH-03",
+      "severity": "low",
+      "evidence": "Wooden towel bar above the toilet and the vanity countertop edge are the only nearby items to grab during toilet transfers; neither is load-rated",
+      "box": [
+       820,
+       60,
+       990,
+       460
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "BATH-04",
@@ -18089,6 +21020,60 @@
        400,
        400,
        650
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "BATH-02",
+     "BATH-05",
+     "BATH-04",
+     "BATH-06"
+    ],
+    "raw": [
+     {
+      "id": "BATH-02",
+      "severity": "high",
+      "evidence": "Toilet sits in the corner with no grab bar or rail on either side wall; only the tissue box and tank are nearby, offering no safe support for sit-to-stand.",
+      "box": [
+       820,
+       480,
+       1330,
+       1010
+      ]
+     },
+     {
+      "id": "BATH-05",
+      "severity": "medium",
+      "evidence": "Standard high-walled tub with the shower chair placed inside the tub rather than a transfer bench spanning the rim, so the user must lift a leg over the tall tub wall.",
+      "box": [
+       355,
+       480,
+       1035,
+       900
+      ]
+     },
+     {
+      "id": "BATH-04",
+      "severity": "medium",
+      "evidence": "Tub floor is smooth glossy enamel with only a few sparse adhesive strips near the edge; no full non-slip mat inside the wet bathing area.",
+      "box": [
+       420,
+       600,
+       950,
+       830
+      ]
+     },
+     {
+      "id": "BATH-06",
+      "severity": "low",
+      "evidence": "Toilet appears to be a standard/low-height round bowl with no raised seat or riser, making rising difficult after hip/knee surgery.",
+      "box": [
+       835,
+       700,
+       1090,
+       1010
       ]
      }
     ]
@@ -18694,6 +21679,24 @@
    }
   },
   "stairs-base0": {
+   "claude-fable-5.1": {
+    "pred": [
+     "STAIR-02"
+    ],
+    "raw": [
+     {
+      "id": "STAIR-02",
+      "severity": "medium",
+      "evidence": "Both wooden handrails stop short: they end around the second/third step at the bottom and do not extend past the top or bottom step, leaving the user without rail support at the most critical first and last steps; rail ends have no returns and the right rail's lower end looks worn/chipped.",
+      "box": [
+       240,
+       30,
+       760,
+       960
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "STAIR-01",
@@ -18732,6 +21735,48 @@
        300,
        750,
        600
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "STAIR-02",
+     "STAIR-04",
+     "STAIR-05"
+    ],
+    "raw": [
+     {
+      "id": "STAIR-02",
+      "severity": "high",
+      "evidence": "Both wall-mounted handrails stop well short of the stair run \u2014 the left rail ends around the 4th step up and the right rail ends above the bottom steps, so there is nothing to grasp at the bottom landing or at the very top approach; rails are simple wall-mounted strips with no extension or return at the lower ends.",
+      "box": [
+       370,
+       40,
+       1155,
+       965
+      ]
+     },
+     {
+      "id": "STAIR-04",
+      "severity": "medium",
+      "evidence": "Only a single ceiling fixture at the upper landing lights the stairway; the lower treads and bottom landing are in shadow and no switch/light is visible at the base of the stairs.",
+      "box": [
+       380,
+       0,
+       1060,
+       1024
+      ]
+     },
+     {
+      "id": "STAIR-05",
+      "severity": "low",
+      "evidence": "Wood tread nosings against white risers give some contrast, but the upper treads blend with the dim landing floor and there is no edge marking or non-slip strip on the polished wood treads.",
+      "box": [
+       470,
+       255,
+       1010,
+       1024
       ]
      }
     ]
@@ -19167,7 +22212,459 @@
     ]
    }
   },
+  "bathroom-base0-BATH-03": {
+   "claude-fable-5.1": {
+    "pred": [
+     "BATH-05",
+     "BATH-06",
+     "BATH-03"
+    ],
+    "raw": [
+     {
+      "id": "BATH-05",
+      "severity": "high",
+      "evidence": "Standard tub/shower combo with a high tub wall to step over; the shower chair sits inside the tub (not a transfer bench) and the only grab bar is a horizontal bar on the back wall with no vertical bar at the entry edge, so the user must step over the rim with no support at the point of entry",
+      "box": [
+       200,
+       640,
+       740,
+       900
+      ]
+     },
+     {
+      "id": "BATH-06",
+      "severity": "medium",
+      "evidence": "Toilet appears to be a standard-height bowl; even with the safety frame, the seat looks low for post hip/knee replacement sit-to-stand",
+      "box": [
+       640,
+       540,
+       1000,
+       1000
+      ]
+     },
+     {
+      "id": "BATH-03",
+      "severity": "low",
+      "evidence": "Towel bar mounted on the wall right beside the tub entry is at hand height and likely to be grabbed as a support when stepping in/out; towel bars are not load-rated",
+      "box": [
+       170,
+       300,
+       300,
+       400
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "BATH-05",
+     "BATH-03",
+     "BATH-04",
+     "LIV-02",
+     "LIV-03"
+    ],
+    "raw": [
+     {
+      "id": "BATH-05",
+      "severity": "high",
+      "evidence": "Standard full-height bathtub wall must be stepped over to enter the shower; only a free-standing shower chair inside the tub, no transfer bench spanning the tub rim, so a walker user must lift a leg over the high rim",
+      "box": [
+       248,
+       590,
+       812,
+       830
+      ]
+     },
+     {
+      "id": "BATH-03",
+      "severity": "medium",
+      "evidence": "Lightweight towel bar mounted on the tub surround below the real grab bar, plus the molded soap shelf, are at grab height and likely to be grabbed for support though they are not load-rated",
+      "box": [
+       400,
+       398,
+       540,
+       520
+      ]
+     },
+     {
+      "id": "BATH-04",
+      "severity": "medium",
+      "evidence": "Glossy fiberglass tub floor with only a few short factory tread strips; large wet areas of the tub base and the sloped front remain smooth",
+      "box": [
+       270,
+       630,
+       730,
+       800
+      ]
+     },
+     {
+      "id": "LIV-02",
+      "severity": "low",
+      "evidence": "Radio power cord runs from the window sill down the wall to the floor beside the toilet, crossing the area a walker would pass",
+      "box": [
+       975,
+       320,
+       1065,
+       640
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "medium",
+      "evidence": "Toilet safety frame legs and the shower chair legs project into the narrow floor space between tub and toilet, leaving limited clearance for a walker",
+      "box": [
+       690,
+       530,
+       1120,
+       890
+      ]
+     }
+    ]
+   },
+   "gemma-3-27b": {
+    "pred": [
+     "BATH-04",
+     "BATH-05",
+     "BATH-06",
+     "BATH-08"
+    ],
+    "raw": [
+     {
+      "id": "BATH-04",
+      "severity": "medium",
+      "evidence": "Tub/shower floor appears smooth and potentially slippery when wet.",
+      "box": [
+       150,
+       150,
+       550,
+       500
+      ]
+     },
+     {
+      "id": "BATH-05",
+      "severity": "high",
+      "evidence": "High tub step-over without a safe transfer aid despite the presence of a shower seat.",
+      "box": [
+       150,
+       150,
+       550,
+       500
+      ]
+     },
+     {
+      "id": "BATH-06",
+      "severity": "low",
+      "evidence": "Standard toilet seat height may be too low for comfortable and safe transfers after hip/knee replacement.",
+      "box": [
+       600,
+       400,
+       900,
+       700
+      ]
+     },
+     {
+      "id": "BATH-08",
+      "severity": "low",
+      "evidence": "While a shower seat is present, a handheld showerhead would improve safety and independence.",
+      "box": [
+       200,
+       200,
+       500,
+       400
+      ]
+     }
+    ]
+   },
+   "mistral-large-3": {
+    "pred": [
+     "BATH-01",
+     "BATH-02",
+     "BATH-04",
+     "BATH-05",
+     "BATH-06",
+     "BATH-07",
+     "BATH-08"
+    ],
+    "raw": [
+     {
+      "id": "BATH-01",
+      "severity": "high",
+      "evidence": "No grab bar at tub/shower",
+      "box": [
+       100,
+       150,
+       500,
+       400
+      ]
+     },
+     {
+      "id": "BATH-02",
+      "severity": "high",
+      "evidence": "No support (grab bar) at toilet",
+      "box": [
+       650,
+       250,
+       900,
+       600
+      ]
+     },
+     {
+      "id": "BATH-04",
+      "severity": "medium",
+      "evidence": "Slippery tub/shower floor (no visible non-slip mat or surface)",
+      "box": [
+       100,
+       300,
+       500,
+       500
+      ]
+     },
+     {
+      "id": "BATH-05",
+      "severity": "high",
+      "evidence": "High tub step-over without transfer aid",
+      "box": [
+       100,
+       300,
+       500,
+       400
+      ]
+     },
+     {
+      "id": "BATH-06",
+      "severity": "medium",
+      "evidence": "Low toilet seat (visible standard height, may be difficult for post-surgery use)",
+      "box": [
+       650,
+       350,
+       850,
+       600
+      ]
+     },
+     {
+      "id": "BATH-07",
+      "severity": "low",
+      "evidence": "Towel hanging loosely near tub could be grabbed inadvertently, posing a risk if pulled",
+      "box": [
+       0,
+       100,
+       150,
+       600
+      ]
+     },
+     {
+      "id": "BATH-08",
+      "severity": "low",
+      "evidence": "No handheld shower visible, though a shower seat is present",
+      "box": [
+       300,
+       100,
+       400,
+       250
+      ]
+     }
+    ]
+   },
+   "nemotron-nano-vl": {
+    "pred": [
+     "BATH-01",
+     "BATH-02",
+     "BATH-03",
+     "BATH-04",
+     "BATH-05",
+     "BATH-06",
+     "BATH-08",
+     "KIT-03",
+     "LIV-02",
+     "LIV-05"
+    ],
+    "raw": [
+     {
+      "id": "BATH-01",
+      "severity": "high",
+      "evidence": "No grab bar at tub/shower",
+      "box": [
+       150,
+       335,
+       620,
+       465
+      ]
+     },
+     {
+      "id": "BATH-02",
+      "severity": "high",
+      "evidence": "No support at toilet",
+      "box": [
+       640,
+       540,
+       940,
+       999
+      ]
+     },
+     {
+      "id": "BATH-03",
+      "severity": "medium",
+      "evidence": "Non-load-rated fixture positioned as support (shower chair)",
+      "box": [
+       440,
+       465,
+       620,
+       740
+      ]
+     },
+     {
+      "id": "BATH-04",
+      "severity": "high",
+      "evidence": "Slippery tub/shower floor",
+      "box": [
+       200,
+       700,
+       680,
+       800
+      ]
+     },
+     {
+      "id": "BATH-05",
+      "severity": "high",
+      "evidence": "High tub step-over without transfer aid",
+      "box": [
+       200,
+       600,
+       680,
+       700
+      ]
+     },
+     {
+      "id": "BATH-06",
+      "severity": "medium",
+      "evidence": "Low toilet seat",
+      "box": [
+       640,
+       540,
+       940,
+       999
+      ]
+     },
+     {
+      "id": "BATH-08",
+      "severity": "medium",
+      "evidence": "No handheld shower",
+      "box": [
+       520,
+       10,
+       640,
+       380
+      ]
+     },
+     {
+      "id": "KIT-03",
+      "severity": "medium",
+      "evidence": "Unstable step stool or chair used for reaching (shower chair)",
+      "box": [
+       440,
+       465,
+       620,
+       740
+      ]
+     },
+     {
+      "id": "LIV-02",
+      "severity": "medium",
+      "evidence": "Cords or wires across walkway",
+      "box": [
+       800,
+       340,
+       850,
+       540
+      ]
+     },
+     {
+      "id": "LIV-05",
+      "severity": "medium",
+      "evidence": "Poor lighting or glare",
+      "box": [
+       800,
+       0,
+       1000,
+       380
+      ]
+     }
+    ]
+   },
+   "qwen3-vl": {
+    "pred": [
+     "BATH-04",
+     "BATH-05",
+     "BATH-06",
+     "LIV-02"
+    ],
+    "raw": [
+     {
+      "id": "BATH-04",
+      "severity": "medium",
+      "evidence": "The tub floor has a textured, ribbed surface, but no non-slip mat or coating is visible, posing a slip risk when wet.",
+      "box": [
+       214,
+       688,
+       675,
+       820
+      ]
+     },
+     {
+      "id": "BATH-05",
+      "severity": "high",
+      "evidence": "The tub has a high step-over edge without a transfer bench or other aid to assist with safe entry/exit.",
+      "box": [
+       206,
+       670,
+       675,
+       999
+      ]
+     },
+     {
+      "id": "BATH-06",
+      "severity": "medium",
+      "evidence": "The toilet seat appears to be standard height, which may be too low for safe sitting and standing for someone recovering from hip or knee surgery.",
+      "box": [
+       647,
+       540,
+       978,
+       999
+      ]
+     },
+     {
+      "id": "LIV-02",
+      "severity": "medium",
+      "evidence": "A black electrical cord runs from the radio on the windowsill down the wall and across the floor near the toilet, creating a tripping hazard.",
+      "box": [
+       840,
+       356,
+       878,
+       500
+      ]
+     }
+    ]
+   }
+  },
   "living-base0-LIV-05": {
+   "claude-fable-5.1": {
+    "pred": [
+     "LIV-05"
+    ],
+    "raw": [
+     {
+      "id": "LIV-05",
+      "severity": "medium",
+      "evidence": "Strong sunlight through the large window creates intense glare and bright reflections on the highly polished floor in the main walking path, which can obscure the floor surface and cause visual misjudgment when walking with a walker.",
+      "box": [
+       330,
+       440,
+       900,
+       820
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "LIV-04",
@@ -19206,6 +22703,48 @@
        0,
        900,
        400
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "LIV-05",
+     "LIV-03",
+     "LIV-04"
+    ],
+    "raw": [
+     {
+      "id": "LIV-05",
+      "severity": "medium",
+      "evidence": "Strong backlit sunlight from the bay window plus a highly reflective glossy wood floor creates bright glare stripes across the main walking path, obscuring the floor surface; the rest of the room is comparatively dim.",
+      "box": [
+       520,
+       60,
+       1000,
+       900
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "medium",
+      "evidence": "The blue recliner is angled out from the wall and protrudes into the room, together with the sofa it narrows the entry path on the left side of the room for a walker user.",
+      "box": [
+       30,
+       283,
+       570,
+       790
+      ]
+     },
+     {
+      "id": "LIV-04",
+      "severity": "low",
+      "evidence": "Soft, deep-cushioned sofa with low, padded arms next to the recliner offers poor push-up support for standing after hip/knee surgery.",
+      "box": [
+       236,
+       285,
+       596,
+       530
       ]
      }
     ]
@@ -19573,6 +23112,48 @@
    }
   },
   "stairs-base1-STAIR-02": {
+   "claude-fable-5.1": {
+    "pred": [
+     "STAIR-01",
+     "STAIR-02",
+     "LIV-01"
+    ],
+    "raw": [
+     {
+      "id": "STAIR-01",
+      "severity": "high",
+      "evidence": "Only the right side has a full-length handrail; the left wall rail covers only the bottom 3-4 steps, leaving most of the long straight run with a rail on one side only, which is inadequate for a post-hip/knee surgery patient who needs bilateral support.",
+      "box": [
+       270,
+       280,
+       850,
+       950
+      ]
+     },
+     {
+      "id": "STAIR-02",
+      "severity": "medium",
+      "evidence": "Left handrail is a very short section (roughly 3 steps) that stops abruptly partway up and does not extend to the top landing or beyond the bottom step; it also ends without a return to the wall.",
+      "box": [
+       272,
+       565,
+       372,
+       785
+      ]
+     },
+     {
+      "id": "LIV-01",
+      "severity": "medium",
+      "evidence": "A loose patterned throw rug lies on the hardwood floor of the adjacent living room near the sofa/walkway, a trip and slip risk for walker use.",
+      "box": [
+       0,
+       830,
+       75,
+       985
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "STAIR-01",
@@ -19611,6 +23192,60 @@
        200,
        1000,
        800
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "STAIR-02",
+     "STAIR-01",
+     "STAIR-04",
+     "LIV-01"
+    ],
+    "raw": [
+     {
+      "id": "STAIR-02",
+      "severity": "high",
+      "evidence": "The left-side handrail is very short, covering only the bottom few steps and ending well before the top; it does not extend the full run or past the top/bottom landing for a walker user to grasp continuously.",
+      "box": [
+       352,
+       478,
+       478,
+       668
+      ]
+     },
+     {
+      "id": "STAIR-01",
+      "severity": "medium",
+      "evidence": "Above the first few steps the staircase has a graspable rail only on the right wall; the left side has no continuous rail for the upper two-thirds of the flight.",
+      "box": [
+       430,
+       120,
+       1090,
+       700
+      ]
+     },
+     {
+      "id": "STAIR-04",
+      "severity": "low",
+      "evidence": "Only a single ceiling fixture at the top landing lights the stairwell; the lower treads are in relative shadow with no switch/light visible at the stair base.",
+      "box": [
+       430,
+       250,
+       950,
+       830
+      ]
+     },
+     {
+      "id": "LIV-01",
+      "severity": "medium",
+      "evidence": "Loose area rug on hardwood floor in the adjoining living room, directly in the path leading to the stairs.",
+      "box": [
+       0,
+       690,
+       190,
+       860
       ]
      }
     ]
@@ -20161,6 +23796,36 @@
    }
   },
   "kitchen-base1": {
+   "claude-fable-5.1": {
+    "pred": [
+     "KIT-01",
+     "KIT-02"
+    ],
+    "raw": [
+     {
+      "id": "KIT-01",
+      "severity": "medium",
+      "evidence": "Everyday plates, bowls, and glass jars stored on the top open shelves well above shoulder height, requiring overhead reaching while balancing with a walker",
+      "box": [
+       0,
+       0,
+       340,
+       290
+      ]
+     },
+     {
+      "id": "KIT-02",
+      "severity": "medium",
+      "evidence": "Bowls and dishes stored on the lowest shelf near floor level, requiring bending/stooping which is restricted after hip/knee replacement",
+      "box": [
+       0,
+       600,
+       330,
+       800
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "KIT-01",
@@ -20187,6 +23852,48 @@
        200,
        1000,
        800
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "KIT-01",
+     "KIT-02",
+     "KIT-03"
+    ],
+    "raw": [
+     {
+      "id": "KIT-01",
+      "severity": "medium",
+      "evidence": "Glassware, pitchers, and bowls stored on the topmost open shelves near the ceiling, well above shoulder height and unreachable without stretching or a stool",
+      "box": [
+       0,
+       0,
+       525,
+       150
+      ]
+     },
+     {
+      "id": "KIT-02",
+      "severity": "medium",
+      "evidence": "Serving bowls, plates and dishes stored on the lowest open shelves close to floor level, requiring deep bending or squatting that is unsafe after hip/knee surgery",
+      "box": [
+       0,
+       555,
+       420,
+       815
+      ]
+     },
+     {
+      "id": "KIT-03",
+      "severity": "low",
+      "evidence": "Items on shelves above head height in this kitchen imply a step stool or chair would be needed to reach them; no safe reaching aid is visible",
+      "box": [
+       0,
+       0,
+       525,
+       150
       ]
      }
     ]
@@ -20695,6 +24402,47 @@
    }
   },
   "bedroom-base1": {
+   "claude-fable-5.1": {
+    "pred": [
+     "LIV-01",
+     "LIV-06"
+    ],
+    "raw": [
+     {
+      "id": "LIV-01",
+      "severity": "high",
+      "evidence": "Loose throw rugs on the hard hallway floor directly outside the bedroom door, on the bed-to-bathroom route; edges can catch walker legs or cause slipping",
+      "box": [
+       812,
+       320,
+       925,
+       400
+      ]
+     },
+     {
+      "id": "LIV-01",
+      "severity": "medium",
+      "evidence": "Second small area rug farther down the hall near the bathroom doorway, also on the walking path",
+      "box": [
+       835,
+       280,
+       925,
+       322
+      ]
+     },
+     {
+      "id": "LIV-06",
+      "severity": "low",
+      "evidence": "Carpet-to-hard-floor transition strip at the bedroom doorway that a walker's wheels/legs could catch",
+      "box": [
+       795,
+       388,
+       890,
+       415
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "BED-05",
@@ -20721,6 +24469,60 @@
        500,
        300,
        700
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "LIV-01",
+     "BED-05",
+     "BED-01",
+     "LIV-06"
+    ],
+    "raw": [
+     {
+      "id": "LIV-01",
+      "severity": "high",
+      "evidence": "Loose area rug/runner lying on the hard floor in the adjoining hallway/room directly in the bed-to-bathroom path \u2014 edges can catch a walker",
+      "box": [
+       1035,
+       360,
+       1180,
+       530
+      ]
+     },
+     {
+      "id": "BED-05",
+      "severity": "medium",
+      "evidence": "Narrow passage on the left side of the bed between the bed frame/footboard and the chest of drawers and dresser, leaving limited clearance for a walker",
+      "box": [
+       0,
+       340,
+       300,
+       700
+      ]
+     },
+     {
+      "id": "BED-01",
+      "severity": "low",
+      "evidence": "Bed sits high on mattress plus box spring with skirt; top of mattress is well above knee height, making sit-to-stand transfers with a walker awkward",
+      "box": [
+       170,
+       240,
+       800,
+       660
+      ]
+     },
+     {
+      "id": "LIV-06",
+      "severity": "low",
+      "evidence": "Transition from carpeted bedroom to the hard-floor hallway at the doorway creates an unmarked change in floor level/surface",
+      "box": [
+       1000,
+       480,
+       1210,
+       560
       ]
      }
     ]
@@ -20871,10 +24673,6 @@
       ]
      }
     ]
-   },
-   "grok-4.6": {
-    "pred": [],
-    "raw": []
    },
    "kimi-k3": {
     "pred": [
@@ -21176,6 +24974,36 @@
    }
   },
   "stairs-base0-STAIR-01": {
+   "claude-fable-5.1": {
+    "pred": [
+     "STAIR-01",
+     "STAIR-02"
+    ],
+    "raw": [
+     {
+      "id": "STAIR-01",
+      "severity": "high",
+      "evidence": "Long straight staircase has a handrail only on the left wall; the right-hand wall is bare with no rail, so a person with a walker/post-surgery cannot use both hands or their stronger side for support.",
+      "box": [
+       860,
+       240,
+       1150,
+       1000
+      ]
+     },
+     {
+      "id": "STAIR-02",
+      "severity": "medium",
+      "evidence": "Left handrail terminates well above the bottom step (ends around the second tread from the bottom) and does not extend to floor level, leaving the lowest steps without rail support during the most difficult transition.",
+      "box": [
+       365,
+       60,
+       640,
+       850
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "STAIR-01",
@@ -21202,6 +25030,60 @@
        200,
        900,
        800
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "STAIR-01",
+     "STAIR-02",
+     "STAIR-04",
+     "KIT-01"
+    ],
+    "raw": [
+     {
+      "id": "STAIR-01",
+      "severity": "high",
+      "evidence": "Long straight staircase has a handrail only on the left wall; the right wall has no rail at all, leaving no support on that side for a person recovering from hip/knee surgery.",
+      "box": [
+       370,
+       80,
+       960,
+       1010
+      ]
+     },
+     {
+      "id": "STAIR-02",
+      "severity": "medium",
+      "evidence": "The single wooden handrail ends early \u2014 it terminates about three or four steps above the bottom landing, so there is nothing to grasp when starting or finishing the climb.",
+      "box": [
+       366,
+       85,
+       655,
+       845
+      ]
+     },
+     {
+      "id": "STAIR-04",
+      "severity": "low",
+      "evidence": "The only light source is the fixture at the top landing; the lower and middle treads are shadowed with no switch-controlled light visible at the stair base.",
+      "box": [
+       450,
+       0,
+       1000,
+       1010
+      ]
+     },
+     {
+      "id": "KIT-01",
+      "severity": "low",
+      "evidence": "Items are stored on top of the refrigerator and on the highest cabinet shelves in the adjoining kitchen, out of safe reach for someone using a walker.",
+      "box": [
+       1450,
+       330,
+       1536,
+       430
       ]
      }
     ]
@@ -21630,6 +25512,60 @@
    }
   },
   "bathroom-base1-BATH-08": {
+   "claude-fable-5.1": {
+    "pred": [
+     "BATH-04",
+     "BATH-05",
+     "BATH-08",
+     "BATH-03"
+    ],
+    "raw": [
+     {
+      "id": "BATH-04",
+      "severity": "medium",
+      "evidence": "Smooth glossy tub/shower floor with no visible non-slip mat or adhesive strips",
+      "box": [
+       240,
+       540,
+       700,
+       880
+      ]
+     },
+     {
+      "id": "BATH-05",
+      "severity": "high",
+      "evidence": "Standard-height tub wall must be stepped over; only a single diagonal grab bar on the back wall, no vertical bar at the entry edge and no transfer bench for a walker user post hip/knee surgery",
+      "box": [
+       230,
+       520,
+       700,
+       900
+      ]
+     },
+     {
+      "id": "BATH-08",
+      "severity": "high",
+      "evidence": "Fixed wall-mounted showerhead only, no handheld shower and no shower chair/bench in the tub",
+      "box": [
+       220,
+       0,
+       700,
+       880
+      ]
+     },
+     {
+      "id": "BATH-03",
+      "severity": "low",
+      "evidence": "Wooden towel bar mounted on wall beside toilet/tub exit could be grabbed for support but is not load-rated",
+      "box": [
+       820,
+       50,
+       1000,
+       450
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "BATH-02",
@@ -21680,6 +25616,60 @@
        200,
        700,
        500
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "BATH-04",
+     "BATH-05",
+     "BATH-08",
+     "LIV-03"
+    ],
+    "raw": [
+     {
+      "id": "BATH-04",
+      "severity": "high",
+      "evidence": "Smooth acrylic tub floor with no non-slip mat or applied treads visible inside the bathing well",
+      "box": [
+       355,
+       520,
+       955,
+       900
+      ]
+     },
+     {
+      "id": "BATH-05",
+      "severity": "high",
+      "evidence": "Standard-height tub rim must be stepped over to enter; no transfer bench, tub-edge clamp bar, or vertical entry grab bar at the outer rim",
+      "box": [
+       360,
+       510,
+       970,
+       905
+      ]
+     },
+     {
+      "id": "BATH-08",
+      "severity": "medium",
+      "evidence": "Fixed wall-mounted shower head high on the wall, no handheld sprayer and no shower/tub seat provided for seated bathing",
+      "box": [
+       890,
+       0,
+       1015,
+       90
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "medium",
+      "evidence": "Toilet safety frame legs project out into the small floor area between toilet, tub and vanity, narrowing the turning/approach space for a walker",
+      "box": [
+       770,
+       560,
+       1110,
+       1010
       ]
      }
     ]
@@ -22293,6 +26283,60 @@
    }
   },
   "bathroom-base0-BATH-05": {
+   "claude-fable-5.1": {
+    "pred": [
+     "BATH-02",
+     "BATH-06",
+     "BATH-05",
+     "BATH-03"
+    ],
+    "raw": [
+     {
+      "id": "BATH-02",
+      "severity": "high",
+      "evidence": "Standard toilet with no grab bar, safety frame, or raised seat with arms beside it; only a wall and a toilet paper holder nearby for a walker user to push up from",
+      "box": [
+       645,
+       525,
+       985,
+       1000
+      ]
+     },
+     {
+      "id": "BATH-06",
+      "severity": "medium",
+      "evidence": "Toilet appears to be standard (non comfort-height) seat, difficult sit-to-stand after hip/knee replacement",
+      "box": [
+       645,
+       700,
+       985,
+       1000
+      ]
+     },
+     {
+      "id": "BATH-05",
+      "severity": "high",
+      "evidence": "Standard-height bathtub wall must be stepped over to enter shower; grab bars present but no tub transfer bench or shower chair for seated entry with a walker",
+      "box": [
+       200,
+       560,
+       700,
+       1000
+      ]
+     },
+     {
+      "id": "BATH-03",
+      "severity": "low",
+      "evidence": "Wall-mounted toilet paper holder positioned right beside toilet at hand height, likely to be grabbed for support during transfers",
+      "box": [
+       925,
+       780,
+       995,
+       830
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "BATH-04",
@@ -22355,6 +26399,72 @@
        100,
        900,
        350
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "BATH-02",
+     "BATH-05",
+     "BATH-04",
+     "LIV-02",
+     "BATH-06"
+    ],
+    "raw": [
+     {
+      "id": "BATH-02",
+      "severity": "high",
+      "evidence": "Toilet has no grab bars or support frame on either side; nearest wall is bare and the tub grab bar is far out of reach for sit-to-stand transfers.",
+      "box": [
+       770,
+       460,
+       1180,
+       896
+      ]
+     },
+     {
+      "id": "BATH-05",
+      "severity": "high",
+      "evidence": "High-walled one-piece tub/shower surround requires a tall step-over into the tub with no transfer bench or tub-side step; difficult with a walker after hip/knee surgery.",
+      "box": [
+       230,
+       430,
+       850,
+       860
+      ]
+     },
+     {
+      "id": "BATH-04",
+      "severity": "medium",
+      "evidence": "Glossy acrylic tub floor with only a small molded tread strip; wet surface is slippery and no non-slip mat or full-coverage treads are in place.",
+      "box": [
+       268,
+       620,
+       800,
+       830
+      ]
+     },
+     {
+      "id": "LIV-02",
+      "severity": "medium",
+      "evidence": "Radio power cord runs from the window sill down the wall behind/beside the toilet toward the floor, creating a trip/snag point in the walking area.",
+      "box": [
+       960,
+       320,
+       1060,
+       640
+      ]
+     },
+     {
+      "id": "BATH-06",
+      "severity": "low",
+      "evidence": "Standard-height (non comfort-height) toilet bowl makes rising harder after hip or knee replacement, with no raised seat installed.",
+      "box": [
+       778,
+       620,
+       1030,
+       896
       ]
      }
     ]
@@ -22604,10 +26714,6 @@
       ]
      }
     ]
-   },
-   "grok-4.6": {
-    "pred": [],
-    "raw": []
    },
    "kimi-k3": {
     "pred": [
@@ -23017,6 +27123,36 @@
    }
   },
   "bedroom-base0": {
+   "claude-fable-5.1": {
+    "pred": [
+     "BED-05",
+     "BED-03"
+    ],
+    "raw": [
+     {
+      "id": "BED-05",
+      "severity": "low",
+      "evidence": "Wooden chair wedged between nightstand and window wall on the far side of the bed leaves only a narrow gap between bed and chair; a walker cannot pass or turn on that side, so all transfers must be from the near side only",
+      "box": [
+       1130,
+       210,
+       1370,
+       380
+      ]
+     },
+     {
+      "id": "BED-03",
+      "severity": "low",
+      "evidence": "Hallway leading from the bedroom toward the rest of the house is dim, lit only by a small plug-in night light near the doorway; distant hallway floor is in shadow",
+      "box": [
+       130,
+       0,
+       460,
+       560
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "BED-05",
@@ -23055,6 +27191,72 @@
        0,
        1000,
        1000
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "BED-01",
+     "BED-04",
+     "BED-03",
+     "LIV-03",
+     "BED-05"
+    ],
+    "raw": [
+     {
+      "id": "BED-01",
+      "severity": "medium",
+      "evidence": "Bed sits on a tall box spring and frame, making the mattress top high for safe sit-to-stand transfers with a walker",
+      "box": [
+       630,
+       190,
+       1500,
+       900
+      ]
+     },
+     {
+      "id": "BED-04",
+      "severity": "low",
+      "evidence": "Quilt/bedspread hangs down and pools on the carpet at the foot and side of the bed, creating a trip/snag hazard for a walker",
+      "box": [
+       1040,
+       640,
+       1500,
+       1000
+      ]
+     },
+     {
+      "id": "BED-03",
+      "severity": "medium",
+      "evidence": "Hallway leading out of the bedroom toward the bathroom is dim, lit only by a small plug-in nightlight; overhead/bedside lamp is off",
+      "box": [
+       170,
+       0,
+       560,
+       700
+      ]
+     },
+     {
+      "id": "LIV-03",
+      "severity": "medium",
+      "evidence": "Wooden dresser sits immediately beside the doorway and the bedroom door swings into the exit path, narrowing the route a walker must pass through",
+      "box": [
+       0,
+       370,
+       250,
+       1010
+      ]
+     },
+     {
+      "id": "BED-05",
+      "severity": "low",
+      "evidence": "Nightstand, chair and window wall crowd the far side of the bed, leaving limited turning space for a walker around the bed",
+      "box": [
+       1120,
+       200,
+       1420,
+       400
       ]
      }
     ]
@@ -23606,6 +27808,36 @@
    }
   },
   "kitchen-base0": {
+   "claude-fable-5.1": {
+    "pred": [
+     "KIT-02",
+     "LIV-06"
+    ],
+    "raw": [
+     {
+      "id": "KIT-02",
+      "severity": "medium",
+      "evidence": "Stacks of plates and bowls stored on open shelves near floor level on the right, requiring bending/squatting to retrieve everyday dishware",
+      "box": [
+       800,
+       590,
+       1000,
+       1000
+      ]
+     },
+     {
+      "id": "LIV-06",
+      "severity": "low",
+      "evidence": "Wood transition strip at doorway between vinyl kitchen floor and carpeted room, small unmarked level change where a walker could catch",
+      "box": [
+       1060,
+       560,
+       1210,
+       690
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "KIT-01",
@@ -23644,6 +27876,60 @@
        400,
        1000,
        1000
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "KIT-01",
+     "KIT-02",
+     "KIT-04",
+     "LIV-05"
+    ],
+    "raw": [
+     {
+      "id": "KIT-01",
+      "severity": "medium",
+      "evidence": "Upper wall cabinets above the counter and sink require reaching overhead; everyday dishes/food likely stored there, unsafe while using a walker",
+      "box": [
+       196,
+       0,
+       1098,
+       196
+      ]
+     },
+     {
+      "id": "KIT-02",
+      "severity": "medium",
+      "evidence": "Plates, bowls and serving dishes stored on very low open shelves (near floor level) on the right, requiring deep bending after hip/knee surgery",
+      "box": [
+       1225,
+       420,
+       1536,
+       1024
+      ]
+     },
+     {
+      "id": "KIT-04",
+      "severity": "medium",
+      "evidence": "Glossy vinyl tile floor in front of the sink, stove and dishwasher shows reflective sheen; wet spots from sink would be very slippery for a walker",
+      "box": [
+       300,
+       560,
+       1120,
+       950
+      ]
+     },
+     {
+      "id": "LIV-05",
+      "severity": "low",
+      "evidence": "Strong window backlight over the sink with reflective glare on the polished floor, reducing visibility of the walking surface",
+      "box": [
+       330,
+       560,
+       900,
+       1010
       ]
      }
     ]
@@ -23845,10 +28131,6 @@
       ]
      }
     ]
-   },
-   "grok-4.6": {
-    "pred": [],
-    "raw": []
    },
    "kimi-k3": {
     "pred": [
@@ -24167,6 +28449,24 @@
    }
   },
   "bathroom-base1-BATH-04": {
+   "claude-fable-5.1": {
+    "pred": [
+     "BATH-04"
+    ],
+    "raw": [
+     {
+      "id": "BATH-04",
+      "severity": "medium",
+      "evidence": "Smooth white tub floor with no visible non-slip mat or adhesive strips; wet surface will be slippery during transfers onto/off the bench",
+      "box": [
+       235,
+       565,
+       685,
+       880
+      ]
+     }
+    ]
+   },
    "claude-haiku-4.5": {
     "pred": [
      "BATH-02",
@@ -24229,6 +28529,36 @@
        200,
        900,
        600
+      ]
+     }
+    ]
+   },
+   "claude-opus-5": {
+    "pred": [
+     "BATH-04",
+     "BATH-05"
+    ],
+    "raw": [
+     {
+      "id": "BATH-04",
+      "severity": "high",
+      "evidence": "The tub/shower floor is a bare, smooth white fiberglass surface with no non-slip mat or adhesive traction strips visible.",
+      "box": [
+       360,
+       470,
+       920,
+       780
+      ]
+     },
+     {
+      "id": "BATH-05",
+      "severity": "medium",
+      "evidence": "Standard-height tub wall must be stepped over to enter; the seat inside the tub is a freestanding shower chair, not a transfer bench spanning the tub rim, so a walker user must lift each leg over the high tub edge.",
+      "box": [
+       340,
+       480,
+       960,
+       900
       ]
      }
     ]
@@ -24720,336 +29050,6 @@
    "qwen3-vl": {
     "pred": [],
     "raw": []
-   }
-  },
-  "bathroom-base0-BATH-03": {
-   "gemma-3-27b": {
-    "pred": [
-     "BATH-04",
-     "BATH-05",
-     "BATH-06",
-     "BATH-08"
-    ],
-    "raw": [
-     {
-      "id": "BATH-04",
-      "severity": "medium",
-      "evidence": "Tub/shower floor appears smooth and potentially slippery when wet.",
-      "box": [
-       150,
-       150,
-       550,
-       500
-      ]
-     },
-     {
-      "id": "BATH-05",
-      "severity": "high",
-      "evidence": "High tub step-over without a safe transfer aid despite the presence of a shower seat.",
-      "box": [
-       150,
-       150,
-       550,
-       500
-      ]
-     },
-     {
-      "id": "BATH-06",
-      "severity": "low",
-      "evidence": "Standard toilet seat height may be too low for comfortable and safe transfers after hip/knee replacement.",
-      "box": [
-       600,
-       400,
-       900,
-       700
-      ]
-     },
-     {
-      "id": "BATH-08",
-      "severity": "low",
-      "evidence": "While a shower seat is present, a handheld showerhead would improve safety and independence.",
-      "box": [
-       200,
-       200,
-       500,
-       400
-      ]
-     }
-    ]
-   },
-   "grok-4.6": {
-    "pred": [],
-    "raw": []
-   },
-   "mistral-large-3": {
-    "pred": [
-     "BATH-01",
-     "BATH-02",
-     "BATH-04",
-     "BATH-05",
-     "BATH-06",
-     "BATH-07",
-     "BATH-08"
-    ],
-    "raw": [
-     {
-      "id": "BATH-01",
-      "severity": "high",
-      "evidence": "No grab bar at tub/shower",
-      "box": [
-       100,
-       150,
-       500,
-       400
-      ]
-     },
-     {
-      "id": "BATH-02",
-      "severity": "high",
-      "evidence": "No support (grab bar) at toilet",
-      "box": [
-       650,
-       250,
-       900,
-       600
-      ]
-     },
-     {
-      "id": "BATH-04",
-      "severity": "medium",
-      "evidence": "Slippery tub/shower floor (no visible non-slip mat or surface)",
-      "box": [
-       100,
-       300,
-       500,
-       500
-      ]
-     },
-     {
-      "id": "BATH-05",
-      "severity": "high",
-      "evidence": "High tub step-over without transfer aid",
-      "box": [
-       100,
-       300,
-       500,
-       400
-      ]
-     },
-     {
-      "id": "BATH-06",
-      "severity": "medium",
-      "evidence": "Low toilet seat (visible standard height, may be difficult for post-surgery use)",
-      "box": [
-       650,
-       350,
-       850,
-       600
-      ]
-     },
-     {
-      "id": "BATH-07",
-      "severity": "low",
-      "evidence": "Towel hanging loosely near tub could be grabbed inadvertently, posing a risk if pulled",
-      "box": [
-       0,
-       100,
-       150,
-       600
-      ]
-     },
-     {
-      "id": "BATH-08",
-      "severity": "low",
-      "evidence": "No handheld shower visible, though a shower seat is present",
-      "box": [
-       300,
-       100,
-       400,
-       250
-      ]
-     }
-    ]
-   },
-   "nemotron-nano-vl": {
-    "pred": [
-     "BATH-01",
-     "BATH-02",
-     "BATH-03",
-     "BATH-04",
-     "BATH-05",
-     "BATH-06",
-     "BATH-08",
-     "KIT-03",
-     "LIV-02",
-     "LIV-05"
-    ],
-    "raw": [
-     {
-      "id": "BATH-01",
-      "severity": "high",
-      "evidence": "No grab bar at tub/shower",
-      "box": [
-       150,
-       335,
-       620,
-       465
-      ]
-     },
-     {
-      "id": "BATH-02",
-      "severity": "high",
-      "evidence": "No support at toilet",
-      "box": [
-       640,
-       540,
-       940,
-       999
-      ]
-     },
-     {
-      "id": "BATH-03",
-      "severity": "medium",
-      "evidence": "Non-load-rated fixture positioned as support (shower chair)",
-      "box": [
-       440,
-       465,
-       620,
-       740
-      ]
-     },
-     {
-      "id": "BATH-04",
-      "severity": "high",
-      "evidence": "Slippery tub/shower floor",
-      "box": [
-       200,
-       700,
-       680,
-       800
-      ]
-     },
-     {
-      "id": "BATH-05",
-      "severity": "high",
-      "evidence": "High tub step-over without transfer aid",
-      "box": [
-       200,
-       600,
-       680,
-       700
-      ]
-     },
-     {
-      "id": "BATH-06",
-      "severity": "medium",
-      "evidence": "Low toilet seat",
-      "box": [
-       640,
-       540,
-       940,
-       999
-      ]
-     },
-     {
-      "id": "BATH-08",
-      "severity": "medium",
-      "evidence": "No handheld shower",
-      "box": [
-       520,
-       10,
-       640,
-       380
-      ]
-     },
-     {
-      "id": "KIT-03",
-      "severity": "medium",
-      "evidence": "Unstable step stool or chair used for reaching (shower chair)",
-      "box": [
-       440,
-       465,
-       620,
-       740
-      ]
-     },
-     {
-      "id": "LIV-02",
-      "severity": "medium",
-      "evidence": "Cords or wires across walkway",
-      "box": [
-       800,
-       340,
-       850,
-       540
-      ]
-     },
-     {
-      "id": "LIV-05",
-      "severity": "medium",
-      "evidence": "Poor lighting or glare",
-      "box": [
-       800,
-       0,
-       1000,
-       380
-      ]
-     }
-    ]
-   },
-   "qwen3-vl": {
-    "pred": [
-     "BATH-04",
-     "BATH-05",
-     "BATH-06",
-     "LIV-02"
-    ],
-    "raw": [
-     {
-      "id": "BATH-04",
-      "severity": "medium",
-      "evidence": "The tub floor has a textured, ribbed surface, but no non-slip mat or coating is visible, posing a slip risk when wet.",
-      "box": [
-       214,
-       688,
-       675,
-       820
-      ]
-     },
-     {
-      "id": "BATH-05",
-      "severity": "high",
-      "evidence": "The tub has a high step-over edge without a transfer bench or other aid to assist with safe entry/exit.",
-      "box": [
-       206,
-       670,
-       675,
-       999
-      ]
-     },
-     {
-      "id": "BATH-06",
-      "severity": "medium",
-      "evidence": "The toilet seat appears to be standard height, which may be too low for safe sitting and standing for someone recovering from hip or knee surgery.",
-      "box": [
-       647,
-       540,
-       978,
-       999
-      ]
-     },
-     {
-      "id": "LIV-02",
-      "severity": "medium",
-      "evidence": "A black electrical cord runs from the radio on the windowsill down the wall and across the floor near the toilet, creating a tripping hazard.",
-      "box": [
-       840,
-       356,
-       878,
-       500
-      ]
-     }
-    ]
    }
   }
  },
