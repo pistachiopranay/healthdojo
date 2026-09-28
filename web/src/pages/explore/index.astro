@@ -1,0 +1,141 @@
+---
+import Base from "../../layouts/Base.astro";
+import { worlds, walks } from "../../lib/data";
+
+const W = worlds();
+const traced = new Set(Object.keys(walks().worlds || {}));
+const replays = [
+  { video: "gpt-5.6-sol-bathroom", model: "gpt-5.6-sol", name: "GPT-5.6 Sol", scene: "bathroom-base0-BATH-07", room: "Bathroom", hz: "BATH-07", tag: "miss", tagL: "Missed",
+    text: "<b>Bathroom miss:</b> the model looks toward a loose bath mat but flags support fixtures instead." },
+  { video: "kimi-k3-bedroom", model: "kimi-k3", name: "Kimi K3", scene: "bedroom-base1-BED-04", room: "Bedroom", hz: "BED-04", tag: "hit", tagL: "Found",
+    text: "<b>Bedroom find:</b> the model identifies floor clutter beside the bed." },
+  { video: "nova-pro-stairs", model: "nova-pro", name: "Nova Pro", scene: "stairs-base0-STAIR-03", room: "Stairs", hz: "STAIR-03", tag: "miss", tagL: "Stuck",
+    text: "<b>Staircase loop:</b> the model repeatedly flags an off-target spot and misses the seeded stair hazard." },
+];
+const [lead, ...rest] = replays;
+---
+<Base title="Explore · HealthDojo" description="Watch a model inspect a synthetic room, then open a selected world yourself." active="Explore">
+  <section class="head">
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hd-eyebrow lime">Explore</div>
+      <h1>Recorded runs and selected 3D worlds</h1>
+      <p class="lede">Watch a model inspect a synthetic room, then open a selected world yourself. Saved replays show where it turned, what it flagged, and what it missed. They illustrate specific runs, not performance across the full photo benchmark.</p>
+    </div>
+  </section>
+
+  <section class="sec first" id="replays">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="hd-eyebrow">01 · Recorded runs</div><h2>Watch recorded runs</h2></div>
+        <p>These are recordings, not a live model service. Open a trace to see the model's actions beside the intended hazard.</p>
+      </div>
+      <div class="lead">
+        <video src={`/videos/${lead.video}.mp4`} poster={`/videos/${lead.video}.jpg`} controls preload="metadata" playsinline></video>
+        <div class="cap">
+          <div class="tags"><span class={`hd-tag ${lead.tag}`}>{lead.tagL}</span><span class="hd-tag">{lead.name} · {lead.room} · {lead.hz}</span></div>
+          <p set:html={lead.text} />
+          <div class="links"><a href={`/explore/walk?w=${lead.scene}&m=${lead.model}`}>Open the trace →</a><a href={`/explore/world?id=${lead.scene}`}>Walk this world →</a></div>
+        </div>
+      </div>
+      <div class="pair">
+        {rest.map(r => (
+          <article>
+            <video src={`/videos/${r.video}.mp4`} poster={`/videos/${r.video}.jpg`} controls preload="metadata" playsinline></video>
+            <div class="cap">
+              <div class="tags"><span class={`hd-tag ${r.tag}`}>{r.tagL}</span><span class="hd-tag">{r.name} · {r.room} · {r.hz}</span></div>
+              <p set:html={r.text} />
+              <div class="links"><a href={`/explore/walk?w=${r.scene}&m=${r.model}`}>Open the trace →</a><a href={`/explore/world?id=${r.scene}`}>Walk this world →</a></div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="worlds">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="hd-eyebrow">02 · Selected worlds · {W.length}</div><h2>Walk a selected world</h2></div>
+        <p>Open a browser-based 3D room to inspect a hazard from another angle. These are selected reconstructions based on synthetic scenes, not identical copies of every benchmark image. The photo leaderboard is scored separately.</p>
+      </div>
+      <div class="worlds">
+        {W.map(w => (
+          <article class="w">
+            <a class="thumb" href={`/explore/world?id=${w.id}`}>
+              <img src={w.thumb} alt={w.title} loading="lazy" />
+              <span class="hd-tag">{w.bench === "dementia" ? "DementiaBench" : "HomeBench"}</span>
+            </a>
+            <div class="meta">
+              <div class="t">{w.title}</div>
+              <div class="h hd-num">{w.hazard_id} · {w.hazard_name}</div>
+              <div class="wl">
+                <a href={`/explore/world?id=${w.id}`}>Walk in 3D →</a>
+                {traced.has(w.id) && <a href={`/explore/walk?w=${w.id}`} class="tr">Model traces</a>}
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="walk">
+    <div class="wrap">
+      <a class="walkcard" href="/explore/walk">
+        <div>
+          <div class="hd-eyebrow">03 · Walk mode</div>
+          <h2>Step-by-step traces</h2>
+          <p>Where a saved model trace exists, open it for that world to compare the model's actions with the seeded target. Traces cover {traced.size} of the {W.length} selected worlds.</p>
+        </div>
+        <span class="go">Open walk mode →</span>
+      </a>
+      <p class="tail">Want to inspect the underlying evidence? Start with the <a href="/results/">results</a> or browse the <a href="https://github.com/pistachiopranay/healthdojo">code and data</a>.</p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .head { position: relative; overflow: hidden; padding: 72px 0 8px; }
+  .grid-bg { position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(to right, #ffffff0c 1px, transparent 1px), linear-gradient(to bottom, #ffffff0c 1px, transparent 1px); background-size: 56px 56px; mask-image: radial-gradient(ellipse 60% 90% at 20% 0%, #000 20%, transparent 70%); -webkit-mask-image: radial-gradient(ellipse 60% 90% at 20% 0%, #000 20%, transparent 70%); }
+  .head .wrap { position: relative; }
+  h1 { font: 600 clamp(34px, 5vw, 56px)/1.05 var(--hd-sans); letter-spacing: -.04em; margin: 14px 0 0; max-width: 18ch; }
+  .lede { color: var(--hd-fg-2); font-size: 17px; max-width: 62ch; margin: 18px 0 0; }
+  .sec.first { padding-top: 64px; }
+  .lead { display: grid; grid-template-columns: 1.7fr 1fr; border: 1px solid var(--hd-line); border-radius: var(--hd-radius); overflow: hidden; background: var(--hd-bg-1); }
+  video { width: 100%; display: block; background: #000; aspect-ratio: 16/9; }
+  .cap { padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+  .lead .cap { border-left: 1px solid var(--hd-line); padding: 24px; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; }
+  .cap p { margin: 0; color: var(--hd-fg-2); font-size: 15px; line-height: 1.6; }
+  .cap p :global(b) { color: var(--hd-fg); font-weight: 500; }
+  .links { display: flex; gap: 16px; flex-wrap: wrap; margin-top: auto; }
+  .links a { color: var(--hd-lime); text-decoration: none; font-size: 14px; }
+  .links a + a { color: var(--hd-fg-2); }
+  .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+  .pair article { border: 1px solid var(--hd-line); border-radius: var(--hd-radius); overflow: hidden; background: var(--hd-bg-1); display: flex; flex-direction: column; }
+  .pair .cap { flex: 1; }
+  .worlds { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; }
+  .w { border: 1px solid var(--hd-line); border-radius: var(--hd-radius); overflow: hidden; background: var(--hd-bg-1); transition: border-color .15s; }
+  .w:hover { border-color: #d5fd5155; }
+  .thumb { display: block; position: relative; aspect-ratio: 16/9; background: #000; }
+  .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .thumb .hd-tag { position: absolute; left: 8px; top: 8px; background: #0a0a0bcc; backdrop-filter: blur(6px); }
+  .meta { padding: 12px 14px 14px; }
+  .t { font-weight: 500; font-size: 14.5px; }
+  .h { font-size: 11.5px; color: var(--hd-fg-3); margin-top: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .wl { display: flex; gap: 14px; margin-top: 12px; font-size: 13px; }
+  .wl a { color: var(--hd-lime); text-decoration: none; }
+  .wl a.tr { color: var(--hd-fg-2); }
+  .walkcard { display: flex; justify-content: space-between; align-items: center; gap: 24px; flex-wrap: wrap; text-decoration: none; color: inherit; border: 1px solid var(--hd-line); border-radius: 14px; padding: 32px; background: radial-gradient(500px 200px at 0% 0%, #d5fd510f, transparent), var(--hd-bg-1); }
+  .walkcard:hover { border-color: #d5fd5155; }
+  .walkcard h2 { font: 600 28px/1.15 var(--hd-sans); letter-spacing: -.03em; margin: 10px 0 8px; }
+  .walkcard p { margin: 0; color: var(--hd-fg-2); max-width: 60ch; }
+  .go { color: var(--hd-lime); font-weight: 500; white-space: nowrap; }
+  .tail { color: var(--hd-fg-2); margin-top: 28px; font-size: 15px; }
+  .tail a { color: var(--hd-lime); }
+  @media (max-width: 900px) {
+    .lead, .pair { grid-template-columns: 1fr; }
+    .lead .cap { border-left: 0; border-top: 1px solid var(--hd-line); }
+  }
+</style>
