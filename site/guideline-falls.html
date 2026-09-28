@@ -451,7 +451,7 @@ section.sec{padding:48px 0 8px}.sec-head{margin-bottom:18px}.sec-head p{font-siz
   <p>Left: the guideline as published, line by line. Right: the rubric compiled from it. Hover a row to see the exact line it comes from.</p></div>
   <div class="bleed" style="--bd:url(art/bg-bedroom.jpg);padding:48px 0 56px"><div class="gr">
     <div class="card appwin gpanel"><div class="gh"><b>Source text</b><a id="glink" class="note" style="text-decoration:none;color:var(--green-ink)" target="_blank" rel="noopener">Open original ↗</a></div><div class="lines" id="lines"></div></div>
-    <div id="rubric"><div class="rtop"><div class="note" id="rsum"></div><span class="appr" id="apprAll">Awaiting clinician</span></div><div class="card appwin" id="rows"></div><div class="note" id="icdnote" style="margin-top:12px"></div></div>
+    <div id="rubric"><div class="rtop"><div class="note" id="rsum"></div><span class="appr" id="apprAll">Draft</span></div><div class="card appwin" id="rows"></div><div class="note" id="icdnote" style="margin-top:12px"></div></div>
   </div></div>
 </div></section>
 
@@ -515,7 +515,7 @@ $("#rows").innerHTML=RUB.map(r=>`<div class="rrow" data-id="${esc(r.id)}" data-l
   <div><div class="nm"><code>${esc(r.id)}</code>${esc(r.name)}</div>
   <div class="meta">${r.room?`<span class="tchip room">${esc(r.room)}</span>`:""}${r.type?`<span class="tchip">${esc(TYPELBL[r.type]||r.type)}</span>`:""}${r.icd?`<span class="tchip icd" title="${esc(r.icd.title||"")}">ICD-10-CM ${esc(r.icd.code)}</span>`:""}${r.severity?`<span class="sev ${esc(String(r.severity).toLowerCase())}">${esc(String(r.severity).replace(/\s*\(.*$/,""))} severity</span>`:""}</div>
   ${r.modifier?`<div class="mod"><b>${modLabel}:</b> ${esc(r.modifier)}</div>`:""}</div>
-  <span class="appr" data-ok="${r.approved===false?0:1}">Awaiting clinician</span>
+  <span class="appr" data-ok="${r.approved===false?0:1}">Draft</span>
   ${r.citation?`<div class="q"><span class="lref ${r.line==null?"none":""}">${r.line==null?"cited":"line "+(r.line+1)}</span><span>“${esc(r.citation)}”</span></div>`:""}
 </div>`).join("")||'<div class="note" style="padding:22px">Rubric generating…</div>';
 if(RUB.some(r=>r.icd))$("#icdnote").innerHTML="ICD-10-CM codes: approximate mapping to fall mechanism; not coder-verified. Provenance chain: image → edit → rubric row → guideline line → standard code.";
@@ -528,11 +528,11 @@ function hl(line,on){
 }
 $$(".rrow").forEach(r=>{r.onmouseenter=()=>hl(r.dataset.l,1);r.onmouseleave=()=>hl(null,0)});
 $$(".ln").forEach(l=>{l.onmouseenter=()=>hl(l.dataset.l,1);l.onmouseleave=()=>hl(null,0)});
-// clinician approval: rows settle gold -> green as they come into view
+// source citation: rows settle gold -> green as they come into view
 const aio=new IntersectionObserver(es=>{if(!es.some(e=>e.isIntersecting))return;aio.disconnect();
-  $$(".rrow .appr").forEach((a,k)=>{if(a.dataset.ok==="1")setTimeout(()=>{a.classList.add("ok");a.textContent="Clinician approved";updAll()},400+k*90)})},{threshold:0,rootMargin:"0px 0px -35% 0px"});
+  $$(".rrow .appr").forEach((a,k)=>{if(a.dataset.ok==="1")setTimeout(()=>{a.classList.add("ok");a.textContent="Source cited";updAll()},400+k*90)})},{threshold:0,rootMargin:"0px 0px -35% 0px"});
 aio.observe($("#rows"));
-function updAll(){const n=$$(".rrow .appr.ok").length,t=RUB.filter(r=>r.approved!==false).length;const a=$("#apprAll");a.textContent=n>=t&&t?`Clinician approved · ${t}/${RUB.length}`:`Clinician review · ${n}/${RUB.length} approved`;a.classList.toggle("ok",n>=t&&t>0)}
+function updAll(){const n=$$(".rrow .appr.ok").length,t=RUB.filter(r=>r.approved!==false).length;const a=$("#apprAll");a.textContent=n>=t&&t?`Guideline-cited · ${t}/${RUB.length} · clinician review pending`:`Citing sources · ${n}/${RUB.length}`;a.classList.toggle("ok",n>=t&&t>0)}
 updAll();
 
 // ---------- curriculum ----------
