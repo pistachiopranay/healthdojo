@@ -5,9 +5,9 @@ import starlightThemeBlack from "starlight-theme-black";
 
 const NAV = [
   { label: "Overview", link: "/" },
-  { label: "Results", link: "/results/" },
-  { label: "Method", link: "/method/" },
+  { label: "How it works", link: "/method/" },
   { label: "Explore", link: "/explore/" },
+  { label: "Early results", link: "/results/" },
 ];
 
 export default defineConfig({
@@ -23,18 +23,18 @@ export default defineConfig({
       description: "An open, synthetic benchmark prototype for how vision models spot fall and dementia hazards in homes.",
       social: [{ icon: "github", label: "GitHub", href: "https://github.com/pistachiopranay/healthdojo" }],
       sidebar: [
-        { label: "Results", items: [
+        { label: "How it works", items: [
+          { label: "From guidance to a test", link: "/method/#from-guidance-to-a-test" },
+          { label: "Rubric browser", link: "/method/#rubric-browser" },
+          { label: "Difficulty levels", link: "/method/#five-difficulty-levels" },
+          { label: "Limits", link: "/method/#limits" },
+        ] },
+        { label: "Early results", items: [
           { label: "Leaderboard", link: "/results/#leaderboard" },
           { label: "Difficulty curve", link: "/results/#difficulty-curve" },
           { label: "Hardest hazards", link: "/results/#hardest-hazards-in-this-sample" },
           { label: "Heatmaps", link: "/results/#heatmaps" },
           { label: "Open any room", link: "/results/#open-any-room" },
-        ] },
-        { label: "Method", items: [
-          { label: "From guidance to a test", link: "/method/#from-guidance-to-a-test" },
-          { label: "Rubric browser", link: "/method/#rubric-browser" },
-          { label: "Difficulty levels", link: "/method/#five-difficulty-levels" },
-          { label: "Limits", link: "/method/#limits" },
         ] },
         { label: "Elsewhere", items: [
           { label: "Overview", link: "/" },

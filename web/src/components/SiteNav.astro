@@ -1,6 +1,6 @@
 ---
 const { active = "" } = Astro.props;
-const links = [["Overview", "/"], ["Results", "/results/"], ["Method", "/method/"], ["Explore", "/explore/"]];
+const links = [["Overview", "/"], ["How it works", "/method/"], ["Explore", "/explore/"], ["Early results", "/results/"]];
 ---
 <header class="nav">
   <div class="in">
@@ -29,7 +29,11 @@ const links = [["Overview", "/"], ["Results", "/results/"], ["Method", "/method/
     .in { gap: 10px; padding: 0 14px; }
     .logo { font-size: 0; gap: 0; }
     .logo .mark { width: 12px; height: 12px; }
-    nav a { padding: 7px 8px; font-size: 13.5px; }
+    nav { flex: 1; min-width: 0; overflow-x: auto; scrollbar-width: none; }
+    nav::-webkit-scrollbar { display: none; }
+    nav a { padding: 7px 7px; font-size: 13px; white-space: nowrap; }
+    nav a:first-child { display: none; }
+    .gh { margin-left: 0; }
     .gh span { display: none; }
     .gh { padding: 7px 9px; }
   }

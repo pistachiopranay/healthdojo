@@ -1,11 +1,23 @@
 ---
 import Base from "../layouts/Base.astro";
-import Leaderboard from "../components/Leaderboard.astro";
-import Pipeline from "../components/Pipeline.astro";
-import { benches, sceneHits, worlds, curriculum, walks } from "../lib/data";
+import { benches, sceneHits, worlds, curriculum, walks, candidates, COVERAGE_MIN } from "../lib/data";
 import { boxStyle } from "../lib/fmt";
 
 const { homebench: HB } = benches();
+const falls = curriculum("falls");
+const W = walks();
+
+// ---- the pipeline, following one hazard (STAIR-03, objects on stairs) through every stage ----
+const P_ID = "stairs-base0-STAIR-03";
+const pScene = HB.scenes.find(s => s.id === P_ID)!;
+const pBox = boxStyle(pScene.hazards[0].box);
+const pRow = falls.rubric.find((r: any) => r.id === "STAIR-03");
+const pHits = sceneHits(HB, P_ID);
+const walkRuns = W.runs.filter((r: any) => r.scene === P_ID);
+const walkFound = walkRuns.filter((r: any) => r.metrics.found);
+const sonnet = walkRuns.find((r: any) => r.model === "claude-sonnet-5");
+
+// ---- one example finding: STAIR-02 ----
 const FEATURE = "stairs-base1-STAIR-02";
 const scene = HB.scenes.find(s => s.id === FEATURE)!;
 const base = HB.scenes.find(s => s.id === scene.base)!;
@@ -13,54 +25,145 @@ const hits = sceneHits(HB, FEATURE).sort((a, b) => Number(b.hit) - Number(a.hit)
 const found = hits.filter(h => h.hit);
 const missed = hits.filter(h => !h.hit);
 const gtBox = boxStyle(scene.hazards[0].box);
+
 const edits = HB.scenes.filter(s => s.kind === "edit").length;
 const bases = HB.scenes.length - edits;
 const nWorlds = worlds().length;
-const nRubric = curriculum("falls").rubric.length;
-const walkBudget = walks().budget;
-// a short quote of what a model that found it said, and what one that missed it flagged instead
-const hitSay = found.find(h => h.model === "claude-sonnet-5") || found[0];
-const hitEv = hitSay?.raw.find((r: any) => r.id === "STAIR-02")?.evidence;
-const missSay = missed[0];
-const missIds = (missSay?.raw || []).map((r: any) => r.id).join(", ");
-
 const stats = [
-  { n: HB.rows.length, l: "vision models", s: "in the falls benchmark" },
-  { n: HB.scenes.length, l: "scored scenes", s: `in that benchmark, including edited and clean rooms: ${edits} edits that passed the target-visibility check + ${bases} clean bases, from 47 candidates` },
-  { n: nRubric, l: "hazard types", s: "rows in the draft falls rubric, clinician review pending" },
+  { n: HB.ranked.length, l: "vision models", s: `ranked in the falls benchmark (at least ${Math.round(COVERAGE_MIN * 100)}% scene coverage)${HB.partial.length ? `; ${HB.partial.length} more with partial coverage, not ranked` : ""}` },
+  { n: HB.scenes.length, l: "scored scenes", s: `in that benchmark, including edited and clean rooms: ${edits} edits that passed the target-visibility check + ${bases} clean bases, from ${candidates("homebench")} candidates` },
+  { n: falls.rubric.length, l: "hazard types", s: "rows in the draft falls rubric, clinician review pending" },
   { n: nWorlds, l: "selected walkable worlds", s: "built from synthetic scenes" },
 ];
 ---
-<Base title="HealthDojo: the flight simulator for home-health AI" description="HealthDojo is an open prototype for testing how vision models judge home hazards. Synthetic scenes, draft rubrics, open results." active="Overview">
-  <!-- HERO -->
+<Base title="HealthDojo: a pre-clinical test ground for home-health AI" description="How do we test a home-health AI before anyone relies on it in a patient's home? HealthDojo combines synthetic safety scenes, walkable worlds, and traces showing what vision models look at, flag, or miss." active="Overview">
+  <!-- HERO: the idea -->
   <section class="hero">
     <div class="grid-bg" aria-hidden="true"></div>
     <div class="glow" aria-hidden="true"></div>
     <div class="wrap hero-in">
-      <a class="pill" href="/method/#limits"><span class="dot"></span>Open synthetic benchmark prototype<span class="sep"></span><span class="hd-dim">read the limits</span> →</a>
+      <a class="pill" href="/method/"><span class="dot"></span>A pre-clinical test ground for home-health AI<span class="sep"></span><span class="hd-dim">open prototype</span> →</a>
       <h1>The flight simulator<br /><span>for home-health AI</span></h1>
-      <p class="lede">HealthDojo is an open prototype for testing how vision models judge home hazards. Published guidance becomes a draft rubric; we seed a hazard into a synthetic room, check the edit, and score what models report. The first themes are falls after surgery and dementia home safety.</p>
+      <p class="lede">How do we test a home-health AI before anyone relies on it in a patient's home? HealthDojo combines synthetic safety scenes, walkable worlds, and traces showing what vision models look at, flag, or miss. Clinician review and real-home studies remain necessary before clinical claims.</p>
       <div class="ctas">
-        <a class="hd-btn primary" href="/results/">See results</a>
+        <a class="hd-btn primary" href="/explore/">Explore the worlds</a>
+        <a class="hd-btn" href="/results/">See early results</a>
         <a class="hd-btn" href="/method/">Read the method</a>
         <a class="hd-btn ghost" href="https://github.com/pistachiopranay/healthdojo">View the code and data ↗</a>
       </div>
     </div>
 
-    <!-- FEATURED SCENE -->
+    <!-- live splat world window -->
     <div class="wrap">
-      <div class="feature">
+      <div class="world" id="w3">
         <div class="fglow" aria-hidden="true"></div>
         <div class="fwin">
           <div class="fbar">
             <span class="dots"><i></i><i></i><i></i></span>
-            <span class="hd-num path">HomeBench / stairs / {FEATURE}</span>
+            <span class="hd-num path">3D world · Gaussian splat · {P_ID}</span>
+            <a class="open" href={`/explore/world?id=${P_ID}`}>Walk it yourself →</a>
+          </div>
+          <div class="stage">
+            <img class="poster" src="/home/pano-stairs-base0-STAIR-03.jpg" alt="Panorama of the synthetic cluttered-staircase world" />
+            <iframe id="w3f" data-src={`/explore/world?id=${P_ID}&autopilot=1&embed=1&capext=1`} title="Live 3D walkthrough of a synthetic staircase" tabindex="-1"></iframe>
+            <div class="scrim" aria-hidden="true"></div>
+            <div class="cap"><i></i><span id="w3cap">Cluttered staircase · objects on the treads</span></div>
+            <div class="badge hd-num">synthetic · selected world</div>
+          </div>
+        </div>
+        <p class="wnote">A selected world, expanded from a synthetic image with World Labs Marble into a walkable Gaussian-splat world. Recorded model walks use panoramic views from those worlds; this viewer does not score models.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS: one hazard through the pipeline -->
+  <section class="sec" id="how">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="hd-eyebrow">The loop · one hazard, followed through</div><h2>From a guideline line to a model test</h2></div>
+        <p>Follow one hazard, objects left on the stairs, from published guidance to a model walking the room. The rubric awaits OT/PT review, and the checks are automated.</p>
+      </div>
+      <ol class="flow">
+        <li>
+          <div class="k hd-num">01 · Guideline</div>
+          <div class="art doc">
+            <div class="org hd-num">CDC STEADI · Check for Safety</div>
+            <p>{pRow?.citation?.line?.split(";")[0]}; …</p>
+            <span class="hd-dim small">summary of source guidance</span>
+          </div>
+          <p>Published home-safety guidance, summarized with its source.</p>
+        </li>
+        <li>
+          <div class="k hd-num">02 · Draft rubric</div>
+          <div class="art doc">
+            <div class="row"><code class="hd-num">STAIR-03</code><span class="hd-tag miss">review pending</span></div>
+            <div class="rname">{pRow?.name}</div>
+            <dl>{Object.entries(pRow?.severity_detail || {}).map(([k, v]) => <><dt class="hd-num">{k}</dt><dd>{v as string}</dd></>)}</dl>
+          </div>
+          <p>Draft a hazard rubric from published home-safety guidance.</p>
+        </li>
+        <li>
+          <div class="k hd-num">03 · Labeled image</div>
+          <div class="art img"><div class="hd-frame"><img src={pScene.thumb} alt="Synthetic staircase with objects left on the treads" loading="lazy" />{pBox && <div class="hd-bx" style={pBox}><b>STAIR-03</b></div>}</div></div>
+          <p>Seed a hazard in a synthetic room and check its visibility.</p>
+        </li>
+        <li>
+          <div class="k hd-num">04 · 3D splat world</div>
+          <div class="art img"><a class="hd-frame" href={`/explore/world?id=${P_ID}`}><img src="/home/w3crop-stairs-base0-STAIR-03.jpg" alt="View inside the walkable 3D reconstruction of the staircase" loading="lazy" /><span class="play">Walk in 3D →</span></a></div>
+          <p>Expand selected images with World Labs Marble into walkable Gaussian-splat worlds.</p>
+        </li>
+        <li>
+          <div class="k hd-num">05 · Model test</div>
+          <div class="art img"><a class="hd-frame" href={`/explore/walk?w=${P_ID}&m=claude-sonnet-5`}><img src={`/data/walks/claude-sonnet-5/${P_ID}/step04.jpg`} alt="Claude Sonnet 5's view when it flagged the stairs" loading="lazy" /><span class="flag hd-num">FLAG STAIR-03 · step {sonnet?.metrics.steps_to_find}/{W.budget}</span></a></div>
+          <p>Compare the seeded hazard with model flags and viewpoints. Recorded model walks use panoramic views from those worlds. Here, {walkFound.length} of {walkRuns.length} recorded models flagged it within {W.budget} steps.</p>
+        </li>
+      </ol>
+      <p class="note">In the photo benchmark, {pHits.filter(h => h.hit).length} of {pHits.length} models found this particular hazard. Harder ones follow below.</p>
+    </div>
+  </section>
+
+  <!-- DROP A MODEL IN -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="hd-eyebrow">Drop a model in</div><h2>Watch a model inspect a synthetic room</h2></div>
+        <p>Saved replays show where it turned, what it flagged, and what it missed. They illustrate specific runs, not performance across the full photo benchmark.</p>
+      </div>
+      <div class="video">
+        <video src="/videos/gpt-5.6-sol-bathroom.mp4" poster="/videos/gpt-5.6-sol-bathroom.jpg" controls preload="metadata" playsinline></video>
+        <div class="vcap">
+          <span class="hd-tag miss">Missed</span><span class="hd-tag">GPT-5.6 Sol · Bathroom · BATH-07</span>
+          <p><b>Bathroom miss:</b> the model looks toward a loose bath mat but flags support fixtures instead.</p>
+          <dl class="vmeta hd-num">
+            <dt>Room</dt><dd>synthetic 360-degree capture</dd>
+            <dt>Budget</dt><dd>{W.budget} steps: turn, zoom, flag</dd>
+            <dt>Target</dt><dd>BATH-07 loose bath mat</dd>
+            <dt>Type</dt><dd>recorded replay, not live</dd>
+          </dl>
+          <a href="/explore/">More recorded runs and 3D worlds →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ONE EXAMPLE FINDING -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="hd-eyebrow">Early results</div><h2>One early finding</h2></div>
+        <p>In one synthetic staircase image, <b>{found.length} of {hits.length}</b> ranked vision models flagged a handrail that stops short. That is a single-scene finding, not an estimate of real-home accuracy. The draft rubric still awaits occupational and physical therapist review.</p>
+      </div>
+      <div class="feature">
+        <div class="fwin">
+          <div class="fbar">
+            <span class="dots"><i></i><i></i><i></i></span>
+            <span class="hd-num path">Photo benchmark / stairs / {FEATURE}</span>
             <a class="open" href={`/results/#scene=${FEATURE}`}>Open in scene browser →</a>
           </div>
           <div class="fbody">
             <figure class="fimg">
               <div class="hd-frame">
-                <img src={scene.img} alt="Synthetic staircase where the left handrail stops short near the bottom steps" width="1600" height="1200" />
+                <img src={scene.img} alt="Synthetic staircase where the left handrail stops short near the bottom steps" width="1600" height="1200" loading="lazy" />
                 {gtBox && <div class="hd-bx" style={gtBox}><b>SEEDED · STAIR-02</b></div>}
               </div>
               <figcaption>
@@ -70,7 +173,7 @@ const stats = [
             </figure>
             <div class="fside">
               <div class="hd-eyebrow lime">Example scene · one synthetic image</div>
-              <h2>Only <span class="hd-num">{found.length}</span> of <span class="hd-num">{hits.length}</span> models flagged the short handrail</h2>
+              <h2><span class="hd-num">{found.length}</span> of <span class="hd-num">{hits.length}</span> ranked models flagged the short handrail</h2>
               <div class="meter" role="img" aria-label={`${found.length} of ${hits.length} models found it`}>
                 {hits.map(h => <i class={h.hit ? "y" : "n"}></i>)}
               </div>
@@ -84,13 +187,7 @@ const stats = [
                   <ul>{missed.map(h => <li class="n">{h.name}</li>)}</ul>
                 </div>
               </div>
-              {hitEv && (
-                <div class="say">
-                  <div class="hd-eyebrow">{hitSay.name} said</div>
-                  <p>{hitEv}</p>
-                  {missSay && <div class="hd-eyebrow miss-note">{missSay.name} flagged {missIds || "nothing"} instead</div>}
-                </div>
-              )}
+              <a class="hd-btn go" href="/results/">Early results: coverage, heatmaps, every scene →</a>
             </div>
           </div>
         </div>
@@ -102,8 +199,7 @@ const stats = [
   <section class="sec">
     <div class="wrap">
       <div class="sec-head">
-        <div><div class="hd-eyebrow">At a glance</div><h2>A small, inspectable benchmark</h2></div>
-        <p>The leaderboard shows each model's actual scene coverage. Recorded walks reveal how a model looks around a room. The rubrics await clinician review, and performance in real homes remains untested.</p>
+        <div><div class="hd-eyebrow">At a glance</div><h2>A small, inspectable prototype</h2></div>
       </div>
       <div class="stats">
         {stats.map(s => (
@@ -117,53 +213,6 @@ const stats = [
     </div>
   </section>
 
-  <!-- LEADERBOARD TEASER -->
-  <section class="sec">
-    <div class="wrap">
-      <div class="sec-head">
-        <div><div class="hd-eyebrow">HomeBench leaderboard · top 5 of {HB.rows.length}</div><h2>Read coverage beside every score</h2></div>
-        <p>The leading entry scored 0.92 out of 1.00 on 42 of 43 scenes. Rankings are directional: samples are small and coverage differs.</p>
-      </div>
-      <Leaderboard bench={HB} limit={5} compact />
-      <div class="more"><a class="hd-btn" href="/results/">Full leaderboard, heatmaps and scene browser →</a><span class="hd-dim hd-num">score = (recall + 1 - false-flag rate) / 2</span></div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class="sec">
-    <div class="wrap">
-      <div class="sec-head">
-        <div><div class="hd-eyebrow">How it works</div><h2>From published guidance to a scored test</h2></div>
-        <p>The rubric is drafted from published guidance and awaits OT/PT review. Scene checks are automated, not human.</p>
-      </div>
-      <Pipeline compact />
-    </div>
-  </section>
-
-  <!-- WALK VIDEO -->
-  <section class="sec">
-    <div class="wrap">
-      <div class="sec-head">
-        <div><div class="hd-eyebrow">Recorded run</div><h2>Watch a model inspect a synthetic room</h2></div>
-        <p>Saved replays show where it turned, what it flagged, and what it missed. They illustrate specific runs, not performance across the full photo benchmark.</p>
-      </div>
-      <div class="video">
-        <video src="/videos/gpt-5.6-sol-bathroom.mp4" poster="/videos/gpt-5.6-sol-bathroom.jpg" controls preload="metadata" playsinline></video>
-        <div class="vcap">
-          <span class="hd-tag miss">Missed</span><span class="hd-tag">GPT-5.6 Sol · Bathroom · BATH-07</span>
-          <p><b>Bathroom miss:</b> the model looks toward a loose bath mat but flags support fixtures instead.</p>
-          <dl class="vmeta hd-num">
-            <dt>Room</dt><dd>synthetic 360-degree capture</dd>
-            <dt>Budget</dt><dd>{walkBudget} steps: turn, zoom, flag</dd>
-            <dt>Target</dt><dd>BATH-07 loose bath mat</dd>
-            <dt>Type</dt><dd>recorded replay, not live</dd>
-          </dl>
-          <a href="/explore/">More recorded runs and 3D worlds →</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- CTA -->
   <section class="sec">
     <div class="wrap">
@@ -171,11 +220,12 @@ const stats = [
         <div class="grid-bg small" aria-hidden="true"></div>
         <div class="hd-eyebrow lime">Open code and data</div>
         <h2>Inspect the evidence yourself</h2>
-        <p>Start with the results, read the method and its limits, or browse the code and data.</p>
+        <p>HealthDojo is an open prototype for testing how vision models judge home hazards. The first themes are falls after surgery and dementia home safety.</p>
         <div class="ctas center">
           <a class="hd-btn primary" href="https://github.com/pistachiopranay/healthdojo">View the code and data ↗</a>
-          <a class="hd-btn" href="/results/">See results</a>
-          <a class="hd-btn" href="/explore/">Explore scenes</a>
+          <a class="hd-btn" href="/explore/">Explore the worlds</a>
+          <a class="hd-btn" href="/method/">Read the method</a>
+          <a class="hd-btn" href="/results/">See early results</a>
         </div>
       </div>
     </div>
@@ -184,13 +234,13 @@ const stats = [
 
 <style>
   /* hero: dark grid (Magic UI grid pattern), radial fade, faint lime glow (Launch UI style) */
-  .hero { position: relative; overflow: hidden; padding: 88px 0 0; }
+  .hero { position: relative; overflow: hidden; padding: 80px 0 0; }
   .grid-bg {
     position: absolute; inset: 0; pointer-events: none;
     background-image: linear-gradient(to right, #ffffff0d 1px, transparent 1px), linear-gradient(to bottom, #ffffff0d 1px, transparent 1px);
     background-size: 56px 56px; background-position: center top;
-    mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 30%, transparent 75%);
-    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 0%, #000 30%, transparent 75%);
+    mask-image: radial-gradient(ellipse 70% 55% at 50% 0%, #000 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 55% at 50% 0%, #000 30%, transparent 75%);
   }
   .glow { position: absolute; left: 50%; top: -260px; width: 900px; height: 520px; transform: translateX(-50%); background: radial-gradient(closest-side, #d5fd5118, transparent); pointer-events: none; }
   .hero-in { position: relative; text-align: center; display: flex; flex-direction: column; align-items: center; }
@@ -200,59 +250,62 @@ const stats = [
   .pill .sep { width: 1px; height: 12px; background: var(--hd-line-2); }
   h1 { margin: 26px 0 0; font: 600 clamp(40px, 7vw, 80px)/1.02 var(--hd-sans); letter-spacing: -.045em; }
   h1 span { background: linear-gradient(180deg, #ededee 0%, #8a8a93 110%); -webkit-background-clip: text; background-clip: text; color: transparent; }
-  .lede { max-width: 640px; margin: 24px auto 0; color: var(--hd-fg-2); font-size: 17px; line-height: 1.6; }
-  .ctas { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 32px; }
-  .ctas.center { justify-content: center; }
+  .lede { max-width: 680px; margin: 24px auto 0; color: var(--hd-fg-2); font-size: 18px; line-height: 1.6; }
+  .wnote { margin: 12px 2px 0; font-size: 13px; color: var(--hd-fg-3); line-height: 1.5; }
+  .sec-head p b { color: var(--hd-fg); font-weight: 500; }
+  .sublede { margin: 14px auto 0; font: 400 14px var(--hd-sans); color: var(--hd-fg-3); max-width: 60ch; }
+  .ctas { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 30px; justify-content: center; }
   .hd-btn.ghost { border-color: transparent; background: transparent; color: var(--hd-fg-2); }
   .hd-btn.ghost:hover { color: var(--hd-fg); }
 
-  /* featured scene "mockup" */
-  .feature { position: relative; margin-top: 64px; }
+  /* windows */
+  .world, .feature { position: relative; }
+  .world { margin-top: 56px; }
   .fglow { position: absolute; left: 10%; right: 10%; top: -40px; height: 200px; background: radial-gradient(closest-side, #d5fd5126, transparent); filter: blur(20px); pointer-events: none; }
-  .fwin { position: relative; border: 1px solid var(--hd-line-2); border-radius: 14px; background: linear-gradient(180deg, #121214, #0c0c0e); overflow: hidden; box-shadow: 0 0 0 1px #00000080; }
-  .fwin::before { content: ""; position: absolute; left: 20%; right: 20%; top: 0; height: 1px; background: linear-gradient(90deg, transparent, #d5fd5199, transparent); }
+  .fwin { position: relative; border: 1px solid var(--hd-line-2); border-radius: 14px; background: linear-gradient(180deg, #121214, #0c0c0e); overflow: hidden; }
+  .fwin::before { content: ""; position: absolute; left: 20%; right: 20%; top: 0; height: 1px; background: linear-gradient(90deg, transparent, #d5fd5199, transparent); z-index: 2; }
   .fbar { display: flex; align-items: center; gap: 14px; height: 42px; padding: 0 14px; border-bottom: 1px solid var(--hd-line); }
   .fbar .dots { display: flex; gap: 6px; }
   .fbar .dots i { width: 9px; height: 9px; border-radius: 50%; background: #ffffff1a; }
   .fbar .path { font-size: 12px; color: var(--hd-fg-3); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
   .fbar .open { margin-left: auto; font-size: 12.5px; color: var(--hd-lime); text-decoration: none; white-space: nowrap; }
-  .fbody { display: grid; grid-template-columns: 1.35fr 1fr; }
-  .fimg { margin: 0; padding: 18px; border-right: 1px solid var(--hd-line); }
-  .fimg figcaption { display: flex; gap: 14px; align-items: flex-start; margin-top: 14px; }
-  .fimg figcaption p { margin: 0; font-size: 13.5px; color: var(--hd-fg-2); line-height: 1.55; }
-  .before { flex: none; width: 112px; position: relative; }
-  .before img { display: block; width: 100%; border-radius: 6px; border: 1px solid var(--hd-line); opacity: .85; }
-  .before span { display: block; font: 400 10.5px var(--hd-mono); color: var(--hd-fg-3); margin-top: 5px; }
-  .fside { padding: 24px 24px 22px; display: flex; flex-direction: column; text-align: left; }
-  .fside h2 { font: 600 28px/1.15 var(--hd-sans); letter-spacing: -.03em; margin: 12px 0 18px; }
-  .fside h2 .hd-num { color: var(--hd-lime); font-weight: 500; }
-  .meter { display: grid; grid-template-columns: repeat(14, 1fr); gap: 3px; margin-bottom: 20px; }
-  .meter i { height: 22px; border-radius: 3px; }
-  .meter i.y { background: var(--hd-hit); }
-  .meter i.n { background: #ffffff10; border: 1px solid #f5b54455; }
-  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-  .cols ul { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 5px; }
-  .cols li { font-size: 13.5px; color: var(--hd-fg); display: flex; align-items: center; gap: 8px; }
-  .cols li::before { content: ""; width: 12px; height: 12px; border-radius: 3px; flex: none; }
-  .cols li.y::before { background: var(--hd-hit-bg); border: 1px solid #4ade8088; }
-  .cols li.n { color: var(--hd-fg-2); }
-  .cols li.n::before { background: var(--hd-miss-bg); border: 1px solid #f5b54477; }
-  .say { margin-top: auto; padding-top: 18px; border-top: 1px solid var(--hd-line); }
-  .say p { margin: 8px 0 10px; font-size: 13.5px; color: var(--hd-fg-2); line-height: 1.55; }
-  .say .miss-note { color: var(--hd-miss); text-transform: none; letter-spacing: 0; font-size: 12px; }
+  .stage { position: relative; aspect-ratio: 21 / 9; background: #000; overflow: hidden; }
+  .stage .poster { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; animation: pan 40s linear infinite alternate; transform-origin: center; }
+  @keyframes pan { from { object-position: 30% 50%; transform: scale(1.08); } to { object-position: 70% 50%; transform: scale(1.12); } }
+  .stage iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; opacity: 0; transition: opacity 1.2s; pointer-events: none; }
+  .world.live .stage iframe { opacity: 1; }
+  .scrim { position: absolute; inset: 0; background: linear-gradient(180deg, transparent 60%, #0a0a0bb0); pointer-events: none; }
+  .stage .cap { position: absolute; left: 16px; bottom: 14px; display: flex; align-items: center; gap: 8px; font: 500 12.5px var(--hd-mono); color: var(--hd-fg); background: #0a0a0bb3; backdrop-filter: blur(8px); padding: 7px 11px; border-radius: 7px; border: 1px solid var(--hd-line); }
+  .stage .cap i { width: 7px; height: 7px; border-radius: 50%; background: var(--hd-lime); box-shadow: 0 0 8px var(--hd-lime); }
+  .stage .cap.hz { color: var(--hd-miss); border-color: #f5b54455; }
+  .stage .cap.hz i { background: var(--hd-miss); box-shadow: 0 0 8px var(--hd-miss); }
+  .stage .badge { position: absolute; right: 16px; bottom: 14px; font-size: 11px; color: var(--hd-fg-2); background: #0a0a0bb3; padding: 6px 9px; border-radius: 6px; border: 1px solid var(--hd-line); }
 
-  /* stats */
-  .stats { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--hd-line); border-radius: var(--hd-radius); background: var(--hd-bg-1); }
-  .stat { padding: 26px 24px 24px; border-right: 1px solid var(--hd-line); position: relative; }
-  .stat:last-child { border-right: 0; }
-  .stat .n { font-size: 52px; line-height: 1; letter-spacing: -.04em; color: var(--hd-fg); font-weight: 500; }
-  .stat:first-child .n { color: var(--hd-lime); text-shadow: 0 0 24px #d5fd5155; }
-  .stat .l { font-weight: 500; margin-top: 14px; font-size: 15px; }
-  .stat .s { font-size: 13px; color: var(--hd-fg-3); margin-top: 4px; line-height: 1.5; }
+  /* pipeline with real artifacts */
+  .flow { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+  .flow li { position: relative; margin: 0; display: flex; flex-direction: column; border: 1px solid var(--hd-line); border-radius: var(--hd-radius); background: var(--hd-bg-1); padding: 14px; min-width: 0; }
+  .flow li:not(:last-child)::after { content: "→"; position: absolute; right: -12px; top: 50%; transform: translateY(-50%); z-index: 2; width: 18px; height: 18px; display: grid; place-items: center; font-size: 11px; color: var(--hd-lime); background: var(--hd-bg); border: 1px solid var(--hd-line-2); border-radius: 50%; }
+  .flow .k { font-size: 11px; color: var(--hd-lime); letter-spacing: .04em; margin-bottom: 12px; }
+  .flow > li > p { margin: 12px 0 0; font-size: 13px; line-height: 1.5; color: var(--hd-fg-2); }
+  .art { aspect-ratio: 4 / 3; border-radius: 8px; overflow: hidden; }
+  .art.doc { background: #ffffff05; border: 1px solid var(--hd-line); padding: 12px; font-size: 12px; line-height: 1.5; color: var(--hd-fg-2); display: flex; flex-direction: column; gap: 6px; }
+  .art.doc p { margin: 0; color: var(--hd-fg); font-size: 12.5px; }
+  .art .org { font-size: 10.5px; color: var(--hd-fg-3); text-transform: uppercase; letter-spacing: .06em; }
+  .art .small { font-size: 10.5px; margin-top: auto; font-family: var(--hd-mono); }
+  .art .row { display: flex; justify-content: space-between; align-items: center; gap: 6px; }
+  .art .row code { color: var(--hd-lime); font-size: 12px; }
+  .art .row .hd-tag { font-size: 9.5px; padding: 3px 5px; }
+  .art .rname { color: var(--hd-fg); font-weight: 500; font-size: 13.5px; }
+  .art dl { display: grid; grid-template-columns: 48px 1fr; gap: 3px 8px; margin: 2px 0 0; font-size: 11.5px; }
+  .art dt { color: var(--hd-fg-3); font-size: 10.5px; }
+  .art dd { margin: 0; }
+  .art.img .hd-frame { display: block; width: 100%; height: 100%; }
+  .art.img img { width: 100%; height: 100%; object-fit: cover; }
+  .art .play, .art .flag { position: absolute; left: 8px; bottom: 8px; font: 500 11px var(--hd-mono); padding: 5px 8px; border-radius: 5px; background: #0a0a0bcc; color: var(--hd-lime); border: 1px solid #d5fd5155; }
+  .art .flag { color: #0a0a0b; background: var(--hd-hit); border-color: var(--hd-hit); }
+  .note { margin: 16px 0 0; font-size: 13.5px; color: var(--hd-fg-3); }
 
-  .more { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 16px; flex-wrap: wrap; }
-  .more .hd-dim { font-size: 12px; }
-
+  /* video */
   .video { display: grid; grid-template-columns: 1.6fr 1fr; border: 1px solid var(--hd-line); border-radius: var(--hd-radius); overflow: hidden; background: var(--hd-bg-1); }
   .video video { width: 100%; display: block; background: #000; aspect-ratio: 16/9; }
   .vcap { padding: 24px; display: flex; flex-direction: column; gap: 10px; align-items: flex-start; border-left: 1px solid var(--hd-line); }
@@ -263,12 +316,49 @@ const stats = [
   .vmeta dd { margin: 0; color: var(--hd-fg-2); }
   .vcap a { margin-top: auto; color: var(--hd-lime); text-decoration: none; font-size: 14px; }
 
+  /* example finding */
+  .fbody { display: grid; grid-template-columns: 1.35fr 1fr; }
+  .fimg { margin: 0; padding: 18px; border-right: 1px solid var(--hd-line); }
+  .fimg figcaption { display: flex; gap: 14px; align-items: flex-start; margin-top: 14px; }
+  .fimg figcaption p { margin: 0; font-size: 13.5px; color: var(--hd-fg-2); line-height: 1.55; }
+  .before { flex: none; width: 112px; }
+  .before img { display: block; width: 100%; border-radius: 6px; border: 1px solid var(--hd-line); opacity: .85; }
+  .before span { display: block; font: 400 10.5px var(--hd-mono); color: var(--hd-fg-3); margin-top: 5px; }
+  .fside { padding: 24px 24px 22px; display: flex; flex-direction: column; text-align: left; }
+  .fside h2 { font: 600 28px/1.15 var(--hd-sans); letter-spacing: -.03em; margin: 12px 0 18px; }
+  .fside h2 .hd-num { color: var(--hd-lime); font-weight: 500; }
+  .meter { display: grid; grid-template-columns: repeat(14, 1fr); gap: 3px; margin-bottom: 20px; }
+  .meter i { height: 22px; border-radius: 3px; }
+  .meter i.y { background: var(--hd-hit); }
+  .meter i.n { background: #ffffff10; border: 1px solid #f5b54455; }
+  .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 22px; }
+  .cols ul { list-style: none; padding: 0; margin: 10px 0 0; display: grid; gap: 5px; }
+  .cols li { font-size: 13.5px; color: var(--hd-fg); display: flex; align-items: center; gap: 8px; }
+  .cols li::before { content: ""; width: 12px; height: 12px; border-radius: 3px; flex: none; }
+  .cols li.y::before { background: var(--hd-hit-bg); border: 1px solid #4ade8088; }
+  .cols li.n { color: var(--hd-fg-2); }
+  .cols li.n::before { background: var(--hd-miss-bg); border: 1px solid #f5b54477; }
+  .fside .go { margin-top: auto; align-self: flex-start; }
+
+  /* stats */
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--hd-line); border-radius: var(--hd-radius); background: var(--hd-bg-1); }
+  .stat { padding: 26px 24px 24px; border-right: 1px solid var(--hd-line); }
+  .stat:last-child { border-right: 0; }
+  .stat .n { font-size: 52px; line-height: 1; letter-spacing: -.04em; color: var(--hd-fg); font-weight: 500; }
+  .stat:first-child .n { color: var(--hd-lime); text-shadow: 0 0 24px #d5fd5155; }
+  .stat .l { font-weight: 500; margin-top: 14px; font-size: 15px; }
+  .stat .s { font-size: 13px; color: var(--hd-fg-3); margin-top: 4px; line-height: 1.5; }
+
   .cta { position: relative; overflow: hidden; text-align: center; border: 1px solid var(--hd-line); border-radius: 16px; padding: 64px 24px; background: radial-gradient(600px 240px at 50% 0%, #d5fd5112, transparent), var(--hd-bg-1); }
   .grid-bg.small { background-size: 40px 40px; mask-image: radial-gradient(ellipse 60% 80% at 50% 0%, #000 20%, transparent 70%); -webkit-mask-image: radial-gradient(ellipse 60% 80% at 50% 0%, #000 20%, transparent 70%); }
   .cta h2 { position: relative; font: 600 clamp(28px, 4vw, 44px)/1.1 var(--hd-sans); letter-spacing: -.035em; margin: 12px 0 10px; }
-  .cta p { position: relative; color: var(--hd-fg-2); margin: 0 auto; max-width: 52ch; }
+  .cta p { position: relative; color: var(--hd-fg-2); margin: 0 auto; max-width: 56ch; }
   .cta .ctas { position: relative; }
 
+  @media (max-width: 1100px) {
+    .flow { grid-template-columns: repeat(3, 1fr); }
+    .flow li:not(:last-child)::after { display: none; }
+  }
   @media (max-width: 980px) {
     .fbody { grid-template-columns: 1fr; }
     .fimg { border-right: 0; border-bottom: 1px solid var(--hd-line); }
@@ -277,27 +367,48 @@ const stats = [
     .stat:nth-child(-n+2) { border-bottom: 1px solid var(--hd-line); }
     .video { grid-template-columns: 1fr; }
     .vcap { border-left: 0; border-top: 1px solid var(--hd-line); }
+    .stage { aspect-ratio: 16 / 10; }
   }
-  @media (max-width: 560px) {
-    .hero { padding-top: 56px; }
-    .lede { font-size: 15.5px; }
+  @media (max-width: 640px) {
+    .hero { padding-top: 52px; }
+    .lede { font-size: 16px; }
+    .flow { grid-template-columns: 1fr 1fr; gap: 8px; }
+    .flow li:last-child { grid-column: span 2; }
+    .flow li { padding: 10px; }
     .fimg, .fside { padding: 14px; }
     .fimg figcaption { flex-direction: column; }
     .fbar .path { display: none; }
     .fside h2 { font-size: 23px; }
     .stat { padding: 20px 16px; }
     .stat .n { font-size: 40px; }
+    .stage { aspect-ratio: 4 / 3; }
+    .stage .badge { display: none; }
+    .art.doc { aspect-ratio: auto; min-height: 150px; }
     .ctas .hd-btn { flex: 1 1 auto; justify-content: center; }
   }
 </style>
 
 <script>
-  // Number ticker (Magic UI style): count up once when the tile scrolls into view.
+  // Live splat world behind the poster: load only with WebGL2 on wider screens; fade in when the world reports ready.
+  const box = document.getElementById("w3")!;
+  const f = document.getElementById("w3f") as HTMLIFrameElement | null;
+  let gl: unknown = null;
+  try { gl = document.createElement("canvas").getContext("webgl2"); } catch { /* no webgl */ }
+  if (f && gl && innerWidth >= 720 && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    const io = new IntersectionObserver(es => { if (es.some(e => e.isIntersecting)) { f.src = f.dataset.src!; io.disconnect(); } });
+    io.observe(box);
+  } else f?.remove();
+  addEventListener("message", e => {
+    if (e.origin !== location.origin) return;
+    const d = (e.data || {}) as { hd?: string; text?: string; hz?: boolean };
+    if (d.hd === "world-ready") box.classList.add("live");
+    if (d.hd === "cap" && d.text) { const c = document.getElementById("w3cap")!; c.textContent = d.text; c.parentElement!.classList.toggle("hz", !!d.hz); }
+  });
+
+  // Number ticker (Magic UI style): tiles below the fold count up once when scrolled into view.
   const els = document.querySelectorAll<HTMLElement>("[data-ticker]");
-  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  // Tiles already on screen at load keep their server-rendered value; only tiles below the fold animate.
   const below = [...els].filter(el => el.getBoundingClientRect().top > innerHeight);
-  if (!reduce && "IntersectionObserver" in window && below.length) {
+  if (!matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window && below.length) {
     below.forEach(el => (el.textContent = "0"));
     const io = new IntersectionObserver(entries => {
       for (const e of entries) {

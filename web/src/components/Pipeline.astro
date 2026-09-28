@@ -2,11 +2,11 @@
 // Five-step evidence chain. Used on Overview (compact) and Method.
 const { compact = false } = Astro.props;
 const steps = [
-  { k: "01", t: "Guideline", d: "Published home-safety guidance (CDC STEADI for falls; Alzheimer's Association and NIA for dementia)." },
-  { k: "02", t: "Draft rubric", d: "Guidance is summarized into hazard rows with a source reference. Clinician (OT/PT) review pending.", tag: "review pending" },
-  { k: "03", t: "Seeded synthetic scene", d: "A synthetic room is edited to add one target hazard. The label exists before the pixels." },
-  { k: "04", t: "Automated check", d: "A vision model checks the target is visible. Not independent human verification.", tag: "automated" },
-  { k: "05", t: "Scoring", d: "Models list hazard IDs. Recall on seeded IDs and false flags on prespecified absent IDs." },
+  { k: "01", t: "Guideline", d: "Published home-safety guidance: CDC STEADI for falls; Alzheimer's Association and NIA for dementia." },
+  { k: "02", t: "Draft rubric", d: "Guidance is summarized into hazard rows with a source reference. OT/PT review pending.", tag: "review pending" },
+  { k: "03", t: "Labeled synthetic image", d: "An image model edits one target hazard into a synthetic room. A vision model checks it is visible.", tag: "automated check" },
+  { k: "04", t: "3D splat world", d: "Selected scenes are rebuilt as walkable Gaussian-splat worlds (World Labs Marble)." },
+  { k: "05", t: "Model test", d: "Models list hazard IDs on photos, or walk a 360-degree room with a step budget. Saved responses are scored." },
 ];
 ---
 <ol class={`pipe not-content ${compact ? "compact" : ""}`}>

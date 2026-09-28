@@ -32,6 +32,8 @@ copyDir(path.join(SITE, "thumbs"), path.join(PUB, "thumbs"), f => f.endsWith(".j
 copyDir(path.join(SITE, "videos"), path.join(PUB, "videos"));
 // 3. 3D world thumbnails
 copyDir(path.join(DATA, "worlds"), path.join(PUB, "worlds"), f => f.endsWith(".thumb.jpg"));
+// 3b. Overview pipeline artifacts (one hazard, STAIR-03, followed through every stage)
+for (const f of ["pano-stairs-base0-STAIR-03.jpg", "w3crop-stairs-base0-STAIR-03.jpg"]) copy(path.join(SITE, "home-assets", f), path.join(PUB, "home", f));
 // 4. curriculum thumbs: only images that passed the automated check
 for (const bench of ["falls", "dementia"]) {
   const m = JSON.parse(fs.readFileSync(path.join(DATA, "curriculum", bench, "manifest.json"), "utf8"));
@@ -52,6 +54,11 @@ const LINKS = [
   [/href="walk\.html"/g, 'href="/explore/walk"'],
   [/`walk\.html\?w=/g, "`/explore/walk?w="],
   [/\.\.\/data\/walks\//g, "/data/walks/"],
+  // v2 nav labels and honest wording on the legacy walk page
+  [/<div class="hd-links">[\s\S]*?<\/div>\s*<a href="[^"]*" class="hd-cta">[^<]*<\/a>/,
+    '<div class="hd-links"><a href="/">Overview</a><a href="/method/">How it works</a><a href="/explore/" class="on">Explore</a><a href="/results/">Early results</a><a href="https://github.com/pistachiopranay/healthdojo">GitHub</a></div>\n  <a href="/explore/" class="hd-cta">Back to Explore</a>'],
+  [/Drop the model <em>into the home\.<\/em>/, "Drop the model <em>into a synthetic room.</em>"],
+  [/Each model stands inside a 360° home,/, "Each model stands inside a synthetic 360° room,"],
 ];
 for (const f of ["world.html", "walk.html"]) {
   let html = fs.readFileSync(path.join(SITE, f), "utf8");
