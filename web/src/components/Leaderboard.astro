@@ -25,7 +25,7 @@ const cols = compact
         <tr data-name={r.name} data-score={r.score} data-recall={r.recall} data-false_alarm={r.false_alarm}
             data-precision={r.precision ?? -1} data-loc_iou={r.loc_iou ?? -1} data-scenes_run={r.scenes_run}>
           <td class="l rk hd-num">{String(i + 1).padStart(2, "0")}</td>
-          <td class="l"><span class="mname">{r.name}</span>{!compact && <span class="prov">{r.provider}</span>}</td>
+          <td class="l"><span class="mname">{r.name}</span></td>
           <td><div class="scorecell"><div class="sbar"><i style={`width:${r.score * 100}%`}></i></div><b class="hd-num">{r.score.toFixed(2)}</b></div></td>
           <td class="hd-num">{pct(r.recall)} <span class="hd-dim">{r.tp}/{r.tp + r.fn}</span></td>
           <td class="hd-num"><span class={r.false_alarm >= 0.25 ? "hd-miss" : ""}>{pct(r.false_alarm)}</span> <span class="hd-dim">{r.fp}/{r.neg}</span></td>
@@ -41,7 +41,7 @@ const cols = compact
         {partial.map(r => (
           <tr>
             <td class="l rk hd-num">–</td>
-            <td class="l"><span class="mname">{r.name}</span>{!compact && <span class="prov">{r.provider}</span>}</td>
+            <td class="l"><span class="mname">{r.name}</span></td>
             <td><div class="scorecell"><div class="sbar"><i style={`width:${r.score * 100}%`}></i></div><b class="hd-num">{r.score.toFixed(2)}</b></div></td>
             <td class="hd-num">{pct(r.recall)} <span class="hd-dim">{r.tp}/{r.tp + r.fn}</span></td>
             <td class="hd-num">{pct(r.false_alarm)} <span class="hd-dim">{r.fp}/{r.neg}</span></td>

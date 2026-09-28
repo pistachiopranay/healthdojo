@@ -21,7 +21,7 @@ export default defineConfig({
     starlight({
       title: "HealthDojo",
       description: "An open, synthetic benchmark prototype for how vision models spot fall and dementia hazards in homes.",
-      social: [{ icon: "github", label: "GitHub", href: "https://github.com/pistachiopranay/healthdojo" }],
+      social: [{ icon: "linkedin", label: "Pranay Madan on LinkedIn", href: "https://www.linkedin.com/in/pranaymadan/" }, { icon: "github", label: "GitHub", href: "https://github.com/pistachiopranay/healthdojo" }],
       sidebar: [
         { label: "How it works", items: [
           { label: "From guidance to a test", link: "/method/#from-guidance-to-a-test" },
